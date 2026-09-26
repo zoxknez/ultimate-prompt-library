@@ -5741,8 +5741,1130 @@
         "en": "Scientific method, research design, literature review, data analysis and critical reasoning.",
         "sr": "Naučni metod, dizajn istraživanja, pregled literature, analiza podataka i kritičko rasuđivanje."
       },
-      "subcategories": [],
-      "prompts": []
+      "subcategories": [
+        {
+          "id": "research-question-study-design",
+          "order": 1,
+          "names": {
+            "en": "Research Questions & Study Design",
+            "sr": "Istraživačka pitanja i dizajn studije"
+          },
+          "descriptions": {
+            "en": "Research questions, hypotheses, variables, design choice, preregistration, power, protocols and feasibility.",
+            "sr": "Istraživačka pitanja, hipoteze, varijable, izbor dizajna, preregistracija, statistička snaga, protokoli i izvodljivost."
+          }
+        },
+        {
+          "id": "literature-review-evidence-synthesis",
+          "order": 2,
+          "names": {
+            "en": "Literature Review & Evidence Synthesis",
+            "sr": "Pregled literature i sinteza dokaza"
+          },
+          "descriptions": {
+            "en": "Search strategies, systematic reviews, meta-analysis, evidence mapping, screening and synthesis.",
+            "sr": "Strategije pretrage, sistematski pregledi, meta-analize, evidence mapping, screening i sinteza."
+          }
+        },
+        {
+          "id": "statistics-quantitative-analysis",
+          "order": 3,
+          "names": {
+            "en": "Statistics & Quantitative Analysis",
+            "sr": "Statistika i kvantitativna analiza"
+          },
+          "descriptions": {
+            "en": "Descriptive statistics, inference, effect sizes, regression, uncertainty, power and model diagnostics.",
+            "sr": "Deskriptivna statistika, inferencija, veličina efekta, regresija, neizvesnost, statistička snaga i dijagnostika modela."
+          }
+        },
+        {
+          "id": "causal-inference-experimental-reasoning",
+          "order": 4,
+          "names": {
+            "en": "Causal Inference & Experimental Reasoning",
+            "sr": "Kauzalna inferencija i eksperimentalno zaključivanje"
+          },
+          "descriptions": {
+            "en": "Causal diagrams, confounding, experiments, quasi-experiments, identification, sensitivity and mechanism claims.",
+            "sr": "Kauzalni dijagrami, confounding, eksperimenti, kvazi-eksperimenti, identifikacija, sensitivity analiza i tvrdnje o mehanizmima."
+          }
+        },
+        {
+          "id": "data-quality-reproducibility",
+          "order": 5,
+          "names": {
+            "en": "Data Quality & Reproducibility",
+            "sr": "Kvalitet podataka i reproduktivnost"
+          },
+          "descriptions": {
+            "en": "Data provenance, cleaning, missingness, reproducible pipelines, FAIR principles, versioning and audit trails.",
+            "sr": "Poreklo podataka, čišćenje, missing data, reproduktivni pipeline-ovi, FAIR principi, versioning i audit trag."
+          }
+        },
+        {
+          "id": "qualitative-mixed-methods",
+          "order": 6,
+          "names": {
+            "en": "Qualitative & Mixed Methods",
+            "sr": "Kvalitativne i mešovite metode"
+          },
+          "descriptions": {
+            "en": "Interviews, focus groups, coding, reflexivity, thematic analysis, triangulation and mixed-methods integration.",
+            "sr": "Intervjui, fokus grupe, kodiranje, refleksivnost, tematska analiza, triangulacija i integracija mešovitih metoda."
+          }
+        },
+        {
+          "id": "scientific-visualization-communication",
+          "order": 7,
+          "names": {
+            "en": "Scientific Visualization & Communication",
+            "sr": "Naučna vizualizacija i komunikacija"
+          },
+          "descriptions": {
+            "en": "Figures, tables, uncertainty communication, scientific writing, abstracts, posters, presentations and public communication.",
+            "sr": "Grafici, tabele, komunikacija neizvesnosti, naučno pisanje, apstrakti, posteri, prezentacije i javna komunikacija."
+          }
+        },
+        {
+          "id": "peer-review-research-integrity",
+          "order": 8,
+          "names": {
+            "en": "Peer Review & Research Integrity",
+            "sr": "Recenzija i integritet istraživanja"
+          },
+          "descriptions": {
+            "en": "Peer review, reporting standards, conflicts, authorship, questionable research practices, corrections and transparency.",
+            "sr": "Recenzija, standardi izveštavanja, sukobi interesa, autorstvo, problematične istraživačke prakse, ispravke i transparentnost."
+          }
+        },
+        {
+          "id": "domain-analysis-modeling-simulation",
+          "order": 9,
+          "names": {
+            "en": "Modeling, Simulation & Computational Analysis",
+            "sr": "Modelovanje, simulacije i računarska analiza"
+          },
+          "descriptions": {
+            "en": "Mathematical models, simulations, parameter estimation, validation, sensitivity, uncertainty and computational experiments.",
+            "sr": "Matematički modeli, simulacije, procena parametara, validacija, sensitivity, neizvesnost i računarski eksperimenti."
+          }
+        },
+        {
+          "id": "research-projects-decisions",
+          "order": 10,
+          "names": {
+            "en": "Research Projects, Decisions & Translation",
+            "sr": "Istraživački projekti, odluke i primena"
+          },
+          "descriptions": {
+            "en": "Research planning, prioritization, decision analysis, evidence-to-policy translation, roadmaps and post-study review.",
+            "sr": "Planiranje istraživanja, prioritizacija, analiza odluka, prevođenje dokaza u politiku, roadmap i post-study review."
+          }
+        }
+      ],
+      "prompts": [
+        {
+          "id": "UPL-SCI-001",
+          "number": 1,
+          "slug": "research-question-quality-audit",
+          "subcategory": "research-question-study-design",
+          "title": {
+            "en": "Research Question Quality Audit",
+            "sr": "Audit kvaliteta istraživačkog pitanja"
+          }
+        },
+        {
+          "id": "UPL-SCI-002",
+          "number": 2,
+          "slug": "hypothesis-and-construct-builder",
+          "subcategory": "research-question-study-design",
+          "title": {
+            "en": "Hypothesis & Construct Builder",
+            "sr": "Izrada hipoteze i konstrukata"
+          }
+        },
+        {
+          "id": "UPL-SCI-003",
+          "number": 3,
+          "slug": "study-design-selection-framework",
+          "subcategory": "research-question-study-design",
+          "title": {
+            "en": "Study Design Selection Framework",
+            "sr": "Okvir za izbor dizajna studije"
+          }
+        },
+        {
+          "id": "UPL-SCI-004",
+          "number": 4,
+          "slug": "variable-operationalization-audit",
+          "subcategory": "research-question-study-design",
+          "title": {
+            "en": "Variable Operationalization Audit",
+            "sr": "Audit operacionalizacije varijabli"
+          }
+        },
+        {
+          "id": "UPL-SCI-005",
+          "number": 5,
+          "slug": "sampling-strategy-builder",
+          "subcategory": "research-question-study-design",
+          "title": {
+            "en": "Sampling Strategy Builder",
+            "sr": "Izrada strategije uzorkovanja"
+          }
+        },
+        {
+          "id": "UPL-SCI-006",
+          "number": 6,
+          "slug": "preregistration-plan-builder",
+          "subcategory": "research-question-study-design",
+          "title": {
+            "en": "Preregistration Plan Builder",
+            "sr": "Izrada plana preregistracije"
+          }
+        },
+        {
+          "id": "UPL-SCI-007",
+          "number": 7,
+          "slug": "statistical-power-design-audit",
+          "subcategory": "research-question-study-design",
+          "title": {
+            "en": "Statistical Power & Design Audit",
+            "sr": "Audit statističke snage i dizajna"
+          }
+        },
+        {
+          "id": "UPL-SCI-008",
+          "number": 8,
+          "slug": "research-protocol-integrity-review",
+          "subcategory": "research-question-study-design",
+          "title": {
+            "en": "Research Protocol Integrity Review",
+            "sr": "Pregled integriteta istraživačkog protokola"
+          }
+        },
+        {
+          "id": "UPL-SCI-009",
+          "number": 9,
+          "slug": "pilot-study-feasibility-plan",
+          "subcategory": "research-question-study-design",
+          "title": {
+            "en": "Pilot Study & Feasibility Plan",
+            "sr": "Plan pilot studije i izvodljivosti"
+          }
+        },
+        {
+          "id": "UPL-SCI-010",
+          "number": 10,
+          "slug": "study-design-red-team-review",
+          "subcategory": "research-question-study-design",
+          "title": {
+            "en": "Study Design Red-Team Review",
+            "sr": "Red-team pregled dizajna studije"
+          }
+        },
+        {
+          "id": "UPL-SCI-011",
+          "number": 11,
+          "slug": "systematic-search-strategy-builder",
+          "subcategory": "literature-review-evidence-synthesis",
+          "title": {
+            "en": "Systematic Search Strategy Builder",
+            "sr": "Izrada strategije sistematske pretrage"
+          }
+        },
+        {
+          "id": "UPL-SCI-012",
+          "number": 12,
+          "slug": "systematic-review-protocol-audit",
+          "subcategory": "literature-review-evidence-synthesis",
+          "title": {
+            "en": "Systematic Review Protocol Audit",
+            "sr": "Audit protokola sistematskog pregleda"
+          }
+        },
+        {
+          "id": "UPL-SCI-013",
+          "number": 13,
+          "slug": "screening-and-eligibility-framework",
+          "subcategory": "literature-review-evidence-synthesis",
+          "title": {
+            "en": "Screening & Eligibility Framework",
+            "sr": "Okvir screeninga i kriterijuma podobnosti"
+          }
+        },
+        {
+          "id": "UPL-SCI-014",
+          "number": 14,
+          "slug": "risk-of-bias-evidence-review",
+          "subcategory": "literature-review-evidence-synthesis",
+          "title": {
+            "en": "Risk of Bias Evidence Review",
+            "sr": "Pregled rizika pristrasnosti dokaza"
+          }
+        },
+        {
+          "id": "UPL-SCI-015",
+          "number": 15,
+          "slug": "meta-analysis-design-audit",
+          "subcategory": "literature-review-evidence-synthesis",
+          "title": {
+            "en": "Meta-Analysis Design Audit",
+            "sr": "Audit dizajna meta-analize"
+          }
+        },
+        {
+          "id": "UPL-SCI-016",
+          "number": 16,
+          "slug": "heterogeneity-synthesis-analyzer",
+          "subcategory": "literature-review-evidence-synthesis",
+          "title": {
+            "en": "Heterogeneity & Synthesis Analyzer",
+            "sr": "Analiza heterogenosti i sinteze"
+          }
+        },
+        {
+          "id": "UPL-SCI-017",
+          "number": 17,
+          "slug": "publication-bias-small-study-audit",
+          "subcategory": "literature-review-evidence-synthesis",
+          "title": {
+            "en": "Publication Bias & Small-Study Audit",
+            "sr": "Audit publication bias i small-study efekata"
+          }
+        },
+        {
+          "id": "UPL-SCI-018",
+          "number": 18,
+          "slug": "evidence-map-builder",
+          "subcategory": "literature-review-evidence-synthesis",
+          "title": {
+            "en": "Evidence Map Builder",
+            "sr": "Izrada mape dokaza"
+          }
+        },
+        {
+          "id": "UPL-SCI-019",
+          "number": 19,
+          "slug": "rapid-review-framework",
+          "subcategory": "literature-review-evidence-synthesis",
+          "title": {
+            "en": "Rapid Review Framework",
+            "sr": "Okvir za rapid review"
+          }
+        },
+        {
+          "id": "UPL-SCI-020",
+          "number": 20,
+          "slug": "literature-synthesis-integrity-check",
+          "subcategory": "literature-review-evidence-synthesis",
+          "title": {
+            "en": "Literature Synthesis Integrity Check",
+            "sr": "Provera integriteta sinteze literature"
+          }
+        },
+        {
+          "id": "UPL-SCI-021",
+          "number": 21,
+          "slug": "descriptive-statistics-audit",
+          "subcategory": "statistics-quantitative-analysis",
+          "title": {
+            "en": "Descriptive Statistics Audit",
+            "sr": "Audit deskriptivne statistike"
+          }
+        },
+        {
+          "id": "UPL-SCI-022",
+          "number": 22,
+          "slug": "effect-size-interpretation-framework",
+          "subcategory": "statistics-quantitative-analysis",
+          "title": {
+            "en": "Effect Size Interpretation Framework",
+            "sr": "Okvir za tumačenje veličine efekta"
+          }
+        },
+        {
+          "id": "UPL-SCI-023",
+          "number": 23,
+          "slug": "confidence-interval-uncertainty-audit",
+          "subcategory": "statistics-quantitative-analysis",
+          "title": {
+            "en": "Confidence Interval & Uncertainty Audit",
+            "sr": "Audit intervala pouzdanosti i neizvesnosti"
+          }
+        },
+        {
+          "id": "UPL-SCI-024",
+          "number": 24,
+          "slug": "hypothesis-testing-misuse-audit",
+          "subcategory": "statistics-quantitative-analysis",
+          "title": {
+            "en": "Hypothesis Testing Misuse Audit",
+            "sr": "Audit zloupotrebe testiranja hipoteza"
+          }
+        },
+        {
+          "id": "UPL-SCI-025",
+          "number": 25,
+          "slug": "regression-model-design-audit",
+          "subcategory": "statistics-quantitative-analysis",
+          "title": {
+            "en": "Regression Model Design Audit",
+            "sr": "Audit dizajna regresionog modela"
+          }
+        },
+        {
+          "id": "UPL-SCI-026",
+          "number": 26,
+          "slug": "model-diagnostics-assumption-check",
+          "subcategory": "statistics-quantitative-analysis",
+          "title": {
+            "en": "Model Diagnostics & Assumption Check",
+            "sr": "Dijagnostika modela i provera pretpostavki"
+          }
+        },
+        {
+          "id": "UPL-SCI-027",
+          "number": 27,
+          "slug": "multiple-testing-control-framework",
+          "subcategory": "statistics-quantitative-analysis",
+          "title": {
+            "en": "Multiple Testing Control Framework",
+            "sr": "Okvir kontrole višestrukog testiranja"
+          }
+        },
+        {
+          "id": "UPL-SCI-028",
+          "number": 28,
+          "slug": "missing-data-analysis-plan",
+          "subcategory": "statistics-quantitative-analysis",
+          "title": {
+            "en": "Missing Data Analysis Plan",
+            "sr": "Plan analize nedostajućih podataka"
+          }
+        },
+        {
+          "id": "UPL-SCI-029",
+          "number": 29,
+          "slug": "sensitivity-analysis-builder",
+          "subcategory": "statistics-quantitative-analysis",
+          "title": {
+            "en": "Sensitivity Analysis Builder",
+            "sr": "Izrada sensitivity analize"
+          }
+        },
+        {
+          "id": "UPL-SCI-030",
+          "number": 30,
+          "slug": "statistical-results-integrity-review",
+          "subcategory": "statistics-quantitative-analysis",
+          "title": {
+            "en": "Statistical Results Integrity Review",
+            "sr": "Pregled integriteta statističkih rezultata"
+          }
+        },
+        {
+          "id": "UPL-SCI-031",
+          "number": 31,
+          "slug": "causal-question-and-dag-builder",
+          "subcategory": "causal-inference-experimental-reasoning",
+          "title": {
+            "en": "Causal Question & DAG Builder",
+            "sr": "Izrada kauzalnog pitanja i DAG-a"
+          }
+        },
+        {
+          "id": "UPL-SCI-032",
+          "number": 32,
+          "slug": "confounding-bias-audit",
+          "subcategory": "causal-inference-experimental-reasoning",
+          "title": {
+            "en": "Confounding & Bias Audit",
+            "sr": "Audit confoundinga i pristrasnosti"
+          }
+        },
+        {
+          "id": "UPL-SCI-033",
+          "number": 33,
+          "slug": "randomized-experiment-design-review",
+          "subcategory": "causal-inference-experimental-reasoning",
+          "title": {
+            "en": "Randomized Experiment Design Review",
+            "sr": "Pregled dizajna randomizovanog eksperimenta"
+          }
+        },
+        {
+          "id": "UPL-SCI-034",
+          "number": 34,
+          "slug": "quasi-experimental-design-selector",
+          "subcategory": "causal-inference-experimental-reasoning",
+          "title": {
+            "en": "Quasi-Experimental Design Selector",
+            "sr": "Izbor kvazi-eksperimentalnog dizajna"
+          }
+        },
+        {
+          "id": "UPL-SCI-035",
+          "number": 35,
+          "slug": "difference-in-differences-audit",
+          "subcategory": "causal-inference-experimental-reasoning",
+          "title": {
+            "en": "Difference-in-Differences Audit",
+            "sr": "Audit difference-in-differences analize"
+          }
+        },
+        {
+          "id": "UPL-SCI-036",
+          "number": 36,
+          "slug": "instrumental-variable-validity-review",
+          "subcategory": "causal-inference-experimental-reasoning",
+          "title": {
+            "en": "Instrumental Variable Validity Review",
+            "sr": "Pregled validnosti instrumentalne varijable"
+          }
+        },
+        {
+          "id": "UPL-SCI-037",
+          "number": 37,
+          "slug": "regression-discontinuity-audit",
+          "subcategory": "causal-inference-experimental-reasoning",
+          "title": {
+            "en": "Regression Discontinuity Audit",
+            "sr": "Audit regression discontinuity dizajna"
+          }
+        },
+        {
+          "id": "UPL-SCI-038",
+          "number": 38,
+          "slug": "causal-mediation-mechanism-audit",
+          "subcategory": "causal-inference-experimental-reasoning",
+          "title": {
+            "en": "Causal Mediation & Mechanism Audit",
+            "sr": "Audit kauzalne medijacije i mehanizma"
+          }
+        },
+        {
+          "id": "UPL-SCI-039",
+          "number": 39,
+          "slug": "causal-sensitivity-robustness-plan",
+          "subcategory": "causal-inference-experimental-reasoning",
+          "title": {
+            "en": "Causal Sensitivity & Robustness Plan",
+            "sr": "Plan kauzalne sensitivity i robustness analize"
+          }
+        },
+        {
+          "id": "UPL-SCI-040",
+          "number": 40,
+          "slug": "causal-claim-red-team",
+          "subcategory": "causal-inference-experimental-reasoning",
+          "title": {
+            "en": "Causal Claim Red Team",
+            "sr": "Red-team kauzalne tvrdnje"
+          }
+        },
+        {
+          "id": "UPL-SCI-041",
+          "number": 41,
+          "slug": "data-provenance-audit",
+          "subcategory": "data-quality-reproducibility",
+          "title": {
+            "en": "Data Provenance Audit",
+            "sr": "Audit porekla podataka"
+          }
+        },
+        {
+          "id": "UPL-SCI-042",
+          "number": 42,
+          "slug": "data-cleaning-integrity-plan",
+          "subcategory": "data-quality-reproducibility",
+          "title": {
+            "en": "Data Cleaning Integrity Plan",
+            "sr": "Plan integriteta čišćenja podataka"
+          }
+        },
+        {
+          "id": "UPL-SCI-043",
+          "number": 43,
+          "slug": "missingness-mechanism-audit",
+          "subcategory": "data-quality-reproducibility",
+          "title": {
+            "en": "Missingness Mechanism Audit",
+            "sr": "Audit mehanizma nedostajućih podataka"
+          }
+        },
+        {
+          "id": "UPL-SCI-044",
+          "number": 44,
+          "slug": "reproducible-analysis-pipeline",
+          "subcategory": "data-quality-reproducibility",
+          "title": {
+            "en": "Reproducible Analysis Pipeline",
+            "sr": "Reproduktivni pipeline analize"
+          }
+        },
+        {
+          "id": "UPL-SCI-045",
+          "number": 45,
+          "slug": "fair-data-principles-audit",
+          "subcategory": "data-quality-reproducibility",
+          "title": {
+            "en": "FAIR Data Principles Audit",
+            "sr": "Audit FAIR principa podataka"
+          }
+        },
+        {
+          "id": "UPL-SCI-046",
+          "number": 46,
+          "slug": "research-version-control-plan",
+          "subcategory": "data-quality-reproducibility",
+          "title": {
+            "en": "Research Version Control Plan",
+            "sr": "Plan version controla istraživanja"
+          }
+        },
+        {
+          "id": "UPL-SCI-047",
+          "number": 47,
+          "slug": "analysis-audit-trail-builder",
+          "subcategory": "data-quality-reproducibility",
+          "title": {
+            "en": "Analysis Audit Trail Builder",
+            "sr": "Izrada audit traga analize"
+          }
+        },
+        {
+          "id": "UPL-SCI-048",
+          "number": 48,
+          "slug": "data-dictionary-schema-audit",
+          "subcategory": "data-quality-reproducibility",
+          "title": {
+            "en": "Data Dictionary & Schema Audit",
+            "sr": "Audit data dictionary i šeme"
+          }
+        },
+        {
+          "id": "UPL-SCI-049",
+          "number": 49,
+          "slug": "replication-readiness-review",
+          "subcategory": "data-quality-reproducibility",
+          "title": {
+            "en": "Replication Readiness Review",
+            "sr": "Pregled spremnosti za replikaciju"
+          }
+        },
+        {
+          "id": "UPL-SCI-050",
+          "number": 50,
+          "slug": "computational-reproducibility-audit",
+          "subcategory": "data-quality-reproducibility",
+          "title": {
+            "en": "Computational Reproducibility Audit",
+            "sr": "Audit računarske reproduktivnosti"
+          }
+        },
+        {
+          "id": "UPL-SCI-051",
+          "number": 51,
+          "slug": "qualitative-research-question-design",
+          "subcategory": "qualitative-mixed-methods",
+          "title": {
+            "en": "Qualitative Research Question Design",
+            "sr": "Dizajn kvalitativnog istraživačkog pitanja"
+          }
+        },
+        {
+          "id": "UPL-SCI-052",
+          "number": 52,
+          "slug": "interview-guide-builder",
+          "subcategory": "qualitative-mixed-methods",
+          "title": {
+            "en": "Interview Guide Builder",
+            "sr": "Izrada vodiča za intervju"
+          }
+        },
+        {
+          "id": "UPL-SCI-053",
+          "number": 53,
+          "slug": "focus-group-design-audit",
+          "subcategory": "qualitative-mixed-methods",
+          "title": {
+            "en": "Focus Group Design Audit",
+            "sr": "Audit dizajna fokus grupe"
+          }
+        },
+        {
+          "id": "UPL-SCI-054",
+          "number": 54,
+          "slug": "coding-framework-builder",
+          "subcategory": "qualitative-mixed-methods",
+          "title": {
+            "en": "Qualitative Coding Framework Builder",
+            "sr": "Izrada okvira kvalitativnog kodiranja"
+          }
+        },
+        {
+          "id": "UPL-SCI-055",
+          "number": 55,
+          "slug": "thematic-analysis-integrity-review",
+          "subcategory": "qualitative-mixed-methods",
+          "title": {
+            "en": "Thematic Analysis Integrity Review",
+            "sr": "Pregled integriteta tematske analize"
+          }
+        },
+        {
+          "id": "UPL-SCI-056",
+          "number": 56,
+          "slug": "researcher-reflexivity-audit",
+          "subcategory": "qualitative-mixed-methods",
+          "title": {
+            "en": "Researcher Reflexivity Audit",
+            "sr": "Audit istraživačke refleksivnosti"
+          }
+        },
+        {
+          "id": "UPL-SCI-057",
+          "number": 57,
+          "slug": "qualitative-sampling-saturation-plan",
+          "subcategory": "qualitative-mixed-methods",
+          "title": {
+            "en": "Qualitative Sampling & Saturation Plan",
+            "sr": "Plan kvalitativnog uzorkovanja i saturacije"
+          }
+        },
+        {
+          "id": "UPL-SCI-058",
+          "number": 58,
+          "slug": "triangulation-framework",
+          "subcategory": "qualitative-mixed-methods",
+          "title": {
+            "en": "Triangulation Framework",
+            "sr": "Okvir triangulacije"
+          }
+        },
+        {
+          "id": "UPL-SCI-059",
+          "number": 59,
+          "slug": "mixed-methods-integration-plan",
+          "subcategory": "qualitative-mixed-methods",
+          "title": {
+            "en": "Mixed Methods Integration Plan",
+            "sr": "Plan integracije mešovitih metoda"
+          }
+        },
+        {
+          "id": "UPL-SCI-060",
+          "number": 60,
+          "slug": "qualitative-claim-evidence-audit",
+          "subcategory": "qualitative-mixed-methods",
+          "title": {
+            "en": "Qualitative Claim Evidence Audit",
+            "sr": "Audit kvalitativnih tvrdnji i dokaza"
+          }
+        },
+        {
+          "id": "UPL-SCI-061",
+          "number": 61,
+          "slug": "scientific-figure-integrity-audit",
+          "subcategory": "scientific-visualization-communication",
+          "title": {
+            "en": "Scientific Figure Integrity Audit",
+            "sr": "Audit integriteta naučne figure"
+          }
+        },
+        {
+          "id": "UPL-SCI-062",
+          "number": 62,
+          "slug": "scientific-table-design-review",
+          "subcategory": "scientific-visualization-communication",
+          "title": {
+            "en": "Scientific Table Design Review",
+            "sr": "Pregled dizajna naučne tabele"
+          }
+        },
+        {
+          "id": "UPL-SCI-063",
+          "number": 63,
+          "slug": "uncertainty-visualization-framework",
+          "subcategory": "scientific-visualization-communication",
+          "title": {
+            "en": "Uncertainty Visualization Framework",
+            "sr": "Okvir vizualizacije neizvesnosti"
+          }
+        },
+        {
+          "id": "UPL-SCI-064",
+          "number": 64,
+          "slug": "results-section-structure-audit",
+          "subcategory": "scientific-visualization-communication",
+          "title": {
+            "en": "Results Section Structure Audit",
+            "sr": "Audit strukture odeljka rezultata"
+          }
+        },
+        {
+          "id": "UPL-SCI-065",
+          "number": 65,
+          "slug": "discussion-section-claim-audit",
+          "subcategory": "scientific-visualization-communication",
+          "title": {
+            "en": "Discussion Section Claim Audit",
+            "sr": "Audit tvrdnji u diskusiji"
+          }
+        },
+        {
+          "id": "UPL-SCI-066",
+          "number": 66,
+          "slug": "scientific-abstract-builder",
+          "subcategory": "scientific-visualization-communication",
+          "title": {
+            "en": "Scientific Abstract Builder",
+            "sr": "Izrada naučnog apstrakta"
+          }
+        },
+        {
+          "id": "UPL-SCI-067",
+          "number": 67,
+          "slug": "research-poster-design",
+          "subcategory": "scientific-visualization-communication",
+          "title": {
+            "en": "Research Poster Design",
+            "sr": "Dizajn istraživačkog postera"
+          }
+        },
+        {
+          "id": "UPL-SCI-068",
+          "number": 68,
+          "slug": "scientific-presentation-builder",
+          "subcategory": "scientific-visualization-communication",
+          "title": {
+            "en": "Scientific Presentation Builder",
+            "sr": "Izrada naučne prezentacije"
+          }
+        },
+        {
+          "id": "UPL-SCI-069",
+          "number": 69,
+          "slug": "public-science-communication-audit",
+          "subcategory": "scientific-visualization-communication",
+          "title": {
+            "en": "Public Science Communication Audit",
+            "sr": "Audit javne naučne komunikacije"
+          }
+        },
+        {
+          "id": "UPL-SCI-070",
+          "number": 70,
+          "slug": "scientific-writing-clarity-review",
+          "subcategory": "scientific-visualization-communication",
+          "title": {
+            "en": "Scientific Writing Clarity Review",
+            "sr": "Pregled jasnoće naučnog pisanja"
+          }
+        },
+        {
+          "id": "UPL-SCI-071",
+          "number": 71,
+          "slug": "peer-review-report-builder",
+          "subcategory": "peer-review-research-integrity",
+          "title": {
+            "en": "Peer Review Report Builder",
+            "sr": "Izrada recenzentskog izveštaja"
+          }
+        },
+        {
+          "id": "UPL-SCI-072",
+          "number": 72,
+          "slug": "reporting-guideline-compliance-audit",
+          "subcategory": "peer-review-research-integrity",
+          "title": {
+            "en": "Reporting Guideline Compliance Audit",
+            "sr": "Audit usklađenosti sa reporting smernicama"
+          }
+        },
+        {
+          "id": "UPL-SCI-073",
+          "number": 73,
+          "slug": "authorship-contribution-audit",
+          "subcategory": "peer-review-research-integrity",
+          "title": {
+            "en": "Authorship & Contribution Audit",
+            "sr": "Audit autorstva i doprinosa"
+          }
+        },
+        {
+          "id": "UPL-SCI-074",
+          "number": 74,
+          "slug": "conflict-of-interest-disclosure-audit",
+          "subcategory": "peer-review-research-integrity",
+          "title": {
+            "en": "Conflict of Interest Disclosure Audit",
+            "sr": "Audit prijave sukoba interesa"
+          }
+        },
+        {
+          "id": "UPL-SCI-075",
+          "number": 75,
+          "slug": "questionable-research-practice-audit",
+          "subcategory": "peer-review-research-integrity",
+          "title": {
+            "en": "Questionable Research Practice Audit",
+            "sr": "Audit problematičnih istraživačkih praksi"
+          }
+        },
+        {
+          "id": "UPL-SCI-076",
+          "number": 76,
+          "slug": "image-data-manipulation-risk-review",
+          "subcategory": "peer-review-research-integrity",
+          "title": {
+            "en": "Image & Data Manipulation Risk Review",
+            "sr": "Pregled rizika manipulacije slikama i podacima"
+          }
+        },
+        {
+          "id": "UPL-SCI-077",
+          "number": 77,
+          "slug": "correction-retraction-assessment",
+          "subcategory": "peer-review-research-integrity",
+          "title": {
+            "en": "Correction & Retraction Assessment",
+            "sr": "Procena potrebe za ispravkom ili povlačenjem rada"
+          }
+        },
+        {
+          "id": "UPL-SCI-078",
+          "number": 78,
+          "slug": "open-science-transparency-audit",
+          "subcategory": "peer-review-research-integrity",
+          "title": {
+            "en": "Open Science Transparency Audit",
+            "sr": "Audit open science transparentnosti"
+          }
+        },
+        {
+          "id": "UPL-SCI-079",
+          "number": 79,
+          "slug": "research-ethics-documentation-review",
+          "subcategory": "peer-review-research-integrity",
+          "title": {
+            "en": "Research Ethics Documentation Review",
+            "sr": "Pregled dokumentacije istraživačke etike"
+          }
+        },
+        {
+          "id": "UPL-SCI-080",
+          "number": 80,
+          "slug": "research-integrity-red-team",
+          "subcategory": "peer-review-research-integrity",
+          "title": {
+            "en": "Research Integrity Red Team",
+            "sr": "Red-team integriteta istraživanja"
+          }
+        },
+        {
+          "id": "UPL-SCI-081",
+          "number": 81,
+          "slug": "mathematical-model-structure-audit",
+          "subcategory": "domain-analysis-modeling-simulation",
+          "title": {
+            "en": "Mathematical Model Structure Audit",
+            "sr": "Audit strukture matematičkog modela"
+          }
+        },
+        {
+          "id": "UPL-SCI-082",
+          "number": 82,
+          "slug": "simulation-design-integrity-review",
+          "subcategory": "domain-analysis-modeling-simulation",
+          "title": {
+            "en": "Simulation Design Integrity Review",
+            "sr": "Pregled integriteta dizajna simulacije"
+          }
+        },
+        {
+          "id": "UPL-SCI-083",
+          "number": 83,
+          "slug": "parameter-estimation-audit",
+          "subcategory": "domain-analysis-modeling-simulation",
+          "title": {
+            "en": "Parameter Estimation Audit",
+            "sr": "Audit procene parametara"
+          }
+        },
+        {
+          "id": "UPL-SCI-084",
+          "number": 84,
+          "slug": "model-calibration-validation-framework",
+          "subcategory": "domain-analysis-modeling-simulation",
+          "title": {
+            "en": "Model Calibration & Validation Framework",
+            "sr": "Okvir kalibracije i validacije modela"
+          }
+        },
+        {
+          "id": "UPL-SCI-085",
+          "number": 85,
+          "slug": "global-sensitivity-analysis-plan",
+          "subcategory": "domain-analysis-modeling-simulation",
+          "title": {
+            "en": "Global Sensitivity Analysis Plan",
+            "sr": "Plan globalne sensitivity analize"
+          }
+        },
+        {
+          "id": "UPL-SCI-086",
+          "number": 86,
+          "slug": "uncertainty-propagation-audit",
+          "subcategory": "domain-analysis-modeling-simulation",
+          "title": {
+            "en": "Uncertainty Propagation Audit",
+            "sr": "Audit propagacije neizvesnosti"
+          }
+        },
+        {
+          "id": "UPL-SCI-087",
+          "number": 87,
+          "slug": "computational-experiment-design",
+          "subcategory": "domain-analysis-modeling-simulation",
+          "title": {
+            "en": "Computational Experiment Design",
+            "sr": "Dizajn računarskog eksperimenta"
+          }
+        },
+        {
+          "id": "UPL-SCI-088",
+          "number": 88,
+          "slug": "simulation-code-verification-plan",
+          "subcategory": "domain-analysis-modeling-simulation",
+          "title": {
+            "en": "Simulation Code Verification Plan",
+            "sr": "Plan verifikacije koda simulacije"
+          }
+        },
+        {
+          "id": "UPL-SCI-089",
+          "number": 89,
+          "slug": "model-comparison-selection-audit",
+          "subcategory": "domain-analysis-modeling-simulation",
+          "title": {
+            "en": "Model Comparison & Selection Audit",
+            "sr": "Audit poređenja i izbora modela"
+          }
+        },
+        {
+          "id": "UPL-SCI-090",
+          "number": 90,
+          "slug": "model-limitations-stress-test",
+          "subcategory": "domain-analysis-modeling-simulation",
+          "title": {
+            "en": "Model Limitations Stress Test",
+            "sr": "Stress test ograničenja modela"
+          }
+        },
+        {
+          "id": "UPL-SCI-091",
+          "number": 91,
+          "slug": "research-project-roadmap",
+          "subcategory": "research-projects-decisions",
+          "title": {
+            "en": "Research Project Roadmap",
+            "sr": "Roadmap istraživačkog projekta"
+          }
+        },
+        {
+          "id": "UPL-SCI-092",
+          "number": 92,
+          "slug": "research-priority-setting-framework",
+          "subcategory": "research-projects-decisions",
+          "title": {
+            "en": "Research Priority Setting Framework",
+            "sr": "Okvir postavljanja istraživačkih prioriteta"
+          }
+        },
+        {
+          "id": "UPL-SCI-093",
+          "number": 93,
+          "slug": "evidence-to-decision-framework",
+          "subcategory": "research-projects-decisions",
+          "title": {
+            "en": "Evidence-to-Decision Framework",
+            "sr": "Okvir od dokaza do odluke"
+          }
+        },
+        {
+          "id": "UPL-SCI-094",
+          "number": 94,
+          "slug": "research-risk-register",
+          "subcategory": "research-projects-decisions",
+          "title": {
+            "en": "Research Risk Register",
+            "sr": "Registar rizika istraživanja"
+          }
+        },
+        {
+          "id": "UPL-SCI-095",
+          "number": 95,
+          "slug": "research-resource-allocation-plan",
+          "subcategory": "research-projects-decisions",
+          "title": {
+            "en": "Research Resource Allocation Plan",
+            "sr": "Plan alokacije istraživačkih resursa"
+          }
+        },
+        {
+          "id": "UPL-SCI-096",
+          "number": 96,
+          "slug": "stakeholder-evidence-translation-plan",
+          "subcategory": "research-projects-decisions",
+          "title": {
+            "en": "Stakeholder Evidence Translation Plan",
+            "sr": "Plan prevođenja dokaza za zainteresovane strane"
+          }
+        },
+        {
+          "id": "UPL-SCI-097",
+          "number": 97,
+          "slug": "policy-evidence-brief-builder",
+          "subcategory": "research-projects-decisions",
+          "title": {
+            "en": "Policy Evidence Brief Builder",
+            "sr": "Izrada policy evidence brief-a"
+          }
+        },
+        {
+          "id": "UPL-SCI-098",
+          "number": 98,
+          "slug": "research-impact-evaluation-plan",
+          "subcategory": "research-projects-decisions",
+          "title": {
+            "en": "Research Impact Evaluation Plan",
+            "sr": "Plan evaluacije uticaja istraživanja"
+          }
+        },
+        {
+          "id": "UPL-SCI-099",
+          "number": 99,
+          "slug": "post-study-learning-review",
+          "subcategory": "research-projects-decisions",
+          "title": {
+            "en": "Post-Study Learning Review",
+            "sr": "Post-study pregled naučenih lekcija"
+          }
+        },
+        {
+          "id": "UPL-SCI-100",
+          "number": 100,
+          "slug": "research-program-portfolio-audit",
+          "subcategory": "research-projects-decisions",
+          "title": {
+            "en": "Research Program Portfolio Audit",
+            "sr": "Audit portfolija istraživačkog programa"
+          }
+        }
+      ]
     },
     {
       "id": "UPL-CAREER",
