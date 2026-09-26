@@ -1770,7 +1770,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "ai-llm-automation",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1780,8 +1780,8 @@
         "sr": "AI Agent Reliability Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/07-ai-llm-automation/066-ai-agent-reliability-audit.md",
@@ -1878,7 +1878,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "ai-llm-automation",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1888,8 +1888,8 @@
         "sr": "AI Model Selection & Evaluation"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/07-ai-llm-automation/070-ai-model-selection-and-evaluation.md",

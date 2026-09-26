@@ -35,6 +35,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- UPL-IT-066 and UPL-IT-070 (English and Serbian, `1.0.0` -> `1.1.0`): 066 gained its non-goals and priority order; 070 gained a P0-P4 severity scale for risks in the model choice and evaluation process (sections after it renumbered). `npm run audit:prompts` now also recognizes the "This is not:" / "Ovo nije:" non-goals list as a scope signal.
 - UPL-IT-042 to UPL-IT-060 (English and Serbian, version `1.0.0`/`1.0.1` -> `1.1.0`): methodological expansion of the focused DevOps and Database prompts. IDs, filenames, output filenames, catalog entries and status are unchanged, and every prompt stays self-contained.
   - 045-049 and 052-059 were substantially expanded: objective and non-goals, context discovery, evidence tiers A-E, a status model (CONFIRMED, LIKELY, NOT VERIFIED, NOT APPLICABLE, CONTROLLED, HARDENING), explicit false-positive rules, domain-specific deep sections, relevant matrices, a finding format with the minimum fields, domain-specific P0-P4 severity, an adversarial second pass, a final quality gate and additional failure chains.
   - 042, 043, 044, 050, 051 and 060 gained a compact section with the missing status model and false-positive rules (and the evidence tier scale or full P0-P4 range where it was missing), plus Status and Evidence tier fields in their finding formats.

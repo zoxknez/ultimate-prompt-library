@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: AI, LLM i automatizacija
 subcategory_id: ai-llm-automation
 language: sr
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -370,33 +370,57 @@ NOT VERIFIED
 NOT APPLICABLE
 ```
 
-## 103. IMPORTANT DECISION RULE
+## 103. SEVERITY
+
+Severity se odnosi na rizike u trenutnom izboru modela ili u procesu evaluacije, a ne na rangiranje modela.
+
+P0:
+- izabrani model ili routing automatski obavlja critical/high-stakes task sa neproverenim kvalitetom i dovodi do štetnih akcija u velikom obimu
+- izbor krši hard requirement za sensitive data (privacy, region, retention)
+
+P1:
+- izabrani model ne ispunjava hard requirement (tools, context, structured output, throughput) ili pravi ponovljive critical errors u critical task class-i koje evaluacija nije pokrila
+- nema fallback-a ni rollback-a za model koji je već u production-u
+
+P2:
+- značajna regresija quality-ja, latency-ja ili cost per successful task na važnom segmentu
+- evaluacija nije reprezentativna za stvarni task distribution
+
+P3:
+- ograničen gap: segment koji nedostaje, premalo ponavljanja, nedokumentovani parametri
+
+P4:
+- process hardening: periodična re-evaluacija, shadow testing, drift monitoring
+
+Rizik prijavi kao confirmed samo uz evidence tier A ili B.
+
+## 104. IMPORTANT DECISION RULE
 
 Ne napravi jedan globalni numeric score ako weights nisu eksplicitno business-defined.
 
 Radije prikaži tradeoff.
 
-## 104. MODEL COMPARISON MATRIX
+## 105. MODEL COMPARISON MATRIX
 
 | Model | Critical quality | General quality | p95 | Cost/success | Tools |
 |---|---:|---:|---:|---:|---|
 
-## 105. TASK MATRIX
+## 106. TASK MATRIX
 
 | Task | Model A | Model B | Model C | Notes |
 |---|---:|---:|---:|---|
 
-## 106. FAILURE MATRIX
+## 107. FAILURE MATRIX
 
 | Model | Critical failures | Refusal | Schema fail | Tool fail |
 |---|---:|---:|---:|---:|
 
-## 107. ROUTING MATRIX
+## 108. ROUTING MATRIX
 
 | Task class | Primary | Fallback | Escalation condition |
 |---|---|---|---|
 
-## 108. DECISION OUTPUT
+## 109. DECISION OUTPUT
 
 Ne daj samo:
 
@@ -422,7 +446,7 @@ operations
 
 Ako korisnik traži final selection za non-political product decision, možeš dati recommendation zasnovanu na jasno dokumentovanim weights.
 
-## 109. SECOND PASS
+## 110. SECOND PASS
 
 Ponovi evaluaciju:
 
@@ -437,7 +461,7 @@ Ponovi evaluaciju:
 - current pricing
 - critical error analysis
 
-## 110. FINAL QUALITY GATE
+## 111. FINAL QUALITY GATE
 
 Confirm:
 
@@ -461,11 +485,11 @@ Confirm:
 - rollout
 - drift
 
-## 111. OUTPUT
+## 112. OUTPUT
 
 `AI_MODEL_SELECTION_EVALUATION.md`
 
-## 112. FAILURE CHAINS
+## 113. FAILURE CHAINS
 
 ```text
 public benchmark shows Model A ahead

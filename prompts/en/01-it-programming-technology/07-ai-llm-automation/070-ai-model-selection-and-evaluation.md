@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: AI, LLM & Automation
 subcategory_id: ai-llm-automation
 language: en
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -370,33 +370,57 @@ NOT VERIFIED
 NOT APPLICABLE
 ```
 
-## 103. IMPORTANT DECISION RULE
+## 103. SEVERITY
+
+Severity applies to risks in the current model choice or in the evaluation process, not to ranking models.
+
+P0:
+- the selected model or routing automatically performs a critical/high-stakes task with unverified quality and causes harmful actions at scale
+- the selection violates a hard requirement for sensitive data (privacy, region, retention)
+
+P1:
+- the selected model fails a hard requirement (tools, context, structured output, throughput) or makes repeatable critical errors in a critical task class that the evaluation did not cover
+- no fallback or rollback exists for a model already in production
+
+P2:
+- a significant regression in quality, latency or cost per successful task on an important segment
+- the evaluation is not representative of the real task distribution
+
+P3:
+- a limited gap: a missing segment, too few repetitions, undocumented parameters
+
+P4:
+- process hardening: periodic re-evaluation, shadow testing, drift monitoring
+
+Report a risk as confirmed only with evidence tier A or B.
+
+## 104. IMPORTANT DECISION RULE
 
 Do not build one global numeric score unless the weights are explicitly business-defined.
 
 Show the trade-off instead.
 
-## 104. MODEL COMPARISON MATRIX
+## 105. MODEL COMPARISON MATRIX
 
 | Model | Critical quality | General quality | p95 | Cost/success | Tools |
 |---|---:|---:|---:|---:|---|
 
-## 105. TASK MATRIX
+## 106. TASK MATRIX
 
 | Task | Model A | Model B | Model C | Notes |
 |---|---:|---:|---:|---|
 
-## 106. FAILURE MATRIX
+## 107. FAILURE MATRIX
 
 | Model | Critical failures | Refusal | Schema fail | Tool fail |
 |---|---:|---:|---:|---:|
 
-## 107. ROUTING MATRIX
+## 108. ROUTING MATRIX
 
 | Task class | Primary | Fallback | Escalation condition |
 |---|---|---|---|
 
-## 108. DECISION OUTPUT
+## 109. DECISION OUTPUT
 
 Do not give only:
 
@@ -422,7 +446,7 @@ operations
 
 If the user asks for a final selection for a non-political product decision, you can give a recommendation based on clearly documented weights.
 
-## 109. SECOND PASS
+## 110. SECOND PASS
 
 Repeat the evaluation:
 
@@ -437,7 +461,7 @@ Repeat the evaluation:
 - current pricing
 - critical error analysis
 
-## 110. FINAL QUALITY GATE
+## 111. FINAL QUALITY GATE
 
 Confirm:
 
@@ -461,11 +485,11 @@ Confirm:
 - rollout
 - drift
 
-## 111. OUTPUT
+## 112. OUTPUT
 
 `AI_MODEL_SELECTION_EVALUATION.md`
 
-## 112. FAILURE CHAINS
+## 113. FAILURE CHAINS
 
 ```text
 public benchmark shows Model A ahead

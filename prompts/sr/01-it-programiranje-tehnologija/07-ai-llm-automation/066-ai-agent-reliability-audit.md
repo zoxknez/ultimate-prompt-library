@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: AI, LLM i automatizacija
 subcategory_id: ai-llm-automation
 language: sr
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -19,6 +19,19 @@ status: stable
 Glavni cilj:
 
 > Dokazati da agent može pouzdano završiti zadatak i pod failure uslovima, ne samo na idealnom happy-path demo-u.
+
+Ovo nije:
+
+- benchmark na happy-path demo zadacima
+- brojanje koraka ili tool call-ova kao mera kvaliteta
+- pretpostavka da retry, fallback ili nondeterminism sami po sebi znače grešku
+- pretpostavka da "done" od modela znači da je zadatak završen
+- redizajn agent arhitekture, osim kada ga konkretan reliability defekt zahteva
+- tvrdnja o exactly-once izvršavanju bez dokaza
+
+Prioritet:
+
+**duplicated or lost irreversible side effects > corrupted or lost state > authority violations during recovery > runaway execution > unrecoverable task failure > silent task failure > tail latency/cost > observability gaps**
 
 ## 1. RELIABILITY SLO
 

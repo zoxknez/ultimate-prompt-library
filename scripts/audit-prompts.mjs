@@ -17,7 +17,8 @@ const OUTLIER_BELOW_PCT = 50; // flag prompts more than 50% smaller than their s
 
 const SIGNALS = {
   objective: (b) => /\b(main|primary)?\s*objective\b|\bgoal\b|\bI want\b|\bcilj\b|\bželim\b/i.test(b.slice(0, 4000)),
-  scope: (b) => /\bscope\b|non-goals?|out of scope|do not (report|invent|fabricate|flag)|\bobim\w*|ne prijavljuj|ne izmišljaj/i.test(b),
+  scope: (b) =>
+    /\bscope\b|non-goals?|out of scope|do not (report|invent|fabricate|flag)|\bobim\w*|ne prijavljuj|ne izmišljaj|^(this is not|ovo nije):/im.test(b),
   evidence: (b) => (b.match(/\bevidence\b|\bdokaz/gi) ?? []).length >= 3,
   confirmedVsTheoretical: (b) =>
     /\bconfirmed\b|potvrđen/i.test(b) && /theoretical|hypothes|suspected|not verified|teorijsk|hipotez|sumnj/i.test(b),

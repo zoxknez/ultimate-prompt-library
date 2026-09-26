@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: AI, LLM & Automation
 subcategory_id: ai-llm-automation
 language: en
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -19,6 +19,19 @@ I want a deep reliability audit of the AI agent with a focus on trajectory corre
 Main objective:
 
 > Prove that the agent can reliably complete the task under failure conditions too, not only in an ideal happy-path demo.
+
+This is not:
+
+- a benchmark on happy-path demo tasks
+- counting steps or tool calls as a measure of quality
+- an assumption that retries, fallback or nondeterminism are failures by themselves
+- an assumption that "done" from the model means the task is complete
+- a redesign of the agent architecture, unless a concrete reliability defect requires it
+- a claim of exactly-once execution without proof
+
+Priority:
+
+**duplicated or lost irreversible side effects > corrupted or lost state > authority violations during recovery > runaway execution > unrecoverable task failure > silent task failure > tail latency/cost > observability gaps**
 
 ## 1. RELIABILITY SLO
 

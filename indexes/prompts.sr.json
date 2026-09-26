@@ -990,7 +990,7 @@
       "subcategory": "AI, LLM i automatizacija",
       "subcategoryId": "ai-llm-automation",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/066-ai-agent-reliability-audit.md"
     },
     {
@@ -1050,7 +1050,7 @@
       "subcategory": "AI, LLM i automatizacija",
       "subcategoryId": "ai-llm-automation",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/070-ai-model-selection-and-evaluation.md"
     }
   ]
