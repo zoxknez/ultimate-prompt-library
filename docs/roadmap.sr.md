@@ -64,7 +64,7 @@ Faza 1 je završena: svih 100 promptova je objavljeno na engleskom i srpskom. Po
 
 ## Buduće kolekcije
 
-Sledeće oblasti već imaju svoje foldere, ID prefikse i README fajlove. Osim oblasti Ekonomija, finansije i poslovanje (Faza 2 iznad), njihove podkategorije i promptovi biće osmišljeni jedna po jedna oblast; broj promptova nije unapred određen.
+Sledeće oblasti već imaju svoje foldere, ID prefikse i README fajlove. Završene IT i Business kolekcije postavljaju početni standard. Preostale kolekcije biće osmišljavane jedna po jedna oblast; broj promptova nije unapred određen.
 
 | Oblast | ID prefiks | Status |
 |---|---|---|
@@ -80,5 +80,5 @@ Sledeće oblasti već imaju svoje foldere, ID prefikse i README fajlove. Osim ob
 
 ## Pored promptova
 
-- **Web sajt:** raspored foldera i generisani indeksi u [`indexes/`](../indexes/) osmišljeni su tako da budući web sajt može da ponudi filtere po oblastima i podkategorijama, pretragu, promenu jezika, stranice sa detaljima prompta, dugme za kopiranje, verzije, statuse i trajne linkove po ID-u. Web sajt je zaseban korak; repozitorijum ostaje Markdown + metapodaci.
+- **Web sajt:** javni sajt je dostupan na https://ultimate-prompt-library.vercel.app i generiše se iz istog kataloga, indeksa i front matter-a promptova. Ima pretragu, filtere po oblastima i podkategorijama, promenu jezika, detaljne stranice promptova, copy akcije, verzije, statuse i trajne URL-ove.
 - **Dodatni jezici:** alati čitaju listu jezika iz `catalog.json`, pa se novi jezici mogu dodati bez restrukturiranja.

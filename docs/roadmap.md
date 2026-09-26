@@ -80,5 +80,5 @@ The following categories already have their folders, ID prefixes and README file
 
 ## Beyond the prompts
 
-- **Website:** the folder layout and the generated indexes in [`indexes/`](../indexes/) are designed so a future website can offer category and subcategory filters, search, language switching, prompt detail pages, copy buttons, versions, statuses and permalinks by ID. The website will be a separate step; the repository stays Markdown + metadata.
+- **Website:** the public website is live at https://ultimate-prompt-library.vercel.app and is generated from the same catalog, indexes and prompt front matter. It includes search, category/subcategory filters, language switching, prompt detail pages, copy actions, versions, statuses and permanent prompt URLs.
 - **More languages:** the tooling reads the language list from `catalog.json`, so additional languages can be added without restructuring.

@@ -40,7 +40,7 @@ const L = {
     quality4: 'Bilingual by design', quality4Lead: 'English and Serbian versions share the same ID, slug, version and logical structure.',
     completeCollections: 'Complete collections', quickBrowse: 'Browse by subcategory', showAll: 'Show all prompts',
     collectionSummary: '200 production-ready prompts across two complete collections.', openPrompt: 'Open prompt',
-    supportProject: 'Support the project', supportLead: 'Choose a way to support',
+    supportProject: 'Support the project', supportLead: 'Choose a way to support', supportTitle: 'Help the library keep growing', supportText: 'UPL is open source and free to use. If it saves you time or helps your work, you can support further development and new collections.',
   },
   sr: {
     prompts: 'Promptovi', categories: 'Oblasti', github: 'GitHub', search: 'Pretraži promptove',
@@ -68,7 +68,7 @@ const L = {
     quality4: 'Dvojezično po dizajnu', quality4Lead: 'Engleska i srpska verzija dele isti ID, slug, verziju i logičku strukturu.',
     completeCollections: 'Završene kolekcije', quickBrowse: 'Pregled po podkategorijama', showAll: 'Prikaži sve promptove',
     collectionSummary: '200 production-ready promptova kroz dve kompletne kolekcije.', openPrompt: 'Otvori prompt',
-    supportProject: 'Podrška projektu', supportLead: 'Izaberite način podrške',
+    supportProject: 'Podrška projektu', supportLead: 'Izaberite način podrške', supportTitle: 'Pomozite da biblioteka nastavi da raste', supportText: 'UPL je open source i besplatan za korišćenje. Ako vam štedi vreme ili pomaže u radu, možete podržati dalji razvoj i nove kolekcije.',
   },
 };
 
@@ -288,7 +288,8 @@ function renderHome(lang = 'en') {
   <section class="shell section"><div class="section-head"><span class="eyebrow">${t.collectionsKicker}</span><h2>${t.collectionsTitle}</h2><p>${t.collectionsLead}</p></div><div class="collections-grid">${collectionCard({ lang, category: it, count: itStats.available, planned: itStats.planned, tone: 'blue' })}${collectionCard({ lang, category: biz, count: bizStats.available, planned: bizStats.planned, tone: 'gold' })}</div></section>
   <section class="search-cta"><div class="shell search-cta-inner"><div><span class="eyebrow">${t.findKicker}</span><h2>${t.search}</h2><p>${t.libraryLead}</p></div><a class="button" href="${libraryUrl(lang)}">${t.explore}<span>→</span></a></div></section>
   <section class="shell section" id="categories"><div class="section-head"><span class="eyebrow">${t.categories}</span><h2>${t.categoriesTitle}</h2><p>${t.categoriesLead}</p></div><div class="category-grid">${catalog.categories.map((c) => { const count = prompts.filter((p) => p.categoryId === c.id).length; const roadmap = lang === 'sr' ? 'docs/roadmap.sr.md' : 'docs/roadmap.md'; return `<a class="category-card ${count ? 'active' : ''}" href="${count ? `${libraryUrl(lang)}?category=${encodeURIComponent(c.id)}` : `https://github.com/zoxknez/ultimate-prompt-library/blob/main/${roadmap}`}"><span>${String(c.order).padStart(2, '0')}</span><h3>${esc(c.names[lang])}</h3><p>${esc(c.descriptions[lang])}</p><strong>${count ? `${count} ${t.published}` : t.planned}</strong></a>`; }).join('')}</div></section>
-  <section class="why"><div class="shell"><div class="section-head"><span class="eyebrow">${t.qualityKicker}</span><h2>${t.whyTitle}</h2></div><div class="why-grid"><div><b>01</b><h3>${t.quality1}</h3><p>${t.quality1Lead}</p></div><div><b>02</b><h3>${t.quality2}</h3><p>${t.quality2Lead}</p></div><div><b>03</b><h3>${t.quality3}</h3><p>${t.quality3Lead}</p></div><div><b>04</b><h3>${t.quality4}</h3><p>${t.quality4Lead}</p></div></div></div></section>`;
+  <section class="why"><div class="shell"><div class="section-head"><span class="eyebrow">${t.qualityKicker}</span><h2>${t.whyTitle}</h2></div><div class="why-grid"><div><b>01</b><h3>${t.quality1}</h3><p>${t.quality1Lead}</p></div><div><b>02</b><h3>${t.quality2}</h3><p>${t.quality2Lead}</p></div><div><b>03</b><h3>${t.quality3}</h3><p>${t.quality3Lead}</p></div><div><b>04</b><h3>${t.quality4}</h3><p>${t.quality4Lead}</p></div></div></div></section>
+  <section class="support-section"><div class="shell support-section-inner"><div class="support-copy"><span class="eyebrow">${t.supportProject}</span><h2>${t.supportTitle}</h2><p>${t.supportText}</p></div><div class="support-options"><a class="support-card" href="https://www.paypal.com/paypalme/o0o0o0o0o0o0o" target="_blank" rel="noopener noreferrer"><span class="support-provider paypal">P</span><div><strong>PayPal</strong><small>paypal.me</small></div><span class="support-arrow">→</span></a><a class="support-card" href="https://ko-fi.com/o0o0o0o" target="_blank" rel="noopener noreferrer"><span class="support-provider kofi">☕</span><div><strong>Ko-fi</strong><small>ko-fi.com</small></div><span class="support-arrow">→</span></a></div></div></section>`;
 
   return pageShell({ lang, title: 'Ultimate Prompt Library', description: t.heroLead, body, canonical: lang === 'sr' ? '/sr/' : '/', alternateEn: '/', alternateSr: '/sr/' });
 }
