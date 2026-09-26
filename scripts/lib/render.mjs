@@ -29,8 +29,6 @@ const STRINGS = {
     initialIt: 'Initial IT Collection',
     badgePrompts: 'prompts',
     badgeLanguages: 'languages',
-    badgeIt: 'IT collection',
-    badgeBiz: 'Business collection',
     statsAlt: (st) => `${st.uniquePrompts} unique prompts, ${st.localizedPromptFiles} localized prompt files, ${st.languages} languages`,
     uniquePrompts: 'unique prompts',
     localizedFiles: 'localized prompt files',
@@ -70,8 +68,6 @@ const STRINGS = {
     initialIt: 'Početna IT kolekcija',
     badgePrompts: 'promptova',
     badgeLanguages: 'jezika',
-    badgeIt: 'IT kolekcija',
-    badgeBiz: 'Business kolekcija',
     statsAlt: (st) => `${st.uniquePrompts} jedinstvenih promptova, ${st.localizedPromptFiles} lokalizovanih fajlova, ${st.languages} jezika`,
     uniquePrompts: 'jedinstvenih promptova',
     localizedFiles: 'lokalizovanih prompt fajlova',
@@ -211,10 +207,8 @@ const BADGE = 'style=flat-square&labelColor=102A43&color=1769AA';
 const enc = (text) => encodeURIComponent(String(text).replace(/-/g, '--').replace(/_/g, '__'));
 
 /** Monochrome static shields.io badges for the README hero; counts come from stats.json. */
-export function heroBadges({ lang, stats, collections }) {
+export function heroBadges({ lang, stats }) {
   const s = t(lang);
-  const it = collections.find((c) => c.category.id === 'UPL-IT');
-  const biz = collections.find((c) => c.category.id === 'UPL-BIZ');
   // No CI status badge: cloud Actions are optional and not relied upon, so a red or empty status
   // would be a misleading public signal. Validation runs locally with `npm run validate`.
   const badges = [
@@ -222,16 +216,6 @@ export function heroBadges({ lang, stats, collections }) {
       `${s.badgePrompts}: ${stats.uniquePrompts}`,
       `https://img.shields.io/badge/${enc(s.badgePrompts)}-${stats.uniquePrompts}-09090B?${BADGE}`,
       lang === 'en' ? '#collection' : '#kolekcija',
-    ],
-    it && [
-      `${s.badgeIt}: ${it.available}/${it.planned}`,
-      `https://img.shields.io/badge/${enc(s.badgeIt)}-${it.available}%2F${it.planned}-09090B?${BADGE}`,
-      `prompts/${lang}/${it.category.dirs[lang]}/README.md`,
-    ],
-    biz && [
-      `${s.badgeBiz}: ${biz.available}/${biz.planned}`,
-      `https://img.shields.io/badge/${enc(s.badgeBiz)}-${biz.available}%2F${biz.planned}-09090B?${BADGE}`,
-      `prompts/${lang}/${biz.category.dirs[lang]}/README.md`,
     ],
     [
       `${s.badgeLanguages}: EN | SR`,
@@ -247,26 +231,38 @@ export function heroBadges({ lang, stats, collections }) {
 export function statsPicture({ lang, stats }) {
   const label = lang === 'sr'
     ? {
-        unique: 'jedinstvenih promptova',
-        localized: 'lokalizovanih fajlova',
-        languages: 'jezika',
-        active: 'aktivnih oblasti',
+        unique: 'Jedinstvenih promptova',
+        uniqueNote: 'Trajni ID povezuje svaku jedinstvenu specifikaciju kroz sva jezička izdanja.',
+        localized: 'Lokalizovanih fajlova',
+        localizedNote: 'Za svaki objavljeni prompt postoje zasebni Markdown fajlovi na oba jezika.',
+        languages: 'Jezika',
+        languagesNote: 'Svi dostupni promptovi održavaju se na srpskom i engleskom, latinicom.',
+        active: 'Aktivnih oblasti',
+        activeNote: 'Katalog definiše trajne ID prostore svih deset oblasti.',
       }
     : {
-        unique: 'unique prompts',
-        localized: 'localized files',
-        languages: 'languages',
-        active: 'active categories',
+        unique: 'Unique prompts',
+        uniqueNote: 'One permanent ID connects each distinct prompt across both language editions.',
+        localized: 'Localized files',
+        localizedNote: 'Every published prompt has separate English and Serbian Markdown files.',
+        languages: 'Languages',
+        languagesNote: 'All published prompts are maintained in English and Serbian Latin script.',
+        active: 'Active categories',
+        activeNote: 'The catalog defines permanent ID namespaces for all ten categories.',
       };
 
   const cards = [
-    [stats.uniquePrompts, label.unique],
-    [stats.localizedPromptFiles, label.localized],
-    [stats.languages, label.languages],
-    [`${stats.categoriesWithContent} / ${stats.categories}`, label.active],
+    [stats.uniquePrompts, label.unique, label.uniqueNote],
+    [stats.localizedPromptFiles, label.localized, label.localizedNote],
+    [stats.languages, label.languages, label.languagesNote],
+    [`${stats.categoriesWithContent} / ${stats.categories}`, label.active, label.activeNote],
   ];
 
-  return `<p align="center">${cards.map(([value, title]) => `<strong>${value}</strong>&nbsp;${title}`).join(' &nbsp; · &nbsp; ')}</p>`;
+  const rows = [cards.slice(0, 2), cards.slice(2)].map((row) =>
+    `<tr>\n${row.map(([value, title, note]) => `<td valign="top" width="50%"><h2>${value}</h2><strong>${title}</strong><br><sub>${note}</sub></td>`).join('\n')}\n</tr>`,
+  );
+
+  return `<table>\n${rows.join('\n')}\n</table>`;
 }
 
 function collectionStatus(s, available, planned) {
@@ -285,6 +281,7 @@ export function categoryGrid({ lang, fromFile, collections }) {
       '<td valign="top" width="50%">',
       `<sub>${pad(c.category.order, 2)} · <code>${c.category.id}</code></sub><br>`,
       `<a href="${href}"><strong>${escapeHtml(c.category.names[lang])}</strong></a><br>`,
+      `<p>${escapeHtml(c.category.descriptions[lang])}</p>`,
       `<sub>${collectionStatus(s, c.available, c.planned)}</sub>`,
       '</td>',
     ].join('\n');
@@ -309,7 +306,7 @@ export function subcategoryStatus({ lang, fromFile, collections }) {
             : g.available
               ? s.inProgress
               : s.status.planned;
-        return `| ${pad(g.sub.order, 2)} | [${escapeCell(g.sub.names[lang])}](${href}) · ${g.available} / ${g.planned} · ${status} |`;
+        return `| ${pad(g.sub.order, 2)} | [${escapeCell(g.sub.names[lang])}](${href})<br><sub>${escapeCell(g.sub.descriptions[lang])}</sub><br><sub>${g.available} / ${g.planned} · ${status}</sub> |`;
       });
       const complete = c.subcategories.filter((g) => g.planned > 0 && g.available === g.planned).length;
       return [
