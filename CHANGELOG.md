@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- UPL-IT-071 to UPL-IT-080 (Testing, QA & Reliability), version `1.0.0`, status `stable`, in Serbian and English: Ultimate Test Suite Audit, Missing Test Coverage Hunter, Flaky Test Hunter, Regression Test Generator, End-to-End Test Plan Generator, Edge Case Generator, Adversarial User Testing, Reliability & Failure Mode Audit, Race Condition & Concurrency Hunter and Production Incident Simulation. The IT collection now has 80 of 100 prompts available.
 - UPL-IT-061 to UPL-IT-070 (AI, LLM & Automation), version `1.0.0`, status `stable`, in Serbian and English: Ultimate AI Application Audit, RAG System Forensic Audit, Hallucination & Grounding Audit, Prompt Injection Security Audit, AI Agent Architecture Audit, AI Agent Reliability Audit, System Prompt Optimization, n8n / Workflow Automation Audit, LLM Cost & Latency Optimization and AI Model Selection & Evaluation. The IT collection now has 70 of 100 prompts available.
 - Structural EN/SR parity checks in `npm run validate:translations`: numbered sections (reporting which ones are missing), heading outline, key sections, code fences, and length relative to the collection's median ratio. They are reported as warnings with a summary; `--details` prints every pair.
 - Content hygiene checks in `npm run validate:prompts`: control characters and leaked editor/agent context are errors, and mangled code fences and invisible characters are warnings.

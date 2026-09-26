@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "uniquePrompts": 70,
-  "localizedPromptFiles": 140,
+  "uniquePrompts": 80,
+  "localizedPromptFiles": 160,
   "languages": 2,
   "filesByLanguage": {
-    "en": 70,
-    "sr": 70
+    "en": 80,
+    "sr": 80
   },
   "byStatus": {
     "draft": 0,
     "review": 0,
-    "stable": 70,
+    "stable": 80,
     "deprecated": 0
   },
   "categories": 10,
   "categoriesWithContent": 1,
   "planned": 100,
-  "remaining": 30,
+  "remaining": 20,
   "collections": {
     "IT": {
       "id": "UPL-IT",
       "slug": "it-programming-technology",
-      "available": 70,
+      "available": 80,
       "planned": 100,
-      "remaining": 30,
+      "remaining": 20,
       "subcategories": 10,
-      "completedSubcategories": 7,
+      "completedSubcategories": 8,
       "bySubcategory": {
         "web-development": {
           "available": 10,
@@ -56,7 +56,7 @@
           "planned": 10
         },
         "testing-qa-reliability": {
-          "available": 0,
+          "available": 10,
           "planned": 10
         },
         "ux-ui-product-development": {
