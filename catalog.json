@@ -3040,6 +3040,106 @@
             "en": "Labor Relations & Collective Agreement Analysis",
             "sr": "Analiza kolektivnih odnosa i ugovora"
           }
+        },
+        {
+          "id": "UPL-LAW-061",
+          "number": 61,
+          "slug": "regulatory-applicability-mapper",
+          "subcategory": "regulatory-compliance",
+          "title": {
+            "en": "Regulatory Applicability Mapper",
+            "sr": "Mapa primenjivosti propisa"
+          }
+        },
+        {
+          "id": "UPL-LAW-062",
+          "number": 62,
+          "slug": "compliance-obligation-register-builder",
+          "subcategory": "regulatory-compliance",
+          "title": {
+            "en": "Compliance Obligation Register Builder",
+            "sr": "Izrada registra obaveza usklađenosti"
+          }
+        },
+        {
+          "id": "UPL-LAW-063",
+          "number": 63,
+          "slug": "regulatory-change-impact-analysis",
+          "subcategory": "regulatory-compliance",
+          "title": {
+            "en": "Regulatory Change Impact Analysis",
+            "sr": "Analiza uticaja regulatornih promena"
+          }
+        },
+        {
+          "id": "UPL-LAW-064",
+          "number": 64,
+          "slug": "licensing-and-permit-readiness-audit",
+          "subcategory": "regulatory-compliance",
+          "title": {
+            "en": "Licensing & Permit Readiness Audit",
+            "sr": "Audit spremnosti za licence i dozvole"
+          }
+        },
+        {
+          "id": "UPL-LAW-065",
+          "number": 65,
+          "slug": "internal-compliance-program-audit",
+          "subcategory": "regulatory-compliance",
+          "title": {
+            "en": "Internal Compliance Program Audit",
+            "sr": "Audit internog programa usklađenosti"
+          }
+        },
+        {
+          "id": "UPL-LAW-066",
+          "number": 66,
+          "slug": "policy-procedure-control-mapping",
+          "subcategory": "regulatory-compliance",
+          "title": {
+            "en": "Policy, Procedure & Control Mapping",
+            "sr": "Mapiranje politika, procedura i kontrola"
+          }
+        },
+        {
+          "id": "UPL-LAW-067",
+          "number": 67,
+          "slug": "regulatory-reporting-and-filing-calendar",
+          "subcategory": "regulatory-compliance",
+          "title": {
+            "en": "Regulatory Reporting & Filing Calendar",
+            "sr": "Kalendar regulatornog izveštavanja i podnesaka"
+          }
+        },
+        {
+          "id": "UPL-LAW-068",
+          "number": 68,
+          "slug": "inspection-and-audit-response-readiness",
+          "subcategory": "regulatory-compliance",
+          "title": {
+            "en": "Inspection & Audit Response Readiness",
+            "sr": "Spremnost za inspekciju i regulatorni audit"
+          }
+        },
+        {
+          "id": "UPL-LAW-069",
+          "number": 69,
+          "slug": "third-party-compliance-due-diligence",
+          "subcategory": "regulatory-compliance",
+          "title": {
+            "en": "Third-Party Compliance Due Diligence",
+            "sr": "Compliance due diligence trećih strana"
+          }
+        },
+        {
+          "id": "UPL-LAW-070",
+          "number": 70,
+          "slug": "enforcement-risk-and-remediation-plan",
+          "subcategory": "regulatory-compliance",
+          "title": {
+            "en": "Enforcement Risk & Remediation Plan",
+            "sr": "Plan rizika izvršenja i remedijacije"
+          }
         }
       ]
     },
