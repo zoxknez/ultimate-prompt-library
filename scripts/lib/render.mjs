@@ -306,16 +306,24 @@ export function subcategoryStatus({ lang, fromFile, collections }) {
             : g.available
               ? s.inProgress
               : s.status.planned;
-        return `| ${pad(g.sub.order, 2)} | [${escapeCell(g.sub.names[lang])}](${href})<br><sub>${escapeCell(g.sub.descriptions[lang])}</sub><br><sub>${g.available} / ${g.planned} · ${status}</sub> |`;
+        return [
+          '<tr>',
+          `<td valign="top" width="6%">${pad(g.sub.order, 2)}</td>`,
+          `<td valign="top" width="94%"><a href="${href}"><strong>${escapeHtml(g.sub.names[lang])}</strong></a><br><sub>${escapeHtml(g.sub.descriptions[lang])}</sub><br><sub>${g.available} / ${g.planned} · ${status}</sub></td>`,
+          '</tr>',
+        ].join('\n');
       });
       const complete = c.subcategories.filter((g) => g.planned > 0 && g.available === g.planned).length;
       return [
         '<details>',
         `<summary><strong>${escapeHtml(c.category.names[lang])}</strong> · ${complete} / ${c.subcategories.length} ${s.subcategoriesComplete}</summary>`,
         '',
-        `| # | ${s.subcategory} |`,
-        '|:---:|---|',
+        '<table width="100%">',
+        `<thead><tr><th scope="col">#</th><th scope="col">${s.subcategory}</th></tr></thead>`,
+        '<tbody>',
         ...rows,
+        '</tbody>',
+        '</table>',
         '',
         '</details>',
       ].join('\n');

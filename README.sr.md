@@ -157,36 +157,102 @@ Detaljan imenik ostaje sklopljen dok ne poželiš da pregledaš kolekciju po tem
 <details>
 <summary><strong>IT, programiranje i tehnologija</strong> · 10 / 10 završeno</summary>
 
-| # | Podkategorija |
-|:---:|---|
-| 01 | [Web razvoj](prompts/sr/01-it-programiranje-tehnologija/01-web-development/README.md)<br><sub>Frontend, full-stack web aplikacije, performanse, pristupačnost, SEO i ponašanje u browser-ima.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 02 | [Mobilni razvoj](prompts/sr/01-it-programiranje-tehnologija/02-mobile-development/README.md)<br><sub>Android aplikacije, Jetpack Compose, lifecycle, konkurentnost, persistence, media, TV i spremnost za release.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 03 | [Backend i API](prompts/sr/01-it-programiranje-tehnologija/03-backend-api/README.md)<br><sub>Backend arhitektura, REST API-ji, ugovori, poslovna logika, greške, performanse, webhook-ovi, poslovi i skalabilnost.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 04 | [Sajber bezbednost](prompts/sr/01-it-programiranje-tehnologija/04-cybersecurity/README.md)<br><sub>Defanzivni bezbednosni pregledi aplikacija, autentikacija, autorizacija, tajni podaci, supply chain i modelovanje pretnji.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 05 | [DevOps, cloud i infrastruktura](prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/README.md)<br><sub>Kontejneri, Kubernetes, CI/CD, cloud platforme, konfiguracija, deployment, backup i oporavak.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 06 | [Baze podataka i data engineering](prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/README.md)<br><sub>Šeme, SQL performanse, indeksi, migracije, integritet, transakcije, ORM-ovi i data pipeline-ovi.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 07 | [AI, LLM i automatizacija](prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/README.md)<br><sub>AI aplikacije, RAG, grounding, prompt injection, agenti, sistemski promptovi, automatizacija tokova i izbor modela.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 08 | [Testiranje, QA i pouzdanost](prompts/sr/01-it-programiranje-tehnologija/08-testing-qa-reliability/README.md)<br><sub>Test suite-ovi, pokrivenost, nestabilni testovi, regresioni i end-to-end planovi, granični slučajevi, načini otkaza i incidenti.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 09 | [UX, UI i razvoj proizvoda](prompts/sr/01-it-programiranje-tehnologija/09-ux-ui-product-development/README.md)<br><sub>UX proizvoda, kritični tokovi, onboarding, forme, navigacija, dizajn sistemi, pristupačnost i zahtevi proizvoda.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 10 | [Desktop, igre, sistemi i embedded](prompts/sr/01-it-programiranje-tehnologija/10-desktop-game-systems-embedded/README.md)<br><sub>Desktop aplikacije, Electron, PySide, Windows, cross-platform, igre, embedded softver i integracija sa hardverom.</sub><br><sub>10 / 10 · Završeno</sub> |
+<table width="100%">
+<thead><tr><th scope="col">#</th><th scope="col">Podkategorija</th></tr></thead>
+<tbody>
+<tr>
+<td valign="top" width="6%">01</td>
+<td valign="top" width="94%"><a href="prompts/sr/01-it-programiranje-tehnologija/01-web-development/README.md"><strong>Web razvoj</strong></a><br><sub>Frontend, full-stack web aplikacije, performanse, pristupačnost, SEO i ponašanje u browser-ima.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">02</td>
+<td valign="top" width="94%"><a href="prompts/sr/01-it-programiranje-tehnologija/02-mobile-development/README.md"><strong>Mobilni razvoj</strong></a><br><sub>Android aplikacije, Jetpack Compose, lifecycle, konkurentnost, persistence, media, TV i spremnost za release.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">03</td>
+<td valign="top" width="94%"><a href="prompts/sr/01-it-programiranje-tehnologija/03-backend-api/README.md"><strong>Backend i API</strong></a><br><sub>Backend arhitektura, REST API-ji, ugovori, poslovna logika, greške, performanse, webhook-ovi, poslovi i skalabilnost.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">04</td>
+<td valign="top" width="94%"><a href="prompts/sr/01-it-programiranje-tehnologija/04-cybersecurity/README.md"><strong>Sajber bezbednost</strong></a><br><sub>Defanzivni bezbednosni pregledi aplikacija, autentikacija, autorizacija, tajni podaci, supply chain i modelovanje pretnji.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">05</td>
+<td valign="top" width="94%"><a href="prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/README.md"><strong>DevOps, cloud i infrastruktura</strong></a><br><sub>Kontejneri, Kubernetes, CI/CD, cloud platforme, konfiguracija, deployment, backup i oporavak.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">06</td>
+<td valign="top" width="94%"><a href="prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/README.md"><strong>Baze podataka i data engineering</strong></a><br><sub>Šeme, SQL performanse, indeksi, migracije, integritet, transakcije, ORM-ovi i data pipeline-ovi.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">07</td>
+<td valign="top" width="94%"><a href="prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/README.md"><strong>AI, LLM i automatizacija</strong></a><br><sub>AI aplikacije, RAG, grounding, prompt injection, agenti, sistemski promptovi, automatizacija tokova i izbor modela.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">08</td>
+<td valign="top" width="94%"><a href="prompts/sr/01-it-programiranje-tehnologija/08-testing-qa-reliability/README.md"><strong>Testiranje, QA i pouzdanost</strong></a><br><sub>Test suite-ovi, pokrivenost, nestabilni testovi, regresioni i end-to-end planovi, granični slučajevi, načini otkaza i incidenti.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">09</td>
+<td valign="top" width="94%"><a href="prompts/sr/01-it-programiranje-tehnologija/09-ux-ui-product-development/README.md"><strong>UX, UI i razvoj proizvoda</strong></a><br><sub>UX proizvoda, kritični tokovi, onboarding, forme, navigacija, dizajn sistemi, pristupačnost i zahtevi proizvoda.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">10</td>
+<td valign="top" width="94%"><a href="prompts/sr/01-it-programiranje-tehnologija/10-desktop-game-systems-embedded/README.md"><strong>Desktop, igre, sistemi i embedded</strong></a><br><sub>Desktop aplikacije, Electron, PySide, Windows, cross-platform, igre, embedded softver i integracija sa hardverom.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
 <details>
 <summary><strong>Ekonomija, finansije i poslovanje</strong> · 10 / 10 završeno</summary>
 
-| # | Podkategorija |
-|:---:|---|
-| 01 | [Finansijska analiza i korporativne finansije](prompts/sr/02-ekonomija-finansije-poslovanje/01-financial-analysis-corporate-finance/README.md)<br><sub>Analiza finansijskih izveštaja, cash flow i likvidnost, marže, obrtni kapital, budžeti i prognoze, finansijski modeli, alokacija kapitala, finansiranje i odluke korporativnih finansija.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 02 | [Računovodstvo, izveštavanje i finansijska kontrola](prompts/sr/02-ekonomija-finansije-poslovanje/02-accounting-reporting-financial-control/README.md)<br><sub>Računovodstveni sistemi, glavna knjiga, priznavanje prihoda, troškovi, potraživanja i obaveze, zatvaranje perioda, menadžersko izveštavanje, interne kontrole i otkrivanje grešaka u izveštajima.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 03 | [Ekonomija i analiza tržišta](prompts/sr/02-ekonomija-finansije-poslovanje/03-economics-market-analysis/README.md)<br><sub>Makroekonomsko okruženje, ekonomija industrije, veličina i rast tržišta, ponuda i tražnja, inflacija, kamatne stope i devizni kursevi, ekonomski scenariji i tumačenje podataka.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 04 | [Poslovna strategija i analiza konkurencije](prompts/sr/02-ekonomija-finansije-poslovanje/04-business-strategy-competitive-analysis/README.md)<br><sub>Poslovna strategija, konkurentsko okruženje i prednost, SWOT i PESTLE, strateški rizici i prilike, ulazak na tržište, strategija rasta, prioritizacija inicijativa i stres testovi.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 05 | [Preduzetništvo i poslovni modeli](prompts/sr/02-ekonomija-finansije-poslovanje/05-entrepreneurship-business-models/README.md)<br><sub>Poslovni modeli, izvodljivost startup ideja, business model canvas, unit economics, product-market fit, runway, pretpostavke osnivača, skalabilnost, monetizacija i uzroci neuspeha.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 06 | [Operacije, lanac snabdevanja i nabavka](prompts/sr/02-ekonomija-finansije-poslovanje/06-operations-supply-chain-procurement/README.md)<br><sub>Operacije, efikasnost procesa, uska grla, otpornost lanca snabdevanja, zalihe, nabavka i dobavljači, rizik dobavljača, planiranje kapaciteta, smanjenje troškova i kontinuitet poslovanja.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 07 | [Prodaja, prihodi i cene](prompts/sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/README.md)<br><sub>Prihodi, prodajni levak i učinak prodaje, strategija cena i elastičnost, curenje prihoda, customer lifetime value, ekonomija akvizicije kupaca, ponavljajući prihodi i prognoze prihoda.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 08 | [Menadžment, liderstvo i organizacija](prompts/sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/README.md)<br><sub>Sistemi upravljanja, organizaciona struktura, donošenje odluka, KPI i upravljanje učinkom, izveštavanje, delegiranje, komunikacija, organizaciona uska grla, spremnost za promene i zavisnost od liderstva.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 09 | [Rizik, usklađenost i poslovna otpornost](prompts/sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/README.md)<br><sub>Upravljanje rizicima na nivou kompanije, registri rizika, finansijski, operativni i rizik trećih strana, rizik prevare, kontrole usklađenosti, kontinuitet poslovanja, spremnost za krize i scenariji rizika.</sub><br><sub>10 / 10 · Završeno</sub> |
-| 10 | [Investicije, vrednovanje i due diligence](prompts/sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/README.md)<br><sub>Vrednovanje poslovanja, DCF i uporedive kompanije, investicione teze, komercijalni i finansijski due diligence, M&A mete, rizik gubitka, pretpostavke i osetljivost.</sub><br><sub>10 / 10 · Završeno</sub> |
+<table width="100%">
+<thead><tr><th scope="col">#</th><th scope="col">Podkategorija</th></tr></thead>
+<tbody>
+<tr>
+<td valign="top" width="6%">01</td>
+<td valign="top" width="94%"><a href="prompts/sr/02-ekonomija-finansije-poslovanje/01-financial-analysis-corporate-finance/README.md"><strong>Finansijska analiza i korporativne finansije</strong></a><br><sub>Analiza finansijskih izveštaja, cash flow i likvidnost, marže, obrtni kapital, budžeti i prognoze, finansijski modeli, alokacija kapitala, finansiranje i odluke korporativnih finansija.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">02</td>
+<td valign="top" width="94%"><a href="prompts/sr/02-ekonomija-finansije-poslovanje/02-accounting-reporting-financial-control/README.md"><strong>Računovodstvo, izveštavanje i finansijska kontrola</strong></a><br><sub>Računovodstveni sistemi, glavna knjiga, priznavanje prihoda, troškovi, potraživanja i obaveze, zatvaranje perioda, menadžersko izveštavanje, interne kontrole i otkrivanje grešaka u izveštajima.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">03</td>
+<td valign="top" width="94%"><a href="prompts/sr/02-ekonomija-finansije-poslovanje/03-economics-market-analysis/README.md"><strong>Ekonomija i analiza tržišta</strong></a><br><sub>Makroekonomsko okruženje, ekonomija industrije, veličina i rast tržišta, ponuda i tražnja, inflacija, kamatne stope i devizni kursevi, ekonomski scenariji i tumačenje podataka.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">04</td>
+<td valign="top" width="94%"><a href="prompts/sr/02-ekonomija-finansije-poslovanje/04-business-strategy-competitive-analysis/README.md"><strong>Poslovna strategija i analiza konkurencije</strong></a><br><sub>Poslovna strategija, konkurentsko okruženje i prednost, SWOT i PESTLE, strateški rizici i prilike, ulazak na tržište, strategija rasta, prioritizacija inicijativa i stres testovi.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">05</td>
+<td valign="top" width="94%"><a href="prompts/sr/02-ekonomija-finansije-poslovanje/05-entrepreneurship-business-models/README.md"><strong>Preduzetništvo i poslovni modeli</strong></a><br><sub>Poslovni modeli, izvodljivost startup ideja, business model canvas, unit economics, product-market fit, runway, pretpostavke osnivača, skalabilnost, monetizacija i uzroci neuspeha.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">06</td>
+<td valign="top" width="94%"><a href="prompts/sr/02-ekonomija-finansije-poslovanje/06-operations-supply-chain-procurement/README.md"><strong>Operacije, lanac snabdevanja i nabavka</strong></a><br><sub>Operacije, efikasnost procesa, uska grla, otpornost lanca snabdevanja, zalihe, nabavka i dobavljači, rizik dobavljača, planiranje kapaciteta, smanjenje troškova i kontinuitet poslovanja.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">07</td>
+<td valign="top" width="94%"><a href="prompts/sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/README.md"><strong>Prodaja, prihodi i cene</strong></a><br><sub>Prihodi, prodajni levak i učinak prodaje, strategija cena i elastičnost, curenje prihoda, customer lifetime value, ekonomija akvizicije kupaca, ponavljajući prihodi i prognoze prihoda.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">08</td>
+<td valign="top" width="94%"><a href="prompts/sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/README.md"><strong>Menadžment, liderstvo i organizacija</strong></a><br><sub>Sistemi upravljanja, organizaciona struktura, donošenje odluka, KPI i upravljanje učinkom, izveštavanje, delegiranje, komunikacija, organizaciona uska grla, spremnost za promene i zavisnost od liderstva.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">09</td>
+<td valign="top" width="94%"><a href="prompts/sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/README.md"><strong>Rizik, usklađenost i poslovna otpornost</strong></a><br><sub>Upravljanje rizicima na nivou kompanije, registri rizika, finansijski, operativni i rizik trećih strana, rizik prevare, kontrole usklađenosti, kontinuitet poslovanja, spremnost za krize i scenariji rizika.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">10</td>
+<td valign="top" width="94%"><a href="prompts/sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/README.md"><strong>Investicije, vrednovanje i due diligence</strong></a><br><sub>Vrednovanje poslovanja, DCF i uporedive kompanije, investicione teze, komercijalni i finansijski due diligence, M&amp;A mete, rizik gubitka, pretpostavke i osetljivost.</sub><br><sub>10 / 10 · Završeno</sub></td>
+</tr>
+</tbody>
+</table>
 
 </details>
 <!-- UPL:END subcategory-status -->

@@ -157,36 +157,102 @@ The detailed directory stays collapsed until you need to browse a collection by 
 <details>
 <summary><strong>IT, Programming &amp; Technology</strong> · 10 / 10 subcategories complete</summary>
 
-| # | Subcategory |
-|:---:|---|
-| 01 | [Web Development](prompts/en/01-it-programming-technology/01-web-development/README.md)<br><sub>Frontend, full-stack web applications, performance, accessibility, SEO and browser behavior.</sub><br><sub>10 / 10 · Complete</sub> |
-| 02 | [Mobile Development](prompts/en/01-it-programming-technology/02-mobile-development/README.md)<br><sub>Android applications, Jetpack Compose, lifecycle, concurrency, persistence, media, TV and release readiness.</sub><br><sub>10 / 10 · Complete</sub> |
-| 03 | [Backend & API](prompts/en/01-it-programming-technology/03-backend-api/README.md)<br><sub>Backend architecture, REST APIs, contracts, business logic, errors, performance, webhooks, jobs and scalability.</sub><br><sub>10 / 10 · Complete</sub> |
-| 04 | [Cybersecurity](prompts/en/01-it-programming-technology/04-cybersecurity/README.md)<br><sub>Defensive application security reviews, authentication, authorization, secrets, supply chain and threat modeling.</sub><br><sub>10 / 10 · Complete</sub> |
-| 05 | [DevOps, Cloud & Infrastructure](prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/README.md)<br><sub>Containers, Kubernetes, CI/CD, cloud platforms, configuration, deployments, backups and recovery.</sub><br><sub>10 / 10 · Complete</sub> |
-| 06 | [Databases & Data Engineering](prompts/en/01-it-programming-technology/06-databases-data-engineering/README.md)<br><sub>Schemas, SQL performance, indexes, migrations, integrity, transactions, ORMs and data pipelines.</sub><br><sub>10 / 10 · Complete</sub> |
-| 07 | [AI, LLM & Automation](prompts/en/01-it-programming-technology/07-ai-llm-automation/README.md)<br><sub>AI applications, RAG, grounding, prompt injection, agents, system prompts, workflow automation and model selection.</sub><br><sub>10 / 10 · Complete</sub> |
-| 08 | [Testing, QA & Reliability](prompts/en/01-it-programming-technology/08-testing-qa-reliability/README.md)<br><sub>Test suites, coverage, flaky tests, regression and end-to-end planning, edge cases, failure modes and incidents.</sub><br><sub>10 / 10 · Complete</sub> |
-| 09 | [UX, UI & Product Development](prompts/en/01-it-programming-technology/09-ux-ui-product-development/README.md)<br><sub>Product UX, critical flows, onboarding, forms, navigation, design systems, accessibility and product requirements.</sub><br><sub>10 / 10 · Complete</sub> |
-| 10 | [Desktop, Game, Systems & Embedded](prompts/en/01-it-programming-technology/10-desktop-game-systems-embedded/README.md)<br><sub>Desktop applications, Electron, PySide, Windows, cross-platform, games, embedded software and hardware integration.</sub><br><sub>10 / 10 · Complete</sub> |
+<table width="100%">
+<thead><tr><th scope="col">#</th><th scope="col">Subcategory</th></tr></thead>
+<tbody>
+<tr>
+<td valign="top" width="6%">01</td>
+<td valign="top" width="94%"><a href="prompts/en/01-it-programming-technology/01-web-development/README.md"><strong>Web Development</strong></a><br><sub>Frontend, full-stack web applications, performance, accessibility, SEO and browser behavior.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">02</td>
+<td valign="top" width="94%"><a href="prompts/en/01-it-programming-technology/02-mobile-development/README.md"><strong>Mobile Development</strong></a><br><sub>Android applications, Jetpack Compose, lifecycle, concurrency, persistence, media, TV and release readiness.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">03</td>
+<td valign="top" width="94%"><a href="prompts/en/01-it-programming-technology/03-backend-api/README.md"><strong>Backend &amp; API</strong></a><br><sub>Backend architecture, REST APIs, contracts, business logic, errors, performance, webhooks, jobs and scalability.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">04</td>
+<td valign="top" width="94%"><a href="prompts/en/01-it-programming-technology/04-cybersecurity/README.md"><strong>Cybersecurity</strong></a><br><sub>Defensive application security reviews, authentication, authorization, secrets, supply chain and threat modeling.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">05</td>
+<td valign="top" width="94%"><a href="prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/README.md"><strong>DevOps, Cloud &amp; Infrastructure</strong></a><br><sub>Containers, Kubernetes, CI/CD, cloud platforms, configuration, deployments, backups and recovery.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">06</td>
+<td valign="top" width="94%"><a href="prompts/en/01-it-programming-technology/06-databases-data-engineering/README.md"><strong>Databases &amp; Data Engineering</strong></a><br><sub>Schemas, SQL performance, indexes, migrations, integrity, transactions, ORMs and data pipelines.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">07</td>
+<td valign="top" width="94%"><a href="prompts/en/01-it-programming-technology/07-ai-llm-automation/README.md"><strong>AI, LLM &amp; Automation</strong></a><br><sub>AI applications, RAG, grounding, prompt injection, agents, system prompts, workflow automation and model selection.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">08</td>
+<td valign="top" width="94%"><a href="prompts/en/01-it-programming-technology/08-testing-qa-reliability/README.md"><strong>Testing, QA &amp; Reliability</strong></a><br><sub>Test suites, coverage, flaky tests, regression and end-to-end planning, edge cases, failure modes and incidents.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">09</td>
+<td valign="top" width="94%"><a href="prompts/en/01-it-programming-technology/09-ux-ui-product-development/README.md"><strong>UX, UI &amp; Product Development</strong></a><br><sub>Product UX, critical flows, onboarding, forms, navigation, design systems, accessibility and product requirements.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">10</td>
+<td valign="top" width="94%"><a href="prompts/en/01-it-programming-technology/10-desktop-game-systems-embedded/README.md"><strong>Desktop, Game, Systems &amp; Embedded</strong></a><br><sub>Desktop applications, Electron, PySide, Windows, cross-platform, games, embedded software and hardware integration.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
 <details>
 <summary><strong>Economics, Finance &amp; Business</strong> · 10 / 10 subcategories complete</summary>
 
-| # | Subcategory |
-|:---:|---|
-| 01 | [Financial Analysis & Corporate Finance](prompts/en/02-economics-finance-business/01-financial-analysis-corporate-finance/README.md)<br><sub>Financial statement analysis, cash flow and liquidity, margins, working capital, budgets and forecasts, financial models, capital allocation, financing and corporate finance decisions.</sub><br><sub>10 / 10 · Complete</sub> |
-| 02 | [Accounting, Reporting & Financial Control](prompts/en/02-economics-finance-business/02-accounting-reporting-financial-control/README.md)<br><sub>Accounting systems, general ledger, revenue recognition, costs, receivables and payables, financial close, management reporting, internal controls and misstatement detection.</sub><br><sub>10 / 10 · Complete</sub> |
-| 03 | [Economics & Market Analysis](prompts/en/02-economics-finance-business/03-economics-market-analysis/README.md)<br><sub>Macroeconomic environment, industry economics, market size and growth, demand and supply, inflation, interest and exchange rates, economic scenarios and data interpretation.</sub><br><sub>10 / 10 · Complete</sub> |
-| 04 | [Business Strategy & Competitive Analysis](prompts/en/02-economics-finance-business/04-business-strategy-competitive-analysis/README.md)<br><sub>Business strategy, competitive landscape and advantage, SWOT and PESTLE, strategic risks and opportunities, market entry, growth strategy, initiative prioritization and stress tests.</sub><br><sub>10 / 10 · Complete</sub> |
-| 05 | [Entrepreneurship & Business Models](prompts/en/02-economics-finance-business/05-entrepreneurship-business-models/README.md)<br><sub>Business models, startup feasibility, business model canvas, unit economics, product-market fit, runway, founder assumptions, scalability, monetization and failure modes.</sub><br><sub>10 / 10 · Complete</sub> |
-| 06 | [Operations, Supply Chain & Procurement](prompts/en/02-economics-finance-business/06-operations-supply-chain-procurement/README.md)<br><sub>Operations, process efficiency, bottlenecks, supply chain resilience, inventory, procurement and suppliers, vendor risk, capacity planning, cost reduction and business continuity.</sub><br><sub>10 / 10 · Complete</sub> |
-| 07 | [Sales, Revenue & Pricing](prompts/en/02-economics-finance-business/07-sales-revenue-pricing/README.md)<br><sub>Revenue, sales funnels and performance, pricing strategy and elasticity, revenue leakage, customer lifetime value, acquisition economics, recurring revenue and revenue forecasts.</sub><br><sub>10 / 10 · Complete</sub> |
-| 08 | [Management, Leadership & Organization](prompts/en/02-economics-finance-business/08-management-leadership-organization/README.md)<br><sub>Management systems, organizational structure, decision-making, KPIs and performance management, reporting, delegation, communication, organizational bottlenecks, change readiness and leadership dependency.</sub><br><sub>10 / 10 · Complete</sub> |
-| 09 | [Risk, Compliance & Business Resilience](prompts/en/02-economics-finance-business/09-risk-compliance-business-resilience/README.md)<br><sub>Enterprise risk, risk registers, financial, operational and third-party risk, fraud risk, compliance controls, business continuity, crisis readiness and risk scenarios.</sub><br><sub>10 / 10 · Complete</sub> |
-| 10 | [Investment, Valuation & Due Diligence](prompts/en/02-economics-finance-business/10-investment-valuation-due-diligence/README.md)<br><sub>Business valuation, DCF and comparable companies, investment theses, commercial and financial due diligence, M&A targets, downside risk, assumptions and sensitivity.</sub><br><sub>10 / 10 · Complete</sub> |
+<table width="100%">
+<thead><tr><th scope="col">#</th><th scope="col">Subcategory</th></tr></thead>
+<tbody>
+<tr>
+<td valign="top" width="6%">01</td>
+<td valign="top" width="94%"><a href="prompts/en/02-economics-finance-business/01-financial-analysis-corporate-finance/README.md"><strong>Financial Analysis &amp; Corporate Finance</strong></a><br><sub>Financial statement analysis, cash flow and liquidity, margins, working capital, budgets and forecasts, financial models, capital allocation, financing and corporate finance decisions.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">02</td>
+<td valign="top" width="94%"><a href="prompts/en/02-economics-finance-business/02-accounting-reporting-financial-control/README.md"><strong>Accounting, Reporting &amp; Financial Control</strong></a><br><sub>Accounting systems, general ledger, revenue recognition, costs, receivables and payables, financial close, management reporting, internal controls and misstatement detection.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">03</td>
+<td valign="top" width="94%"><a href="prompts/en/02-economics-finance-business/03-economics-market-analysis/README.md"><strong>Economics &amp; Market Analysis</strong></a><br><sub>Macroeconomic environment, industry economics, market size and growth, demand and supply, inflation, interest and exchange rates, economic scenarios and data interpretation.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">04</td>
+<td valign="top" width="94%"><a href="prompts/en/02-economics-finance-business/04-business-strategy-competitive-analysis/README.md"><strong>Business Strategy &amp; Competitive Analysis</strong></a><br><sub>Business strategy, competitive landscape and advantage, SWOT and PESTLE, strategic risks and opportunities, market entry, growth strategy, initiative prioritization and stress tests.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">05</td>
+<td valign="top" width="94%"><a href="prompts/en/02-economics-finance-business/05-entrepreneurship-business-models/README.md"><strong>Entrepreneurship &amp; Business Models</strong></a><br><sub>Business models, startup feasibility, business model canvas, unit economics, product-market fit, runway, founder assumptions, scalability, monetization and failure modes.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">06</td>
+<td valign="top" width="94%"><a href="prompts/en/02-economics-finance-business/06-operations-supply-chain-procurement/README.md"><strong>Operations, Supply Chain &amp; Procurement</strong></a><br><sub>Operations, process efficiency, bottlenecks, supply chain resilience, inventory, procurement and suppliers, vendor risk, capacity planning, cost reduction and business continuity.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">07</td>
+<td valign="top" width="94%"><a href="prompts/en/02-economics-finance-business/07-sales-revenue-pricing/README.md"><strong>Sales, Revenue &amp; Pricing</strong></a><br><sub>Revenue, sales funnels and performance, pricing strategy and elasticity, revenue leakage, customer lifetime value, acquisition economics, recurring revenue and revenue forecasts.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">08</td>
+<td valign="top" width="94%"><a href="prompts/en/02-economics-finance-business/08-management-leadership-organization/README.md"><strong>Management, Leadership &amp; Organization</strong></a><br><sub>Management systems, organizational structure, decision-making, KPIs and performance management, reporting, delegation, communication, organizational bottlenecks, change readiness and leadership dependency.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">09</td>
+<td valign="top" width="94%"><a href="prompts/en/02-economics-finance-business/09-risk-compliance-business-resilience/README.md"><strong>Risk, Compliance &amp; Business Resilience</strong></a><br><sub>Enterprise risk, risk registers, financial, operational and third-party risk, fraud risk, compliance controls, business continuity, crisis readiness and risk scenarios.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+<tr>
+<td valign="top" width="6%">10</td>
+<td valign="top" width="94%"><a href="prompts/en/02-economics-finance-business/10-investment-valuation-due-diligence/README.md"><strong>Investment, Valuation &amp; Due Diligence</strong></a><br><sub>Business valuation, DCF and comparable companies, investment theses, commercial and financial due diligence, M&amp;A targets, downside risk, assumptions and sensitivity.</sub><br><sub>10 / 10 · Complete</sub></td>
+</tr>
+</tbody>
+</table>
 
 </details>
 <!-- UPL:END subcategory-status -->
