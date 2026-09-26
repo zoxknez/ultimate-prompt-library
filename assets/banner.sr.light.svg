@@ -10,7 +10,7 @@
     </radialGradient>
     <mask id="bl-mask"><rect width="1200" height="440" fill="url(#bl-fade)"/></mask>
     <clipPath id="bl-clip"><rect width="1200" height="440" rx="12"/></clipPath>
-    <filter id="bl-shadow" x="-20%" y="-20%" width="150%" height="150%">
+    <filter id="bl-shadow" x="-20%" y="-20%" width="160%" height="160%">
       <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#102A43" flood-opacity="0.1"/>
     </filter>
   </defs>
@@ -32,7 +32,7 @@
     <tspan x="72" y="324">promptova spremnih za produkciju.</tspan>
   </text>
 
-  <text x="72" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#536B84">150 promptova</text>
+  <text x="72" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#536B84">160 promptova</text>
   <rect x="195.3" y="355" width="1" height="18" fill="#D9E4EE"/><text x="212.3" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#536B84">English · Srpski</text>
   <rect x="337.9" y="355" width="1" height="18" fill="#D9E4EE"/><text x="354.9" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#536B84">Nezavisno od modela</text>
   <rect x="525.6" y="355" width="1" height="18" fill="#D9E4EE"/><text x="542.6" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#536B84">MIT licenca</text>
