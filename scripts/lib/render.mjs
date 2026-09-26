@@ -248,23 +248,23 @@ export function statsPicture({ lang, stats }) {
   const label = lang === 'sr'
     ? {
         unique: 'Jedinstvenih promptova',
-        uniqueNote: 'Trajni ID-evi nezavisni od jezika',
+        uniqueNote: 'Trajni ID-evi olakšavaju referenciranje promptova',
         localized: 'Lokalizovanih fajlova',
-        localizedNote: 'Po jedan engleski i srpski fajl za svaki prompt',
+        localizedNote: 'Usklađeni engleski i srpski fajlovi za svaki prompt',
         languages: 'Jezika',
-        languagesNote: 'Srpski i engleski',
+        languagesNote: 'Srpski i engleski, povezani zajedničkim ID-evima',
         active: 'Aktivnih oblasti',
-        activeNote: 'Objavljene kolekcije od ukupno deset oblasti',
+        activeNote: 'Objavljene kolekcije u biblioteci od deset oblasti',
       }
     : {
         unique: 'Unique prompts',
-        uniqueNote: 'Stable, language-independent IDs',
+        uniqueNote: 'Permanent IDs make every prompt easy to reference',
         localized: 'Localized files',
-        localizedNote: 'One English and one Serbian file per prompt',
+        localizedNote: 'Matched English and Serbian files for every prompt',
         languages: 'Languages',
-        languagesNote: 'English and Serbian',
+        languagesNote: 'English and Serbian, connected by shared IDs',
         active: 'Active categories',
-        activeNote: 'Published collections out of ten categories',
+        activeNote: 'Published collections in a ten-category library',
       };
 
   const cards = [
