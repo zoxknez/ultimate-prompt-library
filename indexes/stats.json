@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
-  "uniquePrompts": 120,
-  "localizedPromptFiles": 240,
+  "uniquePrompts": 130,
+  "localizedPromptFiles": 260,
   "languages": 2,
   "filesByLanguage": {
-    "en": 120,
-    "sr": 120
+    "en": 130,
+    "sr": 130
   },
   "byStatus": {
     "draft": 0,
     "review": 0,
-    "stable": 120,
+    "stable": 130,
     "deprecated": 0
   },
   "categories": 10,
   "categoriesWithContent": 2,
   "planned": 200,
-  "remaining": 80,
+  "remaining": 70,
   "collections": {
     "IT": {
       "id": "UPL-IT",
@@ -72,11 +72,11 @@
     "BIZ": {
       "id": "UPL-BIZ",
       "slug": "economics-finance-business",
-      "available": 20,
+      "available": 30,
       "planned": 100,
-      "remaining": 80,
+      "remaining": 70,
       "subcategories": 10,
-      "completedSubcategories": 2,
+      "completedSubcategories": 3,
       "bySubcategory": {
         "financial-analysis-corporate-finance": {
           "available": 10,
@@ -87,7 +87,7 @@
           "planned": 10
         },
         "economics-market-analysis": {
-          "available": 0,
+          "available": 10,
           "planned": 10
         },
         "business-strategy-competitive-analysis": {

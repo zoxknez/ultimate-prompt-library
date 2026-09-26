@@ -4,7 +4,7 @@
     "en",
     "sr"
   ],
-  "count": 120,
+  "count": 130,
   "prompts": [
     {
       "id": "UPL-IT-001",
@@ -3244,6 +3244,276 @@
       "files": {
         "en": "prompts/en/02-economics-finance-business/02-accounting-reporting-financial-control/020-accounting-anomaly-and-misstatement-hunter.md",
         "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/02-accounting-reporting-financial-control/020-accounting-anomaly-and-misstatement-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-021",
+      "number": 21,
+      "slug": "ultimate-economic-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "economics-market-analysis",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate Economic Analysis",
+        "sr": "Ultimate Economic Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/03-economics-market-analysis/021-ultimate-economic-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/03-economics-market-analysis/021-ultimate-economic-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-022",
+      "number": 22,
+      "slug": "macroeconomic-environment-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "economics-market-analysis",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Macroeconomic Environment Analysis",
+        "sr": "Macroeconomic Environment Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/03-economics-market-analysis/022-macroeconomic-environment-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/03-economics-market-analysis/022-macroeconomic-environment-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-023",
+      "number": 23,
+      "slug": "industry-economics-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "economics-market-analysis",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Industry Economics Analysis",
+        "sr": "Industry Economics Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/03-economics-market-analysis/023-industry-economics-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/03-economics-market-analysis/023-industry-economics-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-024",
+      "number": 24,
+      "slug": "market-size-and-growth-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "economics-market-analysis",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Market Size & Growth Analysis",
+        "sr": "Market Size & Growth Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/03-economics-market-analysis/024-market-size-and-growth-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/03-economics-market-analysis/024-market-size-and-growth-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-025",
+      "number": 25,
+      "slug": "demand-and-supply-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "economics-market-analysis",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Demand & Supply Analysis",
+        "sr": "Demand & Supply Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/03-economics-market-analysis/025-demand-and-supply-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/03-economics-market-analysis/025-demand-and-supply-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-026",
+      "number": 26,
+      "slug": "inflation-and-cost-pressure-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "economics-market-analysis",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Inflation & Cost Pressure Analysis",
+        "sr": "Inflation & Cost Pressure Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/03-economics-market-analysis/026-inflation-and-cost-pressure-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/03-economics-market-analysis/026-inflation-and-cost-pressure-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-027",
+      "number": 27,
+      "slug": "interest-rate-impact-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "economics-market-analysis",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Interest Rate Impact Analysis",
+        "sr": "Interest Rate Impact Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/03-economics-market-analysis/027-interest-rate-impact-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/03-economics-market-analysis/027-interest-rate-impact-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-028",
+      "number": 28,
+      "slug": "exchange-rate-exposure-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "economics-market-analysis",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Exchange Rate Exposure Analysis",
+        "sr": "Exchange Rate Exposure Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/03-economics-market-analysis/028-exchange-rate-exposure-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/03-economics-market-analysis/028-exchange-rate-exposure-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-029",
+      "number": 29,
+      "slug": "economic-scenario-and-sensitivity-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "economics-market-analysis",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Economic Scenario & Sensitivity Analysis",
+        "sr": "Economic Scenario & Sensitivity Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/03-economics-market-analysis/029-economic-scenario-and-sensitivity-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/03-economics-market-analysis/029-economic-scenario-and-sensitivity-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-030",
+      "number": 30,
+      "slug": "economic-data-quality-and-interpretation-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "economics-market-analysis",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Economic Data Quality & Interpretation Audit",
+        "sr": "Economic Data Quality & Interpretation Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/03-economics-market-analysis/030-economic-data-quality-and-interpretation-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/03-economics-market-analysis/030-economic-data-quality-and-interpretation-audit.md"
       }
     }
   ]
