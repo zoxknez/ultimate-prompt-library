@@ -271,9 +271,11 @@ export function categoryGrid({ lang, fromFile, collections }) {
 export function subcategoryStatus({ lang, fromFile, collections }) {
   const s = t(lang);
   return collections
-    .filter((c) => c.subcategories.length)
+    .filter((c) => c.available > 0 && c.subcategories.length)
     .map((c) =>
       [
+        `### ${c.category.names[lang]}`,
+        '',
         `| # | ${s.subcategory} | ${s.available2} | ${s.statusHeader} |`,
         '|:---:|---|:---:|---|',
         ...c.subcategories.map((g) => {
