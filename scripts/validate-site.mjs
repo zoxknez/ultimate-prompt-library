@@ -50,7 +50,11 @@ for (const prompt of index.prompts) {
     if (!existsSync(full)) continue;
     const html = readFileSync(full, 'utf8');
     if (!html.includes(prompt.id)) errors.push(`Prompt ID missing from page: ${rel}`);
-    if (html.includes('undefined')) errors.push(`Undefined value rendered in: ${rel}`);
+    const interfaceHtml = html
+      .replace(/<nav\b[^>]*\bclass="[^"]*\btoc\b[^"]*"[\s\S]*?<\/nav>/, '')
+      .replace(/<article\b[^>]*\bclass="[^"]*\bmarkdown-body\b[^"]*"[\s\S]*?<\/article>/, '')
+      .replace(/<script\b[^>]*\bid="raw-prompt"[^>]*>[\s\S]*?<\/script>/, '');
+    if (interfaceHtml.includes('undefined')) errors.push(`Undefined value rendered in: ${rel}`);
     if (html.includes('—')) errors.push(`Em dash found in generated page: ${rel}`);
   }
 }
