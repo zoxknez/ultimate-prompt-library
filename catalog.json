@@ -2540,6 +2540,106 @@
             "en": "Legal Research Memorandum Builder",
             "sr": "Izrada pravnog istraživačkog memoranduma"
           }
+        },
+        {
+          "id": "UPL-LAW-011",
+          "number": 11,
+          "slug": "ultimate-contract-review",
+          "subcategory": "contract-drafting-review",
+          "title": {
+            "en": "Ultimate Contract Review",
+            "sr": "Sveobuhvatni pregled ugovora"
+          }
+        },
+        {
+          "id": "UPL-LAW-012",
+          "number": 12,
+          "slug": "contract-drafting-architect",
+          "subcategory": "contract-drafting-review",
+          "title": {
+            "en": "Contract Drafting Architect",
+            "sr": "Arhitekta sastavljanja ugovora"
+          }
+        },
+        {
+          "id": "UPL-LAW-013",
+          "number": 13,
+          "slug": "clause-risk-analyzer",
+          "subcategory": "contract-drafting-review",
+          "title": {
+            "en": "Clause Risk Analyzer",
+            "sr": "Analiza rizika ugovornih klauzula"
+          }
+        },
+        {
+          "id": "UPL-LAW-014",
+          "number": 14,
+          "slug": "definitions-and-cross-reference-audit",
+          "subcategory": "contract-drafting-review",
+          "title": {
+            "en": "Definitions & Cross-Reference Audit",
+            "sr": "Audit definicija i unakrsnih upućivanja"
+          }
+        },
+        {
+          "id": "UPL-LAW-015",
+          "number": 15,
+          "slug": "representations-warranties-covenants-audit",
+          "subcategory": "contract-drafting-review",
+          "title": {
+            "en": "Representations, Warranties & Covenants Audit",
+            "sr": "Audit izjava, garancija i obaveza"
+          }
+        },
+        {
+          "id": "UPL-LAW-016",
+          "number": 16,
+          "slug": "liability-indemnity-limitation-audit",
+          "subcategory": "contract-drafting-review",
+          "title": {
+            "en": "Liability, Indemnity & Limitation Audit",
+            "sr": "Audit odgovornosti, obeštećenja i ograničenja"
+          }
+        },
+        {
+          "id": "UPL-LAW-017",
+          "number": 17,
+          "slug": "termination-and-remedies-audit",
+          "subcategory": "contract-drafting-review",
+          "title": {
+            "en": "Termination & Remedies Audit",
+            "sr": "Audit raskida i pravnih sredstava"
+          }
+        },
+        {
+          "id": "UPL-LAW-018",
+          "number": 18,
+          "slug": "force-majeure-hardship-change-in-law-audit",
+          "subcategory": "contract-drafting-review",
+          "title": {
+            "en": "Force Majeure, Hardship & Change-in-Law Audit",
+            "sr": "Audit više sile, hardship-a i promene prava"
+          }
+        },
+        {
+          "id": "UPL-LAW-019",
+          "number": 19,
+          "slug": "electronic-and-automated-contracting-audit",
+          "subcategory": "contract-drafting-review",
+          "title": {
+            "en": "Electronic & Automated Contracting Audit",
+            "sr": "Audit elektronskog i automatizovanog ugovaranja"
+          }
+        },
+        {
+          "id": "UPL-LAW-020",
+          "number": 20,
+          "slug": "contract-negotiation-playbook",
+          "subcategory": "contract-drafting-review",
+          "title": {
+            "en": "Contract Negotiation Playbook",
+            "sr": "Plan pregovaranja ugovora"
+          }
         }
       ]
     },
