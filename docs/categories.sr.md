@@ -49,6 +49,23 @@ IT oblast je podeljena na deset podkategorija. Folderi podkategorija koriste ist
 
 Promptovi dodati posle početne IT kolekcije nastavljaju od broja `101` i mogu pripadati bilo kojoj podkategoriji; gornji opsezi brojeva odnose se samo na prvih 100.
 
+## Poslovne podkategorije
+
+Oblast Ekonomija, finansije i poslovanje prati isti model: deset podkategorija sa po deset promptova, `UPL-BIZ-001` do `UPL-BIZ-100`, sa engleskim mašinskim slug-ovima kao imenima foldera u oba jezika.
+
+| # | Podkategorija | `subcategory_id` | Brojevi (početna poslovna kolekcija) |
+|---|---|---|---|
+| 01 | Finansijska analiza i korporativne finansije | `financial-analysis-corporate-finance` | 001-010 |
+| 02 | Računovodstvo, izveštavanje i finansijska kontrola | `accounting-reporting-financial-control` | 011-020 |
+| 03 | Ekonomija i analiza tržišta | `economics-market-analysis` | 021-030 |
+| 04 | Poslovna strategija i analiza konkurencije | `business-strategy-competitive-analysis` | 031-040 |
+| 05 | Preduzetništvo i poslovni modeli | `entrepreneurship-business-models` | 041-050 |
+| 06 | Operacije, lanac snabdevanja i nabavka | `operations-supply-chain-procurement` | 051-060 |
+| 07 | Prodaja, prihodi i cene | `sales-revenue-pricing` | 061-070 |
+| 08 | Menadžment, liderstvo i organizacija | `management-leadership-organization` | 071-080 |
+| 09 | Rizik, usklađenost i poslovna otpornost | `risk-compliance-business-resilience` | 081-090 |
+| 10 | Investicije, vrednovanje i due diligence | `investment-valuation-due-diligence` | 091-100 |
+
 ## Dodavanje oblasti ili podkategorije
 
 Oblasti i podkategorije su definisane u [`catalog.json`](../catalog.json). Novu oblast ili podkategoriju prvo predloži kroz issue. Koraci su opisani u [architecture.md](architecture.md#adding-a-subcategory-or-category).

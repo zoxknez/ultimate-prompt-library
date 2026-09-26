@@ -4,7 +4,7 @@
     "en",
     "sr"
   ],
-  "count": 100,
+  "count": 110,
   "prompts": [
     {
       "id": "UPL-IT-001",
@@ -2704,6 +2704,276 @@
       "files": {
         "en": "prompts/en/01-it-programming-technology/10-desktop-game-systems-embedded/100-hardware-software-integration-audit.md",
         "sr": "prompts/sr/01-it-programiranje-tehnologija/10-desktop-game-systems-embedded/100-hardware-software-integration-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-001",
+      "number": 1,
+      "slug": "ultimate-financial-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "financial-analysis-corporate-finance",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate Financial Analysis",
+        "sr": "Ultimate Financial Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/01-financial-analysis-corporate-finance/001-ultimate-financial-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/01-financial-analysis-corporate-finance/001-ultimate-financial-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-002",
+      "number": 2,
+      "slug": "financial-statement-forensic-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "financial-analysis-corporate-finance",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Financial Statement Forensic Analysis",
+        "sr": "Financial Statement Forensic Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/01-financial-analysis-corporate-finance/002-financial-statement-forensic-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/01-financial-analysis-corporate-finance/002-financial-statement-forensic-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-003",
+      "number": 3,
+      "slug": "cash-flow-and-liquidity-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "financial-analysis-corporate-finance",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Cash Flow & Liquidity Audit",
+        "sr": "Cash Flow & Liquidity Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/01-financial-analysis-corporate-finance/003-cash-flow-and-liquidity-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/01-financial-analysis-corporate-finance/003-cash-flow-and-liquidity-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-004",
+      "number": 4,
+      "slug": "profitability-and-margin-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "financial-analysis-corporate-finance",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Profitability & Margin Analysis",
+        "sr": "Profitability & Margin Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/01-financial-analysis-corporate-finance/004-profitability-and-margin-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/01-financial-analysis-corporate-finance/004-profitability-and-margin-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-005",
+      "number": 5,
+      "slug": "working-capital-optimization",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "financial-analysis-corporate-finance",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Working Capital Optimization",
+        "sr": "Working Capital Optimization"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/01-financial-analysis-corporate-finance/005-working-capital-optimization.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/01-financial-analysis-corporate-finance/005-working-capital-optimization.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-006",
+      "number": 6,
+      "slug": "budget-and-forecast-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "financial-analysis-corporate-finance",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Budget & Forecast Audit",
+        "sr": "Budget & Forecast Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/01-financial-analysis-corporate-finance/006-budget-and-forecast-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/01-financial-analysis-corporate-finance/006-budget-and-forecast-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-007",
+      "number": 7,
+      "slug": "financial-model-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "financial-analysis-corporate-finance",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Financial Model Audit",
+        "sr": "Financial Model Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/01-financial-analysis-corporate-finance/007-financial-model-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/01-financial-analysis-corporate-finance/007-financial-model-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-008",
+      "number": 8,
+      "slug": "capital-allocation-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "financial-analysis-corporate-finance",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Capital Allocation Analysis",
+        "sr": "Capital Allocation Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/01-financial-analysis-corporate-finance/008-capital-allocation-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/01-financial-analysis-corporate-finance/008-capital-allocation-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-009",
+      "number": 9,
+      "slug": "debt-and-financing-structure-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "financial-analysis-corporate-finance",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Debt & Financing Structure Analysis",
+        "sr": "Debt & Financing Structure Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/01-financial-analysis-corporate-finance/009-debt-and-financing-structure-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/01-financial-analysis-corporate-finance/009-debt-and-financing-structure-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-010",
+      "number": 10,
+      "slug": "corporate-finance-decision-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "financial-analysis-corporate-finance",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Corporate Finance Decision Analysis",
+        "sr": "Corporate Finance Decision Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/01-financial-analysis-corporate-finance/010-corporate-finance-decision-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/01-financial-analysis-corporate-finance/010-corporate-finance-decision-analysis.md"
       }
     }
   ]

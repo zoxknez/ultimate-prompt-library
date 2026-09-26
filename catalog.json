@@ -1177,8 +1177,1130 @@
         "en": "Economics, personal and corporate finance, accounting, strategy, entrepreneurship and business operations.",
         "sr": "Ekonomija, lične i korporativne finansije, računovodstvo, strategija, preduzetništvo i poslovne operacije."
       },
-      "subcategories": [],
-      "prompts": []
+      "subcategories": [
+        {
+          "id": "financial-analysis-corporate-finance",
+          "order": 1,
+          "names": {
+            "en": "Financial Analysis & Corporate Finance",
+            "sr": "Finansijska analiza i korporativne finansije"
+          },
+          "descriptions": {
+            "en": "Financial statement analysis, cash flow and liquidity, margins, working capital, budgets and forecasts, financial models, capital allocation, financing and corporate finance decisions.",
+            "sr": "Analiza finansijskih izveštaja, cash flow i likvidnost, marže, obrtni kapital, budžeti i prognoze, finansijski modeli, alokacija kapitala, finansiranje i odluke korporativnih finansija."
+          }
+        },
+        {
+          "id": "accounting-reporting-financial-control",
+          "order": 2,
+          "names": {
+            "en": "Accounting, Reporting & Financial Control",
+            "sr": "Računovodstvo, izveštavanje i finansijska kontrola"
+          },
+          "descriptions": {
+            "en": "Accounting systems, general ledger, revenue recognition, costs, receivables and payables, financial close, management reporting, internal controls and misstatement detection.",
+            "sr": "Računovodstveni sistemi, glavna knjiga, priznavanje prihoda, troškovi, potraživanja i obaveze, zatvaranje perioda, menadžersko izveštavanje, interne kontrole i otkrivanje grešaka u izveštajima."
+          }
+        },
+        {
+          "id": "economics-market-analysis",
+          "order": 3,
+          "names": {
+            "en": "Economics & Market Analysis",
+            "sr": "Ekonomija i analiza tržišta"
+          },
+          "descriptions": {
+            "en": "Macroeconomic environment, industry economics, market size and growth, demand and supply, inflation, interest and exchange rates, economic scenarios and data interpretation.",
+            "sr": "Makroekonomsko okruženje, ekonomija industrije, veličina i rast tržišta, ponuda i tražnja, inflacija, kamatne stope i devizni kursevi, ekonomski scenariji i tumačenje podataka."
+          }
+        },
+        {
+          "id": "business-strategy-competitive-analysis",
+          "order": 4,
+          "names": {
+            "en": "Business Strategy & Competitive Analysis",
+            "sr": "Poslovna strategija i analiza konkurencije"
+          },
+          "descriptions": {
+            "en": "Business strategy, competitive landscape and advantage, SWOT and PESTLE, strategic risks and opportunities, market entry, growth strategy, initiative prioritization and stress tests.",
+            "sr": "Poslovna strategija, konkurentsko okruženje i prednost, SWOT i PESTLE, strateški rizici i prilike, ulazak na tržište, strategija rasta, prioritizacija inicijativa i stres testovi."
+          }
+        },
+        {
+          "id": "entrepreneurship-business-models",
+          "order": 5,
+          "names": {
+            "en": "Entrepreneurship & Business Models",
+            "sr": "Preduzetništvo i poslovni modeli"
+          },
+          "descriptions": {
+            "en": "Business models, startup feasibility, business model canvas, unit economics, product-market fit, runway, founder assumptions, scalability, monetization and failure modes.",
+            "sr": "Poslovni modeli, izvodljivost startup ideja, business model canvas, unit economics, product-market fit, runway, pretpostavke osnivača, skalabilnost, monetizacija i uzroci neuspeha."
+          }
+        },
+        {
+          "id": "operations-supply-chain-procurement",
+          "order": 6,
+          "names": {
+            "en": "Operations, Supply Chain & Procurement",
+            "sr": "Operacije, lanac snabdevanja i nabavka"
+          },
+          "descriptions": {
+            "en": "Operations, process efficiency, bottlenecks, supply chain resilience, inventory, procurement and suppliers, vendor risk, capacity planning, cost reduction and business continuity.",
+            "sr": "Operacije, efikasnost procesa, uska grla, otpornost lanca snabdevanja, zalihe, nabavka i dobavljači, rizik dobavljača, planiranje kapaciteta, smanjenje troškova i kontinuitet poslovanja."
+          }
+        },
+        {
+          "id": "sales-revenue-pricing",
+          "order": 7,
+          "names": {
+            "en": "Sales, Revenue & Pricing",
+            "sr": "Prodaja, prihodi i cene"
+          },
+          "descriptions": {
+            "en": "Revenue, sales funnels and performance, pricing strategy and elasticity, revenue leakage, customer lifetime value, acquisition economics, recurring revenue and revenue forecasts.",
+            "sr": "Prihodi, prodajni levak i učinak prodaje, strategija cena i elastičnost, curenje prihoda, customer lifetime value, ekonomija akvizicije kupaca, ponavljajući prihodi i prognoze prihoda."
+          }
+        },
+        {
+          "id": "management-leadership-organization",
+          "order": 8,
+          "names": {
+            "en": "Management, Leadership & Organization",
+            "sr": "Menadžment, liderstvo i organizacija"
+          },
+          "descriptions": {
+            "en": "Management systems, organizational structure, decision-making, KPIs and performance management, reporting, delegation, communication, organizational bottlenecks, change readiness and leadership dependency.",
+            "sr": "Sistemi upravljanja, organizaciona struktura, donošenje odluka, KPI i upravljanje učinkom, izveštavanje, delegiranje, komunikacija, organizaciona uska grla, spremnost za promene i zavisnost od liderstva."
+          }
+        },
+        {
+          "id": "risk-compliance-business-resilience",
+          "order": 9,
+          "names": {
+            "en": "Risk, Compliance & Business Resilience",
+            "sr": "Rizik, usklađenost i poslovna otpornost"
+          },
+          "descriptions": {
+            "en": "Enterprise risk, risk registers, financial, operational and third-party risk, fraud risk, compliance controls, business continuity, crisis readiness and risk scenarios.",
+            "sr": "Upravljanje rizicima na nivou kompanije, registri rizika, finansijski, operativni i rizik trećih strana, rizik prevare, kontrole usklađenosti, kontinuitet poslovanja, spremnost za krize i scenariji rizika."
+          }
+        },
+        {
+          "id": "investment-valuation-due-diligence",
+          "order": 10,
+          "names": {
+            "en": "Investment, Valuation & Due Diligence",
+            "sr": "Investicije, vrednovanje i due diligence"
+          },
+          "descriptions": {
+            "en": "Business valuation, DCF and comparable companies, investment theses, commercial and financial due diligence, M&A targets, downside risk, assumptions and sensitivity.",
+            "sr": "Vrednovanje poslovanja, DCF i uporedive kompanije, investicione teze, komercijalni i finansijski due diligence, M&A mete, rizik gubitka, pretpostavke i osetljivost."
+          }
+        }
+      ],
+      "prompts": [
+        {
+          "id": "UPL-BIZ-001",
+          "number": 1,
+          "slug": "ultimate-financial-analysis",
+          "subcategory": "financial-analysis-corporate-finance",
+          "title": {
+            "en": "Ultimate Financial Analysis",
+            "sr": "Ultimate Financial Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-002",
+          "number": 2,
+          "slug": "financial-statement-forensic-analysis",
+          "subcategory": "financial-analysis-corporate-finance",
+          "title": {
+            "en": "Financial Statement Forensic Analysis",
+            "sr": "Financial Statement Forensic Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-003",
+          "number": 3,
+          "slug": "cash-flow-and-liquidity-audit",
+          "subcategory": "financial-analysis-corporate-finance",
+          "title": {
+            "en": "Cash Flow & Liquidity Audit",
+            "sr": "Cash Flow & Liquidity Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-004",
+          "number": 4,
+          "slug": "profitability-and-margin-analysis",
+          "subcategory": "financial-analysis-corporate-finance",
+          "title": {
+            "en": "Profitability & Margin Analysis",
+            "sr": "Profitability & Margin Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-005",
+          "number": 5,
+          "slug": "working-capital-optimization",
+          "subcategory": "financial-analysis-corporate-finance",
+          "title": {
+            "en": "Working Capital Optimization",
+            "sr": "Working Capital Optimization"
+          }
+        },
+        {
+          "id": "UPL-BIZ-006",
+          "number": 6,
+          "slug": "budget-and-forecast-audit",
+          "subcategory": "financial-analysis-corporate-finance",
+          "title": {
+            "en": "Budget & Forecast Audit",
+            "sr": "Budget & Forecast Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-007",
+          "number": 7,
+          "slug": "financial-model-audit",
+          "subcategory": "financial-analysis-corporate-finance",
+          "title": {
+            "en": "Financial Model Audit",
+            "sr": "Financial Model Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-008",
+          "number": 8,
+          "slug": "capital-allocation-analysis",
+          "subcategory": "financial-analysis-corporate-finance",
+          "title": {
+            "en": "Capital Allocation Analysis",
+            "sr": "Capital Allocation Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-009",
+          "number": 9,
+          "slug": "debt-and-financing-structure-analysis",
+          "subcategory": "financial-analysis-corporate-finance",
+          "title": {
+            "en": "Debt & Financing Structure Analysis",
+            "sr": "Debt & Financing Structure Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-010",
+          "number": 10,
+          "slug": "corporate-finance-decision-analysis",
+          "subcategory": "financial-analysis-corporate-finance",
+          "title": {
+            "en": "Corporate Finance Decision Analysis",
+            "sr": "Corporate Finance Decision Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-011",
+          "number": 11,
+          "slug": "ultimate-accounting-system-audit",
+          "subcategory": "accounting-reporting-financial-control",
+          "title": {
+            "en": "Ultimate Accounting System Audit",
+            "sr": "Ultimate Accounting System Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-012",
+          "number": 12,
+          "slug": "general-ledger-forensic-audit",
+          "subcategory": "accounting-reporting-financial-control",
+          "title": {
+            "en": "General Ledger Forensic Audit",
+            "sr": "General Ledger Forensic Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-013",
+          "number": 13,
+          "slug": "revenue-recognition-audit",
+          "subcategory": "accounting-reporting-financial-control",
+          "title": {
+            "en": "Revenue Recognition Audit",
+            "sr": "Revenue Recognition Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-014",
+          "number": 14,
+          "slug": "expense-and-cost-accounting-audit",
+          "subcategory": "accounting-reporting-financial-control",
+          "title": {
+            "en": "Expense & Cost Accounting Audit",
+            "sr": "Expense & Cost Accounting Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-015",
+          "number": 15,
+          "slug": "accounts-receivable-audit",
+          "subcategory": "accounting-reporting-financial-control",
+          "title": {
+            "en": "Accounts Receivable Audit",
+            "sr": "Accounts Receivable Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-016",
+          "number": 16,
+          "slug": "accounts-payable-audit",
+          "subcategory": "accounting-reporting-financial-control",
+          "title": {
+            "en": "Accounts Payable Audit",
+            "sr": "Accounts Payable Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-017",
+          "number": 17,
+          "slug": "financial-close-process-audit",
+          "subcategory": "accounting-reporting-financial-control",
+          "title": {
+            "en": "Financial Close Process Audit",
+            "sr": "Financial Close Process Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-018",
+          "number": 18,
+          "slug": "management-reporting-audit",
+          "subcategory": "accounting-reporting-financial-control",
+          "title": {
+            "en": "Management Reporting Audit",
+            "sr": "Management Reporting Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-019",
+          "number": 19,
+          "slug": "internal-financial-controls-audit",
+          "subcategory": "accounting-reporting-financial-control",
+          "title": {
+            "en": "Internal Financial Controls Audit",
+            "sr": "Internal Financial Controls Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-020",
+          "number": 20,
+          "slug": "accounting-anomaly-and-misstatement-hunter",
+          "subcategory": "accounting-reporting-financial-control",
+          "title": {
+            "en": "Accounting Anomaly & Misstatement Hunter",
+            "sr": "Accounting Anomaly & Misstatement Hunter"
+          }
+        },
+        {
+          "id": "UPL-BIZ-021",
+          "number": 21,
+          "slug": "ultimate-economic-analysis",
+          "subcategory": "economics-market-analysis",
+          "title": {
+            "en": "Ultimate Economic Analysis",
+            "sr": "Ultimate Economic Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-022",
+          "number": 22,
+          "slug": "macroeconomic-environment-analysis",
+          "subcategory": "economics-market-analysis",
+          "title": {
+            "en": "Macroeconomic Environment Analysis",
+            "sr": "Macroeconomic Environment Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-023",
+          "number": 23,
+          "slug": "industry-economics-analysis",
+          "subcategory": "economics-market-analysis",
+          "title": {
+            "en": "Industry Economics Analysis",
+            "sr": "Industry Economics Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-024",
+          "number": 24,
+          "slug": "market-size-and-growth-analysis",
+          "subcategory": "economics-market-analysis",
+          "title": {
+            "en": "Market Size & Growth Analysis",
+            "sr": "Market Size & Growth Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-025",
+          "number": 25,
+          "slug": "demand-and-supply-analysis",
+          "subcategory": "economics-market-analysis",
+          "title": {
+            "en": "Demand & Supply Analysis",
+            "sr": "Demand & Supply Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-026",
+          "number": 26,
+          "slug": "inflation-and-cost-pressure-analysis",
+          "subcategory": "economics-market-analysis",
+          "title": {
+            "en": "Inflation & Cost Pressure Analysis",
+            "sr": "Inflation & Cost Pressure Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-027",
+          "number": 27,
+          "slug": "interest-rate-impact-analysis",
+          "subcategory": "economics-market-analysis",
+          "title": {
+            "en": "Interest Rate Impact Analysis",
+            "sr": "Interest Rate Impact Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-028",
+          "number": 28,
+          "slug": "exchange-rate-exposure-analysis",
+          "subcategory": "economics-market-analysis",
+          "title": {
+            "en": "Exchange Rate Exposure Analysis",
+            "sr": "Exchange Rate Exposure Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-029",
+          "number": 29,
+          "slug": "economic-scenario-and-sensitivity-analysis",
+          "subcategory": "economics-market-analysis",
+          "title": {
+            "en": "Economic Scenario & Sensitivity Analysis",
+            "sr": "Economic Scenario & Sensitivity Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-030",
+          "number": 30,
+          "slug": "economic-data-quality-and-interpretation-audit",
+          "subcategory": "economics-market-analysis",
+          "title": {
+            "en": "Economic Data Quality & Interpretation Audit",
+            "sr": "Economic Data Quality & Interpretation Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-031",
+          "number": 31,
+          "slug": "ultimate-business-strategy-audit",
+          "subcategory": "business-strategy-competitive-analysis",
+          "title": {
+            "en": "Ultimate Business Strategy Audit",
+            "sr": "Ultimate Business Strategy Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-032",
+          "number": 32,
+          "slug": "competitive-landscape-analysis",
+          "subcategory": "business-strategy-competitive-analysis",
+          "title": {
+            "en": "Competitive Landscape Analysis",
+            "sr": "Competitive Landscape Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-033",
+          "number": 33,
+          "slug": "competitive-advantage-audit",
+          "subcategory": "business-strategy-competitive-analysis",
+          "title": {
+            "en": "Competitive Advantage Audit",
+            "sr": "Competitive Advantage Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-034",
+          "number": 34,
+          "slug": "swot-evidence-based-analysis",
+          "subcategory": "business-strategy-competitive-analysis",
+          "title": {
+            "en": "SWOT Evidence-Based Analysis",
+            "sr": "SWOT Evidence-Based Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-035",
+          "number": 35,
+          "slug": "pestle-strategic-analysis",
+          "subcategory": "business-strategy-competitive-analysis",
+          "title": {
+            "en": "PESTLE Strategic Analysis",
+            "sr": "PESTLE Strategic Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-036",
+          "number": 36,
+          "slug": "strategic-risk-and-opportunity-analysis",
+          "subcategory": "business-strategy-competitive-analysis",
+          "title": {
+            "en": "Strategic Risk & Opportunity Analysis",
+            "sr": "Strategic Risk & Opportunity Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-037",
+          "number": 37,
+          "slug": "market-entry-strategy-analysis",
+          "subcategory": "business-strategy-competitive-analysis",
+          "title": {
+            "en": "Market Entry Strategy Analysis",
+            "sr": "Market Entry Strategy Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-038",
+          "number": 38,
+          "slug": "growth-strategy-audit",
+          "subcategory": "business-strategy-competitive-analysis",
+          "title": {
+            "en": "Growth Strategy Audit",
+            "sr": "Growth Strategy Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-039",
+          "number": 39,
+          "slug": "strategic-initiative-prioritization",
+          "subcategory": "business-strategy-competitive-analysis",
+          "title": {
+            "en": "Strategic Initiative Prioritization",
+            "sr": "Strategic Initiative Prioritization"
+          }
+        },
+        {
+          "id": "UPL-BIZ-040",
+          "number": 40,
+          "slug": "business-strategy-stress-test",
+          "subcategory": "business-strategy-competitive-analysis",
+          "title": {
+            "en": "Business Strategy Stress Test",
+            "sr": "Business Strategy Stress Test"
+          }
+        },
+        {
+          "id": "UPL-BIZ-041",
+          "number": 41,
+          "slug": "ultimate-business-model-audit",
+          "subcategory": "entrepreneurship-business-models",
+          "title": {
+            "en": "Ultimate Business Model Audit",
+            "sr": "Ultimate Business Model Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-042",
+          "number": 42,
+          "slug": "startup-idea-feasibility-analysis",
+          "subcategory": "entrepreneurship-business-models",
+          "title": {
+            "en": "Startup Idea Feasibility Analysis",
+            "sr": "Startup Idea Feasibility Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-043",
+          "number": 43,
+          "slug": "business-model-canvas-deep-analysis",
+          "subcategory": "entrepreneurship-business-models",
+          "title": {
+            "en": "Business Model Canvas Deep Analysis",
+            "sr": "Business Model Canvas Deep Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-044",
+          "number": 44,
+          "slug": "unit-economics-audit",
+          "subcategory": "entrepreneurship-business-models",
+          "title": {
+            "en": "Unit Economics Audit",
+            "sr": "Unit Economics Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-045",
+          "number": 45,
+          "slug": "product-market-fit-evidence-audit",
+          "subcategory": "entrepreneurship-business-models",
+          "title": {
+            "en": "Product-Market Fit Evidence Audit",
+            "sr": "Product-Market Fit Evidence Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-046",
+          "number": 46,
+          "slug": "startup-financial-runway-analysis",
+          "subcategory": "entrepreneurship-business-models",
+          "title": {
+            "en": "Startup Financial Runway Analysis",
+            "sr": "Startup Financial Runway Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-047",
+          "number": 47,
+          "slug": "founder-assumption-stress-test",
+          "subcategory": "entrepreneurship-business-models",
+          "title": {
+            "en": "Founder Assumption Stress Test",
+            "sr": "Founder Assumption Stress Test"
+          }
+        },
+        {
+          "id": "UPL-BIZ-048",
+          "number": 48,
+          "slug": "business-scalability-audit",
+          "subcategory": "entrepreneurship-business-models",
+          "title": {
+            "en": "Business Scalability Audit",
+            "sr": "Business Scalability Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-049",
+          "number": 49,
+          "slug": "monetization-model-analysis",
+          "subcategory": "entrepreneurship-business-models",
+          "title": {
+            "en": "Monetization Model Analysis",
+            "sr": "Monetization Model Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-050",
+          "number": 50,
+          "slug": "startup-failure-mode-audit",
+          "subcategory": "entrepreneurship-business-models",
+          "title": {
+            "en": "Startup Failure Mode Audit",
+            "sr": "Startup Failure Mode Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-051",
+          "number": 51,
+          "slug": "ultimate-operations-audit",
+          "subcategory": "operations-supply-chain-procurement",
+          "title": {
+            "en": "Ultimate Operations Audit",
+            "sr": "Ultimate Operations Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-052",
+          "number": 52,
+          "slug": "process-efficiency-audit",
+          "subcategory": "operations-supply-chain-procurement",
+          "title": {
+            "en": "Process Efficiency Audit",
+            "sr": "Process Efficiency Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-053",
+          "number": 53,
+          "slug": "operational-bottleneck-hunter",
+          "subcategory": "operations-supply-chain-procurement",
+          "title": {
+            "en": "Operational Bottleneck Hunter",
+            "sr": "Operational Bottleneck Hunter"
+          }
+        },
+        {
+          "id": "UPL-BIZ-054",
+          "number": 54,
+          "slug": "supply-chain-resilience-audit",
+          "subcategory": "operations-supply-chain-procurement",
+          "title": {
+            "en": "Supply Chain Resilience Audit",
+            "sr": "Supply Chain Resilience Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-055",
+          "number": 55,
+          "slug": "inventory-optimization-audit",
+          "subcategory": "operations-supply-chain-procurement",
+          "title": {
+            "en": "Inventory Optimization Audit",
+            "sr": "Inventory Optimization Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-056",
+          "number": 56,
+          "slug": "procurement-and-supplier-audit",
+          "subcategory": "operations-supply-chain-procurement",
+          "title": {
+            "en": "Procurement & Supplier Audit",
+            "sr": "Procurement & Supplier Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-057",
+          "number": 57,
+          "slug": "vendor-risk-analysis",
+          "subcategory": "operations-supply-chain-procurement",
+          "title": {
+            "en": "Vendor Risk Analysis",
+            "sr": "Vendor Risk Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-058",
+          "number": 58,
+          "slug": "capacity-planning-audit",
+          "subcategory": "operations-supply-chain-procurement",
+          "title": {
+            "en": "Capacity Planning Audit",
+            "sr": "Capacity Planning Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-059",
+          "number": 59,
+          "slug": "operational-cost-reduction-analysis",
+          "subcategory": "operations-supply-chain-procurement",
+          "title": {
+            "en": "Operational Cost Reduction Analysis",
+            "sr": "Operational Cost Reduction Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-060",
+          "number": 60,
+          "slug": "business-continuity-operations-audit",
+          "subcategory": "operations-supply-chain-procurement",
+          "title": {
+            "en": "Business Continuity Operations Audit",
+            "sr": "Business Continuity Operations Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-061",
+          "number": 61,
+          "slug": "ultimate-revenue-audit",
+          "subcategory": "sales-revenue-pricing",
+          "title": {
+            "en": "Ultimate Revenue Audit",
+            "sr": "Ultimate Revenue Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-062",
+          "number": 62,
+          "slug": "sales-funnel-forensic-analysis",
+          "subcategory": "sales-revenue-pricing",
+          "title": {
+            "en": "Sales Funnel Forensic Analysis",
+            "sr": "Sales Funnel Forensic Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-063",
+          "number": 63,
+          "slug": "sales-performance-audit",
+          "subcategory": "sales-revenue-pricing",
+          "title": {
+            "en": "Sales Performance Audit",
+            "sr": "Sales Performance Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-064",
+          "number": 64,
+          "slug": "pricing-strategy-audit",
+          "subcategory": "sales-revenue-pricing",
+          "title": {
+            "en": "Pricing Strategy Audit",
+            "sr": "Pricing Strategy Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-065",
+          "number": 65,
+          "slug": "pricing-elasticity-analysis",
+          "subcategory": "sales-revenue-pricing",
+          "title": {
+            "en": "Pricing Elasticity Analysis",
+            "sr": "Pricing Elasticity Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-066",
+          "number": 66,
+          "slug": "revenue-leakage-hunter",
+          "subcategory": "sales-revenue-pricing",
+          "title": {
+            "en": "Revenue Leakage Hunter",
+            "sr": "Revenue Leakage Hunter"
+          }
+        },
+        {
+          "id": "UPL-BIZ-067",
+          "number": 67,
+          "slug": "customer-lifetime-value-analysis",
+          "subcategory": "sales-revenue-pricing",
+          "title": {
+            "en": "Customer Lifetime Value Analysis",
+            "sr": "Customer Lifetime Value Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-068",
+          "number": 68,
+          "slug": "customer-acquisition-economics-audit",
+          "subcategory": "sales-revenue-pricing",
+          "title": {
+            "en": "Customer Acquisition Economics Audit",
+            "sr": "Customer Acquisition Economics Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-069",
+          "number": 69,
+          "slug": "subscription-and-recurring-revenue-audit",
+          "subcategory": "sales-revenue-pricing",
+          "title": {
+            "en": "Subscription & Recurring Revenue Audit",
+            "sr": "Subscription & Recurring Revenue Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-070",
+          "number": 70,
+          "slug": "revenue-forecast-stress-test",
+          "subcategory": "sales-revenue-pricing",
+          "title": {
+            "en": "Revenue Forecast Stress Test",
+            "sr": "Revenue Forecast Stress Test"
+          }
+        },
+        {
+          "id": "UPL-BIZ-071",
+          "number": 71,
+          "slug": "ultimate-management-system-audit",
+          "subcategory": "management-leadership-organization",
+          "title": {
+            "en": "Ultimate Management System Audit",
+            "sr": "Ultimate Management System Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-072",
+          "number": 72,
+          "slug": "organizational-structure-audit",
+          "subcategory": "management-leadership-organization",
+          "title": {
+            "en": "Organizational Structure Audit",
+            "sr": "Organizational Structure Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-073",
+          "number": 73,
+          "slug": "decision-making-process-audit",
+          "subcategory": "management-leadership-organization",
+          "title": {
+            "en": "Decision-Making Process Audit",
+            "sr": "Decision-Making Process Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-074",
+          "number": 74,
+          "slug": "kpi-and-performance-management-audit",
+          "subcategory": "management-leadership-organization",
+          "title": {
+            "en": "KPI & Performance Management Audit",
+            "sr": "KPI & Performance Management Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-075",
+          "number": 75,
+          "slug": "management-reporting-system-audit",
+          "subcategory": "management-leadership-organization",
+          "title": {
+            "en": "Management Reporting System Audit",
+            "sr": "Management Reporting System Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-076",
+          "number": 76,
+          "slug": "delegation-and-accountability-audit",
+          "subcategory": "management-leadership-organization",
+          "title": {
+            "en": "Delegation & Accountability Audit",
+            "sr": "Delegation & Accountability Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-077",
+          "number": 77,
+          "slug": "meeting-and-communication-effectiveness-audit",
+          "subcategory": "management-leadership-organization",
+          "title": {
+            "en": "Meeting & Communication Effectiveness Audit",
+            "sr": "Meeting & Communication Effectiveness Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-078",
+          "number": 78,
+          "slug": "organizational-bottleneck-analysis",
+          "subcategory": "management-leadership-organization",
+          "title": {
+            "en": "Organizational Bottleneck Analysis",
+            "sr": "Organizational Bottleneck Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-079",
+          "number": 79,
+          "slug": "change-management-readiness-audit",
+          "subcategory": "management-leadership-organization",
+          "title": {
+            "en": "Change Management Readiness Audit",
+            "sr": "Change Management Readiness Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-080",
+          "number": 80,
+          "slug": "leadership-risk-and-dependency-audit",
+          "subcategory": "management-leadership-organization",
+          "title": {
+            "en": "Leadership Risk & Dependency Audit",
+            "sr": "Leadership Risk & Dependency Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-081",
+          "number": 81,
+          "slug": "ultimate-enterprise-risk-audit",
+          "subcategory": "risk-compliance-business-resilience",
+          "title": {
+            "en": "Ultimate Enterprise Risk Audit",
+            "sr": "Ultimate Enterprise Risk Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-082",
+          "number": 82,
+          "slug": "business-risk-register-generator",
+          "subcategory": "risk-compliance-business-resilience",
+          "title": {
+            "en": "Business Risk Register Generator",
+            "sr": "Business Risk Register Generator"
+          }
+        },
+        {
+          "id": "UPL-BIZ-083",
+          "number": 83,
+          "slug": "financial-risk-audit",
+          "subcategory": "risk-compliance-business-resilience",
+          "title": {
+            "en": "Financial Risk Audit",
+            "sr": "Financial Risk Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-084",
+          "number": 84,
+          "slug": "operational-risk-audit",
+          "subcategory": "risk-compliance-business-resilience",
+          "title": {
+            "en": "Operational Risk Audit",
+            "sr": "Operational Risk Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-085",
+          "number": 85,
+          "slug": "third-party-business-risk-audit",
+          "subcategory": "risk-compliance-business-resilience",
+          "title": {
+            "en": "Third-Party Business Risk Audit",
+            "sr": "Third-Party Business Risk Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-086",
+          "number": 86,
+          "slug": "fraud-risk-assessment",
+          "subcategory": "risk-compliance-business-resilience",
+          "title": {
+            "en": "Fraud Risk Assessment",
+            "sr": "Fraud Risk Assessment"
+          }
+        },
+        {
+          "id": "UPL-BIZ-087",
+          "number": 87,
+          "slug": "compliance-control-framework-audit",
+          "subcategory": "risk-compliance-business-resilience",
+          "title": {
+            "en": "Compliance Control Framework Audit",
+            "sr": "Compliance Control Framework Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-088",
+          "number": 88,
+          "slug": "business-continuity-and-resilience-audit",
+          "subcategory": "risk-compliance-business-resilience",
+          "title": {
+            "en": "Business Continuity & Resilience Audit",
+            "sr": "Business Continuity & Resilience Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-089",
+          "number": 89,
+          "slug": "crisis-management-readiness-audit",
+          "subcategory": "risk-compliance-business-resilience",
+          "title": {
+            "en": "Crisis Management Readiness Audit",
+            "sr": "Crisis Management Readiness Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-090",
+          "number": 90,
+          "slug": "enterprise-risk-scenario-simulation",
+          "subcategory": "risk-compliance-business-resilience",
+          "title": {
+            "en": "Enterprise Risk Scenario Simulation",
+            "sr": "Enterprise Risk Scenario Simulation"
+          }
+        },
+        {
+          "id": "UPL-BIZ-091",
+          "number": 91,
+          "slug": "ultimate-business-valuation",
+          "subcategory": "investment-valuation-due-diligence",
+          "title": {
+            "en": "Ultimate Business Valuation",
+            "sr": "Ultimate Business Valuation"
+          }
+        },
+        {
+          "id": "UPL-BIZ-092",
+          "number": 92,
+          "slug": "dcf-valuation-audit",
+          "subcategory": "investment-valuation-due-diligence",
+          "title": {
+            "en": "DCF Valuation Audit",
+            "sr": "DCF Valuation Audit"
+          }
+        },
+        {
+          "id": "UPL-BIZ-093",
+          "number": 93,
+          "slug": "comparable-company-analysis",
+          "subcategory": "investment-valuation-due-diligence",
+          "title": {
+            "en": "Comparable Company Analysis",
+            "sr": "Comparable Company Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-094",
+          "number": 94,
+          "slug": "investment-thesis-stress-test",
+          "subcategory": "investment-valuation-due-diligence",
+          "title": {
+            "en": "Investment Thesis Stress Test",
+            "sr": "Investment Thesis Stress Test"
+          }
+        },
+        {
+          "id": "UPL-BIZ-095",
+          "number": 95,
+          "slug": "commercial-due-diligence",
+          "subcategory": "investment-valuation-due-diligence",
+          "title": {
+            "en": "Commercial Due Diligence",
+            "sr": "Commercial Due Diligence"
+          }
+        },
+        {
+          "id": "UPL-BIZ-096",
+          "number": 96,
+          "slug": "financial-due-diligence",
+          "subcategory": "investment-valuation-due-diligence",
+          "title": {
+            "en": "Financial Due Diligence",
+            "sr": "Financial Due Diligence"
+          }
+        },
+        {
+          "id": "UPL-BIZ-097",
+          "number": 97,
+          "slug": "ma-target-analysis",
+          "subcategory": "investment-valuation-due-diligence",
+          "title": {
+            "en": "M&A Target Analysis",
+            "sr": "M&A Target Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-098",
+          "number": 98,
+          "slug": "investment-risk-and-downside-analysis",
+          "subcategory": "investment-valuation-due-diligence",
+          "title": {
+            "en": "Investment Risk & Downside Analysis",
+            "sr": "Investment Risk & Downside Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-099",
+          "number": 99,
+          "slug": "assumption-and-sensitivity-analysis",
+          "subcategory": "investment-valuation-due-diligence",
+          "title": {
+            "en": "Assumption & Sensitivity Analysis",
+            "sr": "Assumption & Sensitivity Analysis"
+          }
+        },
+        {
+          "id": "UPL-BIZ-100",
+          "number": 100,
+          "slug": "full-business-due-diligence-audit",
+          "subcategory": "investment-valuation-due-diligence",
+          "title": {
+            "en": "Full Business Due Diligence Audit",
+            "sr": "Full Business Due Diligence Audit"
+          }
+        }
+      ]
     },
     {
       "id": "UPL-LAW",

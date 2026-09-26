@@ -49,6 +49,23 @@ The IT category is divided into ten subcategories. Subcategory folders use the s
 
 Prompts added after the Initial IT Collection continue at `101` and may belong to any subcategory; the number ranges above describe only the first 100.
 
+## Business subcategories
+
+The Economics, Finance & Business category follows the same model: ten subcategories of ten prompts, `UPL-BIZ-001` to `UPL-BIZ-100`, with English machine slugs as folder names in both languages.
+
+| # | Subcategory | `subcategory_id` | Numbers (Initial Business Collection) |
+|---|---|---|---|
+| 01 | Financial Analysis & Corporate Finance | `financial-analysis-corporate-finance` | 001-010 |
+| 02 | Accounting, Reporting & Financial Control | `accounting-reporting-financial-control` | 011-020 |
+| 03 | Economics & Market Analysis | `economics-market-analysis` | 021-030 |
+| 04 | Business Strategy & Competitive Analysis | `business-strategy-competitive-analysis` | 031-040 |
+| 05 | Entrepreneurship & Business Models | `entrepreneurship-business-models` | 041-050 |
+| 06 | Operations, Supply Chain & Procurement | `operations-supply-chain-procurement` | 051-060 |
+| 07 | Sales, Revenue & Pricing | `sales-revenue-pricing` | 061-070 |
+| 08 | Management, Leadership & Organization | `management-leadership-organization` | 071-080 |
+| 09 | Risk, Compliance & Business Resilience | `risk-compliance-business-resilience` | 081-090 |
+| 10 | Investment, Valuation & Due Diligence | `investment-valuation-due-diligence` | 091-100 |
+
 ## Adding a category or subcategory
 
 Categories and subcategories are defined in [`catalog.json`](../catalog.json). Propose a new one through an issue first. See [architecture.md](architecture.md#adding-a-subcategory-or-category) for the steps.
