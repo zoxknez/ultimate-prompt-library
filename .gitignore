@@ -22,3 +22,7 @@ tmp/
 
 # Generated website output
 dist/
+
+.vercel/
+.env
+.env*.local
