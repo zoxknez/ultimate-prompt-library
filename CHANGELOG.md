@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- UPL-BIZ-081 to UPL-BIZ-090 (Risk, Compliance & Business Resilience), version `1.0.0`, status `stable`, in Serbian and English. The Business collection now has 90 of 100 prompts available.
 - UPL-BIZ-071 to UPL-BIZ-080 (Management, Leadership & Organization), version `1.0.0`, status `stable`, in Serbian and English. The Business collection now has 80 of 100 prompts available.
 - UPL-BIZ-061 to UPL-BIZ-070 (Sales, Revenue & Pricing), version `1.0.0`, status `stable`, in Serbian and English. The Business collection now has 70 of 100 prompts available.
 - UPL-BIZ-051 to UPL-BIZ-060 (Operations, Supply Chain & Procurement), version `1.0.0`, status `stable`, in Serbian and English. The Business collection now has 60 of 100 prompts available.
