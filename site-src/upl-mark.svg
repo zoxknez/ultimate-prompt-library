@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Ultimate Prompt Library mark</title>
+  <desc id="desc">Geometric UPL monogram built from three connected prompt rails.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1D188"/>
+      <stop offset="1" stop-color="#B98524"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#153A58"/>
+      <stop offset="1" stop-color="#0B2238"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="17" fill="url(#navy)"/>
+  <path d="M17 19v14.5C17 42 23.2 47 31 47c7.8 0 14-5 14-13.5V19" fill="none" stroke="url(#gold)" stroke-width="4.8" stroke-linecap="round"/>
+  <path d="M27.5 18.5v19.2" fill="none" stroke="#F6E4B6" stroke-width="4.8" stroke-linecap="round"/>
+  <path d="M27.5 19h7.2c6.8 0 11.3 3.6 11.3 9.1s-4.5 9.1-11.3 9.1h-7.2" fill="none" stroke="url(#gold)" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="49" cy="15" r="3.4" fill="#F1D188"/>
+  <circle cx="54.5" cy="20.5" r="1.8" fill="#D9A84A"/>
+</svg>
