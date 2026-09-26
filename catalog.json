@@ -6882,8 +6882,1130 @@
         "en": "Career planning, job search, interviews, professional growth and leadership.",
         "sr": "Planiranje karijere, traženje posla, intervjui, profesionalni rast i liderstvo."
       },
-      "subcategories": [],
-      "prompts": []
+      "subcategories": [
+        {
+          "id": "career-strategy-positioning",
+          "order": 1,
+          "names": {
+            "en": "Career Strategy & Positioning",
+            "sr": "Karijerna strategija i pozicioniranje"
+          },
+          "descriptions": {
+            "en": "Career direction, role targeting, strengths, gaps, positioning, transitions and decision frameworks.",
+            "sr": "Pravac karijere, target uloge, snage, rupe, pozicioniranje, tranzicije i okviri odlučivanja."
+          }
+        },
+        {
+          "id": "resume-cv-portfolio",
+          "order": 2,
+          "names": {
+            "en": "Resume, CV & Portfolio",
+            "sr": "CV, biografija i portfolio"
+          },
+          "descriptions": {
+            "en": "Resume architecture, achievement evidence, ATS fit, portfolio cases, LinkedIn and application assets.",
+            "sr": "Arhitektura CV-a, dokazi o rezultatima, ATS usklađenost, portfolio studije, LinkedIn i prijavni materijali."
+          }
+        },
+        {
+          "id": "job-search-applications",
+          "order": 3,
+          "names": {
+            "en": "Job Search & Applications",
+            "sr": "Traženje posla i prijave"
+          },
+          "descriptions": {
+            "en": "Role research, vacancy triage, application prioritization, outreach, tracking and follow-up.",
+            "sr": "Istraživanje uloga, trijaža oglasa, prioritizacija prijava, outreach, praćenje i follow-up."
+          }
+        },
+        {
+          "id": "interviews-assessments",
+          "order": 4,
+          "names": {
+            "en": "Interviews & Assessments",
+            "sr": "Intervjui i procene"
+          },
+          "descriptions": {
+            "en": "Interview preparation, behavioral and technical answers, case tasks, take-home assignments and debriefs.",
+            "sr": "Priprema intervjua, behavioral i technical odgovori, case zadaci, take-home testovi i debrief."
+          }
+        },
+        {
+          "id": "compensation-negotiation-offers",
+          "order": 5,
+          "names": {
+            "en": "Compensation, Negotiation & Offers",
+            "sr": "Kompenzacija, pregovaranje i ponude"
+          },
+          "descriptions": {
+            "en": "Salary research, total compensation, negotiation, offer comparison, counteroffers and contract questions.",
+            "sr": "Istraživanje zarade, ukupna kompenzacija, pregovori, poređenje ponuda, kontra-ponude i pitanja ugovora."
+          }
+        },
+        {
+          "id": "workplace-performance-growth",
+          "order": 6,
+          "names": {
+            "en": "Workplace Performance & Growth",
+            "sr": "Radni učinak i profesionalni rast"
+          },
+          "descriptions": {
+            "en": "Onboarding, goals, performance, promotion readiness, feedback, visibility and role expansion.",
+            "sr": "Onboarding, ciljevi, učinak, spremnost za promociju, feedback, vidljivost i širenje uloge."
+          }
+        },
+        {
+          "id": "leadership-management",
+          "order": 7,
+          "names": {
+            "en": "Leadership & Management",
+            "sr": "Liderstvo i menadžment"
+          },
+          "descriptions": {
+            "en": "Delegation, coaching, one-on-ones, team systems, difficult conversations, decision-making and leadership growth.",
+            "sr": "Delegiranje, coaching, 1:1 razgovori, timski sistemi, teški razgovori, donošenje odluka i razvoj liderstva."
+          }
+        },
+        {
+          "id": "freelancing-consulting-independent-work",
+          "order": 8,
+          "names": {
+            "en": "Freelancing, Consulting & Independent Work",
+            "sr": "Freelancing, konsulting i samostalni rad"
+          },
+          "descriptions": {
+            "en": "Positioning, offers, proposals, scope, pricing, client qualification, delivery and retention.",
+            "sr": "Pozicioniranje, ponude, predlozi, scope, pricing, kvalifikacija klijenata, isporuka i retention."
+          }
+        },
+        {
+          "id": "networking-personal-brand-communication",
+          "order": 9,
+          "names": {
+            "en": "Networking, Personal Brand & Communication",
+            "sr": "Networking, lični brend i komunikacija"
+          },
+          "descriptions": {
+            "en": "Networking, outreach, professional presence, thought leadership, stakeholder communication and reputation.",
+            "sr": "Networking, outreach, profesionalno prisustvo, thought leadership, stakeholder komunikacija i reputacija."
+          }
+        },
+        {
+          "id": "career-learning-long-term-development",
+          "order": 10,
+          "names": {
+            "en": "Career Learning & Long-Term Development",
+            "sr": "Učenje i dugoročni razvoj karijere"
+          },
+          "descriptions": {
+            "en": "Skill planning, learning roadmaps, certifications, mentoring, career resilience and multi-year growth.",
+            "sr": "Plan veština, learning roadmap, sertifikati, mentorstvo, otpornost karijere i višegodišnji razvoj."
+          }
+        }
+      ],
+      "prompts": [
+        {
+          "id": "UPL-CAREER-001",
+          "number": 1,
+          "slug": "career-direction-audit",
+          "subcategory": "career-strategy-positioning",
+          "title": {
+            "en": "Career Direction Audit",
+            "sr": "Audit pravca karijere"
+          }
+        },
+        {
+          "id": "UPL-CAREER-002",
+          "number": 2,
+          "slug": "role-targeting-framework",
+          "subcategory": "career-strategy-positioning",
+          "title": {
+            "en": "Role Targeting Framework",
+            "sr": "Okvir za targetiranje uloga"
+          }
+        },
+        {
+          "id": "UPL-CAREER-003",
+          "number": 3,
+          "slug": "career-strengths-evidence-map",
+          "subcategory": "career-strategy-positioning",
+          "title": {
+            "en": "Career Strengths Evidence Map",
+            "sr": "Mapa dokaza profesionalnih snaga"
+          }
+        },
+        {
+          "id": "UPL-CAREER-004",
+          "number": 4,
+          "slug": "career-gap-analysis",
+          "subcategory": "career-strategy-positioning",
+          "title": {
+            "en": "Career Gap Analysis",
+            "sr": "Analiza karijernih rupa"
+          }
+        },
+        {
+          "id": "UPL-CAREER-005",
+          "number": 5,
+          "slug": "career-transition-plan",
+          "subcategory": "career-strategy-positioning",
+          "title": {
+            "en": "Career Transition Plan",
+            "sr": "Plan promene karijere"
+          }
+        },
+        {
+          "id": "UPL-CAREER-006",
+          "number": 6,
+          "slug": "career-positioning-statement-builder",
+          "subcategory": "career-strategy-positioning",
+          "title": {
+            "en": "Career Positioning Statement Builder",
+            "sr": "Izrada profesionalnog positioning statementa"
+          }
+        },
+        {
+          "id": "UPL-CAREER-007",
+          "number": 7,
+          "slug": "career-option-decision-matrix",
+          "subcategory": "career-strategy-positioning",
+          "title": {
+            "en": "Career Option Decision Matrix",
+            "sr": "Matrica odluke između karijernih opcija"
+          }
+        },
+        {
+          "id": "UPL-CAREER-008",
+          "number": 8,
+          "slug": "marketable-skills-inventory",
+          "subcategory": "career-strategy-positioning",
+          "title": {
+            "en": "Marketable Skills Inventory",
+            "sr": "Inventar tržišno relevantnih veština"
+          }
+        },
+        {
+          "id": "UPL-CAREER-009",
+          "number": 9,
+          "slug": "career-risk-and-resilience-plan",
+          "subcategory": "career-strategy-positioning",
+          "title": {
+            "en": "Career Risk & Resilience Plan",
+            "sr": "Plan rizika i otpornosti karijere"
+          }
+        },
+        {
+          "id": "UPL-CAREER-010",
+          "number": 10,
+          "slug": "five-year-career-roadmap",
+          "subcategory": "career-strategy-positioning",
+          "title": {
+            "en": "Five-Year Career Roadmap",
+            "sr": "Petogodišnji roadmap karijere"
+          }
+        },
+        {
+          "id": "UPL-CAREER-011",
+          "number": 11,
+          "slug": "resume-architecture-audit",
+          "subcategory": "resume-cv-portfolio",
+          "title": {
+            "en": "Resume Architecture Audit",
+            "sr": "Audit strukture CV-a"
+          }
+        },
+        {
+          "id": "UPL-CAREER-012",
+          "number": 12,
+          "slug": "achievement-bullet-builder",
+          "subcategory": "resume-cv-portfolio",
+          "title": {
+            "en": "Achievement Bullet Builder",
+            "sr": "Izrada bullet stavki sa rezultatima"
+          }
+        },
+        {
+          "id": "UPL-CAREER-013",
+          "number": 13,
+          "slug": "ats-keyword-fit-audit",
+          "subcategory": "resume-cv-portfolio",
+          "title": {
+            "en": "ATS Keyword Fit Audit",
+            "sr": "Audit ATS i keyword usklađenosti"
+          }
+        },
+        {
+          "id": "UPL-CAREER-014",
+          "number": 14,
+          "slug": "cv-tailoring-workflow",
+          "subcategory": "resume-cv-portfolio",
+          "title": {
+            "en": "CV Tailoring Workflow",
+            "sr": "Workflow prilagođavanja CV-a"
+          }
+        },
+        {
+          "id": "UPL-CAREER-015",
+          "number": 15,
+          "slug": "portfolio-case-study-builder",
+          "subcategory": "resume-cv-portfolio",
+          "title": {
+            "en": "Portfolio Case Study Builder",
+            "sr": "Izrada portfolio case study-ja"
+          }
+        },
+        {
+          "id": "UPL-CAREER-016",
+          "number": 16,
+          "slug": "linkedin-profile-audit",
+          "subcategory": "resume-cv-portfolio",
+          "title": {
+            "en": "LinkedIn Profile Audit",
+            "sr": "Audit LinkedIn profila"
+          }
+        },
+        {
+          "id": "UPL-CAREER-017",
+          "number": 17,
+          "slug": "professional-summary-builder",
+          "subcategory": "resume-cv-portfolio",
+          "title": {
+            "en": "Professional Summary Builder",
+            "sr": "Izrada profesionalnog sažetka"
+          }
+        },
+        {
+          "id": "UPL-CAREER-018",
+          "number": 18,
+          "slug": "experience-evidence-extractor",
+          "subcategory": "resume-cv-portfolio",
+          "title": {
+            "en": "Experience Evidence Extractor",
+            "sr": "Ekstraktor dokaza iz radnog iskustva"
+          }
+        },
+        {
+          "id": "UPL-CAREER-019",
+          "number": 19,
+          "slug": "career-story-consistency-audit",
+          "subcategory": "resume-cv-portfolio",
+          "title": {
+            "en": "Career Story Consistency Audit",
+            "sr": "Audit doslednosti karijerne priče"
+          }
+        },
+        {
+          "id": "UPL-CAREER-020",
+          "number": 20,
+          "slug": "application-assets-integrity-check",
+          "subcategory": "resume-cv-portfolio",
+          "title": {
+            "en": "Application Assets Integrity Check",
+            "sr": "Provera integriteta prijavnih materijala"
+          }
+        },
+        {
+          "id": "UPL-CAREER-021",
+          "number": 21,
+          "slug": "job-description-fit-analyzer",
+          "subcategory": "job-search-applications",
+          "title": {
+            "en": "Job Description Fit Analyzer",
+            "sr": "Analiza uklapanja sa oglasom"
+          }
+        },
+        {
+          "id": "UPL-CAREER-022",
+          "number": 22,
+          "slug": "job-search-priority-system",
+          "subcategory": "job-search-applications",
+          "title": {
+            "en": "Job Search Priority System",
+            "sr": "Sistem prioriteta u traženju posla"
+          }
+        },
+        {
+          "id": "UPL-CAREER-023",
+          "number": 23,
+          "slug": "target-company-research-brief",
+          "subcategory": "job-search-applications",
+          "title": {
+            "en": "Target Company Research Brief",
+            "sr": "Istraživački brief ciljne kompanije"
+          }
+        },
+        {
+          "id": "UPL-CAREER-024",
+          "number": 24,
+          "slug": "application-quality-check",
+          "subcategory": "job-search-applications",
+          "title": {
+            "en": "Application Quality Check",
+            "sr": "Provera kvaliteta prijave"
+          }
+        },
+        {
+          "id": "UPL-CAREER-025",
+          "number": 25,
+          "slug": "cover-letter-evidence-builder",
+          "subcategory": "job-search-applications",
+          "title": {
+            "en": "Cover Letter Evidence Builder",
+            "sr": "Izrada propratnog pisma zasnovanog na dokazima"
+          }
+        },
+        {
+          "id": "UPL-CAREER-026",
+          "number": 26,
+          "slug": "recruiter-outreach-builder",
+          "subcategory": "job-search-applications",
+          "title": {
+            "en": "Recruiter Outreach Builder",
+            "sr": "Izrada poruke za recruitera"
+          }
+        },
+        {
+          "id": "UPL-CAREER-027",
+          "number": 27,
+          "slug": "hiring-manager-outreach-builder",
+          "subcategory": "job-search-applications",
+          "title": {
+            "en": "Hiring Manager Outreach Builder",
+            "sr": "Izrada poruke hiring manageru"
+          }
+        },
+        {
+          "id": "UPL-CAREER-028",
+          "number": 28,
+          "slug": "application-tracker-system",
+          "subcategory": "job-search-applications",
+          "title": {
+            "en": "Application Tracker System",
+            "sr": "Sistem praćenja prijava"
+          }
+        },
+        {
+          "id": "UPL-CAREER-029",
+          "number": 29,
+          "slug": "follow-up-strategy-builder",
+          "subcategory": "job-search-applications",
+          "title": {
+            "en": "Follow-Up Strategy Builder",
+            "sr": "Izrada follow-up strategije"
+          }
+        },
+        {
+          "id": "UPL-CAREER-030",
+          "number": 30,
+          "slug": "job-search-funnel-audit",
+          "subcategory": "job-search-applications",
+          "title": {
+            "en": "Job Search Funnel Audit",
+            "sr": "Audit job-search funnel-a"
+          }
+        },
+        {
+          "id": "UPL-CAREER-031",
+          "number": 31,
+          "slug": "interview-preparation-brief",
+          "subcategory": "interviews-assessments",
+          "title": {
+            "en": "Interview Preparation Brief",
+            "sr": "Brief za pripremu intervjua"
+          }
+        },
+        {
+          "id": "UPL-CAREER-032",
+          "number": 32,
+          "slug": "behavioral-story-bank-builder",
+          "subcategory": "interviews-assessments",
+          "title": {
+            "en": "Behavioral Story Bank Builder",
+            "sr": "Izrada banke behavioral priča"
+          }
+        },
+        {
+          "id": "UPL-CAREER-033",
+          "number": 33,
+          "slug": "star-answer-quality-audit",
+          "subcategory": "interviews-assessments",
+          "title": {
+            "en": "STAR Answer Quality Audit",
+            "sr": "Audit kvaliteta STAR odgovora"
+          }
+        },
+        {
+          "id": "UPL-CAREER-034",
+          "number": 34,
+          "slug": "technical-interview-prep-plan",
+          "subcategory": "interviews-assessments",
+          "title": {
+            "en": "Technical Interview Prep Plan",
+            "sr": "Plan pripreme tehničkog intervjua"
+          }
+        },
+        {
+          "id": "UPL-CAREER-035",
+          "number": 35,
+          "slug": "case-interview-structure-builder",
+          "subcategory": "interviews-assessments",
+          "title": {
+            "en": "Case Interview Structure Builder",
+            "sr": "Izrada strukture case intervjua"
+          }
+        },
+        {
+          "id": "UPL-CAREER-036",
+          "number": 36,
+          "slug": "take-home-assignment-plan",
+          "subcategory": "interviews-assessments",
+          "title": {
+            "en": "Take-Home Assignment Plan",
+            "sr": "Plan take-home zadatka"
+          }
+        },
+        {
+          "id": "UPL-CAREER-037",
+          "number": 37,
+          "slug": "interview-question-strategy",
+          "subcategory": "interviews-assessments",
+          "title": {
+            "en": "Interview Question Strategy",
+            "sr": "Strategija pitanja na intervjuu"
+          }
+        },
+        {
+          "id": "UPL-CAREER-038",
+          "number": 38,
+          "slug": "interview-red-flag-audit",
+          "subcategory": "interviews-assessments",
+          "title": {
+            "en": "Interview Red Flag Audit",
+            "sr": "Audit red flags na intervjuu"
+          }
+        },
+        {
+          "id": "UPL-CAREER-039",
+          "number": 39,
+          "slug": "interview-debrief-framework",
+          "subcategory": "interviews-assessments",
+          "title": {
+            "en": "Interview Debrief Framework",
+            "sr": "Okvir debriefa nakon intervjua"
+          }
+        },
+        {
+          "id": "UPL-CAREER-040",
+          "number": 40,
+          "slug": "final-round-readiness-check",
+          "subcategory": "interviews-assessments",
+          "title": {
+            "en": "Final Round Readiness Check",
+            "sr": "Provera spremnosti za finalni krug"
+          }
+        },
+        {
+          "id": "UPL-CAREER-041",
+          "number": 41,
+          "slug": "salary-benchmark-research-plan",
+          "subcategory": "compensation-negotiation-offers",
+          "title": {
+            "en": "Salary Benchmark Research Plan",
+            "sr": "Plan istraživanja tržišne zarade"
+          }
+        },
+        {
+          "id": "UPL-CAREER-042",
+          "number": 42,
+          "slug": "total-compensation-analyzer",
+          "subcategory": "compensation-negotiation-offers",
+          "title": {
+            "en": "Total Compensation Analyzer",
+            "sr": "Analiza ukupne kompenzacije"
+          }
+        },
+        {
+          "id": "UPL-CAREER-043",
+          "number": 43,
+          "slug": "offer-comparison-matrix",
+          "subcategory": "compensation-negotiation-offers",
+          "title": {
+            "en": "Offer Comparison Matrix",
+            "sr": "Matrica poređenja ponuda"
+          }
+        },
+        {
+          "id": "UPL-CAREER-044",
+          "number": 44,
+          "slug": "salary-negotiation-script-builder",
+          "subcategory": "compensation-negotiation-offers",
+          "title": {
+            "en": "Salary Negotiation Script Builder",
+            "sr": "Izrada skripte za pregovore o plati"
+          }
+        },
+        {
+          "id": "UPL-CAREER-045",
+          "number": 45,
+          "slug": "counteroffer-risk-analysis",
+          "subcategory": "compensation-negotiation-offers",
+          "title": {
+            "en": "Counteroffer Risk Analysis",
+            "sr": "Analiza rizika kontra-ponude"
+          }
+        },
+        {
+          "id": "UPL-CAREER-046",
+          "number": 46,
+          "slug": "equity-compensation-question-framework",
+          "subcategory": "compensation-negotiation-offers",
+          "title": {
+            "en": "Equity Compensation Question Framework",
+            "sr": "Okvir pitanja o equity kompenzaciji"
+          }
+        },
+        {
+          "id": "UPL-CAREER-047",
+          "number": 47,
+          "slug": "benefits-package-audit",
+          "subcategory": "compensation-negotiation-offers",
+          "title": {
+            "en": "Benefits Package Audit",
+            "sr": "Audit paketa benefita"
+          }
+        },
+        {
+          "id": "UPL-CAREER-048",
+          "number": 48,
+          "slug": "employment-offer-question-builder",
+          "subcategory": "compensation-negotiation-offers",
+          "title": {
+            "en": "Employment Offer Question Builder",
+            "sr": "Izrada pitanja za ponudu za posao"
+          }
+        },
+        {
+          "id": "UPL-CAREER-049",
+          "number": 49,
+          "slug": "negotiation-concession-plan",
+          "subcategory": "compensation-negotiation-offers",
+          "title": {
+            "en": "Negotiation Concession Plan",
+            "sr": "Plan ustupaka u pregovorima"
+          }
+        },
+        {
+          "id": "UPL-CAREER-050",
+          "number": 50,
+          "slug": "offer-decision-integrity-review",
+          "subcategory": "compensation-negotiation-offers",
+          "title": {
+            "en": "Offer Decision Integrity Review",
+            "sr": "Pregled integriteta odluke o ponudi"
+          }
+        },
+        {
+          "id": "UPL-CAREER-051",
+          "number": 51,
+          "slug": "first-30-60-90-day-plan",
+          "subcategory": "workplace-performance-growth",
+          "title": {
+            "en": "First 30-60-90 Day Plan",
+            "sr": "Plan prvih 30-60-90 dana"
+          }
+        },
+        {
+          "id": "UPL-CAREER-052",
+          "number": 52,
+          "slug": "role-expectation-alignment",
+          "subcategory": "workplace-performance-growth",
+          "title": {
+            "en": "Role Expectation Alignment",
+            "sr": "Usklađivanje očekivanja uloge"
+          }
+        },
+        {
+          "id": "UPL-CAREER-053",
+          "number": 53,
+          "slug": "performance-goal-builder",
+          "subcategory": "workplace-performance-growth",
+          "title": {
+            "en": "Performance Goal Builder",
+            "sr": "Izrada ciljeva učinka"
+          }
+        },
+        {
+          "id": "UPL-CAREER-054",
+          "number": 54,
+          "slug": "manager-one-on-one-prep",
+          "subcategory": "workplace-performance-growth",
+          "title": {
+            "en": "Manager One-on-One Prep",
+            "sr": "Priprema za 1:1 sa menadžerom"
+          }
+        },
+        {
+          "id": "UPL-CAREER-055",
+          "number": 55,
+          "slug": "feedback-request-framework",
+          "subcategory": "workplace-performance-growth",
+          "title": {
+            "en": "Feedback Request Framework",
+            "sr": "Okvir za traženje feedbacka"
+          }
+        },
+        {
+          "id": "UPL-CAREER-056",
+          "number": 56,
+          "slug": "promotion-readiness-audit",
+          "subcategory": "workplace-performance-growth",
+          "title": {
+            "en": "Promotion Readiness Audit",
+            "sr": "Audit spremnosti za promociju"
+          }
+        },
+        {
+          "id": "UPL-CAREER-057",
+          "number": 57,
+          "slug": "impact-visibility-map",
+          "subcategory": "workplace-performance-growth",
+          "title": {
+            "en": "Impact & Visibility Map",
+            "sr": "Mapa uticaja i vidljivosti"
+          }
+        },
+        {
+          "id": "UPL-CAREER-058",
+          "number": 58,
+          "slug": "scope-expansion-plan",
+          "subcategory": "workplace-performance-growth",
+          "title": {
+            "en": "Scope Expansion Plan",
+            "sr": "Plan širenja odgovornosti"
+          }
+        },
+        {
+          "id": "UPL-CAREER-059",
+          "number": 59,
+          "slug": "performance-review-evidence-pack",
+          "subcategory": "workplace-performance-growth",
+          "title": {
+            "en": "Performance Review Evidence Pack",
+            "sr": "Evidence pack za performance review"
+          }
+        },
+        {
+          "id": "UPL-CAREER-060",
+          "number": 60,
+          "slug": "role-stagnation-recovery-plan",
+          "subcategory": "workplace-performance-growth",
+          "title": {
+            "en": "Role Stagnation Recovery Plan",
+            "sr": "Plan izlaska iz stagnacije u ulozi"
+          }
+        },
+        {
+          "id": "UPL-CAREER-061",
+          "number": 61,
+          "slug": "delegation-quality-audit",
+          "subcategory": "leadership-management",
+          "title": {
+            "en": "Delegation Quality Audit",
+            "sr": "Audit kvaliteta delegiranja"
+          }
+        },
+        {
+          "id": "UPL-CAREER-062",
+          "number": 62,
+          "slug": "one-on-one-system-builder",
+          "subcategory": "leadership-management",
+          "title": {
+            "en": "One-on-One System Builder",
+            "sr": "Izrada sistema 1:1 sastanaka"
+          }
+        },
+        {
+          "id": "UPL-CAREER-063",
+          "number": 63,
+          "slug": "coaching-conversation-framework",
+          "subcategory": "leadership-management",
+          "title": {
+            "en": "Coaching Conversation Framework",
+            "sr": "Okvir coaching razgovora"
+          }
+        },
+        {
+          "id": "UPL-CAREER-064",
+          "number": 64,
+          "slug": "difficult-conversation-plan",
+          "subcategory": "leadership-management",
+          "title": {
+            "en": "Difficult Conversation Plan",
+            "sr": "Plan teškog razgovora"
+          }
+        },
+        {
+          "id": "UPL-CAREER-065",
+          "number": 65,
+          "slug": "team-goal-alignment-audit",
+          "subcategory": "leadership-management",
+          "title": {
+            "en": "Team Goal Alignment Audit",
+            "sr": "Audit usklađenosti timskih ciljeva"
+          }
+        },
+        {
+          "id": "UPL-CAREER-066",
+          "number": 66,
+          "slug": "decision-rights-map",
+          "subcategory": "leadership-management",
+          "title": {
+            "en": "Decision Rights Map",
+            "sr": "Mapa prava odlučivanja"
+          }
+        },
+        {
+          "id": "UPL-CAREER-067",
+          "number": 67,
+          "slug": "manager-feedback-system",
+          "subcategory": "leadership-management",
+          "title": {
+            "en": "Manager Feedback System",
+            "sr": "Sistem feedbacka za menadžera"
+          }
+        },
+        {
+          "id": "UPL-CAREER-068",
+          "number": 68,
+          "slug": "team-performance-diagnostic",
+          "subcategory": "leadership-management",
+          "title": {
+            "en": "Team Performance Diagnostic",
+            "sr": "Dijagnostika učinka tima"
+          }
+        },
+        {
+          "id": "UPL-CAREER-069",
+          "number": 69,
+          "slug": "leadership-gap-analysis",
+          "subcategory": "leadership-management",
+          "title": {
+            "en": "Leadership Gap Analysis",
+            "sr": "Analiza leadership rupa"
+          }
+        },
+        {
+          "id": "UPL-CAREER-070",
+          "number": 70,
+          "slug": "new-manager-transition-plan",
+          "subcategory": "leadership-management",
+          "title": {
+            "en": "New Manager Transition Plan",
+            "sr": "Plan prelaska u menadžersku ulogu"
+          }
+        },
+        {
+          "id": "UPL-CAREER-071",
+          "number": 71,
+          "slug": "freelance-positioning-audit",
+          "subcategory": "freelancing-consulting-independent-work",
+          "title": {
+            "en": "Freelance Positioning Audit",
+            "sr": "Audit freelance pozicioniranja"
+          }
+        },
+        {
+          "id": "UPL-CAREER-072",
+          "number": 72,
+          "slug": "service-offer-builder",
+          "subcategory": "freelancing-consulting-independent-work",
+          "title": {
+            "en": "Service Offer Builder",
+            "sr": "Izrada freelance usluge"
+          }
+        },
+        {
+          "id": "UPL-CAREER-073",
+          "number": 73,
+          "slug": "client-qualification-framework",
+          "subcategory": "freelancing-consulting-independent-work",
+          "title": {
+            "en": "Client Qualification Framework",
+            "sr": "Okvir kvalifikacije klijenta"
+          }
+        },
+        {
+          "id": "UPL-CAREER-074",
+          "number": 74,
+          "slug": "freelance-proposal-builder",
+          "subcategory": "freelancing-consulting-independent-work",
+          "title": {
+            "en": "Freelance Proposal Builder",
+            "sr": "Izrada freelance ponude"
+          }
+        },
+        {
+          "id": "UPL-CAREER-075",
+          "number": 75,
+          "slug": "scope-of-work-audit",
+          "subcategory": "freelancing-consulting-independent-work",
+          "title": {
+            "en": "Scope of Work Audit",
+            "sr": "Audit scope of work dokumenta"
+          }
+        },
+        {
+          "id": "UPL-CAREER-076",
+          "number": 76,
+          "slug": "freelance-pricing-framework",
+          "subcategory": "freelancing-consulting-independent-work",
+          "title": {
+            "en": "Freelance Pricing Framework",
+            "sr": "Okvir freelance pricinga"
+          }
+        },
+        {
+          "id": "UPL-CAREER-077",
+          "number": 77,
+          "slug": "client-onboarding-plan",
+          "subcategory": "freelancing-consulting-independent-work",
+          "title": {
+            "en": "Client Onboarding Plan",
+            "sr": "Plan onboardinga klijenta"
+          }
+        },
+        {
+          "id": "UPL-CAREER-078",
+          "number": 78,
+          "slug": "client-delivery-checklist",
+          "subcategory": "freelancing-consulting-independent-work",
+          "title": {
+            "en": "Client Delivery Checklist",
+            "sr": "Checklist isporuke klijentu"
+          }
+        },
+        {
+          "id": "UPL-CAREER-079",
+          "number": 79,
+          "slug": "scope-creep-control-plan",
+          "subcategory": "freelancing-consulting-independent-work",
+          "title": {
+            "en": "Scope Creep Control Plan",
+            "sr": "Plan kontrole scope creep-a"
+          }
+        },
+        {
+          "id": "UPL-CAREER-080",
+          "number": 80,
+          "slug": "client-retention-review",
+          "subcategory": "freelancing-consulting-independent-work",
+          "title": {
+            "en": "Client Retention Review",
+            "sr": "Pregled retentiona klijenata"
+          }
+        },
+        {
+          "id": "UPL-CAREER-081",
+          "number": 81,
+          "slug": "networking-strategy-builder",
+          "subcategory": "networking-personal-brand-communication",
+          "title": {
+            "en": "Networking Strategy Builder",
+            "sr": "Izrada networking strategije"
+          }
+        },
+        {
+          "id": "UPL-CAREER-082",
+          "number": 82,
+          "slug": "warm-introduction-request",
+          "subcategory": "networking-personal-brand-communication",
+          "title": {
+            "en": "Warm Introduction Request",
+            "sr": "Izrada zahteva za toplu preporuku"
+          }
+        },
+        {
+          "id": "UPL-CAREER-083",
+          "number": 83,
+          "slug": "professional-outreach-message",
+          "subcategory": "networking-personal-brand-communication",
+          "title": {
+            "en": "Professional Outreach Message",
+            "sr": "Profesionalna outreach poruka"
+          }
+        },
+        {
+          "id": "UPL-CAREER-084",
+          "number": 84,
+          "slug": "personal-brand-positioning-audit",
+          "subcategory": "networking-personal-brand-communication",
+          "title": {
+            "en": "Personal Brand Positioning Audit",
+            "sr": "Audit ličnog brenda"
+          }
+        },
+        {
+          "id": "UPL-CAREER-085",
+          "number": 85,
+          "slug": "linkedin-content-strategy",
+          "subcategory": "networking-personal-brand-communication",
+          "title": {
+            "en": "LinkedIn Content Strategy",
+            "sr": "LinkedIn content strategija"
+          }
+        },
+        {
+          "id": "UPL-CAREER-086",
+          "number": 86,
+          "slug": "thought-leadership-topic-map",
+          "subcategory": "networking-personal-brand-communication",
+          "title": {
+            "en": "Thought Leadership Topic Map",
+            "sr": "Mapa tema za thought leadership"
+          }
+        },
+        {
+          "id": "UPL-CAREER-087",
+          "number": 87,
+          "slug": "stakeholder-update-builder",
+          "subcategory": "networking-personal-brand-communication",
+          "title": {
+            "en": "Stakeholder Update Builder",
+            "sr": "Izrada stakeholder update-a"
+          }
+        },
+        {
+          "id": "UPL-CAREER-088",
+          "number": 88,
+          "slug": "executive-communication-audit",
+          "subcategory": "networking-personal-brand-communication",
+          "title": {
+            "en": "Executive Communication Audit",
+            "sr": "Audit executive komunikacije"
+          }
+        },
+        {
+          "id": "UPL-CAREER-089",
+          "number": 89,
+          "slug": "professional-reputation-risk-audit",
+          "subcategory": "networking-personal-brand-communication",
+          "title": {
+            "en": "Professional Reputation Risk Audit",
+            "sr": "Audit rizika profesionalne reputacije"
+          }
+        },
+        {
+          "id": "UPL-CAREER-090",
+          "number": 90,
+          "slug": "relationship-maintenance-system",
+          "subcategory": "networking-personal-brand-communication",
+          "title": {
+            "en": "Relationship Maintenance System",
+            "sr": "Sistem održavanja profesionalnih odnosa"
+          }
+        },
+        {
+          "id": "UPL-CAREER-091",
+          "number": 91,
+          "slug": "skill-gap-learning-roadmap",
+          "subcategory": "career-learning-long-term-development",
+          "title": {
+            "en": "Skill Gap Learning Roadmap",
+            "sr": "Learning roadmap za rupe u veštinama"
+          }
+        },
+        {
+          "id": "UPL-CAREER-092",
+          "number": 92,
+          "slug": "certification-roi-audit",
+          "subcategory": "career-learning-long-term-development",
+          "title": {
+            "en": "Certification ROI Audit",
+            "sr": "Audit ROI-a sertifikacije"
+          }
+        },
+        {
+          "id": "UPL-CAREER-093",
+          "number": 93,
+          "slug": "mentor-selection-framework",
+          "subcategory": "career-learning-long-term-development",
+          "title": {
+            "en": "Mentor Selection Framework",
+            "sr": "Okvir za izbor mentora"
+          }
+        },
+        {
+          "id": "UPL-CAREER-094",
+          "number": 94,
+          "slug": "mentoring-plan-builder",
+          "subcategory": "career-learning-long-term-development",
+          "title": {
+            "en": "Mentoring Plan Builder",
+            "sr": "Izrada mentoring plana"
+          }
+        },
+        {
+          "id": "UPL-CAREER-095",
+          "number": 95,
+          "slug": "professional-learning-system",
+          "subcategory": "career-learning-long-term-development",
+          "title": {
+            "en": "Professional Learning System",
+            "sr": "Sistem profesionalnog učenja"
+          }
+        },
+        {
+          "id": "UPL-CAREER-096",
+          "number": 96,
+          "slug": "career-resilience-scenario-plan",
+          "subcategory": "career-learning-long-term-development",
+          "title": {
+            "en": "Career Resilience Scenario Plan",
+            "sr": "Scenario plan otpornosti karijere"
+          }
+        },
+        {
+          "id": "UPL-CAREER-097",
+          "number": 97,
+          "slug": "career-pivot-readiness-audit",
+          "subcategory": "career-learning-long-term-development",
+          "title": {
+            "en": "Career Pivot Readiness Audit",
+            "sr": "Audit spremnosti za career pivot"
+          }
+        },
+        {
+          "id": "UPL-CAREER-098",
+          "number": 98,
+          "slug": "career-capital-builder",
+          "subcategory": "career-learning-long-term-development",
+          "title": {
+            "en": "Career Capital Builder",
+            "sr": "Izgradnja career capital-a"
+          }
+        },
+        {
+          "id": "UPL-CAREER-099",
+          "number": 99,
+          "slug": "professional-development-portfolio",
+          "subcategory": "career-learning-long-term-development",
+          "title": {
+            "en": "Professional Development Portfolio",
+            "sr": "Portfolio profesionalnog razvoja"
+          }
+        },
+        {
+          "id": "UPL-CAREER-100",
+          "number": 100,
+          "slug": "long-term-career-review",
+          "subcategory": "career-learning-long-term-development",
+          "title": {
+            "en": "Long-Term Career Review",
+            "sr": "Dugoročni pregled karijere"
+          }
+        }
+      ]
     },
     {
       "id": "UPL-MKT",
