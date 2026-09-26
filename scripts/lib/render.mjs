@@ -243,10 +243,61 @@ export function heroBadges({ lang, stats, collections }) {
   return badges.map(([alt, src, href]) => `<a href="${href}"><img src="${src}" alt="${alt}"></a>`).join('\n');
 }
 
-/** Bright premium statistics card. Kept light in every GitHub theme for maximum readability. */
-export function statsPicture({ lang, stats }) {
+/** Data-driven README statistics. No image regeneration is required when counts change. */
+export function statsPicture({ lang, stats, collections = [] }) {
   const s = t(lang);
-  return `<img src="assets/stats.${lang}.light.svg" alt="${s.statsAlt(stats)}" width="100%">`;
+  const it = collections.find((c) => c.category.id === 'UPL-IT');
+  const biz = collections.find((c) => c.category.id === 'UPL-BIZ');
+  const label = lang === 'sr'
+    ? {
+        unique: 'Jedinstvenih promptova',
+        localized: 'Lokalizovanih fajlova',
+        languages: 'Jezika',
+        stable: 'Stabilnih promptova',
+        collections: 'Kolekcije',
+        progress: 'Napredak',
+        complete: 'Završeno',
+      }
+    : {
+        unique: 'Unique prompts',
+        localized: 'Localized files',
+        languages: 'Languages',
+        stable: 'Stable prompts',
+        collections: 'Collections',
+        progress: 'Progress',
+        complete: 'Complete',
+      };
+
+  const cards = [
+    [stats.uniquePrompts, label.unique, lang === 'sr' ? 'Trajni, jezički nezavisni ID-evi' : 'Stable, language-independent IDs'],
+    [stats.localizedPromptFiles, label.localized, lang === 'sr' ? 'Jedan fajl po promptu i jeziku' : 'One file per prompt and language'],
+    [stats.languages, label.languages, 'English · Srpski'],
+    [stats.byStatus?.stable ?? stats.uniquePrompts, label.stable, lang === 'sr' ? 'Pregledano i verzionisano' : 'Reviewed and versioned'],
+  ];
+
+  const metrics = `<table>
+<tr>
+${cards.map(([value, title, note]) => `<td align="center" width="25%"><h2>${value}</h2><b>${title}</b><br><sub>${note}</sub></td>`).join('\n')}
+</tr>
+</table>`;
+
+  const rows = [it, biz].filter(Boolean).map((collection) => {
+    const name = collection.category.names[lang];
+    const pct = collection.planned ? Math.round((collection.available / collection.planned) * 100) : 0;
+    return `| ${name} | ${collection.available} / ${collection.planned} | ${pct}% | ${collection.available === collection.planned ? label.complete : s.inProgress} |`;
+  });
+
+  const progress = rows.length
+    ? `### ${label.collections}
+
+| ${lang === 'sr' ? 'Kolekcija' : 'Collection'} | ${label.progress} | % | ${s.statusHeader} |
+|---|---:|---:|---|
+${rows.join('\n')}`
+    : '';
+
+  return `${metrics}
+
+${progress}`;
 }
 
 function collectionStatus(s, available, planned) {

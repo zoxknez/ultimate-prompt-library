@@ -8,6 +8,7 @@
 
   const menuToggle = document.querySelector('.menu-toggle');
   const mobileMenu = document.querySelector('#mobile-menu');
+  const supportMenu = document.querySelector('.support-menu');
 
   function setMenu(open) {
     if (!menuToggle || !mobileMenu) return;
@@ -109,6 +110,10 @@
   if (search && params.get('q')) search.value = params.get('q');
   applyFilters();
 
+  document.addEventListener('click', (event) => {
+    if (supportMenu?.open && !supportMenu.contains(event.target)) supportMenu.removeAttribute('open');
+  });
+
   document.addEventListener('keydown', (event) => {
     if (event.key === '/' && search && document.activeElement !== search) {
       event.preventDefault();
@@ -116,6 +121,7 @@
     }
     if (event.key === 'Escape') {
       if (menuToggle?.getAttribute('aria-expanded') === 'true') setMenu(false);
+      if (supportMenu?.open) supportMenu.removeAttribute('open');
       if (search && document.activeElement === search) {
         search.value = '';
         search.blur();

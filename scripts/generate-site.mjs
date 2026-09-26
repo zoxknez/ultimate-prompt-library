@@ -40,6 +40,7 @@ const L = {
     quality4: 'Bilingual by design', quality4Lead: 'English and Serbian versions share the same ID, slug, version and logical structure.',
     completeCollections: 'Complete collections', quickBrowse: 'Browse by subcategory', showAll: 'Show all prompts',
     collectionSummary: '200 production-ready prompts across two complete collections.', openPrompt: 'Open prompt',
+    supportProject: 'Support the project', supportLead: 'Choose a way to support',
   },
   sr: {
     prompts: 'Promptovi', categories: 'Oblasti', github: 'GitHub', search: 'Pretraži promptove',
@@ -67,6 +68,7 @@ const L = {
     quality4: 'Dvojezično po dizajnu', quality4Lead: 'Engleska i srpska verzija dele isti ID, slug, verziju i logičku strukturu.',
     completeCollections: 'Završene kolekcije', quickBrowse: 'Pregled po podkategorijama', showAll: 'Prikaži sve promptove',
     collectionSummary: '200 production-ready promptova kroz dve kompletne kolekcije.', openPrompt: 'Otvori prompt',
+    supportProject: 'Podrška projektu', supportLead: 'Izaberite način podrške',
   },
 };
 
@@ -239,11 +241,12 @@ function brandMark() {
 
 function header(lang = 'en', alternateEn = '/', alternateSr = '/sr/') {
   const t = L[lang];
-  return `<header class="site-header"><div class="shell nav-shell"><a class="brand" href="${lang === 'sr' ? '/sr/' : '/'}">${brandMark()}<span><strong>Ultimate Prompt Library</strong><small>${esc(t.brandTag)}</small></span></a><nav class="desktop-nav" aria-label="Primary"><a href="${libraryUrl(lang)}">${t.prompts}</a><a href="${lang === 'sr' ? '/sr/#categories' : '/#categories'}">${t.categories}</a><a href="https://github.com/zoxknez/ultimate-prompt-library">${t.github}</a></nav><div class="nav-actions"><div class="lang-switch" aria-label="${esc(t.language)}"><a class="${lang === 'en' ? 'active' : ''}" href="${alternateEn}">EN</a><a class="${lang === 'sr' ? 'active' : ''}" href="${alternateSr}">SR</a></div><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="${esc(t.menu)}"><span></span><span></span><span></span></button></div></div><nav class="mobile-menu" id="mobile-menu" aria-label="Mobile" hidden><div class="shell"><a href="${libraryUrl(lang)}">${t.prompts}</a><a href="${lang === 'sr' ? '/sr/#categories' : '/#categories'}">${t.categories}</a><a href="https://github.com/zoxknez/ultimate-prompt-library">${t.github}</a><div class="mobile-lang" aria-label="${esc(t.language)}"><a class="${lang === 'en' ? 'active' : ''}" href="${alternateEn}">EN</a><a class="${lang === 'sr' ? 'active' : ''}" href="${alternateSr}">SR</a></div></div></nav></header>`;
+  const support = `<details class="support-menu"><summary><span class="support-heart">♡</span><span>${esc(t.supportProject)}</span><span class="support-chevron">⌄</span></summary><div class="support-popover"><span class="support-lead">${esc(t.supportLead)}</span><a href="https://www.paypal.com/paypalme/o0o0o0o0o0o0o" target="_blank" rel="noopener noreferrer"><span class="support-provider paypal">P</span><strong>PayPal</strong><span>›</span></a><a href="https://ko-fi.com/o0o0o0o" target="_blank" rel="noopener noreferrer"><span class="support-provider kofi">☕</span><strong>Ko-fi</strong><span>›</span></a></div></details>`;
+  return `<header class="site-header"><div class="shell nav-shell"><a class="brand" href="${lang === 'sr' ? '/sr/' : '/'}">${brandMark()}<span><strong>Ultimate Prompt Library</strong><small>${esc(t.brandTag)}</small></span></a><nav class="desktop-nav" aria-label="Primary"><a href="${libraryUrl(lang)}">${t.prompts}</a><a href="${lang === 'sr' ? '/sr/#categories' : '/#categories'}">${t.categories}</a><a href="https://github.com/zoxknez/ultimate-prompt-library">${t.github}</a></nav><div class="nav-actions">${support}<div class="lang-switch" aria-label="${esc(t.language)}"><a class="${lang === 'en' ? 'active' : ''}" href="${alternateEn}">EN</a><a class="${lang === 'sr' ? 'active' : ''}" href="${alternateSr}">SR</a></div><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="${esc(t.menu)}"><span></span><span></span><span></span></button></div></div><nav class="mobile-menu" id="mobile-menu" aria-label="Mobile" hidden><div class="shell"><a href="${libraryUrl(lang)}">${t.prompts}</a><a href="${lang === 'sr' ? '/sr/#categories' : '/#categories'}">${t.categories}</a><a href="https://github.com/zoxknez/ultimate-prompt-library">${t.github}</a><div class="mobile-support"><span>${esc(t.supportProject)}</span><a href="https://www.paypal.com/paypalme/o0o0o0o0o0o0o" target="_blank" rel="noopener noreferrer">PayPal</a><a href="https://ko-fi.com/o0o0o0o" target="_blank" rel="noopener noreferrer">Ko-fi</a></div><div class="mobile-lang" aria-label="${esc(t.language)}"><a class="${lang === 'en' ? 'active' : ''}" href="${alternateEn}">EN</a><a class="${lang === 'sr' ? 'active' : ''}" href="${alternateSr}">SR</a></div></div></nav></header>`;
 }
 
 function footer(lang = 'en') {
-  return `<footer><div class="shell footer-shell"><div>${brandMark()}<div><strong>Ultimate Prompt Library</strong><p>${L[lang].footer}</p></div></div><div class="footer-links"><a href="${libraryUrl(lang)}">${L[lang].prompts}</a><a href="https://github.com/zoxknez/ultimate-prompt-library">GitHub</a><a href="https://github.com/zoxknez/ultimate-prompt-library/blob/main/LICENSE">MIT License</a></div></div></footer>`;
+  return `<footer><div class="shell footer-shell"><div>${brandMark()}<div><strong>Ultimate Prompt Library</strong><p>${L[lang].footer}</p></div></div><div class="footer-links"><a href="${libraryUrl(lang)}">${L[lang].prompts}</a><a href="https://github.com/zoxknez/ultimate-prompt-library">GitHub</a><a href="https://ko-fi.com/o0o0o0o" target="_blank" rel="noopener noreferrer">${L[lang].supportProject}</a><a href="https://github.com/zoxknez/ultimate-prompt-library/blob/main/LICENSE">MIT License</a></div></div></footer>`;
 }
 
 function pageShell({ lang = 'en', title, description, body, canonical = '/', bodyClass = '', alternateEn = '/', alternateSr = '/sr/' }) {
