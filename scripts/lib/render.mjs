@@ -247,38 +247,26 @@ export function heroBadges({ lang, stats, collections }) {
 export function statsPicture({ lang, stats }) {
   const label = lang === 'sr'
     ? {
-        unique: 'Jedinstvenih promptova',
-        uniqueNote: 'Trajni ID-evi olakšavaju referenciranje promptova',
-        localized: 'Lokalizovanih fajlova',
-        localizedNote: 'Usklađeni engleski i srpski fajlovi za svaki prompt',
-        languages: 'Jezika',
-        languagesNote: 'Srpski i engleski, povezani zajedničkim ID-evima',
-        active: 'Aktivnih oblasti',
-        activeNote: 'Objavljene kolekcije u biblioteci od deset oblasti',
+        unique: 'jedinstvenih promptova',
+        localized: 'lokalizovanih fajlova',
+        languages: 'jezika',
+        active: 'aktivnih oblasti',
       }
     : {
-        unique: 'Unique prompts',
-        uniqueNote: 'Permanent IDs make every prompt easy to reference',
-        localized: 'Localized files',
-        localizedNote: 'Matched English and Serbian files for every prompt',
-        languages: 'Languages',
-        languagesNote: 'English and Serbian, connected by shared IDs',
-        active: 'Active categories',
-        activeNote: 'Published collections in a ten-category library',
+        unique: 'unique prompts',
+        localized: 'localized files',
+        languages: 'languages',
+        active: 'active categories',
       };
 
   const cards = [
-    [stats.uniquePrompts, label.unique, label.uniqueNote],
-    [stats.localizedPromptFiles, label.localized, label.localizedNote],
-    [stats.languages, label.languages, label.languagesNote],
-    [`${stats.categoriesWithContent} / ${stats.categories}`, label.active, label.activeNote],
+    [stats.uniquePrompts, label.unique],
+    [stats.localizedPromptFiles, label.localized],
+    [stats.languages, label.languages],
+    [`${stats.categoriesWithContent} / ${stats.categories}`, label.active],
   ];
 
-  const rows = [cards.slice(0, 2), cards.slice(2)].map((row) =>
-    `<tr>\n${row.map(([value, title, note]) => `<td valign="top" width="50%"><h2>${value}</h2><strong>${title}</strong><br><sub>${note}</sub></td>`).join('\n')}\n</tr>`,
-  );
-
-  return `<table width="100%">\n${rows.join('\n')}\n</table>`;
+  return `<p align="center">${cards.map(([value, title]) => `<strong>${value}</strong>&nbsp;${title}`).join(' &nbsp; · &nbsp; ')}</p>`;
 }
 
 function collectionStatus(s, available, planned) {
