@@ -31,7 +31,7 @@ Deep, reusable AI work specifications for serious analysis, implementation, audi
 [How to use](#how-to-use) &nbsp;&nbsp;/&nbsp;&nbsp;
 [Contributing](#contributing) &nbsp;&nbsp;/&nbsp;&nbsp;
 [Roadmap](#roadmap) &nbsp;&nbsp;/&nbsp;&nbsp;
-[Website](https://ultimate-prompt-library.vercel.app) &nbsp;&nbsp;/&nbsp;&nbsp; [Support the project](https://ko-fi.com/o0o0o0o)
+[Website](https://ultimate-prompt-library.vercel.app) &nbsp;&nbsp;/&nbsp;&nbsp; **Support the project:** [PayPal](https://www.paypal.com/paypalme/o0o0o0o0o0o0o) · [Ko-fi](https://ko-fi.com/o0o0o0o)
 
 </div>
 

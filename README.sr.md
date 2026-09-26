@@ -31,7 +31,7 @@ Duboke, višekratno upotrebljive AI radne specifikacije za ozbiljnu analizu, imp
 [Kako se koristi](#kako-se-koristi) &nbsp;&nbsp;/&nbsp;&nbsp;
 [Doprinos](#doprinos) &nbsp;&nbsp;/&nbsp;&nbsp;
 [Roadmap](#roadmap) &nbsp;&nbsp;/&nbsp;&nbsp;
-[Web sajt](https://ultimate-prompt-library.vercel.app/sr/) &nbsp;&nbsp;/&nbsp;&nbsp; [Podrška projektu](https://ko-fi.com/o0o0o0o)
+[Web sajt](https://ultimate-prompt-library.vercel.app/sr/) &nbsp;&nbsp;/&nbsp;&nbsp; **Podrška projektu:** [PayPal](https://www.paypal.com/paypalme/o0o0o0o0o0o0o) · [Ko-fi](https://ko-fi.com/o0o0o0o)
 
 </div>
 

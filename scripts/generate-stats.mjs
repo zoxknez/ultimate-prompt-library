@@ -101,7 +101,7 @@ for (const code of codes) {
   const readme = readmeFor(code);
 
   out.block(readme, 'hero-badges', heroBadges({ lang: code, stats, collections }));
-  out.block(readme, 'collection-stats', statsPicture({ lang: code, stats }));
+  out.block(readme, 'collection-stats', statsPicture({ lang: code, stats, collections }));
   out.block(readme, 'category-status', categoryGrid({ lang: code, fromFile: readme, collections }));
   out.block(readme, 'subcategory-status', subcategoryStatus({ lang: code, fromFile: readme, collections }));
 
