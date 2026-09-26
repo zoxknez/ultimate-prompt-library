@@ -4,7 +4,7 @@
     "en",
     "sr"
   ],
-  "count": 170,
+  "count": 180,
   "prompts": [
     {
       "id": "UPL-IT-001",
@@ -4594,6 +4594,276 @@
       "files": {
         "en": "prompts/en/02-economics-finance-business/07-sales-revenue-pricing/070-revenue-forecast-stress-test.md",
         "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/070-revenue-forecast-stress-test.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-071",
+      "number": 71,
+      "slug": "ultimate-management-system-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "management-leadership-organization",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate Management System Audit",
+        "sr": "Ultimate Management System Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/08-management-leadership-organization/071-ultimate-management-system-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/071-ultimate-management-system-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-072",
+      "number": 72,
+      "slug": "organizational-structure-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "management-leadership-organization",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Organizational Structure Audit",
+        "sr": "Organizational Structure Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/08-management-leadership-organization/072-organizational-structure-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/072-organizational-structure-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-073",
+      "number": 73,
+      "slug": "decision-making-process-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "management-leadership-organization",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Decision-Making Process Audit",
+        "sr": "Decision-Making Process Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/08-management-leadership-organization/073-decision-making-process-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/073-decision-making-process-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-074",
+      "number": 74,
+      "slug": "kpi-and-performance-management-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "management-leadership-organization",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "KPI & Performance Management Audit",
+        "sr": "KPI & Performance Management Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/08-management-leadership-organization/074-kpi-and-performance-management-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/074-kpi-and-performance-management-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-075",
+      "number": 75,
+      "slug": "management-reporting-system-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "management-leadership-organization",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Management Reporting System Audit",
+        "sr": "Management Reporting System Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/08-management-leadership-organization/075-management-reporting-system-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/075-management-reporting-system-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-076",
+      "number": 76,
+      "slug": "delegation-and-accountability-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "management-leadership-organization",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Delegation & Accountability Audit",
+        "sr": "Delegation & Accountability Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/08-management-leadership-organization/076-delegation-and-accountability-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/076-delegation-and-accountability-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-077",
+      "number": 77,
+      "slug": "meeting-and-communication-effectiveness-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "management-leadership-organization",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Meeting & Communication Effectiveness Audit",
+        "sr": "Meeting & Communication Effectiveness Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/08-management-leadership-organization/077-meeting-and-communication-effectiveness-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/077-meeting-and-communication-effectiveness-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-078",
+      "number": 78,
+      "slug": "organizational-bottleneck-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "management-leadership-organization",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Organizational Bottleneck Analysis",
+        "sr": "Organizational Bottleneck Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/08-management-leadership-organization/078-organizational-bottleneck-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/078-organizational-bottleneck-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-079",
+      "number": 79,
+      "slug": "change-management-readiness-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "management-leadership-organization",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Change Management Readiness Audit",
+        "sr": "Change Management Readiness Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/08-management-leadership-organization/079-change-management-readiness-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/079-change-management-readiness-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-080",
+      "number": 80,
+      "slug": "leadership-risk-and-dependency-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "management-leadership-organization",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Leadership Risk & Dependency Audit",
+        "sr": "Leadership Risk & Dependency Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/08-management-leadership-organization/080-leadership-risk-and-dependency-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/080-leadership-risk-and-dependency-audit.md"
       }
     }
   ]

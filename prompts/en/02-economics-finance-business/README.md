@@ -140,20 +140,20 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 ### 08 · [Management, Leadership & Organization](08-management-leadership-organization/README.md)
 
-0 / 10 available
+10 / 10 available
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 071 | Ultimate Management System Audit | - | - | Planned |
-| 072 | Organizational Structure Audit | - | - | Planned |
-| 073 | Decision-Making Process Audit | - | - | Planned |
-| 074 | KPI & Performance Management Audit | - | - | Planned |
-| 075 | Management Reporting System Audit | - | - | Planned |
-| 076 | Delegation & Accountability Audit | - | - | Planned |
-| 077 | Meeting & Communication Effectiveness Audit | - | - | Planned |
-| 078 | Organizational Bottleneck Analysis | - | - | Planned |
-| 079 | Change Management Readiness Audit | - | - | Planned |
-| 080 | Leadership Risk & Dependency Audit | - | - | Planned |
+| 071 | [Ultimate Management System Audit](08-management-leadership-organization/071-ultimate-management-system-audit.md) | [EN](08-management-leadership-organization/071-ultimate-management-system-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/071-ultimate-management-system-audit.md) | Available |
+| 072 | [Organizational Structure Audit](08-management-leadership-organization/072-organizational-structure-audit.md) | [EN](08-management-leadership-organization/072-organizational-structure-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/072-organizational-structure-audit.md) | Available |
+| 073 | [Decision-Making Process Audit](08-management-leadership-organization/073-decision-making-process-audit.md) | [EN](08-management-leadership-organization/073-decision-making-process-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/073-decision-making-process-audit.md) | Available |
+| 074 | [KPI & Performance Management Audit](08-management-leadership-organization/074-kpi-and-performance-management-audit.md) | [EN](08-management-leadership-organization/074-kpi-and-performance-management-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/074-kpi-and-performance-management-audit.md) | Available |
+| 075 | [Management Reporting System Audit](08-management-leadership-organization/075-management-reporting-system-audit.md) | [EN](08-management-leadership-organization/075-management-reporting-system-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/075-management-reporting-system-audit.md) | Available |
+| 076 | [Delegation & Accountability Audit](08-management-leadership-organization/076-delegation-and-accountability-audit.md) | [EN](08-management-leadership-organization/076-delegation-and-accountability-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/076-delegation-and-accountability-audit.md) | Available |
+| 077 | [Meeting & Communication Effectiveness Audit](08-management-leadership-organization/077-meeting-and-communication-effectiveness-audit.md) | [EN](08-management-leadership-organization/077-meeting-and-communication-effectiveness-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/077-meeting-and-communication-effectiveness-audit.md) | Available |
+| 078 | [Organizational Bottleneck Analysis](08-management-leadership-organization/078-organizational-bottleneck-analysis.md) | [EN](08-management-leadership-organization/078-organizational-bottleneck-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/078-organizational-bottleneck-analysis.md) | Available |
+| 079 | [Change Management Readiness Audit](08-management-leadership-organization/079-change-management-readiness-audit.md) | [EN](08-management-leadership-organization/079-change-management-readiness-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/079-change-management-readiness-audit.md) | Available |
+| 080 | [Leadership Risk & Dependency Audit](08-management-leadership-organization/080-leadership-risk-and-dependency-audit.md) | [EN](08-management-leadership-organization/080-leadership-risk-and-dependency-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/080-leadership-risk-and-dependency-audit.md) | Available |
 
 ### 09 · [Risk, Compliance & Business Resilience](09-risk-compliance-business-resilience/README.md)
 
