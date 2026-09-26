@@ -258,11 +258,9 @@ export function statsPicture({ lang, stats }) {
     [`${stats.categoriesWithContent} / ${stats.categories}`, label.active, label.activeNote],
   ];
 
-  const rows = [cards.slice(0, 2), cards.slice(2)].map((row) =>
-    `<tr>\n${row.map(([value, title, note]) => `<td valign="top" width="50%"><h2>${value}</h2><strong>${title}</strong><br><sub>${note}</sub></td>`).join('\n')}\n</tr>`,
-  );
-
-  return `<table width="100%">\n${rows.join('\n')}\n</table>`;
+  return cards
+    .map(([value, title, note]) => `<p><strong>${value}</strong>&nbsp;&nbsp;${title}<br><sub>${note}</sub></p>`)
+    .join('\n');
 }
 
 function collectionStatus(s, available, planned) {
@@ -275,20 +273,12 @@ function collectionStatus(s, available, planned) {
 /** Responsive two-column directory of all categories. */
 export function categoryGrid({ lang, fromFile, collections }) {
   const s = t(lang);
-  const cells = collections.map((c) => {
+  return collections
+    .map((c) => {
     const href = link(fromFile, `${PROMPTS_DIR}/${lang}/${c.category.dirs[lang]}/README.md`);
-    return [
-      '<td valign="top" width="50%">',
-      `<sub>${pad(c.category.order, 2)} · <code>${c.category.id}</code></sub><br>`,
-      `<a href="${href}"><strong>${escapeHtml(c.category.names[lang])}</strong></a><br>`,
-      `<p>${escapeHtml(c.category.descriptions[lang])}</p>`,
-      `<sub>${collectionStatus(s, c.available, c.planned)}</sub>`,
-      '</td>',
-    ].join('\n');
-  });
-  const rows = [];
-  for (let i = 0; i < cells.length; i += 2) rows.push(`<tr>\n${cells.slice(i, i + 2).join('\n')}\n</tr>`);
-  return `<table width="100%">\n${rows.join('\n')}\n</table>`;
+      return `<p><sub>${pad(c.category.order, 2)} · <code>${c.category.id}</code></sub><br><a href="${href}"><strong>${escapeHtml(c.category.names[lang])}</strong></a><br><sub>${escapeHtml(c.category.descriptions[lang])}</sub><br><sub>${collectionStatus(s, c.available, c.planned)}</sub></p>`;
+    })
+    .join('\n');
 }
 
 /** Subcategory progress table for every category that has subcategories. */
@@ -306,25 +296,16 @@ export function subcategoryStatus({ lang, fromFile, collections }) {
             : g.available
               ? s.inProgress
               : s.status.planned;
-        return [
-          '<tr>',
-          `<td valign="top" width="6%">${pad(g.sub.order, 2)}</td>`,
-          `<td valign="top" width="76%"><a href="${href}"><strong>${escapeHtml(g.sub.names[lang])}</strong></a><br><sub>${escapeHtml(g.sub.descriptions[lang])}</sub></td>`,
-          `<td valign="top" align="right" width="18%"><strong>${g.available} / ${g.planned}</strong><br><sub>${status}</sub></td>`,
-          '</tr>',
-        ].join('\n');
+        return `<li><a href="${href}"><strong>${escapeHtml(g.sub.names[lang])}</strong></a><br><sub>${escapeHtml(g.sub.descriptions[lang])}</sub><br><sub>${g.available} / ${g.planned} · ${status}</sub></li>`;
       });
       const complete = c.subcategories.filter((g) => g.planned > 0 && g.available === g.planned).length;
       return [
         '<details>',
         `<summary><strong>${escapeHtml(c.category.names[lang])}</strong> · ${complete} / ${c.subcategories.length} ${s.subcategoriesComplete}</summary>`,
         '',
-        '<table width="100%">',
-        `<thead><tr><th scope="col">#</th><th scope="col">${s.subcategory}</th><th scope="col" align="right">${s.progress}</th></tr></thead>`,
-        '<tbody>',
+        '<ol>',
         ...rows,
-        '</tbody>',
-        '</table>',
+        '</ol>',
         '',
         '</details>',
       ].join('\n');
