@@ -25,16 +25,16 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 001 | [Forensic Full Repository Audit](01-web-development/001-forensic-full-repository-audit.md) | [EN](01-web-development/001-forensic-full-repository-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/001-forensic-full-repository-audit.md) | Available |
-| 002 | [Ultimate Next.js Production Audit](01-web-development/002-ultimate-nextjs-production-audit.md) | [EN](01-web-development/002-ultimate-nextjs-production-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/002-ultimate-nextjs-production-audit.md) | Available |
-| 003 | [React Bug Hunter](01-web-development/003-react-bug-hunter.md) | [EN](01-web-development/003-react-bug-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/003-react-bug-hunter.md) | Available |
-| 004 | [Frontend Architecture Audit](01-web-development/004-frontend-architecture-audit.md) | [EN](01-web-development/004-frontend-architecture-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/004-frontend-architecture-audit.md) | Available |
-| 005 | [Web Performance Hunter](01-web-development/005-web-performance-hunter.md) | [EN](01-web-development/005-web-performance-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/005-web-performance-hunter.md) | Available |
-| 006 | [Responsive & Mobile Web Audit](01-web-development/006-responsive-and-mobile-web-audit.md) | [EN](01-web-development/006-responsive-and-mobile-web-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/006-responsive-and-mobile-web-audit.md) | Available |
-| 007 | [Web Accessibility Audit](01-web-development/007-web-accessibility-audit.md) | [EN](01-web-development/007-web-accessibility-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/007-web-accessibility-audit.md) | Available |
-| 008 | [Technical SEO Audit](01-web-development/008-technical-seo-audit.md) | [EN](01-web-development/008-technical-seo-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/008-technical-seo-audit.md) | Available |
-| 009 | [Progressive Web App Audit](01-web-development/009-progressive-web-app-audit.md) | [EN](01-web-development/009-progressive-web-app-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/009-progressive-web-app-audit.md) | Available |
-| 010 | [Browser Compatibility & Production Bug Hunter](01-web-development/010-browser-compatibility-and-production-bug-hunter.md) | [EN](01-web-development/010-browser-compatibility-and-production-bug-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/010-browser-compatibility-and-production-bug-hunter.md) | Available |
+| 001 | [Forensic Full Repository Audit](01-web-development/001-forensic-full-repository-audit.md) | [EN](01-web-development/001-forensic-full-repository-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/001-forensic-full-repository-audit.md) | ✅ Available |
+| 002 | [Ultimate Next.js Production Audit](01-web-development/002-ultimate-nextjs-production-audit.md) | [EN](01-web-development/002-ultimate-nextjs-production-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/002-ultimate-nextjs-production-audit.md) | ✅ Available |
+| 003 | [React Bug Hunter](01-web-development/003-react-bug-hunter.md) | [EN](01-web-development/003-react-bug-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/003-react-bug-hunter.md) | ✅ Available |
+| 004 | [Frontend Architecture Audit](01-web-development/004-frontend-architecture-audit.md) | [EN](01-web-development/004-frontend-architecture-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/004-frontend-architecture-audit.md) | ✅ Available |
+| 005 | [Web Performance Hunter](01-web-development/005-web-performance-hunter.md) | [EN](01-web-development/005-web-performance-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/005-web-performance-hunter.md) | ✅ Available |
+| 006 | [Responsive & Mobile Web Audit](01-web-development/006-responsive-and-mobile-web-audit.md) | [EN](01-web-development/006-responsive-and-mobile-web-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/006-responsive-and-mobile-web-audit.md) | ✅ Available |
+| 007 | [Web Accessibility Audit](01-web-development/007-web-accessibility-audit.md) | [EN](01-web-development/007-web-accessibility-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/007-web-accessibility-audit.md) | ✅ Available |
+| 008 | [Technical SEO Audit](01-web-development/008-technical-seo-audit.md) | [EN](01-web-development/008-technical-seo-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/008-technical-seo-audit.md) | ✅ Available |
+| 009 | [Progressive Web App Audit](01-web-development/009-progressive-web-app-audit.md) | [EN](01-web-development/009-progressive-web-app-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/009-progressive-web-app-audit.md) | ✅ Available |
+| 010 | [Browser Compatibility & Production Bug Hunter](01-web-development/010-browser-compatibility-and-production-bug-hunter.md) | [EN](01-web-development/010-browser-compatibility-and-production-bug-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/01-web-development/010-browser-compatibility-and-production-bug-hunter.md) | ✅ Available |
 
 ### 02 · [Mobile Development](02-mobile-development/README.md)
 
@@ -42,16 +42,16 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 011 | [Ultimate Android Application Audit](02-mobile-development/011-ultimate-android-application-audit.md) | [EN](02-mobile-development/011-ultimate-android-application-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/011-ultimate-android-application-audit.md) | Available |
-| 012 | [Jetpack Compose Deep Audit](02-mobile-development/012-jetpack-compose-deep-audit.md) | [EN](02-mobile-development/012-jetpack-compose-deep-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/012-jetpack-compose-deep-audit.md) | Available |
-| 013 | [Android Lifecycle Bug Hunter](02-mobile-development/013-android-lifecycle-bug-hunter.md) | [EN](02-mobile-development/013-android-lifecycle-bug-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/013-android-lifecycle-bug-hunter.md) | Available |
-| 014 | [Android Coroutines & Concurrency Audit](02-mobile-development/014-android-coroutines-and-concurrency-audit.md) | [EN](02-mobile-development/014-android-coroutines-and-concurrency-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/014-android-coroutines-and-concurrency-audit.md) | Available |
-| 015 | [Android Performance & ANR Hunter](02-mobile-development/015-android-performance-and-anr-hunter.md) | [EN](02-mobile-development/015-android-performance-and-anr-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/015-android-performance-and-anr-hunter.md) | Available |
-| 016 | [Android Persistence & Room Audit](02-mobile-development/016-android-persistence-and-room-audit.md) | [EN](02-mobile-development/016-android-persistence-and-room-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/016-android-persistence-and-room-audit.md) | Available |
-| 017 | [Android Offline-First & Sync Audit](02-mobile-development/017-android-offline-first-and-sync-audit.md) | [EN](02-mobile-development/017-android-offline-first-and-sync-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/017-android-offline-first-and-sync-audit.md) | Available |
-| 018 | [Android Media Playback Audit](02-mobile-development/018-android-media-playback-audit.md) | [EN](02-mobile-development/018-android-media-playback-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/018-android-media-playback-audit.md) | Available |
-| 019 | [Android TV Application Audit](02-mobile-development/019-android-tv-application-audit.md) | [EN](02-mobile-development/019-android-tv-application-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/019-android-tv-application-audit.md) | Available |
-| 020 | [Android Release & Play Store Readiness Audit](02-mobile-development/020-android-release-and-play-store-readiness-audit.md) | [EN](02-mobile-development/020-android-release-and-play-store-readiness-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/020-android-release-and-play-store-readiness-audit.md) | Available |
+| 011 | [Ultimate Android Application Audit](02-mobile-development/011-ultimate-android-application-audit.md) | [EN](02-mobile-development/011-ultimate-android-application-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/011-ultimate-android-application-audit.md) | ✅ Available |
+| 012 | [Jetpack Compose Deep Audit](02-mobile-development/012-jetpack-compose-deep-audit.md) | [EN](02-mobile-development/012-jetpack-compose-deep-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/012-jetpack-compose-deep-audit.md) | ✅ Available |
+| 013 | [Android Lifecycle Bug Hunter](02-mobile-development/013-android-lifecycle-bug-hunter.md) | [EN](02-mobile-development/013-android-lifecycle-bug-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/013-android-lifecycle-bug-hunter.md) | ✅ Available |
+| 014 | [Android Coroutines & Concurrency Audit](02-mobile-development/014-android-coroutines-and-concurrency-audit.md) | [EN](02-mobile-development/014-android-coroutines-and-concurrency-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/014-android-coroutines-and-concurrency-audit.md) | ✅ Available |
+| 015 | [Android Performance & ANR Hunter](02-mobile-development/015-android-performance-and-anr-hunter.md) | [EN](02-mobile-development/015-android-performance-and-anr-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/015-android-performance-and-anr-hunter.md) | ✅ Available |
+| 016 | [Android Persistence & Room Audit](02-mobile-development/016-android-persistence-and-room-audit.md) | [EN](02-mobile-development/016-android-persistence-and-room-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/016-android-persistence-and-room-audit.md) | ✅ Available |
+| 017 | [Android Offline-First & Sync Audit](02-mobile-development/017-android-offline-first-and-sync-audit.md) | [EN](02-mobile-development/017-android-offline-first-and-sync-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/017-android-offline-first-and-sync-audit.md) | ✅ Available |
+| 018 | [Android Media Playback Audit](02-mobile-development/018-android-media-playback-audit.md) | [EN](02-mobile-development/018-android-media-playback-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/018-android-media-playback-audit.md) | ✅ Available |
+| 019 | [Android TV Application Audit](02-mobile-development/019-android-tv-application-audit.md) | [EN](02-mobile-development/019-android-tv-application-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/019-android-tv-application-audit.md) | ✅ Available |
+| 020 | [Android Release & Play Store Readiness Audit](02-mobile-development/020-android-release-and-play-store-readiness-audit.md) | [EN](02-mobile-development/020-android-release-and-play-store-readiness-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/02-mobile-development/020-android-release-and-play-store-readiness-audit.md) | ✅ Available |
 
 ### 03 · [Backend & API](03-backend-api/README.md)
 
@@ -59,16 +59,16 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 021 | [Ultimate Backend Architecture Audit](03-backend-api/021-ultimate-backend-architecture-audit.md) | [EN](03-backend-api/021-ultimate-backend-architecture-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/021-ultimate-backend-architecture-audit.md) | Available |
-| 022 | [REST API Forensic Audit](03-backend-api/022-rest-api-forensic-audit.md) | [EN](03-backend-api/022-rest-api-forensic-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/022-rest-api-forensic-audit.md) | Available |
-| 023 | [API Contract Consistency Audit](03-backend-api/023-api-contract-consistency-audit.md) | [EN](03-backend-api/023-api-contract-consistency-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/023-api-contract-consistency-audit.md) | Available |
-| 024 | [Backend Business Logic Audit](03-backend-api/024-backend-business-logic-audit.md) | [EN](03-backend-api/024-backend-business-logic-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/024-backend-business-logic-audit.md) | Available |
-| 025 | [API Error Handling Audit](03-backend-api/025-api-error-handling-audit.md) | [EN](03-backend-api/025-api-error-handling-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/025-api-error-handling-audit.md) | Available |
-| 026 | [Backend Performance Audit](03-backend-api/026-backend-performance-audit.md) | [EN](03-backend-api/026-backend-performance-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/026-backend-performance-audit.md) | Available |
-| 027 | [Rate Limiting & Abuse Protection Audit](03-backend-api/027-rate-limiting-and-abuse-protection-audit.md) | [EN](03-backend-api/027-rate-limiting-and-abuse-protection-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/027-rate-limiting-and-abuse-protection-audit.md) | Available |
-| 028 | [Webhook Reliability Audit](03-backend-api/028-webhook-reliability-audit.md) | [EN](03-backend-api/028-webhook-reliability-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/028-webhook-reliability-audit.md) | Available |
-| 029 | [Background Jobs & Queue Audit](03-backend-api/029-background-jobs-and-queue-audit.md) | [EN](03-backend-api/029-background-jobs-and-queue-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/029-background-jobs-and-queue-audit.md) | Available |
-| 030 | [Backend Scalability Bottleneck Hunter](03-backend-api/030-backend-scalability-bottleneck-hunter.md) | [EN](03-backend-api/030-backend-scalability-bottleneck-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/030-backend-scalability-bottleneck-hunter.md) | Available |
+| 021 | [Ultimate Backend Architecture Audit](03-backend-api/021-ultimate-backend-architecture-audit.md) | [EN](03-backend-api/021-ultimate-backend-architecture-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/021-ultimate-backend-architecture-audit.md) | ✅ Available |
+| 022 | [REST API Forensic Audit](03-backend-api/022-rest-api-forensic-audit.md) | [EN](03-backend-api/022-rest-api-forensic-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/022-rest-api-forensic-audit.md) | ✅ Available |
+| 023 | [API Contract Consistency Audit](03-backend-api/023-api-contract-consistency-audit.md) | [EN](03-backend-api/023-api-contract-consistency-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/023-api-contract-consistency-audit.md) | ✅ Available |
+| 024 | [Backend Business Logic Audit](03-backend-api/024-backend-business-logic-audit.md) | [EN](03-backend-api/024-backend-business-logic-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/024-backend-business-logic-audit.md) | ✅ Available |
+| 025 | [API Error Handling Audit](03-backend-api/025-api-error-handling-audit.md) | [EN](03-backend-api/025-api-error-handling-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/025-api-error-handling-audit.md) | ✅ Available |
+| 026 | [Backend Performance Audit](03-backend-api/026-backend-performance-audit.md) | [EN](03-backend-api/026-backend-performance-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/026-backend-performance-audit.md) | ✅ Available |
+| 027 | [Rate Limiting & Abuse Protection Audit](03-backend-api/027-rate-limiting-and-abuse-protection-audit.md) | [EN](03-backend-api/027-rate-limiting-and-abuse-protection-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/027-rate-limiting-and-abuse-protection-audit.md) | ✅ Available |
+| 028 | [Webhook Reliability Audit](03-backend-api/028-webhook-reliability-audit.md) | [EN](03-backend-api/028-webhook-reliability-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/028-webhook-reliability-audit.md) | ✅ Available |
+| 029 | [Background Jobs & Queue Audit](03-backend-api/029-background-jobs-and-queue-audit.md) | [EN](03-backend-api/029-background-jobs-and-queue-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/029-background-jobs-and-queue-audit.md) | ✅ Available |
+| 030 | [Backend Scalability Bottleneck Hunter](03-backend-api/030-backend-scalability-bottleneck-hunter.md) | [EN](03-backend-api/030-backend-scalability-bottleneck-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/03-backend-api/030-backend-scalability-bottleneck-hunter.md) | ✅ Available |
 
 ### 04 · [Cybersecurity](04-cybersecurity/README.md)
 
@@ -76,16 +76,16 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 031 | [Ultimate Application Security Audit](04-cybersecurity/031-ultimate-application-security-audit.md) | [EN](04-cybersecurity/031-ultimate-application-security-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/031-ultimate-application-security-audit.md) | Available |
-| 032 | [Authentication Security Audit](04-cybersecurity/032-authentication-security-audit.md) | [EN](04-cybersecurity/032-authentication-security-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/032-authentication-security-audit.md) | Available |
-| 033 | [Authorization & IDOR Hunter](04-cybersecurity/033-authorization-and-idor-hunter.md) | [EN](04-cybersecurity/033-authorization-and-idor-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/033-authorization-and-idor-hunter.md) | Available |
-| 034 | [OWASP Vulnerability Hunter](04-cybersecurity/034-owasp-vulnerability-hunter.md) | [EN](04-cybersecurity/034-owasp-vulnerability-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/034-owasp-vulnerability-hunter.md) | Available |
-| 035 | [Secrets & Credential Exposure Audit](04-cybersecurity/035-secrets-and-credential-exposure-audit.md) | [EN](04-cybersecurity/035-secrets-and-credential-exposure-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/035-secrets-and-credential-exposure-audit.md) | Available |
-| 036 | [File Upload Security Audit](04-cybersecurity/036-file-upload-security-audit.md) | [EN](04-cybersecurity/036-file-upload-security-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/036-file-upload-security-audit.md) | Available |
-| 037 | [API Attack Surface Audit](04-cybersecurity/037-api-attack-surface-audit.md) | [EN](04-cybersecurity/037-api-attack-surface-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/037-api-attack-surface-audit.md) | Available |
-| 038 | [Dependency & Supply Chain Security Audit](04-cybersecurity/038-dependency-and-supply-chain-security-audit.md) | [EN](04-cybersecurity/038-dependency-and-supply-chain-security-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/038-dependency-and-supply-chain-security-audit.md) | Available |
-| 039 | [Threat Modeling Generator](04-cybersecurity/039-threat-modeling-generator.md) | [EN](04-cybersecurity/039-threat-modeling-generator.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/039-threat-modeling-generator.md) | Available |
-| 040 | [Attacker-Perspective Security Review](04-cybersecurity/040-attacker-perspective-security-review.md) | [EN](04-cybersecurity/040-attacker-perspective-security-review.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/040-attacker-perspective-security-review.md) | Available |
+| 031 | [Ultimate Application Security Audit](04-cybersecurity/031-ultimate-application-security-audit.md) | [EN](04-cybersecurity/031-ultimate-application-security-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/031-ultimate-application-security-audit.md) | ✅ Available |
+| 032 | [Authentication Security Audit](04-cybersecurity/032-authentication-security-audit.md) | [EN](04-cybersecurity/032-authentication-security-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/032-authentication-security-audit.md) | ✅ Available |
+| 033 | [Authorization & IDOR Hunter](04-cybersecurity/033-authorization-and-idor-hunter.md) | [EN](04-cybersecurity/033-authorization-and-idor-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/033-authorization-and-idor-hunter.md) | ✅ Available |
+| 034 | [OWASP Vulnerability Hunter](04-cybersecurity/034-owasp-vulnerability-hunter.md) | [EN](04-cybersecurity/034-owasp-vulnerability-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/034-owasp-vulnerability-hunter.md) | ✅ Available |
+| 035 | [Secrets & Credential Exposure Audit](04-cybersecurity/035-secrets-and-credential-exposure-audit.md) | [EN](04-cybersecurity/035-secrets-and-credential-exposure-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/035-secrets-and-credential-exposure-audit.md) | ✅ Available |
+| 036 | [File Upload Security Audit](04-cybersecurity/036-file-upload-security-audit.md) | [EN](04-cybersecurity/036-file-upload-security-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/036-file-upload-security-audit.md) | ✅ Available |
+| 037 | [API Attack Surface Audit](04-cybersecurity/037-api-attack-surface-audit.md) | [EN](04-cybersecurity/037-api-attack-surface-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/037-api-attack-surface-audit.md) | ✅ Available |
+| 038 | [Dependency & Supply Chain Security Audit](04-cybersecurity/038-dependency-and-supply-chain-security-audit.md) | [EN](04-cybersecurity/038-dependency-and-supply-chain-security-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/038-dependency-and-supply-chain-security-audit.md) | ✅ Available |
+| 039 | [Threat Modeling Generator](04-cybersecurity/039-threat-modeling-generator.md) | [EN](04-cybersecurity/039-threat-modeling-generator.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/039-threat-modeling-generator.md) | ✅ Available |
+| 040 | [Attacker-Perspective Security Review](04-cybersecurity/040-attacker-perspective-security-review.md) | [EN](04-cybersecurity/040-attacker-perspective-security-review.md) | [SR](../../sr/01-it-programiranje-tehnologija/04-cybersecurity/040-attacker-perspective-security-review.md) | ✅ Available |
 
 ### 05 · [DevOps, Cloud & Infrastructure](05-devops-cloud-infrastructure/README.md)
 
@@ -93,16 +93,16 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 041 | [Ultimate DevOps & Infrastructure Audit](05-devops-cloud-infrastructure/041-ultimate-devops-and-infrastructure-audit.md) | [EN](05-devops-cloud-infrastructure/041-ultimate-devops-and-infrastructure-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/041-ultimate-devops-and-infrastructure-audit.md) | Available |
-| 042 | [Docker Production Audit](05-devops-cloud-infrastructure/042-docker-production-audit.md) | [EN](05-devops-cloud-infrastructure/042-docker-production-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/042-docker-production-audit.md) | Available |
-| 043 | [Kubernetes Production Audit](05-devops-cloud-infrastructure/043-kubernetes-production-audit.md) | [EN](05-devops-cloud-infrastructure/043-kubernetes-production-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/043-kubernetes-production-audit.md) | Available |
-| 044 | [GitHub Actions Forensic Audit](05-devops-cloud-infrastructure/044-github-actions-forensic-audit.md) | [EN](05-devops-cloud-infrastructure/044-github-actions-forensic-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/044-github-actions-forensic-audit.md) | Available |
-| 045 | [CI/CD Pipeline Audit](05-devops-cloud-infrastructure/045-cicd-pipeline-audit.md) | [EN](05-devops-cloud-infrastructure/045-cicd-pipeline-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/045-cicd-pipeline-audit.md) | Available |
-| 046 | [Vercel Production Audit](05-devops-cloud-infrastructure/046-vercel-production-audit.md) | [EN](05-devops-cloud-infrastructure/046-vercel-production-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/046-vercel-production-audit.md) | Available |
-| 047 | [Cloud Infrastructure Audit](05-devops-cloud-infrastructure/047-cloud-infrastructure-audit.md) | [EN](05-devops-cloud-infrastructure/047-cloud-infrastructure-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/047-cloud-infrastructure-audit.md) | Available |
-| 048 | [Environment Configuration Audit](05-devops-cloud-infrastructure/048-environment-configuration-audit.md) | [EN](05-devops-cloud-infrastructure/048-environment-configuration-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/048-environment-configuration-audit.md) | Available |
-| 049 | [Zero-Downtime Deployment Audit](05-devops-cloud-infrastructure/049-zero-downtime-deployment-audit.md) | [EN](05-devops-cloud-infrastructure/049-zero-downtime-deployment-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/049-zero-downtime-deployment-audit.md) | Available |
-| 050 | [Backup, Disaster Recovery & Rollback Audit](05-devops-cloud-infrastructure/050-backup-disaster-recovery-and-rollback-audit.md) | [EN](05-devops-cloud-infrastructure/050-backup-disaster-recovery-and-rollback-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/050-backup-disaster-recovery-and-rollback-audit.md) | Available |
+| 041 | [Ultimate DevOps & Infrastructure Audit](05-devops-cloud-infrastructure/041-ultimate-devops-and-infrastructure-audit.md) | [EN](05-devops-cloud-infrastructure/041-ultimate-devops-and-infrastructure-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/041-ultimate-devops-and-infrastructure-audit.md) | ✅ Available |
+| 042 | [Docker Production Audit](05-devops-cloud-infrastructure/042-docker-production-audit.md) | [EN](05-devops-cloud-infrastructure/042-docker-production-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/042-docker-production-audit.md) | ✅ Available |
+| 043 | [Kubernetes Production Audit](05-devops-cloud-infrastructure/043-kubernetes-production-audit.md) | [EN](05-devops-cloud-infrastructure/043-kubernetes-production-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/043-kubernetes-production-audit.md) | ✅ Available |
+| 044 | [GitHub Actions Forensic Audit](05-devops-cloud-infrastructure/044-github-actions-forensic-audit.md) | [EN](05-devops-cloud-infrastructure/044-github-actions-forensic-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/044-github-actions-forensic-audit.md) | ✅ Available |
+| 045 | [CI/CD Pipeline Audit](05-devops-cloud-infrastructure/045-cicd-pipeline-audit.md) | [EN](05-devops-cloud-infrastructure/045-cicd-pipeline-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/045-cicd-pipeline-audit.md) | ✅ Available |
+| 046 | [Vercel Production Audit](05-devops-cloud-infrastructure/046-vercel-production-audit.md) | [EN](05-devops-cloud-infrastructure/046-vercel-production-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/046-vercel-production-audit.md) | ✅ Available |
+| 047 | [Cloud Infrastructure Audit](05-devops-cloud-infrastructure/047-cloud-infrastructure-audit.md) | [EN](05-devops-cloud-infrastructure/047-cloud-infrastructure-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/047-cloud-infrastructure-audit.md) | ✅ Available |
+| 048 | [Environment Configuration Audit](05-devops-cloud-infrastructure/048-environment-configuration-audit.md) | [EN](05-devops-cloud-infrastructure/048-environment-configuration-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/048-environment-configuration-audit.md) | ✅ Available |
+| 049 | [Zero-Downtime Deployment Audit](05-devops-cloud-infrastructure/049-zero-downtime-deployment-audit.md) | [EN](05-devops-cloud-infrastructure/049-zero-downtime-deployment-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/049-zero-downtime-deployment-audit.md) | ✅ Available |
+| 050 | [Backup, Disaster Recovery & Rollback Audit](05-devops-cloud-infrastructure/050-backup-disaster-recovery-and-rollback-audit.md) | [EN](05-devops-cloud-infrastructure/050-backup-disaster-recovery-and-rollback-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/050-backup-disaster-recovery-and-rollback-audit.md) | ✅ Available |
 
 ### 06 · [Databases & Data Engineering](06-databases-data-engineering/README.md)
 
@@ -110,16 +110,16 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 051 | [Ultimate Database Audit](06-databases-data-engineering/051-ultimate-database-audit.md) | [EN](06-databases-data-engineering/051-ultimate-database-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/051-ultimate-database-audit.md) | Available |
-| 052 | [Database Schema & Data Model Audit](06-databases-data-engineering/052-database-schema-and-data-model-audit.md) | [EN](06-databases-data-engineering/052-database-schema-and-data-model-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/052-database-schema-and-data-model-audit.md) | Available |
-| 053 | [SQL Performance Hunter](06-databases-data-engineering/053-sql-performance-hunter.md) | [EN](06-databases-data-engineering/053-sql-performance-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/053-sql-performance-hunter.md) | Available |
-| 054 | [Database Index Audit](06-databases-data-engineering/054-database-index-audit.md) | [EN](06-databases-data-engineering/054-database-index-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/054-database-index-audit.md) | Available |
-| 055 | [Database Migration Safety Audit](06-databases-data-engineering/055-database-migration-safety-audit.md) | [EN](06-databases-data-engineering/055-database-migration-safety-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/055-database-migration-safety-audit.md) | Available |
-| 056 | [Data Integrity Audit](06-databases-data-engineering/056-data-integrity-audit.md) | [EN](06-databases-data-engineering/056-data-integrity-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/056-data-integrity-audit.md) | Available |
-| 057 | [Transaction & Concurrency Audit](06-databases-data-engineering/057-transaction-and-concurrency-audit.md) | [EN](06-databases-data-engineering/057-transaction-and-concurrency-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/057-transaction-and-concurrency-audit.md) | Available |
-| 058 | [N+1 & Expensive Query Hunter](06-databases-data-engineering/058-n-plus-1-and-expensive-query-hunter.md) | [EN](06-databases-data-engineering/058-n-plus-1-and-expensive-query-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/058-n-plus-1-and-expensive-query-hunter.md) | Available |
-| 059 | [ORM Forensic Audit](06-databases-data-engineering/059-orm-forensic-audit.md) | [EN](06-databases-data-engineering/059-orm-forensic-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/059-orm-forensic-audit.md) | Available |
-| 060 | [ETL & Data Pipeline Reliability Audit](06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md) | [EN](06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md) | Available |
+| 051 | [Ultimate Database Audit](06-databases-data-engineering/051-ultimate-database-audit.md) | [EN](06-databases-data-engineering/051-ultimate-database-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/051-ultimate-database-audit.md) | ✅ Available |
+| 052 | [Database Schema & Data Model Audit](06-databases-data-engineering/052-database-schema-and-data-model-audit.md) | [EN](06-databases-data-engineering/052-database-schema-and-data-model-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/052-database-schema-and-data-model-audit.md) | ✅ Available |
+| 053 | [SQL Performance Hunter](06-databases-data-engineering/053-sql-performance-hunter.md) | [EN](06-databases-data-engineering/053-sql-performance-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/053-sql-performance-hunter.md) | ✅ Available |
+| 054 | [Database Index Audit](06-databases-data-engineering/054-database-index-audit.md) | [EN](06-databases-data-engineering/054-database-index-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/054-database-index-audit.md) | ✅ Available |
+| 055 | [Database Migration Safety Audit](06-databases-data-engineering/055-database-migration-safety-audit.md) | [EN](06-databases-data-engineering/055-database-migration-safety-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/055-database-migration-safety-audit.md) | ✅ Available |
+| 056 | [Data Integrity Audit](06-databases-data-engineering/056-data-integrity-audit.md) | [EN](06-databases-data-engineering/056-data-integrity-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/056-data-integrity-audit.md) | ✅ Available |
+| 057 | [Transaction & Concurrency Audit](06-databases-data-engineering/057-transaction-and-concurrency-audit.md) | [EN](06-databases-data-engineering/057-transaction-and-concurrency-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/057-transaction-and-concurrency-audit.md) | ✅ Available |
+| 058 | [N+1 & Expensive Query Hunter](06-databases-data-engineering/058-n-plus-1-and-expensive-query-hunter.md) | [EN](06-databases-data-engineering/058-n-plus-1-and-expensive-query-hunter.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/058-n-plus-1-and-expensive-query-hunter.md) | ✅ Available |
+| 059 | [ORM Forensic Audit](06-databases-data-engineering/059-orm-forensic-audit.md) | [EN](06-databases-data-engineering/059-orm-forensic-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/059-orm-forensic-audit.md) | ✅ Available |
+| 060 | [ETL & Data Pipeline Reliability Audit](06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md) | [EN](06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md) | [SR](../../sr/01-it-programiranje-tehnologija/06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md) | ✅ Available |
 
 ### 07 · [AI, LLM & Automation](07-ai-llm-automation/README.md)
 
@@ -127,16 +127,16 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 061 | Ultimate AI Application Audit | - | - | Planned |
-| 062 | RAG System Forensic Audit | - | - | Planned |
-| 063 | Hallucination & Grounding Audit | - | - | Planned |
-| 064 | Prompt Injection Security Audit | - | - | Planned |
-| 065 | AI Agent Architecture Audit | - | - | Planned |
-| 066 | AI Agent Reliability Audit | - | - | Planned |
-| 067 | System Prompt Optimization | - | - | Planned |
-| 068 | n8n / Workflow Automation Audit | - | - | Planned |
-| 069 | LLM Cost & Latency Optimization | - | - | Planned |
-| 070 | AI Model Selection & Evaluation | - | - | Planned |
+| 061 | Ultimate AI Application Audit | - | - | ⏳ Planned |
+| 062 | RAG System Forensic Audit | - | - | ⏳ Planned |
+| 063 | Hallucination & Grounding Audit | - | - | ⏳ Planned |
+| 064 | Prompt Injection Security Audit | - | - | ⏳ Planned |
+| 065 | AI Agent Architecture Audit | - | - | ⏳ Planned |
+| 066 | AI Agent Reliability Audit | - | - | ⏳ Planned |
+| 067 | System Prompt Optimization | - | - | ⏳ Planned |
+| 068 | n8n / Workflow Automation Audit | - | - | ⏳ Planned |
+| 069 | LLM Cost & Latency Optimization | - | - | ⏳ Planned |
+| 070 | AI Model Selection & Evaluation | - | - | ⏳ Planned |
 
 ### 08 · [Testing, QA & Reliability](08-testing-qa-reliability/README.md)
 
@@ -144,16 +144,16 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 071 | Ultimate Test Suite Audit | - | - | Planned |
-| 072 | Missing Test Coverage Hunter | - | - | Planned |
-| 073 | Flaky Test Hunter | - | - | Planned |
-| 074 | Regression Test Generator | - | - | Planned |
-| 075 | End-to-End Test Plan Generator | - | - | Planned |
-| 076 | Edge Case Generator | - | - | Planned |
-| 077 | Adversarial User Testing | - | - | Planned |
-| 078 | Reliability & Failure Mode Audit | - | - | Planned |
-| 079 | Race Condition & Concurrency Hunter | - | - | Planned |
-| 080 | Production Incident Simulation | - | - | Planned |
+| 071 | Ultimate Test Suite Audit | - | - | ⏳ Planned |
+| 072 | Missing Test Coverage Hunter | - | - | ⏳ Planned |
+| 073 | Flaky Test Hunter | - | - | ⏳ Planned |
+| 074 | Regression Test Generator | - | - | ⏳ Planned |
+| 075 | End-to-End Test Plan Generator | - | - | ⏳ Planned |
+| 076 | Edge Case Generator | - | - | ⏳ Planned |
+| 077 | Adversarial User Testing | - | - | ⏳ Planned |
+| 078 | Reliability & Failure Mode Audit | - | - | ⏳ Planned |
+| 079 | Race Condition & Concurrency Hunter | - | - | ⏳ Planned |
+| 080 | Production Incident Simulation | - | - | ⏳ Planned |
 
 ### 09 · [UX, UI & Product Development](09-ux-ui-product-development/README.md)
 
@@ -161,16 +161,16 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 081 | Ultimate UX/UI Product Audit | - | - | Planned |
-| 082 | Critical User Flow Audit | - | - | Planned |
-| 083 | Onboarding Audit | - | - | Planned |
-| 084 | Form UX Audit | - | - | Planned |
-| 085 | Navigation & Information Architecture Audit | - | - | Planned |
-| 086 | Mobile UX Audit | - | - | Planned |
-| 087 | Design System Consistency Audit | - | - | Planned |
-| 088 | Accessibility Experience Audit | - | - | Planned |
-| 089 | Product Requirement Generator | - | - | Planned |
-| 090 | Feature Design & UX Review | - | - | Planned |
+| 081 | Ultimate UX/UI Product Audit | - | - | ⏳ Planned |
+| 082 | Critical User Flow Audit | - | - | ⏳ Planned |
+| 083 | Onboarding Audit | - | - | ⏳ Planned |
+| 084 | Form UX Audit | - | - | ⏳ Planned |
+| 085 | Navigation & Information Architecture Audit | - | - | ⏳ Planned |
+| 086 | Mobile UX Audit | - | - | ⏳ Planned |
+| 087 | Design System Consistency Audit | - | - | ⏳ Planned |
+| 088 | Accessibility Experience Audit | - | - | ⏳ Planned |
+| 089 | Product Requirement Generator | - | - | ⏳ Planned |
+| 090 | Feature Design & UX Review | - | - | ⏳ Planned |
 
 ### 10 · [Desktop, Game, Systems & Embedded](10-desktop-game-systems-embedded/README.md)
 
@@ -178,16 +178,16 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 091 | Ultimate Desktop Application Audit | - | - | Planned |
-| 092 | Electron Application Audit | - | - | Planned |
-| 093 | Python/PySide Application Audit | - | - | Planned |
-| 094 | Windows Application Production Audit | - | - | Planned |
-| 095 | Cross-Platform Compatibility Audit | - | - | Planned |
-| 096 | Game Architecture Audit | - | - | Planned |
-| 097 | Game Performance Audit | - | - | Planned |
-| 098 | Embedded Software Reliability Audit | - | - | Planned |
-| 099 | Memory & Resource Leak Hunter | - | - | Planned |
-| 100 | Hardware/Software Integration Audit | - | - | Planned |
+| 091 | Ultimate Desktop Application Audit | - | - | ⏳ Planned |
+| 092 | Electron Application Audit | - | - | ⏳ Planned |
+| 093 | Python/PySide Application Audit | - | - | ⏳ Planned |
+| 094 | Windows Application Production Audit | - | - | ⏳ Planned |
+| 095 | Cross-Platform Compatibility Audit | - | - | ⏳ Planned |
+| 096 | Game Architecture Audit | - | - | ⏳ Planned |
+| 097 | Game Performance Audit | - | - | ⏳ Planned |
+| 098 | Embedded Software Reliability Audit | - | - | ⏳ Planned |
+| 099 | Memory & Resource Leak Hunter | - | - | ⏳ Planned |
+| 100 | Hardware/Software Integration Audit | - | - | ⏳ Planned |
 <!-- UPL:END category-prompts -->
 
 ## Contributing to this category

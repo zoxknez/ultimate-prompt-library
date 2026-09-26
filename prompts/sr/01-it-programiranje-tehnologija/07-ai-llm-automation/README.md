@@ -13,16 +13,16 @@ AI aplikacije, RAG, grounding, prompt injection, agenti, sistemski promptovi, au
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 061 | Ultimate AI Application Audit | - | - | Planirano |
-| 062 | RAG System Forensic Audit | - | - | Planirano |
-| 063 | Hallucination & Grounding Audit | - | - | Planirano |
-| 064 | Prompt Injection Security Audit | - | - | Planirano |
-| 065 | AI Agent Architecture Audit | - | - | Planirano |
-| 066 | AI Agent Reliability Audit | - | - | Planirano |
-| 067 | System Prompt Optimization | - | - | Planirano |
-| 068 | n8n / Workflow Automation Audit | - | - | Planirano |
-| 069 | LLM Cost & Latency Optimization | - | - | Planirano |
-| 070 | AI Model Selection & Evaluation | - | - | Planirano |
+| 061 | Ultimate AI Application Audit | - | - | ⏳ Planirano |
+| 062 | RAG System Forensic Audit | - | - | ⏳ Planirano |
+| 063 | Hallucination & Grounding Audit | - | - | ⏳ Planirano |
+| 064 | Prompt Injection Security Audit | - | - | ⏳ Planirano |
+| 065 | AI Agent Architecture Audit | - | - | ⏳ Planirano |
+| 066 | AI Agent Reliability Audit | - | - | ⏳ Planirano |
+| 067 | System Prompt Optimization | - | - | ⏳ Planirano |
+| 068 | n8n / Workflow Automation Audit | - | - | ⏳ Planirano |
+| 069 | LLM Cost & Latency Optimization | - | - | ⏳ Planirano |
+| 070 | AI Model Selection & Evaluation | - | - | ⏳ Planirano |
 <!-- UPL:END subcategory-prompts -->
 
 Planirani promptovi imaju rezervisan ID i ime fajla, ali još nisu napisani. Ako želiš da napišeš neki od njih, otvori issue ili pull request koji navodi njegov ID. Pogledaj [CONTRIBUTING.sr.md](../../../../CONTRIBUTING.sr.md).

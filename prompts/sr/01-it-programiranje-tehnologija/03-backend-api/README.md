@@ -13,16 +13,16 @@ Backend arhitektura, REST API-ji, ugovori, poslovna logika, greške, performanse
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 021 | [Ultimate Backend Architecture Audit](021-ultimate-backend-architecture-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/021-ultimate-backend-architecture-audit.md) | [SR](021-ultimate-backend-architecture-audit.md) | Dostupno |
-| 022 | [REST API Forensic Audit](022-rest-api-forensic-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/022-rest-api-forensic-audit.md) | [SR](022-rest-api-forensic-audit.md) | Dostupno |
-| 023 | [API Contract Consistency Audit](023-api-contract-consistency-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/023-api-contract-consistency-audit.md) | [SR](023-api-contract-consistency-audit.md) | Dostupno |
-| 024 | [Backend Business Logic Audit](024-backend-business-logic-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/024-backend-business-logic-audit.md) | [SR](024-backend-business-logic-audit.md) | Dostupno |
-| 025 | [API Error Handling Audit](025-api-error-handling-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/025-api-error-handling-audit.md) | [SR](025-api-error-handling-audit.md) | Dostupno |
-| 026 | [Backend Performance Audit](026-backend-performance-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/026-backend-performance-audit.md) | [SR](026-backend-performance-audit.md) | Dostupno |
-| 027 | [Rate Limiting & Abuse Protection Audit](027-rate-limiting-and-abuse-protection-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/027-rate-limiting-and-abuse-protection-audit.md) | [SR](027-rate-limiting-and-abuse-protection-audit.md) | Dostupno |
-| 028 | [Webhook Reliability Audit](028-webhook-reliability-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/028-webhook-reliability-audit.md) | [SR](028-webhook-reliability-audit.md) | Dostupno |
-| 029 | [Background Jobs & Queue Audit](029-background-jobs-and-queue-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/029-background-jobs-and-queue-audit.md) | [SR](029-background-jobs-and-queue-audit.md) | Dostupno |
-| 030 | [Backend Scalability Bottleneck Hunter](030-backend-scalability-bottleneck-hunter.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/030-backend-scalability-bottleneck-hunter.md) | [SR](030-backend-scalability-bottleneck-hunter.md) | Dostupno |
+| 021 | [Ultimate Backend Architecture Audit](021-ultimate-backend-architecture-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/021-ultimate-backend-architecture-audit.md) | [SR](021-ultimate-backend-architecture-audit.md) | ✅ Dostupno |
+| 022 | [REST API Forensic Audit](022-rest-api-forensic-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/022-rest-api-forensic-audit.md) | [SR](022-rest-api-forensic-audit.md) | ✅ Dostupno |
+| 023 | [API Contract Consistency Audit](023-api-contract-consistency-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/023-api-contract-consistency-audit.md) | [SR](023-api-contract-consistency-audit.md) | ✅ Dostupno |
+| 024 | [Backend Business Logic Audit](024-backend-business-logic-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/024-backend-business-logic-audit.md) | [SR](024-backend-business-logic-audit.md) | ✅ Dostupno |
+| 025 | [API Error Handling Audit](025-api-error-handling-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/025-api-error-handling-audit.md) | [SR](025-api-error-handling-audit.md) | ✅ Dostupno |
+| 026 | [Backend Performance Audit](026-backend-performance-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/026-backend-performance-audit.md) | [SR](026-backend-performance-audit.md) | ✅ Dostupno |
+| 027 | [Rate Limiting & Abuse Protection Audit](027-rate-limiting-and-abuse-protection-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/027-rate-limiting-and-abuse-protection-audit.md) | [SR](027-rate-limiting-and-abuse-protection-audit.md) | ✅ Dostupno |
+| 028 | [Webhook Reliability Audit](028-webhook-reliability-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/028-webhook-reliability-audit.md) | [SR](028-webhook-reliability-audit.md) | ✅ Dostupno |
+| 029 | [Background Jobs & Queue Audit](029-background-jobs-and-queue-audit.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/029-background-jobs-and-queue-audit.md) | [SR](029-background-jobs-and-queue-audit.md) | ✅ Dostupno |
+| 030 | [Backend Scalability Bottleneck Hunter](030-backend-scalability-bottleneck-hunter.md) | [EN](../../../en/01-it-programming-technology/03-backend-api/030-backend-scalability-bottleneck-hunter.md) | [SR](030-backend-scalability-bottleneck-hunter.md) | ✅ Dostupno |
 <!-- UPL:END subcategory-prompts -->
 
 Planirani promptovi imaju rezervisan ID i ime fajla, ali još nisu napisani. Ako želiš da napišeš neki od njih, otvori issue ili pull request koji navodi njegov ID. Pogledaj [CONTRIBUTING.sr.md](../../../../CONTRIBUTING.sr.md).

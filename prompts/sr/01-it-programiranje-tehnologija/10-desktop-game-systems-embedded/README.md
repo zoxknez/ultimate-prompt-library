@@ -13,16 +13,16 @@ Desktop aplikacije, Electron, PySide, Windows, cross-platform, igre, embedded so
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 091 | Ultimate Desktop Application Audit | - | - | Planirano |
-| 092 | Electron Application Audit | - | - | Planirano |
-| 093 | Python/PySide Application Audit | - | - | Planirano |
-| 094 | Windows Application Production Audit | - | - | Planirano |
-| 095 | Cross-Platform Compatibility Audit | - | - | Planirano |
-| 096 | Game Architecture Audit | - | - | Planirano |
-| 097 | Game Performance Audit | - | - | Planirano |
-| 098 | Embedded Software Reliability Audit | - | - | Planirano |
-| 099 | Memory & Resource Leak Hunter | - | - | Planirano |
-| 100 | Hardware/Software Integration Audit | - | - | Planirano |
+| 091 | Ultimate Desktop Application Audit | - | - | ⏳ Planirano |
+| 092 | Electron Application Audit | - | - | ⏳ Planirano |
+| 093 | Python/PySide Application Audit | - | - | ⏳ Planirano |
+| 094 | Windows Application Production Audit | - | - | ⏳ Planirano |
+| 095 | Cross-Platform Compatibility Audit | - | - | ⏳ Planirano |
+| 096 | Game Architecture Audit | - | - | ⏳ Planirano |
+| 097 | Game Performance Audit | - | - | ⏳ Planirano |
+| 098 | Embedded Software Reliability Audit | - | - | ⏳ Planirano |
+| 099 | Memory & Resource Leak Hunter | - | - | ⏳ Planirano |
+| 100 | Hardware/Software Integration Audit | - | - | ⏳ Planirano |
 <!-- UPL:END subcategory-prompts -->
 
 Planirani promptovi imaju rezervisan ID i ime fajla, ali još nisu napisani. Ako želiš da napišeš neki od njih, otvori issue ili pull request koji navodi njegov ID. Pogledaj [CONTRIBUTING.sr.md](../../../../CONTRIBUTING.sr.md).

@@ -13,16 +13,16 @@ Test suites, coverage, flaky tests, regression and end-to-end planning, edge cas
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 071 | Ultimate Test Suite Audit | - | - | Planned |
-| 072 | Missing Test Coverage Hunter | - | - | Planned |
-| 073 | Flaky Test Hunter | - | - | Planned |
-| 074 | Regression Test Generator | - | - | Planned |
-| 075 | End-to-End Test Plan Generator | - | - | Planned |
-| 076 | Edge Case Generator | - | - | Planned |
-| 077 | Adversarial User Testing | - | - | Planned |
-| 078 | Reliability & Failure Mode Audit | - | - | Planned |
-| 079 | Race Condition & Concurrency Hunter | - | - | Planned |
-| 080 | Production Incident Simulation | - | - | Planned |
+| 071 | Ultimate Test Suite Audit | - | - | ⏳ Planned |
+| 072 | Missing Test Coverage Hunter | - | - | ⏳ Planned |
+| 073 | Flaky Test Hunter | - | - | ⏳ Planned |
+| 074 | Regression Test Generator | - | - | ⏳ Planned |
+| 075 | End-to-End Test Plan Generator | - | - | ⏳ Planned |
+| 076 | Edge Case Generator | - | - | ⏳ Planned |
+| 077 | Adversarial User Testing | - | - | ⏳ Planned |
+| 078 | Reliability & Failure Mode Audit | - | - | ⏳ Planned |
+| 079 | Race Condition & Concurrency Hunter | - | - | ⏳ Planned |
+| 080 | Production Incident Simulation | - | - | ⏳ Planned |
 <!-- UPL:END subcategory-prompts -->
 
 Planned prompts have a reserved ID and filename but are not written yet. To write one, open an issue or pull request that references its ID. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md).

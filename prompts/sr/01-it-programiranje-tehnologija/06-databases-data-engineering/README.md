@@ -13,16 +13,16 @@
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 051 | [Ultimate Database Audit](051-ultimate-database-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/051-ultimate-database-audit.md) | [SR](051-ultimate-database-audit.md) | Dostupno |
-| 052 | [Database Schema & Data Model Audit](052-database-schema-and-data-model-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/052-database-schema-and-data-model-audit.md) | [SR](052-database-schema-and-data-model-audit.md) | Dostupno |
-| 053 | [SQL Performance Hunter](053-sql-performance-hunter.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/053-sql-performance-hunter.md) | [SR](053-sql-performance-hunter.md) | Dostupno |
-| 054 | [Database Index Audit](054-database-index-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/054-database-index-audit.md) | [SR](054-database-index-audit.md) | Dostupno |
-| 055 | [Database Migration Safety Audit](055-database-migration-safety-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/055-database-migration-safety-audit.md) | [SR](055-database-migration-safety-audit.md) | Dostupno |
-| 056 | [Data Integrity Audit](056-data-integrity-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/056-data-integrity-audit.md) | [SR](056-data-integrity-audit.md) | Dostupno |
-| 057 | [Transaction & Concurrency Audit](057-transaction-and-concurrency-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/057-transaction-and-concurrency-audit.md) | [SR](057-transaction-and-concurrency-audit.md) | Dostupno |
-| 058 | [N+1 & Expensive Query Hunter](058-n-plus-1-and-expensive-query-hunter.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/058-n-plus-1-and-expensive-query-hunter.md) | [SR](058-n-plus-1-and-expensive-query-hunter.md) | Dostupno |
-| 059 | [ORM Forensic Audit](059-orm-forensic-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/059-orm-forensic-audit.md) | [SR](059-orm-forensic-audit.md) | Dostupno |
-| 060 | [ETL & Data Pipeline Reliability Audit](060-etl-and-data-pipeline-reliability-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md) | [SR](060-etl-and-data-pipeline-reliability-audit.md) | Dostupno |
+| 051 | [Ultimate Database Audit](051-ultimate-database-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/051-ultimate-database-audit.md) | [SR](051-ultimate-database-audit.md) | ✅ Dostupno |
+| 052 | [Database Schema & Data Model Audit](052-database-schema-and-data-model-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/052-database-schema-and-data-model-audit.md) | [SR](052-database-schema-and-data-model-audit.md) | ✅ Dostupno |
+| 053 | [SQL Performance Hunter](053-sql-performance-hunter.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/053-sql-performance-hunter.md) | [SR](053-sql-performance-hunter.md) | ✅ Dostupno |
+| 054 | [Database Index Audit](054-database-index-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/054-database-index-audit.md) | [SR](054-database-index-audit.md) | ✅ Dostupno |
+| 055 | [Database Migration Safety Audit](055-database-migration-safety-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/055-database-migration-safety-audit.md) | [SR](055-database-migration-safety-audit.md) | ✅ Dostupno |
+| 056 | [Data Integrity Audit](056-data-integrity-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/056-data-integrity-audit.md) | [SR](056-data-integrity-audit.md) | ✅ Dostupno |
+| 057 | [Transaction & Concurrency Audit](057-transaction-and-concurrency-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/057-transaction-and-concurrency-audit.md) | [SR](057-transaction-and-concurrency-audit.md) | ✅ Dostupno |
+| 058 | [N+1 & Expensive Query Hunter](058-n-plus-1-and-expensive-query-hunter.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/058-n-plus-1-and-expensive-query-hunter.md) | [SR](058-n-plus-1-and-expensive-query-hunter.md) | ✅ Dostupno |
+| 059 | [ORM Forensic Audit](059-orm-forensic-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/059-orm-forensic-audit.md) | [SR](059-orm-forensic-audit.md) | ✅ Dostupno |
+| 060 | [ETL & Data Pipeline Reliability Audit](060-etl-and-data-pipeline-reliability-audit.md) | [EN](../../../en/01-it-programming-technology/06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md) | [SR](060-etl-and-data-pipeline-reliability-audit.md) | ✅ Dostupno |
 <!-- UPL:END subcategory-prompts -->
 
 Planirani promptovi imaju rezervisan ID i ime fajla, ali još nisu napisani. Ako želiš da napišeš neki od njih, otvori issue ili pull request koji navodi njegov ID. Pogledaj [CONTRIBUTING.sr.md](../../../../CONTRIBUTING.sr.md).

@@ -20,4 +20,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Redesigned the English and Serbian READMEs: generated hero banner and live statistics card (light and dark variants), centered sections, card grids for categories, usage steps, contribution paths and quality principles, and emoji progress tables. Generated prompt tables now show status with icons.
+
 - Moved the 60 existing IT prompt pairs from the repository root (`<slug>.md` = Serbian, `<slug>.en.md` = English) into the new structure as `NNN-<slug>.md` in both language trees. Prompt bodies were not changed; one extra trailing blank line was removed from the English OWASP Vulnerability Hunter.

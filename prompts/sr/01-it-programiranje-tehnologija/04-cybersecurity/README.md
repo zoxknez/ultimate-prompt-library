@@ -15,16 +15,16 @@ Defanzivni bezbednosni pregledi aplikacija, autentikacija, autorizacija, tajni p
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 031 | [Ultimate Application Security Audit](031-ultimate-application-security-audit.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/031-ultimate-application-security-audit.md) | [SR](031-ultimate-application-security-audit.md) | Dostupno |
-| 032 | [Authentication Security Audit](032-authentication-security-audit.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/032-authentication-security-audit.md) | [SR](032-authentication-security-audit.md) | Dostupno |
-| 033 | [Authorization & IDOR Hunter](033-authorization-and-idor-hunter.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/033-authorization-and-idor-hunter.md) | [SR](033-authorization-and-idor-hunter.md) | Dostupno |
-| 034 | [OWASP Vulnerability Hunter](034-owasp-vulnerability-hunter.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/034-owasp-vulnerability-hunter.md) | [SR](034-owasp-vulnerability-hunter.md) | Dostupno |
-| 035 | [Secrets & Credential Exposure Audit](035-secrets-and-credential-exposure-audit.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/035-secrets-and-credential-exposure-audit.md) | [SR](035-secrets-and-credential-exposure-audit.md) | Dostupno |
-| 036 | [File Upload Security Audit](036-file-upload-security-audit.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/036-file-upload-security-audit.md) | [SR](036-file-upload-security-audit.md) | Dostupno |
-| 037 | [API Attack Surface Audit](037-api-attack-surface-audit.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/037-api-attack-surface-audit.md) | [SR](037-api-attack-surface-audit.md) | Dostupno |
-| 038 | [Dependency & Supply Chain Security Audit](038-dependency-and-supply-chain-security-audit.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/038-dependency-and-supply-chain-security-audit.md) | [SR](038-dependency-and-supply-chain-security-audit.md) | Dostupno |
-| 039 | [Threat Modeling Generator](039-threat-modeling-generator.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/039-threat-modeling-generator.md) | [SR](039-threat-modeling-generator.md) | Dostupno |
-| 040 | [Attacker-Perspective Security Review](040-attacker-perspective-security-review.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/040-attacker-perspective-security-review.md) | [SR](040-attacker-perspective-security-review.md) | Dostupno |
+| 031 | [Ultimate Application Security Audit](031-ultimate-application-security-audit.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/031-ultimate-application-security-audit.md) | [SR](031-ultimate-application-security-audit.md) | ✅ Dostupno |
+| 032 | [Authentication Security Audit](032-authentication-security-audit.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/032-authentication-security-audit.md) | [SR](032-authentication-security-audit.md) | ✅ Dostupno |
+| 033 | [Authorization & IDOR Hunter](033-authorization-and-idor-hunter.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/033-authorization-and-idor-hunter.md) | [SR](033-authorization-and-idor-hunter.md) | ✅ Dostupno |
+| 034 | [OWASP Vulnerability Hunter](034-owasp-vulnerability-hunter.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/034-owasp-vulnerability-hunter.md) | [SR](034-owasp-vulnerability-hunter.md) | ✅ Dostupno |
+| 035 | [Secrets & Credential Exposure Audit](035-secrets-and-credential-exposure-audit.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/035-secrets-and-credential-exposure-audit.md) | [SR](035-secrets-and-credential-exposure-audit.md) | ✅ Dostupno |
+| 036 | [File Upload Security Audit](036-file-upload-security-audit.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/036-file-upload-security-audit.md) | [SR](036-file-upload-security-audit.md) | ✅ Dostupno |
+| 037 | [API Attack Surface Audit](037-api-attack-surface-audit.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/037-api-attack-surface-audit.md) | [SR](037-api-attack-surface-audit.md) | ✅ Dostupno |
+| 038 | [Dependency & Supply Chain Security Audit](038-dependency-and-supply-chain-security-audit.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/038-dependency-and-supply-chain-security-audit.md) | [SR](038-dependency-and-supply-chain-security-audit.md) | ✅ Dostupno |
+| 039 | [Threat Modeling Generator](039-threat-modeling-generator.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/039-threat-modeling-generator.md) | [SR](039-threat-modeling-generator.md) | ✅ Dostupno |
+| 040 | [Attacker-Perspective Security Review](040-attacker-perspective-security-review.md) | [EN](../../../en/01-it-programming-technology/04-cybersecurity/040-attacker-perspective-security-review.md) | [SR](040-attacker-perspective-security-review.md) | ✅ Dostupno |
 <!-- UPL:END subcategory-prompts -->
 
 Planirani promptovi imaju rezervisan ID i ime fajla, ali još nisu napisani. Ako želiš da napišeš neki od njih, otvori issue ili pull request koji navodi njegov ID. Pogledaj [CONTRIBUTING.sr.md](../../../../CONTRIBUTING.sr.md).

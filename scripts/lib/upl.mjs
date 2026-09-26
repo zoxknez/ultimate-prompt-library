@@ -6,7 +6,7 @@
 // Everything in indexes/ and inside generated Markdown blocks is derived from those two.
 
 import { createHash } from 'node:crypto';
-import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseDocument } from 'yaml';
@@ -504,7 +504,10 @@ export class Outputs {
       const current = existsSync(abs(relPath)) ? readText(relPath) : null;
       if (current === content) continue;
       stale.push(relPath);
-      if (!this.check) writeFileSync(abs(relPath), content, 'utf8');
+      if (!this.check) {
+        mkdirSync(path.dirname(abs(relPath)), { recursive: true });
+        writeFileSync(abs(relPath), content, 'utf8');
+      }
     }
     if (this.report.errors.length) return this.report.finish();
     if (this.check) {

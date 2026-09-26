@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="468" viewBox="0 0 1200 468" role="img" aria-label="Biblioteka ukratko: 60 Jedinstvenih promptova, 120 Lokalizovanih fajlova, 2 Jezika">
+  <defs>
+    <linearGradient id="sl-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="0.55" stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="sl-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F6F7FE"/>
+    </linearGradient>
+    <radialGradient id="sl-glow1">
+      <stop offset="0" stop-color="#A78BFA" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sl-glow2">
+      <stop offset="0" stop-color="#67E8F9" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#67E8F9" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="sl-dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#C7CEE4"/>
+    </pattern>
+  </defs>
+  <defs>
+    <linearGradient id="sl-bar" x1="0" y1="0" x2="1088" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="0.55" stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#0891B2"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="1199" height="467" rx="28" fill="url(#sl-bg)" stroke="#E2E6F3"/>
+  <clipPath id="sl-clip"><rect width="1200" height="468" rx="28"/></clipPath>
+  <g clip-path="url(#sl-clip)">
+    <rect width="1200" height="6" fill="url(#sl-accent)"/>
+    <circle cx="1140" cy="0" r="340" fill="url(#sl-glow1)" opacity="0.7"/>
+    <circle cx="0" cy="468" r="320" fill="url(#sl-glow2)" opacity="0.6"/>
+  </g>
+  <text x="56" y="70" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="-0.5" fill="#0F172A">Biblioteka ukratko</text>
+  <text x="56" y="100" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#5B6478">Brojevi uživo, generisani iz front matter-a promptova i catalog.json</text>
+  <g transform="translate(56 128)">
+      <rect width="254" height="136" rx="18" fill="#FFFFFF" stroke="#E2E6F3"/>
+      <rect x="24" y="0" width="44" height="4" rx="2" fill="url(#sl-accent)"/>
+      <text x="24" y="66" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="-1" fill="url(#sl-accent)">60</text>
+      <text x="24" y="96" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#0F172A">Jedinstvenih promptova</text>
+      <text x="24" y="118" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" fill="#5B6478">stabilni ID-evi</text>
+    </g>
+  <g transform="translate(334 128)">
+      <rect width="254" height="136" rx="18" fill="#FFFFFF" stroke="#E2E6F3"/>
+      <rect x="24" y="0" width="44" height="4" rx="2" fill="url(#sl-accent)"/>
+      <text x="24" y="66" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="-1" fill="url(#sl-accent)">120</text>
+      <text x="24" y="96" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#0F172A">Lokalizovanih fajlova</text>
+      <text x="24" y="118" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" fill="#5B6478">po jedan za svaki jezik</text>
+    </g>
+  <g transform="translate(612 128)">
+      <rect width="254" height="136" rx="18" fill="#FFFFFF" stroke="#E2E6F3"/>
+      <rect x="24" y="0" width="44" height="4" rx="2" fill="url(#sl-accent)"/>
+      <text x="24" y="66" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="-1" fill="url(#sl-accent)">2</text>
+      <text x="24" y="96" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#0F172A">Jezika</text>
+      <text x="24" y="118" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" fill="#5B6478">English · Srpski</text>
+    </g>
+  <g transform="translate(890 128)">
+      <rect width="254" height="136" rx="18" fill="#FFFFFF" stroke="#E2E6F3"/>
+      <rect x="24" y="0" width="44" height="4" rx="2" fill="url(#sl-accent)"/>
+      <text x="24" y="66" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="-1" fill="url(#sl-accent)">10</text>
+      <text x="24" y="96" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#0F172A">Oblasti</text>
+      <text x="24" y="118" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" fill="#5B6478">1 sa promptovima</text>
+    </g>
+  <g>
+    <text x="56" y="342" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#0F172A">Početna IT kolekcija · IT, programiranje i tehnologija</text>
+    <text x="1144" y="342" text-anchor="end" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#0F172A">60 / 100 <tspan fill="#5B6478" font-weight="600">dostupno · 60%</tspan></text>
+    <rect x="56.0" y="360" width="103.4" height="18" rx="6" fill="#E9ECF7"/><rect x="56.0" y="360" width="103.4" height="18" rx="6" fill="url(#sl-bar)"/><text x="107.7" y="400" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#94A0B8">01</text>
+    <rect x="165.4" y="360" width="103.4" height="18" rx="6" fill="#E9ECF7"/><rect x="165.4" y="360" width="103.4" height="18" rx="6" fill="url(#sl-bar)"/><text x="217.1" y="400" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#94A0B8">02</text>
+    <rect x="274.8" y="360" width="103.4" height="18" rx="6" fill="#E9ECF7"/><rect x="274.8" y="360" width="103.4" height="18" rx="6" fill="url(#sl-bar)"/><text x="326.5" y="400" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#94A0B8">03</text>
+    <rect x="384.2" y="360" width="103.4" height="18" rx="6" fill="#E9ECF7"/><rect x="384.2" y="360" width="103.4" height="18" rx="6" fill="url(#sl-bar)"/><text x="435.9" y="400" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#94A0B8">04</text>
+    <rect x="493.6" y="360" width="103.4" height="18" rx="6" fill="#E9ECF7"/><rect x="493.6" y="360" width="103.4" height="18" rx="6" fill="url(#sl-bar)"/><text x="545.3" y="400" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#94A0B8">05</text>
+    <rect x="603.0" y="360" width="103.4" height="18" rx="6" fill="#E9ECF7"/><rect x="603.0" y="360" width="103.4" height="18" rx="6" fill="url(#sl-bar)"/><text x="654.7" y="400" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#94A0B8">06</text>
+    <rect x="712.4" y="360" width="103.4" height="18" rx="6" fill="#E9ECF7"/><text x="764.1" y="400" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#94A0B8">07</text>
+    <rect x="821.8" y="360" width="103.4" height="18" rx="6" fill="#E9ECF7"/><text x="873.5" y="400" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#94A0B8">08</text>
+    <rect x="931.2" y="360" width="103.4" height="18" rx="6" fill="#E9ECF7"/><text x="982.9" y="400" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#94A0B8">09</text>
+    <rect x="1040.6" y="360" width="103.4" height="18" rx="6" fill="#E9ECF7"/><text x="1092.3" y="400" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#94A0B8">10</text>
+    <text x="56" y="430" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" fill="#5B6478">6 od 10 podkategorija završeno · 40 planirano</text>
+  </g>
+</svg>

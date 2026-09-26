@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Lightweight check of internal relative links in Markdown files.
 //
-// Checks inline links/images `[text](target)` and reference definitions `[ref]: target`
+// Checks inline links/images `[text](target)`, reference definitions `[ref]: target` and
+// HTML href/src/srcset attributes
 // outside fenced code blocks and inline code. External URLs (any scheme), protocol-relative
 // URLs and pure #anchors are skipped. Anchors are stripped and not verified.
 
@@ -51,6 +52,7 @@ for (const file of files) {
   lines.forEach((line, index) => {
     const targets = [];
     for (const m of line.matchAll(/!?\[[^\]]*\]\(\s*<?([^)\s>]+)>?(?:\s+["'][^)]*["'])?\s*\)/g)) targets.push(m[1]);
+    for (const m of line.matchAll(/\b(?:href|src|srcset)="([^"]+)"/g)) targets.push(m[1].trim().split(/\s+/)[0]);
     const def = /^ {0,3}\[[^\]]+\]:\s*<?(\S+?)>?(?:\s+.*)?$/.exec(line);
     if (def) targets.push(def[1]);
     for (const target of targets) {

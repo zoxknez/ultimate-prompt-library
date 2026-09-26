@@ -62,6 +62,8 @@ Every category folder and every subcategory folder contains a `README.md` in the
 }
 ```
 
+Categories and subcategories also carry an `icon` (an emoji) used by the generated README grids and available to a future website.
+
 Catalog prompt entries intentionally have **no status field**. Whether a prompt is available, and its status, comes from the prompt files; a catalog entry without files is "planned". This avoids keeping the same status in two places.
 
 ## Generated outputs
@@ -74,7 +76,8 @@ Catalog prompt entries intentionally have **no status field**. Whether a prompt 
 | `<!-- UPL:BEGIN category-prompts -->` in category READMEs | `npm run index` | Full prompt tables (available and planned) grouped by subcategory. |
 | `<!-- UPL:BEGIN subcategory-prompts -->` in subcategory READMEs | `npm run index` | `\| # \| Prompt \| EN \| SR \| Status \|` table. |
 | `<!-- UPL:BEGIN roadmap-planned -->` in the roadmaps | `npm run index` | Planned prompts with their reserved IDs and future filenames. |
-| `collection-stats`, `category-status`, `subcategory-status` in the root READMEs; `roadmap-progress` in the roadmaps | `npm run stats` | Current counts and progress. |
+| `hero-badges`, `collection-stats`, `category-status`, `subcategory-status` in the root READMEs; `roadmap-progress` in the roadmaps | `npm run stats` | Badges with live counts, the statistics card, the category card grid and the progress tables. |
+| `assets/banner.<lang>.<theme>.svg`, `assets/stats.<lang>.<theme>.svg` | `npm run stats` | README artwork in `light` and `dark` variants per language, shown through `<picture>` so GitHub picks the variant that matches the viewer's theme. The statistics card is drawn from the same numbers as `stats.json`. |
 
 Indexes deliberately contain metadata only, not prompt bodies. They are small enough for client-side search and filtering, and a website can fetch a prompt's Markdown by its path when needed. Output is deterministic (no timestamps), so CI can detect stale files with a plain `git diff`.
 
@@ -88,7 +91,7 @@ All scripts are plain Node.js (18+) ES modules. The only dependency is [`yaml`](
 |---|---|---|
 | `npm run validate:prompts` | `scripts/validate-prompts.mjs` | Catalog structure; folder layout; filenames; required and optional front matter; ID format; ID ↔ number ↔ filename ↔ slug consistency; language ↔ folder; category and subcategory names and IDs; duplicate IDs and slugs; unknown statuses; catalog numbering without gaps; UTF-8, LF, single final newline; unclosed code fences (warning). |
 | `npm run validate:translations` | `scripts/validate-translations.mjs` | For every ID: all languages present for `stable` prompts (`MISSING LANGUAGE PAIR`); identical id, number, slug, category and subcategory; corresponding paths; version and status differences (warning); byte-identical bodies (warning). |
-| `npm run validate:links` | `scripts/validate-links.mjs` | Internal relative links in all Markdown files (outside code blocks) point to existing files or folders. Anchors (`#section`) are not verified. |
+| `npm run validate:links` | `scripts/validate-links.mjs` | Internal relative links in all Markdown files (outside code blocks), including HTML `href`, `src` and `srcset` attributes, point to existing files or folders. Anchors (`#section`) are not verified. |
 | `npm run index` | `scripts/generate-index.mjs` | Writes JSON indexes and navigation tables. `--check` only verifies they are current. |
 | `npm run stats` | `scripts/generate-stats.mjs` | Writes `stats.json` and status blocks. `--check` only verifies they are current. |
 | `npm run generate` | both generators | Regenerates everything. |

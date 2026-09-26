@@ -13,16 +13,16 @@ Test suite-ovi, pokrivenost, nestabilni testovi, regresioni i end-to-end planovi
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 071 | Ultimate Test Suite Audit | - | - | Planirano |
-| 072 | Missing Test Coverage Hunter | - | - | Planirano |
-| 073 | Flaky Test Hunter | - | - | Planirano |
-| 074 | Regression Test Generator | - | - | Planirano |
-| 075 | End-to-End Test Plan Generator | - | - | Planirano |
-| 076 | Edge Case Generator | - | - | Planirano |
-| 077 | Adversarial User Testing | - | - | Planirano |
-| 078 | Reliability & Failure Mode Audit | - | - | Planirano |
-| 079 | Race Condition & Concurrency Hunter | - | - | Planirano |
-| 080 | Production Incident Simulation | - | - | Planirano |
+| 071 | Ultimate Test Suite Audit | - | - | ⏳ Planirano |
+| 072 | Missing Test Coverage Hunter | - | - | ⏳ Planirano |
+| 073 | Flaky Test Hunter | - | - | ⏳ Planirano |
+| 074 | Regression Test Generator | - | - | ⏳ Planirano |
+| 075 | End-to-End Test Plan Generator | - | - | ⏳ Planirano |
+| 076 | Edge Case Generator | - | - | ⏳ Planirano |
+| 077 | Adversarial User Testing | - | - | ⏳ Planirano |
+| 078 | Reliability & Failure Mode Audit | - | - | ⏳ Planirano |
+| 079 | Race Condition & Concurrency Hunter | - | - | ⏳ Planirano |
+| 080 | Production Incident Simulation | - | - | ⏳ Planirano |
 <!-- UPL:END subcategory-prompts -->
 
 Planirani promptovi imaju rezervisan ID i ime fajla, ali još nisu napisani. Ako želiš da napišeš neki od njih, otvori issue ili pull request koji navodi njegov ID. Pogledaj [CONTRIBUTING.sr.md](../../../../CONTRIBUTING.sr.md).

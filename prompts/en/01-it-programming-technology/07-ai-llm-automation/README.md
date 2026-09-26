@@ -13,16 +13,16 @@ AI applications, RAG, grounding, prompt injection, agents, system prompts, workf
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 061 | Ultimate AI Application Audit | - | - | Planned |
-| 062 | RAG System Forensic Audit | - | - | Planned |
-| 063 | Hallucination & Grounding Audit | - | - | Planned |
-| 064 | Prompt Injection Security Audit | - | - | Planned |
-| 065 | AI Agent Architecture Audit | - | - | Planned |
-| 066 | AI Agent Reliability Audit | - | - | Planned |
-| 067 | System Prompt Optimization | - | - | Planned |
-| 068 | n8n / Workflow Automation Audit | - | - | Planned |
-| 069 | LLM Cost & Latency Optimization | - | - | Planned |
-| 070 | AI Model Selection & Evaluation | - | - | Planned |
+| 061 | Ultimate AI Application Audit | - | - | ⏳ Planned |
+| 062 | RAG System Forensic Audit | - | - | ⏳ Planned |
+| 063 | Hallucination & Grounding Audit | - | - | ⏳ Planned |
+| 064 | Prompt Injection Security Audit | - | - | ⏳ Planned |
+| 065 | AI Agent Architecture Audit | - | - | ⏳ Planned |
+| 066 | AI Agent Reliability Audit | - | - | ⏳ Planned |
+| 067 | System Prompt Optimization | - | - | ⏳ Planned |
+| 068 | n8n / Workflow Automation Audit | - | - | ⏳ Planned |
+| 069 | LLM Cost & Latency Optimization | - | - | ⏳ Planned |
+| 070 | AI Model Selection & Evaluation | - | - | ⏳ Planned |
 <!-- UPL:END subcategory-prompts -->
 
 Planned prompts have a reserved ID and filename but are not written yet. To write one, open an issue or pull request that references its ID. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md).
