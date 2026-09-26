@@ -106,20 +106,20 @@ Numeracija važi unutar oblasti i nastavlja se posle 100 (`101`, `102`, …) kak
 
 ### 06 · [Operacije, lanac snabdevanja i nabavka](06-operations-supply-chain-procurement/README.md)
 
-0 / 10 dostupno
+10 / 10 dostupno
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 051 | Ultimate Operations Audit | - | - | Planirano |
-| 052 | Process Efficiency Audit | - | - | Planirano |
-| 053 | Operational Bottleneck Hunter | - | - | Planirano |
-| 054 | Supply Chain Resilience Audit | - | - | Planirano |
-| 055 | Inventory Optimization Audit | - | - | Planirano |
-| 056 | Procurement & Supplier Audit | - | - | Planirano |
-| 057 | Vendor Risk Analysis | - | - | Planirano |
-| 058 | Capacity Planning Audit | - | - | Planirano |
-| 059 | Operational Cost Reduction Analysis | - | - | Planirano |
-| 060 | Business Continuity Operations Audit | - | - | Planirano |
+| 051 | [Ultimate Operations Audit](06-operations-supply-chain-procurement/051-ultimate-operations-audit.md) | [EN](../../en/02-economics-finance-business/06-operations-supply-chain-procurement/051-ultimate-operations-audit.md) | [SR](06-operations-supply-chain-procurement/051-ultimate-operations-audit.md) | Dostupno |
+| 052 | [Process Efficiency Audit](06-operations-supply-chain-procurement/052-process-efficiency-audit.md) | [EN](../../en/02-economics-finance-business/06-operations-supply-chain-procurement/052-process-efficiency-audit.md) | [SR](06-operations-supply-chain-procurement/052-process-efficiency-audit.md) | Dostupno |
+| 053 | [Operational Bottleneck Hunter](06-operations-supply-chain-procurement/053-operational-bottleneck-hunter.md) | [EN](../../en/02-economics-finance-business/06-operations-supply-chain-procurement/053-operational-bottleneck-hunter.md) | [SR](06-operations-supply-chain-procurement/053-operational-bottleneck-hunter.md) | Dostupno |
+| 054 | [Supply Chain Resilience Audit](06-operations-supply-chain-procurement/054-supply-chain-resilience-audit.md) | [EN](../../en/02-economics-finance-business/06-operations-supply-chain-procurement/054-supply-chain-resilience-audit.md) | [SR](06-operations-supply-chain-procurement/054-supply-chain-resilience-audit.md) | Dostupno |
+| 055 | [Inventory Optimization Audit](06-operations-supply-chain-procurement/055-inventory-optimization-audit.md) | [EN](../../en/02-economics-finance-business/06-operations-supply-chain-procurement/055-inventory-optimization-audit.md) | [SR](06-operations-supply-chain-procurement/055-inventory-optimization-audit.md) | Dostupno |
+| 056 | [Procurement & Supplier Audit](06-operations-supply-chain-procurement/056-procurement-and-supplier-audit.md) | [EN](../../en/02-economics-finance-business/06-operations-supply-chain-procurement/056-procurement-and-supplier-audit.md) | [SR](06-operations-supply-chain-procurement/056-procurement-and-supplier-audit.md) | Dostupno |
+| 057 | [Vendor Risk Analysis](06-operations-supply-chain-procurement/057-vendor-risk-analysis.md) | [EN](../../en/02-economics-finance-business/06-operations-supply-chain-procurement/057-vendor-risk-analysis.md) | [SR](06-operations-supply-chain-procurement/057-vendor-risk-analysis.md) | Dostupno |
+| 058 | [Capacity Planning Audit](06-operations-supply-chain-procurement/058-capacity-planning-audit.md) | [EN](../../en/02-economics-finance-business/06-operations-supply-chain-procurement/058-capacity-planning-audit.md) | [SR](06-operations-supply-chain-procurement/058-capacity-planning-audit.md) | Dostupno |
+| 059 | [Operational Cost Reduction Analysis](06-operations-supply-chain-procurement/059-operational-cost-reduction-analysis.md) | [EN](../../en/02-economics-finance-business/06-operations-supply-chain-procurement/059-operational-cost-reduction-analysis.md) | [SR](06-operations-supply-chain-procurement/059-operational-cost-reduction-analysis.md) | Dostupno |
+| 060 | [Business Continuity Operations Audit](06-operations-supply-chain-procurement/060-business-continuity-operations-audit.md) | [EN](../../en/02-economics-finance-business/06-operations-supply-chain-procurement/060-business-continuity-operations-audit.md) | [SR](06-operations-supply-chain-procurement/060-business-continuity-operations-audit.md) | Dostupno |
 
 ### 07 · [Prodaja, prihodi i cene](07-sales-revenue-pricing/README.md)
 

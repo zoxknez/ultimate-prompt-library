@@ -4,7 +4,7 @@
     "en",
     "sr"
   ],
-  "count": 150,
+  "count": 160,
   "prompts": [
     {
       "id": "UPL-IT-001",
@@ -4054,6 +4054,276 @@
       "files": {
         "en": "prompts/en/02-economics-finance-business/05-entrepreneurship-business-models/050-startup-failure-mode-audit.md",
         "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/05-entrepreneurship-business-models/050-startup-failure-mode-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-051",
+      "number": 51,
+      "slug": "ultimate-operations-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "operations-supply-chain-procurement",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate Operations Audit",
+        "sr": "Ultimate Operations Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/06-operations-supply-chain-procurement/051-ultimate-operations-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/06-operations-supply-chain-procurement/051-ultimate-operations-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-052",
+      "number": 52,
+      "slug": "process-efficiency-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "operations-supply-chain-procurement",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Process Efficiency Audit",
+        "sr": "Process Efficiency Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/06-operations-supply-chain-procurement/052-process-efficiency-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/06-operations-supply-chain-procurement/052-process-efficiency-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-053",
+      "number": 53,
+      "slug": "operational-bottleneck-hunter",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "operations-supply-chain-procurement",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Operational Bottleneck Hunter",
+        "sr": "Operational Bottleneck Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/06-operations-supply-chain-procurement/053-operational-bottleneck-hunter.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/06-operations-supply-chain-procurement/053-operational-bottleneck-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-054",
+      "number": 54,
+      "slug": "supply-chain-resilience-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "operations-supply-chain-procurement",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Supply Chain Resilience Audit",
+        "sr": "Supply Chain Resilience Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/06-operations-supply-chain-procurement/054-supply-chain-resilience-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/06-operations-supply-chain-procurement/054-supply-chain-resilience-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-055",
+      "number": 55,
+      "slug": "inventory-optimization-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "operations-supply-chain-procurement",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Inventory Optimization Audit",
+        "sr": "Inventory Optimization Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/06-operations-supply-chain-procurement/055-inventory-optimization-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/06-operations-supply-chain-procurement/055-inventory-optimization-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-056",
+      "number": 56,
+      "slug": "procurement-and-supplier-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "operations-supply-chain-procurement",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Procurement & Supplier Audit",
+        "sr": "Procurement & Supplier Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/06-operations-supply-chain-procurement/056-procurement-and-supplier-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/06-operations-supply-chain-procurement/056-procurement-and-supplier-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-057",
+      "number": 57,
+      "slug": "vendor-risk-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "operations-supply-chain-procurement",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Vendor Risk Analysis",
+        "sr": "Vendor Risk Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/06-operations-supply-chain-procurement/057-vendor-risk-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/06-operations-supply-chain-procurement/057-vendor-risk-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-058",
+      "number": 58,
+      "slug": "capacity-planning-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "operations-supply-chain-procurement",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Capacity Planning Audit",
+        "sr": "Capacity Planning Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/06-operations-supply-chain-procurement/058-capacity-planning-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/06-operations-supply-chain-procurement/058-capacity-planning-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-059",
+      "number": 59,
+      "slug": "operational-cost-reduction-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "operations-supply-chain-procurement",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Operational Cost Reduction Analysis",
+        "sr": "Operational Cost Reduction Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/06-operations-supply-chain-procurement/059-operational-cost-reduction-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/06-operations-supply-chain-procurement/059-operational-cost-reduction-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-060",
+      "number": 60,
+      "slug": "business-continuity-operations-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "operations-supply-chain-procurement",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Business Continuity Operations Audit",
+        "sr": "Business Continuity Operations Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/06-operations-supply-chain-procurement/060-business-continuity-operations-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/06-operations-supply-chain-procurement/060-business-continuity-operations-audit.md"
       }
     }
   ]
