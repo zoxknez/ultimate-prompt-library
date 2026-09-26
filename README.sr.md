@@ -29,7 +29,8 @@ Duboke, višekratno upotrebljive AI radne specifikacije za ozbiljnu analizu, imp
 [Oblasti](#oblasti) &nbsp;&nbsp;/&nbsp;&nbsp;
 [Kako se koristi](#kako-se-koristi) &nbsp;&nbsp;/&nbsp;&nbsp;
 [Doprinos](#doprinos) &nbsp;&nbsp;/&nbsp;&nbsp;
-[Roadmap](#roadmap)
+[Roadmap](#roadmap) &nbsp;&nbsp;/&nbsp;&nbsp;
+[Web sajt](docs/website.md)
 
 </div>
 
@@ -301,7 +302,9 @@ ultimate-prompt-library/
 ├── indexes/                                   generisani JSON indeksi i statistika
 ├── assets/                                    generisana grafika za README i fontovi
 ├── docs/                                      format, ID-evi, prevod, arhitektura, roadmap
-├── scripts/                                   alati za validaciju i generisanje (Node.js)
+├── scripts/                                   validacija, indeksi i generisanje sajta
+├── site-src/                                  CSS sajta i klijentske interakcije
+├── vercel.json                                konfiguracija statičkog deploya
 └── .github/                                   šabloni za issue/PR i workflow za validaciju
 ```
 
