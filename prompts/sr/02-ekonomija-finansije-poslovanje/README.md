@@ -89,20 +89,20 @@ Numeracija važi unutar oblasti i nastavlja se posle 100 (`101`, `102`, …) kak
 
 ### 05 · [Preduzetništvo i poslovni modeli](05-entrepreneurship-business-models/README.md)
 
-0 / 10 dostupno
+10 / 10 dostupno
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 041 | Ultimate Business Model Audit | - | - | Planirano |
-| 042 | Startup Idea Feasibility Analysis | - | - | Planirano |
-| 043 | Business Model Canvas Deep Analysis | - | - | Planirano |
-| 044 | Unit Economics Audit | - | - | Planirano |
-| 045 | Product-Market Fit Evidence Audit | - | - | Planirano |
-| 046 | Startup Financial Runway Analysis | - | - | Planirano |
-| 047 | Founder Assumption Stress Test | - | - | Planirano |
-| 048 | Business Scalability Audit | - | - | Planirano |
-| 049 | Monetization Model Analysis | - | - | Planirano |
-| 050 | Startup Failure Mode Audit | - | - | Planirano |
+| 041 | [Ultimate Business Model Audit](05-entrepreneurship-business-models/041-ultimate-business-model-audit.md) | [EN](../../en/02-economics-finance-business/05-entrepreneurship-business-models/041-ultimate-business-model-audit.md) | [SR](05-entrepreneurship-business-models/041-ultimate-business-model-audit.md) | Dostupno |
+| 042 | [Startup Idea Feasibility Analysis](05-entrepreneurship-business-models/042-startup-idea-feasibility-analysis.md) | [EN](../../en/02-economics-finance-business/05-entrepreneurship-business-models/042-startup-idea-feasibility-analysis.md) | [SR](05-entrepreneurship-business-models/042-startup-idea-feasibility-analysis.md) | Dostupno |
+| 043 | [Business Model Canvas Deep Analysis](05-entrepreneurship-business-models/043-business-model-canvas-deep-analysis.md) | [EN](../../en/02-economics-finance-business/05-entrepreneurship-business-models/043-business-model-canvas-deep-analysis.md) | [SR](05-entrepreneurship-business-models/043-business-model-canvas-deep-analysis.md) | Dostupno |
+| 044 | [Unit Economics Audit](05-entrepreneurship-business-models/044-unit-economics-audit.md) | [EN](../../en/02-economics-finance-business/05-entrepreneurship-business-models/044-unit-economics-audit.md) | [SR](05-entrepreneurship-business-models/044-unit-economics-audit.md) | Dostupno |
+| 045 | [Product-Market Fit Evidence Audit](05-entrepreneurship-business-models/045-product-market-fit-evidence-audit.md) | [EN](../../en/02-economics-finance-business/05-entrepreneurship-business-models/045-product-market-fit-evidence-audit.md) | [SR](05-entrepreneurship-business-models/045-product-market-fit-evidence-audit.md) | Dostupno |
+| 046 | [Startup Financial Runway Analysis](05-entrepreneurship-business-models/046-startup-financial-runway-analysis.md) | [EN](../../en/02-economics-finance-business/05-entrepreneurship-business-models/046-startup-financial-runway-analysis.md) | [SR](05-entrepreneurship-business-models/046-startup-financial-runway-analysis.md) | Dostupno |
+| 047 | [Founder Assumption Stress Test](05-entrepreneurship-business-models/047-founder-assumption-stress-test.md) | [EN](../../en/02-economics-finance-business/05-entrepreneurship-business-models/047-founder-assumption-stress-test.md) | [SR](05-entrepreneurship-business-models/047-founder-assumption-stress-test.md) | Dostupno |
+| 048 | [Business Scalability Audit](05-entrepreneurship-business-models/048-business-scalability-audit.md) | [EN](../../en/02-economics-finance-business/05-entrepreneurship-business-models/048-business-scalability-audit.md) | [SR](05-entrepreneurship-business-models/048-business-scalability-audit.md) | Dostupno |
+| 049 | [Monetization Model Analysis](05-entrepreneurship-business-models/049-monetization-model-analysis.md) | [EN](../../en/02-economics-finance-business/05-entrepreneurship-business-models/049-monetization-model-analysis.md) | [SR](05-entrepreneurship-business-models/049-monetization-model-analysis.md) | Dostupno |
+| 050 | [Startup Failure Mode Audit](05-entrepreneurship-business-models/050-startup-failure-mode-audit.md) | [EN](../../en/02-economics-finance-business/05-entrepreneurship-business-models/050-startup-failure-mode-audit.md) | [SR](05-entrepreneurship-business-models/050-startup-failure-mode-audit.md) | Dostupno |
 
 ### 06 · [Operacije, lanac snabdevanja i nabavka](06-operations-supply-chain-procurement/README.md)
 

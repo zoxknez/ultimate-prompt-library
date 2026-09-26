@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
-  "uniquePrompts": 140,
-  "localizedPromptFiles": 280,
+  "uniquePrompts": 150,
+  "localizedPromptFiles": 300,
   "languages": 2,
   "filesByLanguage": {
-    "en": 140,
-    "sr": 140
+    "en": 150,
+    "sr": 150
   },
   "byStatus": {
     "draft": 0,
     "review": 0,
-    "stable": 140,
+    "stable": 150,
     "deprecated": 0
   },
   "categories": 10,
   "categoriesWithContent": 2,
   "planned": 200,
-  "remaining": 60,
+  "remaining": 50,
   "collections": {
     "IT": {
       "id": "UPL-IT",
@@ -72,11 +72,11 @@
     "BIZ": {
       "id": "UPL-BIZ",
       "slug": "economics-finance-business",
-      "available": 40,
+      "available": 50,
       "planned": 100,
-      "remaining": 60,
+      "remaining": 50,
       "subcategories": 10,
-      "completedSubcategories": 4,
+      "completedSubcategories": 5,
       "bySubcategory": {
         "financial-analysis-corporate-finance": {
           "available": 10,
@@ -95,7 +95,7 @@
           "planned": 10
         },
         "entrepreneurship-business-models": {
-          "available": 0,
+          "available": 10,
           "planned": 10
         },
         "operations-supply-chain-procurement": {
