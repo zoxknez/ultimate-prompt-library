@@ -248,26 +248,34 @@ export function statsPicture({ lang, stats }) {
   const label = lang === 'sr'
     ? {
         unique: 'Jedinstvenih promptova',
+        uniqueNote: 'Trajni ID-evi nezavisni od jezika',
         localized: 'Lokalizovanih fajlova',
+        localizedNote: 'Po jedan engleski i srpski fajl za svaki prompt',
         languages: 'Jezika',
+        languagesNote: 'Srpski i engleski',
         active: 'Aktivnih oblasti',
+        activeNote: 'Objavljene kolekcije od ukupno deset oblasti',
       }
     : {
         unique: 'Unique prompts',
+        uniqueNote: 'Stable, language-independent IDs',
         localized: 'Localized files',
+        localizedNote: 'One English and one Serbian file per prompt',
         languages: 'Languages',
+        languagesNote: 'English and Serbian',
         active: 'Active categories',
+        activeNote: 'Published collections out of ten categories',
       };
 
   const cards = [
-    [stats.uniquePrompts, label.unique],
-    [stats.localizedPromptFiles, label.localized],
-    [stats.languages, label.languages],
-    [`${stats.categoriesWithContent} / ${stats.categories}`, label.active],
+    [stats.uniquePrompts, label.unique, label.uniqueNote],
+    [stats.localizedPromptFiles, label.localized, label.localizedNote],
+    [stats.languages, label.languages, label.languagesNote],
+    [`${stats.categoriesWithContent} / ${stats.categories}`, label.active, label.activeNote],
   ];
 
   const rows = [cards.slice(0, 2), cards.slice(2)].map((row) =>
-    `<tr>\n${row.map(([value, title]) => `<td valign="top" width="50%"><h2>${value}</h2><sub>${title}</sub></td>`).join('\n')}\n</tr>`,
+    `<tr>\n${row.map(([value, title, note]) => `<td valign="top" width="50%"><h2>${value}</h2><strong>${title}</strong><br><sub>${note}</sub></td>`).join('\n')}\n</tr>`,
   );
 
   return `<table width="100%">\n${rows.join('\n')}\n</table>`;
