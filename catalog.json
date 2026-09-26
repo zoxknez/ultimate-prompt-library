@@ -3140,6 +3140,106 @@
             "en": "Enforcement Risk & Remediation Plan",
             "sr": "Plan rizika izvršenja i remedijacije"
           }
+        },
+        {
+          "id": "UPL-LAW-071",
+          "number": 71,
+          "slug": "administrative-procedure-navigator",
+          "subcategory": "public-administration-procedure",
+          "title": {
+            "en": "Administrative Procedure Navigator",
+            "sr": "Navigator upravnog postupka"
+          }
+        },
+        {
+          "id": "UPL-LAW-072",
+          "number": 72,
+          "slug": "government-application-filing-audit",
+          "subcategory": "public-administration-procedure",
+          "title": {
+            "en": "Government Application Filing Audit",
+            "sr": "Audit podnošenja zahteva organu uprave"
+          }
+        },
+        {
+          "id": "UPL-LAW-073",
+          "number": 73,
+          "slug": "public-decision-legality-review",
+          "subcategory": "public-administration-procedure",
+          "title": {
+            "en": "Public Decision Legality Review",
+            "sr": "Pregled zakonitosti odluke organa"
+          }
+        },
+        {
+          "id": "UPL-LAW-074",
+          "number": 74,
+          "slug": "administrative-appeal-builder",
+          "subcategory": "public-administration-procedure",
+          "title": {
+            "en": "Administrative Appeal Builder",
+            "sr": "Izrada upravne žalbe"
+          }
+        },
+        {
+          "id": "UPL-LAW-075",
+          "number": 75,
+          "slug": "public-consultation-submission-analyzer",
+          "subcategory": "public-administration-procedure",
+          "title": {
+            "en": "Public Consultation Submission Analyzer",
+            "sr": "Analiza podneska za javne konsultacije"
+          }
+        },
+        {
+          "id": "UPL-LAW-076",
+          "number": 76,
+          "slug": "regulatory-impact-assessment",
+          "subcategory": "public-administration-procedure",
+          "title": {
+            "en": "Regulatory Impact Assessment",
+            "sr": "Procena uticaja propisa"
+          }
+        },
+        {
+          "id": "UPL-LAW-077",
+          "number": 77,
+          "slug": "public-procurement-compliance-audit",
+          "subcategory": "public-administration-procedure",
+          "title": {
+            "en": "Public Procurement Compliance Audit",
+            "sr": "Audit usklađenosti javnih nabavki"
+          }
+        },
+        {
+          "id": "UPL-LAW-078",
+          "number": 78,
+          "slug": "freedom-of-information-request-builder",
+          "subcategory": "public-administration-procedure",
+          "title": {
+            "en": "Freedom of Information Request Builder",
+            "sr": "Izrada zahteva za pristup informacijama"
+          }
+        },
+        {
+          "id": "UPL-LAW-079",
+          "number": 79,
+          "slug": "permit-and-license-timeline-mapper",
+          "subcategory": "public-administration-procedure",
+          "title": {
+            "en": "Permit & License Timeline Mapper",
+            "sr": "Mapa rokova za dozvole i licence"
+          }
+        },
+        {
+          "id": "UPL-LAW-080",
+          "number": 80,
+          "slug": "public-authority-reason-giving-audit",
+          "subcategory": "public-administration-procedure",
+          "title": {
+            "en": "Public Authority Reason-Giving Audit",
+            "sr": "Audit obrazloženja odluke javnog organa"
+          }
         }
       ]
     },
