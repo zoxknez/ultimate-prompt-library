@@ -778,3 +778,73 @@ html.category-drawer-open,body.category-drawer-open{overflow:hidden}
   .library-index-foot>div:first-child>strong{font-size:25px}
   .library-index-foot>div:first-child>span{font-size:9px}
 }
+
+/* Mobile layout refinements */
+@media(max-width:720px){
+  .library-intro-grid{grid-template-columns:minmax(0,1fr);align-items:start;align-content:start;gap:18px;min-height:0;padding:24px 20px 18px}
+  .library-index-panel{width:100%}
+  .library-intro h1{max-width:12ch;margin:11px 0 9px;font-size:clamp(38px,9vw,50px);line-height:.98;letter-spacing:-.06em}
+  .library-intro p{max-width:40ch;font-size:14px;line-height:1.55}
+  .library-index-panel{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto minmax(104px,auto);align-items:stretch;gap:8px 0;min-height:0;padding:13px 15px}
+  .library-index-top{grid-column:1/-1}
+  .library-index-main{grid-column:1;grid-row:2;display:grid;align-content:center;gap:9px;padding:0 14px 0 0;border-right:1px solid rgba(218,232,242,.18)}
+  .library-index-main strong{font-size:clamp(48px,13vw,58px);line-height:.84}
+  .library-index-main span{font-size:11px;line-height:1.3}
+  .library-index-foot{grid-column:2;grid-row:2;align-self:stretch;display:flex;align-items:stretch;justify-content:flex-start;padding:0 0 0 14px;border:0}
+  .library-index-foot>div:first-child{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:9px;width:100%;height:auto}
+  .library-index-foot>div:first-child>strong{order:-1;font-size:clamp(30px,8vw,38px);line-height:.84;letter-spacing:-.045em}
+  .library-index-foot>div:first-child>span{font-size:11px;line-height:1.3}
+  .catalog-controls{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;padding:13px}
+  .catalog-search-wrap,.mobile-category-trigger,.reset-filter-button,.active-filters{grid-column:1/-1}
+  .mobile-category-trigger,.filter-select select,.reset-filter-button{min-height:44px}
+  .prompt-grid{grid-template-columns:minmax(0,1fr);gap:12px}
+  .prompt-card{min-height:0;padding:19px;border-radius:16px}
+  .prompt-card h3{margin-top:14px;font-size:19px;line-height:1.3}
+  .prompt-excerpt{font-size:13px;line-height:1.6;-webkit-line-clamp:4}
+  .prompt-category-meta{font-size:10px}
+  .prompt-card-footer{gap:12px;padding-top:15px}
+  .open-link{min-height:48px;padding:0 14px;font-size:12px}
+  .prompt-hero{padding:20px 0 25px}
+  .prompt-hero .breadcrumbs{gap:6px;font-size:10px;line-height:1.5}
+  .prompt-hero-layout{grid-template-columns:minmax(0,1fr);gap:18px;padding-top:20px}
+  .prompt-title-copy h1{max-width:15ch;margin:12px 0 9px;font-size:clamp(37px,9vw,52px);line-height:1;letter-spacing:-.06em;overflow-wrap:anywhere}
+  .prompt-title-copy>p{font-size:14px}
+  .prompt-hero-meta{gap:6px;margin-top:14px}
+  .prompt-hero-side{grid-template-columns:minmax(0,1fr) minmax(144px,.82fr);align-items:stretch;gap:8px}
+  .prompt-hero-stamp{min-height:120px;padding:11px 12px}
+  .prompt-hero-stamp>strong{font-size:clamp(48px,13vw,60px);line-height:.86}
+  .prompt-stamp-top,.prompt-stamp-bottom{font-size:7px;letter-spacing:.08em}
+  .prompt-stamp-bottom{gap:5px}
+  .prompt-actions{grid-template-columns:minmax(0,1fr);align-content:center;gap:7px}
+  .prompt-actions .button,.prompt-actions .secondary-button{min-width:0;min-height:44px;padding:0 9px;font-size:11px}
+  .prompt-page .reading-tools{display:flex;justify-content:space-between;gap:4px;width:100%;padding:4px}
+  .prompt-page .reading-font-controls{gap:1px}
+  .prompt-page .reading-control,.prompt-page .reading-option{min-width:32px;height:36px;padding:0 6px;font-size:10px}
+}
+@media(max-width:520px){
+  .library-intro-grid{padding:20px 16px 16px}
+  .library-intro h1{font-size:clamp(36px,10vw,45px)}
+  .library-intro p{max-width:37ch;font-size:13px}
+  .library-index-panel{grid-template-rows:auto minmax(100px,auto);padding:12px}
+  .library-index-main{gap:8px;padding-right:11px}
+  .library-index-main strong{font-size:clamp(46px,13vw,54px)}
+  .library-index-main span{font-size:10px}
+  .library-index-foot{padding-left:11px}
+  .library-index-foot>div:first-child{gap:8px}
+  .library-index-foot>div:first-child>strong{font-size:clamp(29px,8vw,35px)}
+  .library-index-foot>div:first-child>span{font-size:10px}
+  .catalog-controls{padding:11px;border-radius:15px}
+  .filter-select>span{font-size:10px}
+  .filter-select select{font-size:11px}
+  .prompt-card{padding:17px}
+  .prompt-card-footer{grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px}
+  .open-link{min-width:124px;min-height:46px;padding:0 11px}
+  .prompt-title-copy h1{max-width:14ch;font-size:clamp(34px,10vw,45px)}
+  .prompt-hero-side{grid-template-columns:minmax(0,1fr) minmax(136px,.82fr);gap:7px}
+  .prompt-hero-stamp{min-height:112px;padding:10px}
+  .prompt-hero-stamp>strong{font-size:clamp(44px,13vw,54px)}
+  .prompt-stamp-top,.prompt-stamp-bottom{font-size:6.5px}
+  .prompt-actions{gap:6px}
+  .prompt-actions .button,.prompt-actions .secondary-button{min-height:42px;padding:0 7px;font-size:10px}
+  .prompt-page .reading-control,.prompt-page .reading-option{min-width:30px;padding:0 5px;font-size:9px}
+}
