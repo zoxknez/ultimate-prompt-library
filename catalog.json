@@ -2940,6 +2940,106 @@
             "en": "Privacy by Design & DPIA",
             "sr": "Privacy by Design i DPIA"
           }
+        },
+        {
+          "id": "UPL-LAW-051",
+          "number": 51,
+          "slug": "employment-agreement-audit",
+          "subcategory": "employment-labor-law",
+          "title": {
+            "en": "Employment Agreement Audit",
+            "sr": "Audit ugovora o radu"
+          }
+        },
+        {
+          "id": "UPL-LAW-052",
+          "number": 52,
+          "slug": "worker-classification-analysis",
+          "subcategory": "employment-labor-law",
+          "title": {
+            "en": "Worker Classification Analysis",
+            "sr": "Analiza klasifikacije radnog angažovanja"
+          }
+        },
+        {
+          "id": "UPL-LAW-053",
+          "number": 53,
+          "slug": "hiring-compliance-checklist",
+          "subcategory": "employment-labor-law",
+          "title": {
+            "en": "Hiring Compliance Checklist",
+            "sr": "Kontrolna lista usklađenosti zapošljavanja"
+          }
+        },
+        {
+          "id": "UPL-LAW-054",
+          "number": 54,
+          "slug": "workplace-policy-audit",
+          "subcategory": "employment-labor-law",
+          "title": {
+            "en": "Workplace Policy Audit",
+            "sr": "Audit politika na radnom mestu"
+          }
+        },
+        {
+          "id": "UPL-LAW-055",
+          "number": 55,
+          "slug": "compensation-and-benefits-legal-review",
+          "subcategory": "employment-labor-law",
+          "title": {
+            "en": "Compensation & Benefits Legal Review",
+            "sr": "Pravni pregled zarada i beneficija"
+          }
+        },
+        {
+          "id": "UPL-LAW-056",
+          "number": 56,
+          "slug": "performance-and-discipline-process-audit",
+          "subcategory": "employment-labor-law",
+          "title": {
+            "en": "Performance & Discipline Process Audit",
+            "sr": "Audit postupka ocene učinka i discipline"
+          }
+        },
+        {
+          "id": "UPL-LAW-057",
+          "number": 57,
+          "slug": "termination-and-redundancy-risk-analysis",
+          "subcategory": "employment-labor-law",
+          "title": {
+            "en": "Termination & Redundancy Risk Analysis",
+            "sr": "Analiza rizika prestanka rada i viška zaposlenih"
+          }
+        },
+        {
+          "id": "UPL-LAW-058",
+          "number": 58,
+          "slug": "harassment-and-discrimination-complaint-framework",
+          "subcategory": "employment-labor-law",
+          "title": {
+            "en": "Harassment & Discrimination Complaint Framework",
+            "sr": "Okvir za prijave uznemiravanja i diskriminacije"
+          }
+        },
+        {
+          "id": "UPL-LAW-059",
+          "number": 59,
+          "slug": "remote-and-cross-border-employment-audit",
+          "subcategory": "employment-labor-law",
+          "title": {
+            "en": "Remote & Cross-Border Employment Audit",
+            "sr": "Audit udaljenog i prekograničnog rada"
+          }
+        },
+        {
+          "id": "UPL-LAW-060",
+          "number": 60,
+          "slug": "labor-relations-and-collective-agreement-analysis",
+          "subcategory": "employment-labor-law",
+          "title": {
+            "en": "Labor Relations & Collective Agreement Analysis",
+            "sr": "Analiza kolektivnih odnosa i ugovora"
+          }
         }
       ]
     },
