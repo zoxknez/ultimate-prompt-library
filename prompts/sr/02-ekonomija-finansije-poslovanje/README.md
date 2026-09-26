@@ -189,6 +189,8 @@ Numeracija važi unutar oblasti i nastavlja se posle 100 (`101`, `102`, …) kak
 | 099 | [Assumption & Sensitivity Analysis](10-investment-valuation-due-diligence/099-assumption-and-sensitivity-analysis.md) | [EN](../../en/02-economics-finance-business/10-investment-valuation-due-diligence/099-assumption-and-sensitivity-analysis.md) | [SR](10-investment-valuation-due-diligence/099-assumption-and-sensitivity-analysis.md) | Dostupno |
 | 100 | [Full Business Due Diligence Audit](10-investment-valuation-due-diligence/100-full-business-due-diligence-audit.md) | [EN](../../en/02-economics-finance-business/10-investment-valuation-due-diligence/100-full-business-due-diligence-audit.md) | [SR](10-investment-valuation-due-diligence/100-full-business-due-diligence-audit.md) | Dostupno |
 
+<!-- UPL:END category-prompts -->
+
 ## Doprinos ovoj oblasti
 
 - **Pisanje planiranog prompta:** otvori issue ili pull request koji navodi postojeći ID (na primer `UPL-BIZ-011`). Nikada ne dodeljuj drugi ID planiranom promptu.

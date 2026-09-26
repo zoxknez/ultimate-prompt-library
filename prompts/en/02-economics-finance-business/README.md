@@ -189,6 +189,8 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 | 099 | [Assumption & Sensitivity Analysis](10-investment-valuation-due-diligence/099-assumption-and-sensitivity-analysis.md) | [EN](10-investment-valuation-due-diligence/099-assumption-and-sensitivity-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/099-assumption-and-sensitivity-analysis.md) | Available |
 | 100 | [Full Business Due Diligence Audit](10-investment-valuation-due-diligence/100-full-business-due-diligence-audit.md) | [EN](10-investment-valuation-due-diligence/100-full-business-due-diligence-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/100-full-business-due-diligence-audit.md) | Available |
 
+<!-- UPL:END category-prompts -->
+
 ## Contributing to this category
 
 - **Writing a planned prompt:** open an issue or pull request that references the existing ID (for example `UPL-BIZ-011`). Never assign a different ID to a planned prompt.
