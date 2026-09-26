@@ -4,7 +4,7 @@
     "en",
     "sr"
   ],
-  "count": 60,
+  "count": 70,
   "prompts": [
     {
       "id": "UPL-IT-001",
@@ -1624,6 +1624,276 @@
       "files": {
         "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md",
         "sr": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-061",
+      "number": 61,
+      "slug": "ultimate-ai-application-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ai-llm-automation",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate AI Application Audit",
+        "sr": "Ultimate AI Application Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/07-ai-llm-automation/061-ultimate-ai-application-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/061-ultimate-ai-application-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-062",
+      "number": 62,
+      "slug": "rag-system-forensic-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ai-llm-automation",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "RAG System Forensic Audit",
+        "sr": "RAG System Forensic Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/07-ai-llm-automation/062-rag-system-forensic-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/062-rag-system-forensic-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-063",
+      "number": 63,
+      "slug": "hallucination-and-grounding-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ai-llm-automation",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Hallucination & Grounding Audit",
+        "sr": "Hallucination & Grounding Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/07-ai-llm-automation/063-hallucination-and-grounding-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/063-hallucination-and-grounding-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-064",
+      "number": 64,
+      "slug": "prompt-injection-security-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ai-llm-automation",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Prompt Injection Security Audit",
+        "sr": "Prompt Injection Security Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/07-ai-llm-automation/064-prompt-injection-security-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/064-prompt-injection-security-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-065",
+      "number": 65,
+      "slug": "ai-agent-architecture-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ai-llm-automation",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "AI Agent Architecture Audit",
+        "sr": "AI Agent Architecture Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/07-ai-llm-automation/065-ai-agent-architecture-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/065-ai-agent-architecture-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-066",
+      "number": 66,
+      "slug": "ai-agent-reliability-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ai-llm-automation",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "AI Agent Reliability Audit",
+        "sr": "AI Agent Reliability Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/07-ai-llm-automation/066-ai-agent-reliability-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/066-ai-agent-reliability-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-067",
+      "number": 67,
+      "slug": "system-prompt-optimization",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ai-llm-automation",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "System Prompt Optimization",
+        "sr": "System Prompt Optimization"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/07-ai-llm-automation/067-system-prompt-optimization.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/067-system-prompt-optimization.md"
+      }
+    },
+    {
+      "id": "UPL-IT-068",
+      "number": 68,
+      "slug": "n8n-workflow-automation-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ai-llm-automation",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "n8n / Workflow Automation Audit",
+        "sr": "n8n / Workflow Automation Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/07-ai-llm-automation/068-n8n-workflow-automation-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/068-n8n-workflow-automation-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-069",
+      "number": 69,
+      "slug": "llm-cost-and-latency-optimization",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ai-llm-automation",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "LLM Cost & Latency Optimization",
+        "sr": "LLM Cost & Latency Optimization"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/07-ai-llm-automation/069-llm-cost-and-latency-optimization.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/069-llm-cost-and-latency-optimization.md"
+      }
+    },
+    {
+      "id": "UPL-IT-070",
+      "number": 70,
+      "slug": "ai-model-selection-and-evaluation",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ai-llm-automation",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "AI Model Selection & Evaluation",
+        "sr": "AI Model Selection & Evaluation"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/07-ai-llm-automation/070-ai-model-selection-and-evaluation.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/07-ai-llm-automation/070-ai-model-selection-and-evaluation.md"
       }
     }
   ]

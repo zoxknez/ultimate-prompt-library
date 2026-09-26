@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "uniquePrompts": 60,
-  "localizedPromptFiles": 120,
+  "uniquePrompts": 70,
+  "localizedPromptFiles": 140,
   "languages": 2,
   "filesByLanguage": {
-    "en": 60,
-    "sr": 60
+    "en": 70,
+    "sr": 70
   },
   "byStatus": {
     "draft": 0,
     "review": 0,
-    "stable": 60,
+    "stable": 70,
     "deprecated": 0
   },
   "categories": 10,
   "categoriesWithContent": 1,
   "planned": 100,
-  "remaining": 40,
+  "remaining": 30,
   "collections": {
     "IT": {
       "id": "UPL-IT",
       "slug": "it-programming-technology",
-      "available": 60,
+      "available": 70,
       "planned": 100,
-      "remaining": 40,
+      "remaining": 30,
       "subcategories": 10,
-      "completedSubcategories": 6,
+      "completedSubcategories": 7,
       "bySubcategory": {
         "web-development": {
           "available": 10,
@@ -52,7 +52,7 @@
           "planned": 10
         },
         "ai-llm-automation": {
-          "available": 0,
+          "available": 10,
           "planned": 10
         },
         "testing-qa-reliability": {
