@@ -1,0 +1,24 @@
+{
+  "name": "ultimate-prompt-library",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The open-source library of deep, production-grade AI prompts.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "validate": "npm run validate:prompts && npm run validate:translations && npm run validate:links && npm run check",
+    "validate:prompts": "node scripts/validate-prompts.mjs",
+    "validate:translations": "node scripts/validate-translations.mjs",
+    "validate:links": "node scripts/validate-links.mjs",
+    "index": "node scripts/generate-index.mjs",
+    "stats": "node scripts/generate-stats.mjs",
+    "generate": "npm run index && npm run stats",
+    "check": "node scripts/generate-index.mjs --check && node scripts/generate-stats.mjs --check"
+  },
+  "dependencies": {
+    "yaml": "2.9.1"
+  }
+}

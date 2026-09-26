@@ -1,0 +1,1336 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "name": "Ultimate Prompt Library",
+    "shortName": "UPL",
+    "idPrefix": "UPL"
+  },
+  "languages": [
+    {
+      "code": "en",
+      "name": "English",
+      "nativeName": "English",
+      "primary": true
+    },
+    {
+      "code": "sr",
+      "name": "Serbian (Latin)",
+      "nativeName": "Srpski (latinica)",
+      "primary": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "UPL-IT",
+      "order": 1,
+      "slug": "it-programming-technology",
+      "dirs": {
+        "en": "01-it-programming-technology",
+        "sr": "01-it-programiranje-tehnologija"
+      },
+      "names": {
+        "en": "IT, Programming & Technology",
+        "sr": "IT, programiranje i tehnologija"
+      },
+      "descriptions": {
+        "en": "Software engineering, web and mobile development, backend, security, DevOps, data, AI and computing systems.",
+        "sr": "Softversko inženjerstvo, web i mobilni razvoj, backend, bezbednost, DevOps, podaci, AI i računarski sistemi."
+      },
+      "subcategories": [
+        {
+          "id": "web-development",
+          "order": 1,
+          "names": {
+            "en": "Web Development",
+            "sr": "Web razvoj"
+          },
+          "descriptions": {
+            "en": "Frontend, full-stack web applications, performance, accessibility, SEO and browser behavior.",
+            "sr": "Frontend, full-stack web aplikacije, performanse, pristupačnost, SEO i ponašanje u browser-ima."
+          }
+        },
+        {
+          "id": "mobile-development",
+          "order": 2,
+          "names": {
+            "en": "Mobile Development",
+            "sr": "Mobilni razvoj"
+          },
+          "descriptions": {
+            "en": "Android applications, Jetpack Compose, lifecycle, concurrency, persistence, media, TV and release readiness.",
+            "sr": "Android aplikacije, Jetpack Compose, lifecycle, konkurentnost, persistence, media, TV i spremnost za release."
+          }
+        },
+        {
+          "id": "backend-api",
+          "order": 3,
+          "names": {
+            "en": "Backend & API",
+            "sr": "Backend i API"
+          },
+          "descriptions": {
+            "en": "Backend architecture, REST APIs, contracts, business logic, errors, performance, webhooks, jobs and scalability.",
+            "sr": "Backend arhitektura, REST API-ji, ugovori, poslovna logika, greške, performanse, webhook-ovi, poslovi i skalabilnost."
+          }
+        },
+        {
+          "id": "cybersecurity",
+          "order": 4,
+          "names": {
+            "en": "Cybersecurity",
+            "sr": "Sajber bezbednost"
+          },
+          "descriptions": {
+            "en": "Defensive application security reviews, authentication, authorization, secrets, supply chain and threat modeling.",
+            "sr": "Defanzivni bezbednosni pregledi aplikacija, autentikacija, autorizacija, tajni podaci, supply chain i modelovanje pretnji."
+          }
+        },
+        {
+          "id": "devops-cloud-infrastructure",
+          "order": 5,
+          "names": {
+            "en": "DevOps, Cloud & Infrastructure",
+            "sr": "DevOps, cloud i infrastruktura"
+          },
+          "descriptions": {
+            "en": "Containers, Kubernetes, CI/CD, cloud platforms, configuration, deployments, backups and recovery.",
+            "sr": "Kontejneri, Kubernetes, CI/CD, cloud platforme, konfiguracija, deployment, backup i oporavak."
+          }
+        },
+        {
+          "id": "databases-data-engineering",
+          "order": 6,
+          "names": {
+            "en": "Databases & Data Engineering",
+            "sr": "Baze podataka i data engineering"
+          },
+          "descriptions": {
+            "en": "Schemas, SQL performance, indexes, migrations, integrity, transactions, ORMs and data pipelines.",
+            "sr": "Šeme, SQL performanse, indeksi, migracije, integritet, transakcije, ORM-ovi i data pipeline-ovi."
+          }
+        },
+        {
+          "id": "ai-llm-automation",
+          "order": 7,
+          "names": {
+            "en": "AI, LLM & Automation",
+            "sr": "AI, LLM i automatizacija"
+          },
+          "descriptions": {
+            "en": "AI applications, RAG, grounding, prompt injection, agents, system prompts, workflow automation and model selection.",
+            "sr": "AI aplikacije, RAG, grounding, prompt injection, agenti, sistemski promptovi, automatizacija tokova i izbor modela."
+          }
+        },
+        {
+          "id": "testing-qa-reliability",
+          "order": 8,
+          "names": {
+            "en": "Testing, QA & Reliability",
+            "sr": "Testiranje, QA i pouzdanost"
+          },
+          "descriptions": {
+            "en": "Test suites, coverage, flaky tests, regression and end-to-end planning, edge cases, failure modes and incidents.",
+            "sr": "Test suite-ovi, pokrivenost, nestabilni testovi, regresioni i end-to-end planovi, granični slučajevi, načini otkaza i incidenti."
+          }
+        },
+        {
+          "id": "ux-ui-product-development",
+          "order": 9,
+          "names": {
+            "en": "UX, UI & Product Development",
+            "sr": "UX, UI i razvoj proizvoda"
+          },
+          "descriptions": {
+            "en": "Product UX, critical flows, onboarding, forms, navigation, design systems, accessibility and product requirements.",
+            "sr": "UX proizvoda, kritični tokovi, onboarding, forme, navigacija, dizajn sistemi, pristupačnost i zahtevi proizvoda."
+          }
+        },
+        {
+          "id": "desktop-game-systems-embedded",
+          "order": 10,
+          "names": {
+            "en": "Desktop, Game, Systems & Embedded",
+            "sr": "Desktop, igre, sistemi i embedded"
+          },
+          "descriptions": {
+            "en": "Desktop applications, Electron, PySide, Windows, cross-platform, games, embedded software and hardware integration.",
+            "sr": "Desktop aplikacije, Electron, PySide, Windows, cross-platform, igre, embedded softver i integracija sa hardverom."
+          }
+        }
+      ],
+      "prompts": [
+        {
+          "id": "UPL-IT-001",
+          "number": 1,
+          "slug": "forensic-full-repository-audit",
+          "subcategory": "web-development",
+          "title": {
+            "en": "Forensic Full Repository Audit",
+            "sr": "Forensic Full Repository Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-002",
+          "number": 2,
+          "slug": "ultimate-nextjs-production-audit",
+          "subcategory": "web-development",
+          "title": {
+            "en": "Ultimate Next.js Production Audit",
+            "sr": "Ultimate Next.js Production Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-003",
+          "number": 3,
+          "slug": "react-bug-hunter",
+          "subcategory": "web-development",
+          "title": {
+            "en": "React Bug Hunter",
+            "sr": "React Bug Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-004",
+          "number": 4,
+          "slug": "frontend-architecture-audit",
+          "subcategory": "web-development",
+          "title": {
+            "en": "Frontend Architecture Audit",
+            "sr": "Frontend Architecture Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-005",
+          "number": 5,
+          "slug": "web-performance-hunter",
+          "subcategory": "web-development",
+          "title": {
+            "en": "Web Performance Hunter",
+            "sr": "Web Performance Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-006",
+          "number": 6,
+          "slug": "responsive-and-mobile-web-audit",
+          "subcategory": "web-development",
+          "title": {
+            "en": "Responsive & Mobile Web Audit",
+            "sr": "Responsive & Mobile Web Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-007",
+          "number": 7,
+          "slug": "web-accessibility-audit",
+          "subcategory": "web-development",
+          "title": {
+            "en": "Web Accessibility Audit",
+            "sr": "Web Accessibility Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-008",
+          "number": 8,
+          "slug": "technical-seo-audit",
+          "subcategory": "web-development",
+          "title": {
+            "en": "Technical SEO Audit",
+            "sr": "Technical SEO Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-009",
+          "number": 9,
+          "slug": "progressive-web-app-audit",
+          "subcategory": "web-development",
+          "title": {
+            "en": "Progressive Web App Audit",
+            "sr": "Progressive Web App Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-010",
+          "number": 10,
+          "slug": "browser-compatibility-and-production-bug-hunter",
+          "subcategory": "web-development",
+          "title": {
+            "en": "Browser Compatibility & Production Bug Hunter",
+            "sr": "Browser Compatibility & Production Bug Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-011",
+          "number": 11,
+          "slug": "ultimate-android-application-audit",
+          "subcategory": "mobile-development",
+          "title": {
+            "en": "Ultimate Android Application Audit",
+            "sr": "Ultimate Android Application Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-012",
+          "number": 12,
+          "slug": "jetpack-compose-deep-audit",
+          "subcategory": "mobile-development",
+          "title": {
+            "en": "Jetpack Compose Deep Audit",
+            "sr": "Jetpack Compose Deep Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-013",
+          "number": 13,
+          "slug": "android-lifecycle-bug-hunter",
+          "subcategory": "mobile-development",
+          "title": {
+            "en": "Android Lifecycle Bug Hunter",
+            "sr": "Android Lifecycle Bug Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-014",
+          "number": 14,
+          "slug": "android-coroutines-and-concurrency-audit",
+          "subcategory": "mobile-development",
+          "title": {
+            "en": "Android Coroutines & Concurrency Audit",
+            "sr": "Android Coroutines & Concurrency Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-015",
+          "number": 15,
+          "slug": "android-performance-and-anr-hunter",
+          "subcategory": "mobile-development",
+          "title": {
+            "en": "Android Performance & ANR Hunter",
+            "sr": "Android Performance & ANR Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-016",
+          "number": 16,
+          "slug": "android-persistence-and-room-audit",
+          "subcategory": "mobile-development",
+          "title": {
+            "en": "Android Persistence & Room Audit",
+            "sr": "Android Persistence & Room Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-017",
+          "number": 17,
+          "slug": "android-offline-first-and-sync-audit",
+          "subcategory": "mobile-development",
+          "title": {
+            "en": "Android Offline-First & Sync Audit",
+            "sr": "Android Offline-First & Sync Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-018",
+          "number": 18,
+          "slug": "android-media-playback-audit",
+          "subcategory": "mobile-development",
+          "title": {
+            "en": "Android Media Playback Audit",
+            "sr": "Android Media Playback Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-019",
+          "number": 19,
+          "slug": "android-tv-application-audit",
+          "subcategory": "mobile-development",
+          "title": {
+            "en": "Android TV Application Audit",
+            "sr": "Android TV Application Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-020",
+          "number": 20,
+          "slug": "android-release-and-play-store-readiness-audit",
+          "subcategory": "mobile-development",
+          "title": {
+            "en": "Android Release & Play Store Readiness Audit",
+            "sr": "Android Release & Play Store Readiness Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-021",
+          "number": 21,
+          "slug": "ultimate-backend-architecture-audit",
+          "subcategory": "backend-api",
+          "title": {
+            "en": "Ultimate Backend Architecture Audit",
+            "sr": "Ultimate Backend Architecture Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-022",
+          "number": 22,
+          "slug": "rest-api-forensic-audit",
+          "subcategory": "backend-api",
+          "title": {
+            "en": "REST API Forensic Audit",
+            "sr": "REST API Forensic Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-023",
+          "number": 23,
+          "slug": "api-contract-consistency-audit",
+          "subcategory": "backend-api",
+          "title": {
+            "en": "API Contract Consistency Audit",
+            "sr": "API Contract Consistency Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-024",
+          "number": 24,
+          "slug": "backend-business-logic-audit",
+          "subcategory": "backend-api",
+          "title": {
+            "en": "Backend Business Logic Audit",
+            "sr": "Backend Business Logic Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-025",
+          "number": 25,
+          "slug": "api-error-handling-audit",
+          "subcategory": "backend-api",
+          "title": {
+            "en": "API Error Handling Audit",
+            "sr": "API Error Handling Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-026",
+          "number": 26,
+          "slug": "backend-performance-audit",
+          "subcategory": "backend-api",
+          "title": {
+            "en": "Backend Performance Audit",
+            "sr": "Backend Performance Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-027",
+          "number": 27,
+          "slug": "rate-limiting-and-abuse-protection-audit",
+          "subcategory": "backend-api",
+          "title": {
+            "en": "Rate Limiting & Abuse Protection Audit",
+            "sr": "Rate Limiting & Abuse Protection Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-028",
+          "number": 28,
+          "slug": "webhook-reliability-audit",
+          "subcategory": "backend-api",
+          "title": {
+            "en": "Webhook Reliability Audit",
+            "sr": "Webhook Reliability Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-029",
+          "number": 29,
+          "slug": "background-jobs-and-queue-audit",
+          "subcategory": "backend-api",
+          "title": {
+            "en": "Background Jobs & Queue Audit",
+            "sr": "Background Jobs & Queue Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-030",
+          "number": 30,
+          "slug": "backend-scalability-bottleneck-hunter",
+          "subcategory": "backend-api",
+          "title": {
+            "en": "Backend Scalability Bottleneck Hunter",
+            "sr": "Backend Scalability Bottleneck Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-031",
+          "number": 31,
+          "slug": "ultimate-application-security-audit",
+          "subcategory": "cybersecurity",
+          "title": {
+            "en": "Ultimate Application Security Audit",
+            "sr": "Ultimate Application Security Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-032",
+          "number": 32,
+          "slug": "authentication-security-audit",
+          "subcategory": "cybersecurity",
+          "title": {
+            "en": "Authentication Security Audit",
+            "sr": "Authentication Security Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-033",
+          "number": 33,
+          "slug": "authorization-and-idor-hunter",
+          "subcategory": "cybersecurity",
+          "title": {
+            "en": "Authorization & IDOR Hunter",
+            "sr": "Authorization & IDOR Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-034",
+          "number": 34,
+          "slug": "owasp-vulnerability-hunter",
+          "subcategory": "cybersecurity",
+          "title": {
+            "en": "OWASP Vulnerability Hunter",
+            "sr": "OWASP Vulnerability Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-035",
+          "number": 35,
+          "slug": "secrets-and-credential-exposure-audit",
+          "subcategory": "cybersecurity",
+          "title": {
+            "en": "Secrets & Credential Exposure Audit",
+            "sr": "Secrets & Credential Exposure Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-036",
+          "number": 36,
+          "slug": "file-upload-security-audit",
+          "subcategory": "cybersecurity",
+          "title": {
+            "en": "File Upload Security Audit",
+            "sr": "File Upload Security Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-037",
+          "number": 37,
+          "slug": "api-attack-surface-audit",
+          "subcategory": "cybersecurity",
+          "title": {
+            "en": "API Attack Surface Audit",
+            "sr": "API Attack Surface Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-038",
+          "number": 38,
+          "slug": "dependency-and-supply-chain-security-audit",
+          "subcategory": "cybersecurity",
+          "title": {
+            "en": "Dependency & Supply Chain Security Audit",
+            "sr": "Dependency & Supply Chain Security Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-039",
+          "number": 39,
+          "slug": "threat-modeling-generator",
+          "subcategory": "cybersecurity",
+          "title": {
+            "en": "Threat Modeling Generator",
+            "sr": "Threat Modeling Generator"
+          }
+        },
+        {
+          "id": "UPL-IT-040",
+          "number": 40,
+          "slug": "attacker-perspective-security-review",
+          "subcategory": "cybersecurity",
+          "title": {
+            "en": "Attacker-Perspective Security Review",
+            "sr": "Attacker-Perspective Security Review"
+          }
+        },
+        {
+          "id": "UPL-IT-041",
+          "number": 41,
+          "slug": "ultimate-devops-and-infrastructure-audit",
+          "subcategory": "devops-cloud-infrastructure",
+          "title": {
+            "en": "Ultimate DevOps & Infrastructure Audit",
+            "sr": "Ultimate DevOps & Infrastructure Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-042",
+          "number": 42,
+          "slug": "docker-production-audit",
+          "subcategory": "devops-cloud-infrastructure",
+          "title": {
+            "en": "Docker Production Audit",
+            "sr": "Docker Production Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-043",
+          "number": 43,
+          "slug": "kubernetes-production-audit",
+          "subcategory": "devops-cloud-infrastructure",
+          "title": {
+            "en": "Kubernetes Production Audit",
+            "sr": "Kubernetes Production Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-044",
+          "number": 44,
+          "slug": "github-actions-forensic-audit",
+          "subcategory": "devops-cloud-infrastructure",
+          "title": {
+            "en": "GitHub Actions Forensic Audit",
+            "sr": "GitHub Actions Forensic Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-045",
+          "number": 45,
+          "slug": "cicd-pipeline-audit",
+          "subcategory": "devops-cloud-infrastructure",
+          "title": {
+            "en": "CI/CD Pipeline Audit",
+            "sr": "CI/CD Pipeline Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-046",
+          "number": 46,
+          "slug": "vercel-production-audit",
+          "subcategory": "devops-cloud-infrastructure",
+          "title": {
+            "en": "Vercel Production Audit",
+            "sr": "Vercel Production Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-047",
+          "number": 47,
+          "slug": "cloud-infrastructure-audit",
+          "subcategory": "devops-cloud-infrastructure",
+          "title": {
+            "en": "Cloud Infrastructure Audit",
+            "sr": "Cloud Infrastructure Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-048",
+          "number": 48,
+          "slug": "environment-configuration-audit",
+          "subcategory": "devops-cloud-infrastructure",
+          "title": {
+            "en": "Environment Configuration Audit",
+            "sr": "Environment Configuration Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-049",
+          "number": 49,
+          "slug": "zero-downtime-deployment-audit",
+          "subcategory": "devops-cloud-infrastructure",
+          "title": {
+            "en": "Zero-Downtime Deployment Audit",
+            "sr": "Zero-Downtime Deployment Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-050",
+          "number": 50,
+          "slug": "backup-disaster-recovery-and-rollback-audit",
+          "subcategory": "devops-cloud-infrastructure",
+          "title": {
+            "en": "Backup, Disaster Recovery & Rollback Audit",
+            "sr": "Backup, Disaster Recovery & Rollback Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-051",
+          "number": 51,
+          "slug": "ultimate-database-audit",
+          "subcategory": "databases-data-engineering",
+          "title": {
+            "en": "Ultimate Database Audit",
+            "sr": "Ultimate Database Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-052",
+          "number": 52,
+          "slug": "database-schema-and-data-model-audit",
+          "subcategory": "databases-data-engineering",
+          "title": {
+            "en": "Database Schema & Data Model Audit",
+            "sr": "Database Schema & Data Model Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-053",
+          "number": 53,
+          "slug": "sql-performance-hunter",
+          "subcategory": "databases-data-engineering",
+          "title": {
+            "en": "SQL Performance Hunter",
+            "sr": "SQL Performance Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-054",
+          "number": 54,
+          "slug": "database-index-audit",
+          "subcategory": "databases-data-engineering",
+          "title": {
+            "en": "Database Index Audit",
+            "sr": "Database Index Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-055",
+          "number": 55,
+          "slug": "database-migration-safety-audit",
+          "subcategory": "databases-data-engineering",
+          "title": {
+            "en": "Database Migration Safety Audit",
+            "sr": "Database Migration Safety Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-056",
+          "number": 56,
+          "slug": "data-integrity-audit",
+          "subcategory": "databases-data-engineering",
+          "title": {
+            "en": "Data Integrity Audit",
+            "sr": "Data Integrity Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-057",
+          "number": 57,
+          "slug": "transaction-and-concurrency-audit",
+          "subcategory": "databases-data-engineering",
+          "title": {
+            "en": "Transaction & Concurrency Audit",
+            "sr": "Transaction & Concurrency Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-058",
+          "number": 58,
+          "slug": "n-plus-1-and-expensive-query-hunter",
+          "subcategory": "databases-data-engineering",
+          "title": {
+            "en": "N+1 & Expensive Query Hunter",
+            "sr": "N+1 & Expensive Query Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-059",
+          "number": 59,
+          "slug": "orm-forensic-audit",
+          "subcategory": "databases-data-engineering",
+          "title": {
+            "en": "ORM Forensic Audit",
+            "sr": "ORM Forensic Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-060",
+          "number": 60,
+          "slug": "etl-and-data-pipeline-reliability-audit",
+          "subcategory": "databases-data-engineering",
+          "title": {
+            "en": "ETL & Data Pipeline Reliability Audit",
+            "sr": "ETL & Data Pipeline Reliability Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-061",
+          "number": 61,
+          "slug": "ultimate-ai-application-audit",
+          "subcategory": "ai-llm-automation",
+          "title": {
+            "en": "Ultimate AI Application Audit",
+            "sr": "Ultimate AI Application Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-062",
+          "number": 62,
+          "slug": "rag-system-forensic-audit",
+          "subcategory": "ai-llm-automation",
+          "title": {
+            "en": "RAG System Forensic Audit",
+            "sr": "RAG System Forensic Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-063",
+          "number": 63,
+          "slug": "hallucination-and-grounding-audit",
+          "subcategory": "ai-llm-automation",
+          "title": {
+            "en": "Hallucination & Grounding Audit",
+            "sr": "Hallucination & Grounding Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-064",
+          "number": 64,
+          "slug": "prompt-injection-security-audit",
+          "subcategory": "ai-llm-automation",
+          "title": {
+            "en": "Prompt Injection Security Audit",
+            "sr": "Prompt Injection Security Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-065",
+          "number": 65,
+          "slug": "ai-agent-architecture-audit",
+          "subcategory": "ai-llm-automation",
+          "title": {
+            "en": "AI Agent Architecture Audit",
+            "sr": "AI Agent Architecture Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-066",
+          "number": 66,
+          "slug": "ai-agent-reliability-audit",
+          "subcategory": "ai-llm-automation",
+          "title": {
+            "en": "AI Agent Reliability Audit",
+            "sr": "AI Agent Reliability Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-067",
+          "number": 67,
+          "slug": "system-prompt-optimization",
+          "subcategory": "ai-llm-automation",
+          "title": {
+            "en": "System Prompt Optimization",
+            "sr": "System Prompt Optimization"
+          }
+        },
+        {
+          "id": "UPL-IT-068",
+          "number": 68,
+          "slug": "n8n-workflow-automation-audit",
+          "subcategory": "ai-llm-automation",
+          "title": {
+            "en": "n8n / Workflow Automation Audit",
+            "sr": "n8n / Workflow Automation Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-069",
+          "number": 69,
+          "slug": "llm-cost-and-latency-optimization",
+          "subcategory": "ai-llm-automation",
+          "title": {
+            "en": "LLM Cost & Latency Optimization",
+            "sr": "LLM Cost & Latency Optimization"
+          }
+        },
+        {
+          "id": "UPL-IT-070",
+          "number": 70,
+          "slug": "ai-model-selection-and-evaluation",
+          "subcategory": "ai-llm-automation",
+          "title": {
+            "en": "AI Model Selection & Evaluation",
+            "sr": "AI Model Selection & Evaluation"
+          }
+        },
+        {
+          "id": "UPL-IT-071",
+          "number": 71,
+          "slug": "ultimate-test-suite-audit",
+          "subcategory": "testing-qa-reliability",
+          "title": {
+            "en": "Ultimate Test Suite Audit",
+            "sr": "Ultimate Test Suite Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-072",
+          "number": 72,
+          "slug": "missing-test-coverage-hunter",
+          "subcategory": "testing-qa-reliability",
+          "title": {
+            "en": "Missing Test Coverage Hunter",
+            "sr": "Missing Test Coverage Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-073",
+          "number": 73,
+          "slug": "flaky-test-hunter",
+          "subcategory": "testing-qa-reliability",
+          "title": {
+            "en": "Flaky Test Hunter",
+            "sr": "Flaky Test Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-074",
+          "number": 74,
+          "slug": "regression-test-generator",
+          "subcategory": "testing-qa-reliability",
+          "title": {
+            "en": "Regression Test Generator",
+            "sr": "Regression Test Generator"
+          }
+        },
+        {
+          "id": "UPL-IT-075",
+          "number": 75,
+          "slug": "end-to-end-test-plan-generator",
+          "subcategory": "testing-qa-reliability",
+          "title": {
+            "en": "End-to-End Test Plan Generator",
+            "sr": "End-to-End Test Plan Generator"
+          }
+        },
+        {
+          "id": "UPL-IT-076",
+          "number": 76,
+          "slug": "edge-case-generator",
+          "subcategory": "testing-qa-reliability",
+          "title": {
+            "en": "Edge Case Generator",
+            "sr": "Edge Case Generator"
+          }
+        },
+        {
+          "id": "UPL-IT-077",
+          "number": 77,
+          "slug": "adversarial-user-testing",
+          "subcategory": "testing-qa-reliability",
+          "title": {
+            "en": "Adversarial User Testing",
+            "sr": "Adversarial User Testing"
+          }
+        },
+        {
+          "id": "UPL-IT-078",
+          "number": 78,
+          "slug": "reliability-and-failure-mode-audit",
+          "subcategory": "testing-qa-reliability",
+          "title": {
+            "en": "Reliability & Failure Mode Audit",
+            "sr": "Reliability & Failure Mode Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-079",
+          "number": 79,
+          "slug": "race-condition-and-concurrency-hunter",
+          "subcategory": "testing-qa-reliability",
+          "title": {
+            "en": "Race Condition & Concurrency Hunter",
+            "sr": "Race Condition & Concurrency Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-080",
+          "number": 80,
+          "slug": "production-incident-simulation",
+          "subcategory": "testing-qa-reliability",
+          "title": {
+            "en": "Production Incident Simulation",
+            "sr": "Production Incident Simulation"
+          }
+        },
+        {
+          "id": "UPL-IT-081",
+          "number": 81,
+          "slug": "ultimate-ux-ui-product-audit",
+          "subcategory": "ux-ui-product-development",
+          "title": {
+            "en": "Ultimate UX/UI Product Audit",
+            "sr": "Ultimate UX/UI Product Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-082",
+          "number": 82,
+          "slug": "critical-user-flow-audit",
+          "subcategory": "ux-ui-product-development",
+          "title": {
+            "en": "Critical User Flow Audit",
+            "sr": "Critical User Flow Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-083",
+          "number": 83,
+          "slug": "onboarding-audit",
+          "subcategory": "ux-ui-product-development",
+          "title": {
+            "en": "Onboarding Audit",
+            "sr": "Onboarding Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-084",
+          "number": 84,
+          "slug": "form-ux-audit",
+          "subcategory": "ux-ui-product-development",
+          "title": {
+            "en": "Form UX Audit",
+            "sr": "Form UX Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-085",
+          "number": 85,
+          "slug": "navigation-and-information-architecture-audit",
+          "subcategory": "ux-ui-product-development",
+          "title": {
+            "en": "Navigation & Information Architecture Audit",
+            "sr": "Navigation & Information Architecture Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-086",
+          "number": 86,
+          "slug": "mobile-ux-audit",
+          "subcategory": "ux-ui-product-development",
+          "title": {
+            "en": "Mobile UX Audit",
+            "sr": "Mobile UX Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-087",
+          "number": 87,
+          "slug": "design-system-consistency-audit",
+          "subcategory": "ux-ui-product-development",
+          "title": {
+            "en": "Design System Consistency Audit",
+            "sr": "Design System Consistency Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-088",
+          "number": 88,
+          "slug": "accessibility-experience-audit",
+          "subcategory": "ux-ui-product-development",
+          "title": {
+            "en": "Accessibility Experience Audit",
+            "sr": "Accessibility Experience Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-089",
+          "number": 89,
+          "slug": "product-requirement-generator",
+          "subcategory": "ux-ui-product-development",
+          "title": {
+            "en": "Product Requirement Generator",
+            "sr": "Product Requirement Generator"
+          }
+        },
+        {
+          "id": "UPL-IT-090",
+          "number": 90,
+          "slug": "feature-design-and-ux-review",
+          "subcategory": "ux-ui-product-development",
+          "title": {
+            "en": "Feature Design & UX Review",
+            "sr": "Feature Design & UX Review"
+          }
+        },
+        {
+          "id": "UPL-IT-091",
+          "number": 91,
+          "slug": "ultimate-desktop-application-audit",
+          "subcategory": "desktop-game-systems-embedded",
+          "title": {
+            "en": "Ultimate Desktop Application Audit",
+            "sr": "Ultimate Desktop Application Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-092",
+          "number": 92,
+          "slug": "electron-application-audit",
+          "subcategory": "desktop-game-systems-embedded",
+          "title": {
+            "en": "Electron Application Audit",
+            "sr": "Electron Application Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-093",
+          "number": 93,
+          "slug": "python-pyside-application-audit",
+          "subcategory": "desktop-game-systems-embedded",
+          "title": {
+            "en": "Python/PySide Application Audit",
+            "sr": "Python/PySide Application Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-094",
+          "number": 94,
+          "slug": "windows-application-production-audit",
+          "subcategory": "desktop-game-systems-embedded",
+          "title": {
+            "en": "Windows Application Production Audit",
+            "sr": "Windows Application Production Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-095",
+          "number": 95,
+          "slug": "cross-platform-compatibility-audit",
+          "subcategory": "desktop-game-systems-embedded",
+          "title": {
+            "en": "Cross-Platform Compatibility Audit",
+            "sr": "Cross-Platform Compatibility Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-096",
+          "number": 96,
+          "slug": "game-architecture-audit",
+          "subcategory": "desktop-game-systems-embedded",
+          "title": {
+            "en": "Game Architecture Audit",
+            "sr": "Game Architecture Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-097",
+          "number": 97,
+          "slug": "game-performance-audit",
+          "subcategory": "desktop-game-systems-embedded",
+          "title": {
+            "en": "Game Performance Audit",
+            "sr": "Game Performance Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-098",
+          "number": 98,
+          "slug": "embedded-software-reliability-audit",
+          "subcategory": "desktop-game-systems-embedded",
+          "title": {
+            "en": "Embedded Software Reliability Audit",
+            "sr": "Embedded Software Reliability Audit"
+          }
+        },
+        {
+          "id": "UPL-IT-099",
+          "number": 99,
+          "slug": "memory-and-resource-leak-hunter",
+          "subcategory": "desktop-game-systems-embedded",
+          "title": {
+            "en": "Memory & Resource Leak Hunter",
+            "sr": "Memory & Resource Leak Hunter"
+          }
+        },
+        {
+          "id": "UPL-IT-100",
+          "number": 100,
+          "slug": "hardware-software-integration-audit",
+          "subcategory": "desktop-game-systems-embedded",
+          "title": {
+            "en": "Hardware/Software Integration Audit",
+            "sr": "Hardware/Software Integration Audit"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UPL-BIZ",
+      "order": 2,
+      "slug": "economics-finance-business",
+      "dirs": {
+        "en": "02-economics-finance-business",
+        "sr": "02-ekonomija-finansije-poslovanje"
+      },
+      "names": {
+        "en": "Economics, Finance & Business",
+        "sr": "Ekonomija, finansije i poslovanje"
+      },
+      "descriptions": {
+        "en": "Economics, personal and corporate finance, accounting, strategy, entrepreneurship and business operations.",
+        "sr": "Ekonomija, lične i korporativne finansije, računovodstvo, strategija, preduzetništvo i poslovne operacije."
+      },
+      "subcategories": [],
+      "prompts": []
+    },
+    {
+      "id": "UPL-LAW",
+      "order": 3,
+      "slug": "law-administration",
+      "dirs": {
+        "en": "03-law-administration",
+        "sr": "03-pravo-administracija"
+      },
+      "names": {
+        "en": "Law & Administration",
+        "sr": "Pravo i administracija"
+      },
+      "descriptions": {
+        "en": "Legal research, contracts, compliance, public administration and regulatory work.",
+        "sr": "Pravna istraživanja, ugovori, usklađenost sa propisima, javna uprava i regulatorni poslovi."
+      },
+      "subcategories": [],
+      "prompts": []
+    },
+    {
+      "id": "UPL-HEALTH",
+      "order": 4,
+      "slug": "health-medicine-wellness",
+      "dirs": {
+        "en": "04-health-medicine-wellness",
+        "sr": "04-zdravlje-medicina-wellness"
+      },
+      "names": {
+        "en": "Health, Medicine & Wellness",
+        "sr": "Zdravlje, medicina i wellness"
+      },
+      "descriptions": {
+        "en": "Health literacy, medicine, nutrition, physical activity, mental well-being and healthcare work.",
+        "sr": "Zdravstvena pismenost, medicina, ishrana, fizička aktivnost, mentalno blagostanje i rad u zdravstvu."
+      },
+      "subcategories": [],
+      "prompts": []
+    },
+    {
+      "id": "UPL-EDU",
+      "order": 5,
+      "slug": "education-learning",
+      "dirs": {
+        "en": "05-education-learning",
+        "sr": "05-obrazovanje-ucenje"
+      },
+      "names": {
+        "en": "Education & Learning",
+        "sr": "Obrazovanje i učenje"
+      },
+      "descriptions": {
+        "en": "Teaching, learning, curriculum design, tutoring, study methods and assessment.",
+        "sr": "Podučavanje, učenje, dizajn nastavnog programa, tutorstvo, metode učenja i ocenjivanje."
+      },
+      "subcategories": [],
+      "prompts": []
+    },
+    {
+      "id": "UPL-SCI",
+      "order": 6,
+      "slug": "science-research-analysis",
+      "dirs": {
+        "en": "06-science-research-analysis",
+        "sr": "06-nauka-istrazivanje-analiza"
+      },
+      "names": {
+        "en": "Science, Research & Analysis",
+        "sr": "Nauka, istraživanje i analiza"
+      },
+      "descriptions": {
+        "en": "Scientific method, research design, literature review, data analysis and critical reasoning.",
+        "sr": "Naučni metod, dizajn istraživanja, pregled literature, analiza podataka i kritičko rasuđivanje."
+      },
+      "subcategories": [],
+      "prompts": []
+    },
+    {
+      "id": "UPL-CAREER",
+      "order": 7,
+      "slug": "career-professional-development",
+      "dirs": {
+        "en": "07-career-professional-development",
+        "sr": "07-karijera-profesionalni-razvoj"
+      },
+      "names": {
+        "en": "Career & Professional Development",
+        "sr": "Karijera i profesionalni razvoj"
+      },
+      "descriptions": {
+        "en": "Career planning, job search, interviews, professional growth and leadership.",
+        "sr": "Planiranje karijere, traženje posla, intervjui, profesionalni rast i liderstvo."
+      },
+      "subcategories": [],
+      "prompts": []
+    },
+    {
+      "id": "UPL-MKT",
+      "order": 8,
+      "slug": "marketing-sales-communication",
+      "dirs": {
+        "en": "08-marketing-sales-communication",
+        "sr": "08-marketing-prodaja-komunikacija"
+      },
+      "names": {
+        "en": "Marketing, Sales & Communication",
+        "sr": "Marketing, prodaja i komunikacija"
+      },
+      "descriptions": {
+        "en": "Marketing strategy, sales, copywriting, branding, public relations and communication.",
+        "sr": "Marketinška strategija, prodaja, copywriting, brendiranje, odnosi s javnošću i komunikacija."
+      },
+      "subcategories": [],
+      "prompts": []
+    },
+    {
+      "id": "UPL-PROD",
+      "order": 9,
+      "slug": "productivity-organization-management",
+      "dirs": {
+        "en": "09-productivity-organization-management",
+        "sr": "09-produktivnost-organizacija-upravljanje"
+      },
+      "names": {
+        "en": "Productivity, Organization & Management",
+        "sr": "Produktivnost, organizacija i upravljanje"
+      },
+      "descriptions": {
+        "en": "Personal productivity, planning, project and team management, operations and decision-making.",
+        "sr": "Lična produktivnost, planiranje, upravljanje projektima i timovima, operacije i donošenje odluka."
+      },
+      "subcategories": [],
+      "prompts": []
+    },
+    {
+      "id": "UPL-CREATIVE",
+      "order": 10,
+      "slug": "creativity-design-media",
+      "dirs": {
+        "en": "10-creativity-design-media",
+        "sr": "10-kreativnost-dizajn-mediji"
+      },
+      "names": {
+        "en": "Creativity, Design & Media",
+        "sr": "Kreativnost, dizajn i mediji"
+      },
+      "descriptions": {
+        "en": "Writing, design, visual arts, audio, video and media production.",
+        "sr": "Pisanje, dizajn, vizuelne umetnosti, audio, video i medijska produkcija."
+      },
+      "subcategories": [],
+      "prompts": []
+    }
+  ]
+}

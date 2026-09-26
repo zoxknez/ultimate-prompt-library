@@ -1,0 +1,1630 @@
+{
+  "schemaVersion": 1,
+  "languages": [
+    "en",
+    "sr"
+  ],
+  "count": 60,
+  "prompts": [
+    {
+      "id": "UPL-IT-001",
+      "number": 1,
+      "slug": "forensic-full-repository-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "web-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Forensic Full Repository Audit",
+        "sr": "Forensic Full Repository Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/01-web-development/001-forensic-full-repository-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/01-web-development/001-forensic-full-repository-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-002",
+      "number": 2,
+      "slug": "ultimate-nextjs-production-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "web-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate Next.js Production Audit",
+        "sr": "Ultimate Next.js Production Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/01-web-development/002-ultimate-nextjs-production-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/01-web-development/002-ultimate-nextjs-production-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-003",
+      "number": 3,
+      "slug": "react-bug-hunter",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "web-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "React Bug Hunter",
+        "sr": "React Bug Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/01-web-development/003-react-bug-hunter.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/01-web-development/003-react-bug-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-IT-004",
+      "number": 4,
+      "slug": "frontend-architecture-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "web-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Frontend Architecture Audit",
+        "sr": "Frontend Architecture Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/01-web-development/004-frontend-architecture-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/01-web-development/004-frontend-architecture-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-005",
+      "number": 5,
+      "slug": "web-performance-hunter",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "web-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Web Performance Hunter",
+        "sr": "Web Performance Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/01-web-development/005-web-performance-hunter.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/01-web-development/005-web-performance-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-IT-006",
+      "number": 6,
+      "slug": "responsive-and-mobile-web-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "web-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Responsive & Mobile Web Audit",
+        "sr": "Responsive & Mobile Web Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/01-web-development/006-responsive-and-mobile-web-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/01-web-development/006-responsive-and-mobile-web-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-007",
+      "number": 7,
+      "slug": "web-accessibility-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "web-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Web Accessibility Audit",
+        "sr": "Web Accessibility Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/01-web-development/007-web-accessibility-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/01-web-development/007-web-accessibility-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-008",
+      "number": 8,
+      "slug": "technical-seo-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "web-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Technical SEO Audit",
+        "sr": "Technical SEO Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/01-web-development/008-technical-seo-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/01-web-development/008-technical-seo-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-009",
+      "number": 9,
+      "slug": "progressive-web-app-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "web-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Progressive Web App Audit",
+        "sr": "Progressive Web App Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/01-web-development/009-progressive-web-app-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/01-web-development/009-progressive-web-app-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-010",
+      "number": 10,
+      "slug": "browser-compatibility-and-production-bug-hunter",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "web-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Browser Compatibility & Production Bug Hunter",
+        "sr": "Browser Compatibility & Production Bug Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/01-web-development/010-browser-compatibility-and-production-bug-hunter.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/01-web-development/010-browser-compatibility-and-production-bug-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-IT-011",
+      "number": 11,
+      "slug": "ultimate-android-application-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "mobile-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate Android Application Audit",
+        "sr": "Ultimate Android Application Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/02-mobile-development/011-ultimate-android-application-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/02-mobile-development/011-ultimate-android-application-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-012",
+      "number": 12,
+      "slug": "jetpack-compose-deep-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "mobile-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Jetpack Compose Deep Audit",
+        "sr": "Jetpack Compose Deep Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/02-mobile-development/012-jetpack-compose-deep-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/02-mobile-development/012-jetpack-compose-deep-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-013",
+      "number": 13,
+      "slug": "android-lifecycle-bug-hunter",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "mobile-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Android Lifecycle Bug Hunter",
+        "sr": "Android Lifecycle Bug Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/02-mobile-development/013-android-lifecycle-bug-hunter.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/02-mobile-development/013-android-lifecycle-bug-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-IT-014",
+      "number": 14,
+      "slug": "android-coroutines-and-concurrency-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "mobile-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Android Coroutines & Concurrency Audit",
+        "sr": "Android Coroutines & Concurrency Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/02-mobile-development/014-android-coroutines-and-concurrency-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/02-mobile-development/014-android-coroutines-and-concurrency-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-015",
+      "number": 15,
+      "slug": "android-performance-and-anr-hunter",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "mobile-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Android Performance & ANR Hunter",
+        "sr": "Android Performance & ANR Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/02-mobile-development/015-android-performance-and-anr-hunter.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/02-mobile-development/015-android-performance-and-anr-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-IT-016",
+      "number": 16,
+      "slug": "android-persistence-and-room-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "mobile-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Android Persistence & Room Audit",
+        "sr": "Android Persistence & Room Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/02-mobile-development/016-android-persistence-and-room-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/02-mobile-development/016-android-persistence-and-room-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-017",
+      "number": 17,
+      "slug": "android-offline-first-and-sync-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "mobile-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Android Offline-First & Sync Audit",
+        "sr": "Android Offline-First & Sync Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/02-mobile-development/017-android-offline-first-and-sync-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/02-mobile-development/017-android-offline-first-and-sync-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-018",
+      "number": 18,
+      "slug": "android-media-playback-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "mobile-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Android Media Playback Audit",
+        "sr": "Android Media Playback Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/02-mobile-development/018-android-media-playback-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/02-mobile-development/018-android-media-playback-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-019",
+      "number": 19,
+      "slug": "android-tv-application-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "mobile-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Android TV Application Audit",
+        "sr": "Android TV Application Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/02-mobile-development/019-android-tv-application-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/02-mobile-development/019-android-tv-application-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-020",
+      "number": 20,
+      "slug": "android-release-and-play-store-readiness-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "mobile-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Android Release & Play Store Readiness Audit",
+        "sr": "Android Release & Play Store Readiness Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/02-mobile-development/020-android-release-and-play-store-readiness-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/02-mobile-development/020-android-release-and-play-store-readiness-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-021",
+      "number": 21,
+      "slug": "ultimate-backend-architecture-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "backend-api",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate Backend Architecture Audit",
+        "sr": "Ultimate Backend Architecture Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/03-backend-api/021-ultimate-backend-architecture-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/03-backend-api/021-ultimate-backend-architecture-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-022",
+      "number": 22,
+      "slug": "rest-api-forensic-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "backend-api",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "REST API Forensic Audit",
+        "sr": "REST API Forensic Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/03-backend-api/022-rest-api-forensic-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/03-backend-api/022-rest-api-forensic-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-023",
+      "number": 23,
+      "slug": "api-contract-consistency-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "backend-api",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "API Contract Consistency Audit",
+        "sr": "API Contract Consistency Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/03-backend-api/023-api-contract-consistency-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/03-backend-api/023-api-contract-consistency-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-024",
+      "number": 24,
+      "slug": "backend-business-logic-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "backend-api",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Backend Business Logic Audit",
+        "sr": "Backend Business Logic Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/03-backend-api/024-backend-business-logic-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/03-backend-api/024-backend-business-logic-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-025",
+      "number": 25,
+      "slug": "api-error-handling-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "backend-api",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "API Error Handling Audit",
+        "sr": "API Error Handling Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/03-backend-api/025-api-error-handling-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/03-backend-api/025-api-error-handling-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-026",
+      "number": 26,
+      "slug": "backend-performance-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "backend-api",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Backend Performance Audit",
+        "sr": "Backend Performance Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/03-backend-api/026-backend-performance-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/03-backend-api/026-backend-performance-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-027",
+      "number": 27,
+      "slug": "rate-limiting-and-abuse-protection-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "backend-api",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Rate Limiting & Abuse Protection Audit",
+        "sr": "Rate Limiting & Abuse Protection Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/03-backend-api/027-rate-limiting-and-abuse-protection-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/03-backend-api/027-rate-limiting-and-abuse-protection-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-028",
+      "number": 28,
+      "slug": "webhook-reliability-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "backend-api",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Webhook Reliability Audit",
+        "sr": "Webhook Reliability Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/03-backend-api/028-webhook-reliability-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/03-backend-api/028-webhook-reliability-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-029",
+      "number": 29,
+      "slug": "background-jobs-and-queue-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "backend-api",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Background Jobs & Queue Audit",
+        "sr": "Background Jobs & Queue Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/03-backend-api/029-background-jobs-and-queue-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/03-backend-api/029-background-jobs-and-queue-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-030",
+      "number": 30,
+      "slug": "backend-scalability-bottleneck-hunter",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "backend-api",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Backend Scalability Bottleneck Hunter",
+        "sr": "Backend Scalability Bottleneck Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/03-backend-api/030-backend-scalability-bottleneck-hunter.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/03-backend-api/030-backend-scalability-bottleneck-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-IT-031",
+      "number": 31,
+      "slug": "ultimate-application-security-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "cybersecurity",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate Application Security Audit",
+        "sr": "Ultimate Application Security Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/04-cybersecurity/031-ultimate-application-security-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/04-cybersecurity/031-ultimate-application-security-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-032",
+      "number": 32,
+      "slug": "authentication-security-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "cybersecurity",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Authentication Security Audit",
+        "sr": "Authentication Security Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/04-cybersecurity/032-authentication-security-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/04-cybersecurity/032-authentication-security-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-033",
+      "number": 33,
+      "slug": "authorization-and-idor-hunter",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "cybersecurity",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Authorization & IDOR Hunter",
+        "sr": "Authorization & IDOR Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/04-cybersecurity/033-authorization-and-idor-hunter.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/04-cybersecurity/033-authorization-and-idor-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-IT-034",
+      "number": 34,
+      "slug": "owasp-vulnerability-hunter",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "cybersecurity",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "OWASP Vulnerability Hunter",
+        "sr": "OWASP Vulnerability Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/04-cybersecurity/034-owasp-vulnerability-hunter.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/04-cybersecurity/034-owasp-vulnerability-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-IT-035",
+      "number": 35,
+      "slug": "secrets-and-credential-exposure-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "cybersecurity",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Secrets & Credential Exposure Audit",
+        "sr": "Secrets & Credential Exposure Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/04-cybersecurity/035-secrets-and-credential-exposure-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/04-cybersecurity/035-secrets-and-credential-exposure-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-036",
+      "number": 36,
+      "slug": "file-upload-security-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "cybersecurity",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "File Upload Security Audit",
+        "sr": "File Upload Security Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/04-cybersecurity/036-file-upload-security-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/04-cybersecurity/036-file-upload-security-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-037",
+      "number": 37,
+      "slug": "api-attack-surface-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "cybersecurity",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "API Attack Surface Audit",
+        "sr": "API Attack Surface Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/04-cybersecurity/037-api-attack-surface-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/04-cybersecurity/037-api-attack-surface-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-038",
+      "number": 38,
+      "slug": "dependency-and-supply-chain-security-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "cybersecurity",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Dependency & Supply Chain Security Audit",
+        "sr": "Dependency & Supply Chain Security Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/04-cybersecurity/038-dependency-and-supply-chain-security-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/04-cybersecurity/038-dependency-and-supply-chain-security-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-039",
+      "number": 39,
+      "slug": "threat-modeling-generator",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "cybersecurity",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Threat Modeling Generator",
+        "sr": "Threat Modeling Generator"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/04-cybersecurity/039-threat-modeling-generator.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/04-cybersecurity/039-threat-modeling-generator.md"
+      }
+    },
+    {
+      "id": "UPL-IT-040",
+      "number": 40,
+      "slug": "attacker-perspective-security-review",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "cybersecurity",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Attacker-Perspective Security Review",
+        "sr": "Attacker-Perspective Security Review"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/04-cybersecurity/040-attacker-perspective-security-review.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/04-cybersecurity/040-attacker-perspective-security-review.md"
+      }
+    },
+    {
+      "id": "UPL-IT-041",
+      "number": 41,
+      "slug": "ultimate-devops-and-infrastructure-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "devops-cloud-infrastructure",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate DevOps & Infrastructure Audit",
+        "sr": "Ultimate DevOps & Infrastructure Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/041-ultimate-devops-and-infrastructure-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/041-ultimate-devops-and-infrastructure-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-042",
+      "number": 42,
+      "slug": "docker-production-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "devops-cloud-infrastructure",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Docker Production Audit",
+        "sr": "Docker Production Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/042-docker-production-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/042-docker-production-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-043",
+      "number": 43,
+      "slug": "kubernetes-production-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "devops-cloud-infrastructure",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Kubernetes Production Audit",
+        "sr": "Kubernetes Production Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/043-kubernetes-production-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/043-kubernetes-production-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-044",
+      "number": 44,
+      "slug": "github-actions-forensic-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "devops-cloud-infrastructure",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "GitHub Actions Forensic Audit",
+        "sr": "GitHub Actions Forensic Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/044-github-actions-forensic-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/044-github-actions-forensic-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-045",
+      "number": 45,
+      "slug": "cicd-pipeline-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "devops-cloud-infrastructure",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "CI/CD Pipeline Audit",
+        "sr": "CI/CD Pipeline Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/045-cicd-pipeline-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/045-cicd-pipeline-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-046",
+      "number": 46,
+      "slug": "vercel-production-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "devops-cloud-infrastructure",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Vercel Production Audit",
+        "sr": "Vercel Production Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/046-vercel-production-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/046-vercel-production-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-047",
+      "number": 47,
+      "slug": "cloud-infrastructure-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "devops-cloud-infrastructure",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Cloud Infrastructure Audit",
+        "sr": "Cloud Infrastructure Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/047-cloud-infrastructure-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/047-cloud-infrastructure-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-048",
+      "number": 48,
+      "slug": "environment-configuration-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "devops-cloud-infrastructure",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Environment Configuration Audit",
+        "sr": "Environment Configuration Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/048-environment-configuration-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/048-environment-configuration-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-049",
+      "number": 49,
+      "slug": "zero-downtime-deployment-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "devops-cloud-infrastructure",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Zero-Downtime Deployment Audit",
+        "sr": "Zero-Downtime Deployment Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/049-zero-downtime-deployment-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/049-zero-downtime-deployment-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-050",
+      "number": 50,
+      "slug": "backup-disaster-recovery-and-rollback-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "devops-cloud-infrastructure",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Backup, Disaster Recovery & Rollback Audit",
+        "sr": "Backup, Disaster Recovery & Rollback Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/050-backup-disaster-recovery-and-rollback-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/050-backup-disaster-recovery-and-rollback-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-051",
+      "number": 51,
+      "slug": "ultimate-database-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "databases-data-engineering",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate Database Audit",
+        "sr": "Ultimate Database Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/051-ultimate-database-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/051-ultimate-database-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-052",
+      "number": 52,
+      "slug": "database-schema-and-data-model-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "databases-data-engineering",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Database Schema & Data Model Audit",
+        "sr": "Database Schema & Data Model Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/052-database-schema-and-data-model-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/052-database-schema-and-data-model-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-053",
+      "number": 53,
+      "slug": "sql-performance-hunter",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "databases-data-engineering",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "SQL Performance Hunter",
+        "sr": "SQL Performance Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/053-sql-performance-hunter.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/053-sql-performance-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-IT-054",
+      "number": 54,
+      "slug": "database-index-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "databases-data-engineering",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Database Index Audit",
+        "sr": "Database Index Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/054-database-index-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/054-database-index-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-055",
+      "number": 55,
+      "slug": "database-migration-safety-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "databases-data-engineering",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Database Migration Safety Audit",
+        "sr": "Database Migration Safety Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/055-database-migration-safety-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/055-database-migration-safety-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-056",
+      "number": 56,
+      "slug": "data-integrity-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "databases-data-engineering",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Data Integrity Audit",
+        "sr": "Data Integrity Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/056-data-integrity-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/056-data-integrity-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-057",
+      "number": 57,
+      "slug": "transaction-and-concurrency-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "databases-data-engineering",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Transaction & Concurrency Audit",
+        "sr": "Transaction & Concurrency Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/057-transaction-and-concurrency-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/057-transaction-and-concurrency-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-058",
+      "number": 58,
+      "slug": "n-plus-1-and-expensive-query-hunter",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "databases-data-engineering",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "N+1 & Expensive Query Hunter",
+        "sr": "N+1 & Expensive Query Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/058-n-plus-1-and-expensive-query-hunter.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/058-n-plus-1-and-expensive-query-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-IT-059",
+      "number": 59,
+      "slug": "orm-forensic-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "databases-data-engineering",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "ORM Forensic Audit",
+        "sr": "ORM Forensic Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/059-orm-forensic-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/059-orm-forensic-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-060",
+      "number": 60,
+      "slug": "etl-and-data-pipeline-reliability-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "databases-data-engineering",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "ETL & Data Pipeline Reliability Audit",
+        "sr": "ETL & Data Pipeline Reliability Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md"
+      }
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "uniquePrompts": 60,
+  "localizedPromptFiles": 120,
+  "languages": 2,
+  "filesByLanguage": {
+    "en": 60,
+    "sr": 60
+  },
+  "byStatus": {
+    "draft": 0,
+    "review": 0,
+    "stable": 60,
+    "deprecated": 0
+  },
+  "categories": 10,
+  "categoriesWithContent": 1,
+  "planned": 100,
+  "remaining": 40,
+  "collections": {
+    "IT": {
+      "id": "UPL-IT",
+      "slug": "it-programming-technology",
+      "available": 60,
+      "planned": 100,
+      "remaining": 40,
+      "subcategories": 10,
+      "completedSubcategories": 6,
+      "bySubcategory": {
+        "web-development": {
+          "available": 10,
+          "planned": 10
+        },
+        "mobile-development": {
+          "available": 10,
+          "planned": 10
+        },
+        "backend-api": {
+          "available": 10,
+          "planned": 10
+        },
+        "cybersecurity": {
+          "available": 10,
+          "planned": 10
+        },
+        "devops-cloud-infrastructure": {
+          "available": 10,
+          "planned": 10
+        },
+        "databases-data-engineering": {
+          "available": 10,
+          "planned": 10
+        },
+        "ai-llm-automation": {
+          "available": 0,
+          "planned": 10
+        },
+        "testing-qa-reliability": {
+          "available": 0,
+          "planned": 10
+        },
+        "ux-ui-product-development": {
+          "available": 0,
+          "planned": 10
+        },
+        "desktop-game-systems-embedded": {
+          "available": 0,
+          "planned": 10
+        }
+      }
+    },
+    "BIZ": {
+      "id": "UPL-BIZ",
+      "slug": "economics-finance-business",
+      "available": 0,
+      "planned": 0,
+      "remaining": 0,
+      "subcategories": 0,
+      "completedSubcategories": 0,
+      "bySubcategory": {}
+    },
+    "LAW": {
+      "id": "UPL-LAW",
+      "slug": "law-administration",
+      "available": 0,
+      "planned": 0,
+      "remaining": 0,
+      "subcategories": 0,
+      "completedSubcategories": 0,
+      "bySubcategory": {}
+    },
+    "HEALTH": {
+      "id": "UPL-HEALTH",
+      "slug": "health-medicine-wellness",
+      "available": 0,
+      "planned": 0,
+      "remaining": 0,
+      "subcategories": 0,
+      "completedSubcategories": 0,
+      "bySubcategory": {}
+    },
+    "EDU": {
+      "id": "UPL-EDU",
+      "slug": "education-learning",
+      "available": 0,
+      "planned": 0,
+      "remaining": 0,
+      "subcategories": 0,
+      "completedSubcategories": 0,
+      "bySubcategory": {}
+    },
+    "SCI": {
+      "id": "UPL-SCI",
+      "slug": "science-research-analysis",
+      "available": 0,
+      "planned": 0,
+      "remaining": 0,
+      "subcategories": 0,
+      "completedSubcategories": 0,
+      "bySubcategory": {}
+    },
+    "CAREER": {
+      "id": "UPL-CAREER",
+      "slug": "career-professional-development",
+      "available": 0,
+      "planned": 0,
+      "remaining": 0,
+      "subcategories": 0,
+      "completedSubcategories": 0,
+      "bySubcategory": {}
+    },
+    "MKT": {
+      "id": "UPL-MKT",
+      "slug": "marketing-sales-communication",
+      "available": 0,
+      "planned": 0,
+      "remaining": 0,
+      "subcategories": 0,
+      "completedSubcategories": 0,
+      "bySubcategory": {}
+    },
+    "PROD": {
+      "id": "UPL-PROD",
+      "slug": "productivity-organization-management",
+      "available": 0,
+      "planned": 0,
+      "remaining": 0,
+      "subcategories": 0,
+      "completedSubcategories": 0,
+      "bySubcategory": {}
+    },
+    "CREATIVE": {
+      "id": "UPL-CREATIVE",
+      "slug": "creativity-design-media",
+      "available": 0,
+      "planned": 0,
+      "remaining": 0,
+      "subcategories": 0,
+      "completedSubcategories": 0,
+      "bySubcategory": {}
+    }
+  }
+}

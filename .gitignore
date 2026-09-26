@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node.js tooling
+node_modules/
+npm-debug.log*
+
+# Temporary / Scratch
+scratch/
+tmp/
+*.tmp
+
+# Note: indexes/ is generated but intentionally committed.

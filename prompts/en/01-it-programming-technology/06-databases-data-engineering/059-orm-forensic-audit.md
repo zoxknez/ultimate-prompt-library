@@ -1,0 +1,414 @@
+---
+id: UPL-IT-059
+number: 59
+slug: orm-forensic-audit
+title: ORM Forensic Audit
+category: IT, Programming & Technology
+category_id: UPL-IT
+subcategory: Databases & Data Engineering
+subcategory_id: databases-data-engineering
+language: en
+version: 1.0.0
+status: stable
+---
+
+# ORM FORENSIC AUDIT
+
+I want an exhaustive forensic audit of the ORM and data-access layer, without assuming the ORM automatically guarantees correctness, security, or performance.
+
+Apply to the actual ORM in use:
+
+- Prisma
+- Drizzle
+- TypeORM
+- Sequelize
+- Hibernate
+- EF Core
+- SQLAlchemy
+- Django ORM
+- Room
+- others
+
+## 1. ORM INVENTORY
+
+```text
+ORM:
+Version:
+Models:
+Migration tool:
+Lazy loading:
+Transactions:
+Raw SQL support:
+Connection pool:
+```
+
+## 2. MODEL -> SCHEMA DRIFT
+
+Compare the ORM model against the live migration and physical database schema definitions.
+
+## 3. NULLABILITY
+
+Code flags attribute as required while the database schema permits nulls, or vice versa.
+
+## 4. DEFAULT
+
+ORM-level defaults vs database-level defaults.
+
+## 5. ENUM
+
+Enum mapping and synchronization across application code and the database.
+
+## 6. RELATION
+
+Foreign key mapping and referential behavior.
+
+## 7. CASCADE
+
+Application-side ORM cascades do not necessarily match database-level cascade triggers.
+
+## 8. ORPHAN REMOVAL
+
+Handling orphaned child records upon parent detachment.
+
+## 9. SOFT DELETE
+
+Default query filter scope enforcement across relationships.
+
+## 10. TENANT SCOPE
+
+Global query middleware, extensions, and hooks enforcing tenant boundaries.
+
+## 11. `findById(id)`
+
+High-value review target if tenant or ownership scoping is required.
+
+## 12. GLOBAL FILTER
+
+Can be bypassed by raw SQL queries or secondary repository interfaces.
+
+## 13. ADMIN BYPASS
+
+Administrative query bypasses must be explicit and auditable.
+
+## 14. MASS ASSIGNMENT
+
+Unsanitized request payloads spread directly into ORM entity creation or updates.
+
+## 15. HIDDEN FIELD
+
+Accidental mutation of role, tenant_id, or owner_id attributes.
+
+## 16. SELECT
+
+Default projection selecting sensitive or internal fields.
+
+## 17. SERIALIZATION
+
+Returning raw ORM entity models directly across API responses.
+
+## 18. LAZY LOADING
+
+Unexpected lazy loading triggering N+1 query patterns.
+
+## 19. EAGER LOADING
+
+Aggressive eager loading causing Cartesian join explosions.
+
+## 20. RELATION INCLUDE
+
+Overfetching unneeded relationship graphs.
+
+## 21. RAW SQL
+
+Parameterization and injection risks within raw query interfaces.
+
+## 22. RAW IDENTIFIER
+
+Dynamic concatenation in sort clauses, table names, or column identifiers.
+
+## 23. UNSAFE ESCAPE API
+
+ORM-specific unsafe string escaping functions.
+
+## 24. TRANSACTION API
+
+Does the callback truly execute against the transactional client instance?
+
+## 25. TRANSACTION LEAK
+
+Code invoking the global ORM client within an open transaction callback.
+
+Example:
+
+```text
+transaction(tx => {
+  tx.order.update(...)
+  globalClient.audit.create(...)
+})
+```
+
+The second write may not participate in the transaction.
+
+## 26. ASYNC TRANSACTION
+
+Awaiting external network calls within open database transactions.
+
+## 27. NESTED TRANSACTION
+
+ORM-specific nested transaction and savepoint semantics.
+
+## 28. SAVEPOINT
+
+Savepoint handling during partial transaction failures.
+
+## 29. ISOLATION
+
+Actual transaction isolation level configurations.
+
+## 30. RETRY
+
+Automatic client-side query retry behaviors on transient errors.
+
+## 31. UPSERT
+
+Concurrency semantics and race condition handling during upserts.
+
+## 32. `connectOrCreate`
+
+Potential race conditions depending on underlying unique constraints.
+
+## 33. FIRST OR CREATE
+
+Non-atomic check-then-insert patterns.
+
+## 34. BULK CREATE
+
+Handling partial failures during multi-row insertions.
+
+## 35. `updateMany/deleteMany`
+
+Missing or malformed WHERE filter conditions.
+
+## 36. EMPTY FILTER
+
+Critical failure scenario:
+
+```text
+deleteMany({})
+```
+
+## 37. UNDEFINED FILTER
+
+Some ORMs silently ignore undefined filter properties.
+
+Severe security and correctness risk.
+
+## 38. NULL VS UNDEFINED
+
+Critical semantic differences in JavaScript/TypeScript ORMs.
+
+## 39. DYNAMIC WHERE
+
+Spreading arbitrary request objects into query predicates.
+
+## 40. DYNAMIC ORDER
+
+Dynamic sorting without column whitelist validation.
+
+## 41. PAGINATION
+
+ORM offset pagination implementation efficiency.
+
+## 42. COUNT
+
+Executing expensive full counts during pagination.
+
+## 43. RELATION COUNT
+
+N+1 queries executed to compute related record counts.
+
+## 44. QUERY GENERATION
+
+Inspect actual generated SQL rather than relying on ORM DSL intent.
+
+## 45. PARAMETER TYPES
+
+Implicit type casting causing index bypasses.
+
+## 46. DATE CONVERSION
+
+Timezone conversion handling.
+
+## 47. DECIMAL
+
+ORM returning decimal values as strings or specialized objects.
+
+## 48. BIGINT
+
+JavaScript 64-bit integer overflow issues.
+
+## 49. JSON
+
+Typed code models vs arbitrary runtime JSON payloads.
+
+## 50. MIGRATION AUTO-GENERATION
+
+Review the physical SQL generated by automated migration tools.
+
+## 51. SCHEMA PUSH/SYNC
+
+Destructive schema synchronization running against production databases.
+
+## 52. CLIENT GENERATION
+
+Stale or out-of-sync generated ORM client code.
+
+## 53. CONNECTION MANAGEMENT
+
+Singleton clients vs per-request client instantiations.
+
+## 54. SERVERLESS
+
+Spawning fresh ORM connection pools on every serverless invocation exhausting the database.
+
+## 55. HOT RELOAD
+
+Development server hot-reloading leaking database connections.
+
+## 56. CONNECTION LEAK
+
+Leaked connections holding pool slots indefinitely.
+
+## 57. POOL
+
+Driver-level pooling vs ORM-level pool configurations.
+
+## 58. PREPARED STATEMENT
+
+Compatibility with connection pooling proxies (e.g., PgBouncer).
+
+## 59. QUERY TIMEOUT
+
+Missing query execution timeouts.
+
+## 60. CANCELLATION
+
+Handling query cancellation upon client disconnect.
+
+## 61. ERROR MAPPING
+
+Accurate mapping of database constraint, foreign key, and deadlock errors.
+
+## 62. RETRYABLE ERROR
+
+Identifying genuinely transient, retryable database errors.
+
+## 63. NOT FOUND
+
+Consistent handling of entity not found conditions.
+
+## 64. OPTIMISTIC CONCURRENCY
+
+Version field handling in optimistic locking workflows.
+
+## 65. CHANGE TRACKING
+
+Stale entity state in unit-of-work tracking engines.
+
+## 66. FIRST-LEVEL CACHE
+
+First-level session cache behavior and scope.
+
+## 67. SECOND-LEVEL CACHE
+
+Cache staleness and invalidation failures.
+
+## 68. DIRTY CHECKING
+
+Implicit dirty checking triggering unintended update queries.
+
+## 69. PARTIAL UPDATE
+
+Partial updates inadvertently overwriting concurrent modifications.
+
+## 70. ENTITY MERGE
+
+Merging detached entity graphs into active sessions.
+
+## 71. BATCHING
+
+Verifying whether the ORM truly batches write statements.
+
+## 72. LOGGING
+
+Queries inadvertently logging sensitive PII.
+
+## 73. SENSITIVE PARAMETER LOGGING
+
+Development parameter logging remaining active in production.
+
+## 74. FINDING FORMAT
+
+```text
+ID:
+Severity:
+ORM:
+Model:
+Call site:
+Generated SQL:
+Transaction context:
+Problem:
+Data/security/performance impact:
+Evidence:
+Root cause:
+Fix:
+Regression test:
+```
+
+## 75. OUTPUT
+
+`ORM_FORENSIC_AUDIT.md`
+
+## 76. SECOND PASS
+
+Search repository-wide for:
+
+- raw SQL interfaces
+- unsafe string interpolation
+- findUnique and findById invocations
+- updateMany operations
+- deleteMany operations
+- object spreading into create and update calls
+- transaction callbacks
+- relation includes
+- lazy access
+- queries executed inside loops
+- per-request client initialization
+
+## 77. FINAL QUALITY GATE
+
+Verify actual generated SQL and ORM version-specific semantics prior to raising critical findings.
+
+# FINAL RULE
+
+Looking for:
+
+```text
+transaction(async tx => {
+  await tx.orders.create(...)
+  await sendPayment(...)
+  await prisma.auditLog.create(...)
+})
+
+↓
+auditLog uses global prisma client
+↓
+not part of transaction
+
+↓
+later transaction rollback
+↓
+audit log claims order exists
+↓
+database state diverges
+```

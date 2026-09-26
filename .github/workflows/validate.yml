@@ -1,0 +1,55 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate prompts, translations, links and indexes
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate prompts
+        run: npm run validate:prompts
+
+      - name: Validate translations
+        run: npm run validate:translations
+
+      - name: Validate internal links
+        run: npm run validate:links
+
+      - name: Regenerate indexes and README tables
+        run: npm run generate
+
+      - name: Fail if generated files are out of date
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::Generated files are out of date. Run 'npm run generate' and commit the result."
+            git status --porcelain
+            git --no-pager diff
+            exit 1
+          fi
