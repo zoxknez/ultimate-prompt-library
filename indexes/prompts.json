@@ -4,7 +4,7 @@
     "en",
     "sr"
   ],
-  "count": 110,
+  "count": 120,
   "prompts": [
     {
       "id": "UPL-IT-001",
@@ -2974,6 +2974,276 @@
       "files": {
         "en": "prompts/en/02-economics-finance-business/01-financial-analysis-corporate-finance/010-corporate-finance-decision-analysis.md",
         "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/01-financial-analysis-corporate-finance/010-corporate-finance-decision-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-011",
+      "number": 11,
+      "slug": "ultimate-accounting-system-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "accounting-reporting-financial-control",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate Accounting System Audit",
+        "sr": "Ultimate Accounting System Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/02-accounting-reporting-financial-control/011-ultimate-accounting-system-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/02-accounting-reporting-financial-control/011-ultimate-accounting-system-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-012",
+      "number": 12,
+      "slug": "general-ledger-forensic-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "accounting-reporting-financial-control",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "General Ledger Forensic Audit",
+        "sr": "General Ledger Forensic Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/02-accounting-reporting-financial-control/012-general-ledger-forensic-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/02-accounting-reporting-financial-control/012-general-ledger-forensic-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-013",
+      "number": 13,
+      "slug": "revenue-recognition-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "accounting-reporting-financial-control",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Revenue Recognition Audit",
+        "sr": "Revenue Recognition Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/02-accounting-reporting-financial-control/013-revenue-recognition-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/02-accounting-reporting-financial-control/013-revenue-recognition-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-014",
+      "number": 14,
+      "slug": "expense-and-cost-accounting-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "accounting-reporting-financial-control",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Expense & Cost Accounting Audit",
+        "sr": "Expense & Cost Accounting Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/02-accounting-reporting-financial-control/014-expense-and-cost-accounting-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/02-accounting-reporting-financial-control/014-expense-and-cost-accounting-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-015",
+      "number": 15,
+      "slug": "accounts-receivable-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "accounting-reporting-financial-control",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Accounts Receivable Audit",
+        "sr": "Accounts Receivable Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/02-accounting-reporting-financial-control/015-accounts-receivable-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/02-accounting-reporting-financial-control/015-accounts-receivable-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-016",
+      "number": 16,
+      "slug": "accounts-payable-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "accounting-reporting-financial-control",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Accounts Payable Audit",
+        "sr": "Accounts Payable Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/02-accounting-reporting-financial-control/016-accounts-payable-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/02-accounting-reporting-financial-control/016-accounts-payable-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-017",
+      "number": 17,
+      "slug": "financial-close-process-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "accounting-reporting-financial-control",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Financial Close Process Audit",
+        "sr": "Financial Close Process Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/02-accounting-reporting-financial-control/017-financial-close-process-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/02-accounting-reporting-financial-control/017-financial-close-process-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-018",
+      "number": 18,
+      "slug": "management-reporting-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "accounting-reporting-financial-control",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Management Reporting Audit",
+        "sr": "Management Reporting Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/02-accounting-reporting-financial-control/018-management-reporting-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/02-accounting-reporting-financial-control/018-management-reporting-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-019",
+      "number": 19,
+      "slug": "internal-financial-controls-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "accounting-reporting-financial-control",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Internal Financial Controls Audit",
+        "sr": "Internal Financial Controls Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/02-accounting-reporting-financial-control/019-internal-financial-controls-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/02-accounting-reporting-financial-control/019-internal-financial-controls-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-020",
+      "number": 20,
+      "slug": "accounting-anomaly-and-misstatement-hunter",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "accounting-reporting-financial-control",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Accounting Anomaly & Misstatement Hunter",
+        "sr": "Accounting Anomaly & Misstatement Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/02-accounting-reporting-financial-control/020-accounting-anomaly-and-misstatement-hunter.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/02-accounting-reporting-financial-control/020-accounting-anomaly-and-misstatement-hunter.md"
       }
     }
   ]
