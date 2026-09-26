@@ -157,20 +157,20 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 ### 09 · [Risk, Compliance & Business Resilience](09-risk-compliance-business-resilience/README.md)
 
-0 / 10 available
+10 / 10 available
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 081 | Ultimate Enterprise Risk Audit | - | - | Planned |
-| 082 | Business Risk Register Generator | - | - | Planned |
-| 083 | Financial Risk Audit | - | - | Planned |
-| 084 | Operational Risk Audit | - | - | Planned |
-| 085 | Third-Party Business Risk Audit | - | - | Planned |
-| 086 | Fraud Risk Assessment | - | - | Planned |
-| 087 | Compliance Control Framework Audit | - | - | Planned |
-| 088 | Business Continuity & Resilience Audit | - | - | Planned |
-| 089 | Crisis Management Readiness Audit | - | - | Planned |
-| 090 | Enterprise Risk Scenario Simulation | - | - | Planned |
+| 081 | [Ultimate Enterprise Risk Audit](09-risk-compliance-business-resilience/081-ultimate-enterprise-risk-audit.md) | [EN](09-risk-compliance-business-resilience/081-ultimate-enterprise-risk-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/081-ultimate-enterprise-risk-audit.md) | Available |
+| 082 | [Business Risk Register Generator](09-risk-compliance-business-resilience/082-business-risk-register-generator.md) | [EN](09-risk-compliance-business-resilience/082-business-risk-register-generator.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/082-business-risk-register-generator.md) | Available |
+| 083 | [Financial Risk Audit](09-risk-compliance-business-resilience/083-financial-risk-audit.md) | [EN](09-risk-compliance-business-resilience/083-financial-risk-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/083-financial-risk-audit.md) | Available |
+| 084 | [Operational Risk Audit](09-risk-compliance-business-resilience/084-operational-risk-audit.md) | [EN](09-risk-compliance-business-resilience/084-operational-risk-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/084-operational-risk-audit.md) | Available |
+| 085 | [Third-Party Business Risk Audit](09-risk-compliance-business-resilience/085-third-party-business-risk-audit.md) | [EN](09-risk-compliance-business-resilience/085-third-party-business-risk-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/085-third-party-business-risk-audit.md) | Available |
+| 086 | [Fraud Risk Assessment](09-risk-compliance-business-resilience/086-fraud-risk-assessment.md) | [EN](09-risk-compliance-business-resilience/086-fraud-risk-assessment.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/086-fraud-risk-assessment.md) | Available |
+| 087 | [Compliance Control Framework Audit](09-risk-compliance-business-resilience/087-compliance-control-framework-audit.md) | [EN](09-risk-compliance-business-resilience/087-compliance-control-framework-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/087-compliance-control-framework-audit.md) | Available |
+| 088 | [Business Continuity & Resilience Audit](09-risk-compliance-business-resilience/088-business-continuity-and-resilience-audit.md) | [EN](09-risk-compliance-business-resilience/088-business-continuity-and-resilience-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/088-business-continuity-and-resilience-audit.md) | Available |
+| 089 | [Crisis Management Readiness Audit](09-risk-compliance-business-resilience/089-crisis-management-readiness-audit.md) | [EN](09-risk-compliance-business-resilience/089-crisis-management-readiness-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/089-crisis-management-readiness-audit.md) | Available |
+| 090 | [Enterprise Risk Scenario Simulation](09-risk-compliance-business-resilience/090-enterprise-risk-scenario-simulation.md) | [EN](09-risk-compliance-business-resilience/090-enterprise-risk-scenario-simulation.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/090-enterprise-risk-scenario-simulation.md) | Available |
 
 ### 10 · [Investment, Valuation & Due Diligence](10-investment-valuation-due-diligence/README.md)
 

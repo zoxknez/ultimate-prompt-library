@@ -4,7 +4,7 @@
     "en",
     "sr"
   ],
-  "count": 180,
+  "count": 190,
   "prompts": [
     {
       "id": "UPL-IT-001",
@@ -4864,6 +4864,276 @@
       "files": {
         "en": "prompts/en/02-economics-finance-business/08-management-leadership-organization/080-leadership-risk-and-dependency-audit.md",
         "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/08-management-leadership-organization/080-leadership-risk-and-dependency-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-081",
+      "number": 81,
+      "slug": "ultimate-enterprise-risk-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "risk-compliance-business-resilience",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate Enterprise Risk Audit",
+        "sr": "Ultimate Enterprise Risk Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/09-risk-compliance-business-resilience/081-ultimate-enterprise-risk-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/081-ultimate-enterprise-risk-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-082",
+      "number": 82,
+      "slug": "business-risk-register-generator",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "risk-compliance-business-resilience",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Business Risk Register Generator",
+        "sr": "Business Risk Register Generator"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/09-risk-compliance-business-resilience/082-business-risk-register-generator.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/082-business-risk-register-generator.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-083",
+      "number": 83,
+      "slug": "financial-risk-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "risk-compliance-business-resilience",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Financial Risk Audit",
+        "sr": "Financial Risk Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/09-risk-compliance-business-resilience/083-financial-risk-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/083-financial-risk-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-084",
+      "number": 84,
+      "slug": "operational-risk-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "risk-compliance-business-resilience",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Operational Risk Audit",
+        "sr": "Operational Risk Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/09-risk-compliance-business-resilience/084-operational-risk-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/084-operational-risk-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-085",
+      "number": 85,
+      "slug": "third-party-business-risk-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "risk-compliance-business-resilience",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Third-Party Business Risk Audit",
+        "sr": "Third-Party Business Risk Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/09-risk-compliance-business-resilience/085-third-party-business-risk-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/085-third-party-business-risk-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-086",
+      "number": 86,
+      "slug": "fraud-risk-assessment",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "risk-compliance-business-resilience",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Fraud Risk Assessment",
+        "sr": "Fraud Risk Assessment"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/09-risk-compliance-business-resilience/086-fraud-risk-assessment.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/086-fraud-risk-assessment.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-087",
+      "number": 87,
+      "slug": "compliance-control-framework-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "risk-compliance-business-resilience",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Compliance Control Framework Audit",
+        "sr": "Compliance Control Framework Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/09-risk-compliance-business-resilience/087-compliance-control-framework-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/087-compliance-control-framework-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-088",
+      "number": 88,
+      "slug": "business-continuity-and-resilience-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "risk-compliance-business-resilience",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Business Continuity & Resilience Audit",
+        "sr": "Business Continuity & Resilience Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/09-risk-compliance-business-resilience/088-business-continuity-and-resilience-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/088-business-continuity-and-resilience-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-089",
+      "number": 89,
+      "slug": "crisis-management-readiness-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "risk-compliance-business-resilience",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Crisis Management Readiness Audit",
+        "sr": "Crisis Management Readiness Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/09-risk-compliance-business-resilience/089-crisis-management-readiness-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/089-crisis-management-readiness-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-090",
+      "number": 90,
+      "slug": "enterprise-risk-scenario-simulation",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "risk-compliance-business-resilience",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Enterprise Risk Scenario Simulation",
+        "sr": "Enterprise Risk Scenario Simulation"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/09-risk-compliance-business-resilience/090-enterprise-risk-scenario-simulation.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/09-risk-compliance-business-resilience/090-enterprise-risk-scenario-simulation.md"
       }
     }
   ]
