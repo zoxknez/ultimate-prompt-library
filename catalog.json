@@ -3459,8 +3459,1130 @@
         "en": "Health literacy, medicine, nutrition, physical activity, mental well-being and healthcare work.",
         "sr": "Zdravstvena pismenost, medicina, ishrana, fizička aktivnost, mentalno blagostanje i rad u zdravstvu."
       },
-      "subcategories": [],
-      "prompts": []
+      "subcategories": [
+        {
+          "id": "evidence-based-health-research",
+          "order": 1,
+          "names": {
+            "en": "Evidence-Based Health & Clinical Research",
+            "sr": "Medicina zasnovana na dokazima i klinička istraživanja"
+          },
+          "descriptions": {
+            "en": "Evidence appraisal, guidelines, systematic reviews, clinical questions, benefit-harm analysis and medical literature synthesis.",
+            "sr": "Procena dokaza, smernice, sistematski pregledi, klinička pitanja, odnos koristi i štete i sinteza medicinske literature."
+          }
+        },
+        {
+          "id": "symptoms-triage-care-navigation",
+          "order": 2,
+          "names": {
+            "en": "Symptoms, Triage & Care Navigation",
+            "sr": "Simptomi, trijaža i usmeravanje kroz zdravstveni sistem"
+          },
+          "descriptions": {
+            "en": "Symptom assessment, urgency, red flags, care pathways, appointment preparation and escalation.",
+            "sr": "Procena simptoma, hitnost, crvene zastavice, putevi nege, priprema pregleda i eskalacija."
+          }
+        },
+        {
+          "id": "medications-treatment-safety",
+          "order": 3,
+          "names": {
+            "en": "Medications & Treatment Safety",
+            "sr": "Lekovi i bezbednost terapije"
+          },
+          "descriptions": {
+            "en": "Medication reconciliation, interaction risk, treatment comparison, adherence, adverse effects and safety monitoring.",
+            "sr": "Usklađivanje terapije, interakcije, poređenje tretmana, adherenca, neželjena dejstva i praćenje bezbednosti."
+          }
+        },
+        {
+          "id": "diagnostics-labs-medical-tests",
+          "order": 4,
+          "names": {
+            "en": "Diagnostics, Labs & Medical Tests",
+            "sr": "Dijagnostika, laboratorija i medicinski testovi"
+          },
+          "descriptions": {
+            "en": "Test interpretation, diagnostic accuracy, pretest probability, screening, imaging and laboratory quality.",
+            "sr": "Tumačenje testova, dijagnostička tačnost, pretest verovatnoća, skrining, snimanja i kvalitet laboratorijskih nalaza."
+          }
+        },
+        {
+          "id": "chronic-disease-long-term-care",
+          "order": 5,
+          "names": {
+            "en": "Chronic Disease & Long-Term Care",
+            "sr": "Hronične bolesti i dugoročna nega"
+          },
+          "descriptions": {
+            "en": "Long-term condition management, monitoring, multimorbidity, self-management, care plans and prevention of complications.",
+            "sr": "Dugoročno upravljanje bolestima, praćenje, multimorbiditet, samopomoć, planovi nege i prevencija komplikacija."
+          }
+        },
+        {
+          "id": "nutrition-metabolic-health",
+          "order": 6,
+          "names": {
+            "en": "Nutrition & Metabolic Health",
+            "sr": "Ishrana i metaboličko zdravlje"
+          },
+          "descriptions": {
+            "en": "Nutrition evidence, dietary patterns, metabolic risk, weight management, deficiencies and food-health claims.",
+            "sr": "Dokazi o ishrani, obrasci ishrane, metabolički rizik, upravljanje telesnom masom, deficiti i zdravstvene tvrdnje o hrani."
+          }
+        },
+        {
+          "id": "fitness-exercise-rehabilitation",
+          "order": 7,
+          "names": {
+            "en": "Fitness, Exercise & Rehabilitation",
+            "sr": "Fitnes, vežbanje i rehabilitacija"
+          },
+          "descriptions": {
+            "en": "Exercise planning, physical activity, load management, recovery, rehabilitation and return to activity.",
+            "sr": "Planiranje vežbanja, fizička aktivnost, upravljanje opterećenjem, oporavak, rehabilitacija i povratak aktivnosti."
+          }
+        },
+        {
+          "id": "mental-health-behavioral-wellbeing",
+          "order": 8,
+          "names": {
+            "en": "Mental Health & Behavioral Wellbeing",
+            "sr": "Mentalno zdravlje i bihejvioralno blagostanje"
+          },
+          "descriptions": {
+            "en": "Mental health literacy, symptom support, behavioral strategies, care navigation, crisis recognition and wellbeing.",
+            "sr": "Pismenost o mentalnom zdravlju, podrška kod simptoma, bihejvioralne strategije, usmeravanje ka nezi, prepoznavanje krize i blagostanje."
+          }
+        },
+        {
+          "id": "public-health-prevention-population",
+          "order": 9,
+          "names": {
+            "en": "Public Health, Prevention & Population Health",
+            "sr": "Javno zdravlje, prevencija i populaciono zdravlje"
+          },
+          "descriptions": {
+            "en": "Vaccination, screening, prevention, epidemiology, risk communication, outbreaks and population interventions.",
+            "sr": "Vakcinacija, skrining, prevencija, epidemiologija, komunikacija rizika, epidemije i populacione intervencije."
+          }
+        },
+        {
+          "id": "healthcare-systems-digital-patient-safety",
+          "order": 10,
+          "names": {
+            "en": "Healthcare Systems, Digital Health & Patient Safety",
+            "sr": "Zdravstveni sistemi, digitalno zdravlje i bezbednost pacijenata"
+          },
+          "descriptions": {
+            "en": "Care quality, patient safety, digital health, AI, health services, workflow design and clinical governance.",
+            "sr": "Kvalitet nege, bezbednost pacijenata, digitalno zdravlje, AI, zdravstvene usluge, dizajn procesa i kliničko upravljanje."
+          }
+        }
+      ],
+      "prompts": [
+        {
+          "id": "UPL-HEALTH-001",
+          "number": 1,
+          "slug": "evidence-based-health-research-audit",
+          "subcategory": "evidence-based-health-research",
+          "title": {
+            "en": "Evidence-Based Health Research Audit",
+            "sr": "Audit zdravstvenog istraživanja zasnovanog na dokazima"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-002",
+          "number": 2,
+          "slug": "clinical-question-pico-builder",
+          "subcategory": "evidence-based-health-research",
+          "title": {
+            "en": "Clinical Question & PICO Builder",
+            "sr": "Izrada kliničkog pitanja i PICO okvira"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-003",
+          "number": 3,
+          "slug": "medical-literature-search-strategy",
+          "subcategory": "evidence-based-health-research",
+          "title": {
+            "en": "Medical Literature Search Strategy",
+            "sr": "Strategija pretrage medicinske literature"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-004",
+          "number": 4,
+          "slug": "systematic-review-critical-appraisal",
+          "subcategory": "evidence-based-health-research",
+          "title": {
+            "en": "Systematic Review Critical Appraisal",
+            "sr": "Kritička procena sistematskog pregleda"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-005",
+          "number": 5,
+          "slug": "randomized-trial-critical-appraisal",
+          "subcategory": "evidence-based-health-research",
+          "title": {
+            "en": "Randomized Trial Critical Appraisal",
+            "sr": "Kritička procena randomizovanog ispitivanja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-006",
+          "number": 6,
+          "slug": "observational-study-bias-audit",
+          "subcategory": "evidence-based-health-research",
+          "title": {
+            "en": "Observational Study & Bias Audit",
+            "sr": "Audit opservacione studije i pristrasnosti"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-007",
+          "number": 7,
+          "slug": "clinical-guideline-quality-audit",
+          "subcategory": "evidence-based-health-research",
+          "title": {
+            "en": "Clinical Guideline Quality Audit",
+            "sr": "Audit kvaliteta kliničke smernice"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-008",
+          "number": 8,
+          "slug": "certainty-of-evidence-grading",
+          "subcategory": "evidence-based-health-research",
+          "title": {
+            "en": "Certainty of Evidence Grading",
+            "sr": "Procena sigurnosti dokaza"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-009",
+          "number": 9,
+          "slug": "benefit-harm-evidence-matrix",
+          "subcategory": "evidence-based-health-research",
+          "title": {
+            "en": "Benefit-Harm Evidence Matrix",
+            "sr": "Matrica koristi, štete i dokaza"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-010",
+          "number": 10,
+          "slug": "medical-claim-verification",
+          "subcategory": "evidence-based-health-research",
+          "title": {
+            "en": "Medical Claim Verification",
+            "sr": "Verifikacija medicinske tvrdnje"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-011",
+          "number": 11,
+          "slug": "symptom-assessment-safety-net",
+          "subcategory": "symptoms-triage-care-navigation",
+          "title": {
+            "en": "Symptom Assessment & Safety Net",
+            "sr": "Procena simptoma i sigurnosna mreža"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-012",
+          "number": 12,
+          "slug": "red-flag-triage-audit",
+          "subcategory": "symptoms-triage-care-navigation",
+          "title": {
+            "en": "Red-Flag Triage Audit",
+            "sr": "Audit trijaže crvenih zastavica"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-013",
+          "number": 13,
+          "slug": "urgent-vs-routine-care-navigator",
+          "subcategory": "symptoms-triage-care-navigation",
+          "title": {
+            "en": "Urgent vs Routine Care Navigator",
+            "sr": "Navigator hitne i rutinske nege"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-014",
+          "number": 14,
+          "slug": "doctor-visit-preparation-builder",
+          "subcategory": "symptoms-triage-care-navigation",
+          "title": {
+            "en": "Doctor Visit Preparation Builder",
+            "sr": "Priprema za pregled kod lekara"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-015",
+          "number": 15,
+          "slug": "symptom-timeline-reconstructor",
+          "subcategory": "symptoms-triage-care-navigation",
+          "title": {
+            "en": "Symptom Timeline Reconstructor",
+            "sr": "Rekonstrukcija vremenske linije simptoma"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-016",
+          "number": 16,
+          "slug": "care-pathway-navigator",
+          "subcategory": "symptoms-triage-care-navigation",
+          "title": {
+            "en": "Care Pathway Navigator",
+            "sr": "Navigator puta kroz zdravstvenu negu"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-017",
+          "number": 17,
+          "slug": "second-opinion-preparation",
+          "subcategory": "symptoms-triage-care-navigation",
+          "title": {
+            "en": "Second Opinion Preparation",
+            "sr": "Priprema za drugo medicinsko mišljenje"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-018",
+          "number": 18,
+          "slug": "post-discharge-warning-signs-plan",
+          "subcategory": "symptoms-triage-care-navigation",
+          "title": {
+            "en": "Post-Discharge Warning Signs Plan",
+            "sr": "Plan upozoravajućih znakova nakon otpusta"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-019",
+          "number": 19,
+          "slug": "pediatric-symptom-safety-framework",
+          "subcategory": "symptoms-triage-care-navigation",
+          "title": {
+            "en": "Pediatric Symptom Safety Framework",
+            "sr": "Bezbednosni okvir za simptome kod dece"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-020",
+          "number": 20,
+          "slug": "older-adult-symptom-risk-framework",
+          "subcategory": "symptoms-triage-care-navigation",
+          "title": {
+            "en": "Older Adult Symptom Risk Framework",
+            "sr": "Okvir rizika simptoma kod starijih osoba"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-021",
+          "number": 21,
+          "slug": "medication-reconciliation-audit",
+          "subcategory": "medications-treatment-safety",
+          "title": {
+            "en": "Medication Reconciliation Audit",
+            "sr": "Audit usklađivanja terapije"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-022",
+          "number": 22,
+          "slug": "drug-interaction-risk-review",
+          "subcategory": "medications-treatment-safety",
+          "title": {
+            "en": "Drug Interaction Risk Review",
+            "sr": "Pregled rizika interakcija lekova"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-023",
+          "number": 23,
+          "slug": "treatment-options-evidence-comparison",
+          "subcategory": "medications-treatment-safety",
+          "title": {
+            "en": "Treatment Options Evidence Comparison",
+            "sr": "Poređenje dokaza o opcijama lečenja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-024",
+          "number": 24,
+          "slug": "adverse-effect-assessment",
+          "subcategory": "medications-treatment-safety",
+          "title": {
+            "en": "Adverse Effect Assessment",
+            "sr": "Procena neželjenih dejstava"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-025",
+          "number": 25,
+          "slug": "medication-adherence-barrier-analysis",
+          "subcategory": "medications-treatment-safety",
+          "title": {
+            "en": "Medication Adherence Barrier Analysis",
+            "sr": "Analiza prepreka adherenci terapiji"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-026",
+          "number": 26,
+          "slug": "polypharmacy-risk-audit",
+          "subcategory": "medications-treatment-safety",
+          "title": {
+            "en": "Polypharmacy Risk Audit",
+            "sr": "Audit rizika polifarmacije"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-027",
+          "number": 27,
+          "slug": "dose-instruction-safety-check",
+          "subcategory": "medications-treatment-safety",
+          "title": {
+            "en": "Dose & Instruction Safety Check",
+            "sr": "Bezbednosna provera doze i uputstva"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-028",
+          "number": 28,
+          "slug": "otc-medication-safety-review",
+          "subcategory": "medications-treatment-safety",
+          "title": {
+            "en": "OTC Medication Safety Review",
+            "sr": "Bezbednosni pregled lekova bez recepta"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-029",
+          "number": 29,
+          "slug": "treatment-monitoring-plan",
+          "subcategory": "medications-treatment-safety",
+          "title": {
+            "en": "Treatment Monitoring Plan",
+            "sr": "Plan praćenja terapije"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-030",
+          "number": 30,
+          "slug": "medication-change-question-builder",
+          "subcategory": "medications-treatment-safety",
+          "title": {
+            "en": "Medication Change Question Builder",
+            "sr": "Pitanja za promenu terapije"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-031",
+          "number": 31,
+          "slug": "lab-result-interpretation-framework",
+          "subcategory": "diagnostics-labs-medical-tests",
+          "title": {
+            "en": "Lab Result Interpretation Framework",
+            "sr": "Okvir za tumačenje laboratorijskih nalaza"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-032",
+          "number": 32,
+          "slug": "diagnostic-test-accuracy-analyzer",
+          "subcategory": "diagnostics-labs-medical-tests",
+          "title": {
+            "en": "Diagnostic Test Accuracy Analyzer",
+            "sr": "Analiza tačnosti dijagnostičkog testa"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-033",
+          "number": 33,
+          "slug": "pretest-posttest-probability-builder",
+          "subcategory": "diagnostics-labs-medical-tests",
+          "title": {
+            "en": "Pretest & Posttest Probability Builder",
+            "sr": "Izrada pretest i posttest verovatnoće"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-034",
+          "number": 34,
+          "slug": "screening-test-benefit-harm-audit",
+          "subcategory": "diagnostics-labs-medical-tests",
+          "title": {
+            "en": "Screening Test Benefit-Harm Audit",
+            "sr": "Audit koristi i štete skrining testa"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-035",
+          "number": 35,
+          "slug": "medical-imaging-report-explainer",
+          "subcategory": "diagnostics-labs-medical-tests",
+          "title": {
+            "en": "Medical Imaging Report Explainer",
+            "sr": "Objašnjenje izveštaja medicinskog snimanja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-036",
+          "number": 36,
+          "slug": "reference-range-context-audit",
+          "subcategory": "diagnostics-labs-medical-tests",
+          "title": {
+            "en": "Reference Range Context Audit",
+            "sr": "Audit konteksta referentnih vrednosti"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-037",
+          "number": 37,
+          "slug": "false-positive-false-negative-analyzer",
+          "subcategory": "diagnostics-labs-medical-tests",
+          "title": {
+            "en": "False Positive & False Negative Analyzer",
+            "sr": "Analiza lažno pozitivnih i lažno negativnih rezultata"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-038",
+          "number": 38,
+          "slug": "serial-lab-trend-analyzer",
+          "subcategory": "diagnostics-labs-medical-tests",
+          "title": {
+            "en": "Serial Lab Trend Analyzer",
+            "sr": "Analiza trenda serijskih laboratorijskih nalaza"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-039",
+          "number": 39,
+          "slug": "diagnostic-workup-gap-analysis",
+          "subcategory": "diagnostics-labs-medical-tests",
+          "title": {
+            "en": "Diagnostic Workup Gap Analysis",
+            "sr": "Analiza praznina u dijagnostičkoj obradi"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-040",
+          "number": 40,
+          "slug": "test-preparation-quality-check",
+          "subcategory": "diagnostics-labs-medical-tests",
+          "title": {
+            "en": "Medical Test Preparation Quality Check",
+            "sr": "Provera pripreme za medicinski test"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-041",
+          "number": 41,
+          "slug": "chronic-care-plan-builder",
+          "subcategory": "chronic-disease-long-term-care",
+          "title": {
+            "en": "Chronic Care Plan Builder",
+            "sr": "Izrada plana za hroničnu bolest"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-042",
+          "number": 42,
+          "slug": "multimorbidity-priority-mapper",
+          "subcategory": "chronic-disease-long-term-care",
+          "title": {
+            "en": "Multimorbidity Priority Mapper",
+            "sr": "Mapa prioriteta kod multimorbiditeta"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-043",
+          "number": 43,
+          "slug": "self-monitoring-plan-audit",
+          "subcategory": "chronic-disease-long-term-care",
+          "title": {
+            "en": "Self-Monitoring Plan Audit",
+            "sr": "Audit plana samopraćenja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-044",
+          "number": 44,
+          "slug": "chronic-disease-red-flag-plan",
+          "subcategory": "chronic-disease-long-term-care",
+          "title": {
+            "en": "Chronic Disease Red-Flag Plan",
+            "sr": "Plan crvenih zastavica kod hronične bolesti"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-045",
+          "number": 45,
+          "slug": "care-goal-shared-decision-builder",
+          "subcategory": "chronic-disease-long-term-care",
+          "title": {
+            "en": "Care Goal & Shared Decision Builder",
+            "sr": "Izrada ciljeva nege i zajedničkog odlučivanja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-046",
+          "number": 46,
+          "slug": "complication-prevention-audit",
+          "subcategory": "chronic-disease-long-term-care",
+          "title": {
+            "en": "Complication Prevention Audit",
+            "sr": "Audit prevencije komplikacija"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-047",
+          "number": 47,
+          "slug": "care-plan-medication-alignment",
+          "subcategory": "chronic-disease-long-term-care",
+          "title": {
+            "en": "Care Plan & Medication Alignment",
+            "sr": "Usklađivanje plana nege i terapije"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-048",
+          "number": 48,
+          "slug": "long-term-monitoring-schedule",
+          "subcategory": "chronic-disease-long-term-care",
+          "title": {
+            "en": "Long-Term Monitoring Schedule",
+            "sr": "Raspored dugoročnog praćenja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-049",
+          "number": 49,
+          "slug": "specialist-coordination-map",
+          "subcategory": "chronic-disease-long-term-care",
+          "title": {
+            "en": "Specialist Coordination Map",
+            "sr": "Mapa koordinacije specijalista"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-050",
+          "number": 50,
+          "slug": "chronic-condition-evidence-update",
+          "subcategory": "chronic-disease-long-term-care",
+          "title": {
+            "en": "Chronic Condition Evidence Update",
+            "sr": "Ažuriranje dokaza za hronično stanje"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-051",
+          "number": 51,
+          "slug": "nutrition-evidence-audit",
+          "subcategory": "nutrition-metabolic-health",
+          "title": {
+            "en": "Nutrition Evidence Audit",
+            "sr": "Audit dokaza o ishrani"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-052",
+          "number": 52,
+          "slug": "dietary-pattern-comparison",
+          "subcategory": "nutrition-metabolic-health",
+          "title": {
+            "en": "Dietary Pattern Evidence Comparison",
+            "sr": "Poređenje dokaza o obrascima ishrane"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-053",
+          "number": 53,
+          "slug": "weight-management-evidence-plan",
+          "subcategory": "nutrition-metabolic-health",
+          "title": {
+            "en": "Weight Management Evidence Plan",
+            "sr": "Plan upravljanja telesnom masom zasnovan na dokazima"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-054",
+          "number": 54,
+          "slug": "micronutrient-deficiency-assessment",
+          "subcategory": "nutrition-metabolic-health",
+          "title": {
+            "en": "Micronutrient Deficiency Assessment",
+            "sr": "Procena rizika deficita mikronutrijenata"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-055",
+          "number": 55,
+          "slug": "food-label-health-claim-audit",
+          "subcategory": "nutrition-metabolic-health",
+          "title": {
+            "en": "Food Label & Health Claim Audit",
+            "sr": "Audit deklaracije hrane i zdravstvenih tvrdnji"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-056",
+          "number": 56,
+          "slug": "metabolic-risk-factor-mapper",
+          "subcategory": "nutrition-metabolic-health",
+          "title": {
+            "en": "Metabolic Risk Factor Mapper",
+            "sr": "Mapa metaboličkih faktora rizika"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-057",
+          "number": 57,
+          "slug": "protein-energy-needs-estimator-framework",
+          "subcategory": "nutrition-metabolic-health",
+          "title": {
+            "en": "Protein & Energy Needs Framework",
+            "sr": "Okvir za procenu potreba za proteinima i energijom"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-058",
+          "number": 58,
+          "slug": "supplement-evidence-safety-audit",
+          "subcategory": "nutrition-metabolic-health",
+          "title": {
+            "en": "Supplement Evidence & Safety Audit",
+            "sr": "Audit dokaza i bezbednosti suplemenata"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-059",
+          "number": 59,
+          "slug": "nutrition-plan-medical-condition-check",
+          "subcategory": "nutrition-metabolic-health",
+          "title": {
+            "en": "Nutrition Plan Medical-Condition Check",
+            "sr": "Provera plana ishrane kod zdravstvenog stanja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-060",
+          "number": 60,
+          "slug": "dietary-adherence-barrier-analysis",
+          "subcategory": "nutrition-metabolic-health",
+          "title": {
+            "en": "Dietary Adherence Barrier Analysis",
+            "sr": "Analiza prepreka pridržavanju ishrane"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-061",
+          "number": 61,
+          "slug": "exercise-readiness-safety-screen",
+          "subcategory": "fitness-exercise-rehabilitation",
+          "title": {
+            "en": "Exercise Readiness & Safety Screen",
+            "sr": "Bezbednosni screening spremnosti za vežbanje"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-062",
+          "number": 62,
+          "slug": "evidence-based-exercise-plan",
+          "subcategory": "fitness-exercise-rehabilitation",
+          "title": {
+            "en": "Evidence-Based Exercise Plan",
+            "sr": "Plan vežbanja zasnovan na dokazima"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-063",
+          "number": 63,
+          "slug": "training-load-recovery-audit",
+          "subcategory": "fitness-exercise-rehabilitation",
+          "title": {
+            "en": "Training Load & Recovery Audit",
+            "sr": "Audit trenažnog opterećenja i oporavka"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-064",
+          "number": 64,
+          "slug": "injury-return-to-activity-framework",
+          "subcategory": "fitness-exercise-rehabilitation",
+          "title": {
+            "en": "Injury Return-to-Activity Framework",
+            "sr": "Okvir povratka aktivnosti nakon povrede"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-065",
+          "number": 65,
+          "slug": "rehabilitation-plan-evidence-review",
+          "subcategory": "fitness-exercise-rehabilitation",
+          "title": {
+            "en": "Rehabilitation Plan Evidence Review",
+            "sr": "Pregled dokaza za plan rehabilitacije"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-066",
+          "number": 66,
+          "slug": "strength-cardio-balance-builder",
+          "subcategory": "fitness-exercise-rehabilitation",
+          "title": {
+            "en": "Strength, Cardio & Balance Builder",
+            "sr": "Plan snage, kardio treninga i ravnoteže"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-067",
+          "number": 67,
+          "slug": "sedentary-behavior-reduction-plan",
+          "subcategory": "fitness-exercise-rehabilitation",
+          "title": {
+            "en": "Sedentary Behavior Reduction Plan",
+            "sr": "Plan smanjenja sedentarnog ponašanja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-068",
+          "number": 68,
+          "slug": "exercise-symptom-escalation-plan",
+          "subcategory": "fitness-exercise-rehabilitation",
+          "title": {
+            "en": "Exercise Symptom Escalation Plan",
+            "sr": "Plan eskalacije simptoma tokom vežbanja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-069",
+          "number": 69,
+          "slug": "older-adult-physical-activity-plan",
+          "subcategory": "fitness-exercise-rehabilitation",
+          "title": {
+            "en": "Older Adult Physical Activity Plan",
+            "sr": "Plan fizičke aktivnosti za starije osobe"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-070",
+          "number": 70,
+          "slug": "exercise-progress-tracking-framework",
+          "subcategory": "fitness-exercise-rehabilitation",
+          "title": {
+            "en": "Exercise Progress Tracking Framework",
+            "sr": "Okvir praćenja napretka u vežbanju"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-071",
+          "number": 71,
+          "slug": "mental-health-symptom-support-framework",
+          "subcategory": "mental-health-behavioral-wellbeing",
+          "title": {
+            "en": "Mental Health Symptom Support Framework",
+            "sr": "Okvir podrške kod simptoma mentalnog zdravlja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-072",
+          "number": 72,
+          "slug": "mental-health-crisis-recognition-plan",
+          "subcategory": "mental-health-behavioral-wellbeing",
+          "title": {
+            "en": "Mental Health Crisis Recognition Plan",
+            "sr": "Plan prepoznavanja krize mentalnog zdravlja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-073",
+          "number": 73,
+          "slug": "therapy-options-evidence-comparison",
+          "subcategory": "mental-health-behavioral-wellbeing",
+          "title": {
+            "en": "Therapy Options Evidence Comparison",
+            "sr": "Poređenje dokaza o psihoterapijskim opcijama"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-074",
+          "number": 74,
+          "slug": "behavior-change-plan-builder",
+          "subcategory": "mental-health-behavioral-wellbeing",
+          "title": {
+            "en": "Behavior Change Plan Builder",
+            "sr": "Izrada plana promene ponašanja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-075",
+          "number": 75,
+          "slug": "sleep-behavior-evidence-audit",
+          "subcategory": "mental-health-behavioral-wellbeing",
+          "title": {
+            "en": "Sleep & Behavior Evidence Audit",
+            "sr": "Audit dokaza o spavanju i ponašanju"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-076",
+          "number": 76,
+          "slug": "stress-management-evidence-plan",
+          "subcategory": "mental-health-behavioral-wellbeing",
+          "title": {
+            "en": "Stress Management Evidence Plan",
+            "sr": "Plan upravljanja stresom zasnovan na dokazima"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-077",
+          "number": 77,
+          "slug": "anxiety-support-care-navigation",
+          "subcategory": "mental-health-behavioral-wellbeing",
+          "title": {
+            "en": "Anxiety Support & Care Navigation",
+            "sr": "Podrška kod anksioznosti i usmeravanje ka nezi"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-078",
+          "number": 78,
+          "slug": "depression-support-care-navigation",
+          "subcategory": "mental-health-behavioral-wellbeing",
+          "title": {
+            "en": "Depression Support & Care Navigation",
+            "sr": "Podrška kod depresije i usmeravanje ka nezi"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-079",
+          "number": 79,
+          "slug": "substance-use-risk-conversation-framework",
+          "subcategory": "mental-health-behavioral-wellbeing",
+          "title": {
+            "en": "Substance Use Risk Conversation Framework",
+            "sr": "Okvir razgovora o riziku upotrebe supstanci"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-080",
+          "number": 80,
+          "slug": "mental-health-appointment-preparation",
+          "subcategory": "mental-health-behavioral-wellbeing",
+          "title": {
+            "en": "Mental Health Appointment Preparation",
+            "sr": "Priprema za pregled mentalnog zdravlja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-081",
+          "number": 81,
+          "slug": "vaccination-evidence-benefit-risk-audit",
+          "subcategory": "public-health-prevention-population",
+          "title": {
+            "en": "Vaccination Evidence Benefit-Risk Audit",
+            "sr": "Audit dokaza, koristi i rizika vakcinacije"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-082",
+          "number": 82,
+          "slug": "screening-program-evidence-audit",
+          "subcategory": "public-health-prevention-population",
+          "title": {
+            "en": "Screening Program Evidence Audit",
+            "sr": "Audit dokaza programa skrininga"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-083",
+          "number": 83,
+          "slug": "preventive-health-plan-builder",
+          "subcategory": "public-health-prevention-population",
+          "title": {
+            "en": "Preventive Health Plan Builder",
+            "sr": "Izrada plana preventivnog zdravlja"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-084",
+          "number": 84,
+          "slug": "epidemiology-study-interpreter",
+          "subcategory": "public-health-prevention-population",
+          "title": {
+            "en": "Epidemiology Study Interpreter",
+            "sr": "Tumačenje epidemiološke studije"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-085",
+          "number": 85,
+          "slug": "absolute-relative-risk-communicator",
+          "subcategory": "public-health-prevention-population",
+          "title": {
+            "en": "Absolute & Relative Risk Communicator",
+            "sr": "Komunikacija apsolutnog i relativnog rizika"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-086",
+          "number": 86,
+          "slug": "outbreak-information-verification",
+          "subcategory": "public-health-prevention-population",
+          "title": {
+            "en": "Outbreak Information Verification",
+            "sr": "Verifikacija informacija o epidemiji"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-087",
+          "number": 87,
+          "slug": "public-health-misinformation-audit",
+          "subcategory": "public-health-prevention-population",
+          "title": {
+            "en": "Public Health Misinformation Audit",
+            "sr": "Audit dezinformacija u javnom zdravlju"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-088",
+          "number": 88,
+          "slug": "population-health-intervention-review",
+          "subcategory": "public-health-prevention-population",
+          "title": {
+            "en": "Population Health Intervention Review",
+            "sr": "Pregled populacione zdravstvene intervencije"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-089",
+          "number": 89,
+          "slug": "health-inequality-impact-assessment",
+          "subcategory": "public-health-prevention-population",
+          "title": {
+            "en": "Health Inequality Impact Assessment",
+            "sr": "Procena uticaja na zdravstvene nejednakosti"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-090",
+          "number": 90,
+          "slug": "environmental-health-risk-evidence-review",
+          "subcategory": "public-health-prevention-population",
+          "title": {
+            "en": "Environmental Health Risk Evidence Review",
+            "sr": "Pregled dokaza o riziku životne sredine po zdravlje"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-091",
+          "number": 91,
+          "slug": "patient-safety-incident-analysis",
+          "subcategory": "healthcare-systems-digital-patient-safety",
+          "title": {
+            "en": "Patient Safety Incident Analysis",
+            "sr": "Analiza incidenta bezbednosti pacijenta"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-092",
+          "number": 92,
+          "slug": "clinical-workflow-safety-audit",
+          "subcategory": "healthcare-systems-digital-patient-safety",
+          "title": {
+            "en": "Clinical Workflow Safety Audit",
+            "sr": "Audit bezbednosti kliničkog workflow-a"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-093",
+          "number": 93,
+          "slug": "digital-health-evidence-audit",
+          "subcategory": "healthcare-systems-digital-patient-safety",
+          "title": {
+            "en": "Digital Health Evidence Audit",
+            "sr": "Audit dokaza digitalnog zdravstva"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-094",
+          "number": 94,
+          "slug": "health-app-risk-benefit-review",
+          "subcategory": "healthcare-systems-digital-patient-safety",
+          "title": {
+            "en": "Health App Risk-Benefit Review",
+            "sr": "Pregled koristi i rizika zdravstvene aplikacije"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-095",
+          "number": 95,
+          "slug": "clinical-ai-safety-evaluation",
+          "subcategory": "healthcare-systems-digital-patient-safety",
+          "title": {
+            "en": "Clinical AI Safety Evaluation",
+            "sr": "Procena bezbednosti kliničkog AI sistema"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-096",
+          "number": 96,
+          "slug": "medical-device-evidence-review",
+          "subcategory": "healthcare-systems-digital-patient-safety",
+          "title": {
+            "en": "Medical Device Evidence Review",
+            "sr": "Pregled dokaza o medicinskom uređaju"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-097",
+          "number": 97,
+          "slug": "health-service-quality-metrics-audit",
+          "subcategory": "healthcare-systems-digital-patient-safety",
+          "title": {
+            "en": "Health Service Quality Metrics Audit",
+            "sr": "Audit metrika kvaliteta zdravstvene usluge"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-098",
+          "number": 98,
+          "slug": "patient-information-quality-audit",
+          "subcategory": "healthcare-systems-digital-patient-safety",
+          "title": {
+            "en": "Patient Information Quality Audit",
+            "sr": "Audit kvaliteta informacija za pacijente"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-099",
+          "number": 99,
+          "slug": "care-handoff-safety-check",
+          "subcategory": "healthcare-systems-digital-patient-safety",
+          "title": {
+            "en": "Care Handoff Safety Check",
+            "sr": "Bezbednosna provera primopredaje nege"
+          }
+        },
+        {
+          "id": "UPL-HEALTH-100",
+          "number": 100,
+          "slug": "healthcare-root-cause-and-learning-review",
+          "subcategory": "healthcare-systems-digital-patient-safety",
+          "title": {
+            "en": "Healthcare Root Cause & Learning Review",
+            "sr": "Analiza uzroka i učenja u zdravstvu"
+          }
+        }
+      ]
     },
     {
       "id": "UPL-EDU",
