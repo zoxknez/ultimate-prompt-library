@@ -1,6 +1,6 @@
 // SVG artwork for the READMEs: a hero banner and a live statistics card.
 //
-// Design: monochrome (neutral grays, black and white), typographic, no gradients.
+// Design: premium editorial palette with a bright canvas, navy typography, royal blue progress and warm gold accents.
 // Fonts (Inter, Inter Display, JetBrains Mono; SIL OFL 1.1) are subset in assets/fonts/ and
 // embedded as data URIs, so the artwork renders identically on every platform. Text is measured
 // with the glyph advances in assets/fonts/metrics.json, so layout never depends on guesses.
@@ -60,33 +60,35 @@ function font(key, size, extra = '') {
 export const THEMES = {
   light: {
     canvas: '#FFFFFF',
-    border: '#E4E4E7',
-    grid: '#EEEEF0',
-    text: '#09090B',
-    muted: '#52525B',
-    faint: '#A1A1AA',
-    track: '#F1F1F3',
-    fill: '#09090B',
+    border: '#D9E4EE',
+    grid: '#EEF4F8',
+    text: '#102A43',
+    muted: '#536B84',
+    faint: '#B98524',
+    track: '#E8EEF4',
+    fill: '#1769AA',
     card: '#FFFFFF',
-    cardHeader: '#FAFAFA',
-    skeleton: '#F1F1F3',
-    shadow: '#09090B',
-    shadowOpacity: 0.06,
+    cardHeader: '#F4F8FB',
+    skeleton: '#E8EEF4',
+    shadow: '#102A43',
+    shadowOpacity: 0.10,
   },
+  // README artwork intentionally remains bright in dark GitHub mode as well.
+  // The library's visual identity prioritizes readability over theme switching.
   dark: {
-    canvas: '#09090B',
-    border: '#27272A',
-    grid: '#161619',
-    text: '#FAFAFA',
-    muted: '#A1A1AA',
-    faint: '#71717A',
-    track: '#1C1C1F',
-    fill: '#FAFAFA',
-    card: '#0F0F11',
-    cardHeader: '#131316',
-    skeleton: '#1C1C1F',
-    shadow: '#000000',
-    shadowOpacity: 0.5,
+    canvas: '#FFFFFF',
+    border: '#D9E4EE',
+    grid: '#EEF4F8',
+    text: '#102A43',
+    muted: '#536B84',
+    faint: '#B98524',
+    track: '#E8EEF4',
+    fill: '#1769AA',
+    card: '#FFFFFF',
+    cardHeader: '#F4F8FB',
+    skeleton: '#E8EEF4',
+    shadow: '#102A43',
+    shadowOpacity: 0.10,
   },
 };
 
@@ -114,7 +116,7 @@ export function bannerSvg(lang, themeName, stats) {
   const s = BANNER_TEXT[lang] ?? BANNER_TEXT.en;
   const id = `b${themeName[0]}`;
   const W = 1200;
-  const H = 440;
+  const H = 460;
   const X = 72;
 
   // Meta row: items separated by hairlines, measured exactly.
@@ -136,7 +138,7 @@ export function bannerSvg(lang, themeName, stats) {
 
   // Document card on the right.
   const CX = 720;
-  const CY = 64;
+  const CY = 74;
   const CW = 408;
   const CH = 312;
   const fm = [
