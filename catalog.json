@@ -3240,6 +3240,106 @@
             "en": "Public Authority Reason-Giving Audit",
             "sr": "Audit obrazloženja odluke javnog organa"
           }
+        },
+        {
+          "id": "UPL-LAW-081",
+          "number": 81,
+          "slug": "ip-portfolio-audit",
+          "subcategory": "intellectual-property",
+          "title": {
+            "en": "IP Portfolio Audit",
+            "sr": "Audit portfolija intelektualne svojine"
+          }
+        },
+        {
+          "id": "UPL-LAW-082",
+          "number": 82,
+          "slug": "trademark-clearance-and-risk-analysis",
+          "subcategory": "intellectual-property",
+          "title": {
+            "en": "Trademark Clearance & Risk Analysis",
+            "sr": "Analiza dostupnosti i rizika žiga"
+          }
+        },
+        {
+          "id": "UPL-LAW-083",
+          "number": 83,
+          "slug": "copyright-ownership-and-licensing-audit",
+          "subcategory": "intellectual-property",
+          "title": {
+            "en": "Copyright Ownership & Licensing Audit",
+            "sr": "Audit autorskog prava i licenci"
+          }
+        },
+        {
+          "id": "UPL-LAW-084",
+          "number": 84,
+          "slug": "patent-landscape-legal-review",
+          "subcategory": "intellectual-property",
+          "title": {
+            "en": "Patent Landscape Legal Review",
+            "sr": "Pravni pregled patentnog pejzaža"
+          }
+        },
+        {
+          "id": "UPL-LAW-085",
+          "number": 85,
+          "slug": "trade-secret-protection-audit",
+          "subcategory": "intellectual-property",
+          "title": {
+            "en": "Trade Secret Protection Audit",
+            "sr": "Audit zaštite poslovne tajne"
+          }
+        },
+        {
+          "id": "UPL-LAW-086",
+          "number": 86,
+          "slug": "open-source-license-compliance-audit",
+          "subcategory": "intellectual-property",
+          "title": {
+            "en": "Open Source License Compliance Audit",
+            "sr": "Audit usklađenosti open source licenci"
+          }
+        },
+        {
+          "id": "UPL-LAW-087",
+          "number": 87,
+          "slug": "software-ip-assignment-agreement-audit",
+          "subcategory": "intellectual-property",
+          "title": {
+            "en": "Software IP Assignment Agreement Audit",
+            "sr": "Audit ugovora o prenosu softverske IP"
+          }
+        },
+        {
+          "id": "UPL-LAW-088",
+          "number": 88,
+          "slug": "brand-enforcement-and-takedown-analysis",
+          "subcategory": "intellectual-property",
+          "title": {
+            "en": "Brand Enforcement & Takedown Analysis",
+            "sr": "Analiza zaštite brenda i uklanjanja sadržaja"
+          }
+        },
+        {
+          "id": "UPL-LAW-089",
+          "number": 89,
+          "slug": "ip-due-diligence-for-transactions",
+          "subcategory": "intellectual-property",
+          "title": {
+            "en": "IP Due Diligence for Transactions",
+            "sr": "IP due diligence za transakcije"
+          }
+        },
+        {
+          "id": "UPL-LAW-090",
+          "number": 90,
+          "slug": "ai-generated-content-ip-risk-analysis",
+          "subcategory": "intellectual-property",
+          "title": {
+            "en": "AI-Generated Content IP Risk Analysis",
+            "sr": "Analiza IP rizika AI-generisanog sadržaja"
+          }
         }
       ]
     },
