@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
-  "uniquePrompts": 190,
-  "localizedPromptFiles": 380,
+  "uniquePrompts": 200,
+  "localizedPromptFiles": 400,
   "languages": 2,
   "filesByLanguage": {
-    "en": 190,
-    "sr": 190
+    "en": 200,
+    "sr": 200
   },
   "byStatus": {
     "draft": 0,
     "review": 0,
-    "stable": 190,
+    "stable": 200,
     "deprecated": 0
   },
   "categories": 10,
   "categoriesWithContent": 2,
   "planned": 200,
-  "remaining": 10,
+  "remaining": 0,
   "collections": {
     "IT": {
       "id": "UPL-IT",
@@ -72,11 +72,11 @@
     "BIZ": {
       "id": "UPL-BIZ",
       "slug": "economics-finance-business",
-      "available": 90,
+      "available": 100,
       "planned": 100,
-      "remaining": 10,
+      "remaining": 0,
       "subcategories": 10,
-      "completedSubcategories": 9,
+      "completedSubcategories": 10,
       "bySubcategory": {
         "financial-analysis-corporate-finance": {
           "available": 10,
@@ -115,7 +115,7 @@
           "planned": 10
         },
         "investment-valuation-due-diligence": {
-          "available": 0,
+          "available": 10,
           "planned": 10
         }
       }

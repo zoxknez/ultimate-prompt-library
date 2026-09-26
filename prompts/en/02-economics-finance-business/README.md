@@ -174,21 +174,20 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 ### 10 · [Investment, Valuation & Due Diligence](10-investment-valuation-due-diligence/README.md)
 
-0 / 10 available
+10 / 10 available
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 091 | Ultimate Business Valuation | - | - | Planned |
-| 092 | DCF Valuation Audit | - | - | Planned |
-| 093 | Comparable Company Analysis | - | - | Planned |
-| 094 | Investment Thesis Stress Test | - | - | Planned |
-| 095 | Commercial Due Diligence | - | - | Planned |
-| 096 | Financial Due Diligence | - | - | Planned |
-| 097 | M&A Target Analysis | - | - | Planned |
-| 098 | Investment Risk & Downside Analysis | - | - | Planned |
-| 099 | Assumption & Sensitivity Analysis | - | - | Planned |
-| 100 | Full Business Due Diligence Audit | - | - | Planned |
-<!-- UPL:END category-prompts -->
+| 091 | [Ultimate Business Valuation](10-investment-valuation-due-diligence/091-ultimate-business-valuation.md) | [EN](10-investment-valuation-due-diligence/091-ultimate-business-valuation.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/091-ultimate-business-valuation.md) | Available |
+| 092 | [DCF Valuation Audit](10-investment-valuation-due-diligence/092-dcf-valuation-audit.md) | [EN](10-investment-valuation-due-diligence/092-dcf-valuation-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/092-dcf-valuation-audit.md) | Available |
+| 093 | [Comparable Company Analysis](10-investment-valuation-due-diligence/093-comparable-company-analysis.md) | [EN](10-investment-valuation-due-diligence/093-comparable-company-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/093-comparable-company-analysis.md) | Available |
+| 094 | [Investment Thesis Stress Test](10-investment-valuation-due-diligence/094-investment-thesis-stress-test.md) | [EN](10-investment-valuation-due-diligence/094-investment-thesis-stress-test.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/094-investment-thesis-stress-test.md) | Available |
+| 095 | [Commercial Due Diligence](10-investment-valuation-due-diligence/095-commercial-due-diligence.md) | [EN](10-investment-valuation-due-diligence/095-commercial-due-diligence.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/095-commercial-due-diligence.md) | Available |
+| 096 | [Financial Due Diligence](10-investment-valuation-due-diligence/096-financial-due-diligence.md) | [EN](10-investment-valuation-due-diligence/096-financial-due-diligence.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/096-financial-due-diligence.md) | Available |
+| 097 | [M&A Target Analysis](10-investment-valuation-due-diligence/097-ma-target-analysis.md) | [EN](10-investment-valuation-due-diligence/097-ma-target-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/097-ma-target-analysis.md) | Available |
+| 098 | [Investment Risk & Downside Analysis](10-investment-valuation-due-diligence/098-investment-risk-and-downside-analysis.md) | [EN](10-investment-valuation-due-diligence/098-investment-risk-and-downside-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/098-investment-risk-and-downside-analysis.md) | Available |
+| 099 | [Assumption & Sensitivity Analysis](10-investment-valuation-due-diligence/099-assumption-and-sensitivity-analysis.md) | [EN](10-investment-valuation-due-diligence/099-assumption-and-sensitivity-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/099-assumption-and-sensitivity-analysis.md) | Available |
+| 100 | [Full Business Due Diligence Audit](10-investment-valuation-due-diligence/100-full-business-due-diligence-audit.md) | [EN](10-investment-valuation-due-diligence/100-full-business-due-diligence-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/10-investment-valuation-due-diligence/100-full-business-due-diligence-audit.md) | Available |
 
 ## Contributing to this category
 
