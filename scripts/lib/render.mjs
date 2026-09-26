@@ -270,7 +270,7 @@ export function statsPicture({ lang, stats }) {
     `<tr>\n${row.map(([value, title]) => `<td valign="top" width="50%"><h2>${value}</h2><sub>${title}</sub></td>`).join('\n')}\n</tr>`,
   );
 
-  return `<table>\n${rows.join('\n')}\n</table>`;
+  return `<table width="100%">\n${rows.join('\n')}\n</table>`;
 }
 
 function collectionStatus(s, available, planned) {
@@ -295,7 +295,7 @@ export function categoryGrid({ lang, fromFile, collections }) {
   });
   const rows = [];
   for (let i = 0; i < cells.length; i += 2) rows.push(`<tr>\n${cells.slice(i, i + 2).join('\n')}\n</tr>`);
-  return `<table>\n${rows.join('\n')}\n</table>`;
+  return `<table width="100%">\n${rows.join('\n')}\n</table>`;
 }
 
 /** Subcategory progress table for every category that has subcategories. */
