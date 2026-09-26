@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "uniquePrompts": 80,
-  "localizedPromptFiles": 160,
+  "uniquePrompts": 90,
+  "localizedPromptFiles": 180,
   "languages": 2,
   "filesByLanguage": {
-    "en": 80,
-    "sr": 80
+    "en": 90,
+    "sr": 90
   },
   "byStatus": {
     "draft": 0,
     "review": 0,
-    "stable": 80,
+    "stable": 90,
     "deprecated": 0
   },
   "categories": 10,
   "categoriesWithContent": 1,
   "planned": 100,
-  "remaining": 20,
+  "remaining": 10,
   "collections": {
     "IT": {
       "id": "UPL-IT",
       "slug": "it-programming-technology",
-      "available": 80,
+      "available": 90,
       "planned": 100,
-      "remaining": 20,
+      "remaining": 10,
       "subcategories": 10,
-      "completedSubcategories": 8,
+      "completedSubcategories": 9,
       "bySubcategory": {
         "web-development": {
           "available": 10,
@@ -60,7 +60,7 @@
           "planned": 10
         },
         "ux-ui-product-development": {
-          "available": 0,
+          "available": 10,
           "planned": 10
         },
         "desktop-game-systems-embedded": {

@@ -32,10 +32,10 @@
     <tspan x="72" y="324">promptova spremnih za produkciju.</tspan>
   </text>
 
-  <text x="72" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#A1A1AA">80 promptova</text>
+  <text x="72" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#A1A1AA">90 promptova</text>
   <rect x="189.2" y="355" width="1" height="18" fill="#27272A"/><text x="206.2" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#A1A1AA">English · Srpski</text>
   <rect x="331.7" y="355" width="1" height="18" fill="#27272A"/><text x="348.7" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#A1A1AA">Nezavisno od modela</text>
-  <rect x="519.4" y="355" width="1" height="18" fill="#27272A"/><text x="536.4" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#A1A1AA">MIT licenca</text>
+  <rect x="519.5" y="355" width="1" height="18" fill="#27272A"/><text x="536.5" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#A1A1AA">MIT licenca</text>
 
   <g transform="translate(720 64)">
     <rect width="408" height="312" rx="10" fill="#0F0F11" filter="url(#bd-shadow)"/>

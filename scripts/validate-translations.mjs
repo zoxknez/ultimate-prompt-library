@@ -17,10 +17,12 @@
 //    A warning means "review candidate", not "the translation is wrong".
 //
 //    Length is judged against the collection itself: translations in this library are
-//    systematically shorter or longer than the primary language, so the script first computes the
-//    median length ratio of all complete pairs and flags only pairs that deviate from that median
-//    by LENGTH_WARN_PCT (warning) or LENGTH_STRONG_PCT (strong warning). The raw delta is reported
-//    for context.
+//    systematically shorter or longer than the primary language, and the ratio depends on the
+//    writing style, which is consistent within a subcategory but differs between subcategories.
+//    The reference is therefore the median length ratio of the complete pairs in the same
+//    subcategory (at least SUBCATEGORY_MIN_PAIRS pairs), falling back to the median of the whole
+//    collection. Pairs that deviate from their reference by LENGTH_WARN_PCT (warning) or
+//    LENGTH_STRONG_PCT (strong warning) are flagged. The raw delta is reported for context.
 //
 // Usage: node scripts/validate-translations.mjs [--details]
 //   --details  print the structural comparison for every pair, including notes
@@ -32,6 +34,7 @@ const LENGTH_WARN_PCT = 40;
 const LENGTH_STRONG_PCT = 60;
 const CODE_FENCE_MIN_DIFF = 3;
 const CODE_FENCE_MIN_PCT = 5;
+const SUBCATEGORY_MIN_PAIRS = 5;
 
 const details = process.argv.includes('--details');
 const repo = loadRepository();
@@ -54,11 +57,17 @@ const blocks = [];
 // Baseline length ratio per secondary language (median over complete pairs).
 const metrics = new Map(prompts.map((p) => [p.id, Object.fromEntries(Object.entries(p.localizations).map(([c, f]) => [c, analyzeBody(f.body)]))]));
 const baseline = {};
+const subBaseline = {};
+const subOf = (p) => p.localizations[primary].data.subcategory_id;
 for (const code of languages.filter((c) => c !== primary)) {
-  const ratios = prompts
-    .filter((p) => p.localizations[primary] && p.localizations[code])
-    .map((p) => metrics.get(p.id)[code].chars / metrics.get(p.id)[primary].chars);
-  baseline[code] = ratios.length >= 10 ? median(ratios) : 1;
+  const complete = prompts.filter((p) => p.localizations[primary] && p.localizations[code]);
+  const ratioOf = (p) => metrics.get(p.id)[code].chars / metrics.get(p.id)[primary].chars;
+  baseline[code] = complete.length >= 10 ? median(complete.map(ratioOf)) : 1;
+  subBaseline[code] = {};
+  for (const sub of new Set(complete.map(subOf))) {
+    const ratios = complete.filter((p) => subOf(p) === sub).map(ratioOf);
+    if (ratios.length >= SUBCATEGORY_MIN_PAIRS) subBaseline[code][sub] = median(ratios);
+  }
 }
 
 for (const prompt of prompts) {
@@ -145,9 +154,12 @@ for (const prompt of prompts) {
       else notes.push(text);
     }
     const ratio = b.chars / a.chars;
-    const deviation = (Math.max(ratio / baseline[code], baseline[code] / ratio) - 1) * 100;
+    const subRef = prompt.localizations[primary] ? subBaseline[code][subOf(prompt)] : undefined;
+    const ref = subRef ?? baseline[code];
+    const refName = subRef === undefined ? 'collection' : 'subcategory';
+    const deviation = (Math.max(ratio / ref, ref / ratio) - 1) * 100;
     const rawDelta = deltaPct(a.chars, b.chars);
-    const lengthText = `length ${a.chars} / ${b.chars} chars (delta ${rawDelta.toFixed(1)}%, ${deviation.toFixed(1)}% from the collection median ratio ${baseline[code].toFixed(2)})`;
+    const lengthText = `length ${a.chars} / ${b.chars} chars (delta ${rawDelta.toFixed(1)}%, ${deviation.toFixed(1)}% from the ${refName} median ratio ${ref.toFixed(2)})`;
     if (deviation >= LENGTH_STRONG_PCT) warnings.push([3, `STRONG: ${lengthText}`]);
     else if (deviation >= LENGTH_WARN_PCT) warnings.push([3, lengthText]);
     if (a.tables !== b.tables) notes.push(`tables ${a.tables} / ${b.tables}`);

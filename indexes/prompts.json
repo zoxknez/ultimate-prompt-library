@@ -4,7 +4,7 @@
     "en",
     "sr"
   ],
-  "count": 80,
+  "count": 90,
   "prompts": [
     {
       "id": "UPL-IT-001",
@@ -2164,6 +2164,276 @@
       "files": {
         "en": "prompts/en/01-it-programming-technology/08-testing-qa-reliability/080-production-incident-simulation.md",
         "sr": "prompts/sr/01-it-programiranje-tehnologija/08-testing-qa-reliability/080-production-incident-simulation.md"
+      }
+    },
+    {
+      "id": "UPL-IT-081",
+      "number": 81,
+      "slug": "ultimate-ux-ui-product-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ux-ui-product-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate UX/UI Product Audit",
+        "sr": "Ultimate UX/UI Product Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/09-ux-ui-product-development/081-ultimate-ux-ui-product-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/09-ux-ui-product-development/081-ultimate-ux-ui-product-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-082",
+      "number": 82,
+      "slug": "critical-user-flow-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ux-ui-product-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Critical User Flow Audit",
+        "sr": "Critical User Flow Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/09-ux-ui-product-development/082-critical-user-flow-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/09-ux-ui-product-development/082-critical-user-flow-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-083",
+      "number": 83,
+      "slug": "onboarding-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ux-ui-product-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Onboarding Audit",
+        "sr": "Onboarding Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/09-ux-ui-product-development/083-onboarding-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/09-ux-ui-product-development/083-onboarding-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-084",
+      "number": 84,
+      "slug": "form-ux-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ux-ui-product-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Form UX Audit",
+        "sr": "Form UX Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/09-ux-ui-product-development/084-form-ux-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/09-ux-ui-product-development/084-form-ux-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-085",
+      "number": 85,
+      "slug": "navigation-and-information-architecture-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ux-ui-product-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Navigation & Information Architecture Audit",
+        "sr": "Navigation & Information Architecture Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/09-ux-ui-product-development/085-navigation-and-information-architecture-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/09-ux-ui-product-development/085-navigation-and-information-architecture-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-086",
+      "number": 86,
+      "slug": "mobile-ux-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ux-ui-product-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Mobile UX Audit",
+        "sr": "Mobile UX Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/09-ux-ui-product-development/086-mobile-ux-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/09-ux-ui-product-development/086-mobile-ux-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-087",
+      "number": 87,
+      "slug": "design-system-consistency-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ux-ui-product-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Design System Consistency Audit",
+        "sr": "Design System Consistency Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/09-ux-ui-product-development/087-design-system-consistency-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/09-ux-ui-product-development/087-design-system-consistency-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-088",
+      "number": 88,
+      "slug": "accessibility-experience-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ux-ui-product-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Accessibility Experience Audit",
+        "sr": "Accessibility Experience Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/09-ux-ui-product-development/088-accessibility-experience-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/09-ux-ui-product-development/088-accessibility-experience-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-089",
+      "number": 89,
+      "slug": "product-requirement-generator",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ux-ui-product-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Product Requirement Generator",
+        "sr": "Product Requirement Generator"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/09-ux-ui-product-development/089-product-requirement-generator.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/09-ux-ui-product-development/089-product-requirement-generator.md"
+      }
+    },
+    {
+      "id": "UPL-IT-090",
+      "number": 90,
+      "slug": "feature-design-and-ux-review",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "ux-ui-product-development",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Feature Design & UX Review",
+        "sr": "Feature Design & UX Review"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/09-ux-ui-product-development/090-feature-design-and-ux-review.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/09-ux-ui-product-development/090-feature-design-and-ux-review.md"
       }
     }
   ]
