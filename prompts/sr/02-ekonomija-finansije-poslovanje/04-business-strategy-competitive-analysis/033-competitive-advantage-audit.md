@@ -5,7 +5,7 @@ slug: competitive-advantage-audit
 title: Competitive Advantage Audit
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
-subcategory: Poslovna strategija i konkurentska analiza
+subcategory: Poslovna strategija i analiza konkurencije
 subcategory_id: business-strategy-competitive-analysis
 language: sr
 version: 1.0.0
