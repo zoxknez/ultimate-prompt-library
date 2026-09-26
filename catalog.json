@@ -3340,6 +3340,106 @@
             "en": "AI-Generated Content IP Risk Analysis",
             "sr": "Analiza IP rizika AI-generisanog sadržaja"
           }
+        },
+        {
+          "id": "UPL-LAW-091",
+          "number": 91,
+          "slug": "cross-border-legal-framework-mapper",
+          "subcategory": "international-cross-border-law",
+          "title": {
+            "en": "Cross-Border Legal Framework Mapper",
+            "sr": "Mapa prekograničnog pravnog okvira"
+          }
+        },
+        {
+          "id": "UPL-LAW-092",
+          "number": 92,
+          "slug": "conflict-of-laws-analysis",
+          "subcategory": "international-cross-border-law",
+          "title": {
+            "en": "Conflict of Laws Analysis",
+            "sr": "Analiza sukoba zakona"
+          }
+        },
+        {
+          "id": "UPL-LAW-093",
+          "number": 93,
+          "slug": "international-contract-governing-law-and-jurisdiction",
+          "subcategory": "international-cross-border-law",
+          "title": {
+            "en": "International Contract Governing Law & Jurisdiction",
+            "sr": "Merodavno pravo i nadležnost međunarodnog ugovora"
+          }
+        },
+        {
+          "id": "UPL-LAW-094",
+          "number": 94,
+          "slug": "treaty-and-convention-applicability",
+          "subcategory": "international-cross-border-law",
+          "title": {
+            "en": "Treaty & Convention Applicability",
+            "sr": "Primenjivost međunarodnih ugovora i konvencija"
+          }
+        },
+        {
+          "id": "UPL-LAW-095",
+          "number": 95,
+          "slug": "cross-border-enforcement-of-judgments",
+          "subcategory": "international-cross-border-law",
+          "title": {
+            "en": "Cross-Border Enforcement of Judgments",
+            "sr": "Prekogranično priznanje i izvršenje odluka"
+          }
+        },
+        {
+          "id": "UPL-LAW-096",
+          "number": 96,
+          "slug": "international-arbitration-clause-and-strategy",
+          "subcategory": "international-cross-border-law",
+          "title": {
+            "en": "International Arbitration Clause & Strategy",
+            "sr": "Klauzula i strategija međunarodne arbitraže"
+          }
+        },
+        {
+          "id": "UPL-LAW-097",
+          "number": 97,
+          "slug": "sanctions-and-export-controls-applicability",
+          "subcategory": "international-cross-border-law",
+          "title": {
+            "en": "Sanctions & Export Controls Applicability",
+            "sr": "Primenjivost sankcija i izvoznih kontrola"
+          }
+        },
+        {
+          "id": "UPL-LAW-098",
+          "number": 98,
+          "slug": "cross-border-ecommerce-legal-audit",
+          "subcategory": "international-cross-border-law",
+          "title": {
+            "en": "Cross-Border E-Commerce Legal Audit",
+            "sr": "Pravni audit prekogranične e-trgovine"
+          }
+        },
+        {
+          "id": "UPL-LAW-099",
+          "number": 99,
+          "slug": "international-regulatory-comparison",
+          "subcategory": "international-cross-border-law",
+          "title": {
+            "en": "International Regulatory Comparison",
+            "sr": "Međunarodno poređenje regulatornih režima"
+          }
+        },
+        {
+          "id": "UPL-LAW-100",
+          "number": 100,
+          "slug": "cross-border-legal-due-diligence",
+          "subcategory": "international-cross-border-law",
+          "title": {
+            "en": "Cross-Border Legal Due Diligence",
+            "sr": "Prekogranični pravni due diligence"
+          }
         }
       ]
     },
