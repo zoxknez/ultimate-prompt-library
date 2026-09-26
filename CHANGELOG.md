@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- UPL-BIZ-071 to UPL-BIZ-080 (Management, Leadership & Organization), version `1.0.0`, status `stable`, in Serbian and English. The Business collection now has 80 of 100 prompts available.
 - UPL-BIZ-061 to UPL-BIZ-070 (Sales, Revenue & Pricing), version `1.0.0`, status `stable`, in Serbian and English. The Business collection now has 70 of 100 prompts available.
 - UPL-BIZ-051 to UPL-BIZ-060 (Operations, Supply Chain & Procurement), version `1.0.0`, status `stable`, in Serbian and English. The Business collection now has 60 of 100 prompts available.
 - UPL-BIZ-041 to UPL-BIZ-050 (Entrepreneurship & Business Models), version `1.0.0`, status `stable`, in Serbian and English: Ultimate Business Model Audit, Startup Idea Feasibility Analysis, Business Model Canvas Deep Analysis, Unit Economics Audit, Product-Market Fit Evidence Audit, Startup Financial Runway Analysis, Founder Assumption Stress Test, Business Scalability Audit, Monetization Model Analysis and Startup Failure Mode Audit. The Business collection now has 50 of 100 prompts available.
