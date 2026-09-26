@@ -2740,6 +2740,106 @@
             "en": "Appellate Issue & Preservation Audit",
             "sr": "Audit žalbenih pitanja i očuvanja prigovora"
           }
+        },
+        {
+          "id": "UPL-LAW-031",
+          "number": 31,
+          "slug": "corporate-governance-audit",
+          "subcategory": "corporate-commercial-law",
+          "title": {
+            "en": "Corporate Governance Audit",
+            "sr": "Audit korporativnog upravljanja"
+          }
+        },
+        {
+          "id": "UPL-LAW-032",
+          "number": 32,
+          "slug": "board-and-director-duties-analyzer",
+          "subcategory": "corporate-commercial-law",
+          "title": {
+            "en": "Board & Director Duties Analyzer",
+            "sr": "Analiza dužnosti odbora i direktora"
+          }
+        },
+        {
+          "id": "UPL-LAW-033",
+          "number": 33,
+          "slug": "shareholder-rights-audit",
+          "subcategory": "corporate-commercial-law",
+          "title": {
+            "en": "Shareholder Rights Audit",
+            "sr": "Audit prava akcionara i članova"
+          }
+        },
+        {
+          "id": "UPL-LAW-034",
+          "number": 34,
+          "slug": "corporate-actions-and-approvals-checklist",
+          "subcategory": "corporate-commercial-law",
+          "title": {
+            "en": "Corporate Actions & Approvals Checklist",
+            "sr": "Kontrolna lista korporativnih radnji i odobrenja"
+          }
+        },
+        {
+          "id": "UPL-LAW-035",
+          "number": 35,
+          "slug": "ma-legal-due-diligence",
+          "subcategory": "corporate-commercial-law",
+          "title": {
+            "en": "M&A Legal Due Diligence",
+            "sr": "Pravni due diligence za M&A"
+          }
+        },
+        {
+          "id": "UPL-LAW-036",
+          "number": 36,
+          "slug": "entity-structure-and-ownership-mapper",
+          "subcategory": "corporate-commercial-law",
+          "title": {
+            "en": "Entity Structure & Ownership Mapper",
+            "sr": "Mapa pravne strukture i vlasništva"
+          }
+        },
+        {
+          "id": "UPL-LAW-037",
+          "number": 37,
+          "slug": "related-party-transaction-audit",
+          "subcategory": "corporate-commercial-law",
+          "title": {
+            "en": "Related-Party Transaction Audit",
+            "sr": "Audit transakcija sa povezanim licima"
+          }
+        },
+        {
+          "id": "UPL-LAW-038",
+          "number": 38,
+          "slug": "joint-venture-and-partnership-agreement-audit",
+          "subcategory": "corporate-commercial-law",
+          "title": {
+            "en": "Joint Venture & Partnership Agreement Audit",
+            "sr": "Audit joint venture i partnerskih ugovora"
+          }
+        },
+        {
+          "id": "UPL-LAW-039",
+          "number": 39,
+          "slug": "beneficial-ownership-and-transparency-audit",
+          "subcategory": "corporate-commercial-law",
+          "title": {
+            "en": "Beneficial Ownership & Transparency Audit",
+            "sr": "Audit stvarnog vlasništva i transparentnosti"
+          }
+        },
+        {
+          "id": "UPL-LAW-040",
+          "number": 40,
+          "slug": "corporate-records-compliance-audit",
+          "subcategory": "corporate-commercial-law",
+          "title": {
+            "en": "Corporate Records Compliance Audit",
+            "sr": "Audit usklađenosti korporativnih evidencija"
+          }
         }
       ]
     },
