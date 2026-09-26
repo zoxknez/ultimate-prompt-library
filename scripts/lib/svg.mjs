@@ -116,7 +116,7 @@ export function bannerSvg(lang, themeName, stats) {
   const s = BANNER_TEXT[lang] ?? BANNER_TEXT.en;
   const id = `b${themeName[0]}`;
   const W = 1200;
-  const H = 460;
+  const H = 440;
   const X = 72;
 
   // Meta row: items separated by hairlines, measured exactly.
@@ -138,7 +138,7 @@ export function bannerSvg(lang, themeName, stats) {
 
   // Document card on the right.
   const CX = 720;
-  const CY = 74;
+  const CY = 64;
   const CW = 408;
   const CH = 312;
   const fm = [
