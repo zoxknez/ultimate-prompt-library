@@ -259,7 +259,7 @@ export function statsPicture({ lang, stats }) {
   ];
 
   return cards
-    .map(([value, title, note]) => `<p><strong>${value}</strong>&nbsp;&nbsp;${title}<br><sub>${note}</sub></p>`)
+    .map(([value, title, note]) => `<h2>${value}&nbsp;&nbsp;<sub>${title}</sub></h2>\n<p><sub>${note}</sub></p>`)
     .join('\n');
 }
 
@@ -276,7 +276,7 @@ export function categoryGrid({ lang, fromFile, collections }) {
   return collections
     .map((c) => {
     const href = link(fromFile, `${PROMPTS_DIR}/${lang}/${c.category.dirs[lang]}/README.md`);
-      return `<p><sub>${pad(c.category.order, 2)} · <code>${c.category.id}</code></sub><br><a href="${href}"><strong>${escapeHtml(c.category.names[lang])}</strong></a><br><sub>${escapeHtml(c.category.descriptions[lang])}</sub><br><sub>${collectionStatus(s, c.available, c.planned)}</sub></p>`;
+      return `<p><sub>${pad(c.category.order, 2)} · <code>${c.category.id}</code></sub><br><a href="${href}"><strong>${escapeHtml(c.category.names[lang])}</strong></a></p>\n<p>${escapeHtml(c.category.descriptions[lang])}</p>\n<p><sub>${collectionStatus(s, c.available, c.planned)}</sub></p>`;
     })
     .join('\n');
 }
@@ -296,7 +296,7 @@ export function subcategoryStatus({ lang, fromFile, collections }) {
             : g.available
               ? s.inProgress
               : s.status.planned;
-        return `<li><a href="${href}"><strong>${escapeHtml(g.sub.names[lang])}</strong></a><br><sub>${escapeHtml(g.sub.descriptions[lang])}</sub><br><sub>${g.available} / ${g.planned} · ${status}</sub></li>`;
+        return `<li><a href="${href}"><strong>${escapeHtml(g.sub.names[lang])}</strong></a><p>${escapeHtml(g.sub.descriptions[lang])}</p><sub>${g.available} / ${g.planned} · ${status}</sub></li>`;
       });
       const complete = c.subcategories.filter((g) => g.planned > 0 && g.available === g.planned).length;
       return [
