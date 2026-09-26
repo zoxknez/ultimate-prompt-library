@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Web razvoj
 subcategory_id: web-development
 language: sr
-version: 1.0.0
+version: 1.0.1
 status: stable
 ---
 
@@ -2015,4 +2015,21 @@ Pre finalnog odgovora proveri:
 - nisi predložio Redux/Zustand samo zato što postoji mnogo state-a
 - nisi prijavio velike fajlove samo zbog broja linija
 - nisi prijavio dupliciranje bez provere behavioural drift-a
-- svaki P
+- svaki P1/P2 nalaz ima jasan dokaz i dependency flow
+- arhitektonski rizici su odvojeni od sitnih stilskih preferencija
+- svaki predloženi refactoring je evolutivan, a ne kompletan rewrite
+
+---
+
+# KONAČNO PRAVILO
+
+Nemoj mi vratiti izveštaj koji preporučuje kompletan rewrite ili čisto subjektivne design pattern-e.
+
+Fokusiraj se na stvarno arhitektonsko zdravlje:
+- jasne granice
+- nedvosmisleno vlasništvo nad state-om
+- predvidljiv smer zavisnosti
+- ograničen blast radius promena
+- visoka testabilnost
+
+Svaki nalaz mora pokazati stvarne posledice po maintainability, reliability ili scalability.

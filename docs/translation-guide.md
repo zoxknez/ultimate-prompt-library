@@ -17,11 +17,39 @@ Ultimate Prompt Library publishes every stable prompt in **English** (primary) a
 
 Machine or AI translation may be used to produce a first draft, but it **must not be published as a final `stable` version without human review** by someone fluent in both languages and familiar with the subject. Reviewers should check terminology, meaning of every rule, severity definitions, lists and tables, and that no content was dropped.
 
+## Keeping languages in step
+
+- **Preserve the logical structure.** Keep the same numbered sections in the same order. Headings may be worded differently, but a section must not silently disappear or be merged into another one.
+- **Code identifiers stay unchanged.** Code blocks can be formatted slightly differently (an example inline in one language and in a code block in the other), but their content and coverage should match.
+- **Technical terms may remain in English** where that is natural for practitioners.
+- **Synchronize significant expansion.** When a section gains new checks, scenarios or examples in one language, add them to the other language in the same pull request, or set the prompt to `status: review` and open a translation issue.
+- **The version represents the logical revision.** Both files carry the same version when they contain the same revision of the prompt (see the [translation version rule](prompt-format.md#translation-version-rule)).
+- **A parity warning is not a verdict.** It marks a review candidate. Different languages naturally differ in length and formatting.
+
+## Structural parity checks
+
+`npm run validate:translations` compares every EN/SR pair with deterministic, language-neutral signals (no AI or semantic comparison):
+
+| Signal | Why it matters | Result |
+|---|---|---|
+| Missing language for a `stable` prompt, or different id, number, slug, category, subcategory or path | Broken pair | **Error** |
+| Different version or status; byte-identical bodies | Revision out of step, or untranslated copy | Warning |
+| Numbered sections (the set of section numbers, e.g. `1`, `2`, ... `132`) | A section exists only in one language | Warning, lists the missing numbers |
+| Heading outline (H1-H4 counts) | Sections added, removed or re-levelled | Warning |
+| Key sections (finding format, output, second pass, final quality gate, severity, evidence) detected by heading in only one language | A core part of the method is missing | Warning |
+| Code fences, when they differ by at least 3 blocks and 5% | Examples or templates not kept in step | Warning (smaller differences are notes) |
+| Length relative to the collection | One language substantially expanded while the other stayed old | Warning / strong warning |
+| Tables, blockquotes | Formatting | Note only |
+
+**How length is judged.** Serbian text in this collection is consistently shorter than the English text of the same prompt, even when the structure is identical: the median SR/EN character ratio is about 0.84, and EN often expands terse Serbian notes into full sentences. A fixed threshold would therefore flag normal pairs. The validator computes the median ratio over all complete pairs and warns when a pair deviates from it by 40% or more (strong warning at 60%). The raw character delta is still printed for context. The thresholds were chosen from the distribution of the current 60 pairs (largest deviation: about 36%) and can be revisited as the collection grows.
+
+Run `npm run validate:translations -- --details` to see the comparison for every pair. The current assessment is in [translation-parity-report.md](translation-parity-report.md).
+
 ## Versioning
 
 - Both language versions should carry the same `version`.
 - A change that affects behavior (new checks, changed rules) must be applied to both languages in the same pull request, with the same version bump.
-- A translation-only fix (typo or wording in one language) is a PATCH bump of that file. Bringing the other language to the same version number is recommended when convenient; `npm run validate:translations` reports mismatches as warnings.
+- A translation-only fix (typo or wording in one language) is a PATCH bump. Bump the other language to the same version as well, so the pair keeps one version per logical revision; `npm run validate:translations` reports mismatches as warnings.
 
 ## Workflow
 
@@ -29,7 +57,7 @@ Machine or AI translation may be used to produce a first draft, but it **must no
 2. Create or edit the file at the **same path** in the other language tree (only the language folder and the category folder name differ).
 3. Copy the front matter and adjust `language`, `category` and `subcategory`.
 4. Translate the body following the principles above.
-5. Run `npm run validate` and `npm run generate`; commit the regenerated files.
+5. Run `npm run generate` and `npm run validate`, review the structural parity warnings for the prompt, and commit the regenerated files.
 6. Open a pull request using the template and mention the prompt ID.
 
 ## Reporting translation problems

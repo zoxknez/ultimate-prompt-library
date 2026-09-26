@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
 subcategory_id: devops-cloud-infrastructure
 language: sr
-version: 1.0.0
+version: 1.0.1
 status: stable
 ---
 
@@ -709,13 +709,3 @@ offline extraction of production data
 Ako cloud provider/config nije potvrđen:
 
 **CLOUD CONFIGURATION NOT VERIFIED.**
-
-<ADDITIONAL_METADATA>
-The current local time is: 2026-09-26T07:17:38+02:00.
-
-The user's current state is as follows:
-Active Document: d:\ProjektiApp\promptovi\secrets-and-credential-exposure-audit.en.md (LANGUAGE_MARKDOWN)
-Cursor is on line: 1
-Other open documents:
-- d:\ProjektiApp\promptovi\secrets-and-credential-exposure-audit.en.md (LANGUAGE_MARKDOWN)
-</ADDITIONAL_METADATA>

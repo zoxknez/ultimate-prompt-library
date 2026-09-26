@@ -394,9 +394,33 @@ function validatePromptFile({ fileRel, lang, cat, sub, name, planned, report }) 
   if (!body.trim()) fail('prompt body is empty');
   const fence = findUnclosedFence(body);
   if (fence) report.warn(fileRel, `code fence opened on body line ${fence} is never closed`);
+  checkContentHygiene(fileRel, text, fail, report);
 
   if (!ok) return null;
   return { path: fileRel, lang, category: cat, subcategory: sub, data, body, bodyHash: sha256(body) };
+}
+
+// Artifacts that never belong in a published prompt. Each rule comes from a real defect found in
+// the collection (escape sequences turned into control characters, editor/agent context pasted
+// into a file, code fences broken by a "\t" escape).
+const CONTROL_CHAR_RE = /[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/;
+const INVISIBLE_CHAR_RE = /[​‌‍⁠﻿�]/;
+const LEAKED_CONTEXT_RE = /<\/?ADDITIONAL_METADATA>|^Cursor is on line: \d+|^Active Document: /;
+const MANGLED_FENCE_RE = /^`(\t.*)?$/;
+
+function checkContentHygiene(fileRel, text, fail, report) {
+  const lines = text.split('\n');
+  lines.forEach((line, i) => {
+    const at = `line ${i + 1}`;
+    const control = CONTROL_CHAR_RE.exec(line);
+    if (control) {
+      const code = control[0].charCodeAt(0).toString(16).toUpperCase().padStart(4, '0');
+      fail(`${at}: control character U+${code} (often an escape such as "\\f" or "\\b" that was interpreted)`);
+    }
+    if (INVISIBLE_CHAR_RE.test(line)) report.warn(fileRel, `${at}: invisible or replacement character (zero-width, BOM or U+FFFD)`);
+    if (LEAKED_CONTEXT_RE.test(line)) fail(`${at}: editor/agent context leaked into the prompt ("${line.slice(0, 40)}")`);
+    if (MANGLED_FENCE_RE.test(line)) report.warn(fileRel, `${at}: looks like a broken code fence ("${line.replace(/\t/g, '\\t')}"); expected three backticks`);
+  });
 }
 
 /** Returns the 1-based line number of an unclosed fenced code block, or 0. */
@@ -511,7 +535,8 @@ export class Outputs {
     }
     if (this.report.errors.length) return this.report.finish();
     if (this.check) {
-      for (const p of stale) this.report.error(p, 'is out of date; run `npm run generate` and commit the result');
+      const command = this.name === 'generate-index' ? 'npm run index' : 'npm run stats';
+      for (const p of stale) this.report.error(p, `generated file is stale; run \`${command}\` (or \`npm run generate\`) and review the diff`);
       return this.report.finish([`Checked ${this.files.size} generated file(s).`]);
     }
     for (const p of stale) console.log(`updated  ${p}`);

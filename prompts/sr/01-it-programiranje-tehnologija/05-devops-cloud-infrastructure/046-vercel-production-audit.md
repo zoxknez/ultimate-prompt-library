@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
 subcategory_id: devops-cloud-infrastructure
 language: sr
-version: 1.0.0
+version: 1.0.1
 status: stable
 ---
 

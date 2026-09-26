@@ -29,6 +29,20 @@ Učešćem u projektu prihvataš [Kodeks ponašanja](CODE_OF_CONDUCT.md).
    npm run validate
    ```
 
+## Lokalna validacija je na prvom mestu
+
+Repozitorijum sadrži alate za automatsku validaciju koji se pokreću lokalno. **Pokreni ih pre svakog pull request-a**; cloud CI je podešen, ali se trenutno ne koristi kao obavezna provera, pa nije garantovano da će pull request biti automatski proveren.
+
+```bash
+npm ci               # instalira jedinu zavisnost alata
+npm run generate     # posle izmene promptova, kataloga ili skripti
+npm run validate     # mora da završi sa 0 grešaka
+```
+
+- `npm run validate` proverava promptove, prevode, linkove i generisane fajlove. Greške se moraju ispraviti; upozorenja su signali za pregled.
+- `npm run validate:translations -- --details` prikazuje strukturno poređenje EN/SR za svaki prompt.
+- Generisani fajlovi (indeksi, README tabele, grafika) se nikada ne menjaju ručno. Skripte ne rade commit; pregledaj diff i commit-uj generisane fajlove zajedno sa svojom izmenom.
+
 ## Pisanje planiranog prompta
 
 Planirani promptovi već imaju rezervisan ID, broj, slug, naziv i podkategoriju u [`catalog.json`](catalog.json) - na primer `UPL-IT-061 ultimate-ai-application-audit`.
@@ -57,8 +71,9 @@ Ne biraj ID sam pre nego što se o predlogu diskutuje - ID-evi su trajni.
 ## Poboljšanje postojećeg prompta
 
 - Zadrži **ID, broj, slug i ime fajla** nepromenjenim.
-- Izmene ponašanja primeni na **oba jezika** u istom pull request-u.
-- Povećaj `version` u oba fajla prema [pravilima verzionisanja](docs/prompt-format.sr.md#verzionisanje): PATCH za formulacije, MINOR za nove provere ili sekcije, MAJOR za temeljne promene.
+- Ako izmena menja **logičku pokrivenost** (provere, sekcije, scenarije, primere, pravila), ažuriraj **oba jezika** u istom pull request-u kad god je moguće.
+- Ako se može ažurirati samo jedna lokalizacija, povećaj njenu verziju i postavi prompt na `status: review`, ili otvori issue za prevod koji navodi ID prompta.
+- Povećaj `version` u oba fajla prema [pravilima verzionisanja](docs/prompt-format.sr.md#verzionisanje): PATCH za formulacije i popravke defekata, MINOR za nove provere ili sekcije, MAJOR za temeljne promene.
 - Svaki prompt je samostalan. Ne prepravljaj prompt samo da bi odgovarao stilu drugog prompta.
 - Ako prompt zastari, označi ga sa `status: deprecated` (i postavi `replaced_by` ako postoji zamena) umesto da ga brišeš.
 
@@ -76,15 +91,16 @@ Otvori issue sa opisom oblasti, publike, nekoliko primera promptova i načina na
 
 ## Kontrolna lista za pull request
 
-Pull request mora da:
+Pull request mora da ispuni:
 
-- [ ] zadrži postojeće ID-eve promptova nepromenjenim;
-- [ ] ima validan front matter u svakom prompt fajlu koji dodaje ili menja;
-- [ ] prati konvencije imena fajla `NNN-slug.md` i foldera;
-- [ ] sadrži odgovarajuću verziju na drugom jeziku (ili zadrži prompt u statusu `draft`/`review` dok ona ne postoji);
-- [ ] ne menja druge promptove slučajno;
-- [ ] sadrži regenerisane indekse i README tabele (`npm run generate`);
-- [ ] prolazi `npm run validate`.
+- [ ] ID prompta nepromenjen
+- [ ] Ime fajla i putanja nepromenjeni, osim ako je izmena namerna i dokumentovana
+- [ ] Front matter validan
+- [ ] Razmotren EN/SR paritet (ažurirana oba jezika, ili prompt postavljen na `review` / otvoren issue za prevod)
+- [ ] Verzija povećana ako se sadržaj promenio
+- [ ] Nijedan drugi prompt nije slučajno izmenjen
+- [ ] Generisani indeksi, tabele i grafika su ažurni (`npm run generate`)
+- [ ] Lokalna validacija prolazi (`npm run validate`)
 
 [Šablon za pull request](.github/PULL_REQUEST_TEMPLATE.md) sadrži ovu listu.
 

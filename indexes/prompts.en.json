@@ -60,7 +60,7 @@
       "subcategory": "Web Development",
       "subcategoryId": "web-development",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "path": "prompts/en/01-it-programming-technology/01-web-development/004-frontend-architecture-audit.md"
     },
     {
@@ -540,7 +540,7 @@
       "subcategory": "Cybersecurity",
       "subcategoryId": "cybersecurity",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "path": "prompts/en/01-it-programming-technology/04-cybersecurity/036-file-upload-security-audit.md"
     },
     {
@@ -675,7 +675,7 @@
       "subcategory": "DevOps, Cloud & Infrastructure",
       "subcategoryId": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "path": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/045-cicd-pipeline-audit.md"
     },
     {
@@ -690,7 +690,7 @@
       "subcategory": "DevOps, Cloud & Infrastructure",
       "subcategoryId": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "path": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/046-vercel-production-audit.md"
     },
     {
@@ -705,7 +705,7 @@
       "subcategory": "DevOps, Cloud & Infrastructure",
       "subcategoryId": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "path": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/047-cloud-infrastructure-audit.md"
     },
     {

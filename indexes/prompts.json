@@ -96,7 +96,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "web-development",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "languages": [
         "en",
         "sr"
@@ -106,8 +106,8 @@
         "sr": "Frontend Architecture Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.0.1",
+        "sr": "1.0.1"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/01-web-development/004-frontend-architecture-audit.md",
@@ -960,7 +960,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "cybersecurity",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "languages": [
         "en",
         "sr"
@@ -970,8 +970,8 @@
         "sr": "File Upload Security Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.0.1",
+        "sr": "1.0.1"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/04-cybersecurity/036-file-upload-security-audit.md",
@@ -1203,7 +1203,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "languages": [
         "en",
         "sr"
@@ -1213,8 +1213,8 @@
         "sr": "CI/CD Pipeline Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.0.1",
+        "sr": "1.0.1"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/045-cicd-pipeline-audit.md",
@@ -1230,7 +1230,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "languages": [
         "en",
         "sr"
@@ -1240,8 +1240,8 @@
         "sr": "Vercel Production Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.0.1",
+        "sr": "1.0.1"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/046-vercel-production-audit.md",
@@ -1257,7 +1257,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "languages": [
         "en",
         "sr"
@@ -1267,8 +1267,8 @@
         "sr": "Cloud Infrastructure Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.0.1",
+        "sr": "1.0.1"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/047-cloud-infrastructure-audit.md",

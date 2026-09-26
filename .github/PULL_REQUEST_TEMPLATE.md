@@ -17,11 +17,15 @@
 
 ## Checklist
 
-- [ ] Existing prompt IDs are unchanged.
-- [ ] Every added or changed prompt file has valid front matter.
-- [ ] Filenames and folders follow `prompts/<lang>/<category>/<subcategory>/NNN-slug.md`.
-- [ ] The corresponding language version is included, or the prompt stays in `draft`/`review` status.
-- [ ] Both language versions carry the same `version` (bumped according to docs/prompt-format.md).
-- [ ] No other prompt was modified accidentally.
-- [ ] I ran `npm run generate` and committed the regenerated indexes and README tables.
-- [ ] `npm run validate` passes.
+- [ ] Prompt ID unchanged
+- [ ] Filename and path unchanged, unless the change is intentional and documented
+- [ ] Front matter valid
+- [ ] EN/SR parity considered (both languages updated, or the prompt set to `review` / a follow-up issue opened)
+- [ ] Version bumped if the content changed (same version in both languages for the same revision)
+- [ ] No other prompt modified accidentally
+- [ ] Generated indexes, tables and artwork are current (`npm run generate`)
+- [ ] Local validation passes: `npm ci && npm run validate` (0 errors)
+
+## Validation output
+
+<!-- Paste the summary lines of `npm run validate`, including any warnings you reviewed. -->

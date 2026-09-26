@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Web Development
 subcategory_id: web-development
 language: en
-version: 1.0.0
+version: 1.0.1
 status: stable
 ---
 

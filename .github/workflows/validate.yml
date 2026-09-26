@@ -1,3 +1,10 @@
+# Runs the same structural validation as `npm run validate` locally.
+# Cloud execution is optional: the repository does not rely on paid Actions minutes, so local
+# validation is the source of truth. The workflow stays ready to use whenever Actions is enabled.
+#
+# Third-party actions are pinned to full commit SHAs (the commit the v4 tag pointed to when pinned).
+# To update: resolve the new release tag to its commit SHA from the official repository and update
+# both the SHA and the version comment.
 name: Validate
 
 on:
@@ -15,17 +22,17 @@ concurrency:
 
 jobs:
   validate:
-    name: Validate prompts, translations, links and indexes
+    name: Validate prompts, translations, links and generated files
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           persist-credentials: false
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: 22
           cache: npm
@@ -33,23 +40,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Validate prompts
-        run: npm run validate:prompts
-
-      - name: Validate translations
-        run: npm run validate:translations
-
-      - name: Validate internal links
-        run: npm run validate:links
-
-      - name: Regenerate indexes and README tables
-        run: npm run generate
-
-      - name: Fail if generated files are out of date
-        run: |
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "::error::Generated files are out of date. Run 'npm run generate' and commit the result."
-            git status --porcelain
-            git --no-pager diff
-            exit 1
-          fi
+      - name: Validate (prompts, translations, links, generated files)
+        run: npm run validate

@@ -206,19 +206,15 @@ export function roadmapPlannedBlock({ lang, collections }) {
 // Root README blocks
 
 const BADGE = 'style=flat-square&labelColor=27272A&color=09090B';
-const REPO = 'zoxknez/ultimate-prompt-library';
 const enc = (text) => encodeURIComponent(String(text).replace(/-/g, '--').replace(/_/g, '__'));
 
-/** Monochrome shields.io badges for the README hero; counts come from stats.json. */
+/** Monochrome static shields.io badges for the README hero; counts come from stats.json. */
 export function heroBadges({ lang, stats, collections }) {
   const s = t(lang);
   const it = collections.find((c) => c.category.id === 'UPL-IT');
+  // No CI status badge: cloud Actions are optional and not relied upon, so a red or empty status
+  // would be a misleading public signal. Validation runs locally with `npm run validate`.
   const badges = [
-    [
-      'Validate',
-      `https://img.shields.io/github/actions/workflow/status/${REPO}/validate.yml?branch=main&${BADGE}&label=validate`,
-      `https://github.com/${REPO}/actions/workflows/validate.yml`,
-    ],
     [
       `${s.badgePrompts}: ${stats.uniquePrompts}`,
       `https://img.shields.io/badge/${enc(s.badgePrompts)}-${stats.uniquePrompts}-09090B?${BADGE}`,

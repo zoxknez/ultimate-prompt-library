@@ -29,6 +29,20 @@ By participating you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
    npm run validate
    ```
 
+## Local validation comes first
+
+The repository includes automated validation tooling that runs locally. **Run it before every pull request**; cloud CI is configured but not currently relied upon, so a pull request is not guaranteed to be checked automatically.
+
+```bash
+npm ci               # install the single tooling dependency
+npm run generate     # after changing prompts, the catalog or scripts
+npm run validate     # must finish with 0 errors
+```
+
+- `npm run validate` checks prompts, translations, links and generated files. Errors must be fixed; warnings are review signals.
+- `npm run validate:translations -- --details` shows the EN/SR structural comparison for every prompt.
+- Generated files (indexes, README tables, artwork) are never edited by hand. The scripts do not commit; review the diff and commit generated files together with your change.
+
 ## Writing a planned prompt
 
 Planned prompts already have a reserved ID, number, slug, title and subcategory in [`catalog.json`](catalog.json) - for example `UPL-IT-061 ultimate-ai-application-audit`.
@@ -57,8 +71,9 @@ Do not pick an ID on your own before the proposal is discussed - IDs are permane
 ## Improving an existing prompt
 
 - Keep the **ID, number, slug and filename** unchanged.
-- Apply behavioral changes to **both languages** in the same pull request.
-- Bump `version` in both files according to [versioning rules](docs/prompt-format.md#versioning): PATCH for wording, MINOR for new checks or sections, MAJOR for fundamental changes.
+- If the change affects **logical coverage** (checks, sections, scenarios, examples, rules), update **both languages** in the same pull request where possible.
+- If only one localization can be updated, bump its version and set the prompt to `status: review`, or open a follow-up translation issue that references the prompt ID.
+- Bump `version` in both files according to [versioning rules](docs/prompt-format.md#versioning): PATCH for wording and defect repairs, MINOR for new checks or sections, MAJOR for fundamental changes.
 - Keep each prompt self-contained. Do not rewrite a prompt only to match the style of another prompt.
 - If a prompt becomes obsolete, mark it `status: deprecated` (and set `replaced_by` if there is a replacement) instead of deleting it.
 
@@ -76,15 +91,16 @@ Open an issue describing the area, the audience, a few example prompts and how i
 
 ## Pull request checklist
 
-A pull request must:
+A pull request must satisfy:
 
-- [ ] keep existing prompt IDs unchanged;
-- [ ] use a valid front matter block in every prompt file it adds or changes;
-- [ ] follow the `NNN-slug.md` filename and folder conventions;
-- [ ] include the corresponding language version (or keep the prompt in `draft`/`review` status until it exists);
-- [ ] not modify other prompts accidentally;
-- [ ] include regenerated indexes and README tables (`npm run generate`);
-- [ ] pass `npm run validate`.
+- [ ] Prompt ID unchanged
+- [ ] Filename and path unchanged, unless the change is intentional and documented
+- [ ] Front matter valid
+- [ ] EN/SR parity considered (both languages updated, or the prompt set to `review` / a follow-up issue opened)
+- [ ] Version bumped if the content changed
+- [ ] No other prompt modified accidentally
+- [ ] Generated indexes, tables and artwork are current (`npm run generate`)
+- [ ] Local validation passes (`npm run validate`)
 
 The [pull request template](.github/PULL_REQUEST_TEMPLATE.md) contains this checklist.
 

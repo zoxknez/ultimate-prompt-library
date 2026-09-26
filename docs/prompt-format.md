@@ -75,24 +75,46 @@ Any other field is rejected by the validator, which protects against typos. Prop
 
 | Status | Meaning |
 |---|---|
-| `draft` | Work in progress. May exist in only one language. |
-| `review` | Complete and waiting for review. May exist in only one language. |
-| `stable` | Reviewed and ready to use. **Must exist in every supported language.** |
-| `deprecated` | Kept for reference but no longer recommended. Set `replaced_by` if a replacement exists. |
+| `draft` | The prompt is incomplete or actively being authored. May exist in only one language. |
+| `review` | The prompt is structurally complete but still awaiting content, translation or factual review. May exist in only one language. Also use it when one localization is known to lag behind the other. |
+| `stable` | The prompt is published, structurally complete and considered ready for general use. **Every supported language must exist.** |
+| `deprecated` | The prompt remains available for history or compatibility but is no longer the recommended version. Set `replaced_by` if a replacement exists. |
 
-Prompts are not deleted just because they are outdated. Mark them `deprecated` first so links and IDs keep working.
+**`stable` is not a certification.** It does not mean that a prompt has been independently audited, professionally guaranteed or is factually infallible. It means the prompt is complete, published and suitable for general use; results still depend on the model, the context and human review.
+
+### Display labels
+
+The READMEs and indexes show one label per catalog entry:
+
+| Label | Meaning |
+|---|---|
+| **Available** | Prompt files exist (status `stable`). Available is not "expert-certified"; see above. |
+| **In review** / **Draft** | Prompt files exist with status `review` / `draft`. |
+| **Deprecated** | Prompt files exist with status `deprecated`. |
+| **Planned** | The ID, title and filename are reserved in `catalog.json`, but no prompt file exists yet. Planned prompts are never counted as available. |
+
+## Identity, paths and lifecycle
+
+- **The ID never changes after publication**, even if the title is reworded. See [ids.md](ids.md).
+- **Avoid slug and path changes after publication.** They break links and bookmarks, and the GitHub file tree cannot redirect. If a rename is unavoidable, document it in the changelog, move the file with `git mv` so history is preserved, update the catalog slug in the same commit and keep the ID.
+- **Deprecate instead of deleting.** Keep the file and set `status: deprecated`, plus `replaced_by: UPL-...` when there is a replacement.
+- **Deletion is exceptional.** A published prompt is not deleted lightly. If a prompt is found to be dangerous or incorrect, deprecate it and explain why in the prompt and the changelog. Its ID is never reused.
 
 ## Versioning
 
-Each localized file has its own `version`, using semantic-like versioning:
+Versions use `MAJOR.MINOR.PATCH` and describe the **logical revision of a prompt**, shared by all of its languages:
 
 | Bump | When |
 |---|---|
-| **PATCH** (`1.0.0` → `1.0.1`) | Typos, formatting, wording clarifications. Behavior of the prompt does not change. |
-| **MINOR** (`1.0.0` → `1.1.0`) | New checks, sections or examples; meaningful expansion that stays compatible with the prompt's purpose. |
-| **MAJOR** (`1.0.0` → `2.0.0`) | Fundamental restructuring or a change in what the prompt does or how its output is used. |
+| **PATCH** (`1.0.0` → `1.0.1`) | Typos, formatting, wording clarifications and repairs of technical defects (a broken code fence, a truncated ending, a stray artifact). No meaningful scope change. |
+| **MINOR** (`1.0.0` → `1.1.0`) | New checks, sections or scenarios; meaningful content expansion that stays compatible with the prompt's purpose. |
+| **MAJOR** (`1.0.0` → `2.0.0`) | Fundamental restructuring, changed methodology or changed expected behavior or output. |
 
-The English and Serbian versions of the same prompt should carry the **same version**. `npm run validate:translations` reports a warning when they differ, which is acceptable only briefly (for example while a translation update is in review).
+### Translation version rule
+
+- The English and Serbian files of a prompt **should carry the same version when they represent the same content revision**. When a change is applied to both languages, bump both to the same new version, even if one file only needed a smaller edit.
+- If only one localization can be updated, bump that file and either set the prompt to `status: review` until the other language catches up, or open a follow-up translation issue. `npm run validate:translations` reports the version difference as a **warning**, not an error, so an intentional translation lag does not block work.
+- Do not bump a version without a content change.
 
 ## Recommended body structure
 
@@ -121,8 +143,15 @@ The following structure works well for analysis, audit and review prompts. **It 
 - Use relative links for anything inside the repository.
 - Keep headings clean and hierarchical.
 
-These conventions are checked automatically where practical. Tooling never rewrites prompt bodies; it only reads metadata and generates indexes.
+These conventions are checked automatically where practical. `npm run validate:prompts` also rejects artifacts that never belong in a prompt: control characters (usually an escape such as `\f` that was interpreted), leaked editor or agent context (for example `<ADDITIONAL_METADATA>` blocks), and warns about code fences that were mangled into a single backtick. Tooling never rewrites prompt bodies; it only reads metadata and generates indexes.
+
+### Front matter strictness
+
+Only the documented required and optional fields are accepted; any other field is an error, which catches typos such as `stauts`. New fields are added deliberately, through a documented change to this guide and the validator. Possible future optional fields are listed in [architecture.md](architecture.md#future-metadata-evolution); none of them is required today.
 
 ## Content policy
 
-Each prompt is a self-contained artifact. Do not change a prompt only to make its style match another prompt. Improvements should make the prompt more correct, deeper or clearer for its own purpose, and must be mirrored in every language version.
+- **Every prompt is self-contained.** A user must be able to copy one file and use it on its own, so some repetition between prompts (evidence rules, severity scales, quality gates) is intentional. There are no shared includes or template inheritance.
+- **Style is per prompt.** Do not change a prompt only to make its style match another prompt. Some prompts are exhaustive specifications with hundreds of sections, others are focused checklists; both are valid. Length is never a quality measure.
+- **Improvements are mirrored.** Changes should make a prompt more correct, deeper or clearer for its own purpose and must be applied to every language version (see the translation version rule).
+- **Reference principles.** UPL-IT-001 (Forensic Full Repository Audit) is a good reference for the library's principles, above all *accuracy over depth over finding count*, without every prompt needing to copy its structure.

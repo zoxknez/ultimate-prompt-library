@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: DevOps, Cloud & Infrastructure
 subcategory_id: devops-cloud-infrastructure
 language: en
-version: 1.0.0
+version: 1.0.1
 status: stable
 ---
 
@@ -22,7 +22,7 @@ Main objective:
 
 ## 1. MAP THE PIPELINE
 
-`	ext
+```text
 commit
 ↓
 validation
@@ -44,7 +44,7 @@ deploy
 smoke verification
 ↓
 promotion
-`
+```
 
 ## 2. INVENTORY
 
@@ -446,7 +446,7 @@ Test:
 
 ## 91. FINDING FORMAT
 
-`	ext
+```text
 ID:
 Severity:
 Stage:
@@ -461,7 +461,7 @@ Root cause:
 Fix:
 Verification:
 Rollback considerations:
-`
+```
 
 ## 92. OUTPUT
 
@@ -502,7 +502,7 @@ CICD_PIPELINE_AUDIT.md
 
 Looking for issues such as:
 
-`	ext
+```text
 PR tests commit A
 ↓
 merge occurs
@@ -514,11 +514,11 @@ manual deploy job builds current main
 approval still belongs to A
 ↓
 untested/unreviewed B enters production
-`
+```
 
 or:
 
-`	ext
+```text
 staging build
 ↓
 tests pass
@@ -528,4 +528,4 @@ production rebuilds from source
 floating dependency resolves newer version
 ↓
 production artifact is not the same as tested artifact
-`
+```

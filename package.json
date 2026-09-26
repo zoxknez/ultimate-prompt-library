@@ -9,14 +9,15 @@
     "node": ">=18"
   },
   "scripts": {
-    "validate": "npm run validate:prompts && npm run validate:translations && npm run validate:links && npm run check",
+    "validate": "npm run validate:prompts && npm run validate:translations && npm run validate:links && npm run validate:generated",
     "validate:prompts": "node scripts/validate-prompts.mjs",
     "validate:translations": "node scripts/validate-translations.mjs",
     "validate:links": "node scripts/validate-links.mjs",
+    "validate:generated": "node scripts/generate-index.mjs --check && node scripts/generate-stats.mjs --check",
     "index": "node scripts/generate-index.mjs",
     "stats": "node scripts/generate-stats.mjs",
     "generate": "npm run index && npm run stats",
-    "check": "node scripts/generate-index.mjs --check && node scripts/generate-stats.mjs --check"
+    "audit:prompts": "node scripts/audit-prompts.mjs"
   },
   "dependencies": {
     "yaml": "2.9.1"

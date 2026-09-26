@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: DevOps, Cloud & Infrastructure
 subcategory_id: devops-cloud-infrastructure
 language: en
-version: 1.0.0
+version: 1.0.1
 status: stable
 ---
 
@@ -49,11 +49,11 @@ Ask what secrets it receives.
 
 For each env:
 
-`	ext
+```text
 Development
 Preview
 Production
-`
+```
 
 verify variable scope.
 
@@ -162,13 +162,13 @@ Next.js:
 
 Most critical scenario:
 
-`	ext
+```text
 User A response
 ↓
 cached without user/tenant key
 ↓
 User B receives it
-`
+```
 
 ## 27. STATIC GENERATION
 
@@ -420,7 +420,7 @@ Rewrites and reverse proxies.
 
 ## 86. FINDING FORMAT
 
-`	ext
+```text
 ID:
 Severity:
 Vercel surface:
@@ -435,7 +435,7 @@ Evidence:
 Fix:
 Verification:
 Complexity:
-`
+```
 
 ## 87. OUTPUT
 
@@ -477,7 +477,7 @@ Test/analyze:
 
 Looking for issues such as:
 
-`	ext
+```text
 Preview environment
 ↓
 inherits PRODUCTION_DATABASE_URL
@@ -491,11 +491,11 @@ Vercel builds contributor-controlled Next.js code
 build script reads env
 ↓
 production database credential can be exfiltrated
-`
+```
 
 or:
 
-`	ext
+```text
 server component fetch:
 cache enabled
 
@@ -506,4 +506,4 @@ cache key does not include tenant identity
 
 ↓
 Tenant B receives Tenant A data
-`
+```

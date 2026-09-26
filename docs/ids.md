@@ -35,6 +35,7 @@ All ten prefixes are reserved now, even for categories that have no prompts yet.
 5. **Numbering does not restart per subcategory.** Within IT, numbers continue `…, 099, 100, 101, …` regardless of subcategory.
 6. **The number matches the filename.** `UPL-IT-019` lives in `019-<slug>.md` and has `number: 19`.
 7. **IDs are assigned through [`catalog.json`](../catalog.json).** A prompt file whose ID is not registered in the catalog fails validation.
+8. **Slugs and paths should not change after publication either.** They are part of every link to the prompt. If a rename is unavoidable, keep the ID and follow the procedure in [prompt-format.md](prompt-format.md#identity-paths-and-lifecycle).
 
 ## `number` versus `id`
 

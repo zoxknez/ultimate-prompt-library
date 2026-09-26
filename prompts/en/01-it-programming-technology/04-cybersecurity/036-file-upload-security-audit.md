@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Cybersecurity
 subcategory_id: cybersecurity
 language: en
-version: 1.0.0
+version: 1.0.1
 status: stable
 ---
 
@@ -207,7 +207,7 @@ Test relevant traversal sequences:
 
 ```text
 ../../file
-..\..ile
+..\..\file
 ```
 
 and platform-specific encodings where the runtime permits.

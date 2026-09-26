@@ -6,9 +6,13 @@ This document explains how the repository is organized, where each piece of info
 
 - **Files are the database.** No backend, no database, no build framework. Prompts are Markdown files; everything else is derived.
 - **One source of truth per fact.**
-  - [`catalog.json`](../catalog.json) is the **planning** source: categories, subcategories, and the list of prompt IDs with their numbers, slugs, subcategories and planned titles.
-  - **Prompt front matter** is the source for **prompts that exist**: title, version, status, tags and so on.
-  - Everything in [`indexes/`](../indexes/) and inside generated Markdown blocks is **derived** by scripts and must never be edited by hand.
+
+  | Source | Role | Holds |
+  |---|---|---|
+  | [`catalog.json`](../catalog.json) | **Planning taxonomy** | Categories, subcategories, and every catalogued prompt ID with its number, slug, subcategory and planned title. |
+  | Prompt front matter | **Published prompt metadata** | For prompts that exist: title, version, status, language, optional tags and so on. Generated outputs always use these values, never the catalog title. |
+  | [`indexes/`](../indexes/), [`assets/`](../assets/) artwork, generated Markdown blocks | **Generated outputs** | Derived by scripts. Never edited by hand. |
+
 - **Language-independent identity.** IDs, numbers, slugs, subcategory folders and filenames are identical in every language. Only the language folder, the category folder name and display names are localized.
 - **Honest counts.** A prompt is available only when its file exists with valid front matter. Planned prompts are catalog entries only; no placeholder files are created.
 
@@ -79,27 +83,44 @@ Catalog prompt entries intentionally have **no status field**. Whether a prompt 
 
 Indexes deliberately contain metadata only, not prompt bodies. They are small enough for client-side search and filtering, and a website can fetch a prompt's Markdown by its path when needed. Output is deterministic (no timestamps), so CI can detect stale files with a plain `git diff`.
 
-Generated Markdown blocks are delimited by `<!-- UPL:BEGIN name … -->` and `<!-- UPL:END name -->`. Text outside the markers is hand-written and never touched by the scripts.
+### Generated file policy
+
+- **Do not edit generated files manually.** This covers everything in `indexes/`, the SVG files in `assets/` (not the fonts) and every block between `<!-- UPL:BEGIN name … -->` and `<!-- UPL:END name -->` markers in READMEs and roadmaps. Text outside the markers is hand-written and never touched by the scripts.
+- Change the source instead (`catalog.json`, prompt front matter, or the scripts) and run `npm run generate`.
+- Scripts only write files; they never commit. Review the diff and commit generated files together with the change that caused them.
+- `npm run validate` fails with `generated file is stale` when a generated file does not match its sources, and names the command that fixes it.
+- Two consecutive runs of `npm run generate` without source changes produce no diff.
 
 ## Scripts
 
-All scripts are plain Node.js (18+) ES modules. The only dependency is [`yaml`](https://www.npmjs.com/package/yaml), a mature YAML parser with no dependencies of its own, used to parse front matter reliably.
+All scripts are plain Node.js (18+) ES modules. The only dependency is [`yaml`](https://www.npmjs.com/package/yaml), a mature YAML parser with no dependencies of its own, used to parse front matter reliably. There is no custom YAML parser, linter, formatter or test framework.
 
 | Command | Script | Purpose |
 |---|---|---|
-| `npm run validate:prompts` | `scripts/validate-prompts.mjs` | Catalog structure; folder layout; filenames; required and optional front matter; ID format; ID ↔ number ↔ filename ↔ slug consistency; language ↔ folder; category and subcategory names and IDs; duplicate IDs and slugs; unknown statuses; catalog numbering without gaps; UTF-8, LF, single final newline; unclosed code fences (warning). |
-| `npm run validate:translations` | `scripts/validate-translations.mjs` | For every ID: all languages present for `stable` prompts (`MISSING LANGUAGE PAIR`); identical id, number, slug, category and subcategory; corresponding paths; version and status differences (warning); byte-identical bodies (warning). |
-| `npm run validate:links` | `scripts/validate-links.mjs` | Internal relative links in all Markdown files (outside code blocks), including HTML `href`, `src` and `srcset` attributes, point to existing files or folders. Anchors (`#section`) are not verified. |
-| `npm run index` | `scripts/generate-index.mjs` | Writes JSON indexes and navigation tables. `--check` only verifies they are current. |
-| `npm run stats` | `scripts/generate-stats.mjs` | Writes `stats.json` and status blocks. `--check` only verifies they are current. |
-| `npm run generate` | both generators | Regenerates everything. |
-| `npm run validate` | all of the above in check mode | What CI runs. |
+| `npm run validate` | all validators below | **The one command to run before every commit or pull request.** Exit code 0 = no errors; warnings never fail the run. |
+| `npm run validate:prompts` | `scripts/validate-prompts.mjs` | Catalog structure; folder layout; filenames; strict front matter (required fields, documented optional fields only); ID format; ID ↔ number ↔ filename ↔ slug consistency; language ↔ folder; category and subcategory names and IDs; duplicate IDs and slugs; unknown statuses; catalog numbering without gaps; UTF-8, LF, single final newline; control characters and leaked editor/agent context (errors); unclosed or mangled code fences and invisible characters (warnings). |
+| `npm run validate:translations` | `scripts/validate-translations.mjs` | Metadata parity (errors): every `stable` prompt exists in all languages (`MISSING LANGUAGE PAIR`), identical id, number, slug, category and subcategory, corresponding paths. Revision parity (warnings): version or status differences, byte-identical bodies. Structural parity (warnings): numbered sections, heading outline, key sections, code fences and length relative to the collection median. `--details` prints the comparison for every pair. See the [translation guide](translation-guide.md#structural-parity-checks). |
+| `npm run validate:links` | `scripts/validate-links.mjs` | Internal relative links in all Markdown files (outside code blocks), including HTML `href`, `src` and `srcset` attributes, point to existing files or folders; anchors into Markdown files resolve to a heading (GitHub slug rules) or an explicit `id`/`name`. |
+| `npm run validate:generated` | both generators with `--check` | Fails if any generated file is stale. |
+| `npm run generate` | `generate-index.mjs`, `generate-stats.mjs` | Regenerates indexes, README/roadmap tables, statistics and artwork (`npm run index` and `npm run stats` run the two halves). |
+| `npm run audit:prompts` | `scripts/audit-prompts.mjs` | Diagnostic only, never fails: size distribution, size outliers and detected design elements per prompt, as Markdown. Used for [prompt-quality-audit.md](prompt-quality-audit.md). |
 
 Scripts never modify prompt bodies. Generators refuse to run while structural validation has errors.
 
-## Continuous integration
+### Tooling safety
 
-[`.github/workflows/validate.yml`](../.github/workflows/validate.yml) runs on every pull request and on pushes to `main`/`master`: it installs dependencies with `npm ci`, runs the three validators, regenerates all outputs and fails if that produces any uncommitted change.
+The scripts read repository-controlled Markdown, YAML and JSON only. They do not evaluate or execute prompt content or code blocks, do not build shell commands from file content, and do not fetch remote URLs (external links are skipped by the link validator; the only network access is `npm ci` installing the locked `yaml` package). YAML is parsed with the `yaml` library's default, non-executable schema.
+
+## Validation: local first
+
+**Local validation is the source of truth.** Contributors run:
+
+```bash
+npm ci
+npm run validate
+```
+
+[`.github/workflows/validate.yml`](../.github/workflows/validate.yml) runs exactly the same `npm run validate` on pull requests and pushes to `main`/`master` when GitHub Actions is enabled. The project currently does not rely on cloud Actions execution (paid minutes), so a missing or failed cloud run is not a statement about repository correctness, and the README shows no CI status badge. The workflow uses read-only permissions and pins third-party actions to full commit SHAs.
 
 ## Adding a prompt
 
@@ -120,6 +141,27 @@ Scripts never modify prompt bodies. Generators refuse to run while structural va
 2. Create `prompts/<code>/` with all category and subcategory READMEs.
 3. Add UI strings for the language in `scripts/lib/render.mjs` (English is used as a fallback).
 4. Translate prompts; until every prompt exists in the new language, the missing ones must not be `stable` (or the new language is added only once translations are complete).
+
+## Future metadata evolution
+
+The front matter schema is intentionally small and strict. When new categories need it, optional fields may be added through a documented change to [prompt-format.md](prompt-format.md) and the validator, for example:
+
+| Possible field | Purpose |
+|---|---|
+| `requires_current_sources` | The prompt must be used with current, dated sources (rates, regulations, guidelines). |
+| `jurisdiction_sensitive` | Results depend on country, state or regulator. |
+| `high_stakes` | Output can affect health, legal position or finances; the prompt must state limits and require professional review. |
+| `type` / `depth` | Classification such as `audit` / `hunter` / `generator` and `exhaustive` / `focused`. |
+
+None of these fields exists today and none is required for the IT collection. They are added only when a real prompt needs them, not preemptively.
+
+### High-stakes categories
+
+Health, Law and Finance prompts will need a stronger source and currentness model than the IT collection. Before the first prompt in these categories is published, their category READMEs and prompts should establish:
+
+- **Health:** reliance on current evidence and guidelines, the population the evidence applies to, explicit uncertainty, source quality, and no diagnostic certainty where the evidence does not support it.
+- **Law:** the jurisdiction and the date the analysis applies to, current law from official sources, and a clear distinction between the text of the law and its interpretation.
+- **Finance:** date sensitivity, current market data and rates, explicit assumptions, jurisdiction and tax context, and risk and uncertainty.
 
 ## Future website
 
