@@ -9,7 +9,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "validate": "npm run validate:prompts && npm run validate:translations && npm run validate:links && npm run validate:generated",
+    "validate": "npm run validate:prompts && npm run validate:translations && npm run validate:links && npm run validate:generated && npm run validate:site",
     "validate:prompts": "node scripts/validate-prompts.mjs",
     "validate:translations": "node scripts/validate-translations.mjs",
     "validate:links": "node scripts/validate-links.mjs",
@@ -19,7 +19,8 @@
     "generate": "npm run index && npm run stats",
     "audit:prompts": "node scripts/audit-prompts.mjs",
     "build:site": "node scripts/generate-site.mjs",
-    "build": "npm run generate && npm run build:site"
+    "build": "npm run generate && npm run build:site",
+    "validate:site": "npm run build:site && node scripts/validate-site.mjs"
   },
   "dependencies": {
     "yaml": "2.9.1"
