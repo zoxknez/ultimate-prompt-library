@@ -64,6 +64,8 @@
     });
     if (count) count.textContent = String(visible);
     if (empty) empty.hidden = visible !== 0;
+    document.querySelectorAll('[data-category-shortcut]').forEach((button) => button.classList.toggle('active', Boolean(cat) && button.dataset.categoryShortcut === cat));
+    document.querySelectorAll('[data-subcategory-shortcut]').forEach((button) => button.classList.toggle('active', Boolean(sub) && button.dataset.subcategoryShortcut === sub));
     syncUrl();
   }
 
@@ -79,7 +81,26 @@
     .forEach((el) => el.addEventListener(el === search ? 'input' : 'change', applyFilters));
 
   document.querySelector('#reset-filters')?.addEventListener('click', resetFilters);
-  document.querySelector('[data-reset]')?.addEventListener('click', resetFilters);
+  document.querySelectorAll('[data-reset]').forEach((button) => button.addEventListener('click', resetFilters));
+
+  document.querySelectorAll('[data-category-shortcut]').forEach((button) => {
+    button.addEventListener('click', () => {
+      if (category) category.value = button.dataset.categoryShortcut || '';
+      if (subcategory) subcategory.value = '';
+      applyFilters();
+      document.querySelector('#prompt-search')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
+
+  document.querySelectorAll('[data-subcategory-shortcut]').forEach((button) => {
+    button.addEventListener('click', () => {
+      if (category) category.value = button.dataset.parent || '';
+      syncSubcategories();
+      if (subcategory) subcategory.value = button.dataset.subcategoryShortcut || '';
+      applyFilters();
+      document.querySelector('#prompt-search')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
 
   const params = new URLSearchParams(location.search);
   if (category && params.get('category')) category.value = params.get('category');

@@ -30,6 +30,7 @@ const STRINGS = {
     badgePrompts: 'prompts',
     badgeLanguages: 'languages',
     badgeIt: 'IT collection',
+    badgeBiz: 'Business collection',
     statsAlt: (st) => `${st.uniquePrompts} unique prompts, ${st.localizedPromptFiles} localized prompt files, ${st.languages} languages`,
     uniquePrompts: 'unique prompts',
     localizedFiles: 'localized prompt files',
@@ -70,6 +71,7 @@ const STRINGS = {
     badgePrompts: 'promptova',
     badgeLanguages: 'jezika',
     badgeIt: 'IT kolekcija',
+    badgeBiz: 'Business kolekcija',
     statsAlt: (st) => `${st.uniquePrompts} jedinstvenih promptova, ${st.localizedPromptFiles} lokalizovanih fajlova, ${st.languages} jezika`,
     uniquePrompts: 'jedinstvenih promptova',
     localizedFiles: 'lokalizovanih prompt fajlova',
@@ -212,6 +214,7 @@ const enc = (text) => encodeURIComponent(String(text).replace(/-/g, '--').replac
 export function heroBadges({ lang, stats, collections }) {
   const s = t(lang);
   const it = collections.find((c) => c.category.id === 'UPL-IT');
+  const biz = collections.find((c) => c.category.id === 'UPL-BIZ');
   // No CI status badge: cloud Actions are optional and not relied upon, so a red or empty status
   // would be a misleading public signal. Validation runs locally with `npm run validate`.
   const badges = [
@@ -224,6 +227,11 @@ export function heroBadges({ lang, stats, collections }) {
       `${s.badgeIt}: ${it.available}/${it.planned}`,
       `https://img.shields.io/badge/${enc(s.badgeIt)}-${it.available}%2F${it.planned}-09090B?${BADGE}`,
       `prompts/${lang}/${it.category.dirs[lang]}/README.md`,
+    ],
+    biz && [
+      `${s.badgeBiz}: ${biz.available}/${biz.planned}`,
+      `https://img.shields.io/badge/${enc(s.badgeBiz)}-${biz.available}%2F${biz.planned}-09090B?${BADGE}`,
+      `prompts/${lang}/${biz.category.dirs[lang]}/README.md`,
     ],
     [
       `${s.badgeLanguages}: EN | SR`,
