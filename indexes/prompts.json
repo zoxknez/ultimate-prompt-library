@@ -4,7 +4,7 @@
     "en",
     "sr"
   ],
-  "count": 160,
+  "count": 170,
   "prompts": [
     {
       "id": "UPL-IT-001",
@@ -4324,6 +4324,276 @@
       "files": {
         "en": "prompts/en/02-economics-finance-business/06-operations-supply-chain-procurement/060-business-continuity-operations-audit.md",
         "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/06-operations-supply-chain-procurement/060-business-continuity-operations-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-061",
+      "number": 61,
+      "slug": "ultimate-revenue-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "sales-revenue-pricing",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate Revenue Audit",
+        "sr": "Ultimate Revenue Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/07-sales-revenue-pricing/061-ultimate-revenue-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/061-ultimate-revenue-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-062",
+      "number": 62,
+      "slug": "sales-funnel-forensic-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "sales-revenue-pricing",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Sales Funnel Forensic Analysis",
+        "sr": "Sales Funnel Forensic Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/07-sales-revenue-pricing/062-sales-funnel-forensic-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/062-sales-funnel-forensic-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-063",
+      "number": 63,
+      "slug": "sales-performance-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "sales-revenue-pricing",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Sales Performance Audit",
+        "sr": "Sales Performance Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/07-sales-revenue-pricing/063-sales-performance-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/063-sales-performance-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-064",
+      "number": 64,
+      "slug": "pricing-strategy-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "sales-revenue-pricing",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Pricing Strategy Audit",
+        "sr": "Pricing Strategy Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/07-sales-revenue-pricing/064-pricing-strategy-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/064-pricing-strategy-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-065",
+      "number": 65,
+      "slug": "pricing-elasticity-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "sales-revenue-pricing",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Pricing Elasticity Analysis",
+        "sr": "Pricing Elasticity Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/07-sales-revenue-pricing/065-pricing-elasticity-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/065-pricing-elasticity-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-066",
+      "number": 66,
+      "slug": "revenue-leakage-hunter",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "sales-revenue-pricing",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Revenue Leakage Hunter",
+        "sr": "Revenue Leakage Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/07-sales-revenue-pricing/066-revenue-leakage-hunter.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/066-revenue-leakage-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-067",
+      "number": 67,
+      "slug": "customer-lifetime-value-analysis",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "sales-revenue-pricing",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Customer Lifetime Value Analysis",
+        "sr": "Customer Lifetime Value Analysis"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/07-sales-revenue-pricing/067-customer-lifetime-value-analysis.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/067-customer-lifetime-value-analysis.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-068",
+      "number": 68,
+      "slug": "customer-acquisition-economics-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "sales-revenue-pricing",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Customer Acquisition Economics Audit",
+        "sr": "Customer Acquisition Economics Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/07-sales-revenue-pricing/068-customer-acquisition-economics-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/068-customer-acquisition-economics-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-069",
+      "number": 69,
+      "slug": "subscription-and-recurring-revenue-audit",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "sales-revenue-pricing",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Subscription & Recurring Revenue Audit",
+        "sr": "Subscription & Recurring Revenue Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/07-sales-revenue-pricing/069-subscription-and-recurring-revenue-audit.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/069-subscription-and-recurring-revenue-audit.md"
+      }
+    },
+    {
+      "id": "UPL-BIZ-070",
+      "number": 70,
+      "slug": "revenue-forecast-stress-test",
+      "category": "BIZ",
+      "categoryId": "UPL-BIZ",
+      "categorySlug": "economics-finance-business",
+      "subcategory": "sales-revenue-pricing",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Revenue Forecast Stress Test",
+        "sr": "Revenue Forecast Stress Test"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/02-economics-finance-business/07-sales-revenue-pricing/070-revenue-forecast-stress-test.md",
+        "sr": "prompts/sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/070-revenue-forecast-stress-test.md"
       }
     }
   ]

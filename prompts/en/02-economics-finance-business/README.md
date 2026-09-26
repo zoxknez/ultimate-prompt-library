@@ -123,20 +123,20 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 ### 07 · [Sales, Revenue & Pricing](07-sales-revenue-pricing/README.md)
 
-0 / 10 available
+10 / 10 available
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 061 | Ultimate Revenue Audit | - | - | Planned |
-| 062 | Sales Funnel Forensic Analysis | - | - | Planned |
-| 063 | Sales Performance Audit | - | - | Planned |
-| 064 | Pricing Strategy Audit | - | - | Planned |
-| 065 | Pricing Elasticity Analysis | - | - | Planned |
-| 066 | Revenue Leakage Hunter | - | - | Planned |
-| 067 | Customer Lifetime Value Analysis | - | - | Planned |
-| 068 | Customer Acquisition Economics Audit | - | - | Planned |
-| 069 | Subscription & Recurring Revenue Audit | - | - | Planned |
-| 070 | Revenue Forecast Stress Test | - | - | Planned |
+| 061 | [Ultimate Revenue Audit](07-sales-revenue-pricing/061-ultimate-revenue-audit.md) | [EN](07-sales-revenue-pricing/061-ultimate-revenue-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/061-ultimate-revenue-audit.md) | Available |
+| 062 | [Sales Funnel Forensic Analysis](07-sales-revenue-pricing/062-sales-funnel-forensic-analysis.md) | [EN](07-sales-revenue-pricing/062-sales-funnel-forensic-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/062-sales-funnel-forensic-analysis.md) | Available |
+| 063 | [Sales Performance Audit](07-sales-revenue-pricing/063-sales-performance-audit.md) | [EN](07-sales-revenue-pricing/063-sales-performance-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/063-sales-performance-audit.md) | Available |
+| 064 | [Pricing Strategy Audit](07-sales-revenue-pricing/064-pricing-strategy-audit.md) | [EN](07-sales-revenue-pricing/064-pricing-strategy-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/064-pricing-strategy-audit.md) | Available |
+| 065 | [Pricing Elasticity Analysis](07-sales-revenue-pricing/065-pricing-elasticity-analysis.md) | [EN](07-sales-revenue-pricing/065-pricing-elasticity-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/065-pricing-elasticity-analysis.md) | Available |
+| 066 | [Revenue Leakage Hunter](07-sales-revenue-pricing/066-revenue-leakage-hunter.md) | [EN](07-sales-revenue-pricing/066-revenue-leakage-hunter.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/066-revenue-leakage-hunter.md) | Available |
+| 067 | [Customer Lifetime Value Analysis](07-sales-revenue-pricing/067-customer-lifetime-value-analysis.md) | [EN](07-sales-revenue-pricing/067-customer-lifetime-value-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/067-customer-lifetime-value-analysis.md) | Available |
+| 068 | [Customer Acquisition Economics Audit](07-sales-revenue-pricing/068-customer-acquisition-economics-audit.md) | [EN](07-sales-revenue-pricing/068-customer-acquisition-economics-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/068-customer-acquisition-economics-audit.md) | Available |
+| 069 | [Subscription & Recurring Revenue Audit](07-sales-revenue-pricing/069-subscription-and-recurring-revenue-audit.md) | [EN](07-sales-revenue-pricing/069-subscription-and-recurring-revenue-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/069-subscription-and-recurring-revenue-audit.md) | Available |
+| 070 | [Revenue Forecast Stress Test](07-sales-revenue-pricing/070-revenue-forecast-stress-test.md) | [EN](07-sales-revenue-pricing/070-revenue-forecast-stress-test.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/07-sales-revenue-pricing/070-revenue-forecast-stress-test.md) | Available |
 
 ### 08 · [Management, Leadership & Organization](08-management-leadership-organization/README.md)
 
