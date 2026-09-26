@@ -2640,6 +2640,106 @@
             "en": "Contract Negotiation Playbook",
             "sr": "Plan pregovaranja ugovora"
           }
+        },
+        {
+          "id": "UPL-LAW-021",
+          "number": 21,
+          "slug": "litigation-case-theory-builder",
+          "subcategory": "litigation-dispute-resolution",
+          "title": {
+            "en": "Litigation Case Theory Builder",
+            "sr": "Izrada teorije slučaja u sporu"
+          }
+        },
+        {
+          "id": "UPL-LAW-022",
+          "number": 22,
+          "slug": "pleadings-and-claims-audit",
+          "subcategory": "litigation-dispute-resolution",
+          "title": {
+            "en": "Pleadings & Claims Audit",
+            "sr": "Audit podnesaka i zahteva"
+          }
+        },
+        {
+          "id": "UPL-LAW-023",
+          "number": 23,
+          "slug": "evidence-and-burden-of-proof-mapper",
+          "subcategory": "litigation-dispute-resolution",
+          "title": {
+            "en": "Evidence & Burden of Proof Mapper",
+            "sr": "Mapa dokaza i tereta dokazivanja"
+          }
+        },
+        {
+          "id": "UPL-LAW-024",
+          "number": 24,
+          "slug": "legal-argument-stress-test",
+          "subcategory": "litigation-dispute-resolution",
+          "title": {
+            "en": "Legal Argument Stress Test",
+            "sr": "Stress test pravne argumentacije"
+          }
+        },
+        {
+          "id": "UPL-LAW-025",
+          "number": 25,
+          "slug": "witness-and-credibility-analysis",
+          "subcategory": "litigation-dispute-resolution",
+          "title": {
+            "en": "Witness & Credibility Analysis",
+            "sr": "Analiza svedoka i verodostojnosti"
+          }
+        },
+        {
+          "id": "UPL-LAW-026",
+          "number": 26,
+          "slug": "discovery-and-disclosure-strategy",
+          "subcategory": "litigation-dispute-resolution",
+          "title": {
+            "en": "Discovery & Disclosure Strategy",
+            "sr": "Strategija pribavljanja i obelodanjivanja dokaza"
+          }
+        },
+        {
+          "id": "UPL-LAW-027",
+          "number": 27,
+          "slug": "damages-and-remedies-analysis",
+          "subcategory": "litigation-dispute-resolution",
+          "title": {
+            "en": "Damages & Remedies Analysis",
+            "sr": "Analiza štete i pravnih sredstava"
+          }
+        },
+        {
+          "id": "UPL-LAW-028",
+          "number": 28,
+          "slug": "procedural-deadline-and-jurisdiction-audit",
+          "subcategory": "litigation-dispute-resolution",
+          "title": {
+            "en": "Procedural Deadline & Jurisdiction Audit",
+            "sr": "Audit procesnih rokova i nadležnosti"
+          }
+        },
+        {
+          "id": "UPL-LAW-029",
+          "number": 29,
+          "slug": "settlement-scenario-analysis",
+          "subcategory": "litigation-dispute-resolution",
+          "title": {
+            "en": "Settlement Scenario Analysis",
+            "sr": "Analiza scenarija poravnanja"
+          }
+        },
+        {
+          "id": "UPL-LAW-030",
+          "number": 30,
+          "slug": "appellate-issue-and-preservation-audit",
+          "subcategory": "litigation-dispute-resolution",
+          "title": {
+            "en": "Appellate Issue & Preservation Audit",
+            "sr": "Audit žalbenih pitanja i očuvanja prigovora"
+          }
         }
       ]
     },
