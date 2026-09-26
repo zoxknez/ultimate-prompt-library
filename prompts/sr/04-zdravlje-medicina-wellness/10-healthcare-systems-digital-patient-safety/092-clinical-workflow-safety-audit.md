@@ -1,0 +1,113 @@
+---
+id: UPL-HEALTH-092
+number: 92
+slug: clinical-workflow-safety-audit
+title: Audit bezbednosti kliničkog workflow-a
+category: Zdravlje, medicina i wellness
+category_id: UPL-HEALTH
+subcategory: Zdravstveni sistemi, digitalno zdravlje i bezbednost pacijenata
+subcategory_id: healthcare-systems-digital-patient-safety
+language: sr
+version: 1.0.0
+status: stable
+---
+
+# AUDIT BEZBEDNOSTI KLINIČKOG WORKFLOW-A
+
+Glavni cilj:
+
+> Sprovedite systems-based, evidence-driven i patient-safety workflow za "Audit bezbednosti kliničkog workflow-a", sa eksplicitnim intended-use, human-factor, evidence, monitoring i learning zahtevima.
+
+## 1. SISTEMSKI KONTEKST
+
+Establish care setting, users, patients/population, intended use, workflow, technology/device, handoffs, staffing, governance, regulatory status, data flows, known incidents, current controls and outcome measures.
+
+## 2. SAFETY MODEL
+
+Treat harm as potentially emerging from interacting factors:
+- task and workflow design
+- human factors and cognitive load
+- staffing and workload
+- communication / handoff
+- technology / UI
+- data quality
+- environment
+- policy / governance
+- training and competence
+- latent organizational conditions
+
+Do not stop at "human error".
+
+## 3. DIGITAL / AI EVIDENCE GATE
+
+For digital health, medical devices or AI:
+- define intended purpose and risk tier
+- verify regulatory status where relevant
+- assess clinical evidence appropriate to risk
+- distinguish technical performance from clinical utility
+- inspect dataset/population match
+- test subgroup performance and failure modes
+- require human oversight and escalation
+- assess update / drift / monitoring plan
+- evaluate privacy, cybersecurity and workflow integration
+- identify automation bias and overreliance risk
+
+Use NICE-type evidence standards as a benchmark where relevant, but do not confuse them with regulatory approval or a universal safety certification. citeturn844627search1turn844627search10
+
+## 4. INCIDENT LEARNING
+
+For incidents:
+```text
+Event:
+Patient impact:
+Detection:
+Timeline:
+Expected process:
+Actual process:
+Contributing factors:
+Failed barriers:
+Successful barriers:
+Latent conditions:
+Immediate actions:
+System actions:
+Owner:
+Verification:
+Recurrence indicator:
+```
+
+Incident-report data can support learning but may be incomplete and biased; do not use raw report counts as direct incidence estimates. citeturn247019search12
+
+## 5. OBAVEZNE MATRICE
+
+### Hazard-Control Matrix
+| Hazard | Failure mode | Patient impact | Existing control | Evidence | Gap | Action |
+|---|---|---|---|---|---|---|
+
+### Workflow Matrix
+| Step | Actor | Information | Decision | Handoff | Failure mode | Escalation |
+|---|---|---|---|---|---|---|
+
+### Digital Evidence Matrix
+| Claim | Intended use | Evidence | Population | Comparator | Outcome | Bias | Monitoring |
+|---|---|---|---|---|---|---|---|
+
+## 6. METRIKE I LEARNING
+
+Prefer process and outcome measures that have clear definitions, denominators and actionability. Detect gaming, documentation artifacts and risk-adjustment issues. Every corrective action should have an owner, completion evidence and a measure of whether risk actually fell.
+
+## 7. OBAVEZNI OUTPUT
+
+1. System / intended-use map.
+2. Key hazards and failure modes.
+3. Patient-impact assessment.
+4. Evidence and control gaps.
+5. Required matrices.
+6. Immediate containment where relevant.
+7. Corrective and preventive actions.
+8. Monitoring / recurrence indicators.
+9. Governance owners and deadlines.
+10. Final learning review.
+
+End with **Provera bezbednosti sistema** confirming that findings are systems-based, evidence-linked and converted into measurable safety actions rather than blame.
+
+Ovaj prompt podržava analizu kvaliteta i bezbednosti i ne zamenjuje formalni klinički, regulatorni ili medicinsko-uređajni review gde je potreban.
