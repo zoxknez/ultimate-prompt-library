@@ -13,16 +13,16 @@ Desktop applications, Electron, PySide, Windows, cross-platform, games, embedded
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 091 | Ultimate Desktop Application Audit | - | - | ⏳ Planned |
-| 092 | Electron Application Audit | - | - | ⏳ Planned |
-| 093 | Python/PySide Application Audit | - | - | ⏳ Planned |
-| 094 | Windows Application Production Audit | - | - | ⏳ Planned |
-| 095 | Cross-Platform Compatibility Audit | - | - | ⏳ Planned |
-| 096 | Game Architecture Audit | - | - | ⏳ Planned |
-| 097 | Game Performance Audit | - | - | ⏳ Planned |
-| 098 | Embedded Software Reliability Audit | - | - | ⏳ Planned |
-| 099 | Memory & Resource Leak Hunter | - | - | ⏳ Planned |
-| 100 | Hardware/Software Integration Audit | - | - | ⏳ Planned |
+| 091 | Ultimate Desktop Application Audit | - | - | Planned |
+| 092 | Electron Application Audit | - | - | Planned |
+| 093 | Python/PySide Application Audit | - | - | Planned |
+| 094 | Windows Application Production Audit | - | - | Planned |
+| 095 | Cross-Platform Compatibility Audit | - | - | Planned |
+| 096 | Game Architecture Audit | - | - | Planned |
+| 097 | Game Performance Audit | - | - | Planned |
+| 098 | Embedded Software Reliability Audit | - | - | Planned |
+| 099 | Memory & Resource Leak Hunter | - | - | Planned |
+| 100 | Hardware/Software Integration Audit | - | - | Planned |
 <!-- UPL:END subcategory-prompts -->
 
 Planned prompts have a reserved ID and filename but are not written yet. To write one, open an issue or pull request that references its ID. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md).

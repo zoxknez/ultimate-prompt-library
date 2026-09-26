@@ -24,7 +24,6 @@
       "id": "UPL-IT",
       "order": 1,
       "slug": "it-programming-technology",
-      "icon": "💻",
       "dirs": {
         "en": "01-it-programming-technology",
         "sr": "01-it-programiranje-tehnologija"
@@ -41,7 +40,6 @@
         {
           "id": "web-development",
           "order": 1,
-          "icon": "🌐",
           "names": {
             "en": "Web Development",
             "sr": "Web razvoj"
@@ -54,7 +52,6 @@
         {
           "id": "mobile-development",
           "order": 2,
-          "icon": "📱",
           "names": {
             "en": "Mobile Development",
             "sr": "Mobilni razvoj"
@@ -67,7 +64,6 @@
         {
           "id": "backend-api",
           "order": 3,
-          "icon": "🔌",
           "names": {
             "en": "Backend & API",
             "sr": "Backend i API"
@@ -80,7 +76,6 @@
         {
           "id": "cybersecurity",
           "order": 4,
-          "icon": "🛡️",
           "names": {
             "en": "Cybersecurity",
             "sr": "Sajber bezbednost"
@@ -93,7 +88,6 @@
         {
           "id": "devops-cloud-infrastructure",
           "order": 5,
-          "icon": "☁️",
           "names": {
             "en": "DevOps, Cloud & Infrastructure",
             "sr": "DevOps, cloud i infrastruktura"
@@ -106,7 +100,6 @@
         {
           "id": "databases-data-engineering",
           "order": 6,
-          "icon": "🗄️",
           "names": {
             "en": "Databases & Data Engineering",
             "sr": "Baze podataka i data engineering"
@@ -119,7 +112,6 @@
         {
           "id": "ai-llm-automation",
           "order": 7,
-          "icon": "🤖",
           "names": {
             "en": "AI, LLM & Automation",
             "sr": "AI, LLM i automatizacija"
@@ -132,7 +124,6 @@
         {
           "id": "testing-qa-reliability",
           "order": 8,
-          "icon": "🧪",
           "names": {
             "en": "Testing, QA & Reliability",
             "sr": "Testiranje, QA i pouzdanost"
@@ -145,7 +136,6 @@
         {
           "id": "ux-ui-product-development",
           "order": 9,
-          "icon": "🧩",
           "names": {
             "en": "UX, UI & Product Development",
             "sr": "UX, UI i razvoj proizvoda"
@@ -158,7 +148,6 @@
         {
           "id": "desktop-game-systems-embedded",
           "order": 10,
-          "icon": "🖥️",
           "names": {
             "en": "Desktop, Game, Systems & Embedded",
             "sr": "Desktop, igre, sistemi i embedded"
@@ -1176,7 +1165,6 @@
       "id": "UPL-BIZ",
       "order": 2,
       "slug": "economics-finance-business",
-      "icon": "📈",
       "dirs": {
         "en": "02-economics-finance-business",
         "sr": "02-ekonomija-finansije-poslovanje"
@@ -1196,7 +1184,6 @@
       "id": "UPL-LAW",
       "order": 3,
       "slug": "law-administration",
-      "icon": "⚖️",
       "dirs": {
         "en": "03-law-administration",
         "sr": "03-pravo-administracija"
@@ -1216,7 +1203,6 @@
       "id": "UPL-HEALTH",
       "order": 4,
       "slug": "health-medicine-wellness",
-      "icon": "🩺",
       "dirs": {
         "en": "04-health-medicine-wellness",
         "sr": "04-zdravlje-medicina-wellness"
@@ -1236,7 +1222,6 @@
       "id": "UPL-EDU",
       "order": 5,
       "slug": "education-learning",
-      "icon": "🎓",
       "dirs": {
         "en": "05-education-learning",
         "sr": "05-obrazovanje-ucenje"
@@ -1256,7 +1241,6 @@
       "id": "UPL-SCI",
       "order": 6,
       "slug": "science-research-analysis",
-      "icon": "🔬",
       "dirs": {
         "en": "06-science-research-analysis",
         "sr": "06-nauka-istrazivanje-analiza"
@@ -1276,7 +1260,6 @@
       "id": "UPL-CAREER",
       "order": 7,
       "slug": "career-professional-development",
-      "icon": "🧭",
       "dirs": {
         "en": "07-career-professional-development",
         "sr": "07-karijera-profesionalni-razvoj"
@@ -1296,7 +1279,6 @@
       "id": "UPL-MKT",
       "order": 8,
       "slug": "marketing-sales-communication",
-      "icon": "📣",
       "dirs": {
         "en": "08-marketing-sales-communication",
         "sr": "08-marketing-prodaja-komunikacija"
@@ -1316,7 +1298,6 @@
       "id": "UPL-PROD",
       "order": 9,
       "slug": "productivity-organization-management",
-      "icon": "⏱️",
       "dirs": {
         "en": "09-productivity-organization-management",
         "sr": "09-produktivnost-organizacija-upravljanje"
@@ -1336,7 +1317,6 @@
       "id": "UPL-CREATIVE",
       "order": 10,
       "slug": "creativity-design-media",
-      "icon": "🎨",
       "dirs": {
         "en": "10-creativity-design-media",
         "sr": "10-kreativnost-dizajn-mediji"

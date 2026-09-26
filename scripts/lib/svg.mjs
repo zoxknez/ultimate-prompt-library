@@ -1,206 +1,215 @@
 // SVG artwork for the READMEs: a hero banner and a live statistics card.
-// Both are rendered per language and per color scheme (light/dark) so GitHub can pick
-// the right one with <picture>. Output is deterministic; no timestamps or random ids.
+//
+// Design: monochrome (neutral grays, black and white), typographic, no gradients.
+// Fonts (Inter, Inter Display, JetBrains Mono; SIL OFL 1.1) are subset in assets/fonts/ and
+// embedded as data URIs, so the artwork renders identically on every platform. Text is measured
+// with the glyph advances in assets/fonts/metrics.json, so layout never depends on guesses.
+// Every image exists per language and per color scheme (light/dark) for use with <picture>.
+// Output is deterministic: no timestamps, no random ids.
 
-const FONT = "'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif";
-const MONO = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace";
+import { readFileSync } from 'node:fs';
+import { abs } from './upl.mjs';
+
+const FONT_DIR = 'assets/fonts';
+const FONTS = {
+  sans: { file: 'Inter-Regular', family: 'UPL Sans', weight: 400 },
+  sansMedium: { file: 'Inter-Medium', family: 'UPL Sans', weight: 500 },
+  sansSemi: { file: 'Inter-SemiBold', family: 'UPL Sans', weight: 600 },
+  display: { file: 'InterDisplay-SemiBold', family: 'UPL Display', weight: 600 },
+  mono: { file: 'JetBrainsMono-Regular', family: 'UPL Mono', weight: 400 },
+};
+const FALLBACK = {
+  'UPL Sans': "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
+  'UPL Display': "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
+  'UPL Mono': "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+};
+
+let metricsCache = null;
+const metrics = () => (metricsCache ??= JSON.parse(readFileSync(abs(`${FONT_DIR}/metrics.json`), 'utf8')));
+const fontData = new Map();
+function fontBase64(file) {
+  if (!fontData.has(file)) fontData.set(file, readFileSync(abs(`${FONT_DIR}/${file}.woff2`)).toString('base64'));
+  return fontData.get(file);
+}
+
+/** Exact advance width of `text` in pixels (kerning ignored) plus optional letter spacing. */
+export function measure(text, fontKey, size, letterSpacing = 0) {
+  const m = metrics()[FONTS[fontKey].file];
+  let units = 0;
+  for (const ch of String(text)) units += m.advances[ch] ?? m.advances['n'];
+  return (units / m.unitsPerEm) * size + letterSpacing * Math.max(0, [...String(text)].length - 1);
+}
+
+function fontFaces(keys) {
+  return [...new Set(keys)]
+    .map((key) => {
+      const f = FONTS[key];
+      return `@font-face{font-family:'${f.family}';font-weight:${f.weight};src:url(data:font/woff2;base64,${fontBase64(
+        f.file,
+      )}) format('woff2');}`;
+    })
+    .join('');
+}
+
+/** Attribute string for a text element in the given font. */
+function font(key, size, extra = '') {
+  const f = FONTS[key];
+  return `font-family="'${f.family}', ${FALLBACK[f.family]}" font-weight="${f.weight}" font-size="${size}"${extra ? ` ${extra}` : ''}`;
+}
 
 export const THEMES = {
   light: {
-    bg1: '#FFFFFF',
-    bg2: '#F6F7FE',
-    tile: '#FFFFFF',
-    border: '#E2E6F3',
-    text: '#0F172A',
-    muted: '#5B6478',
-    faint: '#94A0B8',
-    track: '#E9ECF7',
-    a1: '#7C3AED',
-    a2: '#4F46E5',
-    a3: '#0891B2',
-    glow1: '#A78BFA',
-    glow2: '#67E8F9',
-    glowOpacity: 0.35,
-    dots: '#C7CEE4',
-    code: '#0B1020',
-    codeBar: '#141B33',
-    codeText: '#E6EDF7',
-    codeMuted: '#7D89A6',
-    codeKey: '#67E8F9',
-    codeHead: '#C4B5FD',
+    canvas: '#FFFFFF',
+    border: '#E4E4E7',
+    grid: '#EEEEF0',
+    text: '#09090B',
+    muted: '#52525B',
+    faint: '#A1A1AA',
+    track: '#F1F1F3',
+    fill: '#09090B',
+    card: '#FFFFFF',
+    cardHeader: '#FAFAFA',
+    skeleton: '#F1F1F3',
+    shadow: '#09090B',
+    shadowOpacity: 0.06,
   },
   dark: {
-    bg1: '#0B1020',
-    bg2: '#121A33',
-    tile: '#141C36',
-    border: '#26304F',
-    text: '#E6EDF7',
-    muted: '#9AA6C2',
-    faint: '#66728F',
-    track: '#1E2745',
-    a1: '#A78BFA',
-    a2: '#818CF8',
-    a3: '#22D3EE',
-    glow1: '#7C3AED',
-    glow2: '#0891B2',
-    glowOpacity: 0.45,
-    dots: '#2A3558',
-    code: '#070B17',
-    codeBar: '#0F1528',
-    codeText: '#E6EDF7',
-    codeMuted: '#66728F',
-    codeKey: '#67E8F9',
-    codeHead: '#C4B5FD',
+    canvas: '#09090B',
+    border: '#27272A',
+    grid: '#161619',
+    text: '#FAFAFA',
+    muted: '#A1A1AA',
+    faint: '#71717A',
+    track: '#1C1C1F',
+    fill: '#FAFAFA',
+    card: '#0F0F11',
+    cardHeader: '#131316',
+    skeleton: '#1C1C1F',
+    shadow: '#000000',
+    shadowOpacity: 0.5,
   },
 };
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-
-/** Rough text width estimate for layout (no font metrics are available in an <img> SVG). */
-function textWidth(text, size, { bold = false, spacing = 0 } = {}) {
-  let units = 0;
-  for (const ch of String(text)) {
-    if (ch === ' ') units += 0.28;
-    else if (/[MW]/.test(ch)) units += 0.86;
-    else if (/[A-Z]/.test(ch)) units += 0.66;
-    else if (/[mw]/.test(ch)) units += 0.82;
-    else if (/[ijlt.,:;'|!·]/.test(ch)) units += 0.3;
-    else if (/[0-9]/.test(ch)) units += 0.57;
-    else units += 0.54;
-  }
-  return units * size * (bold ? 1.07 : 1) + spacing * String(text).length;
-}
-
-function defs(th, id) {
-  return `<defs>
-    <linearGradient id="${id}-accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="${th.a1}"/>
-      <stop offset="0.55" stop-color="${th.a2}"/>
-      <stop offset="1" stop-color="${th.a3}"/>
-    </linearGradient>
-    <linearGradient id="${id}-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="${th.bg1}"/>
-      <stop offset="1" stop-color="${th.bg2}"/>
-    </linearGradient>
-    <radialGradient id="${id}-glow1">
-      <stop offset="0" stop-color="${th.glow1}" stop-opacity="${th.glowOpacity}"/>
-      <stop offset="1" stop-color="${th.glow1}" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="${id}-glow2">
-      <stop offset="0" stop-color="${th.glow2}" stop-opacity="${th.glowOpacity}"/>
-      <stop offset="1" stop-color="${th.glow2}" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="${id}-dots" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.2" fill="${th.dots}"/>
-    </pattern>
-  </defs>`;
-}
-
-function chip(x, y, label, th, id) {
-  const w = Math.round(textWidth(label, 15, { bold: true }) + 34);
-  return {
-    width: w,
-    svg: `<g transform="translate(${x} ${y})">
-      <rect width="${w}" height="34" rx="17" fill="${th.tile}" stroke="${th.border}"/>
-      <circle cx="17" cy="17" r="4" fill="url(#${id}-accent)"/>
-      <text x="29" y="22" font-family="${FONT}" font-size="15" font-weight="600" fill="${th.text}">${esc(label)}</text>
-    </g>`,
-  };
-}
+const r1 = (n) => Math.round(n * 10) / 10;
 
 // ---------------------------------------------------------------------------
 // Banner
 
 const BANNER_TEXT = {
   en: {
-    eyebrow: 'OPEN-SOURCE · MODEL-AGNOSTIC · ENGLISH / SRPSKI',
+    eyebrow: 'OPEN-SOURCE PROMPT LIBRARY',
     tagline: ['The open-source library of deep,', 'production-grade AI prompts.'],
-    chips: ['Stable IDs', 'Versioned', 'Bilingual', 'Evidence-first'],
+    meta: (n) => [`${n} prompts`, 'English · Srpski', 'Model-agnostic', 'MIT License'],
   },
   sr: {
-    eyebrow: 'OPEN-SOURCE · NEZAVISNO OD MODELA · ENGLISH / SRPSKI',
+    eyebrow: 'OPEN-SOURCE BIBLIOTEKA PROMPTOVA',
     tagline: ['Open-source biblioteka dubokih AI', 'promptova spremnih za produkciju.'],
-    chips: ['Stabilni ID-evi', 'Verzionisano', 'Dvojezično', 'Dokazi pre svega'],
+    meta: (n) => [`${n} promptova`, 'English · Srpski', 'Nezavisno od modela', 'MIT licenca'],
   },
 };
 
-export function bannerSvg(lang, themeName) {
+export function bannerSvg(lang, themeName, stats) {
   const th = THEMES[themeName];
   const s = BANNER_TEXT[lang] ?? BANNER_TEXT.en;
   const id = `b${themeName[0]}`;
   const W = 1200;
-  const H = 420;
+  const H = 440;
+  const X = 72;
 
-  const eyebrowW = Math.round(textWidth(s.eyebrow, 13, { bold: true, spacing: 1.6 }) + 40);
-  let cx = 64;
-  const chips = s.chips.map((label) => {
-    const c = chip(cx, 330, label, th, id);
-    cx += c.width + 10;
-    return c.svg;
-  });
+  // Meta row: items separated by hairlines, measured exactly.
+  let mx = X;
+  const meta = s
+    .meta(stats.uniquePrompts)
+    .map((item, i) => {
+      const w = measure(item, 'sansMedium', 15);
+      const parts = [];
+      if (i > 0) {
+        parts.push(`<rect x="${r1(mx)}" y="355" width="1" height="18" fill="${th.border}"/>`);
+        mx += 17;
+      }
+      parts.push(`<text x="${r1(mx)}" y="369" ${font('sansMedium', 15)} fill="${th.muted}">${esc(item)}</text>`);
+      mx += w + 16;
+      return parts.join('');
+    })
+    .join('\n  ');
 
-  const codeLines = [
-    [['---', 'm']],
-    [['id', 'k'], [': UPL-IT-042', 't']],
-    [['title', 'k'], [': Docker Production Audit', 't']],
-    [['language', 'k'], [`: ${lang}`, 't']],
-    [['version', 'k'], [': 1.0.0', 't']],
-    [['status', 'k'], [': stable', 't']],
-    [['---', 'm']],
-    [['# DOCKER PRODUCTION AUDIT', 'h']],
+  // Document card on the right.
+  const CX = 720;
+  const CY = 64;
+  const CW = 408;
+  const CH = 312;
+  const fm = [
+    ['id', 'UPL-IT-042'],
+    ['title', 'Docker Production Audit'],
+    ['category', 'IT'],
+    ['language', lang],
+    ['version', '1.0.0'],
+    ['status', 'stable'],
   ];
-  const color = { m: th.codeMuted, k: th.codeKey, t: th.codeText, h: th.codeHead };
-  const code = codeLines
+  const keyW = measure('category:  ', 'mono', 13);
+  const fmLines = fm
     .map(
-      (parts, i) =>
-        `<text x="24" y="${78 + i * 25}" font-family="${MONO}" font-size="15" xml:space="preserve">${parts
-          .map(([txt, c]) => `<tspan fill="${color[c]}"${c === 'h' ? ' font-weight="700"' : ''}>${esc(txt)}</tspan>`)
-          .join('')}</text>`,
+      ([k, v], i) =>
+        `<text x="24" y="${92 + i * 22}" ${font('mono', 13)}><tspan fill="${th.faint}">${esc(k)}:</tspan><tspan x="${r1(
+          24 + keyW,
+        )}" fill="${th.text}">${esc(v)}</tspan></text>`,
     )
     .join('\n      ');
+  const skeleton = [300, 340, 250, 320]
+    .map((w, i) => `<rect x="24" y="${252 + i * 14}" width="${w}" height="6" rx="3" fill="${th.skeleton}"/>`)
+    .join('');
+  const statusW = measure('stable', 'mono', 11) + 18;
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Ultimate Prompt Library - ${esc(
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" text-rendering="geometricPrecision" role="img" aria-label="Ultimate Prompt Library - ${esc(
     s.tagline.join(' '),
   )}">
-  ${defs(th, id)}
-  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="28" fill="url(#${id}-bg)" stroke="${th.border}"/>
-  <clipPath id="${id}-clip"><rect width="${W}" height="${H}" rx="28"/></clipPath>
+  <defs>
+    <style>${fontFaces(['sans', 'sansMedium', 'display', 'mono'])}</style>
+    <pattern id="${id}-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="${th.grid}" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="${id}-fade" cx="0.78" cy="0.45" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="${id}-mask"><rect width="${W}" height="${H}" fill="url(#${id}-fade)"/></mask>
+    <clipPath id="${id}-clip"><rect width="${W}" height="${H}" rx="12"/></clipPath>
+    <filter id="${id}-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="${th.shadow}" flood-opacity="${th.shadowOpacity}"/>
+    </filter>
+  </defs>
+
   <g clip-path="url(#${id}-clip)">
-    <rect width="${W}" height="${H}" fill="url(#${id}-dots)" opacity="0.55"/>
-    <circle cx="140" cy="40" r="360" fill="url(#${id}-glow1)"/>
-    <circle cx="1080" cy="420" r="380" fill="url(#${id}-glow2)"/>
-    <rect width="${W}" height="6" fill="url(#${id}-accent)"/>
+    <rect width="${W}" height="${H}" fill="${th.canvas}"/>
+    <rect width="${W}" height="${H}" fill="url(#${id}-grid)" mask="url(#${id}-mask)"/>
   </g>
+  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="12" fill="none" stroke="${th.border}"/>
 
-  <g transform="translate(64 58)">
-    <rect width="${eyebrowW}" height="32" rx="16" fill="${th.tile}" stroke="${th.border}"/>
-    <text x="20" y="21" font-family="${FONT}" font-size="13" font-weight="700" letter-spacing="1.6" fill="${th.muted}">${esc(
-      s.eyebrow,
-    )}</text>
-  </g>
+  <rect x="${X}" y="72" width="10" height="10" fill="${th.text}"/>
+  <text x="${X + 22}" y="82" ${font('mono', 13, 'letter-spacing="1.5"')} fill="${th.muted}">${esc(s.eyebrow)}</text>
 
-  <text x="60" y="162" font-family="${FONT}" font-size="64" font-weight="800" letter-spacing="-1.5" fill="${th.text}">Ultimate Prompt</text>
-  <text x="60" y="232" font-family="${FONT}" font-size="64" font-weight="800" letter-spacing="-1.5" fill="url(#${id}-accent)">Library</text>
+  <text x="${X - 3}" y="176" ${font('display', 68, 'letter-spacing="-2.2"')} fill="${th.text}">Ultimate Prompt</text>
+  <text x="${X - 3}" y="250" ${font('display', 68, 'letter-spacing="-2.2"')} fill="${th.faint}">Library</text>
 
-  <text font-family="${FONT}" font-size="22" fill="${th.muted}">
-    <tspan x="64" y="276">${esc(s.tagline[0])}</tspan>
-    <tspan x="64" y="306">${esc(s.tagline[1])}</tspan>
+  <text ${font('sans', 20)} fill="${th.muted}">
+    <tspan x="${X}" y="296">${esc(s.tagline[0])}</tspan>
+    <tspan x="${X}" y="324">${esc(s.tagline[1])}</tspan>
   </text>
 
-  ${chips.join('\n  ')}
+  ${meta}
 
-  <g transform="translate(732 64)">
-    <rect x="6" y="10" width="404" height="292" rx="18" fill="${th.a2}" opacity="0.18"/>
-    <rect width="404" height="292" rx="18" fill="${th.code}" stroke="${th.border}"/>
-    <path d="M18 0h368a18 18 0 0 1 18 18v26H0V18A18 18 0 0 1 18 0z" fill="${th.codeBar}"/>
-    <circle cx="24" cy="22" r="6" fill="#FF5F57"/>
-    <circle cx="44" cy="22" r="6" fill="#FEBC2E"/>
-    <circle cx="64" cy="22" r="6" fill="#28C840"/>
-    <text x="88" y="27" font-family="${MONO}" font-size="13" fill="${th.codeMuted}">042-docker-production-audit.md</text>
-    <g>
-      ${code}
-    </g>
-    <rect x="24" y="274" width="356" height="4" rx="2" fill="url(#${id}-accent)" opacity="0.85"/>
+  <g transform="translate(${CX} ${CY})">
+    <rect width="${CW}" height="${CH}" rx="10" fill="${th.card}" filter="url(#${id}-shadow)"/>
+    <rect x="0.5" y="0.5" width="${CW - 1}" height="${CH - 1}" rx="10" fill="${th.card}" stroke="${th.border}"/>
+    <path d="M10.5 0.5h${CW - 21}a10 10 0 0 1 10 10v33H0.5v-33a10 10 0 0 1 10-10z" fill="${th.cardHeader}" stroke="${th.border}"/>
+    <text x="24" y="27" ${font('mono', 12)} fill="${th.muted}">042-docker-production-audit.md</text>
+    <rect x="${r1(CW - 24 - statusW)}" y="12" width="${r1(statusW)}" height="20" rx="10" fill="none" stroke="${th.border}"/>
+    <text x="${r1(CW - 24 - statusW / 2)}" y="26" text-anchor="middle" ${font('mono', 11)} fill="${th.muted}">stable</text>
+    <text x="24" y="70" ${font('mono', 13)} fill="${th.faint}">---</text>
+      ${fmLines}
+    <text x="24" y="224" ${font('mono', 13)} fill="${th.faint}">---</text>
+    ${skeleton}
   </g>
 </svg>
 `;
@@ -211,25 +220,27 @@ export function bannerSvg(lang, themeName) {
 
 const STATS_TEXT = {
   en: {
-    title: 'Library at a glance',
-    subtitle: 'Live numbers, generated from prompt front matter and catalog.json',
-    tiles: ['Unique prompts', 'Localized files', 'Languages', 'Categories'],
-    active: (n) => `${n} with prompts`,
-    languagesNote: 'English · Srpski',
-    filesNote: 'one per language',
-    promptsNote: 'stable IDs',
+    eyebrow: 'LIBRARY AT A GLANCE',
+    source: 'Generated from catalog.json and prompt front matter',
+    tiles: [
+      ['Unique prompts', 'Stable, language-independent IDs'],
+      ['Localized files', 'One per prompt and language'],
+      ['Languages', 'English · Srpski'],
+      ['Categories', (n) => `${n} with published prompts`],
+    ],
     complete: (done, total) => `${done} of ${total} subcategories complete`,
     planned: (n) => `${n} planned`,
     available: 'available',
   },
   sr: {
-    title: 'Biblioteka ukratko',
-    subtitle: 'Brojevi uživo, generisani iz front matter-a promptova i catalog.json',
-    tiles: ['Jedinstvenih promptova', 'Lokalizovanih fajlova', 'Jezika', 'Oblasti'],
-    active: (n) => `${n} sa promptovima`,
-    languagesNote: 'English · Srpski',
-    filesNote: 'po jedan za svaki jezik',
-    promptsNote: 'stabilni ID-evi',
+    eyebrow: 'BIBLIOTEKA UKRATKO',
+    source: 'Generisano iz catalog.json i front matter-a promptova',
+    tiles: [
+      ['Jedinstvenih promptova', 'Stabilni ID-evi za sve jezike'],
+      ['Lokalizovanih fajlova', 'Jedan po promptu i jeziku'],
+      ['Jezika', 'English · Srpski'],
+      ['Oblasti', (n) => `${n} sa objavljenim promptovima`],
+    ],
     complete: (done, total) => `${done} od ${total} podkategorija završeno`,
     planned: (n) => `${n} planirano`,
     available: 'dostupno',
@@ -237,104 +248,79 @@ const STATS_TEXT = {
 };
 
 /**
- * @param lang      language code
- * @param themeName 'light' | 'dark'
- * @param stats     object from generate-stats
- * @param rows      [{ name, available, planned, segments: [{ available, planned }] }]
+ * @param rows [{ name, available, planned, segments: [{ label, available, planned }] }]
  */
 export function statsSvg(lang, themeName, stats, rows) {
   const th = THEMES[themeName];
   const s = STATS_TEXT[lang] ?? STATS_TEXT.en;
   const id = `s${themeName[0]}`;
   const W = 1200;
-  const PAD = 56;
-  const tilesY = 128;
-  const tileH = 136;
-  const rowsY = tilesY + tileH + 56;
+  const X = 64;
+  const innerW = W - X * 2;
+  const tilesY = 104;
+  const rowsY = 300;
   const rowH = 132;
-  const H = rowsY + rows.length * rowH + 16;
+  const H = rowsY + rows.length * rowH + 40;
 
-  const tiles = [
-    [stats.uniquePrompts, s.tiles[0], s.promptsNote],
-    [stats.localizedPromptFiles, s.tiles[1], s.filesNote],
-    [stats.languages, s.tiles[2], s.languagesNote],
-    [stats.categories, s.tiles[3], s.active(stats.categoriesWithContent)],
-  ];
-  const gap = 24;
-  const tileW = (W - PAD * 2 - gap * 3) / 4;
-  const tileSvg = tiles
-    .map(([value, label, note], i) => {
-      const x = PAD + i * (tileW + gap);
-      return `<g transform="translate(${x} ${tilesY})">
-      <rect width="${tileW}" height="${tileH}" rx="18" fill="${th.tile}" stroke="${th.border}"/>
-      <rect x="24" y="0" width="44" height="4" rx="2" fill="url(#${id}-accent)"/>
-      <text x="24" y="66" font-family="${FONT}" font-size="46" font-weight="800" letter-spacing="-1" fill="url(#${id}-accent)">${esc(
-        value,
+  const values = [stats.uniquePrompts, stats.localizedPromptFiles, stats.languages, stats.categories];
+  const colW = innerW / 4;
+  const tiles = s.tiles
+    .map(([label, note], i) => {
+      const x = X + i * colW;
+      const noteText = typeof note === 'function' ? note(stats.categoriesWithContent) : note;
+      const pad = i === 0 ? 0 : 32;
+      return `${i > 0 ? `<rect x="${r1(x)}" y="${tilesY}" width="1" height="128" fill="${th.border}"/>` : ''}
+  <text x="${r1(x + pad)}" y="${tilesY + 58}" ${font('display', 60, 'letter-spacing="-2"')} fill="${th.text}">${esc(
+        values[i],
       )}</text>
-      <text x="24" y="96" font-family="${FONT}" font-size="17" font-weight="600" fill="${th.text}">${esc(label)}</text>
-      <text x="24" y="118" font-family="${FONT}" font-size="14" fill="${th.muted}">${esc(note)}</text>
-    </g>`;
+  <text x="${r1(x + pad)}" y="${tilesY + 94}" ${font('sansMedium', 16)} fill="${th.text}">${esc(label)}</text>
+  <text x="${r1(x + pad)}" y="${tilesY + 118}" ${font('sans', 14)} fill="${th.muted}">${esc(noteText)}</text>`;
     })
     .join('\n  ');
 
-  const barW = W - PAD * 2;
   const rowSvg = rows
     .map((row, r) => {
       const y = rowsY + r * rowH;
       const pct = row.planned ? Math.round((row.available / row.planned) * 100) : 0;
-      const n = row.segments.length || 1;
-      const segGap = 6;
-      const segW = (barW - segGap * (n - 1)) / n;
-      const segments = (row.segments.length ? row.segments : [{ available: row.available, planned: row.planned }])
+      const segs = row.segments.length ? row.segments : [{ label: '', available: row.available, planned: row.planned }];
+      const gap = 8;
+      const segW = (innerW - gap * (segs.length - 1)) / segs.length;
+      const bars = segs
         .map((seg, i) => {
-          const x = PAD + i * (segW + segGap);
+          const x = X + i * (segW + gap);
           const fill = seg.planned ? (seg.available / seg.planned) * segW : 0;
-          return `<rect x="${x.toFixed(1)}" y="${y + 40}" width="${segW.toFixed(1)}" height="18" rx="6" fill="${th.track}"/>${
-            fill > 0
-              ? `<rect x="${x.toFixed(1)}" y="${y + 40}" width="${fill.toFixed(1)}" height="18" rx="6" fill="url(#${id}-bar)"/>`
-              : ''
-          }<text x="${(x + segW / 2).toFixed(1)}" y="${y + 80}" text-anchor="middle" font-family="${MONO}" font-size="12" fill="${
-            th.faint
-          }">${String(i + 1).padStart(2, '0')}</text>`;
+          const label = esc(seg.label);
+          return `<rect x="${r1(x)}" y="${y + 44}" width="${r1(segW)}" height="8" rx="2" fill="${th.track}"/>${
+            fill > 0 ? `<rect x="${r1(x)}" y="${y + 44}" width="${r1(fill)}" height="8" rx="2" fill="${th.fill}"/>` : ''
+          }<text x="${r1(x)}" y="${y + 76}" ${font('sansMedium', 12)} fill="${seg.available ? th.muted : th.faint}">${label}</text>`;
         })
         .join('\n    ');
       const done = row.segments.filter((g) => g.planned > 0 && g.available === g.planned).length;
-      return `<g>
-    <text x="${PAD}" y="${y + 22}" font-family="${FONT}" font-size="20" font-weight="700" fill="${th.text}">${esc(row.name)}</text>
-    <text x="${W - PAD}" y="${y + 22}" text-anchor="end" font-family="${FONT}" font-size="20" font-weight="700" fill="${th.text}">${
-      row.available
-    } / ${row.planned} <tspan fill="${th.muted}" font-weight="600">${s.available} · ${pct}%</tspan></text>
-    ${segments}
-    <text x="${PAD}" y="${y + 110}" font-family="${FONT}" font-size="15" fill="${th.muted}">${esc(
-      s.complete(done, row.segments.length),
-    )} · ${esc(s.planned(row.planned - row.available))}</text>
-  </g>`;
+      const right = `${row.available} / ${row.planned}`;
+      const pctText = `${pct}%`;
+      return `<rect x="${X}" y="${y - 36}" width="${innerW}" height="1" fill="${th.border}"/>
+  <text x="${X}" y="${y + 20}" ${font('sansSemi', 18)} fill="${th.text}">${esc(row.name)}</text>
+  <text x="${W - X}" y="${y + 20}" text-anchor="end" ${font('mono', 15)} fill="${th.muted}"><tspan fill="${th.text}">${esc(
+    right,
+  )}</tspan>  ${esc(s.available)} · ${esc(pctText)}</text>
+    ${bars}
+  <text x="${X}" y="${y + 108}" ${font('sans', 14)} fill="${th.muted}">${esc(
+    `${s.complete(done, row.segments.length)} · ${s.planned(row.planned - row.available)}`,
+  )}</text>`;
     })
     .join('\n  ');
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(
-    `${s.title}: ${stats.uniquePrompts} ${s.tiles[0]}, ${stats.localizedPromptFiles} ${s.tiles[1]}, ${stats.languages} ${s.tiles[2]}`,
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" text-rendering="geometricPrecision" role="img" aria-label="${esc(
+    `${s.eyebrow}: ${stats.uniquePrompts} ${s.tiles[0][0]}, ${stats.localizedPromptFiles} ${s.tiles[1][0]}, ${stats.languages} ${s.tiles[2][0]}`,
   )}">
-  ${defs(th, id)}
   <defs>
-    <linearGradient id="${id}-bar" x1="0" y1="0" x2="${barW}" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="${th.a1}"/>
-      <stop offset="0.55" stop-color="${th.a2}"/>
-      <stop offset="1" stop-color="${th.a3}"/>
-    </linearGradient>
+    <style>${fontFaces(['sans', 'sansMedium', 'sansSemi', 'display', 'mono'])}</style>
   </defs>
-  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="28" fill="url(#${id}-bg)" stroke="${th.border}"/>
-  <clipPath id="${id}-clip"><rect width="${W}" height="${H}" rx="28"/></clipPath>
-  <g clip-path="url(#${id}-clip)">
-    <rect width="${W}" height="6" fill="url(#${id}-accent)"/>
-    <circle cx="1140" cy="0" r="340" fill="url(#${id}-glow1)" opacity="0.7"/>
-    <circle cx="0" cy="${H}" r="320" fill="url(#${id}-glow2)" opacity="0.6"/>
-  </g>
-  <text x="${PAD}" y="70" font-family="${FONT}" font-size="30" font-weight="800" letter-spacing="-0.5" fill="${th.text}">${esc(
-    s.title,
-  )}</text>
-  <text x="${PAD}" y="100" font-family="${FONT}" font-size="16" fill="${th.muted}">${esc(s.subtitle)}</text>
-  ${tileSvg}
+  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="12" fill="${th.canvas}" stroke="${th.border}"/>
+  <rect x="${X}" y="50" width="10" height="10" fill="${th.text}"/>
+  <text x="${X + 22}" y="60" ${font('mono', 13, 'letter-spacing="1.5"')} fill="${th.muted}">${esc(s.eyebrow)}</text>
+  <text x="${W - X}" y="60" text-anchor="end" ${font('mono', 12)} fill="${th.faint}">${esc(s.source)}</text>
+  ${tiles}
   ${rowSvg}
 </svg>
 `;

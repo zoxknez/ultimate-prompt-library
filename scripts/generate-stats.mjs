@@ -15,7 +15,6 @@
 import { buildCollections, categoryCode, loadValidRepository, Outputs, STATUSES } from './lib/upl.mjs';
 import {
   categoryGrid,
-  emojiBar,
   heroBadges,
   progressLabel,
   statsPicture,
@@ -76,13 +75,17 @@ for (const code of codes) {
   const rows = collections
     .filter((c) => c.planned > 0)
     .map((c) => ({
-      name: c.category.id === 'UPL-IT' ? `${s.initialIt} · ${c.category.names[code]}` : c.category.names[code],
+      name: c.category.id === 'UPL-IT' ? s.initialIt : c.category.names[code],
       available: c.available,
       planned: c.planned,
-      segments: c.subcategories.map((g) => ({ available: g.available, planned: g.planned })),
+      segments: c.subcategories.map((g) => ({
+        label: g.sub.names[code].split(/[\s,&]+/)[0],
+        available: g.available,
+        planned: g.planned,
+      })),
     }));
   for (const theme of Object.keys(THEMES)) {
-    out.set(`assets/banner.${code}.${theme}.svg`, bannerSvg(code, theme));
+    out.set(`assets/banner.${code}.${theme}.svg`, bannerSvg(code, theme, stats));
     out.set(`assets/stats.${code}.${theme}.svg`, statsSvg(code, theme, stats, rows));
   }
 }
@@ -106,11 +109,11 @@ for (const code of codes) {
     roadmapFor(code),
     'roadmap-progress',
     [
-      `| | ${s.category} | ${s.progress} | ${s.available2} | ${s.remaining} | ${s.statusHeader} |`,
-      '|:---:|---|:---:|:---:|:---:|:---:|',
+      `| # | ${s.category} | ${s.available2} | ${s.remaining} | ${s.statusHeader} |`,
+      '|:---:|---|:---:|:---:|---|',
       ...collections.map(
         (c) =>
-          `| ${c.category.icon ?? ''} | **${c.category.names[code]}** | ${c.planned ? emojiBar(c.available, c.planned) : '-'} | ${
+          `| ${String(c.category.order).padStart(2, '0')} | **${c.category.names[code]}** | ${
             c.planned ? `${c.available} / ${c.planned}` : '-'
           } | ${c.planned ? c.planned - c.available : '-'} | ${progressLabel(code, c.available, c.planned).split(' - ')[0]} |`,
       ),

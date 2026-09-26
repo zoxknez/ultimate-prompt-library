@@ -6,11 +6,11 @@ import { pad, promptFileName, promptPath, subcategoryDir, PROMPTS_DIR } from './
 const STRINGS = {
   en: {
     status: {
-      stable: '✅ Available',
-      review: '🔍 In review',
-      draft: '✏️ Draft',
-      deprecated: '⚠️ Deprecated',
-      planned: '⏳ Planned',
+      stable: 'Available',
+      review: 'In review',
+      draft: 'Draft',
+      deprecated: 'Deprecated',
+      planned: 'Planned',
     },
     prompt: 'Prompt',
     progress: 'Progress',
@@ -21,8 +21,8 @@ const STRINGS = {
     category: 'Category',
     subcategory: 'Subcategory',
     statusHeader: 'Status',
-    inProgress: '🚧 In progress',
-    complete: '✅ Complete',
+    inProgress: 'In progress',
+    complete: 'Complete',
     plannedWord: 'Planned',
     prompts: 'Prompts',
     available2: 'Available',
@@ -46,11 +46,11 @@ const STRINGS = {
   },
   sr: {
     status: {
-      stable: '✅ Dostupno',
-      review: '🔍 U pregledu',
-      draft: '✏️ Nacrt',
-      deprecated: '⚠️ Zastarelo',
-      planned: '⏳ Planirano',
+      stable: 'Dostupno',
+      review: 'U pregledu',
+      draft: 'Nacrt',
+      deprecated: 'Zastarelo',
+      planned: 'Planirano',
     },
     prompt: 'Prompt',
     progress: 'Napredak',
@@ -61,8 +61,8 @@ const STRINGS = {
     category: 'Oblast',
     subcategory: 'Podkategorija',
     statusHeader: 'Status',
-    inProgress: '🚧 U toku',
-    complete: '✅ Završeno',
+    inProgress: 'U toku',
+    complete: 'Završeno',
     plannedWord: 'Planirano',
     prompts: 'Promptovi',
     available2: 'Dostupno',
@@ -178,7 +178,7 @@ export function roadmapPlannedBlock({ lang, collections }) {
     const pending = collection.entries.filter((e) => !e.available);
     if (!pending.length) continue;
     parts.push(
-      `### ${collection.category.icon ?? ""} ${collection.category.names[lang]} - ${pending.length} ${s.plannedWord.toLowerCase()}`,
+      `### ${collection.category.names[lang]} - ${pending.length} ${s.plannedWord.toLowerCase()}`,
     );
     for (const group of collection.subcategories) {
       const groupPending = group.entries.filter((e) => !e.available);
@@ -205,11 +205,11 @@ export function roadmapPlannedBlock({ lang, collections }) {
 // ---------------------------------------------------------------------------
 // Root README blocks
 
-const BADGE = 'style=flat-square&labelColor=0B1020';
+const BADGE = 'style=flat-square&labelColor=27272A&color=09090B';
 const REPO = 'zoxknez/ultimate-prompt-library';
 const enc = (text) => encodeURIComponent(String(text).replace(/-/g, '--').replace(/_/g, '__'));
 
-/** Shields.io badges for the README hero; counts come from stats.json. */
+/** Monochrome shields.io badges for the README hero; counts come from stats.json. */
 export function heroBadges({ lang, stats, collections }) {
   const s = t(lang);
   const it = collections.find((c) => c.category.id === 'UPL-IT');
@@ -221,20 +221,20 @@ export function heroBadges({ lang, stats, collections }) {
     ],
     [
       `${s.badgePrompts}: ${stats.uniquePrompts}`,
-      `https://img.shields.io/badge/${enc(s.badgePrompts)}-${stats.uniquePrompts}-7C3AED?${BADGE}`,
+      `https://img.shields.io/badge/${enc(s.badgePrompts)}-${stats.uniquePrompts}-09090B?${BADGE}`,
       lang === 'en' ? '#collection' : '#kolekcija',
     ],
     it && [
       `${s.badgeIt}: ${it.available}/${it.planned}`,
-      `https://img.shields.io/badge/${enc(s.badgeIt)}-${it.available}%2F${it.planned}-4F46E5?${BADGE}`,
+      `https://img.shields.io/badge/${enc(s.badgeIt)}-${it.available}%2F${it.planned}-09090B?${BADGE}`,
       `prompts/${lang}/${it.category.dirs[lang]}/README.md`,
     ],
     [
       `${s.badgeLanguages}: EN | SR`,
-      `https://img.shields.io/badge/${enc(s.badgeLanguages)}-EN%20%7C%20SR-0891B2?${BADGE}`,
+      `https://img.shields.io/badge/${enc(s.badgeLanguages)}-EN%20%7C%20SR-09090B?${BADGE}`,
       lang === 'en' ? 'README.sr.md' : 'README.md',
     ],
-    ['License: MIT', `https://img.shields.io/badge/license-MIT-22C55E?${BADGE}`, 'LICENSE'],
+    ['License: MIT', `https://img.shields.io/badge/license-MIT-09090B?${BADGE}`, 'LICENSE'],
   ].filter(Boolean);
   return badges.map(([alt, src, href]) => `<a href="${href}"><img src="${src}" alt="${alt}"></a>`).join('\n');
 }
@@ -250,38 +250,30 @@ export function statsPicture({ lang, stats }) {
   ].join('\n');
 }
 
-/** Five-column card grid of all categories. */
+function collectionStatus(s, available, planned) {
+  if (!planned) return s.status.planned;
+  if (available === planned) return `${s.complete} · ${available} / ${planned}`;
+  if (available) return `${s.inProgress} · ${available} / ${planned}`;
+  return `${s.status.planned} · 0 / ${planned}`;
+}
+
+/** Five-column grid of all categories. */
 export function categoryGrid({ lang, fromFile, collections }) {
   const s = t(lang);
   const cells = collections.map((c) => {
-    const status = !c.planned
-      ? s.status.planned
-      : c.available === c.planned
-        ? `${s.complete} · ${c.available}/${c.planned}`
-        : c.available
-          ? `${s.inProgress} · ${c.available}/${c.planned}`
-          : `${s.status.planned} · 0/${c.planned}`;
     const href = link(fromFile, `${PROMPTS_DIR}/${lang}/${c.category.dirs[lang]}/README.md`);
     return [
       '<td align="center" valign="top" width="20%">',
-      `<h3>${c.category.icon ?? '📁'}</h3>`,
+      `<sub>${pad(c.category.order, 2)}</sub><br>`,
       `<a href="${href}"><b>${escapeHtml(c.category.names[lang])}</b></a><br>`,
       `<sub><code>${c.category.id}</code></sub><br>`,
-      `<sub>${status}</sub>`,
+      `<sub>${collectionStatus(s, c.available, c.planned)}</sub>`,
       '</td>',
     ].join('\n');
   });
   const rows = [];
   for (let i = 0; i < cells.length; i += 5) rows.push(`<tr>\n${cells.slice(i, i + 5).join('\n')}\n</tr>`);
   return `<table>\n${rows.join('\n')}\n</table>`;
-}
-
-/** Emoji progress bar, one square per prompt (scaled to at most 10 squares). */
-export function emojiBar(available, planned, width = 10) {
-  if (!planned) return '';
-  const slots = Math.min(width, planned);
-  const filled = Math.round((available / planned) * slots);
-  return '🟪'.repeat(filled) + '⬜'.repeat(slots - filled);
 }
 
 /** Subcategory progress table for every category that has subcategories. */
@@ -291,8 +283,8 @@ export function subcategoryStatus({ lang, fromFile, collections }) {
     .filter((c) => c.subcategories.length)
     .map((c) =>
       [
-        `| | ${s.subcategory} | ${s.progress} | ${s.available2} | ${s.statusHeader} |`,
-        '|:---:|---|:---:|:---:|:---:|',
+        `| # | ${s.subcategory} | ${s.available2} | ${s.statusHeader} |`,
+        '|:---:|---|:---:|---|',
         ...c.subcategories.map((g) => {
           const href = link(fromFile, `${PROMPTS_DIR}/${lang}/${c.category.dirs[lang]}/${subcategoryDir(g.sub)}/README.md`);
           const status = !g.planned
@@ -302,7 +294,7 @@ export function subcategoryStatus({ lang, fromFile, collections }) {
               : g.available
                 ? s.inProgress
                 : s.status.planned;
-          return `| ${g.sub.icon ?? ''} | **[${escapeCell(g.sub.names[lang])}](${href})** | ${emojiBar(g.available, g.planned)} | ${g.available} / ${g.planned} | ${status} |`;
+          return `| ${pad(g.sub.order, 2)} | [${escapeCell(g.sub.names[lang])}](${href}) | ${g.available} / ${g.planned} | ${status} |`;
         }),
       ].join('\n'),
     )

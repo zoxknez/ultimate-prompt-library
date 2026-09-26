@@ -13,16 +13,16 @@ Frontend, full-stack web applications, performance, accessibility, SEO and brows
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 001 | [Forensic Full Repository Audit](001-forensic-full-repository-audit.md) | [EN](001-forensic-full-repository-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/001-forensic-full-repository-audit.md) | ✅ Available |
-| 002 | [Ultimate Next.js Production Audit](002-ultimate-nextjs-production-audit.md) | [EN](002-ultimate-nextjs-production-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/002-ultimate-nextjs-production-audit.md) | ✅ Available |
-| 003 | [React Bug Hunter](003-react-bug-hunter.md) | [EN](003-react-bug-hunter.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/003-react-bug-hunter.md) | ✅ Available |
-| 004 | [Frontend Architecture Audit](004-frontend-architecture-audit.md) | [EN](004-frontend-architecture-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/004-frontend-architecture-audit.md) | ✅ Available |
-| 005 | [Web Performance Hunter](005-web-performance-hunter.md) | [EN](005-web-performance-hunter.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/005-web-performance-hunter.md) | ✅ Available |
-| 006 | [Responsive & Mobile Web Audit](006-responsive-and-mobile-web-audit.md) | [EN](006-responsive-and-mobile-web-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/006-responsive-and-mobile-web-audit.md) | ✅ Available |
-| 007 | [Web Accessibility Audit](007-web-accessibility-audit.md) | [EN](007-web-accessibility-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/007-web-accessibility-audit.md) | ✅ Available |
-| 008 | [Technical SEO Audit](008-technical-seo-audit.md) | [EN](008-technical-seo-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/008-technical-seo-audit.md) | ✅ Available |
-| 009 | [Progressive Web App Audit](009-progressive-web-app-audit.md) | [EN](009-progressive-web-app-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/009-progressive-web-app-audit.md) | ✅ Available |
-| 010 | [Browser Compatibility & Production Bug Hunter](010-browser-compatibility-and-production-bug-hunter.md) | [EN](010-browser-compatibility-and-production-bug-hunter.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/010-browser-compatibility-and-production-bug-hunter.md) | ✅ Available |
+| 001 | [Forensic Full Repository Audit](001-forensic-full-repository-audit.md) | [EN](001-forensic-full-repository-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/001-forensic-full-repository-audit.md) | Available |
+| 002 | [Ultimate Next.js Production Audit](002-ultimate-nextjs-production-audit.md) | [EN](002-ultimate-nextjs-production-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/002-ultimate-nextjs-production-audit.md) | Available |
+| 003 | [React Bug Hunter](003-react-bug-hunter.md) | [EN](003-react-bug-hunter.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/003-react-bug-hunter.md) | Available |
+| 004 | [Frontend Architecture Audit](004-frontend-architecture-audit.md) | [EN](004-frontend-architecture-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/004-frontend-architecture-audit.md) | Available |
+| 005 | [Web Performance Hunter](005-web-performance-hunter.md) | [EN](005-web-performance-hunter.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/005-web-performance-hunter.md) | Available |
+| 006 | [Responsive & Mobile Web Audit](006-responsive-and-mobile-web-audit.md) | [EN](006-responsive-and-mobile-web-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/006-responsive-and-mobile-web-audit.md) | Available |
+| 007 | [Web Accessibility Audit](007-web-accessibility-audit.md) | [EN](007-web-accessibility-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/007-web-accessibility-audit.md) | Available |
+| 008 | [Technical SEO Audit](008-technical-seo-audit.md) | [EN](008-technical-seo-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/008-technical-seo-audit.md) | Available |
+| 009 | [Progressive Web App Audit](009-progressive-web-app-audit.md) | [EN](009-progressive-web-app-audit.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/009-progressive-web-app-audit.md) | Available |
+| 010 | [Browser Compatibility & Production Bug Hunter](010-browser-compatibility-and-production-bug-hunter.md) | [EN](010-browser-compatibility-and-production-bug-hunter.md) | [SR](../../../sr/01-it-programiranje-tehnologija/01-web-development/010-browser-compatibility-and-production-bug-hunter.md) | Available |
 <!-- UPL:END subcategory-prompts -->
 
 Planned prompts have a reserved ID and filename but are not written yet. To write one, open an issue or pull request that references its ID. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md).

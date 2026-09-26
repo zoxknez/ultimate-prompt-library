@@ -62,8 +62,6 @@ Every category folder and every subcategory folder contains a `README.md` in the
 }
 ```
 
-Categories and subcategories also carry an `icon` (an emoji) used by the generated README grids and available to a future website.
-
 Catalog prompt entries intentionally have **no status field**. Whether a prompt is available, and its status, comes from the prompt files; a catalog entry without files is "planned". This avoids keeping the same status in two places.
 
 ## Generated outputs
@@ -76,8 +74,8 @@ Catalog prompt entries intentionally have **no status field**. Whether a prompt 
 | `<!-- UPL:BEGIN category-prompts -->` in category READMEs | `npm run index` | Full prompt tables (available and planned) grouped by subcategory. |
 | `<!-- UPL:BEGIN subcategory-prompts -->` in subcategory READMEs | `npm run index` | `\| # \| Prompt \| EN \| SR \| Status \|` table. |
 | `<!-- UPL:BEGIN roadmap-planned -->` in the roadmaps | `npm run index` | Planned prompts with their reserved IDs and future filenames. |
-| `hero-badges`, `collection-stats`, `category-status`, `subcategory-status` in the root READMEs; `roadmap-progress` in the roadmaps | `npm run stats` | Badges with live counts, the statistics card, the category card grid and the progress tables. |
-| `assets/banner.<lang>.<theme>.svg`, `assets/stats.<lang>.<theme>.svg` | `npm run stats` | README artwork in `light` and `dark` variants per language, shown through `<picture>` so GitHub picks the variant that matches the viewer's theme. The statistics card is drawn from the same numbers as `stats.json`. |
+| `hero-badges`, `collection-stats`, `category-status`, `subcategory-status` in the root READMEs; `roadmap-progress` in the roadmaps | `npm run stats` | Badges with live counts, the statistics card, the category grid and the progress tables. |
+| `assets/banner.<lang>.<theme>.svg`, `assets/stats.<lang>.<theme>.svg` | `npm run stats` | README artwork in `light` and `dark` variants per language, shown through `<picture>` so GitHub picks the variant that matches the viewer's theme. The statistics card is drawn from the same numbers as `stats.json`. Fonts (Inter and JetBrains Mono, SIL OFL 1.1, subset in `assets/fonts/` with their licenses) are embedded, and text is laid out with the glyph widths in `assets/fonts/metrics.json`. |
 
 Indexes deliberately contain metadata only, not prompt bodies. They are small enough for client-side search and filtering, and a website can fetch a prompt's Markdown by its path when needed. Output is deterministic (no timestamps), so CI can detect stale files with a plain `git diff`.
 

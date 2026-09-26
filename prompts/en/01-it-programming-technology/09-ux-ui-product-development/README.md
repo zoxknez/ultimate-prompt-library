@@ -13,16 +13,16 @@ Product UX, critical flows, onboarding, forms, navigation, design systems, acces
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 081 | Ultimate UX/UI Product Audit | - | - | ⏳ Planned |
-| 082 | Critical User Flow Audit | - | - | ⏳ Planned |
-| 083 | Onboarding Audit | - | - | ⏳ Planned |
-| 084 | Form UX Audit | - | - | ⏳ Planned |
-| 085 | Navigation & Information Architecture Audit | - | - | ⏳ Planned |
-| 086 | Mobile UX Audit | - | - | ⏳ Planned |
-| 087 | Design System Consistency Audit | - | - | ⏳ Planned |
-| 088 | Accessibility Experience Audit | - | - | ⏳ Planned |
-| 089 | Product Requirement Generator | - | - | ⏳ Planned |
-| 090 | Feature Design & UX Review | - | - | ⏳ Planned |
+| 081 | Ultimate UX/UI Product Audit | - | - | Planned |
+| 082 | Critical User Flow Audit | - | - | Planned |
+| 083 | Onboarding Audit | - | - | Planned |
+| 084 | Form UX Audit | - | - | Planned |
+| 085 | Navigation & Information Architecture Audit | - | - | Planned |
+| 086 | Mobile UX Audit | - | - | Planned |
+| 087 | Design System Consistency Audit | - | - | Planned |
+| 088 | Accessibility Experience Audit | - | - | Planned |
+| 089 | Product Requirement Generator | - | - | Planned |
+| 090 | Feature Design & UX Review | - | - | Planned |
 <!-- UPL:END subcategory-prompts -->
 
 Planned prompts have a reserved ID and filename but are not written yet. To write one, open an issue or pull request that references its ID. See [CONTRIBUTING.md](../../../../CONTRIBUTING.md).

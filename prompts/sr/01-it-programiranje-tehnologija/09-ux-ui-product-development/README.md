@@ -13,16 +13,16 @@ UX proizvoda, kritični tokovi, onboarding, forme, navigacija, dizajn sistemi, p
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 081 | Ultimate UX/UI Product Audit | - | - | ⏳ Planirano |
-| 082 | Critical User Flow Audit | - | - | ⏳ Planirano |
-| 083 | Onboarding Audit | - | - | ⏳ Planirano |
-| 084 | Form UX Audit | - | - | ⏳ Planirano |
-| 085 | Navigation & Information Architecture Audit | - | - | ⏳ Planirano |
-| 086 | Mobile UX Audit | - | - | ⏳ Planirano |
-| 087 | Design System Consistency Audit | - | - | ⏳ Planirano |
-| 088 | Accessibility Experience Audit | - | - | ⏳ Planirano |
-| 089 | Product Requirement Generator | - | - | ⏳ Planirano |
-| 090 | Feature Design & UX Review | - | - | ⏳ Planirano |
+| 081 | Ultimate UX/UI Product Audit | - | - | Planirano |
+| 082 | Critical User Flow Audit | - | - | Planirano |
+| 083 | Onboarding Audit | - | - | Planirano |
+| 084 | Form UX Audit | - | - | Planirano |
+| 085 | Navigation & Information Architecture Audit | - | - | Planirano |
+| 086 | Mobile UX Audit | - | - | Planirano |
+| 087 | Design System Consistency Audit | - | - | Planirano |
+| 088 | Accessibility Experience Audit | - | - | Planirano |
+| 089 | Product Requirement Generator | - | - | Planirano |
+| 090 | Feature Design & UX Review | - | - | Planirano |
 <!-- UPL:END subcategory-prompts -->
 
 Planirani promptovi imaju rezervisan ID i ime fajla, ali još nisu napisani. Ako želiš da napišeš neki od njih, otvori issue ili pull request koji navodi njegov ID. Pogledaj [CONTRIBUTING.sr.md](../../../../CONTRIBUTING.sr.md).
