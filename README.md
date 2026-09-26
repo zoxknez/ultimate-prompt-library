@@ -29,7 +29,8 @@ Deep, reusable AI work specifications for serious analysis, implementation, audi
 [Categories](#categories) &nbsp;&nbsp;/&nbsp;&nbsp;
 [How to use](#how-to-use) &nbsp;&nbsp;/&nbsp;&nbsp;
 [Contributing](#contributing) &nbsp;&nbsp;/&nbsp;&nbsp;
-[Roadmap](#roadmap)
+[Roadmap](#roadmap) &nbsp;&nbsp;/&nbsp;&nbsp;
+[Website](docs/website.md)
 
 </div>
 
@@ -301,7 +302,9 @@ ultimate-prompt-library/
 ├── indexes/                                   generated JSON indexes and statistics
 ├── assets/                                    generated README artwork and embedded fonts
 ├── docs/                                      format, IDs, translation, architecture, roadmap
-├── scripts/                                   validation and generation tooling (Node.js)
+├── scripts/                                   validation, indexes and website generation
+├── site-src/                                  website CSS and client interactions
+├── vercel.json                                static website deployment config
 └── .github/                                   issue/PR templates and the validation workflow
 ```
 
