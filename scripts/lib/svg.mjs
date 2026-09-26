@@ -66,7 +66,7 @@ export const THEMES = {
     muted: '#536B84',
     faint: '#B98524',
     track: '#E8EEF4',
-    fill: '#1769AA',
+    fill: '#102A43',
     card: '#FFFFFF',
     cardHeader: '#F4F8FB',
     skeleton: '#E8EEF4',
