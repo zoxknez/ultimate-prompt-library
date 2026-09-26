@@ -309,7 +309,8 @@ export function subcategoryStatus({ lang, fromFile, collections }) {
         return [
           '<tr>',
           `<td valign="top" width="6%">${pad(g.sub.order, 2)}</td>`,
-          `<td valign="top" width="94%"><a href="${href}"><strong>${escapeHtml(g.sub.names[lang])}</strong></a><br><sub>${escapeHtml(g.sub.descriptions[lang])}</sub><br><sub>${g.available} / ${g.planned} · ${status}</sub></td>`,
+          `<td valign="top" width="76%"><a href="${href}"><strong>${escapeHtml(g.sub.names[lang])}</strong></a><br><sub>${escapeHtml(g.sub.descriptions[lang])}</sub></td>`,
+          `<td valign="top" align="right" width="18%"><strong>${g.available} / ${g.planned}</strong><br><sub>${status}</sub></td>`,
           '</tr>',
         ].join('\n');
       });
@@ -319,7 +320,7 @@ export function subcategoryStatus({ lang, fromFile, collections }) {
         `<summary><strong>${escapeHtml(c.category.names[lang])}</strong> · ${complete} / ${c.subcategories.length} ${s.subcategoriesComplete}</summary>`,
         '',
         '<table width="100%">',
-        `<thead><tr><th scope="col">#</th><th scope="col">${s.subcategory}</th></tr></thead>`,
+        `<thead><tr><th scope="col">#</th><th scope="col">${s.subcategory}</th><th scope="col" align="right">${s.progress}</th></tr></thead>`,
         '<tbody>',
         ...rows,
         '</tbody>',
