@@ -8023,8 +8023,1130 @@
         "en": "Marketing strategy, sales, copywriting, branding, public relations and communication.",
         "sr": "Marketinška strategija, prodaja, copywriting, brendiranje, odnosi s javnošću i komunikacija."
       },
-      "subcategories": [],
-      "prompts": []
+      "subcategories": [
+        {
+          "id": "strategy-positioning-market-research",
+          "order": 1,
+          "names": {
+            "en": "Marketing Strategy, Positioning & Market Research",
+            "sr": "Marketinška strategija, pozicioniranje i istraživanje tržišta"
+          },
+          "descriptions": {
+            "en": "Segmentation, ICP, positioning, category, market research, competitive analysis and go-to-market strategy.",
+            "sr": "Segmentacija, ICP, pozicioniranje, kategorija, istraživanje tržišta, konkurentska analiza i go-to-market strategija."
+          }
+        },
+        {
+          "id": "brand-messaging-copywriting",
+          "order": 2,
+          "names": {
+            "en": "Brand, Messaging & Copywriting",
+            "sr": "Brend, poruke i copywriting"
+          },
+          "descriptions": {
+            "en": "Brand voice, value propositions, landing pages, headlines, offers, message hierarchy and conversion copy.",
+            "sr": "Ton brenda, value proposition, landing stranice, naslovi, ponude, hijerarhija poruka i conversion copy."
+          }
+        },
+        {
+          "id": "content-marketing-editorial",
+          "order": 3,
+          "names": {
+            "en": "Content Marketing & Editorial Strategy",
+            "sr": "Content marketing i editorial strategija"
+          },
+          "descriptions": {
+            "en": "Content pillars, editorial calendars, briefs, distribution, repurposing, authority building and content performance.",
+            "sr": "Content pillars, editorial kalendari, briefovi, distribucija, repurposing, izgradnja autoriteta i performanse sadržaja."
+          }
+        },
+        {
+          "id": "seo-organic-discovery",
+          "order": 4,
+          "names": {
+            "en": "SEO & Organic Discovery",
+            "sr": "SEO i organska vidljivost"
+          },
+          "descriptions": {
+            "en": "Search intent, keyword strategy, technical/content audits, internal linking, topic clusters, SERP analysis and organic growth.",
+            "sr": "Search intent, keyword strategija, tehnički/content audit, interni linkovi, topic clusters, SERP analiza i organski rast."
+          }
+        },
+        {
+          "id": "email-lifecycle-crm",
+          "order": 5,
+          "names": {
+            "en": "Email, Lifecycle & CRM Marketing",
+            "sr": "Email, lifecycle i CRM marketing"
+          },
+          "descriptions": {
+            "en": "Lifecycle journeys, onboarding, nurture, retention, reactivation, newsletters, segmentation and CRM automation.",
+            "sr": "Lifecycle putanje, onboarding, nurture, retention, reactivation, newsletteri, segmentacija i CRM automatizacija."
+          }
+        },
+        {
+          "id": "paid-acquisition-experimentation",
+          "order": 6,
+          "names": {
+            "en": "Paid Acquisition & Experimentation",
+            "sr": "Plaćeni acquisition i eksperimentisanje"
+          },
+          "descriptions": {
+            "en": "Paid media strategy, creative testing, landing pages, budget allocation, attribution, incrementality and experimentation.",
+            "sr": "Paid media strategija, testiranje kreativa, landing stranice, budžet, attribution, incrementality i eksperimentisanje."
+          }
+        },
+        {
+          "id": "sales-enablement-conversion",
+          "order": 7,
+          "names": {
+            "en": "Sales Enablement & Conversion",
+            "sr": "Sales enablement i konverzija"
+          },
+          "descriptions": {
+            "en": "Sales messaging, discovery, qualification, objection handling, demos, proposals, follow-up and conversion systems.",
+            "sr": "Sales poruke, discovery, kvalifikacija, objections, demo, ponude, follow-up i sistemi konverzije."
+          }
+        },
+        {
+          "id": "customer-research-retention-growth",
+          "order": 8,
+          "names": {
+            "en": "Customer Research, Retention & Growth",
+            "sr": "Istraživanje kupaca, retention i rast"
+          },
+          "descriptions": {
+            "en": "Voice of customer, churn, retention, expansion, referral, product marketing, win/loss and growth loops.",
+            "sr": "Voice of customer, churn, retention, expansion, referral, product marketing, win/loss i growth loops."
+          }
+        },
+        {
+          "id": "pr-corporate-crisis-communication",
+          "order": 9,
+          "names": {
+            "en": "PR, Corporate & Crisis Communication",
+            "sr": "PR, korporativna i krizna komunikacija"
+          },
+          "descriptions": {
+            "en": "Press strategy, media relations, announcements, executive communication, issues management, crisis response and reputation.",
+            "sr": "Press strategija, odnosi sa medijima, saopštenja, executive komunikacija, issues management, krizni odgovor i reputacija."
+          }
+        },
+        {
+          "id": "marketing-analytics-operations",
+          "order": 10,
+          "names": {
+            "en": "Marketing Analytics & Operations",
+            "sr": "Marketinška analitika i operacije"
+          },
+          "descriptions": {
+            "en": "Funnels, attribution, dashboards, experimentation, campaign operations, lead routing, measurement and planning.",
+            "sr": "Funnel-i, attribution, dashboardi, eksperimentisanje, kampanjske operacije, lead routing, merenje i planiranje."
+          }
+        }
+      ],
+      "prompts": [
+        {
+          "id": "UPL-MKT-001",
+          "number": 1,
+          "slug": "marketing-strategy-audit",
+          "subcategory": "strategy-positioning-market-research",
+          "title": {
+            "en": "Marketing Strategy Audit",
+            "sr": "Audit marketinške strategije"
+          }
+        },
+        {
+          "id": "UPL-MKT-002",
+          "number": 2,
+          "slug": "ideal-customer-profile-builder",
+          "subcategory": "strategy-positioning-market-research",
+          "title": {
+            "en": "Ideal Customer Profile Builder",
+            "sr": "Izrada idealnog customer profile-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-003",
+          "number": 3,
+          "slug": "market-segmentation-framework",
+          "subcategory": "strategy-positioning-market-research",
+          "title": {
+            "en": "Market Segmentation Framework",
+            "sr": "Okvir segmentacije tržišta"
+          }
+        },
+        {
+          "id": "UPL-MKT-004",
+          "number": 4,
+          "slug": "positioning-statement-builder",
+          "subcategory": "strategy-positioning-market-research",
+          "title": {
+            "en": "Positioning Statement Builder",
+            "sr": "Izrada positioning statementa"
+          }
+        },
+        {
+          "id": "UPL-MKT-005",
+          "number": 5,
+          "slug": "category-and-competitive-map",
+          "subcategory": "strategy-positioning-market-research",
+          "title": {
+            "en": "Category & Competitive Map",
+            "sr": "Mapa kategorije i konkurencije"
+          }
+        },
+        {
+          "id": "UPL-MKT-006",
+          "number": 6,
+          "slug": "market-research-plan",
+          "subcategory": "strategy-positioning-market-research",
+          "title": {
+            "en": "Market Research Plan",
+            "sr": "Plan istraživanja tržišta"
+          }
+        },
+        {
+          "id": "UPL-MKT-007",
+          "number": 7,
+          "slug": "voice-of-market-synthesis",
+          "subcategory": "strategy-positioning-market-research",
+          "title": {
+            "en": "Voice of Market Synthesis",
+            "sr": "Sinteza glasa tržišta"
+          }
+        },
+        {
+          "id": "UPL-MKT-008",
+          "number": 8,
+          "slug": "go-to-market-strategy-builder",
+          "subcategory": "strategy-positioning-market-research",
+          "title": {
+            "en": "Go-to-Market Strategy Builder",
+            "sr": "Izrada go-to-market strategije"
+          }
+        },
+        {
+          "id": "UPL-MKT-009",
+          "number": 9,
+          "slug": "marketing-channel-priority-matrix",
+          "subcategory": "strategy-positioning-market-research",
+          "title": {
+            "en": "Marketing Channel Priority Matrix",
+            "sr": "Matrica prioriteta marketinških kanala"
+          }
+        },
+        {
+          "id": "UPL-MKT-010",
+          "number": 10,
+          "slug": "marketing-strategy-red-team",
+          "subcategory": "strategy-positioning-market-research",
+          "title": {
+            "en": "Marketing Strategy Red Team",
+            "sr": "Red-team marketinške strategije"
+          }
+        },
+        {
+          "id": "UPL-MKT-011",
+          "number": 11,
+          "slug": "brand-messaging-audit",
+          "subcategory": "brand-messaging-copywriting",
+          "title": {
+            "en": "Brand Messaging Audit",
+            "sr": "Audit poruka brenda"
+          }
+        },
+        {
+          "id": "UPL-MKT-012",
+          "number": 12,
+          "slug": "value-proposition-builder",
+          "subcategory": "brand-messaging-copywriting",
+          "title": {
+            "en": "Value Proposition Builder",
+            "sr": "Izrada value proposition-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-013",
+          "number": 13,
+          "slug": "homepage-message-hierarchy",
+          "subcategory": "brand-messaging-copywriting",
+          "title": {
+            "en": "Homepage Message Hierarchy",
+            "sr": "Hijerarhija poruka početne stranice"
+          }
+        },
+        {
+          "id": "UPL-MKT-014",
+          "number": 14,
+          "slug": "landing-page-copy-builder",
+          "subcategory": "brand-messaging-copywriting",
+          "title": {
+            "en": "Landing Page Copy Builder",
+            "sr": "Izrada copy-ja za landing stranicu"
+          }
+        },
+        {
+          "id": "UPL-MKT-015",
+          "number": 15,
+          "slug": "headline-hook-generator",
+          "subcategory": "brand-messaging-copywriting",
+          "title": {
+            "en": "Headline & Hook Generator",
+            "sr": "Generator naslova i hook-ova"
+          }
+        },
+        {
+          "id": "UPL-MKT-016",
+          "number": 16,
+          "slug": "offer-clarity-audit",
+          "subcategory": "brand-messaging-copywriting",
+          "title": {
+            "en": "Offer Clarity Audit",
+            "sr": "Audit jasnoće ponude"
+          }
+        },
+        {
+          "id": "UPL-MKT-017",
+          "number": 17,
+          "slug": "brand-voice-system",
+          "subcategory": "brand-messaging-copywriting",
+          "title": {
+            "en": "Brand Voice System",
+            "sr": "Sistem tona brenda"
+          }
+        },
+        {
+          "id": "UPL-MKT-018",
+          "number": 18,
+          "slug": "proof-and-credibility-builder",
+          "subcategory": "brand-messaging-copywriting",
+          "title": {
+            "en": "Proof & Credibility Builder",
+            "sr": "Izrada dokaza i kredibiliteta"
+          }
+        },
+        {
+          "id": "UPL-MKT-019",
+          "number": 19,
+          "slug": "conversion-copy-red-team",
+          "subcategory": "brand-messaging-copywriting",
+          "title": {
+            "en": "Conversion Copy Red Team",
+            "sr": "Red-team conversion copy-ja"
+          }
+        },
+        {
+          "id": "UPL-MKT-020",
+          "number": 20,
+          "slug": "message-market-fit-audit",
+          "subcategory": "brand-messaging-copywriting",
+          "title": {
+            "en": "Message-Market Fit Audit",
+            "sr": "Audit message-market fit-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-021",
+          "number": 21,
+          "slug": "content-strategy-builder",
+          "subcategory": "content-marketing-editorial",
+          "title": {
+            "en": "Content Strategy Builder",
+            "sr": "Izrada content strategije"
+          }
+        },
+        {
+          "id": "UPL-MKT-022",
+          "number": 22,
+          "slug": "content-pillar-map",
+          "subcategory": "content-marketing-editorial",
+          "title": {
+            "en": "Content Pillar Map",
+            "sr": "Mapa content pillar-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-023",
+          "number": 23,
+          "slug": "editorial-calendar-builder",
+          "subcategory": "content-marketing-editorial",
+          "title": {
+            "en": "Editorial Calendar Builder",
+            "sr": "Izrada editorial kalendara"
+          }
+        },
+        {
+          "id": "UPL-MKT-024",
+          "number": 24,
+          "slug": "content-brief-builder",
+          "subcategory": "content-marketing-editorial",
+          "title": {
+            "en": "Content Brief Builder",
+            "sr": "Izrada content brief-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-025",
+          "number": 25,
+          "slug": "content-distribution-plan",
+          "subcategory": "content-marketing-editorial",
+          "title": {
+            "en": "Content Distribution Plan",
+            "sr": "Plan distribucije sadržaja"
+          }
+        },
+        {
+          "id": "UPL-MKT-026",
+          "number": 26,
+          "slug": "content-repurposing-system",
+          "subcategory": "content-marketing-editorial",
+          "title": {
+            "en": "Content Repurposing System",
+            "sr": "Sistem repurposing-a sadržaja"
+          }
+        },
+        {
+          "id": "UPL-MKT-027",
+          "number": 27,
+          "slug": "thought-leadership-content-plan",
+          "subcategory": "content-marketing-editorial",
+          "title": {
+            "en": "Thought Leadership Content Plan",
+            "sr": "Plan thought leadership sadržaja"
+          }
+        },
+        {
+          "id": "UPL-MKT-028",
+          "number": 28,
+          "slug": "content-quality-audit",
+          "subcategory": "content-marketing-editorial",
+          "title": {
+            "en": "Content Quality Audit",
+            "sr": "Audit kvaliteta sadržaja"
+          }
+        },
+        {
+          "id": "UPL-MKT-029",
+          "number": 29,
+          "slug": "content-performance-review",
+          "subcategory": "content-marketing-editorial",
+          "title": {
+            "en": "Content Performance Review",
+            "sr": "Pregled performansi sadržaja"
+          }
+        },
+        {
+          "id": "UPL-MKT-030",
+          "number": 30,
+          "slug": "content-portfolio-pruning-audit",
+          "subcategory": "content-marketing-editorial",
+          "title": {
+            "en": "Content Portfolio Pruning Audit",
+            "sr": "Audit pruning-a content portfolija"
+          }
+        },
+        {
+          "id": "UPL-MKT-031",
+          "number": 31,
+          "slug": "search-intent-mapper",
+          "subcategory": "seo-organic-discovery",
+          "title": {
+            "en": "Search Intent Mapper",
+            "sr": "Mapa search intenta"
+          }
+        },
+        {
+          "id": "UPL-MKT-032",
+          "number": 32,
+          "slug": "keyword-strategy-builder",
+          "subcategory": "seo-organic-discovery",
+          "title": {
+            "en": "Keyword Strategy Builder",
+            "sr": "Izrada keyword strategije"
+          }
+        },
+        {
+          "id": "UPL-MKT-033",
+          "number": 33,
+          "slug": "seo-content-brief",
+          "subcategory": "seo-organic-discovery",
+          "title": {
+            "en": "SEO Content Brief",
+            "sr": "SEO content brief"
+          }
+        },
+        {
+          "id": "UPL-MKT-034",
+          "number": 34,
+          "slug": "on-page-seo-audit",
+          "subcategory": "seo-organic-discovery",
+          "title": {
+            "en": "On-Page SEO Audit",
+            "sr": "On-page SEO audit"
+          }
+        },
+        {
+          "id": "UPL-MKT-035",
+          "number": 35,
+          "slug": "technical-seo-priority-audit",
+          "subcategory": "seo-organic-discovery",
+          "title": {
+            "en": "Technical SEO Priority Audit",
+            "sr": "Audit prioriteta tehničkog SEO-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-036",
+          "number": 36,
+          "slug": "internal-linking-strategy",
+          "subcategory": "seo-organic-discovery",
+          "title": {
+            "en": "Internal Linking Strategy",
+            "sr": "Strategija internog linkovanja"
+          }
+        },
+        {
+          "id": "UPL-MKT-037",
+          "number": 37,
+          "slug": "topic-cluster-builder",
+          "subcategory": "seo-organic-discovery",
+          "title": {
+            "en": "Topic Cluster Builder",
+            "sr": "Izrada topic cluster-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-038",
+          "number": 38,
+          "slug": "serp-competitive-analysis",
+          "subcategory": "seo-organic-discovery",
+          "title": {
+            "en": "SERP Competitive Analysis",
+            "sr": "SERP konkurentska analiza"
+          }
+        },
+        {
+          "id": "UPL-MKT-039",
+          "number": 39,
+          "slug": "organic-growth-opportunity-map",
+          "subcategory": "seo-organic-discovery",
+          "title": {
+            "en": "Organic Growth Opportunity Map",
+            "sr": "Mapa prilika za organski rast"
+          }
+        },
+        {
+          "id": "UPL-MKT-040",
+          "number": 40,
+          "slug": "seo-content-decay-audit",
+          "subcategory": "seo-organic-discovery",
+          "title": {
+            "en": "SEO Content Decay Audit",
+            "sr": "Audit opadanja SEO sadržaja"
+          }
+        },
+        {
+          "id": "UPL-MKT-041",
+          "number": 41,
+          "slug": "lifecycle-marketing-map",
+          "subcategory": "email-lifecycle-crm",
+          "title": {
+            "en": "Lifecycle Marketing Map",
+            "sr": "Mapa lifecycle marketinga"
+          }
+        },
+        {
+          "id": "UPL-MKT-042",
+          "number": 42,
+          "slug": "onboarding-email-sequence",
+          "subcategory": "email-lifecycle-crm",
+          "title": {
+            "en": "Onboarding Email Sequence",
+            "sr": "Onboarding email sekvenca"
+          }
+        },
+        {
+          "id": "UPL-MKT-043",
+          "number": 43,
+          "slug": "lead-nurture-sequence",
+          "subcategory": "email-lifecycle-crm",
+          "title": {
+            "en": "Lead Nurture Sequence",
+            "sr": "Lead nurture sekvenca"
+          }
+        },
+        {
+          "id": "UPL-MKT-044",
+          "number": 44,
+          "slug": "newsletter-strategy-builder",
+          "subcategory": "email-lifecycle-crm",
+          "title": {
+            "en": "Newsletter Strategy Builder",
+            "sr": "Izrada newsletter strategije"
+          }
+        },
+        {
+          "id": "UPL-MKT-045",
+          "number": 45,
+          "slug": "segmentation-strategy-audit",
+          "subcategory": "email-lifecycle-crm",
+          "title": {
+            "en": "Segmentation Strategy Audit",
+            "sr": "Audit strategije segmentacije"
+          }
+        },
+        {
+          "id": "UPL-MKT-046",
+          "number": 46,
+          "slug": "reactivation-campaign-builder",
+          "subcategory": "email-lifecycle-crm",
+          "title": {
+            "en": "Reactivation Campaign Builder",
+            "sr": "Izrada reactivation kampanje"
+          }
+        },
+        {
+          "id": "UPL-MKT-047",
+          "number": 47,
+          "slug": "retention-email-program",
+          "subcategory": "email-lifecycle-crm",
+          "title": {
+            "en": "Retention Email Program",
+            "sr": "Retention email program"
+          }
+        },
+        {
+          "id": "UPL-MKT-048",
+          "number": 48,
+          "slug": "crm-automation-audit",
+          "subcategory": "email-lifecycle-crm",
+          "title": {
+            "en": "CRM Automation Audit",
+            "sr": "Audit CRM automatizacije"
+          }
+        },
+        {
+          "id": "UPL-MKT-049",
+          "number": 49,
+          "slug": "email-deliverability-risk-audit",
+          "subcategory": "email-lifecycle-crm",
+          "title": {
+            "en": "Email Deliverability Risk Audit",
+            "sr": "Audit rizika email deliverability-ja"
+          }
+        },
+        {
+          "id": "UPL-MKT-050",
+          "number": 50,
+          "slug": "lifecycle-performance-review",
+          "subcategory": "email-lifecycle-crm",
+          "title": {
+            "en": "Lifecycle Performance Review",
+            "sr": "Pregled lifecycle performansi"
+          }
+        },
+        {
+          "id": "UPL-MKT-051",
+          "number": 51,
+          "slug": "paid-media-strategy-builder",
+          "subcategory": "paid-acquisition-experimentation",
+          "title": {
+            "en": "Paid Media Strategy Builder",
+            "sr": "Izrada paid media strategije"
+          }
+        },
+        {
+          "id": "UPL-MKT-052",
+          "number": 52,
+          "slug": "ad-creative-testing-plan",
+          "subcategory": "paid-acquisition-experimentation",
+          "title": {
+            "en": "Ad Creative Testing Plan",
+            "sr": "Plan testiranja ad kreativa"
+          }
+        },
+        {
+          "id": "UPL-MKT-053",
+          "number": 53,
+          "slug": "paid-landing-page-audit",
+          "subcategory": "paid-acquisition-experimentation",
+          "title": {
+            "en": "Paid Landing Page Audit",
+            "sr": "Audit paid landing stranice"
+          }
+        },
+        {
+          "id": "UPL-MKT-054",
+          "number": 54,
+          "slug": "campaign-budget-allocation",
+          "subcategory": "paid-acquisition-experimentation",
+          "title": {
+            "en": "Campaign Budget Allocation",
+            "sr": "Alokacija budžeta kampanje"
+          }
+        },
+        {
+          "id": "UPL-MKT-055",
+          "number": 55,
+          "slug": "attribution-model-audit",
+          "subcategory": "paid-acquisition-experimentation",
+          "title": {
+            "en": "Attribution Model Audit",
+            "sr": "Audit attribution modela"
+          }
+        },
+        {
+          "id": "UPL-MKT-056",
+          "number": 56,
+          "slug": "incrementality-test-plan",
+          "subcategory": "paid-acquisition-experimentation",
+          "title": {
+            "en": "Incrementality Test Plan",
+            "sr": "Plan incrementality testa"
+          }
+        },
+        {
+          "id": "UPL-MKT-057",
+          "number": 57,
+          "slug": "paid-channel-scaling-audit",
+          "subcategory": "paid-acquisition-experimentation",
+          "title": {
+            "en": "Paid Channel Scaling Audit",
+            "sr": "Audit skaliranja paid kanala"
+          }
+        },
+        {
+          "id": "UPL-MKT-058",
+          "number": 58,
+          "slug": "campaign-experiment-design",
+          "subcategory": "paid-acquisition-experimentation",
+          "title": {
+            "en": "Campaign Experiment Design",
+            "sr": "Dizajn marketinškog eksperimenta"
+          }
+        },
+        {
+          "id": "UPL-MKT-059",
+          "number": 59,
+          "slug": "creative-fatigue-audit",
+          "subcategory": "paid-acquisition-experimentation",
+          "title": {
+            "en": "Creative Fatigue Audit",
+            "sr": "Audit zamora kreativa"
+          }
+        },
+        {
+          "id": "UPL-MKT-060",
+          "number": 60,
+          "slug": "paid-acquisition-unit-economics",
+          "subcategory": "paid-acquisition-experimentation",
+          "title": {
+            "en": "Paid Acquisition Unit Economics",
+            "sr": "Unit economics paid acquisition-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-061",
+          "number": 61,
+          "slug": "sales-discovery-framework",
+          "subcategory": "sales-enablement-conversion",
+          "title": {
+            "en": "Sales Discovery Framework",
+            "sr": "Okvir sales discovery-ja"
+          }
+        },
+        {
+          "id": "UPL-MKT-062",
+          "number": 62,
+          "slug": "lead-qualification-system",
+          "subcategory": "sales-enablement-conversion",
+          "title": {
+            "en": "Lead Qualification System",
+            "sr": "Sistem kvalifikacije lead-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-063",
+          "number": 63,
+          "slug": "sales-message-audit",
+          "subcategory": "sales-enablement-conversion",
+          "title": {
+            "en": "Sales Message Audit",
+            "sr": "Audit sales poruka"
+          }
+        },
+        {
+          "id": "UPL-MKT-064",
+          "number": 64,
+          "slug": "objection-handling-framework",
+          "subcategory": "sales-enablement-conversion",
+          "title": {
+            "en": "Objection Handling Framework",
+            "sr": "Okvir za objection handling"
+          }
+        },
+        {
+          "id": "UPL-MKT-065",
+          "number": 65,
+          "slug": "sales-demo-structure",
+          "subcategory": "sales-enablement-conversion",
+          "title": {
+            "en": "Sales Demo Structure",
+            "sr": "Struktura sales demo-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-066",
+          "number": 66,
+          "slug": "sales-proposal-builder",
+          "subcategory": "sales-enablement-conversion",
+          "title": {
+            "en": "Sales Proposal Builder",
+            "sr": "Izrada sales ponude"
+          }
+        },
+        {
+          "id": "UPL-MKT-067",
+          "number": 67,
+          "slug": "sales-follow-up-sequence",
+          "subcategory": "sales-enablement-conversion",
+          "title": {
+            "en": "Sales Follow-Up Sequence",
+            "sr": "Sales follow-up sekvenca"
+          }
+        },
+        {
+          "id": "UPL-MKT-068",
+          "number": 68,
+          "slug": "pipeline-conversion-audit",
+          "subcategory": "sales-enablement-conversion",
+          "title": {
+            "en": "Pipeline Conversion Audit",
+            "sr": "Audit konverzije sales pipeline-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-069",
+          "number": 69,
+          "slug": "sales-enablement-asset-map",
+          "subcategory": "sales-enablement-conversion",
+          "title": {
+            "en": "Sales Enablement Asset Map",
+            "sr": "Mapa sales enablement materijala"
+          }
+        },
+        {
+          "id": "UPL-MKT-070",
+          "number": 70,
+          "slug": "sales-conversation-red-team",
+          "subcategory": "sales-enablement-conversion",
+          "title": {
+            "en": "Sales Conversation Red Team",
+            "sr": "Red-team sales razgovora"
+          }
+        },
+        {
+          "id": "UPL-MKT-071",
+          "number": 71,
+          "slug": "voice-of-customer-research-plan",
+          "subcategory": "customer-research-retention-growth",
+          "title": {
+            "en": "Voice of Customer Research Plan",
+            "sr": "Plan voice-of-customer istraživanja"
+          }
+        },
+        {
+          "id": "UPL-MKT-072",
+          "number": 72,
+          "slug": "customer-interview-guide",
+          "subcategory": "customer-research-retention-growth",
+          "title": {
+            "en": "Customer Interview Guide",
+            "sr": "Vodič za intervju sa kupcem"
+          }
+        },
+        {
+          "id": "UPL-MKT-073",
+          "number": 73,
+          "slug": "churn-analysis-framework",
+          "subcategory": "customer-research-retention-growth",
+          "title": {
+            "en": "Churn Analysis Framework",
+            "sr": "Okvir analize churn-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-074",
+          "number": 74,
+          "slug": "retention-driver-map",
+          "subcategory": "customer-research-retention-growth",
+          "title": {
+            "en": "Retention Driver Map",
+            "sr": "Mapa retention driver-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-075",
+          "number": 75,
+          "slug": "win-loss-analysis",
+          "subcategory": "customer-research-retention-growth",
+          "title": {
+            "en": "Win/Loss Analysis",
+            "sr": "Win/loss analiza"
+          }
+        },
+        {
+          "id": "UPL-MKT-076",
+          "number": 76,
+          "slug": "referral-program-design",
+          "subcategory": "customer-research-retention-growth",
+          "title": {
+            "en": "Referral Program Design",
+            "sr": "Dizajn referral programa"
+          }
+        },
+        {
+          "id": "UPL-MKT-077",
+          "number": 77,
+          "slug": "expansion-revenue-framework",
+          "subcategory": "customer-research-retention-growth",
+          "title": {
+            "en": "Expansion Revenue Framework",
+            "sr": "Okvir expansion revenue-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-078",
+          "number": 78,
+          "slug": "product-marketing-brief",
+          "subcategory": "customer-research-retention-growth",
+          "title": {
+            "en": "Product Marketing Brief",
+            "sr": "Product marketing brief"
+          }
+        },
+        {
+          "id": "UPL-MKT-079",
+          "number": 79,
+          "slug": "growth-loop-audit",
+          "subcategory": "customer-research-retention-growth",
+          "title": {
+            "en": "Growth Loop Audit",
+            "sr": "Audit growth loop-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-080",
+          "number": 80,
+          "slug": "customer-growth-opportunity-map",
+          "subcategory": "customer-research-retention-growth",
+          "title": {
+            "en": "Customer Growth Opportunity Map",
+            "sr": "Mapa prilika za rast kupaca"
+          }
+        },
+        {
+          "id": "UPL-MKT-081",
+          "number": 81,
+          "slug": "pr-strategy-builder",
+          "subcategory": "pr-corporate-crisis-communication",
+          "title": {
+            "en": "PR Strategy Builder",
+            "sr": "Izrada PR strategije"
+          }
+        },
+        {
+          "id": "UPL-MKT-082",
+          "number": 82,
+          "slug": "press-release-quality-audit",
+          "subcategory": "pr-corporate-crisis-communication",
+          "title": {
+            "en": "Press Release Quality Audit",
+            "sr": "Audit kvaliteta saopštenja za medije"
+          }
+        },
+        {
+          "id": "UPL-MKT-083",
+          "number": 83,
+          "slug": "media-pitch-builder",
+          "subcategory": "pr-corporate-crisis-communication",
+          "title": {
+            "en": "Media Pitch Builder",
+            "sr": "Izrada media pitch-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-084",
+          "number": 84,
+          "slug": "executive-communication-brief",
+          "subcategory": "pr-corporate-crisis-communication",
+          "title": {
+            "en": "Executive Communication Brief",
+            "sr": "Executive communication brief"
+          }
+        },
+        {
+          "id": "UPL-MKT-085",
+          "number": 85,
+          "slug": "announcement-message-map",
+          "subcategory": "pr-corporate-crisis-communication",
+          "title": {
+            "en": "Announcement Message Map",
+            "sr": "Mapa poruka za objavu"
+          }
+        },
+        {
+          "id": "UPL-MKT-086",
+          "number": 86,
+          "slug": "issues-management-framework",
+          "subcategory": "pr-corporate-crisis-communication",
+          "title": {
+            "en": "Issues Management Framework",
+            "sr": "Okvir issues management-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-087",
+          "number": 87,
+          "slug": "crisis-communication-plan",
+          "subcategory": "pr-corporate-crisis-communication",
+          "title": {
+            "en": "Crisis Communication Plan",
+            "sr": "Plan krizne komunikacije"
+          }
+        },
+        {
+          "id": "UPL-MKT-088",
+          "number": 88,
+          "slug": "crisis-holding-statement-builder",
+          "subcategory": "pr-corporate-crisis-communication",
+          "title": {
+            "en": "Crisis Holding Statement Builder",
+            "sr": "Izrada kriznog holding statementa"
+          }
+        },
+        {
+          "id": "UPL-MKT-089",
+          "number": 89,
+          "slug": "reputation-risk-audit",
+          "subcategory": "pr-corporate-crisis-communication",
+          "title": {
+            "en": "Reputation Risk Audit",
+            "sr": "Audit reputacionog rizika"
+          }
+        },
+        {
+          "id": "UPL-MKT-090",
+          "number": 90,
+          "slug": "post-crisis-communication-review",
+          "subcategory": "pr-corporate-crisis-communication",
+          "title": {
+            "en": "Post-Crisis Communication Review",
+            "sr": "Pregled komunikacije nakon krize"
+          }
+        },
+        {
+          "id": "UPL-MKT-091",
+          "number": 91,
+          "slug": "marketing-funnel-audit",
+          "subcategory": "marketing-analytics-operations",
+          "title": {
+            "en": "Marketing Funnel Audit",
+            "sr": "Audit marketinškog funnel-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-092",
+          "number": 92,
+          "slug": "marketing-kpi-framework",
+          "subcategory": "marketing-analytics-operations",
+          "title": {
+            "en": "Marketing KPI Framework",
+            "sr": "Okvir marketinških KPI-jeva"
+          }
+        },
+        {
+          "id": "UPL-MKT-093",
+          "number": 93,
+          "slug": "campaign-measurement-plan",
+          "subcategory": "marketing-analytics-operations",
+          "title": {
+            "en": "Campaign Measurement Plan",
+            "sr": "Plan merenja kampanje"
+          }
+        },
+        {
+          "id": "UPL-MKT-094",
+          "number": 94,
+          "slug": "marketing-dashboard-audit",
+          "subcategory": "marketing-analytics-operations",
+          "title": {
+            "en": "Marketing Dashboard Audit",
+            "sr": "Audit marketinškog dashboarda"
+          }
+        },
+        {
+          "id": "UPL-MKT-095",
+          "number": 95,
+          "slug": "lead-routing-sla-audit",
+          "subcategory": "marketing-analytics-operations",
+          "title": {
+            "en": "Lead Routing & SLA Audit",
+            "sr": "Audit lead routing-a i SLA-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-096",
+          "number": 96,
+          "slug": "campaign-operations-checklist",
+          "subcategory": "marketing-analytics-operations",
+          "title": {
+            "en": "Campaign Operations Checklist",
+            "sr": "Checklist kampanjskih operacija"
+          }
+        },
+        {
+          "id": "UPL-MKT-097",
+          "number": 97,
+          "slug": "marketing-experiment-backlog",
+          "subcategory": "marketing-analytics-operations",
+          "title": {
+            "en": "Marketing Experiment Backlog",
+            "sr": "Backlog marketinških eksperimenata"
+          }
+        },
+        {
+          "id": "UPL-MKT-098",
+          "number": 98,
+          "slug": "marketing-attribution-triangulation",
+          "subcategory": "marketing-analytics-operations",
+          "title": {
+            "en": "Marketing Attribution Triangulation",
+            "sr": "Triangulacija marketing attribution-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-099",
+          "number": 99,
+          "slug": "marketing-forecast-scenario-plan",
+          "subcategory": "marketing-analytics-operations",
+          "title": {
+            "en": "Marketing Forecast Scenario Plan",
+            "sr": "Scenario plan marketing forecast-a"
+          }
+        },
+        {
+          "id": "UPL-MKT-100",
+          "number": 100,
+          "slug": "marketing-operations-integrity-review",
+          "subcategory": "marketing-analytics-operations",
+          "title": {
+            "en": "Marketing Operations Integrity Review",
+            "sr": "Pregled integriteta marketing operacija"
+          }
+        }
+      ]
     },
     {
       "id": "UPL-PROD",
