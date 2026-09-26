@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- UPL-BIZ-051 to UPL-BIZ-060 (Operations, Supply Chain & Procurement), version `1.0.0`, status `stable`, in Serbian and English. The Business collection now has 60 of 100 prompts available.
 - UPL-BIZ-041 to UPL-BIZ-050 (Entrepreneurship & Business Models), version `1.0.0`, status `stable`, in Serbian and English: Ultimate Business Model Audit, Startup Idea Feasibility Analysis, Business Model Canvas Deep Analysis, Unit Economics Audit, Product-Market Fit Evidence Audit, Startup Financial Runway Analysis, Founder Assumption Stress Test, Business Scalability Audit, Monetization Model Analysis and Startup Failure Mode Audit. The Business collection now has 50 of 100 prompts available.
 - Premium static website generator for the full prompt library, including responsive landing pages, searchable EN/SR prompt browser, dedicated prompt pages, copy actions, sitemap, robots, manifest, Vercel deployment config, and website validation.
 - UPL-BIZ-031 to UPL-BIZ-040 (Business Strategy & Competitive Analysis), version `1.0.0`, status `stable`, in Serbian and English: Ultimate Business Strategy Audit, Competitive Landscape Analysis, Competitive Advantage Audit, SWOT Evidence-Based Analysis, PESTLE Strategic Analysis, Strategic Risk & Opportunity Analysis, Market Entry Strategy Analysis, Growth Strategy Audit, Strategic Initiative Prioritization and Business Strategy Stress Test. The Business collection now has 40 of 100 prompts available.
