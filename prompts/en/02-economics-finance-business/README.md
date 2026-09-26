@@ -72,20 +72,20 @@ Numbering is per category and continues past 100 (`101`, `102`, …) as the coll
 
 ### 04 · [Business Strategy & Competitive Analysis](04-business-strategy-competitive-analysis/README.md)
 
-0 / 10 available
+10 / 10 available
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 031 | Ultimate Business Strategy Audit | - | - | Planned |
-| 032 | Competitive Landscape Analysis | - | - | Planned |
-| 033 | Competitive Advantage Audit | - | - | Planned |
-| 034 | SWOT Evidence-Based Analysis | - | - | Planned |
-| 035 | PESTLE Strategic Analysis | - | - | Planned |
-| 036 | Strategic Risk & Opportunity Analysis | - | - | Planned |
-| 037 | Market Entry Strategy Analysis | - | - | Planned |
-| 038 | Growth Strategy Audit | - | - | Planned |
-| 039 | Strategic Initiative Prioritization | - | - | Planned |
-| 040 | Business Strategy Stress Test | - | - | Planned |
+| 031 | [Ultimate Business Strategy Audit](04-business-strategy-competitive-analysis/031-ultimate-business-strategy-audit.md) | [EN](04-business-strategy-competitive-analysis/031-ultimate-business-strategy-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/04-business-strategy-competitive-analysis/031-ultimate-business-strategy-audit.md) | Available |
+| 032 | [Competitive Landscape Analysis](04-business-strategy-competitive-analysis/032-competitive-landscape-analysis.md) | [EN](04-business-strategy-competitive-analysis/032-competitive-landscape-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/04-business-strategy-competitive-analysis/032-competitive-landscape-analysis.md) | Available |
+| 033 | [Competitive Advantage Audit](04-business-strategy-competitive-analysis/033-competitive-advantage-audit.md) | [EN](04-business-strategy-competitive-analysis/033-competitive-advantage-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/04-business-strategy-competitive-analysis/033-competitive-advantage-audit.md) | Available |
+| 034 | [SWOT Evidence-Based Analysis](04-business-strategy-competitive-analysis/034-swot-evidence-based-analysis.md) | [EN](04-business-strategy-competitive-analysis/034-swot-evidence-based-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/04-business-strategy-competitive-analysis/034-swot-evidence-based-analysis.md) | Available |
+| 035 | [PESTLE Strategic Analysis](04-business-strategy-competitive-analysis/035-pestle-strategic-analysis.md) | [EN](04-business-strategy-competitive-analysis/035-pestle-strategic-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/04-business-strategy-competitive-analysis/035-pestle-strategic-analysis.md) | Available |
+| 036 | [Strategic Risk & Opportunity Analysis](04-business-strategy-competitive-analysis/036-strategic-risk-and-opportunity-analysis.md) | [EN](04-business-strategy-competitive-analysis/036-strategic-risk-and-opportunity-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/04-business-strategy-competitive-analysis/036-strategic-risk-and-opportunity-analysis.md) | Available |
+| 037 | [Market Entry Strategy Analysis](04-business-strategy-competitive-analysis/037-market-entry-strategy-analysis.md) | [EN](04-business-strategy-competitive-analysis/037-market-entry-strategy-analysis.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/04-business-strategy-competitive-analysis/037-market-entry-strategy-analysis.md) | Available |
+| 038 | [Growth Strategy Audit](04-business-strategy-competitive-analysis/038-growth-strategy-audit.md) | [EN](04-business-strategy-competitive-analysis/038-growth-strategy-audit.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/04-business-strategy-competitive-analysis/038-growth-strategy-audit.md) | Available |
+| 039 | [Strategic Initiative Prioritization](04-business-strategy-competitive-analysis/039-strategic-initiative-prioritization.md) | [EN](04-business-strategy-competitive-analysis/039-strategic-initiative-prioritization.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/04-business-strategy-competitive-analysis/039-strategic-initiative-prioritization.md) | Available |
+| 040 | [Business Strategy Stress Test](04-business-strategy-competitive-analysis/040-business-strategy-stress-test.md) | [EN](04-business-strategy-competitive-analysis/040-business-strategy-stress-test.md) | [SR](../../sr/02-ekonomija-finansije-poslovanje/04-business-strategy-competitive-analysis/040-business-strategy-stress-test.md) | Available |
 
 ### 05 · [Entrepreneurship & Business Models](05-entrepreneurship-business-models/README.md)
 
