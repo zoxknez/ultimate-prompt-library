@@ -59,12 +59,12 @@
 - Consumes: `prompts`, `catalog.categories`, `stats`, `promptUrl(lang, prompt)`, and `libraryUrl(lang)`.
 - Produces: an above-the-fold search form, task paths derived from populated catalog subcategories, one real featured prompt, and a short curated starter list.
 
-- [ ] **Step 1: Select homepage prompt content from real records** using stable existing IDs `UPL-IT-001`, `UPL-BIZ-001`, and `UPL-IT-002`; source titles, categories, and URLs from `prompts` and `promptUrl()`.
-- [ ] **Step 2: Replace the current homepage hero** with the Field Guide layout. Add a native `GET` search form whose `action` is `libraryUrl(lang)` and whose query field is named `q`, so search works without client-side submission code.
-- [ ] **Step 3: Render task pathways from populated subcategories** and keep the ten-category directory driven by `catalog.categories`. Empty categories remain labeled as planned and retain their existing roadmap destination.
-- [ ] **Step 4: Remove hardcoded prompt totals and collection names** from homepage copy and cards. Use `stats` and localized text for current counts, and label the curated list as recommendations rather than popularity because the source has no usage analytics.
-- [ ] **Step 5: Generate and visually inspect** English and Serbian homepages at 1440 px and 390 px. Confirm the search form targets the correct localized catalog route.
-- [ ] **Step 6: Commit** as `feat: redesign homepage as prompt field guide`.
+- [x] **Step 1: Select homepage prompt content from real records** using stable existing IDs `UPL-IT-001`, `UPL-BIZ-001`, and `UPL-IT-002`; source titles, categories, and URLs from `prompts` and `promptUrl()`.
+- [x] **Step 2: Replace the current homepage hero** with the Field Guide layout. Add a native `GET` search form whose `action` is `libraryUrl(lang)` and whose query field is named `q`, so search works without client-side submission code.
+- [x] **Step 3: Render task pathways from populated subcategories** and keep the ten-category directory driven by `catalog.categories`. Empty categories remain labeled as planned and retain their existing roadmap destination.
+- [x] **Step 4: Remove hardcoded prompt totals and collection names** from homepage copy and cards. Use `stats` and localized text for current counts, and label the curated list as recommendations rather than popularity because the source has no usage analytics.
+- [x] **Step 5: Generate and visually inspect** English and Serbian homepages at 1440 px and 390 px. Confirm the search form targets the correct localized catalog route.
+- [x] **Step 6: Commit** as `feat: redesign homepage as prompt field guide`.
 
 ### Task 3: Scalable catalog with side navigation
 

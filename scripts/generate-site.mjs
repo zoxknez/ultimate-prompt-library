@@ -21,8 +21,19 @@ const L = {
     category: 'Category', subcategory: 'Subcategory', toc: 'On this page', previous: 'Previous', next: 'Next',
     libraryTitle: 'Prompt Library',
     libraryLead: 'Search and filter every published prompt. Open a prompt, copy it in one click, or switch language without losing your place.',
-    heroKicker: 'Professional AI prompts for real work', heroTitle: 'Better prompts. Better work.',
-    heroLead: 'A curated open-source library of deep, production-grade prompts for IT, business and real-world professional workflows.',
+    heroKicker: 'The field guide', heroTitle: 'A better starting point for your next task.',
+    heroLead: 'A curated, open-source library of production-ready prompts for technology, business, and the work that connects them.',
+    homeSearchLabel: 'Search the prompt library', homeSearchPlaceholder: 'Search by task, tool, or keyword',
+    homeSearchButton: 'Search', homeSearchHint: 'Try “security audit”, “financial analysis”, or a tool you use every day.',
+    homeProof1: 'Built for practical work', homeProof2: 'English and Serbian', homeProof3: 'Open source', homeProof4: 'Evidence first',
+    pathKicker: 'Choose your path', pathTitle: 'What are you working on?', pathLead: 'Start with the kind of work in front of you. Every shortcut below leads to prompts already in the library.',
+    path1Title: 'Build and ship software', path1Lead: 'Plan, develop, and improve applications with a clearer process.',
+    path2Title: 'Protect and operate systems', path2Lead: 'Review security, reliability, infrastructure, and technical risk.',
+    path3Title: 'Understand the numbers', path3Lead: 'Turn financial records and business data into useful decisions.',
+    path4Title: 'Plan and grow a business', path4Lead: 'Work through strategy, new ventures, and commercial decisions.',
+    promptCountLabel: 'prompts', featuredKicker: 'Featured prompt', featuredTitle: 'A useful place to start', starterKicker: 'Recommended next steps',
+    starterLead: 'A small, considered selection from the current library.', homeBrowseAll: 'Browse all prompts', homeOpenPrompt: 'Open prompt',
+    pathCategory: 'Browse', directoryLead: 'Explore all ten permanent categories. New areas become available as prompts are added.',
     explore: 'Explore all prompts', browseIt: 'Explore IT Collection', browseBiz: 'Explore Business Collection',
     unique: 'Unique prompts', localized: 'Localized files', languages: 'Languages', stable: 'Stable prompts',
     complete: 'Complete', inProgress: 'In progress', published: 'published',
@@ -51,8 +62,19 @@ const L = {
     category: 'Oblast', subcategory: 'Podkategorija', toc: 'Na ovoj stranici', previous: 'Prethodni', next: 'Sledeći',
     libraryTitle: 'Biblioteka promptova',
     libraryLead: 'Pretraži i filtriraj svaki objavljeni prompt. Otvori prompt, kopiraj ga jednim klikom ili promeni jezik bez gubitka pozicije.',
-    heroKicker: 'Profesionalni AI promptovi za stvaran rad', heroTitle: 'Bolji promptovi. Bolji rad.',
-    heroLead: 'Kurirana open-source biblioteka dubokih, production-grade promptova za IT, poslovanje i profesionalne tokove rada.',
+    heroKicker: 'Vodič kroz biblioteku', heroTitle: 'Pronađi bolji početak za sledeći zadatak.',
+    heroLead: 'Kurirana open-source biblioteka promptova spremnih za stvaran rad u tehnologiji, poslovanju i oblastima koje ih povezuju.',
+    homeSearchLabel: 'Pretraži biblioteku promptova', homeSearchPlaceholder: 'Pretraži po zadatku, alatu ili pojmu',
+    homeSearchButton: 'Pretraži', homeSearchHint: 'Probaj „bezbednosni audit“, „finansijska analiza“ ili alat koji svakodnevno koristiš.',
+    homeProof1: 'Za praktičan rad', homeProof2: 'Srpski i engleski', homeProof3: 'Otvorenog koda', homeProof4: 'Dokazi na prvom mestu',
+    pathKicker: 'Izaberi oblast rada', pathTitle: 'Na čemu trenutno radiš?', pathLead: 'Počni od zadatka koji imaš pred sobom. Svaka prečica vodi do promptova koji već postoje u biblioteci.',
+    path1Title: 'Razvij i isporuči softver', path1Lead: 'Jasnije planiraj, razvijaj i unapređuj aplikacije.',
+    path2Title: 'Zaštiti i održavaj sisteme', path2Lead: 'Proveri bezbednost, pouzdanost, infrastrukturu i tehničke rizike.',
+    path3Title: 'Razumi poslovne brojeve', path3Lead: 'Pretvori finansijske podatke i evidenciju u korisne odluke.',
+    path4Title: 'Planiraj rast poslovanja', path4Lead: 'Razradi strategiju, nove poslovne modele i tržišne odluke.',
+    promptCountLabel: 'promptova', featuredKicker: 'Izdvojeni prompt', featuredTitle: 'Dobar početak za ozbiljan rad', starterKicker: 'Preporučeni sledeći koraci',
+    starterLead: 'Mali, pažljivo izabran izbor iz trenutne biblioteke.', homeBrowseAll: 'Pregledaj sve promptove', homeOpenPrompt: 'Otvori prompt',
+    pathCategory: 'Pregledaj', directoryLead: 'Istraži svih deset stalnih oblasti. Nove postaju dostupne kada dodamo njihove promptove.',
     explore: 'Pregledaj sve promptove', browseIt: 'Pregledaj IT kolekciju', browseBiz: 'Pregledaj Business kolekciju',
     unique: 'Jedinstvenih promptova', localized: 'Lokalizovanih fajlova', languages: 'Jezika', stable: 'Stabilnih promptova',
     complete: 'Završeno', inProgress: 'U toku', published: 'objavljeno',
@@ -238,6 +260,23 @@ const prompts = index.prompts.map((p) => {
   const sub = category?.subcategories.find((s) => s.id === p.subcategory);
   return { ...p, categoryData: category, subcategoryData: sub };
 });
+const promptById = new Map(prompts.map((prompt) => [prompt.id, prompt]));
+
+function promptExcerpt(prompt, lang, maxLength = 190) {
+  if (!prompt?.files?.[lang]) return '';
+  const { body } = parsePromptFile(prompt.files[lang]);
+  const firstParagraph = body.split(/\n\s*\n/)
+    .map((block) => block.trim())
+    .find((block) => block && !/^#{1,6}\s/.test(block) && !/^(?:[*+-]|\d+\.)\s/.test(block) && !/^>/.test(block));
+  const text = (firstParagraph || body)
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/[*_`>#]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (text.length <= maxLength) return text;
+  const boundary = text.lastIndexOf(' ', maxLength - 1);
+  return `${text.slice(0, boundary > 100 ? boundary : maxLength).trim()}…`;
+}
 
 function brandMark() {
   return '<span class="brand-mark" aria-hidden="true"><img src="/assets/upl-mark.svg" alt=""></span>';
@@ -258,43 +297,63 @@ function pageShell({ lang = 'en', title, description, body, canonical = '/', bod
   return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(safeTitle)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${absUrl(canonical)}"><link rel="alternate" hreflang="en" href="${absUrl(alternateEn)}"><link rel="alternate" hreflang="sr" href="${absUrl(alternateSr)}"><link rel="alternate" hreflang="x-default" href="${absUrl(alternateEn)}"><meta property="og:type" content="website"><meta property="og:title" content="${esc(safeTitle)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${absUrl(canonical)}"><meta name="theme-color" content="#ffffff"><link rel="icon" href="/assets/upl-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css"><link rel="manifest" href="/site.webmanifest"></head><body class="${bodyClass}"><a class="skip-link" href="#main-content">${esc(L[lang].skip)}</a>${header(lang, alternateEn, alternateSr)}<main id="main-content" class="site-main" tabindex="-1">${body}</main>${footer(lang)}<script src="/assets/site.js" defer></script><script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script><script defer src="/_vercel/insights/script.js"></script></body></html>`;
 }
 
-function statIcon(kind) {
-  const icons = {
-    prompts: '<path d="M7 5h10l4 4v12H7z"/><path d="M17 5v5h5"/><path d="M10 14h8M10 18h6"/>',
-    localized: '<circle cx="14" cy="14" r="9"/><path d="M5 14h18M14 5c3 3 4.5 6 4.5 9S17 20 14 23c-3-3-4.5-6-4.5-9S11 8 14 5z"/>',
-    stable: '<path d="M14 4l8 3v6c0 5-3.3 8.6-8 11-4.7-2.4-8-6-8-11V7z"/><path d="m10.5 14 2.3 2.3 4.8-5"/>',
-    languages: '<circle cx="14" cy="14" r="9"/><path d="M5 14h18M14 5c3 3 4.5 6 4.5 9S17 20 14 23c-3-3-4.5-6-4.5-9S11 8 14 5z"/>',
-  };
-  return `<span class="metric-icon" aria-hidden="true"><svg viewBox="0 0 28 28">${icons[kind] || icons.prompts}</svg></span>`;
-}
-
-function statCard(value, label, note, tone = 'blue', icon = 'prompts') {
-  return `<div class="metric ${tone}"><div class="metric-top">${statIcon(icon)}<strong>${esc(value)}</strong></div><div class="metric-copy"><span>${esc(label)}</span><small>${esc(note)}</small></div></div>`;
-}
-
-function collectionCard({ lang, category, count, planned, tone }) {
+function renderHomePath(lang, path) {
   const t = L[lang];
-  const pct = Math.round((count / planned) * 100);
-  const isComplete = count === planned;
-  const href = `${libraryUrl(lang)}?category=${encodeURIComponent(category.id)}`;
-  return `<article class="collection-card ${tone}"><div class="collection-top"><span class="collection-kicker">${esc(category.names[lang])}</span><span class="collection-status">${count}/${planned} · ${isComplete ? t.complete : t.inProgress}</span></div><h3>${esc(category.descriptions[lang])}</h3><div class="progress"><span style="width:${pct}%"></span></div><div class="chip-row">${category.subcategories.slice(0, 7).map((s) => `<span>${esc(s.names[lang])}</span>`).join('')}<span>+${Math.max(0, category.subcategories.length - 7)}</span></div><a class="button ${tone === 'gold' ? 'gold' : ''}" href="${href}">${category.id === 'UPL-IT' ? t.browseIt : t.browseBiz}<span>→</span></a></article>`;
+  const ids = path.subcategories
+    .map((id) => catalog.categories.map((category) => ({ category, subcategory: category.subcategories.find((sub) => sub.id === id) })).find((item) => item.subcategory))
+    .filter(Boolean);
+  const count = prompts.filter((prompt) => path.subcategories.includes(prompt.subcategory)).length;
+  const first = ids[0];
+  const href = first ? `${libraryUrl(lang)}?category=${encodeURIComponent(first.category.id)}&subcategory=${encodeURIComponent(first.subcategory.id)}` : libraryUrl(lang);
+  return `<article class="path-card path-card-${path.tone}"><div class="path-card-top"><span class="path-icon" aria-hidden="true">${path.icon}</span><span class="path-count">${count} ${esc(t.promptCountLabel)}</span></div><h3>${esc(t[path.title])}</h3><p>${esc(t[path.lead])}</p><div class="path-chip-list">${ids.map(({ category, subcategory }) => `<a href="${libraryUrl(lang)}?category=${encodeURIComponent(category.id)}&subcategory=${encodeURIComponent(subcategory.id)}">${esc(subcategory.names[lang])}</a>`).join('')}</div><a class="path-link" href="${href}">${esc(t.pathCategory)} <span aria-hidden="true">↗</span></a></article>`;
+}
+
+function renderFeaturedPrompt(lang, prompt) {
+  const t = L[lang];
+  if (!prompt) return '';
+  const title = prompt.titles?.[lang] || prompt.titles?.en || prompt.slug;
+  const category = prompt.categoryData?.names?.[lang] || prompt.categoryId;
+  const subcategory = prompt.subcategoryData?.names?.[lang] || prompt.subcategory;
+  const href = promptUrl(lang, prompt);
+  return `<article class="featured-prompt"><div class="featured-content"><div class="featured-meta"><span class="prompt-id">${esc(prompt.id)}</span><span>${esc(category)} · ${esc(subcategory)}</span></div><h3><a href="${href}">${esc(title)}</a></h3><p>${esc(promptExcerpt(prompt, lang, 245))}</p><div class="featured-detail"><span aria-hidden="true">✳</span>${esc(lang === 'sr' ? 'Obim, dokazi, rizici i jasni naredni koraci' : 'Scope, evidence, risks, and clear next steps')}</div><div class="featured-actions"><a class="button" href="${href}">${esc(t.homeOpenPrompt)} <span aria-hidden="true">↗</span></a><a class="text-link" href="${promptUrl(lang === 'sr' ? 'en' : 'sr', prompt)}" lang="${lang === 'sr' ? 'en' : 'sr'}">${lang === 'sr' ? 'EN' : 'SR'}</a></div></div><div class="featured-art" aria-hidden="true"><div class="featured-art-window"><span></span><span></span><span></span><i></i><i></i><i></i><b>UPL</b></div><span class="featured-art-badge">${esc(prompt.id)}</span></div></article>`;
+}
+
+function renderRecommendedPrompt(lang, prompt, order) {
+  const t = L[lang];
+  if (!prompt) return '';
+  const title = prompt.titles?.[lang] || prompt.titles?.en || prompt.slug;
+  const category = prompt.categoryData?.names?.[lang] || prompt.categoryId;
+  return `<li class="recommendation"><span class="recommendation-number">${String(order).padStart(2, '0')}</span><div class="recommendation-copy"><span class="prompt-id">${esc(prompt.id)} · ${esc(category)}</span><a href="${promptUrl(lang, prompt)}">${esc(title)}</a></div><a class="recommendation-open" href="${promptUrl(lang, prompt)}" aria-label="${esc(t.homeOpenPrompt)}: ${esc(title)}">↗</a></li>`;
 }
 
 function renderHome(lang = 'en') {
   const t = L[lang];
-  const it = categoryById.get('UPL-IT');
-  const biz = categoryById.get('UPL-BIZ');
-  const itStats = stats.collections.IT;
-  const bizStats = stats.collections.BIZ;
+  const promptPaths = [
+    { title: 'path1Title', lead: 'path1Lead', tone: 'blue', subcategories: ['web-development', 'mobile-development', 'backend-api'], icon: '<svg viewBox="0 0 32 32"><path d="m11 9-7 7 7 7M21 9l7 7-7 7M19 5l-6 22"/></svg>' },
+    { title: 'path2Title', lead: 'path2Lead', tone: 'mint', subcategories: ['cybersecurity', 'devops-cloud-infrastructure', 'testing-qa-reliability'], icon: '<svg viewBox="0 0 32 32"><path d="M16 3 27 7v8c0 7-4.7 11.5-11 14-6.3-2.5-11-7-11-14V7z"/><path d="m11 16 3.2 3.2L21 12"/></svg>' },
+    { title: 'path3Title', lead: 'path3Lead', tone: 'gold', subcategories: ['databases-data-engineering', 'financial-analysis-corporate-finance', 'accounting-reporting-financial-control'], icon: '<svg viewBox="0 0 32 32"><path d="M5 25V15M13 25V8M21 25v-6M29 25V4"/><path d="M3 28h28"/></svg>' },
+    { title: 'path4Title', lead: 'path4Lead', tone: 'rose', subcategories: ['business-strategy-competitive-analysis', 'entrepreneurship-business-models', 'sales-revenue-pricing'], icon: '<svg viewBox="0 0 32 32"><rect x="4" y="9" width="24" height="18" rx="3"/><path d="M12 9V6h8v3M4 16h24M13 16v3h6v-3"/></svg>' },
+  ];
+  const activeCategories = catalog.categories.filter((category) => prompts.some((prompt) => prompt.categoryId === category.id));
+  const featured = promptById.get('UPL-IT-001');
+  const recommended = ['UPL-BIZ-001', 'UPL-IT-002'].map((id) => promptById.get(id)).filter(Boolean);
+  const roadmap = lang === 'sr' ? 'docs/roadmap.sr.md' : 'docs/roadmap.md';
+  const pathCards = promptPaths.map((path) => renderHomePath(lang, path)).join('');
+  const categoryCards = catalog.categories.map((category) => {
+    const count = prompts.filter((prompt) => prompt.categoryId === category.id).length;
+    const href = count
+      ? `${libraryUrl(lang)}?category=${encodeURIComponent(category.id)}`
+      : `https://github.com/zoxknez/ultimate-prompt-library/blob/main/${roadmap}`;
+    return `<a class="category-card ${count ? 'active' : 'planned-card'}" href="${href}" ${count ? '' : `aria-label="${esc(category.names[lang])}, ${esc(t.planned)}"`}><span>${String(category.order).padStart(2, '0')}</span><h3>${esc(category.names[lang])}</h3><p>${esc(category.descriptions[lang])}</p><strong>${count ? `${count} ${esc(t.published)}` : esc(t.planned)}</strong></a>`;
+  }).join('');
+  const categoryOptions = activeCategories.map((category) => `<option value="${esc(category.id)}">${esc(category.names[lang])}</option>`).join('');
 
-  const body = `<section class="hero"><div class="shell hero-grid"><div class="hero-copy"><span class="eyebrow">${esc(t.heroKicker)}</span><h1>${esc(t.heroTitle)}</h1><p>${esc(t.heroLead)}</p><div class="hero-actions"><a class="button" href="${libraryUrl(lang)}">${t.explore}<span>→</span></a><a class="text-link" href="https://github.com/zoxknez/ultimate-prompt-library">${t.viewGithub}</a></div><div class="trust-row"><span>Evidence-first</span><span>EN + SR</span><span>Open source</span><span>MIT</span></div></div><div class="hero-visual" aria-label="Prompt library preview"><div class="workspace-card main-card"><div class="workspace-head"><span></span><span></span><span></span></div><div class="workspace-label">UPL-IT-001</div><h2>Forensic Full Repository Audit</h2><p>Scope · evidence · severity · failure modes · verification</p><div class="workspace-lines"><i></i><i></i><i></i><i></i></div></div><div class="floating-card fc-blue"><b>IT</b><span>${itStats.available}/100</span></div><div class="floating-card fc-gold"><b>Business</b><span>${bizStats.available}/100</span></div></div></div></section>
-  <section class="metrics-section"><div class="shell metrics-grid">${statCard(stats.uniquePrompts, t.unique, 'Production-grade', 'blue', 'prompts')}${statCard(stats.localizedPromptFiles, t.localized, 'EN + SR', 'green', 'localized')}${statCard(stats.byStatus.stable, t.stable, 'Reviewed and versioned', 'blue', 'stable')}${statCard(stats.languages, t.languages, 'English + Srpski', 'gold', 'languages')}</div></section>
-  <section class="shell section"><div class="section-head"><span class="eyebrow">${t.collectionsKicker}</span><h2>${t.collectionsTitle}</h2><p>${t.collectionsLead}</p></div><div class="collections-grid">${collectionCard({ lang, category: it, count: itStats.available, planned: itStats.planned, tone: 'blue' })}${collectionCard({ lang, category: biz, count: bizStats.available, planned: bizStats.planned, tone: 'gold' })}</div></section>
-  <section class="search-cta"><div class="shell search-cta-inner"><div><span class="eyebrow">${t.findKicker}</span><h2>${t.search}</h2><p>${t.libraryLead}</p></div><a class="button" href="${libraryUrl(lang)}">${t.explore}<span>→</span></a></div></section>
-  <section class="shell section" id="categories"><div class="section-head"><span class="eyebrow">${t.categories}</span><h2>${t.categoriesTitle}</h2><p>${t.categoriesLead}</p></div><div class="category-grid">${catalog.categories.map((c) => { const count = prompts.filter((p) => p.categoryId === c.id).length; const roadmap = lang === 'sr' ? 'docs/roadmap.sr.md' : 'docs/roadmap.md'; return `<a class="category-card ${count ? 'active' : ''}" href="${count ? `${libraryUrl(lang)}?category=${encodeURIComponent(c.id)}` : `https://github.com/zoxknez/ultimate-prompt-library/blob/main/${roadmap}`}"><span>${String(c.order).padStart(2, '0')}</span><h3>${esc(c.names[lang])}</h3><p>${esc(c.descriptions[lang])}</p><strong>${count ? `${count} ${t.published}` : t.planned}</strong></a>`; }).join('')}</div></section>
-  <section class="why"><div class="shell"><div class="section-head"><span class="eyebrow">${t.qualityKicker}</span><h2>${t.whyTitle}</h2></div><div class="why-grid"><div><b>01</b><h3>${t.quality1}</h3><p>${t.quality1Lead}</p></div><div><b>02</b><h3>${t.quality2}</h3><p>${t.quality2Lead}</p></div><div><b>03</b><h3>${t.quality3}</h3><p>${t.quality3Lead}</p></div><div><b>04</b><h3>${t.quality4}</h3><p>${t.quality4Lead}</p></div></div></div></section>
-  <section class="support-section"><div class="shell support-section-inner"><div class="support-copy"><span class="eyebrow">${t.supportProject}</span><h2>${t.supportTitle}</h2><p>${t.supportText}</p></div><div class="support-options"><a class="support-card" href="https://www.paypal.com/paypalme/o0o0o0o0o0o0o" target="_blank" rel="noopener noreferrer"><span class="support-provider paypal">P</span><div><strong>PayPal</strong><small>paypal.me</small></div><span class="support-arrow">→</span></a><a class="support-card" href="https://ko-fi.com/o0o0o0o" target="_blank" rel="noopener noreferrer"><span class="support-provider kofi">☕</span><div><strong>Ko-fi</strong><small>ko-fi.com</small></div><span class="support-arrow">→</span></a></div></div></section>`;
-
+  const body = `<section class="home-hero"><div class="shell home-hero-grid"><div class="home-intro"><span class="eyebrow"><i></i>${esc(t.heroKicker)}</span><h1>${esc(t.heroTitle)}</h1><p>${esc(t.heroLead)}</p><div class="home-proof"><span><i>✓</i>${esc(t.homeProof1)}</span><span><i>✓</i>${esc(t.homeProof2)}</span><span><i>✓</i>${esc(t.homeProof3)}</span><span><i>✓</i>${esc(t.homeProof4)}</span></div></div><div class="home-search-wrap"><div class="home-search-note"><span aria-hidden="true">↙</span><span>${esc(t.findKicker)}</span></div><form class="home-search" action="${libraryUrl(lang)}" method="get" role="search"><label class="sr-only" for="home-query">${esc(t.homeSearchLabel)}</label><span class="home-search-icon" aria-hidden="true">⌕</span><input id="home-query" type="search" name="q" placeholder="${esc(t.homeSearchPlaceholder)}" autocomplete="off"><label class="sr-only" for="home-category">${esc(t.category)}</label><select id="home-category" name="category"><option value="">${esc(t.allCategories)}</option>${categoryOptions}</select><button class="button" type="submit">${esc(t.homeSearchButton)} <span aria-hidden="true">→</span></button></form><p class="home-search-hint">${esc(t.homeSearchHint)}</p><div class="home-current-count"><span class="count-pulse"></span><strong>${stats.uniquePrompts}</strong> ${esc(t.promptCountLabel)} <span>·</span> ${catalog.categories.length} ${esc(t.categories.toLowerCase())}</div></div><div class="hero-index" aria-hidden="true"><span>${esc(t.prompts)}</span><span>${esc(t.categories)}</span><span>${esc(t.whyTitle)}</span></div></div></section>
+  <section class="shell home-path-section"><div class="home-section-heading"><div><span class="eyebrow">${esc(t.pathKicker)}</span><h2>${esc(t.pathTitle)}</h2><p>${esc(t.pathLead)}</p></div><a class="home-section-link" href="${libraryUrl(lang)}">${esc(t.homeBrowseAll)} <span aria-hidden="true">→</span></a></div><div class="path-grid">${pathCards}</div></section>
+  <section class="shell home-discovery"><div class="home-discovery-head"><div><span class="eyebrow">${esc(t.featuredKicker)}</span><h2>${esc(t.featuredTitle)}</h2></div><a class="home-section-link" href="${libraryUrl(lang)}">${esc(t.homeBrowseAll)} <span aria-hidden="true">→</span></a></div><div class="discovery-grid">${renderFeaturedPrompt(lang, featured)}<aside class="recommendation-panel"><div class="recommendation-head"><div><span class="eyebrow">${esc(t.starterKicker)}</span><p>${esc(t.starterLead)}</p></div></div><ol>${recommended.map((prompt, index) => renderRecommendedPrompt(lang, prompt, index + 1)).join('')}</ol><a class="recommendation-browse" href="${libraryUrl(lang)}">${esc(t.homeBrowseAll)} <span aria-hidden="true">→</span></a></aside></div></section>
+  <section class="shell section home-directory" id="categories"><div class="section-head"><span class="eyebrow">${esc(t.categories)}</span><h2>${esc(t.categoriesTitle)}</h2><p>${esc(t.directoryLead)}</p></div><div class="category-grid">${categoryCards}</div></section>
+  <section class="why"><div class="shell"><div class="section-head"><span class="eyebrow">${esc(t.qualityKicker)}</span><h2>${esc(t.whyTitle)}</h2></div><div class="why-grid"><div><b>01</b><h3>${esc(t.quality1)}</h3><p>${esc(t.quality1Lead)}</p></div><div><b>02</b><h3>${esc(t.quality2)}</h3><p>${esc(t.quality2Lead)}</p></div><div><b>03</b><h3>${esc(t.quality3)}</h3><p>${esc(t.quality3Lead)}</p></div><div><b>04</b><h3>${esc(t.quality4)}</h3><p>${esc(t.quality4Lead)}</p></div></div></div></section>
+  <section class="support-section"><div class="shell support-section-inner"><div class="support-copy"><span class="eyebrow">${esc(t.supportProject)}</span><h2>${esc(t.supportTitle)}</h2><p>${esc(t.supportText)}</p></div><div class="support-options"><a class="support-card" href="https://www.paypal.com/paypalme/o0o0o0o0o0o0o" target="_blank" rel="noopener noreferrer"><span class="support-provider paypal">P</span><div><strong>PayPal</strong><small>paypal.me</small></div><span class="support-arrow">→</span></a><a class="support-card" href="https://ko-fi.com/o0o0o0o" target="_blank" rel="noopener noreferrer"><span class="support-provider kofi">☕</span><div><strong>Ko-fi</strong><small>ko-fi.com</small></div><span class="support-arrow">→</span></a></div></div></section>`;
   return pageShell({ lang, title: 'Ultimate Prompt Library', description: t.heroLead, body, canonical: lang === 'sr' ? '/sr/' : '/', alternateEn: '/', alternateSr: '/sr/' });
 }
 

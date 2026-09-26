@@ -23,3 +23,11 @@
 - Browser review: at 390px viewport, desktop navigation is hidden, the mobile panel is visible and opaque when opened, Escape closes it, and focus returns to the menu button. Sticky header remains pinned after scrolling.
 - Review artifact: `C:\Users\zoxkn\AppData\Local\Temp\upl-redesign-review\task1-menu-open-fixed.png`.
 - `git diff --check`: clean.
+
+## Task 2: Field Guide homepage
+- Result: complete. Replaced the old hero with a Field Guide introduction, localized native GET search, four task paths assembled from active catalog subcategories, one real featured prompt, two real starter recommendations, and the full ten-category directory.
+- Content integrity: current count comes from `stats.uniquePrompts`; category and path counts come from prompt records. The recommendations are not labeled popular. Featured and recommendation titles, categories, links, and excerpts come from the localized prompt records and source Markdown.
+- Build: `npm run build:site` succeeded with 200 prompts, 400 localized files, and 404 indexed URLs.
+- Browser review: EN and SR homepages reviewed at 1440 px and 390 px. At mobile width the search and category selector are legible, the page has no horizontal overflow, and the search remains in the first viewport. The Serbian GET form navigated to `/sr/prompts/?category=UPL-BIZ&q=financial+analysis` and restored the filters with one matching result.
+- Screenshots: `C:\Users\zoxkn\AppData\Local\Temp\upl-redesign-review\home-en-desktop-v2.png`, `home-en-mobile-v2.png`, `home-sr-desktop-v1.png`, `home-sr-mobile-v1.png`, and `home-en-discovery-v1.png`.
+- `git diff --check`: clean.
