@@ -210,7 +210,7 @@ const prompts = index.prompts.map((p) => {
 });
 
 function brandMark() {
-  return '<span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M7 11c8-3 14 0 17 5v23c-5-4-11-6-17-3V11Zm34 0c-8-3-14 0-17 5v23c5-4 11-6 17-3V11Z"/><path d="M24 16v23"/></svg></span>';
+  return '<span class="brand-mark" aria-hidden="true"><img src="/assets/upl-mark.svg" alt=""></span>';
 }
 
 function header(lang = 'en') {
@@ -224,11 +224,21 @@ function footer(lang = 'en') {
 
 function pageShell({ lang = 'en', title, description, body, canonical = '/', bodyClass = '' }) {
   const safeTitle = title === 'Ultimate Prompt Library' ? title : `${title} | Ultimate Prompt Library`;
-  return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(safeTitle)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${absUrl(canonical)}"><meta property="og:type" content="website"><meta property="og:title" content="${esc(safeTitle)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${absUrl(canonical)}"><meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="/assets/site.css"><link rel="manifest" href="/site.webmanifest"></head><body class="${bodyClass}">${header(lang)}<main>${body}</main>${footer(lang)}<script src="/assets/site.js" defer></script></body></html>`;
+  return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(safeTitle)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${absUrl(canonical)}"><meta property="og:type" content="website"><meta property="og:title" content="${esc(safeTitle)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${absUrl(canonical)}"><meta name="theme-color" content="#ffffff"><link rel="icon" href="/assets/upl-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css"><link rel="manifest" href="/site.webmanifest"></head><body class="${bodyClass}">${header(lang)}<main>${body}</main>${footer(lang)}<script src="/assets/site.js" defer></script></body></html>`;
 }
 
-function statCard(value, label, note, tone = 'blue') {
-  return `<div class="metric ${tone}"><strong>${esc(value)}</strong><span>${esc(label)}</span><small>${esc(note)}</small></div>`;
+function statIcon(kind) {
+  const icons = {
+    prompts: '<path d="M7 5h10l4 4v12H7z"/><path d="M17 5v5h5"/><path d="M10 14h8M10 18h6"/>',
+    localized: '<circle cx="14" cy="14" r="9"/><path d="M5 14h18M14 5c3 3 4.5 6 4.5 9S17 20 14 23c-3-3-4.5-6-4.5-9S11 8 14 5z"/>',
+    stable: '<path d="M14 4l8 3v6c0 5-3.3 8.6-8 11-4.7-2.4-8-6-8-11V7z"/><path d="m10.5 14 2.3 2.3 4.8-5"/>',
+    languages: '<circle cx="14" cy="14" r="9"/><path d="M5 14h18M14 5c3 3 4.5 6 4.5 9S17 20 14 23c-3-3-4.5-6-4.5-9S11 8 14 5z"/>',
+  };
+  return `<span class="metric-icon" aria-hidden="true"><svg viewBox="0 0 28 28">${icons[kind] || icons.prompts}</svg></span>`;
+}
+
+function statCard(value, label, note, tone = 'blue', icon = 'prompts') {
+  return `<div class="metric ${tone}"><div class="metric-top">${statIcon(icon)}<strong>${esc(value)}</strong></div><div class="metric-copy"><span>${esc(label)}</span><small>${esc(note)}</small></div></div>`;
 }
 
 function collectionCard({ lang, category, count, planned, tone }) {
@@ -247,7 +257,7 @@ function renderHome(lang = 'en') {
   const bizStats = stats.collections.BIZ;
 
   const body = `<section class="hero"><div class="shell hero-grid"><div class="hero-copy"><span class="eyebrow">${esc(t.heroKicker)}</span><h1>${esc(t.heroTitle)}</h1><p>${esc(t.heroLead)}</p><div class="hero-actions"><a class="button" href="${libraryUrl(lang)}">${t.explore}<span>→</span></a><a class="text-link" href="https://github.com/zoxknez/ultimate-prompt-library">View on GitHub</a></div><div class="trust-row"><span>Evidence-first</span><span>EN + SR</span><span>Open source</span><span>MIT</span></div></div><div class="hero-visual" aria-label="Prompt library preview"><div class="workspace-card main-card"><div class="workspace-head"><span></span><span></span><span></span></div><div class="workspace-label">UPL-IT-001</div><h2>Forensic Full Repository Audit</h2><p>Scope · evidence · severity · failure modes · verification</p><div class="workspace-lines"><i></i><i></i><i></i><i></i></div></div><div class="floating-card fc-blue"><b>IT</b><span>${itStats.available}/100</span></div><div class="floating-card fc-gold"><b>Business</b><span>${bizStats.available}/100</span></div></div></div></section>
-  <section class="metrics-section"><div class="shell metrics-grid">${statCard(stats.uniquePrompts, t.unique, 'Production-grade', 'blue')}${statCard(stats.localizedPromptFiles, t.localized, 'EN + SR', 'green')}${statCard(stats.byStatus.stable, t.stable, 'Reviewed and versioned', 'blue')}${statCard(stats.languages, t.languages, 'English + Srpski', 'gold')}</div></section>
+  <section class="metrics-section"><div class="shell metrics-grid">${statCard(stats.uniquePrompts, t.unique, 'Production-grade', 'blue', 'prompts')}${statCard(stats.localizedPromptFiles, t.localized, 'EN + SR', 'green', 'localized')}${statCard(stats.byStatus.stable, t.stable, 'Reviewed and versioned', 'blue', 'stable')}${statCard(stats.languages, t.languages, 'English + Srpski', 'gold', 'languages')}</div></section>
   <section class="shell section"><div class="section-head"><span class="eyebrow">Collections</span><h2>Two collections. One consistent standard.</h2><p>Every published prompt follows the same permanent ID, versioning and bilingual structure.</p></div><div class="collections-grid">${collectionCard({ lang, category: it, count: itStats.available, planned: itStats.planned, tone: 'blue' })}${collectionCard({ lang, category: biz, count: bizStats.available, planned: bizStats.planned, tone: 'gold' })}</div></section>
   <section class="search-cta"><div class="shell search-cta-inner"><div><span class="eyebrow">Find the right prompt</span><h2>${t.search}</h2><p>${t.libraryLead}</p></div><a class="button" href="${libraryUrl(lang)}">${t.explore}<span>→</span></a></div></section>
   <section class="shell section" id="categories"><div class="section-head"><span class="eyebrow">${t.categories}</span><h2>Built to grow without becoming messy.</h2><p>Permanent category namespaces keep every prompt predictable even as the library expands.</p></div><div class="category-grid">${catalog.categories.map((c) => { const count = prompts.filter((p) => p.categoryId === c.id).length; const roadmap = lang === 'sr' ? 'docs/roadmap.sr.md' : 'docs/roadmap.md'; return `<a class="category-card ${count ? 'active' : ''}" href="${count ? `${libraryUrl(lang)}?category=${encodeURIComponent(c.id)}` : `https://github.com/zoxknez/ultimate-prompt-library/blob/main/${roadmap}`}"><span>${String(c.order).padStart(2, '0')}</span><h3>${esc(c.names[lang])}</h3><p>${esc(c.descriptions[lang])}</p><strong>${count ? `${count} ${t.published}` : 'Planned'}</strong></a>`; }).join('')}</div></section>
