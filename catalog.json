@@ -4600,8 +4600,1130 @@
         "en": "Teaching, learning, curriculum design, tutoring, study methods and assessment.",
         "sr": "Podučavanje, učenje, dizajn nastavnog programa, tutorstvo, metode učenja i ocenjivanje."
       },
-      "subcategories": [],
-      "prompts": []
+      "subcategories": [
+        {
+          "id": "instructional-design-learning-science",
+          "order": 1,
+          "names": {
+            "en": "Instructional Design & Learning Science",
+            "sr": "Dizajn nastave i nauka o učenju"
+          },
+          "descriptions": {
+            "en": "Learning objectives, prior knowledge, cognitive load, retrieval, spacing, scaffolding and evidence-informed lesson design.",
+            "sr": "Ciljevi učenja, prethodno znanje, kognitivno opterećenje, prisećanje, razmaknuto učenje, scaffolding i evidence-informed dizajn nastave."
+          }
+        },
+        {
+          "id": "teaching-classroom-practice",
+          "order": 2,
+          "names": {
+            "en": "Teaching & Classroom Practice",
+            "sr": "Nastava i učionička praksa"
+          },
+          "descriptions": {
+            "en": "Explicit instruction, questioning, explanations, modeling, discussion, misconceptions, classroom routines and differentiation.",
+            "sr": "Eksplicitna nastava, pitanja, objašnjenja, modelovanje, diskusija, misconceptions, učioničke rutine i diferencijacija."
+          }
+        },
+        {
+          "id": "assessment-feedback-grading",
+          "order": 3,
+          "names": {
+            "en": "Assessment, Feedback & Grading",
+            "sr": "Procenjivanje, povratna informacija i ocenjivanje"
+          },
+          "descriptions": {
+            "en": "Diagnostic, formative and summative assessment, rubrics, item quality, feedback, grading reliability and moderation.",
+            "sr": "Dijagnostičko, formativno i sumativno procenjivanje, rubrike, kvalitet zadataka, feedback, pouzdanost ocenjivanja i moderacija."
+          }
+        },
+        {
+          "id": "tutoring-personalized-learning",
+          "order": 4,
+          "names": {
+            "en": "Tutoring & Personalized Learning",
+            "sr": "Tutorstvo i personalizovano učenje"
+          },
+          "descriptions": {
+            "en": "One-to-one and small-group tutoring, learner diagnosis, adaptation, misconceptions, pacing and mastery.",
+            "sr": "Individualno i malo-grupno tutorstvo, dijagnostika učenika, prilagođavanje, misconceptions, tempo i mastery."
+          }
+        },
+        {
+          "id": "study-skills-metacognition",
+          "order": 5,
+          "names": {
+            "en": "Study Skills & Metacognition",
+            "sr": "Veštine učenja i metakognicija"
+          },
+          "descriptions": {
+            "en": "Self-regulation, retrieval practice, spacing, interleaving, note-taking, exam preparation and independent learning.",
+            "sr": "Samoregulacija, retrieval practice, spacing, interleaving, beleške, priprema ispita i samostalno učenje."
+          }
+        },
+        {
+          "id": "curriculum-course-design",
+          "order": 6,
+          "names": {
+            "en": "Curriculum & Course Design",
+            "sr": "Kurikulum i dizajn kursa"
+          },
+          "descriptions": {
+            "en": "Curriculum sequencing, coherence, prerequisite knowledge, course architecture, alignment and program review.",
+            "sr": "Sekvenciranje kurikuluma, koherentnost, preduslovno znanje, arhitektura kursa, usklađivanje i pregled programa."
+          }
+        },
+        {
+          "id": "literacy-language-learning",
+          "order": 7,
+          "names": {
+            "en": "Literacy, Language & Communication Learning",
+            "sr": "Pismenost, jezici i učenje komunikacije"
+          },
+          "descriptions": {
+            "en": "Reading, writing, vocabulary, oral language, second-language learning and disciplinary literacy.",
+            "sr": "Čitanje, pisanje, vokabular, usmeni jezik, učenje drugog jezika i predmetna pismenost."
+          }
+        },
+        {
+          "id": "inclusive-special-education",
+          "order": 8,
+          "names": {
+            "en": "Inclusive & Special Education",
+            "sr": "Inkluzivno i specijalno obrazovanje"
+          },
+          "descriptions": {
+            "en": "Accessible instruction, special educational needs, accommodations, universal design, participation and support planning.",
+            "sr": "Pristupačna nastava, posebne obrazovne potrebe, prilagođavanja, universal design, participacija i planiranje podrške."
+          }
+        },
+        {
+          "id": "education-technology-ai",
+          "order": 9,
+          "names": {
+            "en": "Education Technology & AI",
+            "sr": "Obrazovna tehnologija i AI"
+          },
+          "descriptions": {
+            "en": "EdTech selection, digital pedagogy, AI-supported learning, academic integrity, privacy, accessibility and implementation.",
+            "sr": "Izbor EdTech alata, digitalna pedagogija, AI podrška učenju, akademski integritet, privatnost, pristupačnost i implementacija."
+          }
+        },
+        {
+          "id": "academic-research-professional-learning",
+          "order": 10,
+          "names": {
+            "en": "Academic Research & Professional Learning",
+            "sr": "Akademsko istraživanje i profesionalno učenje"
+          },
+          "descriptions": {
+            "en": "Literature reviews, action research, teacher professional development, evidence use, implementation and reflective practice.",
+            "sr": "Pregledi literature, action research, profesionalni razvoj nastavnika, korišćenje dokaza, implementacija i refleksivna praksa."
+          }
+        }
+      ],
+      "prompts": [
+        {
+          "id": "UPL-EDU-001",
+          "number": 1,
+          "slug": "learning-objective-alignment-audit",
+          "subcategory": "instructional-design-learning-science",
+          "title": {
+            "en": "Learning Objective Alignment Audit",
+            "sr": "Audit usklađenosti ciljeva učenja"
+          }
+        },
+        {
+          "id": "UPL-EDU-002",
+          "number": 2,
+          "slug": "prior-knowledge-diagnostic-builder",
+          "subcategory": "instructional-design-learning-science",
+          "title": {
+            "en": "Prior Knowledge Diagnostic Builder",
+            "sr": "Izrada dijagnostike prethodnog znanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-003",
+          "number": 3,
+          "slug": "cognitive-load-lesson-audit",
+          "subcategory": "instructional-design-learning-science",
+          "title": {
+            "en": "Cognitive Load Lesson Audit",
+            "sr": "Audit kognitivnog opterećenja časa"
+          }
+        },
+        {
+          "id": "UPL-EDU-004",
+          "number": 4,
+          "slug": "retrieval-practice-design",
+          "subcategory": "instructional-design-learning-science",
+          "title": {
+            "en": "Retrieval Practice Design",
+            "sr": "Dizajn retrieval practice aktivnosti"
+          }
+        },
+        {
+          "id": "UPL-EDU-005",
+          "number": 5,
+          "slug": "spacing-and-interleaving-plan",
+          "subcategory": "instructional-design-learning-science",
+          "title": {
+            "en": "Spacing & Interleaving Plan",
+            "sr": "Plan spacing i interleaving učenja"
+          }
+        },
+        {
+          "id": "UPL-EDU-006",
+          "number": 6,
+          "slug": "scaffolding-fading-framework",
+          "subcategory": "instructional-design-learning-science",
+          "title": {
+            "en": "Scaffolding & Fading Framework",
+            "sr": "Okvir scaffoldinga i postepenog povlačenja podrške"
+          }
+        },
+        {
+          "id": "UPL-EDU-007",
+          "number": 7,
+          "slug": "worked-example-design",
+          "subcategory": "instructional-design-learning-science",
+          "title": {
+            "en": "Worked Example Design",
+            "sr": "Dizajn worked example primera"
+          }
+        },
+        {
+          "id": "UPL-EDU-008",
+          "number": 8,
+          "slug": "misconception-preemption-map",
+          "subcategory": "instructional-design-learning-science",
+          "title": {
+            "en": "Misconception Preemption Map",
+            "sr": "Mapa predupređivanja zabluda"
+          }
+        },
+        {
+          "id": "UPL-EDU-009",
+          "number": 9,
+          "slug": "lesson-sequence-evidence-audit",
+          "subcategory": "instructional-design-learning-science",
+          "title": {
+            "en": "Lesson Sequence Evidence Audit",
+            "sr": "Audit evidence-based sekvence časa"
+          }
+        },
+        {
+          "id": "UPL-EDU-010",
+          "number": 10,
+          "slug": "learning-design-integrity-review",
+          "subcategory": "instructional-design-learning-science",
+          "title": {
+            "en": "Learning Design Integrity Review",
+            "sr": "Pregled integriteta dizajna učenja"
+          }
+        },
+        {
+          "id": "UPL-EDU-011",
+          "number": 11,
+          "slug": "explicit-instruction-lesson-builder",
+          "subcategory": "teaching-classroom-practice",
+          "title": {
+            "en": "Explicit Instruction Lesson Builder",
+            "sr": "Izrada časa eksplicitne nastave"
+          }
+        },
+        {
+          "id": "UPL-EDU-012",
+          "number": 12,
+          "slug": "teacher-explanation-quality-audit",
+          "subcategory": "teaching-classroom-practice",
+          "title": {
+            "en": "Teacher Explanation Quality Audit",
+            "sr": "Audit kvaliteta nastavničkog objašnjenja"
+          }
+        },
+        {
+          "id": "UPL-EDU-013",
+          "number": 13,
+          "slug": "questioning-strategy-builder",
+          "subcategory": "teaching-classroom-practice",
+          "title": {
+            "en": "Questioning Strategy Builder",
+            "sr": "Izrada strategije postavljanja pitanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-014",
+          "number": 14,
+          "slug": "classroom-discussion-design",
+          "subcategory": "teaching-classroom-practice",
+          "title": {
+            "en": "Classroom Discussion Design",
+            "sr": "Dizajn učioničke diskusije"
+          }
+        },
+        {
+          "id": "UPL-EDU-015",
+          "number": 15,
+          "slug": "think-aloud-modeling-builder",
+          "subcategory": "teaching-classroom-practice",
+          "title": {
+            "en": "Think-Aloud Modeling Builder",
+            "sr": "Izrada think-aloud modelovanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-016",
+          "number": 16,
+          "slug": "checking-for-understanding-audit",
+          "subcategory": "teaching-classroom-practice",
+          "title": {
+            "en": "Checking for Understanding Audit",
+            "sr": "Audit provere razumevanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-017",
+          "number": 17,
+          "slug": "differentiation-without-lowering-expectations",
+          "subcategory": "teaching-classroom-practice",
+          "title": {
+            "en": "Differentiation Without Lowering Expectations",
+            "sr": "Diferencijacija bez snižavanja očekivanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-018",
+          "number": 18,
+          "slug": "classroom-routine-design",
+          "subcategory": "teaching-classroom-practice",
+          "title": {
+            "en": "Classroom Routine Design",
+            "sr": "Dizajn učioničkih rutina"
+          }
+        },
+        {
+          "id": "UPL-EDU-019",
+          "number": 19,
+          "slug": "misconception-detection-and-response",
+          "subcategory": "teaching-classroom-practice",
+          "title": {
+            "en": "Misconception Detection & Response",
+            "sr": "Otkrivanje i ispravljanje misconceptions"
+          }
+        },
+        {
+          "id": "UPL-EDU-020",
+          "number": 20,
+          "slug": "lesson-observation-evidence-review",
+          "subcategory": "teaching-classroom-practice",
+          "title": {
+            "en": "Lesson Observation Evidence Review",
+            "sr": "Evidence-based pregled posmatranja časa"
+          }
+        },
+        {
+          "id": "UPL-EDU-021",
+          "number": 21,
+          "slug": "diagnostic-assessment-builder",
+          "subcategory": "assessment-feedback-grading",
+          "title": {
+            "en": "Diagnostic Assessment Builder",
+            "sr": "Izrada dijagnostičke procene"
+          }
+        },
+        {
+          "id": "UPL-EDU-022",
+          "number": 22,
+          "slug": "formative-assessment-system",
+          "subcategory": "assessment-feedback-grading",
+          "title": {
+            "en": "Formative Assessment System",
+            "sr": "Sistem formativnog procenjivanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-023",
+          "number": 23,
+          "slug": "summative-assessment-blueprint",
+          "subcategory": "assessment-feedback-grading",
+          "title": {
+            "en": "Summative Assessment Blueprint",
+            "sr": "Blueprint sumativnog testa"
+          }
+        },
+        {
+          "id": "UPL-EDU-024",
+          "number": 24,
+          "slug": "rubric-quality-audit",
+          "subcategory": "assessment-feedback-grading",
+          "title": {
+            "en": "Rubric Quality Audit",
+            "sr": "Audit kvaliteta rubrike"
+          }
+        },
+        {
+          "id": "UPL-EDU-025",
+          "number": 25,
+          "slug": "assessment-item-quality-review",
+          "subcategory": "assessment-feedback-grading",
+          "title": {
+            "en": "Assessment Item Quality Review",
+            "sr": "Pregled kvaliteta ispitnih zadataka"
+          }
+        },
+        {
+          "id": "UPL-EDU-026",
+          "number": 26,
+          "slug": "feedback-for-learning-builder",
+          "subcategory": "assessment-feedback-grading",
+          "title": {
+            "en": "Feedback for Learning Builder",
+            "sr": "Izrada povratne informacije za učenje"
+          }
+        },
+        {
+          "id": "UPL-EDU-027",
+          "number": 27,
+          "slug": "grading-reliability-audit",
+          "subcategory": "assessment-feedback-grading",
+          "title": {
+            "en": "Grading Reliability Audit",
+            "sr": "Audit pouzdanosti ocenjivanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-028",
+          "number": 28,
+          "slug": "moderation-and-standardization-plan",
+          "subcategory": "assessment-feedback-grading",
+          "title": {
+            "en": "Moderation & Standardization Plan",
+            "sr": "Plan moderacije i standardizacije"
+          }
+        },
+        {
+          "id": "UPL-EDU-029",
+          "number": 29,
+          "slug": "assessment-bias-fairness-audit",
+          "subcategory": "assessment-feedback-grading",
+          "title": {
+            "en": "Assessment Bias & Fairness Audit",
+            "sr": "Audit pristrasnosti i pravičnosti procene"
+          }
+        },
+        {
+          "id": "UPL-EDU-030",
+          "number": 30,
+          "slug": "assessment-data-instruction-loop",
+          "subcategory": "assessment-feedback-grading",
+          "title": {
+            "en": "Assessment Data to Instruction Loop",
+            "sr": "Petlja od podataka procene do nastave"
+          }
+        },
+        {
+          "id": "UPL-EDU-031",
+          "number": 31,
+          "slug": "tutoring-session-diagnostic",
+          "subcategory": "tutoring-personalized-learning",
+          "title": {
+            "en": "Tutoring Session Diagnostic",
+            "sr": "Dijagnostika tutorske sesije"
+          }
+        },
+        {
+          "id": "UPL-EDU-032",
+          "number": 32,
+          "slug": "mastery-gap-analysis",
+          "subcategory": "tutoring-personalized-learning",
+          "title": {
+            "en": "Mastery Gap Analysis",
+            "sr": "Analiza rupa u mastery znanju"
+          }
+        },
+        {
+          "id": "UPL-EDU-033",
+          "number": 33,
+          "slug": "personalized-learning-path-builder",
+          "subcategory": "tutoring-personalized-learning",
+          "title": {
+            "en": "Personalized Learning Path Builder",
+            "sr": "Izrada personalizovane putanje učenja"
+          }
+        },
+        {
+          "id": "UPL-EDU-034",
+          "number": 34,
+          "slug": "small-group-tutoring-plan",
+          "subcategory": "tutoring-personalized-learning",
+          "title": {
+            "en": "Small-Group Tutoring Plan",
+            "sr": "Plan tutorstva u maloj grupi"
+          }
+        },
+        {
+          "id": "UPL-EDU-035",
+          "number": 35,
+          "slug": "error-pattern-analysis-for-tutoring",
+          "subcategory": "tutoring-personalized-learning",
+          "title": {
+            "en": "Error Pattern Analysis for Tutoring",
+            "sr": "Analiza obrazaca grešaka za tutorstvo"
+          }
+        },
+        {
+          "id": "UPL-EDU-036",
+          "number": 36,
+          "slug": "tutoring-question-sequence-builder",
+          "subcategory": "tutoring-personalized-learning",
+          "title": {
+            "en": "Tutoring Question Sequence Builder",
+            "sr": "Izrada sekvence tutorskih pitanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-037",
+          "number": 37,
+          "slug": "tutoring-feedback-loop",
+          "subcategory": "tutoring-personalized-learning",
+          "title": {
+            "en": "Tutoring Feedback Loop",
+            "sr": "Tutorska feedback petlja"
+          }
+        },
+        {
+          "id": "UPL-EDU-038",
+          "number": 38,
+          "slug": "struggling-learner-recovery-plan",
+          "subcategory": "tutoring-personalized-learning",
+          "title": {
+            "en": "Struggling Learner Recovery Plan",
+            "sr": "Plan oporavka učenika koji zaostaje"
+          }
+        },
+        {
+          "id": "UPL-EDU-039",
+          "number": 39,
+          "slug": "advanced-learner-extension-plan",
+          "subcategory": "tutoring-personalized-learning",
+          "title": {
+            "en": "Advanced Learner Extension Plan",
+            "sr": "Plan proširenja za naprednog učenika"
+          }
+        },
+        {
+          "id": "UPL-EDU-040",
+          "number": 40,
+          "slug": "tutoring-progress-monitor",
+          "subcategory": "tutoring-personalized-learning",
+          "title": {
+            "en": "Tutoring Progress Monitor",
+            "sr": "Praćenje napretka u tutorstvu"
+          }
+        },
+        {
+          "id": "UPL-EDU-041",
+          "number": 41,
+          "slug": "metacognitive-study-plan",
+          "subcategory": "study-skills-metacognition",
+          "title": {
+            "en": "Metacognitive Study Plan",
+            "sr": "Metakognitivni plan učenja"
+          }
+        },
+        {
+          "id": "UPL-EDU-042",
+          "number": 42,
+          "slug": "retrieval-practice-study-system",
+          "subcategory": "study-skills-metacognition",
+          "title": {
+            "en": "Retrieval Practice Study System",
+            "sr": "Sistem učenja retrieval practice metodom"
+          }
+        },
+        {
+          "id": "UPL-EDU-043",
+          "number": 43,
+          "slug": "spaced-repetition-study-plan",
+          "subcategory": "study-skills-metacognition",
+          "title": {
+            "en": "Spaced Repetition Study Plan",
+            "sr": "Plan razmaknutog ponavljanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-044",
+          "number": 44,
+          "slug": "interleaved-practice-planner",
+          "subcategory": "study-skills-metacognition",
+          "title": {
+            "en": "Interleaved Practice Planner",
+            "sr": "Planer interleaved practice učenja"
+          }
+        },
+        {
+          "id": "UPL-EDU-045",
+          "number": 45,
+          "slug": "exam-preparation-evidence-plan",
+          "subcategory": "study-skills-metacognition",
+          "title": {
+            "en": "Evidence-Based Exam Preparation Plan",
+            "sr": "Evidence-based plan pripreme ispita"
+          }
+        },
+        {
+          "id": "UPL-EDU-046",
+          "number": 46,
+          "slug": "note-taking-method-audit",
+          "subcategory": "study-skills-metacognition",
+          "title": {
+            "en": "Note-Taking Method Audit",
+            "sr": "Audit metoda vođenja beležaka"
+          }
+        },
+        {
+          "id": "UPL-EDU-047",
+          "number": 47,
+          "slug": "study-error-log-builder",
+          "subcategory": "study-skills-metacognition",
+          "title": {
+            "en": "Study Error Log Builder",
+            "sr": "Izrada dnevnika grešaka u učenju"
+          }
+        },
+        {
+          "id": "UPL-EDU-048",
+          "number": 48,
+          "slug": "self-testing-question-generator",
+          "subcategory": "study-skills-metacognition",
+          "title": {
+            "en": "Self-Testing Question Generator",
+            "sr": "Generator pitanja za samoproveru"
+          }
+        },
+        {
+          "id": "UPL-EDU-049",
+          "number": 49,
+          "slug": "independent-learning-routine",
+          "subcategory": "study-skills-metacognition",
+          "title": {
+            "en": "Independent Learning Routine",
+            "sr": "Rutina samostalnog učenja"
+          }
+        },
+        {
+          "id": "UPL-EDU-050",
+          "number": 50,
+          "slug": "procrastination-study-friction-audit",
+          "subcategory": "study-skills-metacognition",
+          "title": {
+            "en": "Study Friction & Procrastination Audit",
+            "sr": "Audit prepreka učenju i prokrastinacije"
+          }
+        },
+        {
+          "id": "UPL-EDU-051",
+          "number": 51,
+          "slug": "curriculum-sequencing-audit",
+          "subcategory": "curriculum-course-design",
+          "title": {
+            "en": "Curriculum Sequencing Audit",
+            "sr": "Audit sekvenciranja kurikuluma"
+          }
+        },
+        {
+          "id": "UPL-EDU-052",
+          "number": 52,
+          "slug": "prerequisite-knowledge-map",
+          "subcategory": "curriculum-course-design",
+          "title": {
+            "en": "Prerequisite Knowledge Map",
+            "sr": "Mapa preduslovnog znanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-053",
+          "number": 53,
+          "slug": "course-backward-design-builder",
+          "subcategory": "curriculum-course-design",
+          "title": {
+            "en": "Course Backward Design Builder",
+            "sr": "Izrada kursa backward design metodom"
+          }
+        },
+        {
+          "id": "UPL-EDU-054",
+          "number": 54,
+          "slug": "curriculum-coherence-review",
+          "subcategory": "curriculum-course-design",
+          "title": {
+            "en": "Curriculum Coherence Review",
+            "sr": "Pregled koherentnosti kurikuluma"
+          }
+        },
+        {
+          "id": "UPL-EDU-055",
+          "number": 55,
+          "slug": "course-outcome-assessment-alignment",
+          "subcategory": "curriculum-course-design",
+          "title": {
+            "en": "Course Outcome & Assessment Alignment",
+            "sr": "Usklađivanje ishoda kursa i procene"
+          }
+        },
+        {
+          "id": "UPL-EDU-056",
+          "number": 56,
+          "slug": "unit-plan-architecture",
+          "subcategory": "curriculum-course-design",
+          "title": {
+            "en": "Unit Plan Architecture",
+            "sr": "Arhitektura nastavne jedinice"
+          }
+        },
+        {
+          "id": "UPL-EDU-057",
+          "number": 57,
+          "slug": "curriculum-overload-audit",
+          "subcategory": "curriculum-course-design",
+          "title": {
+            "en": "Curriculum Overload Audit",
+            "sr": "Audit preopterećenosti kurikuluma"
+          }
+        },
+        {
+          "id": "UPL-EDU-058",
+          "number": 58,
+          "slug": "spiral-curriculum-review",
+          "subcategory": "curriculum-course-design",
+          "title": {
+            "en": "Spiral Curriculum Review",
+            "sr": "Pregled spiralnog kurikuluma"
+          }
+        },
+        {
+          "id": "UPL-EDU-059",
+          "number": 59,
+          "slug": "cross-curricular-connection-map",
+          "subcategory": "curriculum-course-design",
+          "title": {
+            "en": "Cross-Curricular Connection Map",
+            "sr": "Mapa međupredmetnih veza"
+          }
+        },
+        {
+          "id": "UPL-EDU-060",
+          "number": 60,
+          "slug": "course-review-and-refresh",
+          "subcategory": "curriculum-course-design",
+          "title": {
+            "en": "Course Review & Refresh",
+            "sr": "Pregled i osvežavanje kursa"
+          }
+        },
+        {
+          "id": "UPL-EDU-061",
+          "number": 61,
+          "slug": "reading-comprehension-strategy-builder",
+          "subcategory": "literacy-language-learning",
+          "title": {
+            "en": "Reading Comprehension Strategy Builder",
+            "sr": "Izrada strategije razumevanja pročitanog"
+          }
+        },
+        {
+          "id": "UPL-EDU-062",
+          "number": 62,
+          "slug": "vocabulary-instruction-plan",
+          "subcategory": "literacy-language-learning",
+          "title": {
+            "en": "Vocabulary Instruction Plan",
+            "sr": "Plan nastave vokabulara"
+          }
+        },
+        {
+          "id": "UPL-EDU-063",
+          "number": 63,
+          "slug": "writing-feedback-framework",
+          "subcategory": "literacy-language-learning",
+          "title": {
+            "en": "Writing Feedback Framework",
+            "sr": "Okvir povratne informacije za pisanje"
+          }
+        },
+        {
+          "id": "UPL-EDU-064",
+          "number": 64,
+          "slug": "disciplinary-literacy-audit",
+          "subcategory": "literacy-language-learning",
+          "title": {
+            "en": "Disciplinary Literacy Audit",
+            "sr": "Audit predmetne pismenosti"
+          }
+        },
+        {
+          "id": "UPL-EDU-065",
+          "number": 65,
+          "slug": "second-language-learning-plan",
+          "subcategory": "literacy-language-learning",
+          "title": {
+            "en": "Second-Language Learning Plan",
+            "sr": "Plan učenja drugog jezika"
+          }
+        },
+        {
+          "id": "UPL-EDU-066",
+          "number": 66,
+          "slug": "oral-language-development-plan",
+          "subcategory": "literacy-language-learning",
+          "title": {
+            "en": "Oral Language Development Plan",
+            "sr": "Plan razvoja usmenog jezika"
+          }
+        },
+        {
+          "id": "UPL-EDU-067",
+          "number": 67,
+          "slug": "academic-writing-structure-audit",
+          "subcategory": "literacy-language-learning",
+          "title": {
+            "en": "Academic Writing Structure Audit",
+            "sr": "Audit strukture akademskog pisanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-068",
+          "number": 68,
+          "slug": "reading-difficulty-support-plan",
+          "subcategory": "literacy-language-learning",
+          "title": {
+            "en": "Reading Difficulty Support Plan",
+            "sr": "Plan podrške kod teškoća čitanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-069",
+          "number": 69,
+          "slug": "writing-rubric-and-exemplar-builder",
+          "subcategory": "literacy-language-learning",
+          "title": {
+            "en": "Writing Rubric & Exemplar Builder",
+            "sr": "Izrada rubrike i primera za pisanje"
+          }
+        },
+        {
+          "id": "UPL-EDU-070",
+          "number": 70,
+          "slug": "language-learning-progress-monitor",
+          "subcategory": "literacy-language-learning",
+          "title": {
+            "en": "Language Learning Progress Monitor",
+            "sr": "Praćenje napretka u učenju jezika"
+          }
+        },
+        {
+          "id": "UPL-EDU-071",
+          "number": 71,
+          "slug": "inclusive-lesson-accessibility-audit",
+          "subcategory": "inclusive-special-education",
+          "title": {
+            "en": "Inclusive Lesson Accessibility Audit",
+            "sr": "Audit pristupačnosti inkluzivnog časa"
+          }
+        },
+        {
+          "id": "UPL-EDU-072",
+          "number": 72,
+          "slug": "reasonable-accommodation-planner",
+          "subcategory": "inclusive-special-education",
+          "title": {
+            "en": "Reasonable Accommodation Planner",
+            "sr": "Planer razumnih prilagođavanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-073",
+          "number": 73,
+          "slug": "universal-design-for-learning-review",
+          "subcategory": "inclusive-special-education",
+          "title": {
+            "en": "Universal Design for Learning Review",
+            "sr": "Pregled Universal Design for Learning pristupa"
+          }
+        },
+        {
+          "id": "UPL-EDU-074",
+          "number": 74,
+          "slug": "sen-support-plan-builder",
+          "subcategory": "inclusive-special-education",
+          "title": {
+            "en": "SEN Support Plan Builder",
+            "sr": "Izrada plana podrške učeniku sa posebnim potrebama"
+          }
+        },
+        {
+          "id": "UPL-EDU-075",
+          "number": 75,
+          "slug": "accessible-assessment-audit",
+          "subcategory": "inclusive-special-education",
+          "title": {
+            "en": "Accessible Assessment Audit",
+            "sr": "Audit pristupačne procene"
+          }
+        },
+        {
+          "id": "UPL-EDU-076",
+          "number": 76,
+          "slug": "participation-barrier-analysis",
+          "subcategory": "inclusive-special-education",
+          "title": {
+            "en": "Participation Barrier Analysis",
+            "sr": "Analiza prepreka participaciji"
+          }
+        },
+        {
+          "id": "UPL-EDU-077",
+          "number": 77,
+          "slug": "assistive-technology-fit-review",
+          "subcategory": "inclusive-special-education",
+          "title": {
+            "en": "Assistive Technology Fit Review",
+            "sr": "Pregled prikladnosti asistivne tehnologije"
+          }
+        },
+        {
+          "id": "UPL-EDU-078",
+          "number": 78,
+          "slug": "inclusive-group-work-design",
+          "subcategory": "inclusive-special-education",
+          "title": {
+            "en": "Inclusive Group Work Design",
+            "sr": "Dizajn inkluzivnog grupnog rada"
+          }
+        },
+        {
+          "id": "UPL-EDU-079",
+          "number": 79,
+          "slug": "sensory-cognitive-load-audit",
+          "subcategory": "inclusive-special-education",
+          "title": {
+            "en": "Sensory & Cognitive Load Audit",
+            "sr": "Audit senzornog i kognitivnog opterećenja"
+          }
+        },
+        {
+          "id": "UPL-EDU-080",
+          "number": 80,
+          "slug": "inclusion-progress-review",
+          "subcategory": "inclusive-special-education",
+          "title": {
+            "en": "Inclusion Progress Review",
+            "sr": "Pregled napretka inkluzije"
+          }
+        },
+        {
+          "id": "UPL-EDU-081",
+          "number": 81,
+          "slug": "edtech-evidence-fit-audit",
+          "subcategory": "education-technology-ai",
+          "title": {
+            "en": "EdTech Evidence & Fit Audit",
+            "sr": "Audit dokaza i prikladnosti EdTech alata"
+          }
+        },
+        {
+          "id": "UPL-EDU-082",
+          "number": 82,
+          "slug": "ai-tutor-safety-and-pedagogy-audit",
+          "subcategory": "education-technology-ai",
+          "title": {
+            "en": "AI Tutor Safety & Pedagogy Audit",
+            "sr": "Audit bezbednosti i pedagogije AI tutora"
+          }
+        },
+        {
+          "id": "UPL-EDU-083",
+          "number": 83,
+          "slug": "ai-assisted-assignment-design",
+          "subcategory": "education-technology-ai",
+          "title": {
+            "en": "AI-Assisted Assignment Design",
+            "sr": "Dizajn zadatka uz AI podršku"
+          }
+        },
+        {
+          "id": "UPL-EDU-084",
+          "number": 84,
+          "slug": "academic-integrity-ai-framework",
+          "subcategory": "education-technology-ai",
+          "title": {
+            "en": "Academic Integrity & AI Framework",
+            "sr": "Okvir akademskog integriteta i AI"
+          }
+        },
+        {
+          "id": "UPL-EDU-085",
+          "number": 85,
+          "slug": "digital-learning-workflow-audit",
+          "subcategory": "education-technology-ai",
+          "title": {
+            "en": "Digital Learning Workflow Audit",
+            "sr": "Audit digitalnog toka učenja"
+          }
+        },
+        {
+          "id": "UPL-EDU-086",
+          "number": 86,
+          "slug": "learning-platform-accessibility-review",
+          "subcategory": "education-technology-ai",
+          "title": {
+            "en": "Learning Platform Accessibility Review",
+            "sr": "Pregled pristupačnosti platforme za učenje"
+          }
+        },
+        {
+          "id": "UPL-EDU-087",
+          "number": 87,
+          "slug": "student-data-privacy-audit",
+          "subcategory": "education-technology-ai",
+          "title": {
+            "en": "Student Data Privacy Audit",
+            "sr": "Audit privatnosti podataka učenika"
+          }
+        },
+        {
+          "id": "UPL-EDU-088",
+          "number": 88,
+          "slug": "technology-distraction-audit",
+          "subcategory": "education-technology-ai",
+          "title": {
+            "en": "Technology Distraction Audit",
+            "sr": "Audit digitalnih distrakcija u učenju"
+          }
+        },
+        {
+          "id": "UPL-EDU-089",
+          "number": 89,
+          "slug": "hybrid-course-design",
+          "subcategory": "education-technology-ai",
+          "title": {
+            "en": "Hybrid Course Design",
+            "sr": "Dizajn hibridnog kursa"
+          }
+        },
+        {
+          "id": "UPL-EDU-090",
+          "number": 90,
+          "slug": "edtech-implementation-plan",
+          "subcategory": "education-technology-ai",
+          "title": {
+            "en": "EdTech Implementation Plan",
+            "sr": "Plan implementacije EdTech alata"
+          }
+        },
+        {
+          "id": "UPL-EDU-091",
+          "number": 91,
+          "slug": "education-literature-review",
+          "subcategory": "academic-research-professional-learning",
+          "title": {
+            "en": "Education Literature Review",
+            "sr": "Pregled obrazovne literature"
+          }
+        },
+        {
+          "id": "UPL-EDU-092",
+          "number": 92,
+          "slug": "classroom-action-research-plan",
+          "subcategory": "academic-research-professional-learning",
+          "title": {
+            "en": "Classroom Action Research Plan",
+            "sr": "Plan action research istraživanja u učionici"
+          }
+        },
+        {
+          "id": "UPL-EDU-093",
+          "number": 93,
+          "slug": "teacher-professional-development-design",
+          "subcategory": "academic-research-professional-learning",
+          "title": {
+            "en": "Teacher Professional Development Design",
+            "sr": "Dizajn profesionalnog razvoja nastavnika"
+          }
+        },
+        {
+          "id": "UPL-EDU-094",
+          "number": 94,
+          "slug": "evidence-to-practice-implementation-plan",
+          "subcategory": "academic-research-professional-learning",
+          "title": {
+            "en": "Evidence-to-Practice Implementation Plan",
+            "sr": "Plan implementacije od dokaza do prakse"
+          }
+        },
+        {
+          "id": "UPL-EDU-095",
+          "number": 95,
+          "slug": "professional-learning-community-plan",
+          "subcategory": "academic-research-professional-learning",
+          "title": {
+            "en": "Professional Learning Community Plan",
+            "sr": "Plan profesionalne zajednice učenja"
+          }
+        },
+        {
+          "id": "UPL-EDU-096",
+          "number": 96,
+          "slug": "teaching-intervention-evaluation",
+          "subcategory": "academic-research-professional-learning",
+          "title": {
+            "en": "Teaching Intervention Evaluation",
+            "sr": "Evaluacija nastavne intervencije"
+          }
+        },
+        {
+          "id": "UPL-EDU-097",
+          "number": 97,
+          "slug": "education-research-critical-appraisal",
+          "subcategory": "academic-research-professional-learning",
+          "title": {
+            "en": "Education Research Critical Appraisal",
+            "sr": "Kritička procena obrazovnog istraživanja"
+          }
+        },
+        {
+          "id": "UPL-EDU-098",
+          "number": 98,
+          "slug": "implementation-fidelity-audit",
+          "subcategory": "academic-research-professional-learning",
+          "title": {
+            "en": "Implementation Fidelity Audit",
+            "sr": "Audit vernosti implementacije"
+          }
+        },
+        {
+          "id": "UPL-EDU-099",
+          "number": 99,
+          "slug": "reflective-teaching-review",
+          "subcategory": "academic-research-professional-learning",
+          "title": {
+            "en": "Reflective Teaching Review",
+            "sr": "Refleksivni pregled nastavne prakse"
+          }
+        },
+        {
+          "id": "UPL-EDU-100",
+          "number": 100,
+          "slug": "school-improvement-evidence-brief",
+          "subcategory": "academic-research-professional-learning",
+          "title": {
+            "en": "School Improvement Evidence Brief",
+            "sr": "Evidence brief za unapređenje škole"
+          }
+        }
+      ]
     },
     {
       "id": "UPL-SCI",
