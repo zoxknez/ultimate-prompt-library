@@ -45,7 +45,7 @@ npm run validate     # must finish with 0 errors
 
 ## Writing a planned prompt
 
-Planned prompts already have a reserved ID, number, slug, title and subcategory in [`catalog.json`](catalog.json) - for example `UPL-IT-061 ultimate-ai-application-audit`.
+Planned prompts already have a reserved ID, number, slug, title and subcategory in [`catalog.json`](catalog.json). The Initial IT Collection (`UPL-IT-001` to `UPL-IT-100`) is complete, so new prompts are catalogued first (see [docs/ids.md](docs/ids.md)); the example below uses `UPL-IT-061 ultimate-ai-application-audit` to show the reserved paths.
 
 1. Open an issue (or comment on an existing one) saying you are working on the ID, to avoid duplicated effort.
 2. Create the files at the reserved paths, e.g.:

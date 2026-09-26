@@ -4,7 +4,7 @@
     "en",
     "sr"
   ],
-  "count": 90,
+  "count": 100,
   "prompts": [
     {
       "id": "UPL-IT-001",
@@ -2434,6 +2434,276 @@
       "files": {
         "en": "prompts/en/01-it-programming-technology/09-ux-ui-product-development/090-feature-design-and-ux-review.md",
         "sr": "prompts/sr/01-it-programiranje-tehnologija/09-ux-ui-product-development/090-feature-design-and-ux-review.md"
+      }
+    },
+    {
+      "id": "UPL-IT-091",
+      "number": 91,
+      "slug": "ultimate-desktop-application-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "desktop-game-systems-embedded",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Ultimate Desktop Application Audit",
+        "sr": "Ultimate Desktop Application Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/10-desktop-game-systems-embedded/091-ultimate-desktop-application-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/10-desktop-game-systems-embedded/091-ultimate-desktop-application-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-092",
+      "number": 92,
+      "slug": "electron-application-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "desktop-game-systems-embedded",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Electron Application Audit",
+        "sr": "Electron Application Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/10-desktop-game-systems-embedded/092-electron-application-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/10-desktop-game-systems-embedded/092-electron-application-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-093",
+      "number": 93,
+      "slug": "python-pyside-application-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "desktop-game-systems-embedded",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Python/PySide Application Audit",
+        "sr": "Python/PySide Application Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/10-desktop-game-systems-embedded/093-python-pyside-application-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/10-desktop-game-systems-embedded/093-python-pyside-application-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-094",
+      "number": 94,
+      "slug": "windows-application-production-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "desktop-game-systems-embedded",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Windows Application Production Audit",
+        "sr": "Windows Application Production Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/10-desktop-game-systems-embedded/094-windows-application-production-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/10-desktop-game-systems-embedded/094-windows-application-production-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-095",
+      "number": 95,
+      "slug": "cross-platform-compatibility-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "desktop-game-systems-embedded",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Cross-Platform Compatibility Audit",
+        "sr": "Cross-Platform Compatibility Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/10-desktop-game-systems-embedded/095-cross-platform-compatibility-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/10-desktop-game-systems-embedded/095-cross-platform-compatibility-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-096",
+      "number": 96,
+      "slug": "game-architecture-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "desktop-game-systems-embedded",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Game Architecture Audit",
+        "sr": "Game Architecture Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/10-desktop-game-systems-embedded/096-game-architecture-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/10-desktop-game-systems-embedded/096-game-architecture-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-097",
+      "number": 97,
+      "slug": "game-performance-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "desktop-game-systems-embedded",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Game Performance Audit",
+        "sr": "Game Performance Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/10-desktop-game-systems-embedded/097-game-performance-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/10-desktop-game-systems-embedded/097-game-performance-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-098",
+      "number": 98,
+      "slug": "embedded-software-reliability-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "desktop-game-systems-embedded",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Embedded Software Reliability Audit",
+        "sr": "Embedded Software Reliability Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/10-desktop-game-systems-embedded/098-embedded-software-reliability-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/10-desktop-game-systems-embedded/098-embedded-software-reliability-audit.md"
+      }
+    },
+    {
+      "id": "UPL-IT-099",
+      "number": 99,
+      "slug": "memory-and-resource-leak-hunter",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "desktop-game-systems-embedded",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Memory & Resource Leak Hunter",
+        "sr": "Memory & Resource Leak Hunter"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/10-desktop-game-systems-embedded/099-memory-and-resource-leak-hunter.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/10-desktop-game-systems-embedded/099-memory-and-resource-leak-hunter.md"
+      }
+    },
+    {
+      "id": "UPL-IT-100",
+      "number": 100,
+      "slug": "hardware-software-integration-audit",
+      "category": "IT",
+      "categoryId": "UPL-IT",
+      "categorySlug": "it-programming-technology",
+      "subcategory": "desktop-game-systems-embedded",
+      "status": "stable",
+      "version": "1.0.0",
+      "languages": [
+        "en",
+        "sr"
+      ],
+      "titles": {
+        "en": "Hardware/Software Integration Audit",
+        "sr": "Hardware/Software Integration Audit"
+      },
+      "versions": {
+        "en": "1.0.0",
+        "sr": "1.0.0"
+      },
+      "files": {
+        "en": "prompts/en/01-it-programming-technology/10-desktop-game-systems-embedded/100-hardware-software-integration-audit.md",
+        "sr": "prompts/sr/01-it-programiranje-tehnologija/10-desktop-game-systems-embedded/100-hardware-software-integration-audit.md"
       }
     }
   ]

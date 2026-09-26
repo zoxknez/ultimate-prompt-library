@@ -45,7 +45,7 @@ npm run validate     # mora da završi sa 0 grešaka
 
 ## Pisanje planiranog prompta
 
-Planirani promptovi već imaju rezervisan ID, broj, slug, naziv i podkategoriju u [`catalog.json`](catalog.json) - na primer `UPL-IT-061 ultimate-ai-application-audit`.
+Planirani promptovi već imaju rezervisan ID, broj, slug, naziv i podkategoriju u [`catalog.json`](catalog.json). Početna IT kolekcija (`UPL-IT-001` do `UPL-IT-100`) je završena, pa se novi promptovi prvo upisuju u katalog (pogledaj [docs/ids.md](docs/ids.md)); primer ispod koristi `UPL-IT-061 ultimate-ai-application-audit` da pokaže rezervisane putanje.
 
 1. Otvori issue (ili komentariši postojeći) i navedi da radiš na tom ID-u, da bi se izbegao dupli posao.
 2. Napravi fajlove na rezervisanim putanjama, npr.:

@@ -32,10 +32,10 @@
     <tspan x="72" y="324">promptova spremnih za produkciju.</tspan>
   </text>
 
-  <text x="72" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#52525B">90 promptova</text>
-  <rect x="189.2" y="355" width="1" height="18" fill="#E4E4E7"/><text x="206.2" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#52525B">English · Srpski</text>
-  <rect x="331.7" y="355" width="1" height="18" fill="#E4E4E7"/><text x="348.7" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#52525B">Nezavisno od modela</text>
-  <rect x="519.5" y="355" width="1" height="18" fill="#E4E4E7"/><text x="536.5" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#52525B">MIT licenca</text>
+  <text x="72" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#52525B">100 promptova</text>
+  <rect x="195.6" y="355" width="1" height="18" fill="#E4E4E7"/><text x="212.6" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#52525B">English · Srpski</text>
+  <rect x="338.2" y="355" width="1" height="18" fill="#E4E4E7"/><text x="355.2" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#52525B">Nezavisno od modela</text>
+  <rect x="525.9" y="355" width="1" height="18" fill="#E4E4E7"/><text x="542.9" y="369" font-family="'UPL Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="500" font-size="15" fill="#52525B">MIT licenca</text>
 
   <g transform="translate(720 64)">
     <rect width="408" height="312" rx="10" fill="#FFFFFF" filter="url(#bl-shadow)"/>
