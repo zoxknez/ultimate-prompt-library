@@ -205,7 +205,7 @@ export function roadmapPlannedBlock({ lang, collections }) {
 // ---------------------------------------------------------------------------
 // Root README blocks
 
-const BADGE = 'style=flat-square&labelColor=27272A&color=09090B';
+const BADGE = 'style=flat-square&labelColor=102A43&color=1769AA';
 const enc = (text) => encodeURIComponent(String(text).replace(/-/g, '--').replace(/_/g, '__'));
 
 /** Monochrome static shields.io badges for the README hero; counts come from stats.json. */
@@ -235,15 +235,10 @@ export function heroBadges({ lang, stats, collections }) {
   return badges.map(([alt, src, href]) => `<a href="${href}"><img src="${src}" alt="${alt}"></a>`).join('\n');
 }
 
-/** Light/dark statistics card. */
+/** Bright premium statistics card. Kept light in every GitHub theme for maximum readability. */
 export function statsPicture({ lang, stats }) {
   const s = t(lang);
-  return [
-    '<picture>',
-    `  <source media="(prefers-color-scheme: dark)" srcset="assets/stats.${lang}.dark.svg">`,
-    `  <img src="assets/stats.${lang}.light.svg" alt="${s.statsAlt(stats)}" width="100%">`,
-    '</picture>',
-  ].join('\n');
+  return `<img src="assets/stats.${lang}.light.svg" alt="${s.statsAlt(stats)}" width="100%">`;
 }
 
 function collectionStatus(s, available, planned) {
