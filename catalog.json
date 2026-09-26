@@ -2318,8 +2318,230 @@
         "en": "Legal research, contracts, compliance, public administration and regulatory work.",
         "sr": "Pravna istraživanja, ugovori, usklađenost sa propisima, javna uprava i regulatorni poslovi."
       },
-      "subcategories": [],
-      "prompts": []
+      "subcategories": [
+        {
+          "id": "legal-research-authority",
+          "order": 1,
+          "names": {
+            "en": "Legal Research & Authority",
+            "sr": "Pravna istraživanja i pravni izvori"
+          },
+          "descriptions": {
+            "en": "Jurisdiction, authority hierarchy, case law, statutory interpretation, citation verification and legal research memoranda.",
+            "sr": "Jurisdikcija, hijerarhija pravnih izvora, sudska praksa, tumačenje propisa, provera citata i pravni istraživački memorandumi."
+          }
+        },
+        {
+          "id": "contract-drafting-review",
+          "order": 2,
+          "names": {
+            "en": "Contract Drafting & Review",
+            "sr": "Sastavljanje i pregled ugovora"
+          },
+          "descriptions": {
+            "en": "Contract architecture, clauses, risk allocation, negotiation, remedies and electronic contracting.",
+            "sr": "Struktura ugovora, klauzule, raspodela rizika, pregovori, pravna sredstva i elektronsko ugovaranje."
+          }
+        },
+        {
+          "id": "litigation-dispute-resolution",
+          "order": 3,
+          "names": {
+            "en": "Litigation & Dispute Resolution",
+            "sr": "Sporovi i rešavanje sporova"
+          },
+          "descriptions": {
+            "en": "Claims, defenses, evidence, procedure, damages, settlement, appeals and dispute strategy.",
+            "sr": "Zahtevi, odbrane, dokazi, postupak, šteta, poravnanje, žalbe i strategija spora."
+          }
+        },
+        {
+          "id": "corporate-commercial-law",
+          "order": 4,
+          "names": {
+            "en": "Corporate & Commercial Law",
+            "sr": "Korporativno i privredno pravo"
+          },
+          "descriptions": {
+            "en": "Corporate governance, ownership, transactions, approvals, records and commercial relationships.",
+            "sr": "Korporativno upravljanje, vlasništvo, transakcije, odobrenja, evidencije i poslovni odnosi."
+          }
+        },
+        {
+          "id": "privacy-data-protection",
+          "order": 5,
+          "names": {
+            "en": "Privacy & Data Protection",
+            "sr": "Privatnost i zaštita podataka"
+          },
+          "descriptions": {
+            "en": "Privacy programs, processing inventories, lawful bases, transfers, rights, breaches and DPIAs.",
+            "sr": "Programi privatnosti, evidencije obrade, pravni osnovi, transferi, prava, incidenti i DPIA."
+          }
+        },
+        {
+          "id": "employment-labor-law",
+          "order": 6,
+          "names": {
+            "en": "Employment & Labor Law",
+            "sr": "Radno pravo i radni odnosi"
+          },
+          "descriptions": {
+            "en": "Employment agreements, classification, workplace policy, discipline, termination and labor relations.",
+            "sr": "Ugovori o radu, klasifikacija, politike na radu, disciplina, prestanak rada i kolektivni odnosi."
+          }
+        },
+        {
+          "id": "regulatory-compliance",
+          "order": 7,
+          "names": {
+            "en": "Regulatory Compliance",
+            "sr": "Regulatorna usklađenost"
+          },
+          "descriptions": {
+            "en": "Applicability, obligations, licensing, controls, reporting, inspections, enforcement and remediation.",
+            "sr": "Primenjivost, obaveze, licence, kontrole, izveštavanje, inspekcije, izvršenje i remedijacija."
+          }
+        },
+        {
+          "id": "public-administration-procedure",
+          "order": 8,
+          "names": {
+            "en": "Public Administration & Procedure",
+            "sr": "Javna uprava i upravni postupak"
+          },
+          "descriptions": {
+            "en": "Administrative procedure, public decisions, appeals, consultations, procurement and access to information.",
+            "sr": "Upravni postupak, odluke organa, žalbe, konsultacije, javne nabavke i pristup informacijama."
+          }
+        },
+        {
+          "id": "intellectual-property",
+          "order": 9,
+          "names": {
+            "en": "Intellectual Property",
+            "sr": "Intelektualna svojina"
+          },
+          "descriptions": {
+            "en": "Copyright, trademarks, patents, trade secrets, licensing, open source and IP due diligence.",
+            "sr": "Autorsko pravo, žigovi, patenti, poslovne tajne, licence, open source i IP due diligence."
+          }
+        },
+        {
+          "id": "international-cross-border-law",
+          "order": 10,
+          "names": {
+            "en": "International & Cross-Border Law",
+            "sr": "Međunarodno i prekogranično pravo"
+          },
+          "descriptions": {
+            "en": "Conflict of laws, treaties, arbitration, enforcement, sanctions and cross-border transactions.",
+            "sr": "Sukob zakona, međunarodni ugovori, arbitraža, izvršenje, sankcije i prekogranične transakcije."
+          }
+        }
+      ],
+      "prompts": [
+        {
+          "id": "UPL-LAW-001",
+          "number": 1,
+          "slug": "ultimate-legal-research-audit",
+          "subcategory": "legal-research-authority",
+          "title": {
+            "en": "Ultimate Legal Research Audit",
+            "sr": "Sveobuhvatni audit pravnog istraživanja"
+          }
+        },
+        {
+          "id": "UPL-LAW-002",
+          "number": 2,
+          "slug": "jurisdiction-and-governing-law-mapper",
+          "subcategory": "legal-research-authority",
+          "title": {
+            "en": "Jurisdiction & Governing Law Mapper",
+            "sr": "Mapa jurisdikcije i merodavnog prava"
+          }
+        },
+        {
+          "id": "UPL-LAW-003",
+          "number": 3,
+          "slug": "primary-authority-finder",
+          "subcategory": "legal-research-authority",
+          "title": {
+            "en": "Primary Authority Finder",
+            "sr": "Pronalaženje primarnih pravnih izvora"
+          }
+        },
+        {
+          "id": "UPL-LAW-004",
+          "number": 4,
+          "slug": "case-law-precedent-analyzer",
+          "subcategory": "legal-research-authority",
+          "title": {
+            "en": "Case Law & Precedent Analyzer",
+            "sr": "Analiza sudske prakse i presedana"
+          }
+        },
+        {
+          "id": "UPL-LAW-005",
+          "number": 5,
+          "slug": "statute-and-regulation-interpretation",
+          "subcategory": "legal-research-authority",
+          "title": {
+            "en": "Statute & Regulation Interpretation",
+            "sr": "Tumačenje zakona i podzakonskih propisa"
+          }
+        },
+        {
+          "id": "UPL-LAW-006",
+          "number": 6,
+          "slug": "legal-citation-verification-audit",
+          "subcategory": "legal-research-authority",
+          "title": {
+            "en": "Legal Citation Verification Audit",
+            "sr": "Audit verifikacije pravnih citata"
+          }
+        },
+        {
+          "id": "UPL-LAW-007",
+          "number": 7,
+          "slug": "conflicting-authority-resolver",
+          "subcategory": "legal-research-authority",
+          "title": {
+            "en": "Conflicting Authority Resolver",
+            "sr": "Razrešavanje sukobljenih pravnih izvora"
+          }
+        },
+        {
+          "id": "UPL-LAW-008",
+          "number": 8,
+          "slug": "legal-issue-spotting-matrix",
+          "subcategory": "legal-research-authority",
+          "title": {
+            "en": "Legal Issue Spotting Matrix",
+            "sr": "Matrica identifikacije pravnih pitanja"
+          }
+        },
+        {
+          "id": "UPL-LAW-009",
+          "number": 9,
+          "slug": "comparative-law-research-framework",
+          "subcategory": "legal-research-authority",
+          "title": {
+            "en": "Comparative Law Research Framework",
+            "sr": "Okvir za komparativno pravno istraživanje"
+          }
+        },
+        {
+          "id": "UPL-LAW-010",
+          "number": 10,
+          "slug": "legal-research-memorandum-builder",
+          "subcategory": "legal-research-authority",
+          "title": {
+            "en": "Legal Research Memorandum Builder",
+            "sr": "Izrada pravnog istraživačkog memoranduma"
+          }
+        }
+      ]
     },
     {
       "id": "UPL-HEALTH",
