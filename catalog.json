@@ -2840,6 +2840,106 @@
             "en": "Corporate Records Compliance Audit",
             "sr": "Audit usklađenosti korporativnih evidencija"
           }
+        },
+        {
+          "id": "UPL-LAW-041",
+          "number": 41,
+          "slug": "privacy-compliance-audit",
+          "subcategory": "privacy-data-protection",
+          "title": {
+            "en": "Privacy Compliance Audit",
+            "sr": "Audit usklađenosti privatnosti"
+          }
+        },
+        {
+          "id": "UPL-LAW-042",
+          "number": 42,
+          "slug": "data-mapping-and-processing-inventory",
+          "subcategory": "privacy-data-protection",
+          "title": {
+            "en": "Data Mapping & Processing Inventory",
+            "sr": "Mapa podataka i evidencija aktivnosti obrade"
+          }
+        },
+        {
+          "id": "UPL-LAW-043",
+          "number": 43,
+          "slug": "lawful-basis-and-consent-audit",
+          "subcategory": "privacy-data-protection",
+          "title": {
+            "en": "Lawful Basis & Consent Audit",
+            "sr": "Audit pravnog osnova i pristanka"
+          }
+        },
+        {
+          "id": "UPL-LAW-044",
+          "number": 44,
+          "slug": "privacy-notice-transparency-audit",
+          "subcategory": "privacy-data-protection",
+          "title": {
+            "en": "Privacy Notice Transparency Audit",
+            "sr": "Audit transparentnosti obaveštenja o privatnosti"
+          }
+        },
+        {
+          "id": "UPL-LAW-045",
+          "number": 45,
+          "slug": "data-processing-agreement-review",
+          "subcategory": "privacy-data-protection",
+          "title": {
+            "en": "Data Processing Agreement Review",
+            "sr": "Pregled ugovora o obradi podataka"
+          }
+        },
+        {
+          "id": "UPL-LAW-046",
+          "number": 46,
+          "slug": "international-data-transfer-assessment",
+          "subcategory": "privacy-data-protection",
+          "title": {
+            "en": "International Data Transfer Assessment",
+            "sr": "Procena međunarodnog prenosa podataka"
+          }
+        },
+        {
+          "id": "UPL-LAW-047",
+          "number": 47,
+          "slug": "data-subject-rights-workflow-audit",
+          "subcategory": "privacy-data-protection",
+          "title": {
+            "en": "Data Subject Rights Workflow Audit",
+            "sr": "Audit postupka ostvarivanja prava lica"
+          }
+        },
+        {
+          "id": "UPL-LAW-048",
+          "number": 48,
+          "slug": "data-breach-legal-response",
+          "subcategory": "privacy-data-protection",
+          "title": {
+            "en": "Data Breach Legal Response",
+            "sr": "Pravni odgovor na povredu podataka"
+          }
+        },
+        {
+          "id": "UPL-LAW-049",
+          "number": 49,
+          "slug": "retention-and-deletion-compliance-audit",
+          "subcategory": "privacy-data-protection",
+          "title": {
+            "en": "Retention & Deletion Compliance Audit",
+            "sr": "Audit rokova čuvanja i brisanja"
+          }
+        },
+        {
+          "id": "UPL-LAW-050",
+          "number": 50,
+          "slug": "privacy-by-design-and-dpia",
+          "subcategory": "privacy-data-protection",
+          "title": {
+            "en": "Privacy by Design & DPIA",
+            "sr": "Privacy by Design i DPIA"
+          }
         }
       ]
     },
