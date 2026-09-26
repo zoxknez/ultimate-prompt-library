@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Baze podataka i data engineering
 subcategory_id: databases-data-engineering
 language: sr
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -627,7 +627,39 @@ Do not recommend without workload evidence.
 
 Never recommend as default response to scale.
 
-## 122. FINDING FORMAT
+## 122. EVIDENCE, STATUS AND FALSE POSITIVES
+
+Evidence tier-ovi:
+
+```text
+A - reproduced: production metrics, query plans with actual execution, logs or a safe reproduction show the behavior
+B - complete path: schema, constraints, transaction code and data flow fully show the failure
+C - strong static evidence: code or schema shows the path, but data volume, configuration or runtime behavior are not verified
+D - inference: depends on engine version, isolation level, data distribution or topology not verified
+E - hardening: stronger design or configuration without a current failure path
+```
+
+Status:
+
+- **CONFIRMED** - dokaz tier A ili B pokazuje putanju otkaza ili exploit-a.
+- **LIKELY** - dokaz tier C.
+- **NOT VERIFIED** - zavisi od runtime stanja, podešavanja ili verzija koji nisu mogli da se provere (tier D). Tier D nikada ne predstavljaj kao potvrđen.
+- **NOT APPLICABLE** - komponenta ili obrazac se ne koriste.
+- **CONTROLLED** - rizik postoji, ali ga druga kontrola ograničava.
+- **HARDENING** - poboljšanje bez trenutnog failure path-a (P4).
+
+False-positive pravila:
+
+- Indeks koji nedostaje na maloj ili retko upitanoj tabeli nije defekt performansi.
+- Namerna denormalizacija sa definisanim izvorom istine i putanjom usklađivanja je izbor dizajna, a ne defekt integriteta.
+- Podrazumevani isolation level engine-a je nalaz samo uz konkretnu anomaliju (lost update, write skew) na stvarnoj putanji koda.
+- Partitioning, sharding ili read replike koji nedostaju nisu defekt bez izmerenog ili projektovanog problema kapaciteta.
+- Integritet koji sprovodi aplikacija je slabiji od constraint-a, ali je nalaz samo kada ga konkretna putanja zaobilazi (konkurentni zahtevi, drugi pisci, importi).
+- Ponašanje engine-a (zaključavanje, planner, replikacija) razlikuje se po verzijama; navedi verziju od koje nalaz zavisi.
+
+Nemoj da prijaviš nedostajuću best practice kao potvrđeni defekt ako ne postoji konkretna putanja otkaza, exploit-a, greške u ispravnosti, pouzdanosti ili rada.
+
+## 123. FINDING FORMAT
 
 ```text
 ID:
@@ -637,6 +669,7 @@ Database:
 Schema/Table:
 Query/Transaction:
 Evidence tier:
+Status:
 Trigger:
 Failure path:
 Data impact:
@@ -650,7 +683,7 @@ Production verification:
 Complexity:
 ```
 
-## 123. SEVERITY
+## 124. SEVERITY
 
 P0:
 - global/irrecoverable data corruption
@@ -672,11 +705,11 @@ P3:
 P4:
 - tuning/hardening
 
-## 124. OUTPUT
+## 125. OUTPUT
 
 `ULTIMATE_DATABASE_AUDIT.md`
 
-## 125. SECOND PASS
+## 126. SECOND PASS
 
 Simuliraj/anliziraj:
 
@@ -692,7 +725,7 @@ Simuliraj/anliziraj:
 - disk near capacity
 - backup restore
 
-## 126. FINAL QUALITY GATE
+## 127. FINAL QUALITY GATE
 
 Proveri:
 

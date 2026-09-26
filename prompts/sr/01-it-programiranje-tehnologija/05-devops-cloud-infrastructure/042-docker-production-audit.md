@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
 subcategory_id: devops-cloud-infrastructure
 language: sr
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -65,31 +65,18 @@ Pronađi:
 Za svaki image zabeleži:
 
 ```text
-
 Image:
-
 Purpose:
-
 Base image:
-
 Stages:
-
 Runtime user:
-
 Ports:
-
 Volumes:
-
 Entrypoint:
-
 CMD:
-
 Healthcheck:
-
 Secrets used:
-
 Persistent data:
-
 ```
 
 ## 2. BASE IMAGE
@@ -179,11 +166,8 @@ nije automatski problem, ali zahteva pregled `.dockerignore`.
 Traži:
 
 ```text
-
 ARG TOKEN
-
 ENV TOKEN=$TOKEN
-
 ```
 
 Build args nisu secret store.
@@ -193,13 +177,9 @@ Build args nisu secret store.
 Ako secret bude:
 
 ```text
-
 COPY .env .
-
 RUN use-secret
-
 RUN rm .env
-
 ```
 
 brisanje kasnijim layer-om ga ne uklanja iz prethodnog layer-a.
@@ -285,13 +265,9 @@ P1/P0 candidate ako attacker-controlled application code može doći do containe
 Posebno:
 
 ```text
-
 /var/run/docker.sock
-
 /
-
  /etc
-
 ```
 
 Docker socket često znači praktično host-level control.
@@ -637,11 +613,8 @@ Monitoring mora pokazati restart frequency.
 Hardcoded:
 
 ```yaml
-
 environment:
-
   DB_PASSWORD: ...
-
 ```
 
 ako commitovan real secret.
@@ -741,47 +714,26 @@ Mismatch može učiniti healthy app nedostupnom.
 Svaki ozbiljan finding:
 
 ```text
-
 ID:
-
 Severity:
-
 Category:
-
 Evidence tier:
-
 Status:
-
 Dockerfile/Image:
-
 Stage:
-
 Runtime user:
-
 Base image:
-
 Artifact:
-
 Problem:
-
 Trigger:
-
 Failure/Exploit path:
-
 Impact:
-
 Blast radius:
-
 Evidence:
-
 Root cause:
-
 Fix:
-
 Regression/verification:
-
 Complexity:
-
 ```
 
 ## 101. SEVERITY
@@ -817,20 +769,36 @@ P4:
 ## 102. EVIDENCE
 
 ```text
-
 A - reproduced
-
 B - complete image/runtime path
-
 C - strong Dockerfile/config evidence
-
 D - inferred
-
 E - hardening
-
 ```
 
-## 103. OUTPUT
+## 103. STATUS AND FALSE POSITIVES
+
+Status:
+
+- **CONFIRMED** - dokaz tier A ili B pokazuje putanju otkaza ili exploit-a.
+- **LIKELY** - dokaz tier C.
+- **NOT VERIFIED** - zavisi od runtime stanja, podešavanja ili verzija koji nisu mogli da se provere (tier D). Tier D nikada ne predstavljaj kao potvrđen.
+- **NOT APPLICABLE** - komponenta ili obrazac se ne koriste.
+- **CONTROLLED** - rizik postoji, ali ga druga kontrola ograničava.
+- **HARDENING** - poboljšanje bez trenutnog failure path-a (P4).
+
+False-positive pravila:
+
+- Root korisnik u container-u je nalaz samo uz konkretnu putanju (mount-ovi sa pravom upisa, host namespace-i, capabilities, poznata površina za bekstvo) ili kada politika zahteva non-root; inače je HARDENING.
+- Veliki image ili base koji nije minimalan je napomena o trošku i površini napada, a ne ranjivost sama po sebi.
+- CVE-ovi iz skenera su nalazi samo kada je ranjiv paket prisutan u finalnom runtime image-u, a ranjiva putanja koda ili izloženost su verovatni; paketi samo iz build faze se ne isporučuju.
+- `latest` ili nezaključani tag-ovi u Compose fajlovima za lokalni razvoj nisu production defekti.
+- `HEALTHCHECK` instrukcija koja nedostaje nije defekt kada orkestrator definiše sopstvene probe.
+- Build argumenti su curenje secret-a samo kada se prosleđuje stvarna vrednost secret-a koja ostaje u istoriji, slojevima ili metapodacima.
+
+Nemoj da prijaviš nedostajuću best practice kao potvrđeni defekt ako ne postoji konkretna putanja otkaza, exploit-a, greške u ispravnosti, pouzdanosti ili rada.
+
+## 104. OUTPUT
 
 `DOCKER_PRODUCTION_AUDIT.md`
 
@@ -876,7 +844,7 @@ Sekcije:
 
 20. Remediation Roadmap
 
-## 104. SECOND PASS
+## 105. SECOND PASS
 
 Obavezno simuliraj ili analiziraj:
 
@@ -902,7 +870,7 @@ Obavezno simuliraj ili analiziraj:
 
 - private registry outage
 
-## 105. FINAL QUALITY GATE
+## 106. FINAL QUALITY GATE
 
 Proveri:
 
@@ -941,57 +909,33 @@ Ne želim:
 Tražim problem poput:
 
 ```text
-
 Docker build:
-
 COPY . .
-
 ↓
-
 .env.production ulazi u layer
-
 ↓
-
 kasniji RUN rm .env.production
-
 ↓
-
 final filesystem je čist
-
 ↓
-
 secret i dalje postoji u prethodnom image layer-u
-
 ↓
-
 svako sa pull pristupom image-u može ga izvući
-
 ```
 
 ili:
 
 ```text
-
 upload storage:
-
 /app/uploads
-
 ↓
-
 nije mountovan persistent volume
-
 ↓
-
 docker compose recreate
-
 ↓
-
 DB metadata ostaje
-
 ↓
-
 fajlovi nestaju
-
 ```
 
 Ako Docker nije production deployment:

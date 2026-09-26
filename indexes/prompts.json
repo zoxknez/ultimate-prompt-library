@@ -1122,7 +1122,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1132,8 +1132,8 @@
         "sr": "Docker Production Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/042-docker-production-audit.md",
@@ -1149,7 +1149,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1159,8 +1159,8 @@
         "sr": "Kubernetes Production Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/043-kubernetes-production-audit.md",
@@ -1176,7 +1176,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1186,8 +1186,8 @@
         "sr": "GitHub Actions Forensic Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/044-github-actions-forensic-audit.md",
@@ -1203,7 +1203,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1213,8 +1213,8 @@
         "sr": "CI/CD Pipeline Audit"
       },
       "versions": {
-        "en": "1.0.1",
-        "sr": "1.0.1"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/045-cicd-pipeline-audit.md",
@@ -1230,7 +1230,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1240,8 +1240,8 @@
         "sr": "Vercel Production Audit"
       },
       "versions": {
-        "en": "1.0.1",
-        "sr": "1.0.1"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/046-vercel-production-audit.md",
@@ -1257,7 +1257,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1267,8 +1267,8 @@
         "sr": "Cloud Infrastructure Audit"
       },
       "versions": {
-        "en": "1.0.1",
-        "sr": "1.0.1"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/047-cloud-infrastructure-audit.md",
@@ -1284,7 +1284,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1294,8 +1294,8 @@
         "sr": "Environment Configuration Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/048-environment-configuration-audit.md",
@@ -1311,7 +1311,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1321,8 +1321,8 @@
         "sr": "Zero-Downtime Deployment Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/049-zero-downtime-deployment-audit.md",
@@ -1338,7 +1338,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1348,8 +1348,8 @@
         "sr": "Backup, Disaster Recovery & Rollback Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/05-devops-cloud-infrastructure/050-backup-disaster-recovery-and-rollback-audit.md",
@@ -1365,7 +1365,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1375,8 +1375,8 @@
         "sr": "Ultimate Database Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/051-ultimate-database-audit.md",
@@ -1392,7 +1392,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1402,8 +1402,8 @@
         "sr": "Database Schema & Data Model Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/052-database-schema-and-data-model-audit.md",
@@ -1419,7 +1419,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1429,8 +1429,8 @@
         "sr": "SQL Performance Hunter"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/053-sql-performance-hunter.md",
@@ -1446,7 +1446,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1456,8 +1456,8 @@
         "sr": "Database Index Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/054-database-index-audit.md",
@@ -1473,7 +1473,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1483,8 +1483,8 @@
         "sr": "Database Migration Safety Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/055-database-migration-safety-audit.md",
@@ -1500,7 +1500,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1510,8 +1510,8 @@
         "sr": "Data Integrity Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/056-data-integrity-audit.md",
@@ -1527,7 +1527,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1537,8 +1537,8 @@
         "sr": "Transaction & Concurrency Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/057-transaction-and-concurrency-audit.md",
@@ -1554,7 +1554,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1564,8 +1564,8 @@
         "sr": "N+1 & Expensive Query Hunter"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/058-n-plus-1-and-expensive-query-hunter.md",
@@ -1581,7 +1581,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1591,8 +1591,8 @@
         "sr": "ORM Forensic Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/059-orm-forensic-audit.md",
@@ -1608,7 +1608,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -1618,8 +1618,8 @@
         "sr": "ETL & Data Pipeline Reliability Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md",

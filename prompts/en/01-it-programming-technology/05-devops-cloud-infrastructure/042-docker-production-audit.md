@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: DevOps, Cloud & Infrastructure
 subcategory_id: devops-cloud-infrastructure
 language: en
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -757,7 +757,29 @@ D - inferred
 E - hardening
 ```
 
-## 103. OUTPUT
+## 103. STATUS AND FALSE POSITIVES
+
+Status:
+
+- **CONFIRMED** - tier A or B evidence shows the failure or exploit path.
+- **LIKELY** - tier C evidence.
+- **NOT VERIFIED** - depends on runtime state, settings or versions that could not be checked (tier D). Never present tier D as confirmed.
+- **NOT APPLICABLE** - the component or pattern is not used.
+- **CONTROLLED** - the risk exists but another control contains it.
+- **HARDENING** - improvement without a current failure path (P4).
+
+False-positive rules:
+
+- A root user in the container is a finding only with a concrete path (writable mounts, host namespaces, capabilities, a known escape surface) or where policy requires non-root; otherwise it is HARDENING.
+- A large image or a non-minimal base is a cost and attack-surface note, not a vulnerability by itself.
+- Scanner CVEs are findings only when the vulnerable package is present in the final runtime image and the vulnerable code path or exposure is plausible; build-stage-only packages do not ship.
+- `latest` or unpinned tags in local development Compose files are not production defects.
+- A missing `HEALTHCHECK` instruction is not a defect when the orchestrator defines its own probes.
+- Build arguments are a secret leak only when a real secret value is passed and persists in history, layers or metadata.
+
+Do not report a missing best practice as a confirmed defect unless there is a concrete failure, exploit, correctness, reliability, or operational path.
+
+## 104. OUTPUT
 
 `DOCKER_PRODUCTION_AUDIT.md`
 
@@ -784,7 +806,7 @@ Sections:
 19. Things Done Well
 20. Remediation Roadmap
 
-## 104. SECOND PASS
+## 105. SECOND PASS
 
 Mandatorily simulate or analyze:
 
@@ -800,7 +822,7 @@ Mandatorily simulate or analyze:
 - rollback to previous immutable image
 - private registry outage
 
-## 105. FINAL QUALITY GATE
+## 106. FINAL QUALITY GATE
 
 Verify:
 
@@ -829,19 +851,14 @@ I am seeking issues such as:
 ```text
 Docker build:
 COPY . .
-
 ↓
 .env.production enters layer
-
 ↓
 later RUN rm .env.production
-
 ↓
 final filesystem is clean
-
 ↓
 secret still resides in previous image layer
-
 ↓
 anyone with image pull access can extract it
 ```
@@ -851,13 +868,10 @@ or:
 ```text
 upload storage:
 /app/uploads
-
 ↓
 no persistent volume mounted
-
 ↓
 docker compose recreate
-
 ↓
 DB metadata remains
 ↓

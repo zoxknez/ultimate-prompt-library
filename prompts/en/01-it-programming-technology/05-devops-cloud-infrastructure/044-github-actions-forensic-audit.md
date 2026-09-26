@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: DevOps, Cloud & Infrastructure
 subcategory_id: devops-cloud-infrastructure
 language: en
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -550,6 +550,8 @@ For high-privilege third-party actions, recommend full commit SHA pinning where 
 ```text
 ID:
 Severity:
+Status:
+Evidence tier:
 Workflow:
 Trigger:
 Job:
@@ -577,7 +579,29 @@ D - inferred
 E - hardening
 ```
 
-## 102. P0/P1
+## 102. STATUS AND FALSE POSITIVES
+
+Status:
+
+- **CONFIRMED** - tier A or B evidence shows the failure or exploit path.
+- **LIKELY** - tier C evidence.
+- **NOT VERIFIED** - depends on runtime state, settings or versions that could not be checked (tier D). Never present tier D as confirmed.
+- **NOT APPLICABLE** - the component or pattern is not used.
+- **CONTROLLED** - the risk exists but another control contains it.
+- **HARDENING** - improvement without a current failure path (P4).
+
+False-positive rules:
+
+- `pull_request_target` or `workflow_run` is not a vulnerability by itself; it becomes one when the privileged job checks out, executes or interpolates untrusted content.
+- An action pinned to a tag instead of a commit SHA is HARDENING unless the action is high-privilege or its publisher is not trusted.
+- Secrets referenced in a workflow are not exposed if no job reachable from untrusted triggers receives them.
+- `${{ }}` expressions over trusted values (repository constants, `github.sha`, workflow inputs restricted to maintainers) are not injection points.
+- Workflows in forks run with fork-scoped permissions; do not report them as affecting the base repository unless a trigger crosses that boundary.
+- Branch protection, environment rules and organization settings are outside the repository; mark dependent findings **NOT VERIFIED** when they cannot be checked.
+
+Do not report a missing best practice as a confirmed defect unless there is a concrete failure, exploit, correctness, reliability, or operational path.
+
+## 103. SEVERITY
 
 P0:
 - untrusted PR code -> production signing/deploy/admin credential -> arbitrary production control
@@ -588,11 +612,22 @@ P1:
 - self-hosted runner untrusted code -> internal network or secret compromise
 - overbroad OIDC trust policy grants production cloud roles
 
-## 103. OUTPUT
+P2:
+- excessive `GITHUB_TOKEN` or secret scope reachable only by trusted triggers
+- cache poisoning or third-party action risk without a confirmed privileged consumer
+- deployment paths that bypass intended approvals for non-production environments
+
+P3:
+- limited weaknesses with narrow impact (noisy logs, minor permission excess)
+
+P4:
+- hardening without a current exploit path
+
+## 104. OUTPUT
 
 `GITHUB_ACTIONS_FORENSIC_AUDIT.md`
 
-## 104. MATRICES
+## 105. MATRICES
 
 ### Workflow Matrix
 
@@ -609,7 +644,7 @@ P1:
 | Trigger | Untrusted code | Secrets | Write token | Runner |
 |---|---|---|---|---|
 
-## 105. SECOND PASS
+## 106. SECOND PASS
 
 Mandatorily test or analyze:
 
@@ -624,7 +659,7 @@ Mandatorily test or analyze:
 - OIDC branch/subject manipulation
 - production deploy concurrency
 
-## 106. FINAL QUALITY GATE
+## 107. FINAL QUALITY GATE
 
 Verify:
 
@@ -654,22 +689,17 @@ I am seeking:
 ```text
 trigger:
 pull_request_target
-
 ↓
 job has:
 contents: write
 production token
-
 ↓
 checkout:
 ref = pull_request.head.sha
-
 ↓
 npm install
-
 ↓
 PR author modifies postinstall
-
 ↓
 attacker code executes with production secret
 ```
@@ -680,15 +710,12 @@ or:
 untrusted PR workflow
 ↓
 uploads build artifact
-
 ↓
 workflow_run triggers privileged release job
-
 ↓
 release job downloads artifact
 ↓
 executes included script
-
 ↓
 production signing key exposed
 ```

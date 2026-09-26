@@ -20,6 +20,20 @@ A parity signal marks a **review candidate**. It does not mean a translation is 
 
 The structure of the collection is in very good shape: every one of the 60 pairs has exactly the same numbered sections in the same order. The differences that remain are about wording density and whether an example is shown inline or in a code block.
 
+## Update: focused prompts 042-060 (version 1.1.0)
+
+After the methodological expansion of UPL-IT-042 to UPL-IT-060, both languages of every pair were revised in the same change and carry the same version (`1.1.0`). The new sections (context discovery, evidence tiers, status model, false-positive rules, matrices, finding formats, second pass, quality gates and failure chains) are fully translated, with technical terms, field names and failure-chain code blocks kept in English in both languages.
+
+| Check (current state) | Result |
+|---|---|
+| Numbered sections identical in both languages | 60 of 60 |
+| Heading outline (H1-H4) identical | 60 of 60 |
+| Structural warnings | 2 (UPL-IT-004, UPL-IT-020, unchanged) |
+| Median SR/EN character ratio | 0.871 |
+| Largest deviation among 042-060 | 24.6% (UPL-IT-060), below the 40% warning threshold |
+
+The tables below remain the snapshot from the hardening pass; the per-pair numbers for 042-060 have changed since and can be regenerated with `npm run validate:translations -- --details`.
+
 ## Defects found and fixed
 
 These were concrete technical defects rather than stylistic differences. Each fix is minimal, and the English source or the other language showed exactly what was intended. Both files of each affected prompt were bumped to version `1.0.1`.
@@ -87,6 +101,6 @@ Neither language is missing checks. Because the prompts are short, a few elabora
 
 ## No-action observations
 
-- **"Isto." / "Same." sections.** 26 files (23 Serbian, 3 English) have numbered sections whose whole body is "Isto." ("Same."), meaning "apply the same check as the previous section". It is an authoring convention of the source and remains clear in context. English often expands these into a sentence, which partly explains the length difference. UPL-IT-057 §12 uses the English word "Same." in the Serbian file. That is cosmetic, and changing it is left for the next content revision of that prompt.
+- **"Isto." / "Same." sections.** 26 files (23 Serbian, 3 English) have numbered sections whose whole body is "Isto." ("Same."), meaning "apply the same check as the previous section". It is an authoring convention of the source and remains clear in context. English often expands these into a sentence, which partly explains the length difference. UPL-IT-057 §12 used the English word "Same." in the Serbian file; it was changed to "Isto." in version 1.1.0 of that prompt.
 - **Empty matrix templates.** 70 files in both languages contain matrices written as a header row, a blank line and a delimiter row (for example `| Source | Validation | Sink | Context | Risk |`). The blank line stops GitHub from rendering them as tables, but the raw Markdown given to a model is unaffected, and the pattern is the same in both languages. Removing the blank lines would touch 70 files for display only, so it is not done in this pass.
 - **Blockquotes.** A few pairs differ by one blockquote (for example UPL-IT-050 and UPL-IT-060), where one language quotes an example and the other writes it as plain text. This is formatting only.

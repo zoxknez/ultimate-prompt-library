@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Baze podataka i data engineering
 subcategory_id: databases-data-engineering
 language: sr
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -29,7 +29,67 @@ Primeni actual ORM:
 - Room
 - drugi
 
-## 1. ORM INVENTORY
+## 1. OBJECTIVE AND NON-GOALS
+
+Dokaži gde ORM i sloj za pristup podacima proizvode SQL, transakcije ili stanja podataka koja se razlikuju od onoga što kod naizgled izražava: query-ji koji izlaze iz tenant ili soft-delete opsega, upisi van predviđene transakcije, filteri koji tiho nestaju, zastareli entiteti koji prepisuju novije podatke i nebezbedan raw SQL.
+
+Van obima:
+
+- preporuka drugog ORM-a
+- opšte podešavanje SQL performansi (samo kada ponašanje ORM-a stvara problem)
+- stilske preferencije o repository obrascima ili query builder-ima
+- tretiranje svakog raw SQL poziva ili lazy relacije kao defekta
+
+## 2. ORM DETECTION
+
+Utvrdi pre bilo kakvog zaključka:
+
+```text
+ORM and exact version:
+Database driver / adapter and version:
+Generated client or model classes (and how they are regenerated):
+Connection pooling (driver, ORM, external proxy):
+Transaction API used in the codebase:
+Global filters, middleware, extensions or interceptors in use:
+Migration tool and whether schema sync / push is possible in production:
+Runtime (long-lived server, serverless, edge):
+```
+
+Semantika ORM-a menja se između major verzija (kako se tretiraju undefined vrednosti, podrazumevano učitavanje, ponašanje upsert-a, propagacija transakcija). Navedi verziju pre opisa bilo kakvog ponašanja i potvrdi kritično ponašanje pregledom generisanog SQL-a.
+
+## 3. EVIDENCE MODEL
+
+```text
+A - observed: generated SQL captured from logs or tests, or the wrong behavior reproduced
+B - complete path: code path traced from input to ORM call, with version-specific semantics confirmed in documentation or source
+C - strong static evidence: a risky ORM pattern in code, but semantics or reachability not fully confirmed
+D - inference: plausible behavior depending on version or configuration
+E - hardening: safer pattern where the current code is not exploitable or incorrect
+```
+
+## 4. FINDING STATUS
+
+- **CONFIRMED** - generisani SQL ili reprodukovano ponašanje pokazuju problem (tier A ili B).
+- **LIKELY** - jak statički dokaz (tier C).
+- **NOT VERIFIED** - zavisi od verzije ORM-a, konfiguracije ili ponašanja u runtime-u koji nisu mogli da se provere.
+- **NOT APPLICABLE** - obrazac se ne javlja sa ovim ORM-om ili verzijom.
+- **CONTROLLED** - rizik postoji, ali je neutralisan (validiran ulaz, whitelist identifikatora, constraint-i u bazi).
+- **HARDENING** - bezbednija alternativa bez trenutnog failure path-a (P4).
+
+Nemoj da prijaviš nedostajuću best practice kao potvrđeni defekt ako ne postoji konkretan put do injection-a, izlaska iz opsega podataka, problema sa transakcijom, tačnošću ili dostupnošću.
+
+## 5. FALSE-POSITIVE RULES
+
+Sledeće samo po sebi **nije** nalaz:
+
+- Raw SQL nije automatski SQL injection: parametrizovani raw query-ji i tagged-template API-ji koji vezuju vrednosti su bezbedni za vrednosti.
+- Lazy loading nije N+1 dok stvarna putanja koda ne pristupa relaciji više puta za mnogo parent zapisa.
+- `findById(id)` nije automatski defekt autorizacije ako tenant ili vlasništvo obezbeđuje globalni filter, row-level security policy ili prethodna provera koju si potvrdio.
+- ORM cascade ili default-i koji se razlikuju od onih u bazi nisu defekt ako se ništa ne oslanja na ponašanje baze.
+- Vraćanje ORM entiteta iz API-ja nije automatski curenje podataka ako serializer eksplicitno bira polja.
+- Bulk operacija koja preskače hook-ove nije defekt ako nijedan hook ne sadrži obaveznu logiku.
+
+## 6. ORM INVENTORY
 
 ```text
 ORM:
@@ -42,95 +102,120 @@ Raw SQL support:
 Connection pool:
 ```
 
-## 2. MODEL -> SCHEMA DRIFT
+## 7. MODEL -> SCHEMA DRIFT
 
 Compare ORM model sa live migration/schema definicijom.
 
-## 3. NULLABILITY
+## 8. NULLABILITY
 
 Code says required, DB says nullable or reverse.
 
-## 4. DEFAULT
+## 9. DEFAULT
 
 ORM vs DB.
 
-## 5. ENUM
+## 10. ENUM
 
-## 6. RELATION
+## 11. RELATION
 
 Foreign key behavior.
 
-## 7. CASCADE
+## 12. CASCADE
 
 ORM cascade != DB cascade nužno.
 
-## 8. ORPHAN REMOVAL
+## 13. ORPHAN REMOVAL
 
-## 9. SOFT DELETE
+## 14. SOFT DELETE
 
 Default scopes.
 
-## 10. TENANT SCOPE
+## 15. TENANT SCOPE
 
 Global query hooks/extensions.
 
-## 11. `findById(id)`
+## 16. `findById(id)`
 
 High-value if tenant/ownership expected.
 
-## 12. GLOBAL FILTER
+## 17. GLOBAL FILTER
 
 Can be bypassed by raw query/alternate repository.
 
-## 13. ADMIN BYPASS
+## 18. ADMIN BYPASS
 
 Should be explicit.
 
-## 14. MASS ASSIGNMENT
+## 19. GLOBAL FILTER BYPASS PATHS
+
+Tenant i soft-delete filteri implementirani u ORM-u (middleware, extension-i, default scope-ovi, interceptor-i) štite samo query-je koji kroz njih prolaze. Proveri svaku drugu putanju:
+
+- raw SQL i pozive query builder-a
+- alternativni repository, drugu instancu klijenta ili "sistemski" klijent
+- loader-e relacija i include-ove (da li se filter primenjuje na povezane redove, a ne samo na koren?)
+- aggregate, count, exists i group-by query-je
+- bulk update i delete
+- admin alate, background poslove i skripte koje prave sopstveni klijent
+- view-ove, funkcije i trigger-e u bazi
+
+Za svako zaobilaženje pokaži da li ID koji kontroliše pozivalac može da dođe do reda drugog tenant-a ili obrisanog reda.
+
+## 20. MASS ASSIGNMENT
 
 Object spread directly to ORM create/update.
 
-## 15. HIDDEN FIELD
+## 21. HIDDEN FIELD
 
 Role/tenant/owner.
 
-## 16. SELECT
+## 22. SELECT
 
 Default selects may include sensitive fields.
 
-## 17. SERIALIZATION
+## 23. SERIALIZATION
 
 ORM entity returned directly.
 
-## 18. LAZY LOADING
+## 24. LAZY LOADING
 
 N+1.
 
-## 19. EAGER LOADING
+## 25. EAGER LOADING
 
 Join explosion.
 
-## 20. RELATION INCLUDE
+## 26. RELATION INCLUDE
 
 Overfetch.
 
-## 21. RAW SQL
+## 27. RAW SQL
 
 Parameterization.
 
-## 22. RAW IDENTIFIER
+## 28. RAW IDENTIFIER
 
 Sort/table/column.
 
-## 23. UNSAFE ESCAPE API
+## 29. UNSAFE ESCAPE API
 
 ORM-specific.
 
-## 24. TRANSACTION API
+## 30. VALUES VS IDENTIFIERS
+
+Parametri štite **vrednosti**, a ne **identifikatore**. Query može ispravno da veže sve vrednosti i da ipak bude ranjiv na injection kroz:
+
+- ime kolone koje se koristi za sortiranje ili filtriranje (`ORDER BY ${sortField}`)
+- ime tabele ili šeme izabrano u runtime-u (multi-tenant šeme)
+- JSON putanju ili operator sastavljen od ulaza
+- raw fragmente prosleđene "unsafe" ORM helper-ima
+
+Svaki dinamički identifikator mora da dolazi iz fiksne whitelist-e mapirane u kodu, nikada direktno iz zahteva. Proveri helper-e za escaping za konkretan ORM i verziju.
+
+## 31. TRANSACTION API
 
 Does callback actually use same transaction client/session?
 
-## 25. TRANSACTION LEAK
+## 32. TRANSACTION LEAK
 
 Code calls global ORM client inside transaction callback.
 
@@ -145,43 +230,55 @@ transaction(tx => {
 
 Second write may not participate.
 
-## 26. ASYNC TRANSACTION
+## 33. ASYNC TRANSACTION
 
 External await inside transaction.
 
-## 27. NESTED TRANSACTION
+## 34. TRANSACTION CLIENT PROPAGATION
+
+Upisi učestvuju u transakciji samo ako koriste klijent ili kontekst transakcije. Prati svaki upis koji se poziva unutar transaction callback-a:
+
+- helper funkcije i servise koji importuju globalni klijent umesto da prime klijent transakcije
+- repository-je instancirane jednom sa globalnim klijentom
+- event handler-e, hook-ove ili audit logger-e koji se okidaju unutar callback-a
+- propagaciju async konteksta (da li se ORM oslanja na async-local storage i da li on preživljava tu putanju koda?)
+- ugnježdene pozive servisa koji otvaraju sopstvenu transakciju
+
+Za svaki upis navedi da li se commit-uje ili rollback-uje zajedno sa ostatkom i koje nekonzistentno stanje nastaje ako ne.
+
+## 35. NESTED TRANSACTION
 
 ORM semantics.
 
-## 28. SAVEPOINT
+## 36. SAVEPOINT
 
-## 29. ISOLATION
+## 37. ISOLATION
 
 Actual options.
 
-## 30. RETRY
+## 38. RETRY
 
 ORM/client may auto-retry certain errors.
 
-## 31. UPSERT
+## 39. UPSERT
 
 Concurrency semantics.
 
-## 32. `connectOrCreate`
+## 40. `connectOrCreate`
 
 Potential races depending on unique constraints.
 
-## 33. FIRST OR CREATE
+## 41. FIRST OR CREATE
 
-## 34. BULK CREATE
+## 42. BULK CREATE
 
 Partial errors.
 
-## 35. `updateMany/deleteMany`
+## 43. `updateMany/deleteMany`
 
 Missing where condition.
 
-## 36. EMPTY FILTER
+## 44. EMPTY FILTER
 
 Critical scenario:
 
@@ -189,181 +286,254 @@ Critical scenario:
 deleteMany({})
 ```
 
-## 37. UNDEFINED FILTER
+## 45. UNDEFINED FILTER
 
 Some ORMs ignore undefined fields.
 
 Security/correctness risk.
 
-## 38. NULL VS UNDEFINED
+## 46. NULL VS UNDEFINED
 
 Important in JS ORMs.
 
-## 39. DYNAMIC WHERE
+## 47. UNDEFINED AND NULL IN FILTERS
+
+U nekoliko JavaScript/TypeScript ORM-ova svojstvo filtera čija je vrednost `undefined` se izbacuje, umesto da ne odgovara ničemu. Proveri za detektovani ORM i verziju:
+
+```text
+tenantId = req.user.tenantId      // undefined for a misconfigured service token
+deleteMany({ where: { tenantId } })
+↓
+where clause becomes empty
+↓
+rows of every tenant are deleted
+```
+
+Proveri svaki filter sastavljen od opcionog ulaza, podataka iz sesije ili konfiguracije: `where`, `updateMany`, `deleteMany`, `count` i filtere relacija. Proveri i kako se `null` razlikuje od `undefined` u update-ima (postavljanje kolone na NULL naspram ostavljanja bez izmene).
+
+## 48. DYNAMIC WHERE
 
 Request object spread.
 
-## 40. DYNAMIC ORDER
+## 49. DYNAMIC ORDER
 
-## 41. PAGINATION
+## 50. PAGINATION
 
 ORM offset implementation.
 
-## 42. COUNT
+## 51. COUNT
 
-## 43. RELATION COUNT
+## 52. RELATION COUNT
 
 N+1.
 
-## 44. QUERY GENERATION
+## 53. QUERY GENERATION
 
 Inspect actual SQL, not ORM intention.
 
-## 45. PARAMETER TYPES
+## 54. PARAMETER TYPES
 
 Implicit cast.
 
-## 46. DATE CONVERSION
+## 55. DATE CONVERSION
 
 Timezone.
 
-## 47. DECIMAL
+## 56. DECIMAL
 
 ORM may return string/Decimal object.
 
-## 48. BIGINT
+## 57. BIGINT
 
 JS number overflow.
 
-## 49. JSON
+## 58. JSON
 
 Typed code vs runtime arbitrary structure.
 
-## 50. MIGRATION AUTO-GENERATION
+## 59. MIGRATION AUTO-GENERATION
 
 Review generated SQL.
 
-## 51. SCHEMA PUSH/SYNC
+## 60. SCHEMA PUSH/SYNC
 
 Production destructive risk.
 
-## 52. CLIENT GENERATION
+## 61. CLIENT GENERATION
 
 Version mismatch.
 
-## 53. CONNECTION MANAGEMENT
+## 62. CONNECTION MANAGEMENT
 
 Singleton vs per-request client.
 
-## 54. SERVERLESS
+## 63. SERVERLESS
 
 Opening new ORM client per function/request can exhaust DB.
 
-## 55. HOT RELOAD
+## 64. HOT RELOAD
 
 Dev clients.
 
-## 56. CONNECTION LEAK
+## 65. CONNECTION LEAK
 
-## 57. POOL
+## 66. POOL
 
 Driver vs ORM pool.
 
-## 58. PREPARED STATEMENT
+## 67. PREPARED STATEMENT
 
 Proxy compatibility.
 
-## 59. QUERY TIMEOUT
+## 68. QUERY TIMEOUT
 
-## 60. CANCELLATION
+## 69. CANCELLATION
 
-## 61. ERROR MAPPING
+## 70. ERROR MAPPING
 
 Unique/FK/deadlock errors.
 
-## 62. RETRYABLE ERROR
+## 71. RETRYABLE ERROR
 
-## 63. NOT FOUND
+## 72. ERROR MAPPING AND RETRY DECISIONS
 
-## 64. OPTIMISTIC CONCURRENCY
+Za svaku klasu grešaka baze proveri šta aplikacija radi:
+
+```text
+unique violation        -> conflict response or idempotent success, never a generic 500 that the client retries
+foreign key violation   -> validation error or not-found, depending on the cause
+serialization failure   -> retry the whole transaction (bounded, with backoff)
+deadlock                -> retry the whole transaction (bounded, with backoff)
+timeout / cancellation  -> do not blindly retry non-idempotent writes; the first attempt may have committed
+connection error        -> retry only if the operation is idempotent or known not to have executed
+```
+
+Proveri da se greške prepoznaju po stabilnim kodovima grešaka drajvera, a ne po tekstu poruke, i da retry-ji ne ponavljaju side effect-e.
+
+## 73. NOT FOUND
+
+## 74. OPTIMISTIC CONCURRENCY
 
 Version field.
 
-## 65. CHANGE TRACKING
+## 75. CHANGE TRACKING
 
 EF/Hibernate-like stale entity state.
 
-## 66. FIRST-LEVEL CACHE
+## 76. FIRST-LEVEL CACHE
 
-## 67. SECOND-LEVEL CACHE
+## 77. SECOND-LEVEL CACHE
 
 Staleness.
 
-## 68. DIRTY CHECKING
+## 78. DIRTY CHECKING
 
 Unexpected writes.
 
-## 69. PARTIAL UPDATE
+## 79. PARTIAL UPDATE
 
 May overwrite fields with stale values.
 
-## 70. ENTITY MERGE
+## 80. ENTITY MERGE
 
 Detached object risk.
 
-## 71. BATCHING
+## 81. UNIT OF WORK AND STALE ENTITIES
+
+U ORM-ovima sa identity map-om ili praćenjem izmena proveri kako se dugo živeći entiteti upisuju nazad:
+
+- entitet učitan na početku zahteva (ili keširan između zahteva) i sačuvan na kraju upisuje **sve** praćene kolone i prepisuje izmene koje su drugi pisci u međuvremenu napravili
+- detached entiteti spojeni nazad u sesiju mogu da ožive obrisane redove ili vrate starije vrednosti
+- dirty checking može da izda UPDATE koji niko nije nameravao (na primer kada konverzija tipa promeni vrednost)
+- first-level cache može unutar jedne sesije da vrati zastareli entitet pošto je druga sesija promenila red
+
+Za entitete koji se istovremeno menjaju daj prednost parcijalnim update-ima eksplicitno izmenjenih polja ili optimistic proveri verzije.
+
+## 82. BATCHING
 
 ORM may auto-batch, verify.
 
-## 72. LOGGING
+## 83. LOGGING
 
 Queries can include PII.
 
-## 73. SENSITIVE PARAMETER LOGGING
+## 84. SENSITIVE PARAMETER LOGGING
 
 Dev feature accidentally in prod.
 
-## 74. FINDING FORMAT
+## 85. ORM FEATURE / RISK MATRIX
+
+| ORM feature | Used where | Version-specific behavior checked | Risk (scope, injection, transaction, stale write, performance) | Guard | Status |
+|---|---|---|---|---|---|
+
+## 86. FINDING FORMAT
 
 ```text
 ID:
 Severity:
-ORM:
-Model:
-Call site:
-Generated SQL:
+Status:
+Evidence tier:
+ORM / version:
+Scope (model, call site):
+Trigger (input, job, request):
+Current behavior (code and generated SQL):
 Transaction context:
-Problem:
-Data/security/performance impact:
+Expected behavior:
+Failure / exploit path:
+Impact (data scope, security, correctness, performance):
+Blast radius:
 Evidence:
 Root cause:
 Fix:
-Regression test:
+Verification (generated-SQL assertion, test):
+Regression risk:
 ```
 
-## 75. OUTPUT
+## 87. SEVERITY
+
+- **P0** - injection, pristup tuđem tenant-u ili masovna izmena/brisanje podataka dostupni iz spoljnog ulaza (na primer undefined filter u `deleteMany` ili raw identifikator iz zahteva).
+- **P1** - upisi van predviđene transakcije u kritičnim tokovima, zaobilaženje tenant ili soft-delete filtera nad osetljivim podacima, schema sync nad production-om ili prepisivanje važnih podataka zastarelim entitetima.
+- **P2** - značajni defekti tačnosti ili performansi koje izaziva ponašanje ORM-a na važnim putanjama (pogrešno mapiranje grešaka koje izaziva ponavljanje već commit-ovanih upisa, eksplozija lazy loading-a, gubitak preciznosti).
+- **P3** - ograničeni problemi na sporednim putanjama.
+- **P4** - hardening: bezbedniji API-ji, testovi generisanog SQL-a, higijena logovanja.
+
+## 88. OUTPUT
 
 `ORM_FORENSIC_AUDIT.md`
 
-## 76. SECOND PASS
+## 89. SECOND PASS
 
-Search repository-wide for:
+Pretraži repozitorijum za sledeće i pregledaj njihov generisani SQL:
 
-- raw
-- unsafe
-- findUnique/findById
-- updateMany
-- deleteMany
-- object spread into create/update
-- transaction callbacks
-- relation includes
-- lazy access
-- query inside loops
-- per-request client initialization
+- raw SQL interfejse i nebezbednu interpolaciju stringova
+- dinamičke identifikatore (sort, filter, tabela, šema)
+- `findUnique` / `findById` pozive nad modelima vezanim za tenant
+- `updateMany` / `deleteMany` operacije i svaki filter sastavljen od opcionih vrednosti
+- spread objekata u create i update pozive
+- transaction callback-e i svaki upis u njima
+- include-ove relacija i lazy pristup u petljama
+- inicijalizaciju klijenta po zahtevu ili po pozivu
+- mesta gde se entiteti keširaju ili čuvaju između zahteva
 
-## 77. FINAL QUALITY GATE
+Zatim pokušaj da opovrgneš svaki nalaz: da li globalni filter, constraint u bazi ili row-level security policy već to blokira? Da li se ova verzija ORM-a i dalje ovako ponaša?
 
-Proveri actual generated SQL and ORM version semantics before serious finding.
+## 90. FINAL QUALITY GATE
+
+Pre podizanja kritičnih nalaza proveri stvarni generisani SQL i semantiku specifičnu za verziju ORM-a.
+
+Pre vraćanja izveštaja proveri da:
+
+- su ORM, drajver i verzije identifikovani
+- svaki kritični nalaz sadrži ili referencira generisani SQL
+- su tenant i soft-delete filteri provereni na raw query-jima, alternativnim klijentima, relacijama, agregatima i bulk operacijama
+- su dinamički identifikatori provereni odvojeno od vezanih vrednosti
+- je svaki upis u transaction callback-u proveren za propagaciju klijenta
+- su filteri sastavljeni od opcionih vrednosti provereni za undefined/null semantiku
+- su mapiranje grešaka i retry provereni za upise koji su commit-ovani, a završili timeout-om
+- su razmotrena prepisivanja zastarelim entitetima i parcijalnim update-ima za modele koji se istovremeno menjaju
+- je životni ciklus konekcija proveren za runtime (serverless, hot reload, proxy)
+- raw SQL i lazy loading nisu prijavljeni bez konkretnog failure path-a
+- su statusi i evidence tier-ovi dosledno primenjeni
 
 # KONAČNO PRAVILO
 
@@ -387,4 +557,28 @@ later transaction rollback
 audit log claims order exists
 ↓
 database state diverges
+```
+
+Drugi failure chain-ovi koje tražim:
+
+```text
+tenant filter implemented as ORM middleware on findMany/findFirst
+↓
+reporting endpoint uses a raw aggregate query with a tenantId from the URL
+↓
+middleware does not apply to raw queries
+↓
+any authenticated user can read revenue totals of other tenants
+```
+
+```text
+edit form loads the order entity, user edits notes for 10 minutes
+↓
+meanwhile the payment webhook sets status = PAID
+↓
+form submit calls save(order) with the full stale entity
+↓
+status is written back to PENDING
+↓
+paid order is shipped again or cancelled by a cleanup job
 ```

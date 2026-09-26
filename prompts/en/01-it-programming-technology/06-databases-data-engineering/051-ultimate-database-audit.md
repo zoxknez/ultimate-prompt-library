@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Databases & Data Engineering
 subcategory_id: databases-data-engineering
 language: en
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -627,7 +627,39 @@ Do not recommend partitioning without concrete query and maintenance workload ev
 
 Never recommend sharding as the default response to scaling.
 
-## 122. FINDING FORMAT
+## 122. EVIDENCE, STATUS AND FALSE POSITIVES
+
+Evidence tiers:
+
+```text
+A - reproduced: production metrics, query plans with actual execution, logs or a safe reproduction show the behavior
+B - complete path: schema, constraints, transaction code and data flow fully show the failure
+C - strong static evidence: code or schema shows the path, but data volume, configuration or runtime behavior are not verified
+D - inference: depends on engine version, isolation level, data distribution or topology not verified
+E - hardening: stronger design or configuration without a current failure path
+```
+
+Status:
+
+- **CONFIRMED** - tier A or B evidence shows the failure or exploit path.
+- **LIKELY** - tier C evidence.
+- **NOT VERIFIED** - depends on runtime state, settings or versions that could not be checked (tier D). Never present tier D as confirmed.
+- **NOT APPLICABLE** - the component or pattern is not used.
+- **CONTROLLED** - the risk exists but another control contains it.
+- **HARDENING** - improvement without a current failure path (P4).
+
+False-positive rules:
+
+- A missing index on a small or rarely queried table is not a performance defect.
+- Intentional denormalization with a defined source of truth and a reconciliation path is a design choice, not an integrity defect.
+- The engine's default isolation level is a finding only with a concrete anomaly (lost update, write skew) on a real code path.
+- Missing partitioning, sharding or read replicas is not a defect without a measured or projected capacity problem.
+- Integrity enforced in the application is weaker than a constraint, but a finding only when a concrete path bypasses it (concurrent requests, other writers, imports).
+- Engine behavior (locking, planner, replication) differs by version; state the version the finding depends on.
+
+Do not report a missing best practice as a confirmed defect unless there is a concrete failure, exploit, correctness, reliability, or operational path.
+
+## 123. FINDING FORMAT
 
 ```text
 ID:
@@ -637,6 +669,7 @@ Database:
 Schema/Table:
 Query/Transaction:
 Evidence tier:
+Status:
 Trigger:
 Failure path:
 Data impact:
@@ -650,7 +683,7 @@ Production verification:
 Complexity:
 ```
 
-## 123. SEVERITY
+## 124. SEVERITY
 
 P0:
 - global or irrecoverable data corruption
@@ -672,11 +705,11 @@ P3:
 P4:
 - tuning and hardening suggestions
 
-## 124. OUTPUT
+## 125. OUTPUT
 
 `ULTIMATE_DATABASE_AUDIT.md`
 
-## 125. SECOND PASS
+## 126. SECOND PASS
 
 Simulate or analyze:
 
@@ -692,7 +725,7 @@ Simulate or analyze:
 - disk storage approaching maximum capacity
 - database backup restoration in an isolated sandbox
 
-## 126. FINAL QUALITY GATE
+## 127. FINAL QUALITY GATE
 
 Verify:
 

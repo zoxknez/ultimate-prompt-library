@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
 subcategory_id: devops-cloud-infrastructure
 language: sr
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -25,11 +25,8 @@ Glavni cilj:
 Sve:
 
 ```text
-
 .github/workflows/*.yml
-
 .github/actions/*
-
 ```
 
 plus reusable workflows.
@@ -37,25 +34,15 @@ plus reusable workflows.
 Za svaki workflow:
 
 ```text
-
 Name:
-
 Triggers:
-
 Permissions:
-
 Secrets:
-
 Environment:
-
 Runner:
-
 External actions:
-
 Deployment:
-
 Artifacts:
-
 ```
 
 ## 2. TRIGGERS
@@ -95,21 +82,13 @@ Workflow radi u context-u base repository-ja i može imati veće privilegije.
 ## 5. DANGEROUS COMBINATION
 
 ```text
-
 pull_request_target
-
 +
-
 checkout PR head
-
 +
-
 execute code
-
 +
-
 secrets/write token
-
 ```
 
 P0/P1 candidate.
@@ -433,17 +412,11 @@ Koji workflow dobija signing key?
 Critical scenario:
 
 ```text
-
 untrusted build
-
 ↓
-
 artifact
-
 ↓
-
 privileged signer
-
 ```
 
 ## 70. DEPLOY
@@ -581,100 +554,103 @@ Za high-privilege third-party actions preporučuj SHA pin ako praktično.
 ## 100. FINDING FORMAT
 
 ```text
-
 ID:
-
 Severity:
-
+Status:
+Evidence tier:
 Workflow:
-
 Trigger:
-
 Job:
-
 Step:
-
 Runner:
-
 Permissions:
-
 Secrets:
-
 Untrusted input:
-
 Execution path:
-
 Impact:
-
 Blast radius:
-
 Evidence:
-
 Fix:
-
 Regression check:
-
 Complexity:
-
 ```
 
 ## 101. EVIDENCE
 
 ```text
-
 A - reproduced in safe repo/test
-
 B - complete workflow execution path
-
 C - strong YAML/config evidence
-
 D - inferred
-
 E - hardening
-
 ```
 
-## 102. P0/P1
+## 102. STATUS AND FALSE POSITIVES
+
+Status:
+
+- **CONFIRMED** - dokaz tier A ili B pokazuje putanju otkaza ili exploit-a.
+- **LIKELY** - dokaz tier C.
+- **NOT VERIFIED** - zavisi od runtime stanja, podešavanja ili verzija koji nisu mogli da se provere (tier D). Tier D nikada ne predstavljaj kao potvrđen.
+- **NOT APPLICABLE** - komponenta ili obrazac se ne koriste.
+- **CONTROLLED** - rizik postoji, ali ga druga kontrola ograničava.
+- **HARDENING** - poboljšanje bez trenutnog failure path-a (P4).
+
+False-positive pravila:
+
+- `pull_request_target` ili `workflow_run` nisu ranjivost sami po sebi; postaju ranjivost kada privilegovan posao preuzima, izvršava ili interpolira nepoverljiv sadržaj.
+- Akcija zaključana na tag umesto na commit SHA je HARDENING osim ako je akcija visokoprivilegovana ili njen izdavač nije pouzdan.
+- Secrets referencirani u workflow-u nisu izloženi ako ih ne dobija nijedan posao dostupan iz nepoverljivih trigger-a.
+- `${{ }}` izrazi nad pouzdanim vrednostima (konstante repozitorijuma, `github.sha`, workflow ulazi ograničeni na maintainer-e) nisu tačke za injection.
+- Workflow-i u fork-ovima rade sa dozvolama ograničenim na fork; ne prijavljuj ih kao da utiču na osnovni repozitorijum osim ako trigger prelazi tu granicu.
+- Branch protection, pravila okruženja i podešavanja organizacije su van repozitorijuma; zavisne nalaze označi kao **NOT VERIFIED** kada ne mogu da se provere.
+
+Nemoj da prijaviš nedostajuću best practice kao potvrđeni defekt ako ne postoji konkretna putanja otkaza, exploit-a, greške u ispravnosti, pouzdanosti ili rada.
+
+## 103. SEVERITY
 
 P0:
-
 - untrusted PR code -> production signing/deploy/admin credential -> arbitrary production control
 
 P1:
-
 - expression injection u privileged workflow
-
 - artifact poisoning -> privileged execution
-
 - self-hosted runner untrusted code -> internal/secret compromise
-
 - overbroad OIDC trust daje prod cloud role
 
-## 103. OUTPUT
+P2:
+- prevelik opseg `GITHUB_TOKEN`-a ili secret-a dostupan samo pouzdanim trigger-ima
+- trovanje cache-a ili rizik third-party akcije bez potvrđenog privilegovanog potrošača
+- putanje deployment-a koje zaobilaze predviđena odobrenja za neproduction okruženja
+
+P3:
+- ograničene slabosti uskog uticaja (bučni logovi, manji višak dozvola)
+
+P4:
+- hardening bez trenutne putanje exploit-a
+
+## 104. OUTPUT
 
 `GITHUB_ACTIONS_FORENSIC_AUDIT.md`
 
-## 104. MATRICE
+## 105. MATRICE
 
 ### Workflow Matrix
 
 | Workflow | Trigger | Token permissions | Secrets | Deploy |
-
 |---|---|---|---|---|
 
 ### External Action Matrix
 
 | Action | Ref | Third-party | Secrets | Write perms |
-
 |---|---|---|---|---|
 
 ### Trust Matrix
 
 | Trigger | Untrusted code | Secrets | Write token | Runner |
-
 |---|---|---|---|---|
 
-## 105. SECOND PASS
+## 106. SECOND PASS
 
 Obavezno testiraj/anliziraj:
 
@@ -698,7 +674,7 @@ Obavezno testiraj/anliziraj:
 
 - production deploy concurrency
 
-## 106. FINAL QUALITY GATE
+## 107. FINAL QUALITY GATE
 
 Proveri:
 
@@ -739,65 +715,37 @@ Ne želim:
 Tražim:
 
 ```text
-
 trigger:
-
 pull_request_target
-
 ↓
-
 job has:
-
 contents: write
-
 production token
-
 ↓
-
 checkout:
-
 ref = pull_request.head.sha
-
 ↓
-
 npm install
-
 ↓
-
 PR author modifies postinstall
-
 ↓
-
 attacker code executes with production secret
-
 ```
 
 ili:
 
 ```text
-
 untrusted PR workflow
-
 ↓
-
 uploads build artifact
-
 ↓
-
 workflow_run triggers privileged release job
-
 ↓
-
 release job downloads artifact
-
 ↓
-
 executes included script
-
 ↓
-
 production signing key exposed
-
 ```
 
 Ako workflow nije production-relevant:

@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: DevOps, Cloud & Infrastructure
 subcategory_id: devops-cloud-infrastructure
 language: en
-version: 1.0.1
+version: 1.1.0
 status: stable
 ---
 
@@ -20,7 +20,68 @@ Main objective:
 
 > Determine whether source, tests, builds, artifacts, approvals, migrations, secrets, deployments, and rollback processes form a reliable and secure chain from commit to production.
 
-## 1. MAP THE PIPELINE
+## 1. OBJECTIVE AND NON-GOALS
+
+Prove whether the chain from a reviewed commit to running production code is **reliable** (what was tested is what runs, failures are contained and recoverable) and **secure** (nobody can insert unreviewed code, replace an artifact or reach production credentials without authorization).
+
+Non-goals:
+
+- line-by-line review of workflow syntax for a specific CI provider (a provider-specific audit, for example a GitHub Actions audit, covers that; use its findings as input)
+- mandating human approval, signing or a specific tool for every system regardless of its risk
+- application code quality and test quality (only the gates they form)
+- infrastructure configuration outside the deployment path
+
+## 2. CONTEXT DISCOVERY
+
+Establish first:
+
+```text
+CI provider(s) and deployment tool(s):
+Runner types (hosted, self-hosted, ephemeral, shared):
+Environments (preview, staging, production) and how they differ:
+Artifact types and registries (container images, packages, bundles, serverless zips):
+How production is triggered (merge, tag, manual job, promotion, GitOps sync):
+Deployment strategy (rolling, blue/green, canary, serverless, recreate):
+Database migration tool and when it runs:
+Components deployed separately (web, workers, cron, mobile/desktop clients, infrastructure):
+Deployment frequency and team size:
+```
+
+Pipeline semantics (concurrency controls, cancellation, environment protection, artifact retention) are provider-specific. Check the actual behavior of the detected provider and version before stating it.
+
+## 3. EVIDENCE MODEL
+
+```text
+A - observed: pipeline run history, deploy logs, registry metadata or a safe test run shows the behavior
+B - complete path: pipeline definitions, permissions and environment settings fully show the path
+C - strong static evidence: configuration suggests the path, but runtime settings (branch protection, environment rules) are not visible
+D - inference: plausible behavior that depends on settings or provider semantics not verified
+E - hardening: stronger control where the current chain already has no failure path
+```
+
+## 4. FINDING STATUS
+
+- **CONFIRMED** - the failure or bypass path is shown by run history or complete configuration (tier A or B).
+- **LIKELY** - strong static evidence (tier C).
+- **NOT VERIFIED** - depends on settings outside the repository (branch protection, environment rules, registry policies) that could not be checked.
+- **NOT APPLICABLE** - the stage or risk does not exist in this pipeline.
+- **CONTROLLED** - the risk exists but another control contains it.
+- **HARDENING** - improvement without a current failure path (P4).
+
+Do not report a missing best practice as a confirmed defect unless there is a concrete path to untested code in production, an unauthorized deployment, a leaked credential, an unrecoverable failure or an outage.
+
+## 5. FALSE-POSITIVE RULES
+
+The following are **not** findings by themselves:
+
+- Manual deployment is not automatically unsafe; it becomes a finding when the deployed artifact is not the reviewed and tested one, or the action is not attributable.
+- Missing human approval is not a defect for low-risk continuous delivery with strong automated gates.
+- Missing artifact signing is not a vulnerability unless an attacker or mistake can actually substitute an artifact between build and deploy.
+- `continue-on-error` or allowed failures on non-blocking jobs (linting of docs, optional checks) are not gate bypasses.
+- Rebuilding per environment is not automatically wrong if builds are hermetic and pinned; it becomes a finding when inputs can differ.
+- A long-lived deploy credential is a hardening item unless it is exposed to untrusted code or broader than necessary.
+
+## 6. MAP THE PIPELINE
 
 ```text
 commit
@@ -46,7 +107,25 @@ smoke verification
 promotion
 ```
 
-## 2. INVENTORY
+## 7. CHAIN OF CUSTODY
+
+For every link of the chain record what enters, what leaves and what proves it:
+
+```text
+source commit   -> which ref, who reviewed it, can it change after review?
+validation      -> which checks run on exactly this commit (or merge result)?
+build           -> which inputs (lockfile, base image, toolchain), on which runner?
+artifact        -> immutable identifier (digest), where stored, who can overwrite?
+promotion       -> is the same artifact moved between environments, or rebuilt?
+migration       -> which schema change runs, by whom, before or after the app?
+deployment      -> which identity deploys which digest to which environment?
+verification    -> which checks prove the critical flows work?
+rollback        -> which previous artifact and which data state can be restored?
+```
+
+A break at any link (for example "artifact identified by a mutable tag") means the chain cannot prove what runs in production.
+
+## 8. INVENTORY
 
 - CI provider
 - deployment provider
@@ -59,11 +138,11 @@ promotion
 - deployment triggers
 - approvals
 
-## 3. SOURCE AUTHORITY
+## 9. SOURCE AUTHORITY
 
 Which ref is permitted into production?
 
-## 4. BRANCH PROTECTION
+## 10. BRANCH PROTECTION
 
 If release depends on main/master:
 
@@ -76,329 +155,427 @@ verify:
 
 Do not treat a process rule as a technical vulnerability without an attack path.
 
-## 5. PR VALIDATION
+## 11. PR VALIDATION
 
 Tests must cover the actual merge/deploy artifact.
 
-## 6. TEST ON PR, DEPLOY DIFFERENT SHA
+## 12. TEST ON PR, DEPLOY DIFFERENT SHA
 
 High-signal race/drift.
 
-## 7. TOCTOU BETWEEN REVIEW AND DEPLOY
+## 13. TOCTOU BETWEEN REVIEW AND DEPLOY
 
 When the same branch can be modified after approval but prior to deployment.
 
-## 8. IMMUTABLE COMMIT
+## 14. APPROVAL BINDING
+
+An approval must be bound to what it approved:
+
+- Is the review or deployment approval tied to a commit SHA or artifact digest, or only to a branch or pipeline run that can pick up newer commits?
+- Can new commits be pushed after approval and still be deployed under that approval?
+- Does a manual "deploy" job build from the current branch head instead of the approved commit?
+- Are approvals dismissed when the change set changes?
+
+Review commit A, deploy commit B is a finding whenever B can contain changes nobody reviewed or tested.
+
+## 15. IMMUTABLE COMMIT
 
 Production artifact should be pinned to an exact SHA.
 
-## 9. BUILD ONCE, PROMOTE
+## 16. BUILD ONCE, PROMOTE
 
 If staging and prod rebuild source separately:
 
 they can produce different artifacts.
 
-## 10. REBUILD PRODUCTION
+## 17. REBUILD PRODUCTION
 
 Can pull newer transitive dependencies/toolchain.
 
-## 11. ARTIFACT IMMUTABILITY
+## 18. ARTIFACT IMMUTABILITY
 
 Who can replace a build?
 
-## 12. ARTIFACT RETENTION
+## 19. ARTIFACT RETENTION
 
 Does the preceding release exist for rollback?
 
-## 13. BUILD PROVENANCE
+## 20. ARTIFACT TRUST
+
+For every artifact type check:
+
+- **identity** - deployment references an immutable digest or checksum, not a mutable tag such as `latest` or a reused version
+- **substitution** - who (people, CI jobs, other pipelines) can push to the same repository or path, and can an artifact be replaced after tests passed?
+- **registry immutability** - are tags or versions protected against overwrite?
+- **signing and verification** - if signing is used, is the signature verified at deploy time, and is only the final build signed?
+- **retention** - are previous production artifacts retained long enough to roll back, and are they excluded from cleanup policies?
+
+## 21. BUILD PROVENANCE
 
 Artifact -> source commit -> workflow run.
 
-## 14. TEST GATE
+## 22. PROVENANCE QUESTION
+
+For production, the pipeline must be able to answer, with evidence and without guessing:
+
+> Which exact commit produced the running artifact, which pipeline run built it, which checks passed on it, and who or what deployed it?
+
+Try to answer it for the current production deployment of every component (web, workers, cron, functions). If any component cannot be traced back to a commit, report it.
+
+## 23. TEST GATE
 
 Which checks block deployment?
 
-## 15. FAILING TEST
+## 24. FAILING TEST
 
 Can a production deploy still proceed?
 
-## 16. SKIP TEST
+## 25. SKIP TEST
 
 Manual path?
 
-## 17. ALLOW FAILURE
+## 26. ALLOW FAILURE
 
 Critical security/test job with continue-on-error.
 
-## 18. FLAKY TEST
+## 27. FLAKY TEST
 
 If it is simply rerun until green:
 
 the gate loses value.
 
-## 19. TEST ENV PARITY
+## 28. TEST ENV PARITY
 
 Does not have to be identical to production, but critical differences must be known.
 
-## 20. BUILD CONFIG
+## 29. BUILD CONFIG
 
 Dev flags must not end up in the production artifact.
 
-## 21. SECRET INJECTION
+## 30. SECRET INJECTION
 
 When do secrets become accessible?
 
-## 22. UNTRUSTED CODE + SECRET
+## 31. UNTRUSTED CODE + SECRET
 
 The most critical supply-chain scenario.
 
-## 23. DEPLOY CREDENTIAL
+## 32. DEPLOY CREDENTIAL
 
 Scoped strictly to the required environment.
 
-## 24. STATIC LONG-LIVED KEY
+## 33. STATIC LONG-LIVED KEY
 
 Blast radius vs short-lived/OIDC.
 
-## 25. ENVIRONMENT ISOLATION
+## 34. ENVIRONMENT ISOLATION
 
 Staging deploy credential should not have production access.
 
-## 26. PRODUCTION APPROVAL
+## 35. SECRETS BOUNDARY
+
+Map when privileged secrets become available along the chain:
+
+```text
+Stage:
+Code executed at this stage (trusted, contributor-controlled, third-party):
+Secrets available (and their scope):
+Could the code at this stage exfiltrate or misuse them?
+```
+
+The critical rule: no stage that runs contributor-controlled or third-party code (pull request builds, dependency install scripts, test code from forks) may have access to production or publishing credentials. Deploy credentials should appear only in stages that run reviewed code on trusted runners, scoped to one environment.
+
+## 36. PRODUCTION APPROVAL
 
 If required according to the operational model.
 
 Do not mandate human approval for every low-risk continuous delivery system.
 
-## 27. CHANGE RISK
+## 37. CHANGE RISK
 
 Migrations/infra/secrets may require a different approval model.
 
-## 28. MIGRATION STEP
+## 38. MIGRATION STEP
 
 Who executes it?
 
-## 29. MIGRATION PRE/POST APP
+## 39. MIGRATION PRE/POST APP
 
 Order.
 
-## 30. MIGRATION RETRY
+## 40. MIGRATION RETRY
 
 Can it be safely rerun?
 
-## 31. PARTIAL MIGRATION
+## 41. PARTIAL MIGRATION
 
 Failure midway through execution.
 
-## 32. SCHEMA BACKWARD COMPATIBILITY
+## 42. SCHEMA BACKWARD COMPATIBILITY
 
 Mixed versions.
 
-## 33. ROLLBACK
+## 43. MIGRATION AND DEPLOYMENT COUPLING
+
+For every release with a schema or data change, walk through each combination:
+
+```text
+migration succeeds, application deploy succeeds    -> expected
+migration succeeds, application deploy fails       -> old code on new schema: does it work?
+migration fails midway, application not deployed   -> partial schema: can it be retried or completed?
+migration fails, application deploy continues      -> new code on old schema: is this prevented?
+application deploys, worker/cron deploy fails      -> mixed versions on the same data
+rollback of the application after the migration    -> does the old version work on the new schema?
+```
+
+The pipeline must encode the correct order and stop on failure; state what it does today for each row.
+
+## 44. ROLLBACK
 
 Does not merely mean redeploying old artifact.
 
-## 34. ROLLBACK DATABASE
+## 45. ROLLBACK DATABASE
 
 May be impossible.
 
-## 35. FEATURE FLAG
+## 46. FEATURE FLAG
 
 May be a superior rollback mechanism for feature behavior.
 
-## 36. SMOKE TEST
+## 47. ROLLBACK REALITY
+
+Separate:
+
+- **code rollback** - redeploying a previous artifact: does the artifact still exist, can the pipeline deploy an older digest, and how long does it take?
+- **configuration rollback** - environment variables, feature flags and infrastructure changes deployed alongside the code
+- **data rollback** - schema and data changes, which usually cannot be undone by redeploying code
+
+A rollback plan that only says "redeploy the previous version" is incomplete if the release changed the schema, the configuration or the data.
+
+## 48. SMOKE TEST
 
 Verify critical paths post-deployment.
 
-## 37. SMOKE TEST AUTHORITY
+## 49. SMOKE TEST AUTHORITY
 
 Health 200 is not proof that login/DB/write operations work.
 
-## 38. AUTO ROLLBACK
+## 50. AUTO ROLLBACK
 
 If present:
 
 which metric and threshold?
 
-## 39. FALSE ROLLBACK
+## 51. POST-DEPLOY VALIDATION
+
+A health endpoint returning 200 proves that the process started, not that the product works. Check whether post-deploy verification covers:
+
+- a real write and read against the production database (or a safe synthetic tenant)
+- authentication and session handling
+- the most critical business flow (checkout, booking, message send)
+- background workers and scheduled jobs actually processing
+- error rate and latency compared with the pre-deploy baseline
+
+State which failures would pass the current checks unnoticed.
+
+## 52. FALSE ROLLBACK
 
 Transient metric spike can loop deployment.
 
-## 40. CANARY
+## 53. CANARY
 
 If present, analyze traffic split and evaluation.
 
-## 41. BLUE/GREEN
+## 54. BLUE/GREEN
 
 Database compatibility.
 
-## 42. CONCURRENT DEPLOY
+## 55. PARTIAL DEPLOYMENT
+
+During and after a failed rollout, part of the fleet may run the new version and part the old one:
+
+- what happens if the rollout stops at 50%: does traffic keep reaching both versions, and are they compatible with each other and with the shared data?
+- does the pipeline detect a stalled or partial rollout and alert, or report success?
+- are web, workers, cron and functions deployed in the same step, or can one of them stay on an old version indefinitely?
+
+## 56. CONCURRENT DEPLOY
 
 Two actors/pipelines deploying different SHAs.
 
-## 43. DEPLOY LOCK
+## 57. DEPLOY LOCK
 
 Serialization where required.
 
-## 44. CANCEL DEPLOY
+## 58. CANCEL DEPLOY
 
 Mid-flight cancellation can leave a mixed state.
 
-## 45. PIPELINE RETRY
+## 59. CANCELLATION SEMANTICS
+
+Automatic cancellation of superseded runs (for example `cancel-in-progress` in a concurrency group) is safe for tests and builds, but not automatically safe for deployments and migrations:
+
+- can a newer run cancel a deployment halfway, leaving a mixed fleet?
+- can it kill a migration mid-statement or mid-backfill?
+- after cancellation, does the next run start from a consistent state, or assume the previous run finished?
+- are deploy jobs serialized per environment instead of cancelled?
+
+Check the actual cancellation behavior of the provider (graceful signal vs hard kill, timeout).
+
+## 60. PIPELINE RETRY
 
 Non-idempotent steps.
 
-## 46. PACKAGE PUBLISH
+## 61. PACKAGE PUBLISH
 
 Version collision.
 
-## 47. CONTAINER PUBLISH
+## 62. CONTAINER PUBLISH
 
 Mutable tags.
 
-## 48. SIGNING
+## 63. SIGNING
 
 Only trusted final artifact.
 
-## 49. INFRA DEPLOY
+## 64. INFRA DEPLOY
 
 Terraform/app deploy ordering.
 
-## 50. CONFIG DEPLOY
+## 65. CONFIG DEPLOY
 
 Config can be breaking even when code is unchanged.
 
-## 51. SECRET ROTATION
+## 66. SECRET ROTATION
 
 Old/new application compatibility.
 
-## 52. DATABASE BACKUP PRE RISKY MIGRATION
+## 67. DATABASE BACKUP PRE RISKY MIGRATION
 
 If architecture/process demands it.
 
 Do not use backup as an excuse for an unsafe migration.
 
-## 53. PREVIEW DEPLOY
+## 68. PREVIEW DEPLOY
 
 Which secrets/data does it receive?
 
-## 54. PR DEPLOY
+## 69. PR DEPLOY
 
 Untrusted code + public URL + provider tokens.
 
-## 55. PIPELINE DEPENDENCIES
+## 70. PIPELINE DEPENDENCIES
 
 Actions/plugins/images/build tools.
 
-## 56. REMOTE SCRIPTS
+## 71. REMOTE SCRIPTS
 
 Pin + verify.
 
-## 57. RUNNER TRUST
+## 72. RUNNER TRUST
 
 Hosted vs self-hosted.
 
-## 58. CACHE
+## 73. CACHE
 
 Can poisoned cache influence the final artifact?
 
-## 59. WORKSPACE CONTAMINATION
+## 74. WORKSPACE CONTAMINATION
 
 Self-hosted runners.
 
-## 60. CLEAN CHECKOUT
+## 75. CLEAN CHECKOUT
 
 Release build must originate from the expected source.
 
-## 61. GENERATED FILES
+## 76. GENERATED FILES
 
 Uncommitted generated output discrepancies.
 
-## 62. MONOREPO
+## 77. MONOREPO
 
 Path-based pipelines can miss shared dependency changes.
 
-## 63. SELECTIVE TESTING
+## 78. SELECTIVE TESTING
 
 Changed-files optimization must understand the dependency graph.
 
-## 64. BUILD MATRIX
+## 79. BUILD MATRIX
 
 A combination might be untested yet deployed.
 
-## 65. PLATFORM ARCH
+## 80. PLATFORM ARCH
 
 amd64/arm64.
 
-## 66. RUNTIME VERSION
+## 81. RUNTIME VERSION
 
 CI test runtime vs production runtime.
 
-## 67. DB VERSION
+## 82. DB VERSION
 
 Integration tests.
 
-## 68. ENVIRONMENT VARIABLE
+## 83. ENVIRONMENT VARIABLE
 
 Missing production env might only be discovered post-deployment.
 
-## 69. CONFIG VALIDATION
+## 84. CONFIG VALIDATION
 
 Pre-deployment.
 
-## 70. SECRET VALIDATION
+## 85. SECRET VALIDATION
 
 Do not print values.
 
-## 71. DNS/TLS DEPLOY
+## 86. DNS/TLS DEPLOY
 
 Infrastructure changes may require propagation time.
 
-## 72. CDN INVALIDATION
+## 87. CDN INVALIDATION
 
 Old frontend + new backend compatibility.
 
-## 73. STATIC ASSET HASHING
+## 88. STATIC ASSET HASHING
 
 Old HTML/new assets.
 
-## 74. SERVICE WORKER
+## 89. SERVICE WORKER
 
 PWA update can hold a stale client after backend deployment.
 
-## 75. MOBILE CLIENT
+## 90. MOBILE CLIENT
 
 Backend must remain compatible with legacy mobile app versions per the support window.
 
-## 76. DESKTOP CLIENT
+## 91. DESKTOP CLIENT
 
 Same considerations.
 
-## 77. FEATURE ROLLOUT
+## 92. FEATURE ROLLOUT
 
 Gradual activation.
 
-## 78. DEPLOY OBSERVABILITY
+## 93. DEPLOY OBSERVABILITY
 
 Link release SHA with logs/metrics/traces.
 
-## 79. RELEASE MARKER
+## 94. RELEASE MARKER
 
 Monitoring needs to know when deployment initiated.
 
-## 80. ERROR SPIKE
+## 95. ERROR SPIKE
 
 Pre/post-deploy comparison.
 
-## 81. PIPELINE ALERT
+## 96. PIPELINE ALERT
 
 Failed deploy must have an owner/alert signal.
 
-## 82. MANUAL HOTFIX
+## 97. MANUAL HOTFIX
 
 How does it navigate through controls?
 
-## 83. BREAK-GLASS DEPLOY
+## 98. BREAK-GLASS DEPLOY
 
 If present:
 
@@ -406,97 +583,133 @@ If present:
 - audit
 - post-review
 
-## 84. DIRECT PLATFORM DEPLOY
+## 99. DIRECT PLATFORM DEPLOY
 
 Can someone bypass CI and deploy locally?
 
-## 85. CONFIG CLICKOPS
+## 100. CONFIG CLICKOPS
 
 Can alter runtime without Git evidence.
 
-## 86. ACCESS REVIEW
+## 101. ACCESS REVIEW
 
 Who can deploy to production?
 
-## 87. SHARED CREDENTIAL
+## 102. SHARED CREDENTIAL
 
 Attribution.
 
-## 88. AUDIT LOG
+## 103. AUDIT LOG
 
 Deploy actor, SHA, timestamp.
 
-## 89. SUPPLY CHAIN
+## 104. SUPPLY CHAIN
 
-Cross-reference Prompt 38.
+Pinned third-party actions, plugins and build tools; lockfile integrity; install scripts running with pipeline credentials. Record the risk here; a dedicated supply-chain audit covers dependency depth.
 
-## 90. FAILURE SCENARIOS
+## 105. MANDATORY FAILURE WALKTHROUGH
 
-Test:
+For each scenario, state what the pipeline does today, what state production is left in, how it is detected and how it is recovered:
 
-- test passes, build fails
-- build passes, deploy fails
-- deploy 50%
-- migration fails
-- smoke fails
-- rollback fails
-- provider unavailable
-- secrets missing
-- registry unavailable
+```text
+tests pass on commit A, commit B is deployed
+tests pass, build fails
+build passes, deploy fails
+artifact is replaced in the registry after tests passed
+migration fails midway
+migration succeeds, application deploy fails
+application succeeds, worker deploy fails
+deploy stops at 50% of the fleet
+deploy is cancelled halfway
+smoke test fails after traffic is switched
+rollback itself fails
+artifact registry or deployment provider is unavailable during deploy or rollback
+a required secret is missing in the target environment
+rollback artifact no longer exists
+```
 
-## 91. FINDING FORMAT
+## 106. MATRICES
+
+### Pipeline Stage Matrix
+
+| Stage | Input | Output | Code trust level | Secrets available | Failure behavior | Blocks deploy |
+|---|---|---|---|---|---|---|
+
+### Deployment Authority Matrix
+
+| Principal (person, job, token) | Environments | Can deploy arbitrary SHA | Secrets | Rollback | Audited |
+|---|---|---|---|---|---|
+
+### Artifact Promotion Matrix
+
+| Artifact | Identifier (digest) | Built once | Dev | Staging | Production | Retained for rollback |
+|---|---|---|---|---|---|---|
+
+## 107. FINDING FORMAT
 
 ```text
 ID:
 Severity:
+Status:
+Evidence tier:
 Stage:
 Environment:
-Trigger:
-Artifact/SHA:
+Scope (pipeline, job, component):
+Trigger (event, actor, condition):
+Artifact / SHA:
 Current control:
-Failure path:
+Expected invariant (tested = deployed, authorized deployer, recoverable failure):
+Failure / exploit path:
 Impact:
+Blast radius:
 Evidence:
 Root cause:
-Fix:
+Remediation:
 Verification:
 Rollback considerations:
+Regression risk:
 ```
 
-## 92. OUTPUT
+## 108. SEVERITY
+
+- **P0** - untrusted code can obtain production or publishing credentials, or anyone outside the intended group can deploy arbitrary code to production.
+- **P1** - untested or unreviewed code can reach production through a normal path (review A, deploy B; mutable artifacts replaced after testing), or a routine failure leaves production in an unrecoverable or broken state.
+- **P2** - material reliability gaps: rollback artifacts not retained, migrations not ordered or not retry-safe, partial deploys undetected, weak post-deploy validation on critical flows.
+- **P3** - limited weaknesses: missing observability links, flaky gates, minor parity differences.
+- **P4** - hardening: signing, provenance attestations, tighter scoping where no current path exists.
+
+## 109. OUTPUT
 
 CICD_PIPELINE_AUDIT.md
 
-## 93. MATRICES
+## 110. SECOND PASS
 
-### Stage Matrix
+Re-walk the chain as an adversary and as an unlucky operator:
 
-| Stage | Input | Output | Secrets | Failure behavior |
-|---|---|---|---|---|
+- as a contributor with only pull-request rights: which stage runs your code, and what can it reach?
+- as someone with write access to one repository or registry path: can you replace what production pulls?
+- as the pipeline during an incident: two deploys at once, a cancelled deploy, a failed migration, an unavailable registry, a missing secret
+- as the on-call engineer: can you identify the running commit, roll back code, configuration and data, and verify the result?
 
-### Environment Promotion
+Then try to disprove each finding: do branch protection, environment rules or registry policies (outside the repository) already block the path? Mark those **NOT VERIFIED** if you cannot see them.
 
-| Artifact | Dev | Staging | Production | Rebuilt |
-|---|---|---|---|---|
+## 111. FINAL QUALITY GATE
 
-### Deployment Authority
+Before returning the report, verify that it answers:
 
-| Principal | Staging | Prod | Secrets | Rollback |
-|---|---|---|---|---|
-
-## 94. FINAL QUALITY GATE
-
-- exact production SHA
-- same tested artifact
-- secret boundary
-- untrusted code
-- migration order
-- retry/idempotency
-- concurrency
-- rollback
-- environment isolation
-- deployment observability
-- direct bypass paths
+- exact production SHA and artifact digest for every component, and how they are traced
+- whether the tested artifact is the deployed artifact (build once, promote)
+- whether approvals are bound to the approved commit or artifact
+- the secret boundary: which stages run untrusted code and which secrets they can reach
+- migration order, retry safety and the migration/deploy failure combinations
+- concurrency and cancellation behavior for deploy and migration jobs
+- partial deploy detection and mixed-version behavior
+- rollback for code, configuration and data, including artifact retention
+- post-deploy validation of critical flows, not only health checks
+- environment isolation of credentials and data
+- deployment observability (release markers, SHA in logs and metrics)
+- direct bypass paths (local CLI deploys, console changes, break-glass)
+- that statuses and evidence tiers are applied consistently
 
 # FINAL RULE
 
@@ -528,4 +741,30 @@ production rebuilds from source
 floating dependency resolves newer version
 ↓
 production artifact is not the same as tested artifact
+```
+
+Other failure chains to look for:
+
+```text
+deploy workflow uses a concurrency group with cancel-in-progress
+↓
+release 1 starts a backfill migration
+↓
+release 2 is merged a minute later and cancels the running job
+↓
+migration process is killed mid-batch; no checkpoint
+↓
+schema is half-migrated and release 2 assumes it is complete
+```
+
+```text
+registry cleanup keeps the last 10 images
+↓
+busy week produces 40 builds
+↓
+incident requires rollback to last week's release
+↓
+image digest no longer exists
+↓
+rollback means rebuilding old source with today's dependencies
 ```

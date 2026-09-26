@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: DevOps, Cloud & Infrastructure
 subcategory_id: devops-cloud-infrastructure
 language: en
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -566,7 +566,39 @@ Ephemeral pod logs must be aggregated centrally for incident investigation.
 
 Critical dependency for HPA operation.
 
-## 99. P0/P1 EXAMPLES
+## 99. EVIDENCE, STATUS AND FALSE POSITIVES
+
+Evidence tiers:
+
+```text
+A - observed: live cluster state (kubectl output, events, audit log) or a safe test shows the behavior
+B - complete path: rendered manifests, RBAC bindings, admission policies and node configuration fully show the path
+C - strong static evidence: source manifests or charts show the path, but values, overlays, admission or live drift are not verified
+D - inference: depends on cluster version, CNI, managed-provider defaults or runtime state not verified
+E - hardening: stronger configuration without a current failure path
+```
+
+Status:
+
+- **CONFIRMED** - tier A or B evidence shows the failure or exploit path.
+- **LIKELY** - tier C evidence.
+- **NOT VERIFIED** - depends on runtime state, settings or versions that could not be checked (tier D). Never present tier D as confirmed.
+- **NOT APPLICABLE** - the component or pattern is not used.
+- **CONTROLLED** - the risk exists but another control contains it.
+- **HARDENING** - improvement without a current failure path (P4).
+
+False-positive rules:
+
+- Privileged system components (CNI, CSI, node agents, monitoring daemons) are expected; review their provenance, namespace isolation and RBAC, not the privilege itself.
+- A missing NetworkPolicy is a finding only with a concrete lateral path to a sensitive service; check that the CNI enforces policies at all.
+- A missing CPU limit is not a defect by itself; missing memory limits or requests become findings when they cause eviction, noisy-neighbor or scheduling failures.
+- A single replica is acceptable for batch, internal or explicitly non-critical workloads.
+- Managed control-plane settings you cannot see are **NOT VERIFIED**, not insecure.
+- Source manifests may be changed by Helm values, Kustomize overlays, admission mutation or operators; confirm the rendered or live object before reporting.
+
+Do not report a missing best practice as a confirmed defect unless there is a concrete failure, exploit, correctness, reliability, or operational path.
+
+## 100. SEVERITY
 
 P0:
 - workload compromise leading directly to cluster-admin or node host takeover
@@ -577,7 +609,18 @@ P1:
 - defective rollout configuration causing repeatable production outages
 - secret exposure through overly broad RBAC permissions
 
-## 100. FINDING FORMAT
+P2:
+- missing disruption, probe or resource controls with a realistic outage or eviction path
+- lateral movement paths to internal services without direct privilege gain
+- deprecated APIs or versions that will break the next upgrade
+
+P3:
+- limited-scope misconfigurations with minor impact or narrow blast radius
+
+P4:
+- hardening without a current failure or exploit path
+
+## 101. FINDING FORMAT
 
 ```text
 ID:
@@ -586,6 +629,7 @@ Workload:
 Namespace:
 Resource:
 Evidence tier:
+Status:
 Attacker/failure trigger:
 Current config:
 Path:
@@ -597,7 +641,7 @@ Verification:
 Complexity:
 ```
 
-## 101. OUTPUT
+## 102. OUTPUT
 
 `KUBERNETES_PRODUCTION_AUDIT.md`
 
@@ -624,7 +668,7 @@ Sections:
 19. Findings
 20. Roadmap
 
-## 102. SECOND PASS
+## 103. SECOND PASS
 
 Simulate:
 
@@ -641,7 +685,7 @@ Simulate:
 - Ingress controller restart
 - zone loss if architecture claims multi-zone HA
 
-## 103. FINAL QUALITY GATE
+## 104. FINAL QUALITY GATE
 
 - actual cluster manifests
 - namespace boundaries
@@ -671,16 +715,12 @@ I am seeking issues such as:
 ```text
 Deployment replicas = 1
 maxUnavailable = 1
-
 ↓
 rolling update terminates old pod
-
 ↓
 new pod is not yet ready
-
 ↓
 service has no endpoints
-
 ↓
 every deploy causes downtime
 ```
@@ -694,7 +734,6 @@ default service account
 ↓
 ClusterRoleBinding:
 cluster-admin
-
 ↓
 web RCE in application
 ↓

@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Databases & Data Engineering
 subcategory_id: databases-data-engineering
 language: en
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -577,11 +577,44 @@ Ensuring pipeline diagnostic logs do not expose sensitive credentials or data.
 
 Preventing cross-tenant data leakage within operational logs and diagnostics.
 
-## 127. FINDING FORMAT
+## 127. EVIDENCE, STATUS AND FALSE POSITIVES
+
+Evidence tiers:
+
+```text
+A - reproduced: run history, reconciliation results, checkpoint state or a safe replay shows the behavior
+B - complete path: pipeline code, checkpoint logic, delivery semantics and sink writes fully show the failure
+C - strong static evidence: code shows the path, but orchestrator, broker or connector settings are not verified
+D - inference: depends on delivery guarantees, ordering or provider behavior not verified
+E - hardening: stronger observability or controls without a current failure path
+```
+
+Status:
+
+- **CONFIRMED** - tier A or B evidence shows the failure or exploit path.
+- **LIKELY** - tier C evidence.
+- **NOT VERIFIED** - depends on runtime state, settings or versions that could not be checked (tier D). Never present tier D as confirmed.
+- **NOT APPLICABLE** - the component or pattern is not used.
+- **CONTROLLED** - the risk exists but another control contains it.
+- **HARDENING** - improvement without a current failure path (P4).
+
+False-positive rules:
+
+- At-least-once delivery is not a defect when every sink write is idempotent or deduplicated.
+- Latency or eventual consistency within the stated freshness requirement is not a finding.
+- A full reload instead of incremental processing is a cost or duration concern, not a correctness defect, unless it causes gaps, duplicates or overload.
+- Row count differences explained by documented filters, deduplication or late-arriving data are not data loss; prove the difference per ID before reporting loss.
+- Tolerating schema drift by ignoring unknown fields is intentional unless it silently drops data that consumers need.
+
+Do not report a missing best practice as a confirmed defect unless there is a concrete failure, exploit, correctness, reliability, or operational path.
+
+## 128. FINDING FORMAT
 
 ```text
 ID:
 Severity:
+Status:
+Evidence tier:
 Pipeline:
 Source:
 Destination:
@@ -599,7 +632,7 @@ Fix:
 Replay test:
 ```
 
-## 128. SEVERITY
+## 129. SEVERITY
 
 P0:
 - silent global data corruption or loss lacking recovery mechanisms
@@ -621,16 +654,16 @@ P3:
 P4:
 - maturity and observability hardening suggestions
 
-## 129. OUTPUT
+## 130. OUTPUT
 
 `ETL_DATA_PIPELINE_RELIABILITY_AUDIT.md`
 
-## 130. PIPELINE MATRIX
+## 131. PIPELINE MATRIX
 
 | Pipeline | Source | Checkpoint | Idempotent | Ordering | DLQ | Replay |
 |---|---|---|---|---|---|---|
 
-## 131. SECOND PASS
+## 132. SECOND PASS
 
 For every pipeline simulate:
 
@@ -648,7 +681,7 @@ For every pipeline simulate:
 - tenant mapping mismatches
 - concurrent execution of old and new pipeline versions
 
-## 132. FINAL QUALITY GATE
+## 133. FINAL QUALITY GATE
 
 Verify:
 
@@ -675,20 +708,16 @@ Looking for issues such as:
 ```text
 poller:
 fetch rows WHERE updated_at > last_checkpoint
-
 ↓
 three source rows receive identical updated_at timestamp
-
 ↓
 page 1 contains first two
 ↓
 checkpoint is set to that timestamp
-
 ↓
 page 2 query uses >
 ↓
 third row with same timestamp is permanently skipped
-
 ↓
 pipeline reports success
 ↓
@@ -701,15 +730,12 @@ or:
 batch writes 1000 rows
 ↓
 destination commits successfully
-
 ↓
 process crashes before checkpoint update
-
 ↓
 same batch runs again
 ↓
 destination uses INSERT without unique/idempotency key
-
 ↓
 1000 duplicates created
 ```

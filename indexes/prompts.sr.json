@@ -630,7 +630,7 @@
       "subcategory": "DevOps, cloud i infrastruktura",
       "subcategoryId": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/042-docker-production-audit.md"
     },
     {
@@ -645,7 +645,7 @@
       "subcategory": "DevOps, cloud i infrastruktura",
       "subcategoryId": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/043-kubernetes-production-audit.md"
     },
     {
@@ -660,7 +660,7 @@
       "subcategory": "DevOps, cloud i infrastruktura",
       "subcategoryId": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/044-github-actions-forensic-audit.md"
     },
     {
@@ -675,7 +675,7 @@
       "subcategory": "DevOps, cloud i infrastruktura",
       "subcategoryId": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/045-cicd-pipeline-audit.md"
     },
     {
@@ -690,7 +690,7 @@
       "subcategory": "DevOps, cloud i infrastruktura",
       "subcategoryId": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/046-vercel-production-audit.md"
     },
     {
@@ -705,7 +705,7 @@
       "subcategory": "DevOps, cloud i infrastruktura",
       "subcategoryId": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/047-cloud-infrastructure-audit.md"
     },
     {
@@ -720,7 +720,7 @@
       "subcategory": "DevOps, cloud i infrastruktura",
       "subcategoryId": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/048-environment-configuration-audit.md"
     },
     {
@@ -735,7 +735,7 @@
       "subcategory": "DevOps, cloud i infrastruktura",
       "subcategoryId": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/049-zero-downtime-deployment-audit.md"
     },
     {
@@ -750,7 +750,7 @@
       "subcategory": "DevOps, cloud i infrastruktura",
       "subcategoryId": "devops-cloud-infrastructure",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/05-devops-cloud-infrastructure/050-backup-disaster-recovery-and-rollback-audit.md"
     },
     {
@@ -765,7 +765,7 @@
       "subcategory": "Baze podataka i data engineering",
       "subcategoryId": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/051-ultimate-database-audit.md"
     },
     {
@@ -780,7 +780,7 @@
       "subcategory": "Baze podataka i data engineering",
       "subcategoryId": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/052-database-schema-and-data-model-audit.md"
     },
     {
@@ -795,7 +795,7 @@
       "subcategory": "Baze podataka i data engineering",
       "subcategoryId": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/053-sql-performance-hunter.md"
     },
     {
@@ -810,7 +810,7 @@
       "subcategory": "Baze podataka i data engineering",
       "subcategoryId": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/054-database-index-audit.md"
     },
     {
@@ -825,7 +825,7 @@
       "subcategory": "Baze podataka i data engineering",
       "subcategoryId": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/055-database-migration-safety-audit.md"
     },
     {
@@ -840,7 +840,7 @@
       "subcategory": "Baze podataka i data engineering",
       "subcategoryId": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/056-data-integrity-audit.md"
     },
     {
@@ -855,7 +855,7 @@
       "subcategory": "Baze podataka i data engineering",
       "subcategoryId": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/057-transaction-and-concurrency-audit.md"
     },
     {
@@ -870,7 +870,7 @@
       "subcategory": "Baze podataka i data engineering",
       "subcategoryId": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/058-n-plus-1-and-expensive-query-hunter.md"
     },
     {
@@ -885,7 +885,7 @@
       "subcategory": "Baze podataka i data engineering",
       "subcategoryId": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/059-orm-forensic-audit.md"
     },
     {
@@ -900,7 +900,7 @@
       "subcategory": "Baze podataka i data engineering",
       "subcategoryId": "databases-data-engineering",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/sr/01-it-programiranje-tehnologija/06-databases-data-engineering/060-etl-and-data-pipeline-reliability-audit.md"
     }
   ]

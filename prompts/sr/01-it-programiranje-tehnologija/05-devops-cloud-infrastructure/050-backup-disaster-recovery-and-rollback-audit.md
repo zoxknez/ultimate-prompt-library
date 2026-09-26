@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
 subcategory_id: devops-cloud-infrastructure
 language: sr
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -654,6 +654,8 @@ Not automatically unacceptable.
 ```text
 ID:
 Severity:
+Status:
+Evidence tier:
 Asset:
 Authoritative:
 Failure scenario:
@@ -711,11 +713,34 @@ D - inferred
 E - maturity
 ```
 
-## 138. OUTPUT
+## 138. STATUS AND FALSE POSITIVES
+
+Status:
+
+- **CONFIRMED** - dokaz tier A ili B pokazuje putanju otkaza ili exploit-a.
+- **LIKELY** - dokaz tier C.
+- **NOT VERIFIED** - zavisi od runtime stanja, podešavanja ili verzija koji nisu mogli da se provere (tier D). Tier D nikada ne predstavljaj kao potvrđen.
+- **NOT APPLICABLE** - komponenta ili obrazac se ne koriste.
+- **CONTROLLED** - rizik postoji, ali ga druga kontrola ograničava.
+- **HARDENING** - poboljšanje bez trenutnog failure path-a (P4).
+
+Mogućnost oporavka je CONFIRMED samo uz vežbu restore-a ili dokaz iz incidenta (tier A); kompletna konfiguracija (tier B) dokazuje da putanja backup-a postoji, a ne da restore radi u okviru RPO/RTO.
+
+False-positive pravila:
+
+- Jedan region ili jedan provajder nisu defekt kada navedeni zahtevi za oporavak ne traže više.
+- Point-in-time recovery koji nedostaje je nalaz samo kada realan scenario oštećenja ili brisanja zahteva precizniju tačku restore-a od one koju obezbeđuju postojeći backup-i.
+- Izvedeno stanje ili stanje koje može ponovo da se izgradi (cache, search indeksi, kopije za analitiku) ne zahteva backup ako su putanja ponovne izgradnje i njeno trajanje prihvatljivi.
+- Zadržavanje kraće od compliance smernice je nalaz samo kada zahtev važi ili realno vreme otkrivanja prelazi to zadržavanje.
+- Nepovratna migracija nije rollback defekt ako postoji testirana roll-forward putanja.
+
+Nemoj da prijaviš nedostajuću best practice kao potvrđeni defekt ako ne postoji konkretna putanja otkaza, exploit-a, greške u ispravnosti, pouzdanosti ili rada.
+
+## 139. OUTPUT
 
 `BACKUP_DISASTER_RECOVERY_ROLLBACK_AUDIT.md`
 
-## 139. MATRICE
+## 140. MATRICE
 
 ### Critical State Matrix
 
@@ -737,7 +762,7 @@ E - maturity
 | Identity | Prod delete | Backup read | Backup delete | KMS |
 |---|---|---|---|---|
 
-## 140. SECOND PASS - RESTORE EXERCISES
+## 141. SECOND PASS - RESTORE EXERCISES
 
 Obavezno prođi:
 
@@ -789,7 +814,7 @@ Traffic return
 Reconciliation
 ```
 
-## 141. SECOND PASS - ACTUAL RESTORE
+## 142. SECOND PASS - ACTUAL RESTORE
 
 Ako postoji bezbedno izolovano test okruženje:
 
@@ -802,7 +827,7 @@ Ako postoji bezbedno izolovano test okruženje:
 
 Ne restore-uj preko production-a radi audita.
 
-## 142. SECOND PASS - CREDENTIAL COMPROMISE
+## 143. SECOND PASS - CREDENTIAL COMPROMISE
 
 Pretpostavi da je attacker dobio production admin credential.
 
@@ -810,13 +835,13 @@ Pitaj:
 
 > Može li istim credentialom obrisati backups, KMS key i audit logs?
 
-## 143. SECOND PASS - LONG-LIVED CORRUPTION
+## 144. SECOND PASS - LONG-LIVED CORRUPTION
 
 Pretpostavi da bug kvari podatke 30 dana pre nego što ga primetimo.
 
 Da li retention omogućava clean restore point?
 
-## 144. SECOND PASS - ROLLBACK REALITY
+## 145. SECOND PASS - ROLLBACK REALITY
 
 Deployment:
 
@@ -839,7 +864,7 @@ Da li v1 i dalje razume:
 - cache
 - config
 
-## 145. FINAL QUALITY GATE
+## 146. FINAL QUALITY GATE
 
 Pre finalnog odgovora proveri:
 
@@ -875,21 +900,17 @@ Tražim problem poput:
 ```text
 database backup:
 daily
-
 ↓
 backup encrypted customer-managed key-em
-
 ↓
 same cloud admin identity može:
 delete DB
 delete backups
 schedule KMS key deletion
-
 ↓
 admin credential compromised
 ↓
 production + backups + decryption capability izgubljeni
-
 ↓
 recovery impossible
 ```
@@ -900,12 +921,10 @@ ili:
 migration adds new enum values
 ↓
 v2 writes new values
-
 ↓
 deployment later fails
 ↓
 team rolls back to v1
-
 ↓
 v1 cannot deserialize new enum
 ↓
@@ -918,12 +937,10 @@ ili:
 DB is restored to yesterday
 ↓
 payment provider nije rollbackovan
-
 ↓
 provider has 500 successful payments
 ↓
 restored DB remembers only 450
-
 ↓
 system may retry/reconcile incorrectly
 ↓

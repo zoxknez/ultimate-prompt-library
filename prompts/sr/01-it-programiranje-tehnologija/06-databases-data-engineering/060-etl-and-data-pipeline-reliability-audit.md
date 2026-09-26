@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Baze podataka i data engineering
 subcategory_id: databases-data-engineering
 language: sr
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -519,11 +519,44 @@ Pipeline logs should not dump full records.
 
 Avoid leaking one tenant's data into another's diagnostics/export.
 
-## 127. FINDING FORMAT
+## 127. EVIDENCE, STATUS AND FALSE POSITIVES
+
+Evidence tier-ovi:
+
+```text
+A - reproduced: run history, reconciliation results, checkpoint state or a safe replay shows the behavior
+B - complete path: pipeline code, checkpoint logic, delivery semantics and sink writes fully show the failure
+C - strong static evidence: code shows the path, but orchestrator, broker or connector settings are not verified
+D - inference: depends on delivery guarantees, ordering or provider behavior not verified
+E - hardening: stronger observability or controls without a current failure path
+```
+
+Status:
+
+- **CONFIRMED** - dokaz tier A ili B pokazuje putanju otkaza ili exploit-a.
+- **LIKELY** - dokaz tier C.
+- **NOT VERIFIED** - zavisi od runtime stanja, podešavanja ili verzija koji nisu mogli da se provere (tier D). Tier D nikada ne predstavljaj kao potvrđen.
+- **NOT APPLICABLE** - komponenta ili obrazac se ne koriste.
+- **CONTROLLED** - rizik postoji, ali ga druga kontrola ograničava.
+- **HARDENING** - poboljšanje bez trenutnog failure path-a (P4).
+
+False-positive pravila:
+
+- At-least-once isporuka nije defekt kada je svaki upis u sink idempotentan ili deduplikovan.
+- Latencija ili eventual consistency u okviru navedenog zahteva za svežinu nisu nalaz.
+- Puno ponovno učitavanje umesto inkrementalne obrade je pitanje troška ili trajanja, a ne defekt ispravnosti, osim ako izaziva praznine, duplikate ili preopterećenje.
+- Razlike u broju redova objašnjene dokumentovanim filterima, deduplikacijom ili podacima koji kasne nisu gubitak podataka; dokaži razliku po ID-u pre nego što prijaviš gubitak.
+- Tolerisanje schema drift-a ignorisanjem nepoznatih polja je namerno osim ako tiho odbacuje podatke koji su potrošačima potrebni.
+
+Nemoj da prijaviš nedostajuću best practice kao potvrđeni defekt ako ne postoji konkretna putanja otkaza, exploit-a, greške u ispravnosti, pouzdanosti ili rada.
+
+## 128. FINDING FORMAT
 
 ```text
 ID:
 Severity:
+Status:
+Evidence tier:
 Pipeline:
 Source:
 Destination:
@@ -541,7 +574,7 @@ Fix:
 Replay test:
 ```
 
-## 128. SEVERITY
+## 129. SEVERITY
 
 P0:
 - silent global data corruption/loss with no recovery
@@ -563,16 +596,16 @@ P3:
 P4:
 - maturity/observability hardening
 
-## 129. OUTPUT
+## 130. OUTPUT
 
 `ETL_DATA_PIPELINE_RELIABILITY_AUDIT.md`
 
-## 130. PIPELINE MATRIX
+## 131. PIPELINE MATRIX
 
 | Pipeline | Source | Checkpoint | Idempotent | Ordering | DLQ | Replay |
 |---|---|---|---|---|---|---|
 
-## 131. SECOND PASS
+## 132. SECOND PASS
 
 Za svaki pipeline simuliraj:
 
@@ -590,7 +623,7 @@ Za svaki pipeline simuliraj:
 - tenant mapping mismatch
 - old and new pipeline versions overlap
 
-## 132. FINAL QUALITY GATE
+## 133. FINAL QUALITY GATE
 
 Proveri:
 
@@ -621,20 +654,16 @@ Tražim:
 ```text
 poller:
 fetch rows WHERE updated_at > last_checkpoint
-
 ↓
 three source rows receive identical updated_at timestamp
-
 ↓
 page 1 contains first two
 ↓
 checkpoint is set to that timestamp
-
 ↓
 page 2 query uses >
 ↓
 third row with same timestamp is permanently skipped
-
 ↓
 pipeline reports success
 ↓
@@ -647,15 +676,12 @@ ili:
 batch writes 1000 rows
 ↓
 destination commits successfully
-
 ↓
 process crashes before checkpoint update
-
 ↓
 same batch runs again
 ↓
 destination uses INSERT without unique/idempotency key
-
 ↓
 1000 duplicates created
 ```

@@ -34,6 +34,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- UPL-IT-042 to UPL-IT-060 (English and Serbian, version `1.0.0`/`1.0.1` -> `1.1.0`): methodological expansion of the focused DevOps and Database prompts. IDs, filenames, output filenames, catalog entries and status are unchanged, and every prompt stays self-contained.
+  - 045-049 and 052-059 were substantially expanded: objective and non-goals, context discovery, evidence tiers A-E, a status model (CONFIRMED, LIKELY, NOT VERIFIED, NOT APPLICABLE, CONTROLLED, HARDENING), explicit false-positive rules, domain-specific deep sections, relevant matrices, a finding format with the minimum fields, domain-specific P0-P4 severity, an adversarial second pass, a final quality gate and additional failure chains.
+  - 042, 043, 044, 050, 051 and 060 gained a compact section with the missing status model and false-positive rules (and the evidence tier scale or full P0-P4 range where it was missing), plus Status and Evidence tier fields in their finding formats.
+  - Provider limits, prices and version-specific defaults are left to verification instead of being hard-coded; the cross-reference "Prompt 38" in UPL-IT-045 was replaced by self-contained text; UPL-IT-057 (Serbian) "Same." became "Isto."; blank lines inside tables and code blocks of the revised files were removed.
+- `npm run audit:prompts` also recognizes "not verified" as the unconfirmed side of the confirmed-vs-theoretical signal.
+- `docs/prompt-quality-audit.md` and `docs/translation-parity-report.md` describe the state after the revision.
 - `npm run check` was renamed to `npm run validate:generated`. `npm run validate` remains the single command that runs every check.
 - Stale generated files are reported with the exact command that regenerates them.
 - The README no longer shows a CI status badge, because cloud Actions are optional and not relied upon. The workflow now runs `npm run validate` and pins `actions/checkout` and `actions/setup-node` to full commit SHAs (v4.4.0).

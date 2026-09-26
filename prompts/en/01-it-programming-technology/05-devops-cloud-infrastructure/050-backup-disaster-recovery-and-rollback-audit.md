@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: DevOps, Cloud & Infrastructure
 subcategory_id: devops-cloud-infrastructure
 language: en
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -658,6 +658,8 @@ Not inherently unacceptable for all architectures.
 ```text
 ID:
 Severity:
+Status:
+Evidence tier:
 Asset:
 Authoritative:
 Failure scenario:
@@ -715,11 +717,34 @@ D - inferred
 E - maturity
 ```
 
-## 138. OUTPUT
+## 138. STATUS AND FALSE POSITIVES
+
+Status:
+
+- **CONFIRMED** - tier A or B evidence shows the failure or exploit path.
+- **LIKELY** - tier C evidence.
+- **NOT VERIFIED** - depends on runtime state, settings or versions that could not be checked (tier D). Never present tier D as confirmed.
+- **NOT APPLICABLE** - the component or pattern is not used.
+- **CONTROLLED** - the risk exists but another control contains it.
+- **HARDENING** - improvement without a current failure path (P4).
+
+Recoverability is CONFIRMED only by a restore exercise or incident evidence (tier A); a complete configuration (tier B) proves that the backup path exists, not that the restore works within RPO/RTO.
+
+False-positive rules:
+
+- A single region or single provider is not a defect when the stated recovery requirements do not demand more.
+- Missing point-in-time recovery is a finding only when a realistic corruption or deletion scenario needs a finer restore point than existing backups provide.
+- Derived or rebuildable state (caches, search indexes, analytics copies) does not need backups if the rebuild path and its duration are acceptable.
+- Retention shorter than a compliance guideline is a finding only when a requirement applies or realistic detection time exceeds it.
+- An irreversible migration is not a rollback defect if a tested roll-forward path exists.
+
+Do not report a missing best practice as a confirmed defect unless there is a concrete failure, exploit, correctness, reliability, or operational path.
+
+## 139. OUTPUT
 
 `BACKUP_DISASTER_RECOVERY_ROLLBACK_AUDIT.md`
 
-## 139. MATRICES
+## 140. MATRICES
 
 ### Critical State Matrix
 
@@ -741,7 +766,7 @@ E - maturity
 | Identity | Prod delete | Backup read | Backup delete | KMS |
 |---|---|---|---|---|
 
-## 140. SECOND PASS - RESTORE EXERCISES
+## 141. SECOND PASS - RESTORE EXERCISES
 
 Mandatory review:
 
@@ -793,7 +818,7 @@ Traffic return
 Reconciliation
 ```
 
-## 141. SECOND PASS - ACTUAL RESTORE
+## 142. SECOND PASS - ACTUAL RESTORE
 
 If a safe, isolated staging/test environment is available:
 
@@ -806,7 +831,7 @@ If a safe, isolated staging/test environment is available:
 
 Never restore over production purely for audit validation.
 
-## 142. SECOND PASS - CREDENTIAL COMPROMISE
+## 143. SECOND PASS - CREDENTIAL COMPROMISE
 
 Assume an attacker gains root/admin credentials in production.
 
@@ -814,13 +839,13 @@ Ask:
 
 > Can the attacker delete backups, destroy KMS keys, and purge audit logs using those same credentials?
 
-## 143. SECOND PASS - LONG-LIVED CORRUPTION
+## 144. SECOND PASS - LONG-LIVED CORRUPTION
 
 Assume a bug silently corrupts data for 30 days before detection.
 
 Does existing retention allow recovery to an uncorrupted snapshot?
 
-## 144. SECOND PASS - ROLLBACK REALITY
+## 145. SECOND PASS - ROLLBACK REALITY
 
 Deployment sequence:
 
@@ -843,7 +868,7 @@ Does v1 still understand:
 - cache
 - config
 
-## 145. FINAL QUALITY GATE
+## 146. FINAL QUALITY GATE
 
 Prior to final submission, verify:
 
@@ -875,21 +900,17 @@ Looking for issues such as:
 ```text
 database backup:
 daily
-
 ↓
 backup encrypted with customer-managed key
-
 ↓
 same cloud admin identity can:
 delete DB
 delete backups
 schedule KMS key deletion
-
 ↓
 admin credential compromised
 ↓
 production + backups + decryption capability lost
-
 ↓
 recovery impossible
 ```
@@ -900,12 +921,10 @@ or:
 migration adds new enum values
 ↓
 v2 writes new values
-
 ↓
 deployment later fails
 ↓
 team rolls back to v1
-
 ↓
 v1 cannot deserialize new enum
 ↓
@@ -918,12 +937,10 @@ or:
 DB is restored to yesterday
 ↓
 payment provider was not rolled back
-
 ↓
 provider has 500 successful payments
 ↓
 restored DB remembers only 450
-
 ↓
 system may retry/reconcile incorrectly
 ↓

@@ -20,7 +20,7 @@ const SIGNALS = {
   scope: (b) => /\bscope\b|non-goals?|out of scope|do not (report|invent|fabricate|flag)|\bobim\w*|ne prijavljuj|ne izmišljaj/i.test(b),
   evidence: (b) => (b.match(/\bevidence\b|\bdokaz/gi) ?? []).length >= 3,
   confirmedVsTheoretical: (b) =>
-    /\bconfirmed\b|potvrđen/i.test(b) && /theoretical|hypothes|suspected|teorijsk|hipotez|sumnj/i.test(b),
+    /\bconfirmed\b|potvrđen/i.test(b) && /theoretical|hypothes|suspected|not verified|teorijsk|hipotez|sumnj/i.test(b),
   falsePositive: (b) => /false[\s-]positive|lažno pozitiv|do not (fabricate|invent)|ne izmišljaj|nemoj izmišlja/i.test(b),
   severity: (b) => /\bP0\b|\bseverity\b|ozbiljnost/i.test(b),
   outputFormat: (b, m) => Boolean(m.sections.output || m.sections.findingFormat) || /\b[A-Z][A-Z0-9_]{3,}\.md\b/.test(b),
