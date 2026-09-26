@@ -78,7 +78,7 @@ const STRINGS = {
     languages: 'jezika',
     categoriesWithContent: 'oblasti sa objavljenim promptovima',
     of: 'od',
-    subcategoriesComplete: 'podkategorija završeno',
+    subcategoriesComplete: 'završeno',
     collectionProgress: 'napredak kolekcije',
     id: 'ID',
     title: 'Naziv',
@@ -244,60 +244,33 @@ export function heroBadges({ lang, stats, collections }) {
 }
 
 /** Data-driven README statistics. No image regeneration is required when counts change. */
-export function statsPicture({ lang, stats, collections = [] }) {
-  const s = t(lang);
-  const it = collections.find((c) => c.category.id === 'UPL-IT');
-  const biz = collections.find((c) => c.category.id === 'UPL-BIZ');
+export function statsPicture({ lang, stats }) {
   const label = lang === 'sr'
     ? {
         unique: 'Jedinstvenih promptova',
         localized: 'Lokalizovanih fajlova',
         languages: 'Jezika',
-        stable: 'Stabilnih promptova',
-        collections: 'Kolekcije',
-        progress: 'Napredak',
-        complete: 'Završeno',
+        active: 'Aktivnih oblasti',
       }
     : {
         unique: 'Unique prompts',
         localized: 'Localized files',
         languages: 'Languages',
-        stable: 'Stable prompts',
-        collections: 'Collections',
-        progress: 'Progress',
-        complete: 'Complete',
+        active: 'Active categories',
       };
 
   const cards = [
-    [stats.uniquePrompts, label.unique, lang === 'sr' ? 'Trajni, jezički nezavisni ID-evi' : 'Stable, language-independent IDs'],
-    [stats.localizedPromptFiles, label.localized, lang === 'sr' ? 'Jedan fajl po promptu i jeziku' : 'One file per prompt and language'],
-    [stats.languages, label.languages, 'English · Srpski'],
-    [stats.byStatus?.stable ?? stats.uniquePrompts, label.stable, lang === 'sr' ? 'Pregledano i verzionisano' : 'Reviewed and versioned'],
+    [stats.uniquePrompts, label.unique],
+    [stats.localizedPromptFiles, label.localized],
+    [stats.languages, label.languages],
+    [`${stats.categoriesWithContent} / ${stats.categories}`, label.active],
   ];
 
-  const metrics = `<table>
-<tr>
-${cards.map(([value, title, note]) => `<td align="center" width="25%"><h2>${value}</h2><b>${title}</b><br><sub>${note}</sub></td>`).join('\n')}
-</tr>
-</table>`;
+  const rows = [cards.slice(0, 2), cards.slice(2)].map((row) =>
+    `<tr>\n${row.map(([value, title]) => `<td valign="top" width="50%"><h2>${value}</h2><sub>${title}</sub></td>`).join('\n')}\n</tr>`,
+  );
 
-  const rows = [it, biz].filter(Boolean).map((collection) => {
-    const name = collection.category.names[lang];
-    const pct = collection.planned ? Math.round((collection.available / collection.planned) * 100) : 0;
-    return `| ${name} | ${collection.available} / ${collection.planned} | ${pct}% | ${collection.available === collection.planned ? label.complete : s.inProgress} |`;
-  });
-
-  const progress = rows.length
-    ? `### ${label.collections}
-
-| ${lang === 'sr' ? 'Kolekcija' : 'Collection'} | ${label.progress} | % | ${s.statusHeader} |
-|---|---:|---:|---|
-${rows.join('\n')}`
-    : '';
-
-  return `${metrics}
-
-${progress}`;
+  return `<table>\n${rows.join('\n')}\n</table>`;
 }
 
 function collectionStatus(s, available, planned) {
@@ -307,22 +280,21 @@ function collectionStatus(s, available, planned) {
   return `${s.status.planned} · 0 / ${planned}`;
 }
 
-/** Five-column grid of all categories. */
+/** Responsive two-column directory of all categories. */
 export function categoryGrid({ lang, fromFile, collections }) {
   const s = t(lang);
   const cells = collections.map((c) => {
     const href = link(fromFile, `${PROMPTS_DIR}/${lang}/${c.category.dirs[lang]}/README.md`);
     return [
-      '<td align="center" valign="top" width="20%">',
-      `<sub>${pad(c.category.order, 2)}</sub><br>`,
-      `<a href="${href}"><b>${escapeHtml(c.category.names[lang])}</b></a><br>`,
-      `<sub><code>${c.category.id}</code></sub><br>`,
+      '<td valign="top" width="50%">',
+      `<sub>${pad(c.category.order, 2)} · <code>${c.category.id}</code></sub><br>`,
+      `<a href="${href}"><strong>${escapeHtml(c.category.names[lang])}</strong></a><br>`,
       `<sub>${collectionStatus(s, c.available, c.planned)}</sub>`,
       '</td>',
     ].join('\n');
   });
   const rows = [];
-  for (let i = 0; i < cells.length; i += 5) rows.push(`<tr>\n${cells.slice(i, i + 5).join('\n')}\n</tr>`);
+  for (let i = 0; i < cells.length; i += 2) rows.push(`<tr>\n${cells.slice(i, i + 2).join('\n')}\n</tr>`);
   return `<table>\n${rows.join('\n')}\n</table>`;
 }
 
@@ -331,25 +303,30 @@ export function subcategoryStatus({ lang, fromFile, collections }) {
   const s = t(lang);
   return collections
     .filter((c) => c.available > 0 && c.subcategories.length)
-    .map((c) =>
-      [
-        `### ${c.category.names[lang]}`,
+    .map((c) => {
+      const rows = c.subcategories.map((g) => {
+        const href = link(fromFile, `${PROMPTS_DIR}/${lang}/${c.category.dirs[lang]}/${subcategoryDir(g.sub)}/README.md`);
+        const status = !g.planned
+          ? s.status.planned
+          : g.available === g.planned
+            ? s.complete
+            : g.available
+              ? s.inProgress
+              : s.status.planned;
+        return `| ${pad(g.sub.order, 2)} | [${escapeCell(g.sub.names[lang])}](${href}) · ${g.available} / ${g.planned} · ${status} |`;
+      });
+      const complete = c.subcategories.filter((g) => g.planned > 0 && g.available === g.planned).length;
+      return [
+        '<details>',
+        `<summary><strong>${escapeHtml(c.category.names[lang])}</strong> · ${complete} / ${c.subcategories.length} ${s.subcategoriesComplete}</summary>`,
         '',
-        `| # | ${s.subcategory} | ${s.available2} | ${s.statusHeader} |`,
-        '|:---:|---|:---:|---|',
-        ...c.subcategories.map((g) => {
-          const href = link(fromFile, `${PROMPTS_DIR}/${lang}/${c.category.dirs[lang]}/${subcategoryDir(g.sub)}/README.md`);
-          const status = !g.planned
-            ? s.status.planned
-            : g.available === g.planned
-              ? s.complete
-              : g.available
-                ? s.inProgress
-                : s.status.planned;
-          return `| ${pad(g.sub.order, 2)} | [${escapeCell(g.sub.names[lang])}](${href}) | ${g.available} / ${g.planned} | ${status} |`;
-        }),
-      ].join('\n'),
-    )
+        `| # | ${s.subcategory} |`,
+        '|:---:|---|',
+        ...rows,
+        '',
+        '</details>',
+      ].join('\n');
+    })
     .join('\n\n');
 }
 
