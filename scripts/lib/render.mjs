@@ -262,7 +262,7 @@ export function statsPicture({ lang, stats }) {
     `<tr>\n${row.map(([value, title, note]) => `<td valign="top" width="50%"><h2>${value}</h2><strong>${title}</strong><br><sub>${note}</sub></td>`).join('\n')}\n</tr>`,
   );
 
-  return `<table>\n${rows.join('\n')}\n</table>`;
+  return `<table width="100%">\n${rows.join('\n')}\n</table>`;
 }
 
 function collectionStatus(s, available, planned) {
