@@ -150,7 +150,7 @@
       "subcategory": "Web Development",
       "subcategoryId": "web-development",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/en/01-it-programming-technology/01-web-development/010-browser-compatibility-and-production-bug-hunter.md"
     },
     {
@@ -180,7 +180,7 @@
       "subcategory": "Mobile Development",
       "subcategoryId": "mobile-development",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/en/01-it-programming-technology/02-mobile-development/012-jetpack-compose-deep-audit.md"
     },
     {
@@ -345,7 +345,7 @@
       "subcategory": "Backend & API",
       "subcategoryId": "backend-api",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "path": "prompts/en/01-it-programming-technology/03-backend-api/023-api-contract-consistency-audit.md"
     },
     {

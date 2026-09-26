@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Web Development
 subcategory_id: web-development
 language: en
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -2758,7 +2758,22 @@ Only where the application architecture depends on it.
 
 ---
 
-# 231. FINAL QUALITY GATE
+# 231. SECOND PASS
+
+After the environment passes, re-walk every finding as its own skeptic:
+
+- reproduce it in the production build on a target browser or runtime, or state exactly why it could not be reproduced
+- check whether feature detection, a polyfill, the transpilation target, a CSS fallback, a proxy or a platform setting already neutralizes it
+- confirm that the affected browser, device or runtime is in the supported target matrix
+- look for hidden paths: the same API or CSS feature used elsewhere, service workers, cached chunks from an older deploy, third-party scripts, embedded webviews
+- check timing and scale: long-lived tabs, slow or flaky networks, a deploy during an open session, several tabs of the same user
+- check that the proposed fix does not add unnecessary polyfills, bundle weight or legacy burden
+
+A finding that cannot be tied to a supported environment and a concrete execution path is downgraded to THEORETICAL or NOT VERIFIED.
+
+---
+
+# 232. FINAL QUALITY GATE
 
 Before returning your final response, verify:
 

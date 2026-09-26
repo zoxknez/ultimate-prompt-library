@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Backend i API
 subcategory_id: backend-api
 language: sr
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -2362,6 +2362,7 @@ ID:
 Severity:
 Category:
 Confidence:
+Evidence tier:
 Status:
 
 Endpoint/Event:
@@ -2465,7 +2466,30 @@ zavisi od external client-a ili undocumented consumer behavior-a.
 
 ---
 
-# 224. STATUS
+# 224. EVIDENCE MODEL
+
+Svakom finding-u dodeli evidence tier:
+
+```text
+A - reproduced: a contract test, a real request/response or a client run shows the mismatch
+B - complete static path: runtime handler, validator, serializer and the client parser or type are all read and conflict
+C - strong static evidence: one side is clear, the other side (client, version, role projection) is partly unverified
+D - inference: depends on external or undocumented consumers, or on runtime configuration not seen
+E - harmonization: naming, style or documentation improvement without a runtime failure
+```
+
+Tier-ovi se povezuju sa ostalim poljima:
+
+- CONFIRMED zahteva tier A ili B.
+- LIKELY je tier C.
+- THEORETICAL i NOT VERIFIED su tier D.
+- Tier E findings su P4 i nikada se ne prijavljuju kao breaking.
+
+Sama dokumentacija ili OpenAPI su najviše tier C; moraju se uporediti sa runtime handler-om i serializer-om pre nego što finding postane CONFIRMED.
+
+---
+
+# 225. STATUS
 
 Koristi:
 
@@ -2478,7 +2502,7 @@ NOT VERIFIED
 
 ---
 
-# 225. COMPATIBILITY CLASS
+# 226. COMPATIBILITY CLASS
 
 Za svaki contract change označi:
 
@@ -2492,7 +2516,7 @@ NOT VERIFIED
 
 ---
 
-# 226. AFFECTED CLIENT
+# 227. AFFECTED CLIENT
 
 Koristi:
 
@@ -2509,7 +2533,7 @@ UNKNOWN
 
 ---
 
-# 227. FALSE-POSITIVE PREVENCIJA
+# 228. FALSE-POSITIVE PREVENCIJA
 
 Pre P1/P2 finding-a proveri:
 
@@ -2528,7 +2552,7 @@ Ne zaključuj samo iz docs.
 
 ---
 
-# 228. NE FORSIRAJ IDENTIČNE DTO-E
+# 229. NE FORSIRAJ IDENTIČNE DTO-E
 
 Summary i Detail resource mogu legitimno imati različit shape.
 
@@ -2536,7 +2560,7 @@ Finding samo ako contract identitet/typing to čini nejasnim.
 
 ---
 
-# 229. NE FORSIRAJ JEDAN ERROR MESSAGE
+# 230. NE FORSIRAJ JEDAN ERROR MESSAGE
 
 Human-readable tekst može varirati.
 
@@ -2544,19 +2568,19 @@ Machine-readable semantics treba da budu stabilne gde client logic zavisi od nji
 
 ---
 
-# 230. NE FORSIRAJ ENVELOPE
+# 231. NE FORSIRAJ ENVELOPE
 
 Direct response može biti odličan contract.
 
 ---
 
-# 231. NE FORSIRAJ VERSIONING
+# 232. NE FORSIRAJ VERSIONING
 
 Ako compatibility requirement ne postoji, versioning može dodati complexity bez koristi.
 
 ---
 
-# 232. NE PREIMENUJ POLJA SAMO RADI ESTETIKE
+# 233. NE PREIMENUJ POLJA SAMO RADI ESTETIKE
 
 Rename public field-a je breaking change.
 
@@ -2564,7 +2588,7 @@ Mala naming nedoslednost može biti bolja od razbijanja postojećih clients.
 
 ---
 
-# 233. BACKWARD COMPATIBILITY IMA PREDNOST NAD LEPOTOM
+# 234. BACKWARD COMPATIBILITY IMA PREDNOST NAD LEPOTOM
 
 Ako postojeća "ružna" schema ima clients u production-u:
 
@@ -2572,7 +2596,7 @@ ne prepravljaj je bez migration/versioning strategije.
 
 ---
 
-# 234. NE MENJAJ KOD
+# 235. NE MENJAJ KOD
 
 Tokom audita:
 
@@ -2587,7 +2611,7 @@ Prvo završi audit.
 
 ---
 
-# 235. OUTPUT - API_CONTRACT_CONSISTENCY_AUDIT.md
+# 236. OUTPUT - API_CONTRACT_CONSISTENCY_AUDIT.md
 
 Finalni izveštaj strukturiraj:
 
@@ -2668,7 +2692,7 @@ Finalni izveštaj strukturiraj:
 
 ---
 
-# 236. FIELD CONSISTENCY MATRIX
+# 237. FIELD CONSISTENCY MATRIX
 
 Za shared concepts:
 
@@ -2677,42 +2701,42 @@ Za shared concepts:
 
 ---
 
-# 237. NULLABILITY MATRIX
+# 238. NULLABILITY MATRIX
 
 | Field | Runtime | OpenAPI | Web | Mobile | Risk |
 |---|---|---|---|---|---|
 
 ---
 
-# 238. ENUM MATRIX
+# 239. ENUM MATRIX
 
 | Enum | Backend | Web | Mobile | Unknown-safe | Risk |
 |---|---|---|---|---|---|
 
 ---
 
-# 239. ERROR MATRIX
+# 240. ERROR MATRIX
 
 | Logical error | HTTP | Error code | Shape | Endpoints | Consistent |
 |---|---|---|---|---|---|
 
 ---
 
-# 240. PAGINATION MATRIX
+# 241. PAGINATION MATRIX
 
 | Endpoint | Model | Index base | Max | Ordering | Consistent |
 |---|---|---|---|---|---|
 
 ---
 
-# 241. VERSION MATRIX
+# 242. VERSION MATRIX
 
 | Contract change | Old version | New version | Client impact | Classification |
 |---|---|---|---|---|
 
 ---
 
-# 242. SECOND PASS - SAME CONCEPT SEARCH
+# 243. SECOND PASS - SAME CONCEPT SEARCH
 
 Nakon prvog audita izaberi domain concepts:
 
@@ -2732,7 +2756,7 @@ Pitaj:
 
 ---
 
-# 243. SECOND PASS - NULL ATTACK
+# 244. SECOND PASS - NULL ATTACK
 
 Za svaki optional/nullable field probaj:
 
@@ -2749,7 +2773,7 @@ Proveri backend i clients.
 
 ---
 
-# 244. SECOND PASS - UNKNOWN ENUM
+# 245. SECOND PASS - UNKNOWN ENUM
 
 Backend šalje novu enum vrednost koju released mobile client ne poznaje.
 
@@ -2759,13 +2783,13 @@ Pitaj:
 
 ---
 
-# 245. SECOND PASS - OLD CLIENT
+# 246. SECOND PASS - OLD CLIENT
 
 Za svaki noviji contract change simuliraj prethodnu podržanu client verziju.
 
 ---
 
-# 246. SECOND PASS - TYPE EDGE
+# 247. SECOND PASS - TYPE EDGE
 
 Probaj:
 
@@ -2779,7 +2803,7 @@ prema domain-u.
 
 ---
 
-# 247. SECOND PASS - DATE EDGE
+# 248. SECOND PASS - DATE EDGE
 
 Probaj:
 
@@ -2795,7 +2819,7 @@ gde je relevantno.
 
 ---
 
-# 248. SECOND PASS - PAGINATION
+# 249. SECOND PASS - PAGINATION
 
 Seeduj više item-a sa istom sort vrednošću.
 
@@ -2803,7 +2827,7 @@ Proveri stable ordering.
 
 ---
 
-# 249. SECOND PASS - ERROR DRIFT
+# 250. SECOND PASS - ERROR DRIFT
 
 Isti logical failure izazovi kroz više endpoint-a.
 
@@ -2816,13 +2840,13 @@ Uporedi:
 
 ---
 
-# 250. SECOND PASS - OPENAPI
+# 251. SECOND PASS - OPENAPI
 
 Automatski ili ručno uporedi svaki critical runtime response sa deklarisanom schema-om.
 
 ---
 
-# 251. SECOND PASS - ROLE VARIANTS
+# 252. SECOND PASS - ROLE VARIANTS
 
 Pozovi isti endpoint kao:
 
@@ -2837,7 +2861,7 @@ Proveri da response shape ostaje unutar dokumentovanog contract-a.
 
 ---
 
-# 252. SECOND PASS - FEATURE FLAGS
+# 253. SECOND PASS - FEATURE FLAGS
 
 Ako flag utiče na response:
 
@@ -2845,7 +2869,7 @@ testiraj oba stanja.
 
 ---
 
-# 253. SECOND PASS - BULK
+# 254. SECOND PASS - BULK
 
 Mixed success/failure payload.
 
@@ -2853,7 +2877,7 @@ Pitaj da li client može deterministički upariti result sa inputom.
 
 ---
 
-# 254. SECOND PASS - WEBHOOK
+# 255. SECOND PASS - WEBHOOK
 
 Uporedi webhook/event schema sa odgovarajućim REST resource-om.
 
@@ -2861,13 +2885,13 @@ Ne moraju biti isti, ali semantics moraju biti jasne.
 
 ---
 
-# 255. SECOND PASS - DOC EXAMPLES
+# 256. SECOND PASS - DOC EXAMPLES
 
 Svaki example payload proveri prema actual runtime schema-i.
 
 ---
 
-# 256. FINAL QUALITY GATE
+# 257. FINAL QUALITY GATE
 
 Pre finalnog odgovora proveri:
 

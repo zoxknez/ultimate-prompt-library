@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Backend & API
 subcategory_id: backend-api
 language: en
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -2360,6 +2360,7 @@ ID:
 Severity:
 Category:
 Confidence:
+Evidence tier:
 Status:
 
 Endpoint/Event:
@@ -2463,7 +2464,30 @@ depends on external clients or undocumented consumer behavior.
 
 ---
 
-# 224. STATUS
+# 224. EVIDENCE MODEL
+
+Assign every finding an evidence tier:
+
+```text
+A - reproduced: a contract test, a real request/response or a client run shows the mismatch
+B - complete static path: runtime handler, validator, serializer and the client parser or type are all read and conflict
+C - strong static evidence: one side is clear, the other side (client, version, role projection) is partly unverified
+D - inference: depends on external or undocumented consumers, or on runtime configuration not seen
+E - harmonization: naming, style or documentation improvement without a runtime failure
+```
+
+Tiers map to the other fields:
+
+- CONFIRMED requires tier A or B.
+- LIKELY is tier C.
+- THEORETICAL and NOT VERIFIED are tier D.
+- Tier E findings are P4 and are never reported as breaking.
+
+Documentation or OpenAPI alone is at most tier C; it must be compared with the runtime handler and serializer before a finding is CONFIRMED.
+
+---
+
+# 225. STATUS
 
 Use:
 
@@ -2476,7 +2500,7 @@ NOT VERIFIED
 
 ---
 
-# 225. COMPATIBILITY CLASS
+# 226. COMPATIBILITY CLASS
 
 For each contract change classify:
 
@@ -2490,7 +2514,7 @@ NOT VERIFIED
 
 ---
 
-# 226. AFFECTED CLIENT
+# 227. AFFECTED CLIENT
 
 Use:
 
@@ -2507,7 +2531,7 @@ UNKNOWN
 
 ---
 
-# 227. FALSE-POSITIVE PREVENTION
+# 228. FALSE-POSITIVE PREVENTION
 
 Before any P1/P2 finding, verify:
 
@@ -2526,7 +2550,7 @@ Do not conclude solely from documentation.
 
 ---
 
-# 228. DO NOT ENFORCE IDENTICAL DTOS
+# 229. DO NOT ENFORCE IDENTICAL DTOS
 
 Summary and Detail resources can legitimately exhibit different shapes.
 
@@ -2534,7 +2558,7 @@ Report a finding only if contract identity or typing becomes ambiguous.
 
 ---
 
-# 229. DO NOT ENFORCE A SINGLE ERROR MESSAGE
+# 230. DO NOT ENFORCE A SINGLE ERROR MESSAGE
 
 Human-readable text may vary.
 
@@ -2542,19 +2566,19 @@ Machine-readable semantics must be stable where client logic depends on them.
 
 ---
 
-# 230. DO NOT ENFORCE ENVELOPE
+# 231. DO NOT ENFORCE ENVELOPE
 
 Direct response representations can form excellent contracts.
 
 ---
 
-# 231. DO NOT ENFORCE VERSIONING
+# 232. DO NOT ENFORCE VERSIONING
 
 If compatibility requirements do not exist, versioning adds complexity without benefit.
 
 ---
 
-# 232. DO NOT RENAME FIELDS PURELY FOR AESTHETICS
+# 233. DO NOT RENAME FIELDS PURELY FOR AESTHETICS
 
 Renaming a public field is a breaking change.
 
@@ -2562,7 +2586,7 @@ Minor naming inconsistencies are preferable to breaking production clients.
 
 ---
 
-# 233. BACKWARD COMPATIBILITY TAKES PRECEDENCE OVER ELEGANCE
+# 234. BACKWARD COMPATIBILITY TAKES PRECEDENCE OVER ELEGANCE
 
 If an existing "imperfect" schema serves clients in production:
 
@@ -2570,7 +2594,7 @@ do not refactor it without a comprehensive migration and versioning strategy.
 
 ---
 
-# 234. DO NOT MODIFY CODE
+# 235. DO NOT MODIFY CODE
 
 During audit:
 
@@ -2585,7 +2609,7 @@ Finish the audit first.
 
 ---
 
-# 235. OUTPUT - API_CONTRACT_CONSISTENCY_AUDIT.md
+# 236. OUTPUT - API_CONTRACT_CONSISTENCY_AUDIT.md
 
 Structure the final report:
 
@@ -2666,7 +2690,7 @@ Structure the final report:
 
 ---
 
-# 236. FIELD CONSISTENCY MATRIX
+# 237. FIELD CONSISTENCY MATRIX
 
 For shared concepts:
 
@@ -2675,42 +2699,42 @@ For shared concepts:
 
 ---
 
-# 237. NULLABILITY MATRIX
+# 238. NULLABILITY MATRIX
 
 | Field | Runtime | OpenAPI | Web | Mobile | Risk |
 |---|---|---|---|---|---|
 
 ---
 
-# 238. ENUM MATRIX
+# 239. ENUM MATRIX
 
 | Enum | Backend | Web | Mobile | Unknown-safe | Risk |
 |---|---|---|---|---|---|
 
 ---
 
-# 239. ERROR MATRIX
+# 240. ERROR MATRIX
 
 | Logical error | HTTP | Error code | Shape | Endpoints | Consistent |
 |---|---|---|---|---|---|
 
 ---
 
-# 240. PAGINATION MATRIX
+# 241. PAGINATION MATRIX
 
 | Endpoint | Model | Index base | Max | Ordering | Consistent |
 |---|---|---|---|---|---|
 
 ---
 
-# 241. VERSION MATRIX
+# 242. VERSION MATRIX
 
 | Contract change | Old version | New version | Client impact | Classification |
 |---|---|---|---|---|
 
 ---
 
-# 242. SECOND PASS - SAME CONCEPT SEARCH
+# 243. SECOND PASS - SAME CONCEPT SEARCH
 
 After the initial audit, select core domain concepts:
 
@@ -2730,7 +2754,7 @@ Ask:
 
 ---
 
-# 243. SECOND PASS - NULL ATTACK
+# 244. SECOND PASS - NULL ATTACK
 
 For each optional or nullable field test:
 
@@ -2747,7 +2771,7 @@ Verify both backend and clients.
 
 ---
 
-# 244. SECOND PASS - UNKNOWN ENUM
+# 245. SECOND PASS - UNKNOWN ENUM
 
 Backend emits a new enum value unknown to the released mobile client.
 
@@ -2757,13 +2781,13 @@ Ask:
 
 ---
 
-# 245. SECOND PASS - OLD CLIENT
+# 246. SECOND PASS - OLD CLIENT
 
 For each newer contract change simulate the previously supported client version.
 
 ---
 
-# 246. SECOND PASS - TYPE EDGE
+# 247. SECOND PASS - TYPE EDGE
 
 Test:
 
@@ -2777,7 +2801,7 @@ according to domain.
 
 ---
 
-# 247. SECOND PASS - DATE EDGE
+# 248. SECOND PASS - DATE EDGE
 
 Test:
 
@@ -2793,7 +2817,7 @@ where relevant.
 
 ---
 
-# 248. SECOND PASS - PAGINATION
+# 249. SECOND PASS - PAGINATION
 
 Seed multiple items with identical sort values.
 
@@ -2801,7 +2825,7 @@ Verify deterministic, stable ordering.
 
 ---
 
-# 249. SECOND PASS - ERROR DRIFT
+# 250. SECOND PASS - ERROR DRIFT
 
 Trigger the same logical failure across multiple endpoints.
 
@@ -2814,13 +2838,13 @@ Compare:
 
 ---
 
-# 250. SECOND PASS - OPENAPI
+# 251. SECOND PASS - OPENAPI
 
 Automatically or manually compare each critical runtime response with the declared schema.
 
 ---
 
-# 251. SECOND PASS - ROLE VARIANTS
+# 252. SECOND PASS - ROLE VARIANTS
 
 Invoke the same endpoint as:
 
@@ -2835,7 +2859,7 @@ Verify response shape remains within the documented contract.
 
 ---
 
-# 252. SECOND PASS - FEATURE FLAGS
+# 253. SECOND PASS - FEATURE FLAGS
 
 If flags influence responses:
 
@@ -2843,7 +2867,7 @@ test both enabled and disabled states.
 
 ---
 
-# 253. SECOND PASS - BULK
+# 254. SECOND PASS - BULK
 
 Mixed success and failure payload.
 
@@ -2851,7 +2875,7 @@ Ask whether clients can deterministically correlate results with inputs.
 
 ---
 
-# 254. SECOND PASS - WEBHOOK
+# 255. SECOND PASS - WEBHOOK
 
 Compare webhook and event schemas with corresponding REST resources.
 
@@ -2859,13 +2883,13 @@ They do not need to be identical, but semantics must align clearly.
 
 ---
 
-# 255. SECOND PASS - DOC EXAMPLES
+# 256. SECOND PASS - DOC EXAMPLES
 
 Validate each example payload against the actual runtime schema.
 
 ---
 
-# 256. FINAL QUALITY GATE
+# 257. FINAL QUALITY GATE
 
 Before final response verify:
 

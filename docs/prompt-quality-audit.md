@@ -44,18 +44,18 @@ Detected coverage across all 60 prompts:
 | Explicit scope or limits | 60 / 60 |
 | False-positive guard | 60 / 60 |
 | Confirmed vs theoretical (or not verified) distinction | 60 / 60 |
-| Evidence model | 59 / 60 |
-| Second pass | 58 / 60 |
+| Evidence model | 60 / 60 |
+| Second pass | 60 / 60 |
 
 The "confirmed vs theoretical" signal also accepts "not verified", the status the focused prompts use for unproven findings.
 
-In the exhaustive prompts (001-041) these principles are consistently present: evidence over assumptions, confirmed vs theoretical, false-positive resistance, understanding the actual architecture before reporting findings, severity tied to impact, an explicit output format, a second pass and a final quality gate. Only three of these 41 prompts miss a single signal:
+In the exhaustive prompts (001-041) these principles are consistently present: evidence over assumptions, confirmed vs theoretical, false-positive resistance, understanding the actual architecture before reporting findings, severity tied to impact, an explicit output format, a second pass and a final quality gate. Three of these 41 prompts originally missed a single signal; each was closed in version 1.1.0 of both languages:
 
-| ID | Title | Not detected | Note |
+| ID | Title | Was missing | Added |
 |---|---|---|---|
-| UPL-IT-010 | Browser Compatibility & Production Bug Hunter | second pass | Has a final quality gate |
-| UPL-IT-012 | Jetpack Compose Deep Audit | second pass | Has a final quality gate |
-| UPL-IT-023 | API Contract Consistency Audit | evidence model (by keyword) | Has confirmed vs theoretical and 14 second-pass headings |
+| UPL-IT-010 | Browser Compatibility & Production Bug Hunter | second pass | A SECOND PASS section that re-walks every finding against the production build, target matrix, feature detection and hidden paths |
+| UPL-IT-012 | Jetpack Compose Deep Audit | second pass | A SECOND PASS section that re-walks every finding against the actual recomposition/effect path, version and evidence |
+| UPL-IT-023 | API Contract Consistency Audit | evidence model | An EVIDENCE MODEL section (tiers A-E mapped to status) and an Evidence tier field in the finding format |
 
 UPL-IT-001 remains a good reference for the library's principles (*accuracy > depth > finding count*), without every prompt needing to copy its structure.
 

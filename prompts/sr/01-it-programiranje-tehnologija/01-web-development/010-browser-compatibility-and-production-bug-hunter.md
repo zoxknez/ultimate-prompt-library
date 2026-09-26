@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Web razvoj
 subcategory_id: web-development
 language: sr
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -2783,7 +2783,22 @@ Samo ako arhitektura na tome zavisi.
 
 ---
 
-# 231. FINAL QUALITY GATE
+# 231. SECOND PASS
+
+Posle environment pass-ova ponovo prođi kroz svaki finding kao sopstveni skeptik:
+
+- reprodukuj ga u production build-u na target browser-u ili runtime-u, ili tačno navedi zašto nije mogao da se reprodukuje
+- proveri da li ga feature detection, polyfill, transpilation target, CSS fallback, proxy ili podešavanje platforme već neutrališe
+- potvrdi da je pogođeni browser, uređaj ili runtime u supported target matrici
+- traži skrivene putanje: isti API ili CSS feature korišćen na drugom mestu, service worker-e, keširane chunk-ove iz starijeg deploy-a, third-party skripte, embedded webview-e
+- proveri vreme i obim: dugo otvorene tabove, spore ili nestabilne mreže, deploy tokom otvorene sesije, više tabova istog korisnika
+- proveri da predloženi fix ne dodaje nepotrebne polyfill-e, težinu bundle-a ili legacy teret
+
+Finding koji ne može da se veže za supported environment i konkretnu putanju izvršavanja spušta se na THEORETICAL ili NOT VERIFIED.
+
+---
+
+# 232. FINAL QUALITY GATE
 
 Pre finalnog odgovora proveri:
 

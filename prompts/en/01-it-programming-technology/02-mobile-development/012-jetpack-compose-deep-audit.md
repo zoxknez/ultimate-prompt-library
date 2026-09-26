@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Mobile Development
 subcategory_id: mobile-development
 language: en
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -2387,7 +2387,22 @@ Check:
 
 ---
 
-# 201. FINAL QUALITY GATE
+# 201. SECOND PASS
+
+After the state and lifecycle passes, re-walk every finding as its own skeptic:
+
+- trace the actual recomposition, effect or state path in code, or reproduce it on a device or emulator; do not rely on the pattern name alone
+- check whether a key, `remember` scope, `rememberSaveable`, `derivedStateOf`, stable types, the ViewModel or the navigation back stack already prevents the failure
+- confirm the Compose, Kotlin and AGP versions the finding depends on; compiler and runtime behavior differ between versions
+- look for hidden paths: the same composable reused in lists, dialogs, bottom sheets, previews, other navigation destinations or configuration variants
+- check timing and scale: fast repeated input, rotation during an effect, process death during a pending operation, large lists, slow devices
+- for performance findings, require evidence (recomposition counts, Layout Inspector, traces, benchmarks), not only suspicion
+
+A finding without a concrete trigger and observable impact is downgraded to THEORETICAL or NOT VERIFIED.
+
+---
+
+# 202. FINAL QUALITY GATE
 
 Before submitting the final report, verify:
 

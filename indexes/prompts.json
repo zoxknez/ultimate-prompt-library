@@ -258,7 +258,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "web-development",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -268,8 +268,8 @@
         "sr": "Browser Compatibility & Production Bug Hunter"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/01-web-development/010-browser-compatibility-and-production-bug-hunter.md",
@@ -312,7 +312,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "mobile-development",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -322,8 +322,8 @@
         "sr": "Jetpack Compose Deep Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/02-mobile-development/012-jetpack-compose-deep-audit.md",
@@ -609,7 +609,7 @@
       "categorySlug": "it-programming-technology",
       "subcategory": "backend-api",
       "status": "stable",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "languages": [
         "en",
         "sr"
@@ -619,8 +619,8 @@
         "sr": "API Contract Consistency Audit"
       },
       "versions": {
-        "en": "1.0.0",
-        "sr": "1.0.0"
+        "en": "1.1.0",
+        "sr": "1.1.0"
       },
       "files": {
         "en": "prompts/en/01-it-programming-technology/03-backend-api/023-api-contract-consistency-audit.md",

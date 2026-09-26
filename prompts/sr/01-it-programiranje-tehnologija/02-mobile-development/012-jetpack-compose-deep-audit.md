@@ -8,7 +8,7 @@ category_id: UPL-IT
 subcategory: Mobilni razvoj
 subcategory_id: mobile-development
 language: sr
-version: 1.0.0
+version: 1.1.0
 status: stable
 ---
 
@@ -2393,7 +2393,22 @@ Proveri:
 
 ---
 
-# 201. FINAL QUALITY GATE
+# 201. SECOND PASS
+
+Posle state i lifecycle pass-ova ponovo prođi kroz svaki finding kao sopstveni skeptik:
+
+- prati stvarnu recomposition, effect ili state putanju u kodu, ili je reprodukuj na uređaju ili emulatoru; ne oslanjaj se samo na naziv pattern-a
+- proveri da li key, `remember` scope, `rememberSaveable`, `derivedStateOf`, stabilni tipovi, ViewModel ili navigation back stack već sprečavaju problem
+- potvrdi Compose, Kotlin i AGP verzije od kojih finding zavisi; ponašanje compiler-a i runtime-a razlikuje se između verzija
+- traži skrivene putanje: isti composable ponovo korišćen u listama, dialog-ima, bottom sheet-ovima, preview-ima, drugim navigation destinacijama ili configuration varijantama
+- proveri vreme i obim: brz ponovljen input, rotaciju tokom effect-a, process death tokom operacije koja čeka, velike liste, spore uređaje
+- za performance findings traži dokaz (recomposition counts, Layout Inspector, traces, benchmarks), a ne samo sumnju
+
+Finding bez konkretnog trigger-a i vidljivog uticaja spušta se na THEORETICAL ili NOT VERIFIED.
+
+---
+
+# 202. FINAL QUALITY GATE
 
 Pre finalnog odgovora proveri:
 
