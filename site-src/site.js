@@ -15,6 +15,8 @@
     menuToggle.setAttribute('aria-expanded', String(open));
     mobileMenu.hidden = !open;
     document.body.classList.toggle('menu-open', open);
+    if (open) mobileMenu.querySelector('a')?.focus();
+    else if (mobileMenu.contains(document.activeElement)) menuToggle.focus();
   }
 
   menuToggle?.addEventListener('click', () => {
@@ -111,6 +113,8 @@
   applyFilters();
 
   document.addEventListener('click', (event) => {
+    if (menuToggle?.getAttribute('aria-expanded') === 'true' &&
+      !mobileMenu?.contains(event.target) && !menuToggle?.contains(event.target)) setMenu(false);
     if (supportMenu?.open && !supportMenu.contains(event.target)) supportMenu.removeAttribute('open');
   });
 

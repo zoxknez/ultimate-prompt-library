@@ -43,11 +43,11 @@
 - Consumes: existing `header(lang, alternateEn, alternateSr)`, `pageShell(...)`, and `L[lang]` translations.
 - Produces: the shared centered shell, localized accessible navigation labels, and a sticky header that works while the document scrolls.
 
-- [ ] **Step 1: Add localized shared interface strings** in `L.en` and `L.sr` for search labeling, category browsing, planned categories, load more, and close actions. Use the same key in both language objects.
-- [ ] **Step 2: Refine `header()` and `pageShell()` markup** so the brand, desktop navigation, language switch, support actions, skip link, and mobile menu remain available at all supported widths. Keep the mobile toggle's `aria-expanded` and `aria-controls` state accurate.
-- [ ] **Step 3: Set shared layout rules** in `site-src/site.css`: a centered shell up to 1,360 px wide, 32 px desktop outer gutters, 14 px mobile gutters, visible focus styles, reduced-motion handling, and a sticky header. Remove the root overflow rule that breaks sticky positioning; use clipping only where needed.
-- [ ] **Step 4: Generate the static site** with `npm run build:site` and inspect generated home, catalog, and detail headers at 1440 px and 390 px.
-- [ ] **Step 5: Commit** as `style: refine shared site shell`.
+- [x] **Step 1: Add localized shared interface strings** in `L.en` and `L.sr` for search labeling, category browsing, planned categories, load more, and close actions. Use the same key in both language objects.
+- [x] **Step 2: Refine `header()` and `pageShell()` markup** so the brand, desktop navigation, language switch, support actions, skip link, and mobile menu remain available at all supported widths. Keep the mobile toggle's `aria-expanded` and `aria-controls` state accurate.
+- [x] **Step 3: Set shared layout rules** in `site-src/site.css`: a centered shell up to 1,360 px wide, 32 px desktop outer gutters, 14 px mobile gutters, visible focus styles, reduced-motion handling, and a sticky header. Remove the root overflow rule that breaks sticky positioning; use clipping only where needed.
+- [x] **Step 4: Generate the static site** with `npm run build:site` and inspect generated home, catalog, and detail headers at 1440 px and 390 px.
+- [x] **Step 5: Commit** as `style: refine shared site shell`.
 
 ### Task 2: Field Guide homepage
 
