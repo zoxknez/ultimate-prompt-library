@@ -332,6 +332,8 @@ export function buildV2QualityLayer(data) {
     'Za structured/automation output zahtevajte eksplicitnu šemu i validaciju pre downstream upotrebe.',
     'Prompt tretirajte kao iterativni artefakt: evaluirajte ga na reprezentativnim, graničnim i adversarial primerima i menjajte prema rezultatima, ne utisku.',
     'Production promptove ugrađene u aplikacije tretirajte kao verzionisani kod: validirajte dinamičke inpute, držite fixtures/evals uz izmene prompta i ponovite regresiju kada se promeni model snapshot ili ponašanje providera.',
+    'Velike checklist promptove tretirajte kao coverage mapu: pre dubokog rada označite stavke kao APPLICABLE, NOT APPLICABLE ili UNKNOWN, pa proširite samo decision-relevant nalaze umesto echo-ovanja cele checkliste.',
+    'Ako context ili token limit ugrožava coverage, rad podelite u determinističke passove i eksplicitno navedite nepregledani scope; nikada ćutke ne preskačite high-risk oblasti.',
   ] : [
     'State critical instructions, constraints and output format clearly and consistently without contradictory rules.',
     'Separate large context with clear delimiters/sections and distinguish context, task and required output.',
@@ -340,6 +342,8 @@ export function buildV2QualityLayer(data) {
     'For structured or automated downstream use, require an explicit schema and validate it before use.',
     'Treat the prompt as an iterative artifact: evaluate it on representative, boundary and adversarial cases and refine from results rather than intuition.',
     'Treat production prompts embedded in applications as versioned code: validate dynamic inputs, keep fixtures/evals with prompt changes, and re-run regressions when model snapshots or provider behavior change.',
+    'Treat large checklist prompts as coverage maps: classify checks as APPLICABLE, NOT APPLICABLE or UNKNOWN before deep work, then expand only decision-relevant findings instead of echoing the checklist.',
+    'If context or token limits threaten coverage, work in deterministic passes and state the unreviewed scope explicitly; never silently skip high-risk areas.',
   ];
 
   const challenge = sr ? [

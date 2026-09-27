@@ -5,14 +5,16 @@
       "Trace end-to-end behavior across callers, callees, middleware, validation, authorization, persistence and external integrations before declaring a defect.",
       "Use secure-by-design reasoning: trust boundaries, least privilege, fail-closed behavior, secret handling, supply-chain exposure and server-side authorization.",
       "Test happy path, invalid input, boundary values, concurrency, retries, idempotency, partial failure, recovery and rollback where relevant.",
-      "Distinguish measured performance/reliability evidence from theoretical concern and require observability for critical flows."
+      "Distinguish measured performance/reliability evidence from theoretical concern and require observability for critical flows.",
+      "For very large audits, create an applicability ledger before deep inspection and expand only applicable, evidence-bearing checks; summarize verified non-issues instead of producing checklist-shaped noise."
     ],
     "sr": [
       "Proverite verzije runtime-a, frameworka, biblioteka i platforme kada ponašanje zavisi od verzije.",
       "Pratite ponašanje end-to-end kroz callers, callees, middleware, validaciju, autorizaciju, perzistenciju i spoljne integracije pre prijave defekta.",
       "Koristite secure-by-design pristup: trust boundaries, least privilege, fail-closed ponašanje, tajne, supply-chain rizik i server-side autorizaciju.",
       "Testirajte happy path, nevalidan input, granične vrednosti, konkurentnost, retry, idempotency, parcijalni kvar, recovery i rollback gde je relevantno.",
-      "Odvojite izmerene performance/reliability dokaze od teorijske zabrinutosti i zahtevajte observability za kritične tokove."
+      "Odvojite izmerene performance/reliability dokaze od teorijske zabrinutosti i zahtevajte observability za kritične tokove.",
+      "Za veoma velike audite prvo napravite applicability ledger i duboko obrađujte samo primenljive provere sa dokazima; potvrđene non-issue stavke sažmite umesto proizvodnje checklist-shaped šuma."
     ]
   },
   "UPL-BIZ": {

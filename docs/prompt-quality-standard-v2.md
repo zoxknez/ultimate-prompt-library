@@ -132,6 +132,14 @@ Where relevant, include:
 - Residual risks
 - Open questions
 
+### F. Manage context budget and applicability
+- Treat very large checklists as coverage maps, not mandatory output templates.
+- Classify major checks as APPLICABLE, NOT APPLICABLE or UNKNOWN before deep work.
+- Expand evidence-bearing findings and decision-relevant non-issues; do not echo hundreds of checklist items.
+- If context limits threaten complete coverage, split work into deterministic passes and maintain a coverage ledger.
+- State unreviewed scope explicitly rather than silently truncating high-risk areas.
+- Prefer concise evidence references and structured matrices over repeating source text.
+
 ## External-source protocol
 
 For web or external research, record where practical:
