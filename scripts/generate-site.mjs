@@ -37,6 +37,8 @@ const L = {
     primaryNav: 'Primary navigation', mobileNav: 'Mobile navigation',
     categoryNav: 'Browse categories', planned: 'Planned', openPrompt: 'Open prompt',
     supportProject: 'Support the project', supportLead: 'Choose a way to support',
+    promptProfile: 'Prompt profile', promptIdLabel: 'Prompt ID', subcategoryLabel: 'Subcategory',
+    promptReady: 'Production-ready prompt', openSourceLabel: 'Open source', promptNavigation: 'Prompt navigation',
   },
   sr: {
     prompts: 'Promptovi', categories: 'Oblasti', github: 'GitHub', search: 'Pretraži promptove', allSubcategories: 'Sve podkategorije', results: 'rezultata', copy: 'Kopiraj prompt',
@@ -59,6 +61,8 @@ const L = {
     primaryNav: 'Glavna navigacija', mobileNav: 'Mobilna navigacija',
     categoryNav: 'Pregledaj oblasti', planned: 'Planirano', openPrompt: 'Otvori prompt',
     supportProject: 'Podrška projektu', supportLead: 'Izaberite način podrške',
+    promptProfile: 'Profil prompta', promptIdLabel: 'ID prompta', subcategoryLabel: 'Podkategorija',
+    promptReady: 'Production-ready prompt', openSourceLabel: 'Open source', promptNavigation: 'Navigacija prompta',
   },
 };
 
@@ -334,7 +338,83 @@ function renderPromptPage(p, lang) {
   const rawJson = JSON.stringify(parsed.body).replace(/</g, '\\u003c');
 
   const promptIndex = p.id.split('-').at(-1) || String(p.number || '').padStart(3, '0');
-  const body = `<section class="prompt-hero"><div class="shell prompt-hero-shell"><nav class="breadcrumbs" aria-label="${esc(t.prompts)}"><a href="${libraryUrl(lang)}">${t.prompts}</a><span aria-hidden="true">/</span><a href="${libraryUrl(lang)}?category=${encodeURIComponent(p.categoryId)}">${esc(cat)}</a><span aria-hidden="true">/</span><span aria-current="page">${esc(p.id)}</span></nav><div class="prompt-hero-layout"><div class="prompt-title-copy"><div class="prompt-hero-kicker"><span>${esc(t.libraryHeroKicker)}</span><span>${esc(p.id)} · ${esc(sub)}</span></div><h1>${esc(title)}</h1><p>${esc(cat)}</p><div class="prompt-hero-meta"><span>v${esc(p.version)}</span><span>${esc(t.stableLabel)}</span><span>${lang === 'sr' ? 'Srpski' : 'English'}</span></div></div><div class="prompt-hero-side"><div class="prompt-hero-stamp" aria-hidden="true"><div class="prompt-stamp-top"><span>UPL / PROMPT</span><span>NO. ${esc(promptIndex)}</span></div><strong>${esc(promptIndex)}</strong><div class="prompt-stamp-bottom"><span>${esc(p.id)}</span><span>${esc(sub)}</span></div></div><div class="prompt-actions"><button class="button prompt-copy-primary" type="button" data-copy-prompt>${esc(t.copy)}</button><button class="secondary-button prompt-copy-link" type="button" data-copy-link>${esc(t.copyLink)}</button></div></div></div></div></section><section class="shell prompt-layout"><aside class="prompt-sidebar"><div class="side-card"><dl><div><dt>${t.status}</dt><dd>${esc(t.stableLabel)}</dd></div><div><dt>${t.version}</dt><dd>v${esc(p.version)}</dd></div><div><dt>${t.language}</dt><dd><a class="${lang === 'en' ? 'active-lang' : ''}" href="${promptUrl('en', p)}">EN</a> <a class="${lang === 'sr' ? 'active-lang' : ''}" href="${promptUrl('sr', p)}">SR</a></dd></div></dl><a class="source-link" href="${GITHUB_ROOT}/${file}">${t.source} →</a></div>${toc.length ? `<nav class="toc" aria-label="${esc(t.toc)}"><strong>${t.toc}</strong>${toc.map((item) => `<a class="toc-${item.level}" data-toc-link href="#${item.id}">${esc(item.title)}</a>`).join('')}</nav>` : ''}</aside><article class="markdown-body" id="prompt-content"><div class="reading-tools" role="toolbar" aria-label="${esc(t.readingTools)}"><div class="reading-font-controls"><button type="button" class="reading-control" data-font-down aria-label="${esc(t.fontSmaller)}" title="${esc(t.fontSmaller)}">A−</button><button type="button" class="reading-control reading-font-reset" data-font-reset aria-label="${esc(t.fontReset)}" title="${esc(t.fontReset)}">Aa</button><button type="button" class="reading-control" data-font-up aria-label="${esc(t.fontLarger)}" title="${esc(t.fontLarger)}">A+</button></div><button type="button" class="reading-option" data-line-spacing aria-pressed="false">${esc(t.lineSpacing)}</button><button type="button" class="reading-option" data-focus-mode aria-pressed="false">${esc(t.focusMode)}</button></div>${renderMarkdown(parsed.body)}</article></section><aside class="reading-rail" aria-hidden="true" aria-label="${esc(t.readingTools)}"><div class="reading-progress-track" role="progressbar" aria-label="${esc(t.readingProgress)}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-reading-progress><span></span></div><div class="reading-jump-controls"><button type="button" data-scroll-top tabindex="-1" aria-label="${esc(t.backToTop)}" title="${esc(t.backToTop)}">↑</button><button type="button" data-scroll-bottom tabindex="-1" aria-label="${esc(t.jumpToBottom)}" title="${esc(t.jumpToBottom)}">↓</button></div></aside><section class="shell prev-next">${prev ? `<a href="${promptUrl(lang, prev)}"><small>${t.previous}</small><strong>${esc(prev.titles?.[lang] || prev.titles?.en)}</strong></a>` : '<span></span>'}${next ? `<a class="next-link" href="${promptUrl(lang, next)}"><small>${t.next}</small><strong>${esc(next.titles?.[lang] || next.titles?.en)}</strong></a>` : ''}</section><script id="raw-prompt" type="application/json">${rawJson}</script>`;
+  const body = `<section class="prompt-hero">
+    <div class="shell prompt-hero-shell">
+      <nav class="breadcrumbs" aria-label="${esc(t.prompts)}">
+        <a href="${libraryUrl(lang)}">${t.prompts}</a>
+        <span aria-hidden="true">/</span>
+        <a href="${libraryUrl(lang)}?category=${encodeURIComponent(p.categoryId)}">${esc(cat)}</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">${esc(p.id)}</span>
+      </nav>
+      <div class="prompt-hero-layout">
+        <div class="prompt-title-copy">
+          <div class="prompt-hero-kicker">
+            <span>${esc(t.promptReady)}</span>
+            <span>${esc(p.id)}</span>
+          </div>
+          <h1>${esc(title)}</h1>
+          <div class="prompt-hero-taxonomy">
+            <span>${esc(cat)}</span>
+            <span aria-hidden="true">›</span>
+            <span>${esc(sub)}</span>
+          </div>
+          <div class="prompt-hero-meta">
+            <span>v${esc(p.version)}</span>
+            <span class="prompt-status-chip">${esc(t.stableLabel)}</span>
+            <span>${lang === 'sr' ? 'Srpski' : 'English'}</span>
+            <span>${esc(t.openSourceLabel)}</span>
+          </div>
+          <div class="prompt-actions">
+            <button class="button prompt-copy-primary" type="button" data-copy-prompt>${esc(t.copy)}</button>
+            <button class="secondary-button prompt-copy-link" type="button" data-copy-link>${esc(t.copyLink)}</button>
+            <a class="prompt-source-action" href="${GITHUB_ROOT}/${file}">${esc(t.source)} <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="prompt-profile-card" aria-label="${esc(t.promptProfile)}">
+          <div class="prompt-profile-head">
+            <span>${esc(t.promptProfile)}</span>
+            <span class="prompt-profile-number" aria-label="Prompt number ${esc(promptIndex)}">${esc(promptIndex)}</span>
+          </div>
+          <dl class="prompt-profile-grid">
+            <div><dt>${esc(t.promptIdLabel)}</dt><dd>${esc(p.id)}</dd></div>
+            <div><dt>${esc(t.subcategoryLabel)}</dt><dd>${esc(sub)}</dd></div>
+            <div><dt>${esc(t.version)}</dt><dd>v${esc(p.version)}</dd></div>
+            <div><dt>${esc(t.status)}</dt><dd>${esc(t.stableLabel)}</dd></div>
+            <div><dt>${esc(t.language)}</dt><dd>${lang === 'sr' ? 'Srpski' : 'English'}</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <section class="shell prompt-layout">
+    <aside class="prompt-sidebar">
+      <div class="prompt-sidebar-utility">
+        <strong>${esc(t.promptNavigation)}</strong>
+        <div class="prompt-sidebar-language" aria-label="${esc(t.language)}">
+          <a class="${lang === 'en' ? 'active-lang' : ''}" href="${promptUrl('en', p)}">EN</a>
+          <a class="${lang === 'sr' ? 'active-lang' : ''}" href="${promptUrl('sr', p)}">SR</a>
+        </div>
+        <a class="source-link" href="${GITHUB_ROOT}/${file}">${esc(t.source)} <span aria-hidden="true">↗</span></a>
+      </div>
+      ${toc.length ? `<nav class="toc" aria-label="${esc(t.toc)}"><strong>${t.toc}</strong>${toc.map((item) => `<a class="toc-${item.level}" data-toc-link href="#${item.id}">${esc(item.title)}</a>`).join('')}</nav>` : ''}
+    </aside>
+    <article class="markdown-body" id="prompt-content">
+      <div class="reading-tools" role="toolbar" aria-label="${esc(t.readingTools)}">
+        <div class="reading-font-controls">
+          <button type="button" class="reading-control" data-font-down aria-label="${esc(t.fontSmaller)}" title="${esc(t.fontSmaller)}">A−</button>
+          <button type="button" class="reading-control reading-font-reset" data-font-reset aria-label="${esc(t.fontReset)}" title="${esc(t.fontReset)}">Aa</button>
+          <button type="button" class="reading-control" data-font-up aria-label="${esc(t.fontLarger)}" title="${esc(t.fontLarger)}">A+</button>
+        </div>
+        <button type="button" class="reading-option" data-line-spacing aria-pressed="false">${esc(t.lineSpacing)}</button>
+        <button type="button" class="reading-option" data-focus-mode aria-pressed="false">${esc(t.focusMode)}</button>
+      </div>
+      ${renderMarkdown(parsed.body)}
+    </article>
+  </section>
+  <aside class="reading-rail" aria-hidden="true" aria-label="${esc(t.readingTools)}"><div class="reading-progress-track" role="progressbar" aria-label="${esc(t.readingProgress)}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-reading-progress><span></span></div><div class="reading-jump-controls"><button type="button" data-scroll-top tabindex="-1" aria-label="${esc(t.backToTop)}" title="${esc(t.backToTop)}">↑</button><button type="button" data-scroll-bottom tabindex="-1" aria-label="${esc(t.jumpToBottom)}" title="${esc(t.jumpToBottom)}">↓</button></div></aside>
+  <section class="shell prev-next">${prev ? `<a href="${promptUrl(lang, prev)}"><small>${t.previous}</small><strong>${esc(prev.titles?.[lang] || prev.titles?.en)}</strong></a>` : '<span></span>'}${next ? `<a class="next-link" href="${promptUrl(lang, next)}"><small>${t.next}</small><strong>${esc(next.titles?.[lang] || next.titles?.en)}</strong></a>` : ''}</section>
+  <script id="raw-prompt" type="application/json">${rawJson}</script>`;
   const description = `${p.id}: ${title}. ${cat} - ${sub}.`;
   return pageShell({ lang, title, description, body, canonical: promptUrl(lang, p), bodyClass: 'prompt-page', alternateEn: promptUrl('en', p), alternateSr: promptUrl('sr', p) });
 }
