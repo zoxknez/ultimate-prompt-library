@@ -149,6 +149,18 @@ for (const [id, prompt] of repo.prompts) {
     if (!file.body.includes('human-review fixture')) {
       fail(file.path + ': missing human-review eval fixture.');
     }
+    if (!file.body.includes('claim-level provenance')) {
+      fail(file.path + ': missing claim-level provenance rule.');
+    }
+    if (!file.body.includes('Reproducibility case:') && !file.body.includes('Reproducibility slučaj:')) {
+      fail(file.path + ': missing reproducibility eval fixture.');
+    }
+    if (!file.body.includes('citation laundering')) {
+      fail(file.path + ': missing citation-laundering guard.');
+    }
+    if (!file.body.includes('Keep the effective prompt lean:') && !file.body.includes('Efektivni prompt držite lean:')) {
+      fail(file.path + ': missing lean-prompt execution rule.');
+    }
 
     const sourceHeading = lang === 'sr'
       ? 'AUTORITATIVNI POČETNI IZVORI'
@@ -183,5 +195,5 @@ if (errors.length) {
 
 console.log(
   'validate-v2: 1000 prompts / 2000 localizations / 100 quality profiles / ' +
-  '100 subcategory source profiles / 10 category source profiles / version ' + V2_VERSION + ' -> OK'
+  '100 subcategory source profiles / 10 category source profiles / provenance+reproducibility guards / version ' + V2_VERSION + ' -> OK'
 );

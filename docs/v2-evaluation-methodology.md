@@ -43,6 +43,8 @@ For each prompt, maintain or generate the relevant subset of:
 - structured-output/schema case where downstream automation is involved
 - high-stakes escalation case for law, health, security or other consequential workflows
 - human-review traceability case for consequential recommendations, ensuring the reviewer can reach the underlying evidence and assumptions
+- claim-provenance case that distinguishes directly supporting evidence from merely topical citations
+- reproducibility case recording model/snapshot, tools, harness/context and material execution budget where those can change the outcome
 
 ## Evaluation dimensions
 
@@ -63,6 +65,8 @@ Evaluate separately. Do not hide a critical failure behind one aggregate score.
 | Format correctness | Required structure/schema is valid and directly usable |
 | Verification | High-impact output includes a method to confirm success |
 | Human review readiness | Consequential recommendations expose evidence, assumptions and escalation context to a qualified reviewer |
+| Provenance correctness | Material factual claims map to sources that directly support the stated proposition; no citation laundering |
+| Reproducibility | System setup, model/snapshot, tools and material execution limits are recorded where they can affect interpretation |
 | Rollback/recovery | Irreversible or risky changes include backout logic where relevant |
 
 ## Release protocol

@@ -73,6 +73,8 @@ Use these principles:
 - Do not require disclosure of private chain-of-thought; require evidence, assumptions, verification and concise rationale instead.
 - Avoid hardcoding sampling parameters unless the target model/API actually supports them and the task requires tuning.
 - Treat prompt development as iterative engineering: evaluate on representative, boundary and adversarial cases, record failure modes and revise from observed results.
+- Keep production prompts lean: state each mandatory instruction once, remove repeated guidance that does not change behavior, and preserve only task-relevant examples/tools. Re-run the same evals after simplification rather than assuming longer is better.
+- Resolve instruction conflicts explicitly. Controlling task and safety constraints outrank retrieved/reference content; irreconcilable constraints should be surfaced rather than silently resolved.
 
 These principles align with current model-provider guidance that emphasizes clear and specific instructions, consistent structure, explicit constraints/output format, decomposition for complex tasks, grounding/tool use, and iterative refinement.
 
@@ -149,6 +151,8 @@ For web or external research, record where practical:
 - URL
 - jurisdiction/population/version
 - exact claim supported
+- authority/status of the source when it affects weight (for example final, draft, proposed, superseded)
+- claim-level provenance so each material factual claim maps to the source that actually supports that proposition
 
 Prefer:
 1. law, regulation, official registry, standard or original specification
@@ -223,7 +227,15 @@ For every production prompt change, use the relevant subset of these fixture cla
    - sources disagree or a source is stale
    - model should compare authority, date/version and applicability rather than average or silently choose
 
-6. **Sibling-scope case**
+6. **Provenance/citation case**
+   - one source is only topically related while another directly supports the material claim
+   - model should map the claim to the direct supporting evidence and reject citation laundering
+
+7. **Reproducibility case**
+   - prompt behavior can vary with model snapshot, tools, harness, context or execution budget
+   - record the tested system setup and material turn/token/retry limits so the result can be interpreted and reproduced
+
+8. **Sibling-scope case**
    - input contains adjacent work that belongs to another library prompt
    - model should keep the current prompt's scope and identify an explicit handoff when needed
 
@@ -249,7 +261,7 @@ For application-integrated prompts:
 - re-run regression cases when the prompt, toolset, retrieval source, model snapshot or provider behavior changes
 - use staged rollout/rollback for high-impact prompt changes
 
-This protocol follows the same engineering principle reflected in current OpenAI guidance: production prompts should be code-managed, reviewed, tested and covered by evaluation cases.
+This protocol follows current production prompting and evaluation guidance: prompts should be code-managed, reviewed, tested, kept lean, evaluated on task-specific real-world distributions, and interpreted with enough system/harness detail to understand what the evaluation actually supports.
 
 
 ## Prompt evaluation contract
@@ -270,5 +282,7 @@ Score the result against:
 - required format/schema
 - safety, privacy and trust-boundary handling
 - verification readiness
+- provenance correctness
+- reproducibility metadata where the system setup can materially affect results
 
 For long-context prompts, isolate supplied context with consistent delimiters and restate the exact task/output contract immediately before execution. When examples genuinely improve correctness, prefer a small, diverse set that includes an edge case. Keep mandatory requirements model-agnostic and treat provider-specific optimizations as re-testable adaptations.
