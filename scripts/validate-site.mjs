@@ -2,6 +2,7 @@
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { inspectJpeg } from './lib/jpeg.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
@@ -63,6 +64,28 @@ for (const prompt of index.prompts) {
 const home = readFileSync(path.join(DIST, 'index.html'), 'utf8');
 if (!home.includes(String(stats.uniquePrompts))) errors.push('Home page does not include current prompt count.');
 if (!home.includes('UPL-IT-001')) errors.push('Home page prompt preview is missing.');
+
+// Social share image: every page must reference one image that exists in dist, is a structurally
+// valid JPEG and matches the declared 1200x630 size (a corrupt JPEG shipped once and rendered grey).
+const ogImages = new Set();
+for (const file of walk(DIST).filter((f) => f.endsWith('.html'))) {
+  const match = readFileSync(file, 'utf8').match(/<meta property="og:image" content="([^"]+)"/);
+  if (match) ogImages.add(match[1]);
+  else errors.push(`og:image missing in ${path.relative(DIST, file)}`);
+}
+if (ogImages.size !== 1) errors.push(`Expected one og:image URL across the site, found ${ogImages.size}.`);
+for (const url of ogImages) {
+  const rel = new URL(url).pathname;
+  const file = path.join(DIST, ...rel.split('/').filter(Boolean));
+  if (!existsSync(file)) {
+    errors.push(`og:image ${rel} is not in dist.`);
+    continue;
+  }
+  const jpeg = inspectJpeg(readFileSync(file));
+  if (!jpeg.ok) errors.push(`og:image ${rel} is not a valid JPEG: ${jpeg.errors.join('; ')}`);
+  if (jpeg.width !== 1200 || jpeg.height !== 630) errors.push(`og:image ${rel} is ${jpeg.width}x${jpeg.height}, expected 1200x630.`);
+  if (!home.includes(`<meta property="og:image:width" content="${jpeg.width}">`)) errors.push('og:image:width does not match the image.');
+}
 
 if (errors.length) {
   console.error(`Website validation failed with ${errors.length} error(s):`);

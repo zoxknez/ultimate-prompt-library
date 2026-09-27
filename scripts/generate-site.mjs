@@ -10,7 +10,7 @@ const OUT = path.join(ROOT, 'dist');
 const SRC = path.join(ROOT, 'site-src');
 const SITE_URL = (process.env.SITE_URL || 'https://www.promptlibrary.pro').replace(/\/$/, '');
 const GITHUB_ROOT = 'https://github.com/zoxknez/ultimate-prompt-library/blob/main';
-const OG_IMAGE_PATH = '/assets/promptlibrary-og.jpg';
+const OG_IMAGE_PATH = '/assets/promptlibrary-og-v2.jpg';
 
 const catalog = JSON.parse(readFileSync(path.join(ROOT, 'catalog.json'), 'utf8'));
 const index = JSON.parse(readFileSync(path.join(ROOT, 'indexes/prompts.json'), 'utf8'));
