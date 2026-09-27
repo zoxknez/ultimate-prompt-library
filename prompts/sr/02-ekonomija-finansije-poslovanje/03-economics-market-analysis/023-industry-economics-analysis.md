@@ -2,7 +2,7 @@
 id: UPL-BIZ-023
 number: 23
 slug: industry-economics-analysis
-title: Industry Economics Analysis
+title: Ekonomska analiza industrije
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Ekonomija i analiza tržišta
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# INDUSTRY ECONOMICS ANALYSIS
+# EKONOMSKA ANALIZA INDUSTRIJE
 
 Želim duboku analizu economics-a konkretne industrije.
 

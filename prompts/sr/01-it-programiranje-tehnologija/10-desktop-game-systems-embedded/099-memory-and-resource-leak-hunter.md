@@ -2,7 +2,7 @@
 id: UPL-IT-099
 number: 99
 slug: memory-and-resource-leak-hunter
-title: Memory & Resource Leak Hunter
+title: Lov na curenje memorije i resursa
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Desktop, igre, sistemi i embedded
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# MEMORY AND RESOURCE LEAK HUNTER
+# LOV NA CURENJE MEMORIJE I RESURSA
 
 Želim duboku analizu memory, handle, thread, file, socket, GPU i drugih resource leak-ova kroz realan lifecycle aplikacije.
 

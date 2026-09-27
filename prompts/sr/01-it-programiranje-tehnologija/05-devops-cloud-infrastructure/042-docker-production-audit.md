@@ -2,7 +2,7 @@
 id: UPL-IT-042
 number: 42
 slug: docker-production-audit
-title: Docker Production Audit
+title: Produkcioni audit Docker okruženja
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# DOCKER PRODUCTION AUDIT
+# PRODUKCIONI AUDIT DOCKER OKRUŽENJA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletnog Docker/container sloja projekta.
 

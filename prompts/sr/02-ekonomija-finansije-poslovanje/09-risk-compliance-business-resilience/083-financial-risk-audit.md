@@ -2,7 +2,7 @@
 id: UPL-BIZ-083
 number: 83
 slug: financial-risk-audit
-title: Financial Risk Audit
+title: Audit finansijskih rizika
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Rizik, usklađenost i poslovna otpornost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# FINANCIAL RISK AUDIT
+# AUDIT FINANSIJSKIH RIZIKA
 
 Želim duboku, evidence-first i risk-oriented analizu koja jasno razlikuje threat, vulnerability, control weakness, inherent risk, residual risk i scenario hardening.
 

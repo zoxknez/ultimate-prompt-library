@@ -117,3 +117,28 @@ test('helpers', () => {
   assert.ok(isHomepage('https://example.org/en/'));
   assert.ok(!isHomepage('https://example.org/en/guide'));
 });
+
+test('site-name-only and missing titles are not document changes', async () => {
+  const { isSiteNameVariant } = await import('../scripts/lib/source-freshness.mjs');
+  assert.ok(isSiteNameVariant('OWASP ASVS | OWASP Foundation', 'OWASP Foundation'));
+  assert.ok(!isSiteNameVariant('Guide 2024 | X', 'Guide 2026 | X'));
+  const url = 'https://example.org/doc';
+  const real = ok(url, '<title>Guide | Example</title><h1>Guide</h1>');
+  const bare = ok(url, '<title>Example</title><h1>Loading</h1>');
+  const previous = { title: real.signals.title, finalUrl: url, modifiedDate: null, versionSignals: [], headFingerprint: real.signals.headFingerprint };
+  assert.equal(classify(source(url), bare, previous).status, 'REACHABLE');
+  assert.equal(classify(source(url), real, { ...previous, title: null }).status, 'REACHABLE');
+});
+
+test('manual verification: schema, registry membership and 180-day expiry', async () => {
+  const { validateManualVerification, manualVerificationState } = await import('../scripts/lib/source-freshness.mjs');
+  const sources = [{ url: 'https://example.org/a' }];
+  const good = { verifiedAt: '2026-09-27', method: 'browser', finding: 'VERIFIED', httpStatus: 200, finalUrl: 'https://example.org/a', title: 'A', notes: '' };
+  const now = new Date('2026-10-01T00:00:00Z');
+  assert.deepEqual(validateManualVerification({ schemaVersion: 1, entries: { 'https://example.org/a': good } }, sources, now).errors, []);
+  assert.ok(validateManualVerification({ schemaVersion: 1, entries: { 'https://other.example/': good } }, sources, now).errors.some((e) => /not in the registry/.test(e)));
+  assert.ok(validateManualVerification({ schemaVersion: 1, entries: { 'https://example.org/a': { ...good, httpStatus: 403 } } }, sources, now).errors.length);
+  assert.equal(manualVerificationState(good, now), 'verified');
+  assert.equal(manualVerificationState(good, new Date('2027-06-01T00:00:00Z')), 'expired');
+  assert.equal(manualVerificationState({ ...good, finding: 'UNREACHABLE' }, now), 'unreachable');
+});

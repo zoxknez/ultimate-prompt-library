@@ -2,7 +2,7 @@
 id: UPL-BIZ-008
 number: 8
 slug: capital-allocation-analysis
-title: Capital Allocation Analysis
+title: Analiza alokacije kapitala
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Finansijska analiza i korporativne finansije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# CAPITAL ALLOCATION ANALYSIS
+# ANALIZA ALOKACIJE KAPITALA
 
 Želim duboku analizu načina na koji kompanija raspoređuje kapital između operativnog poslovanja, capex-a, M&A, debt reduction-a, dividendi, buyback-a i zadržavanja cash-a.
 

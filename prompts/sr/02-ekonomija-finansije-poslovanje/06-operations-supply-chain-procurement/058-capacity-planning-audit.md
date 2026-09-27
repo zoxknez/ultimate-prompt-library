@@ -2,7 +2,7 @@
 id: UPL-BIZ-058
 number: 58
 slug: capacity-planning-audit
-title: Capacity Planning Audit
+title: Audit planiranja kapaciteta
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Operacije, lanac snabdevanja i nabavka
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# CAPACITY PLANNING AUDIT
+# AUDIT PLANIRANJA KAPACITETA
 
 Želim duboku, evidence-first i operations-oriented analizu koja razlikuje simptom od stvarnog ograničenja i optimizaciju lokalne metrike od poboljšanja ukupnog sistema.
 

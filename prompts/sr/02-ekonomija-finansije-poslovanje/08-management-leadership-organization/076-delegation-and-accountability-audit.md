@@ -2,7 +2,7 @@
 id: UPL-BIZ-076
 number: 76
 slug: delegation-and-accountability-audit
-title: Delegation & Accountability Audit
+title: Audit delegiranja i odgovornosti
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Menadžment, liderstvo i organizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# DELEGATION & ACCOUNTABILITY AUDIT
+# AUDIT DELEGIRANJA I ODGOVORNOSTI
 
 Želim duboku, evidence-first i execution-oriented analizu management sistema, organizacije i liderstva. Cilj nije generički leadership savet, već proverljiv uvid u to kako struktura, odluke, metrike, reporting i ownership utiču na izvršenje.
 

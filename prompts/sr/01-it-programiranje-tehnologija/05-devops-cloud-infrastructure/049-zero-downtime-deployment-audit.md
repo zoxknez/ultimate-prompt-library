@@ -2,7 +2,7 @@
 id: UPL-IT-049
 number: 49
 slug: zero-downtime-deployment-audit
-title: Zero-Downtime Deployment Audit
+title: Audit deploy-a bez prekida rada
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# ZERO-DOWNTIME DEPLOYMENT AUDIT
+# AUDIT DEPLOY-A BEZ PREKIDA RADA
 
 Želim maksimalno duboku analizu da li sistem zaista može da se deployuje bez user-visible downtime-a, data corruption-a i mixed-version failure-a.
 

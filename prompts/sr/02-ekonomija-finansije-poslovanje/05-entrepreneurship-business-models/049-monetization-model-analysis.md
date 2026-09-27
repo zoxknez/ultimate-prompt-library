@@ -2,7 +2,7 @@
 id: UPL-BIZ-049
 number: 49
 slug: monetization-model-analysis
-title: Monetization Model Analysis
+title: Analiza modela monetizacije
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Preduzetništvo i poslovni modeli
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# MONETIZATION MODEL ANALYSIS
+# ANALIZA MODELA MONETIZACIJE
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu.
 

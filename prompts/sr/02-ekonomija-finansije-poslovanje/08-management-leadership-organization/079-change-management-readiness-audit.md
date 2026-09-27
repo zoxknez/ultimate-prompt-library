@@ -2,7 +2,7 @@
 id: UPL-BIZ-079
 number: 79
 slug: change-management-readiness-audit
-title: Change Management Readiness Audit
+title: Audit spremnosti za upravljanje promenama
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Menadžment, liderstvo i organizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# CHANGE MANAGEMENT READINESS AUDIT
+# AUDIT SPREMNOSTI ZA UPRAVLJANJE PROMENAMA
 
 Želim duboku, evidence-first i execution-oriented analizu management sistema, organizacije i liderstva. Cilj nije generički leadership savet, već proverljiv uvid u to kako struktura, odluke, metrike, reporting i ownership utiču na izvršenje.
 

@@ -2,7 +2,7 @@
 id: UPL-BIZ-060
 number: 60
 slug: business-continuity-operations-audit
-title: Business Continuity Operations Audit
+title: Audit operativnog kontinuiteta poslovanja
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Operacije, lanac snabdevanja i nabavka
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# BUSINESS CONTINUITY OPERATIONS AUDIT
+# AUDIT OPERATIVNOG KONTINUITETA POSLOVANJA
 
 Želim duboku, evidence-first i operations-oriented analizu koja razlikuje simptom od stvarnog ograničenja i optimizaciju lokalne metrike od poboljšanja ukupnog sistema.
 

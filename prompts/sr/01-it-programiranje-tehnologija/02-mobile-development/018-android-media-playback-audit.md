@@ -2,7 +2,7 @@
 id: UPL-IT-018
 number: 18
 slug: android-media-playback-audit
-title: Android Media Playback Audit
+title: Audit reprodukcije medija u Android aplikacijama
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Mobilni razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ANDROID MEDIA PLAYBACK AUDIT
+# AUDIT REPRODUKCIJE MEDIJA U ANDROID APLIKACIJAMA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletnog media playback sistema Android aplikacije.
 

@@ -2,7 +2,7 @@
 id: UPL-IT-089
 number: 89
 slug: product-requirement-generator
-title: Product Requirement Generator
+title: Generator zahteva za proizvod
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: UX, UI i razvoj proizvoda
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# PRODUCT REQUIREMENT GENERATOR
+# GENERATOR ZAHTEVA ZA PROIZVOD
 
 Želim da iz product ideje, problema, feature request-a ili rough notes-a generišeš rigorozan Product Requirements Document koji jasno razdvaja problem, korisnike, scope, invariants, acceptance criteria, risks i open questions.
 

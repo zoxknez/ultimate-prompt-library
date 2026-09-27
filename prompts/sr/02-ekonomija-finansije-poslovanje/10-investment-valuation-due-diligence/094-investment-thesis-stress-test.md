@@ -2,7 +2,7 @@
 id: UPL-BIZ-094
 number: 94
 slug: investment-thesis-stress-test
-title: Investment Thesis Stress Test
+title: Stres test investicione teze
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Investicije, vrednovanje i due diligence
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# INVESTMENT THESIS STRESS TEST
+# STRES TEST INVESTICIONE TEZE
 
 Želim duboku, evidence-first i investment-grade analizu koja razdvaja računovodstveni rezultat, cash generation, enterprise value, equity value i pretpostavke koje nose najveći deo vrednosti.
 

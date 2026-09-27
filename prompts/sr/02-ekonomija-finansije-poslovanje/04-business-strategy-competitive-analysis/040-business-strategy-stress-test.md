@@ -2,7 +2,7 @@
 id: UPL-BIZ-040
 number: 40
 slug: business-strategy-stress-test
-title: Business Strategy Stress Test
+title: Stres test poslovne strategije
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Poslovna strategija i analiza konkurencije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# BUSINESS STRATEGY STRESS TEST
+# STRES TEST POSLOVNE STRATEGIJE
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu ove strateške teme.
 

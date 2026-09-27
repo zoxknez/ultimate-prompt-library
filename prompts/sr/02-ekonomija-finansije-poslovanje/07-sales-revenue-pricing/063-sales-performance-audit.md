@@ -2,7 +2,7 @@
 id: UPL-BIZ-063
 number: 63
 slug: sales-performance-audit
-title: Sales Performance Audit
+title: Audit prodajnih rezultata
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Prodaja, prihodi i cene
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# SALES PERFORMANCE AUDIT
+# AUDIT PRODAJNIH REZULTATA
 
 Želim duboku, evidence-first i revenue-oriented analizu koja razdvaja prodajnu aktivnost od stvarnog ekonomskog rezultata i reported revenue od kvalitetnog, naplativog i održivog prihoda.
 

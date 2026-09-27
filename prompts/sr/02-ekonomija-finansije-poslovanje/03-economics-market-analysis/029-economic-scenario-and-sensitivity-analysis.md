@@ -2,7 +2,7 @@
 id: UPL-BIZ-029
 number: 29
 slug: economic-scenario-and-sensitivity-analysis
-title: Economic Scenario & Sensitivity Analysis
+title: Analiza ekonomskih scenarija i osetljivosti
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Ekonomija i analiza tržišta
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ECONOMIC SCENARIO & SENSITIVITY ANALYSIS
+# ANALIZA EKONOMSKIH SCENARIJA I OSETLJIVOSTI
 
 Želim rigorozan scenario i sensitivity framework za ekonomsku ili poslovnu odluku.
 

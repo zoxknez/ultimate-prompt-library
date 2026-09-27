@@ -2,7 +2,7 @@
 id: UPL-IT-033
 number: 33
 slug: authorization-and-idor-hunter
-title: Authorization & IDOR Hunter
+title: Lov na propuste u autorizaciji i IDOR
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Sajber bezbednost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# AUTHORIZATION AND IDOR HUNTER
+# LOV NA PROPUSTE U AUTORIZACIJI I IDOR
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i attacker-oriented analizu kompletne autorizacije u aplikaciji, sa posebnim fokusom na IDOR/BOLA, broken function-level authorization, cross-user i cross-tenant pristup, field-level privilege escalation i zaobilaženje ownership granica.
 

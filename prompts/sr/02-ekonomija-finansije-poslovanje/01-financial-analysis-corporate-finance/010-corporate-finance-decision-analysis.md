@@ -2,7 +2,7 @@
 id: UPL-BIZ-010
 number: 10
 slug: corporate-finance-decision-analysis
-title: Corporate Finance Decision Analysis
+title: Analiza odluka korporativnih finansija
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Finansijska analiza i korporativne finansije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# CORPORATE FINANCE DECISION ANALYSIS
+# ANALIZA ODLUKA KORPORATIVNIH FINANSIJA
 
 Želim rigoroznu analizu konkretne corporate-finance odluke, kao što su:
 

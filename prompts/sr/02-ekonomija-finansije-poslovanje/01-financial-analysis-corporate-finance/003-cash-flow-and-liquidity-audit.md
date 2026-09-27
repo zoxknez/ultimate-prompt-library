@@ -2,7 +2,7 @@
 id: UPL-BIZ-003
 number: 3
 slug: cash-flow-and-liquidity-audit
-title: Cash Flow & Liquidity Audit
+title: Audit novčanih tokova i likvidnosti
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Finansijska analiza i korporativne finansije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# CASH FLOW & LIQUIDITY AUDIT
+# AUDIT NOVČANIH TOKOVA I LIKVIDNOSTI
 
 Želim dubok audit cash flow-a, liquidity-ja i kratkoročne finansijske održivosti.
 

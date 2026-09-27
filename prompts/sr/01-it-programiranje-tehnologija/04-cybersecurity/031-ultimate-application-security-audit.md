@@ -2,7 +2,7 @@
 id: UPL-IT-031
 number: 31
 slug: ultimate-application-security-audit
-title: Ultimate Application Security Audit
+title: Sveobuhvatni bezbednosni audit aplikacije
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Sajber bezbednost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE APPLICATION SECURITY AUDIT
+# SVEOBUHVATNI BEZBEDNOSNI AUDIT APLIKACIJE
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented sigurnosnu analizu kompletne aplikacije, njenog backend-a, API-ja, frontend trust boundary-ja, autentikacije, autorizacije, podataka, konfiguracije, infrastrukture i svih spolja dostupnih attack surface-a.
 

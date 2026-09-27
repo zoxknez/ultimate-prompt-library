@@ -2,7 +2,7 @@
 id: UPL-BIZ-013
 number: 13
 slug: revenue-recognition-audit
-title: Revenue Recognition Audit
+title: Audit priznavanja prihoda
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Računovodstvo, izveštavanje i finansijska kontrola
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# REVENUE RECOGNITION AUDIT
+# AUDIT PRIZNAVANJA PRIHODA
 
 Želim dubok audit revenue recognition procesa i evidence chain-a od ugovora/order-a do invoice-a, delivery/performance obligation-a, journal-a i financial statement-a.
 

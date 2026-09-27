@@ -2,7 +2,7 @@
 id: UPL-IT-036
 number: 36
 slug: file-upload-security-audit
-title: File Upload Security Audit
+title: Bezbednosni audit otpremanja fajlova
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Sajber bezbednost
@@ -12,7 +12,7 @@ version: 1.0.1
 status: stable
 ---
 
-# FILE UPLOAD SECURITY AUDIT
+# BEZBEDNOSNI AUDIT OTPREMANJA FAJLOVA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletnog file upload sistema aplikacije, od trenutka kada fajl napusti klijenta do njegovog:
 
@@ -3610,7 +3610,7 @@ Ne želim izveštaj tipa:
 
 > Proveravajte MIME type, ograničite veličinu i skenirajte fajlove antivirusom.
 
-To nije File Upload Security Audit.
+To nije bezbednosni audit otpremanja fajlova.
 
 Tražim probleme poput:
 

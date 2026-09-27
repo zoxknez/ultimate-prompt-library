@@ -2,7 +2,7 @@
 id: UPL-BIZ-030
 number: 30
 slug: economic-data-quality-and-interpretation-audit
-title: Economic Data Quality & Interpretation Audit
+title: Audit kvaliteta i tumačenja ekonomskih podataka
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Ekonomija i analiza tržišta
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ECONOMIC DATA QUALITY & INTERPRETATION AUDIT
+# AUDIT KVALITETA I TUMAČENJA EKONOMSKIH PODATAKA
 
 Želim forenzički audit kvaliteta ekonomskih, tržišnih i statističkih podataka pre nego što se koriste za ozbiljne zaključke.
 

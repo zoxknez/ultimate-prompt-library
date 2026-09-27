@@ -2,7 +2,7 @@
 id: UPL-BIZ-039
 number: 39
 slug: strategic-initiative-prioritization
-title: Strategic Initiative Prioritization
+title: Prioritizacija strateških inicijativa
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Poslovna strategija i analiza konkurencije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# STRATEGIC INITIATIVE PRIORITIZATION
+# PRIORITIZACIJA STRATEŠKIH INICIJATIVA
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu ove strateške teme.
 

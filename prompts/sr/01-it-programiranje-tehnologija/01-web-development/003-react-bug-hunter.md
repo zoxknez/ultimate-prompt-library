@@ -2,7 +2,7 @@
 id: UPL-IT-003
 number: 3
 slug: react-bug-hunter
-title: React Bug Hunter
+title: Lov na bagove u React aplikacijama
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Web razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# REACT BUG HUNTER
+# LOV NA BAGOVE U REACT APLIKACIJAMA
 
 Želim da izvršiš maksimalno duboku, sistematsku i evidence-first analizu React aplikacije sa jednim glavnim ciljem:
 

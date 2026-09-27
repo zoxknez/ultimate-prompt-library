@@ -2,7 +2,7 @@
 id: UPL-IT-100
 number: 100
 slug: hardware-software-integration-audit
-title: Hardware/Software Integration Audit
+title: Audit integracije hardvera i softvera
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Desktop, igre, sistemi i embedded
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# HARDWARE / SOFTWARE INTEGRATION AUDIT
+# AUDIT INTEGRACIJE HARDVERA I SOFTVERA
 
 Želim kompletan audit granice između software-a i fizičkog hardware-a, uključujući protocol semantics, device discovery, timing, state synchronization, disconnect/reconnect, firmware compatibility i unsafe state behavior.
 

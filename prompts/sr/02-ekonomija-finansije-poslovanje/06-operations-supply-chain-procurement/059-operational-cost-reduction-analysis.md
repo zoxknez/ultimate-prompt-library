@@ -2,7 +2,7 @@
 id: UPL-BIZ-059
 number: 59
 slug: operational-cost-reduction-analysis
-title: Operational Cost Reduction Analysis
+title: Analiza smanjenja operativnih troškova
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Operacije, lanac snabdevanja i nabavka
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# OPERATIONAL COST REDUCTION ANALYSIS
+# ANALIZA SMANJENJA OPERATIVNIH TROŠKOVA
 
 Želim duboku, evidence-first i operations-oriented analizu koja razlikuje simptom od stvarnog ograničenja i optimizaciju lokalne metrike od poboljšanja ukupnog sistema.
 

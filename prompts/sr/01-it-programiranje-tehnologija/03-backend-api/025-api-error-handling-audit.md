@@ -2,7 +2,7 @@
 id: UPL-IT-025
 number: 25
 slug: api-error-handling-audit
-title: API Error Handling Audit
+title: Audit obrade grešaka u API-ju
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Backend i API
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# API ERROR HANDLING AUDIT
+# AUDIT OBRADE GREŠAKA U API-JU
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletnog error handling sistema backend/API aplikacije.
 

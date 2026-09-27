@@ -2,7 +2,7 @@
 id: UPL-IT-086
 number: 86
 slug: mobile-ux-audit
-title: Mobile UX Audit
+title: Mobilni UX audit
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: UX, UI i razvoj proizvoda
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# MOBILE UX AUDIT
+# MOBILNI UX AUDIT
 
 Želim dubok audit mobile web ili native app iskustva sa fokusom na touch interaction, viewport, keyboard, interruptions, connectivity, platform conventions i one-handed use.
 

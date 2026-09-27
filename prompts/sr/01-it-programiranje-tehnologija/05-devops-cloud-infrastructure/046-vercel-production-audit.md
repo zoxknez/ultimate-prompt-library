@@ -2,7 +2,7 @@
 id: UPL-IT-046
 number: 46
 slug: vercel-production-audit
-title: Vercel Production Audit
+title: Produkcioni audit Vercel okruženja
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# VERCEL PRODUCTION AUDIT
+# PRODUKCIONI AUDIT VERCEL OKRUŽENJA
 
 Želim duboku production reviziju Vercel deployment-a i Next.js/serverless/edge infrastrukture.
 

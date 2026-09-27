@@ -2,7 +2,7 @@
 id: UPL-IT-056
 number: 56
 slug: data-integrity-audit
-title: Data Integrity Audit
+title: Audit integriteta podataka
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Baze podataka i data engineering
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# DATA INTEGRITY AUDIT
+# AUDIT INTEGRITETA PODATAKA
 
 Želim forenzički audit svih invariants i puteva kojima podaci mogu postati nevalidni, kontradiktorni, duplicirani ili međusobno neusaglašeni.
 

@@ -2,7 +2,7 @@
 id: UPL-BIZ-074
 number: 74
 slug: kpi-and-performance-management-audit
-title: KPI & Performance Management Audit
+title: Audit KPI-jeva i upravljanja učinkom
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Menadžment, liderstvo i organizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# KPI & PERFORMANCE MANAGEMENT AUDIT
+# AUDIT KPI-JEVA I UPRAVLJANJA UČINKOM
 
 Želim duboku, evidence-first i execution-oriented analizu management sistema, organizacije i liderstva. Cilj nije generički leadership savet, već proverljiv uvid u to kako struktura, odluke, metrike, reporting i ownership utiču na izvršenje.
 

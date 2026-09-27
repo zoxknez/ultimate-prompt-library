@@ -2,7 +2,7 @@
 id: UPL-BIZ-054
 number: 54
 slug: supply-chain-resilience-audit
-title: Supply Chain Resilience Audit
+title: Audit otpornosti lanca snabdevanja
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Operacije, lanac snabdevanja i nabavka
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# SUPPLY CHAIN RESILIENCE AUDIT
+# AUDIT OTPORNOSTI LANCA SNABDEVANJA
 
 Želim duboku, evidence-first i operations-oriented analizu koja razlikuje simptom od stvarnog ograničenja i optimizaciju lokalne metrike od poboljšanja ukupnog sistema.
 

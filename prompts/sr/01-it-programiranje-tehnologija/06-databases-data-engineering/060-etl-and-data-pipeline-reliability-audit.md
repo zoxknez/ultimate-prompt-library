@@ -2,7 +2,7 @@
 id: UPL-IT-060
 number: 60
 slug: etl-and-data-pipeline-reliability-audit
-title: ETL & Data Pipeline Reliability Audit
+title: Audit pouzdanosti ETL-a i data pipeline-a
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Baze podataka i data engineering
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# ETL AND DATA PIPELINE RELIABILITY AUDIT
+# AUDIT POUZDANOSTI ETL-A I DATA PIPELINE-A
 
 Želim maksimalno duboku analizu ETL, ingestion, sync, import/export i data pipeline sistema sa fokusom na correctness, idempotency, replay, ordering, schema evolution, lineage i recovery.
 

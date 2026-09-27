@@ -2,7 +2,7 @@
 id: UPL-BIZ-011
 number: 11
 slug: ultimate-accounting-system-audit
-title: Ultimate Accounting System Audit
+title: Sveobuhvatni audit računovodstvenog sistema
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Računovodstvo, izveštavanje i finansijska kontrola
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE ACCOUNTING SYSTEM AUDIT
+# SVEOBUHVATNI AUDIT RAČUNOVODSTVENOG SISTEMA
 
 Želim da izvršiš maksimalno dubok, sistematski, evidence-first audit kompletnog accounting sistema kompanije ili organizacije.
 

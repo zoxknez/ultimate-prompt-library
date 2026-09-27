@@ -2,7 +2,7 @@
 id: UPL-BIZ-099
 number: 99
 slug: assumption-and-sensitivity-analysis
-title: Assumption & Sensitivity Analysis
+title: Analiza pretpostavki i osetljivosti
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Investicije, vrednovanje i due diligence
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ASSUMPTION & SENSITIVITY ANALYSIS
+# ANALIZA PRETPOSTAVKI I OSETLJIVOSTI
 
 Želim duboku, evidence-first i investment-grade analizu koja razdvaja računovodstveni rezultat, cash generation, enterprise value, equity value i pretpostavke koje nose najveći deo vrednosti.
 

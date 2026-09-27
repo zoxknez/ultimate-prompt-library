@@ -2,7 +2,7 @@
 id: UPL-BIZ-080
 number: 80
 slug: leadership-risk-and-dependency-audit
-title: Leadership Risk & Dependency Audit
+title: Audit rizika i zavisnosti od liderstva
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Menadžment, liderstvo i organizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# LEADERSHIP RISK & DEPENDENCY AUDIT
+# AUDIT RIZIKA I ZAVISNOSTI OD LIDERSTVA
 
 Želim duboku, evidence-first i execution-oriented analizu management sistema, organizacije i liderstva. Cilj nije generički leadership savet, već proverljiv uvid u to kako struktura, odluke, metrike, reporting i ownership utiču na izvršenje.
 

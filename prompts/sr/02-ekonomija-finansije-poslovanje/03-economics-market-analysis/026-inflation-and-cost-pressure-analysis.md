@@ -2,7 +2,7 @@
 id: UPL-BIZ-026
 number: 26
 slug: inflation-and-cost-pressure-analysis
-title: Inflation & Cost Pressure Analysis
+title: Analiza inflacije i pritiska troškova
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Ekonomija i analiza tržišta
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# INFLATION & COST PRESSURE ANALYSIS
+# ANALIZA INFLACIJE I PRITISKA TROŠKOVA
 
 Želim duboku analizu inflacije i cost pressure-a sa fokusom na business transmission, pricing power, margins, wages, inputs i real purchasing power.
 

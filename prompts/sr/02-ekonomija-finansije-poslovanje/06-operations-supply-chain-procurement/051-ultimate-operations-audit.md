@@ -2,7 +2,7 @@
 id: UPL-BIZ-051
 number: 51
 slug: ultimate-operations-audit
-title: Ultimate Operations Audit
+title: Sveobuhvatni audit operacija
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Operacije, lanac snabdevanja i nabavka
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE OPERATIONS AUDIT
+# SVEOBUHVATNI AUDIT OPERACIJA
 
 Želim duboku, evidence-first i operations-oriented analizu koja razlikuje simptom od stvarnog ograničenja i optimizaciju lokalne metrike od poboljšanja ukupnog sistema.
 

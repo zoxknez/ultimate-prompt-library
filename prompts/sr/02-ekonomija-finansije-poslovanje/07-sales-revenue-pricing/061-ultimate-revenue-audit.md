@@ -2,7 +2,7 @@
 id: UPL-BIZ-061
 number: 61
 slug: ultimate-revenue-audit
-title: Ultimate Revenue Audit
+title: Sveobuhvatni audit prihoda
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Prodaja, prihodi i cene
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE REVENUE AUDIT
+# SVEOBUHVATNI AUDIT PRIHODA
 
 Želim duboku, evidence-first i revenue-oriented analizu koja razdvaja prodajnu aktivnost od stvarnog ekonomskog rezultata i reported revenue od kvalitetnog, naplativog i održivog prihoda.
 

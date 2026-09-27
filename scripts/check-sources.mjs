@@ -18,6 +18,7 @@ import { fileURLToPath } from 'node:url';
 import {
   CHECKER_VERSION, classify, collectSources, mapWithHostLimit, networkVerdict, NO_NETWORK_CODES, observe, readJson, REGISTRY_FILES,
   SNAPSHOT_FILE, SNAPSHOT_SCHEMA_VERSION, snapshotEntry, validateSnapshot, validateSourceList,
+  MANUAL_FILE, manualVerificationState, validateManualVerification,
 } from './lib/source-freshness.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -71,6 +72,10 @@ const snapshot = existsSync(path.join(ROOT, SNAPSHOT_FILE))
 const snap = validateSnapshot(snapshot, sources);
 structural.push(...snap.errors);
 warnings.push(...snap.warnings);
+const manual = existsSync(path.join(ROOT, MANUAL_FILE)) ? readJson(MANUAL_FILE) : { schemaVersion: 1, entries: {} };
+const manualCheck = validateManualVerification(manual, sources);
+structural.push(...manualCheck.errors);
+warnings.push(...manualCheck.warnings);
 
 const offlineSummary = {
   registryFiles: REGISTRY_FILES.length,
@@ -78,6 +83,7 @@ const offlineSummary = {
   declaredDraftSources: sources.filter((s) => s.declaredDraft).length,
   hosts: new Set(sources.map((s) => new URL(s.url).host)).size,
   snapshotEntries: Object.keys(snapshot.entries ?? {}).length,
+  manuallyVerifiedSources: Object.values(manual.entries).filter((e) => manualVerificationState(e) === 'verified').length,
   structuralErrors: structural.length,
   warnings,
 };
@@ -167,6 +173,11 @@ if (!(await networkAvailable())) {
 
 const counts = Object.fromEntries([...new Set(report.results.map((r) => r.status))].sort().map((s) => [s, report.results.filter((r) => r.status === s).length]));
 report.counts = counts;
+// Sources that block automated clients but were verified in a browser recently need no recheck.
+for (const r of report.results) {
+  const state = manualVerificationState(manual.entries[r.url]);
+  if (state !== 'none') r.manualVerification = { state, verifiedAt: manual.entries[r.url].verifiedAt, finding: manual.entries[r.url].finding };
+}
 report.needsReview = report.results.filter((r) => r.needsReview).map((r) => ({ url: r.url, status: r.status, reasons: r.reasons }));
 
 if (args['update-snapshot'] && report.network === 'AVAILABLE') {
@@ -200,7 +211,9 @@ else {
   console.log('sources:check: ' + report.results.length + ' source(s), network ' + report.network);
   console.log('status counts: ' + JSON.stringify(counts));
   for (const r of report.needsReview) console.log('REVIEW  ' + r.status.padEnd(20) + ' ' + r.url + '\n        ' + r.reasons.join('; '));
-  for (const r of report.results.filter((x) => ['UNKNOWN', 'TIMEOUT'].includes(x.status))) console.log('RECHECK ' + r.status.padEnd(20) + ' ' + r.url + '\n        ' + r.reasons.join('; '));
+  const covered = report.results.filter((x) => ['UNKNOWN', 'TIMEOUT'].includes(x.status) && x.manualVerification?.state === 'verified');
+  if (covered.length) console.log('manual: ' + covered.length + ' blocked source(s) covered by a browser verification younger than 180 days (' + MANUAL_FILE + ')');
+  for (const r of report.results.filter((x) => ['UNKNOWN', 'TIMEOUT'].includes(x.status) && x.manualVerification?.state !== 'verified')) console.log('RECHECK ' + r.status.padEnd(20) + ' ' + r.url + '\n        ' + r.reasons.join('; '));
   if (report.snapshotUpdated !== undefined) console.log('snapshot: recorded ' + report.snapshotUpdated + ' observation(s) in ' + SNAPSHOT_FILE);
   console.log('report: ' + path.relative(ROOT, outFile).split(path.sep).join('/'));
 }

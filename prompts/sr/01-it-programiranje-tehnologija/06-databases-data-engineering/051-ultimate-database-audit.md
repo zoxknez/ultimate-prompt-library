@@ -2,7 +2,7 @@
 id: UPL-IT-051
 number: 51
 slug: ultimate-database-audit
-title: Ultimate Database Audit
+title: Sveobuhvatni audit baze podataka
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Baze podataka i data engineering
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# ULTIMATE DATABASE AUDIT
+# SVEOBUHVATNI AUDIT BAZE PODATAKA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletnog database sloja aplikacije.
 

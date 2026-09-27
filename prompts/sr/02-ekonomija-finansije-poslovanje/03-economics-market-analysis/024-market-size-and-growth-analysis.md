@@ -2,7 +2,7 @@
 id: UPL-BIZ-024
 number: 24
 slug: market-size-and-growth-analysis
-title: Market Size & Growth Analysis
+title: Analiza veličine i rasta tržišta
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Ekonomija i analiza tržišta
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# MARKET SIZE & GROWTH ANALYSIS
+# ANALIZA VELIČINE I RASTA TRŽIŠTA
 
 Želim rigoroznu analizu veličine i rasta tržišta sa transparentnim definitions, sources, assumptions i metodologijom.
 

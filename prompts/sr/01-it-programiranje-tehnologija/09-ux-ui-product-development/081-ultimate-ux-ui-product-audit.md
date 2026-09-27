@@ -2,7 +2,7 @@
 id: UPL-IT-081
 number: 81
 slug: ultimate-ux-ui-product-audit
-title: Ultimate UX/UI Product Audit
+title: Sveobuhvatni UX/UI audit proizvoda
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: UX, UI i razvoj proizvoda
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE UX/UI PRODUCT AUDIT
+# SVEOBUHVATNI UX/UI AUDIT PROIZVODA
 
 Želim da izvršiš maksimalno dubok, sistematski, evidence-first i product-oriented audit kompletnog UX/UI iskustva aplikacije ili digitalnog proizvoda.
 

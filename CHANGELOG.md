@@ -18,6 +18,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Hand-authored concrete inputs for all 49 curated smoke fixtures (`evals/cases/`, 27 files, fictional material with planted facts and 1-4 case-specific assertions each). The candidate receives only the concrete input; the judge sees it separately (harness protocol v3). `validate-v2` enforces one case per curated fixture.
 
+- Serbian titles for all 200 IT and Business prompts (previously English), in the catalog, front matter and H1, plus seven in-body references; `validate-v2` now rejects a Serbian title identical to the English one.
+- Browser verification of the 31 sources that block automated clients (`scripts/v2-source-manual-verification.json`, 180-day validity): 26 verified, an FTC page returning 404 replaced, the retired COPE Core Practices replaced by the 2026 COPE Code of Conduct, ten redirecting URLs moved to their canonical pages, and five unesco.org pages recorded as unreachable.
+
 ### Removed
 
 - `scripts/upgrade-prompts-v2.mjs` (could materialize a frozen copy of the v2 layer into all raw files; its post-check still required version 2.0.0) and `scripts/lib/eval-runtime.mjs` (replaced by `scripts/lib/eval/`).

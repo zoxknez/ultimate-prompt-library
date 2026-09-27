@@ -2,7 +2,7 @@
 id: UPL-IT-010
 number: 10
 slug: browser-compatibility-and-production-bug-hunter
-title: Browser Compatibility & Production Bug Hunter
+title: Lov na probleme kompatibilnosti browsera i produkcione bagove
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Web razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# BROWSER COMPATIBILITY AND PRODUCTION BUG HUNTER
+# LOV NA PROBLEME KOMPATIBILNOSTI BROWSERA I PRODUKCIONE BAGOVE
 
 Želim da izvršiš maksimalno duboku, sistematsku i evidence-first analizu problema koji se mogu pojaviti samo:
 

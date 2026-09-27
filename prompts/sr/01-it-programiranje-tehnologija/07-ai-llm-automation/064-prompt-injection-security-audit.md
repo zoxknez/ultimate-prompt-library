@@ -2,7 +2,7 @@
 id: UPL-IT-064
 number: 64
 slug: prompt-injection-security-audit
-title: Prompt Injection Security Audit
+title: Bezbednosni audit prompt injection napada
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: AI, LLM i automatizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# PROMPT INJECTION SECURITY AUDIT
+# BEZBEDNOSNI AUDIT PROMPT INJECTION NAPADA
 
 Želim kompletan security audit prompt-injection attack surface-a AI sistema, uključujući direct i indirect injection, tool manipulation, data exfiltration, cross-context contamination i confused-deputy scenarije.
 

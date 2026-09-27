@@ -2,7 +2,7 @@
 id: UPL-IT-090
 number: 90
 slug: feature-design-and-ux-review
-title: Feature Design & UX Review
+title: Pregled dizajna funkcionalnosti i UX-a
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: UX, UI i razvoj proizvoda
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# FEATURE DESIGN AND UX REVIEW
+# PREGLED DIZAJNA FUNKCIONALNOSTI I UX-A
 
 Želim kompletan pre-implementation ili pre-release review konkretnog feature-a koji kombinuje product logic, UX, UI states, failure handling, permissions, edge cases i implementation feasibility.
 

@@ -2,7 +2,7 @@
 id: UPL-IT-023
 number: 23
 slug: api-contract-consistency-audit
-title: API Contract Consistency Audit
+title: Audit doslednosti API ugovora
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Backend i API
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# API CONTRACT CONSISTENCY AUDIT
+# AUDIT DOSLEDNOSTI API UGOVORA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i client-oriented analizu doslednosti kompletnog API contract-a kroz sve endpoint-e, verzije, klijente i runtime scenarije.
 

@@ -13,16 +13,16 @@ Test suite-ovi, pokrivenost, nestabilni testovi, regresioni i end-to-end planovi
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 071 | [Ultimate Test Suite Audit](071-ultimate-test-suite-audit.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/071-ultimate-test-suite-audit.md) | [SR](071-ultimate-test-suite-audit.md) | Dostupno |
-| 072 | [Missing Test Coverage Hunter](072-missing-test-coverage-hunter.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/072-missing-test-coverage-hunter.md) | [SR](072-missing-test-coverage-hunter.md) | Dostupno |
-| 073 | [Flaky Test Hunter](073-flaky-test-hunter.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/073-flaky-test-hunter.md) | [SR](073-flaky-test-hunter.md) | Dostupno |
-| 074 | [Regression Test Generator](074-regression-test-generator.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/074-regression-test-generator.md) | [SR](074-regression-test-generator.md) | Dostupno |
-| 075 | [End-to-End Test Plan Generator](075-end-to-end-test-plan-generator.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/075-end-to-end-test-plan-generator.md) | [SR](075-end-to-end-test-plan-generator.md) | Dostupno |
-| 076 | [Edge Case Generator](076-edge-case-generator.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/076-edge-case-generator.md) | [SR](076-edge-case-generator.md) | Dostupno |
-| 077 | [Adversarial User Testing](077-adversarial-user-testing.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/077-adversarial-user-testing.md) | [SR](077-adversarial-user-testing.md) | Dostupno |
-| 078 | [Reliability & Failure Mode Audit](078-reliability-and-failure-mode-audit.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/078-reliability-and-failure-mode-audit.md) | [SR](078-reliability-and-failure-mode-audit.md) | Dostupno |
-| 079 | [Race Condition & Concurrency Hunter](079-race-condition-and-concurrency-hunter.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/079-race-condition-and-concurrency-hunter.md) | [SR](079-race-condition-and-concurrency-hunter.md) | Dostupno |
-| 080 | [Production Incident Simulation](080-production-incident-simulation.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/080-production-incident-simulation.md) | [SR](080-production-incident-simulation.md) | Dostupno |
+| 071 | [Sveobuhvatni audit test suite-a](071-ultimate-test-suite-audit.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/071-ultimate-test-suite-audit.md) | [SR](071-ultimate-test-suite-audit.md) | Dostupno |
+| 072 | [Lov na nedostajuću pokrivenost testovima](072-missing-test-coverage-hunter.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/072-missing-test-coverage-hunter.md) | [SR](072-missing-test-coverage-hunter.md) | Dostupno |
+| 073 | [Lov na nestabilne (flaky) testove](073-flaky-test-hunter.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/073-flaky-test-hunter.md) | [SR](073-flaky-test-hunter.md) | Dostupno |
+| 074 | [Generator regresionih testova](074-regression-test-generator.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/074-regression-test-generator.md) | [SR](074-regression-test-generator.md) | Dostupno |
+| 075 | [Generator end-to-end test plana](075-end-to-end-test-plan-generator.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/075-end-to-end-test-plan-generator.md) | [SR](075-end-to-end-test-plan-generator.md) | Dostupno |
+| 076 | [Generator graničnih slučajeva](076-edge-case-generator.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/076-edge-case-generator.md) | [SR](076-edge-case-generator.md) | Dostupno |
+| 077 | [Adversarial testiranje iz ugla korisnika](077-adversarial-user-testing.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/077-adversarial-user-testing.md) | [SR](077-adversarial-user-testing.md) | Dostupno |
+| 078 | [Audit pouzdanosti i načina otkaza](078-reliability-and-failure-mode-audit.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/078-reliability-and-failure-mode-audit.md) | [SR](078-reliability-and-failure-mode-audit.md) | Dostupno |
+| 079 | [Lov na race condition i probleme konkurentnosti](079-race-condition-and-concurrency-hunter.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/079-race-condition-and-concurrency-hunter.md) | [SR](079-race-condition-and-concurrency-hunter.md) | Dostupno |
+| 080 | [Simulacija produkcionog incidenta](080-production-incident-simulation.md) | [EN](../../../en/01-it-programming-technology/08-testing-qa-reliability/080-production-incident-simulation.md) | [SR](080-production-incident-simulation.md) | Dostupno |
 <!-- UPL:END subcategory-prompts -->
 
 Planirani promptovi imaju rezervisan ID i ime fajla, ali još nisu napisani. Ako želiš da napišeš neki od njih, otvori issue ili pull request koji navodi njegov ID. Pogledaj [CONTRIBUTING.sr.md](../../../../CONTRIBUTING.sr.md).

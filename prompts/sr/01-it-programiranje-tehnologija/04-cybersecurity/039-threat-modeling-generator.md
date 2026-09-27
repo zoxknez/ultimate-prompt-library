@@ -2,7 +2,7 @@
 id: UPL-IT-039
 number: 39
 slug: threat-modeling-generator
-title: Threat Modeling Generator
+title: Generator modela pretnji
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Sajber bezbednost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# THREAT MODELING GENERATOR
+# GENERATOR MODELA PRETNJI
 
 Želim da izgradiš maksimalno dubok, sistematski, evidence-first i production-oriented threat model kompletne aplikacije ili sistema.
 

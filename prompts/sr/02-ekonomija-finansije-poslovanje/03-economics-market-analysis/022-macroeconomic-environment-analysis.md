@@ -2,7 +2,7 @@
 id: UPL-BIZ-022
 number: 22
 slug: macroeconomic-environment-analysis
-title: Macroeconomic Environment Analysis
+title: Analiza makroekonomskog okruženja
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Ekonomija i analiza tržišta
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# MACROECONOMIC ENVIRONMENT ANALYSIS
+# ANALIZA MAKROEKONOMSKOG OKRUŽENJA
 
 Želim duboku analizu makroekonomskog okruženja relevantnog za kompaniju, industriju, investiciju ili poslovnu odluku.
 

@@ -2,7 +2,7 @@
 id: UPL-BIZ-092
 number: 92
 slug: dcf-valuation-audit
-title: DCF Valuation Audit
+title: Audit DCF procene vrednosti
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Investicije, vrednovanje i due diligence
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# DCF VALUATION AUDIT
+# AUDIT DCF PROCENE VREDNOSTI
 
 Želim duboku, evidence-first i investment-grade analizu koja razdvaja računovodstveni rezultat, cash generation, enterprise value, equity value i pretpostavke koje nose najveći deo vrednosti.
 

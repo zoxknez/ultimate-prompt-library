@@ -2,7 +2,7 @@
 id: UPL-BIZ-057
 number: 57
 slug: vendor-risk-analysis
-title: Vendor Risk Analysis
+title: Analiza rizika dobavljača
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Operacije, lanac snabdevanja i nabavka
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# VENDOR RISK ANALYSIS
+# ANALIZA RIZIKA DOBAVLJAČA
 
 Želim duboku, evidence-first i operations-oriented analizu koja razlikuje simptom od stvarnog ograničenja i optimizaciju lokalne metrike od poboljšanja ukupnog sistema.
 

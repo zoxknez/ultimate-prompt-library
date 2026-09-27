@@ -2,7 +2,7 @@
 id: UPL-IT-021
 number: 21
 slug: ultimate-backend-architecture-audit
-title: Ultimate Backend Architecture Audit
+title: Sveobuhvatni audit backend arhitekture
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Backend i API
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE BACKEND ARCHITECTURE AUDIT
+# SVEOBUHVATNI AUDIT BACKEND ARHITEKTURE
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletne backend arhitekture aplikacije ili servisa.
 

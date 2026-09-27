@@ -2,7 +2,7 @@
 id: UPL-IT-063
 number: 63
 slug: hallucination-and-grounding-audit
-title: Hallucination & Grounding Audit
+title: Audit halucinacija i utemeljenosti odgovora
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: AI, LLM i automatizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# HALLUCINATION AND GROUNDING AUDIT
+# AUDIT HALUCINACIJA I UTEMELJENOSTI ODGOVORA
 
 Želim duboku, sistematsku analizu factual reliability-ja AI sistema.
 

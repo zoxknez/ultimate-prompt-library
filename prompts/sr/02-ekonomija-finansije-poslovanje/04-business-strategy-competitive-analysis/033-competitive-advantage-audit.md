@@ -2,7 +2,7 @@
 id: UPL-BIZ-033
 number: 33
 slug: competitive-advantage-audit
-title: Competitive Advantage Audit
+title: Audit konkurentske prednosti
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Poslovna strategija i analiza konkurencije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# COMPETITIVE ADVANTAGE AUDIT
+# AUDIT KONKURENTSKE PREDNOSTI
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu ove strateške teme.
 

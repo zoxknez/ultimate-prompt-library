@@ -2,7 +2,7 @@
 id: UPL-IT-026
 number: 26
 slug: backend-performance-audit
-title: Backend Performance Audit
+title: Audit performansi backend-a
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Backend i API
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# BACKEND PERFORMANCE AUDIT
+# AUDIT PERFORMANSI BACKEND-A
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu performansi kompletnog backend sistema.
 

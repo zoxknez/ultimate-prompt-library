@@ -2,7 +2,7 @@
 id: UPL-IT-075
 number: 75
 slug: end-to-end-test-plan-generator
-title: End-to-End Test Plan Generator
+title: Generator end-to-end test plana
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Testiranje, QA i pouzdanost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# END-TO-END TEST PLAN GENERATOR
+# GENERATOR END-TO-END TEST PLANA
 
 Želim da generišeš production-grade E2E test plan zasnovan na stvarnim critical user journeys, state transitions, permissions, external integrations i recovery behavior-u.
 

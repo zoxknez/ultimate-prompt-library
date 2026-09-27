@@ -13,16 +13,16 @@ UX proizvoda, kritični tokovi, onboarding, forme, navigacija, dizajn sistemi, p
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 081 | [Ultimate UX/UI Product Audit](081-ultimate-ux-ui-product-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/081-ultimate-ux-ui-product-audit.md) | [SR](081-ultimate-ux-ui-product-audit.md) | Dostupno |
-| 082 | [Critical User Flow Audit](082-critical-user-flow-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/082-critical-user-flow-audit.md) | [SR](082-critical-user-flow-audit.md) | Dostupno |
-| 083 | [Onboarding Audit](083-onboarding-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/083-onboarding-audit.md) | [SR](083-onboarding-audit.md) | Dostupno |
-| 084 | [Form UX Audit](084-form-ux-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/084-form-ux-audit.md) | [SR](084-form-ux-audit.md) | Dostupno |
-| 085 | [Navigation & Information Architecture Audit](085-navigation-and-information-architecture-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/085-navigation-and-information-architecture-audit.md) | [SR](085-navigation-and-information-architecture-audit.md) | Dostupno |
-| 086 | [Mobile UX Audit](086-mobile-ux-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/086-mobile-ux-audit.md) | [SR](086-mobile-ux-audit.md) | Dostupno |
-| 087 | [Design System Consistency Audit](087-design-system-consistency-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/087-design-system-consistency-audit.md) | [SR](087-design-system-consistency-audit.md) | Dostupno |
-| 088 | [Accessibility Experience Audit](088-accessibility-experience-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/088-accessibility-experience-audit.md) | [SR](088-accessibility-experience-audit.md) | Dostupno |
-| 089 | [Product Requirement Generator](089-product-requirement-generator.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/089-product-requirement-generator.md) | [SR](089-product-requirement-generator.md) | Dostupno |
-| 090 | [Feature Design & UX Review](090-feature-design-and-ux-review.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/090-feature-design-and-ux-review.md) | [SR](090-feature-design-and-ux-review.md) | Dostupno |
+| 081 | [Sveobuhvatni UX/UI audit proizvoda](081-ultimate-ux-ui-product-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/081-ultimate-ux-ui-product-audit.md) | [SR](081-ultimate-ux-ui-product-audit.md) | Dostupno |
+| 082 | [Audit kritičnih korisničkih tokova](082-critical-user-flow-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/082-critical-user-flow-audit.md) | [SR](082-critical-user-flow-audit.md) | Dostupno |
+| 083 | [Audit onboarding-a](083-onboarding-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/083-onboarding-audit.md) | [SR](083-onboarding-audit.md) | Dostupno |
+| 084 | [UX audit formi](084-form-ux-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/084-form-ux-audit.md) | [SR](084-form-ux-audit.md) | Dostupno |
+| 085 | [Audit navigacije i informacione arhitekture](085-navigation-and-information-architecture-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/085-navigation-and-information-architecture-audit.md) | [SR](085-navigation-and-information-architecture-audit.md) | Dostupno |
+| 086 | [Mobilni UX audit](086-mobile-ux-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/086-mobile-ux-audit.md) | [SR](086-mobile-ux-audit.md) | Dostupno |
+| 087 | [Audit doslednosti dizajn sistema](087-design-system-consistency-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/087-design-system-consistency-audit.md) | [SR](087-design-system-consistency-audit.md) | Dostupno |
+| 088 | [Audit pristupačnosti korisničkog iskustva](088-accessibility-experience-audit.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/088-accessibility-experience-audit.md) | [SR](088-accessibility-experience-audit.md) | Dostupno |
+| 089 | [Generator zahteva za proizvod](089-product-requirement-generator.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/089-product-requirement-generator.md) | [SR](089-product-requirement-generator.md) | Dostupno |
+| 090 | [Pregled dizajna funkcionalnosti i UX-a](090-feature-design-and-ux-review.md) | [EN](../../../en/01-it-programming-technology/09-ux-ui-product-development/090-feature-design-and-ux-review.md) | [SR](090-feature-design-and-ux-review.md) | Dostupno |
 <!-- UPL:END subcategory-prompts -->
 
 Planirani promptovi imaju rezervisan ID i ime fajla, ali još nisu napisani. Ako želiš da napišeš neki od njih, otvori issue ili pull request koji navodi njegov ID. Pogledaj [CONTRIBUTING.sr.md](../../../../CONTRIBUTING.sr.md).

@@ -2,7 +2,7 @@
 id: UPL-IT-070
 number: 70
 slug: ai-model-selection-and-evaluation
-title: AI Model Selection & Evaluation
+title: Izbor i evaluacija AI modela
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: AI, LLM i automatizacija
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# AI MODEL SELECTION AND EVALUATION
+# IZBOR I EVALUACIJA AI MODELA
 
 Želim rigorozan, evidence-first proces za izbor AI modela za konkretan proizvod ili workflow.
 

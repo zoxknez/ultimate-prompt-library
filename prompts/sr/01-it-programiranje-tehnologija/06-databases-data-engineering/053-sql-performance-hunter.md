@@ -2,7 +2,7 @@
 id: UPL-IT-053
 number: 53
 slug: sql-performance-hunter
-title: SQL Performance Hunter
+title: Lov na probleme SQL performansi
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Baze podataka i data engineering
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# SQL PERFORMANCE HUNTER
+# LOV NA PROBLEME SQL PERFORMANSI
 
 Želim duboku analizu SQL performance bottleneck-a zasnovanu na stvarnim query-jima, execution plan-ovima i production workload-u.
 

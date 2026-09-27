@@ -2,7 +2,7 @@
 id: UPL-BIZ-048
 number: 48
 slug: business-scalability-audit
-title: Business Scalability Audit
+title: Audit skalabilnosti poslovanja
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Preduzetništvo i poslovni modeli
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# BUSINESS SCALABILITY AUDIT
+# AUDIT SKALABILNOSTI POSLOVANJA
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu.
 

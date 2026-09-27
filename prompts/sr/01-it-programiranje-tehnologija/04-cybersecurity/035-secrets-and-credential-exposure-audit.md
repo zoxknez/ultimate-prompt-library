@@ -2,7 +2,7 @@
 id: UPL-IT-035
 number: 35
 slug: secrets-and-credential-exposure-audit
-title: Secrets & Credential Exposure Audit
+title: Audit izloženosti tajni i kredencijala
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Sajber bezbednost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# SECRETS AND CREDENTIAL EXPOSURE AUDIT
+# AUDIT IZLOŽENOSTI TAJNI I KREDENCIJALA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu svih mesta na kojima secrets, credentials, tokens, signing keys, connection strings i drugi poverljivi autentikacioni materijali mogu biti:
 
@@ -3060,7 +3060,7 @@ Ne želim izveštaj tipa:
 
 > Nemojte commitovati `.env`, koristite Vault i rotirajte ključeve.
 
-To nije Secrets & Credential Exposure Audit.
+To nije audit izloženosti tajni i kredencijala.
 
 Tražim probleme poput:
 

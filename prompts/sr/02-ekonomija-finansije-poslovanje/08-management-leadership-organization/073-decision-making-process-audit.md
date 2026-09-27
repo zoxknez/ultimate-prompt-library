@@ -2,7 +2,7 @@
 id: UPL-BIZ-073
 number: 73
 slug: decision-making-process-audit
-title: Decision-Making Process Audit
+title: Audit procesa odlučivanja
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Menadžment, liderstvo i organizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# DECISION-MAKING PROCESS AUDIT
+# AUDIT PROCESA ODLUČIVANJA
 
 Želim duboku, evidence-first i execution-oriented analizu management sistema, organizacije i liderstva. Cilj nije generički leadership savet, već proverljiv uvid u to kako struktura, odluke, metrike, reporting i ownership utiču na izvršenje.
 

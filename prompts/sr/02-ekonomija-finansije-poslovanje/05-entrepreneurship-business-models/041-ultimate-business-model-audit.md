@@ -2,7 +2,7 @@
 id: UPL-BIZ-041
 number: 41
 slug: ultimate-business-model-audit
-title: Ultimate Business Model Audit
+title: Sveobuhvatni audit poslovnog modela
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Preduzetništvo i poslovni modeli
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE BUSINESS MODEL AUDIT
+# SVEOBUHVATNI AUDIT POSLOVNOG MODELA
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu.
 

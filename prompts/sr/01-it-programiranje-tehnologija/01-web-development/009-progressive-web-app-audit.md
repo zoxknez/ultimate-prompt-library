@@ -2,7 +2,7 @@
 id: UPL-IT-009
 number: 9
 slug: progressive-web-app-audit
-title: Progressive Web App Audit
+title: Audit progresivne web aplikacije (PWA)
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Web razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# PROGRESSIVE WEB APP AUDIT
+# AUDIT PROGRESIVNE WEB APLIKACIJE (PWA)
 
 Želim da izvršiš maksimalno duboku, sistematsku i evidence-first analizu kompletne Progressive Web App implementacije.
 

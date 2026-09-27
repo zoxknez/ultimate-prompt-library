@@ -2,7 +2,7 @@
 id: UPL-IT-094
 number: 94
 slug: windows-application-production-audit
-title: Windows Application Production Audit
+title: Produkcioni audit Windows aplikacije
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Desktop, igre, sistemi i embedded
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# WINDOWS APPLICATION PRODUCTION AUDIT
+# PRODUKCIONI AUDIT WINDOWS APLIKACIJE
 
 Želim dubok Windows-specific production audit desktop aplikacije.
 

@@ -2,7 +2,7 @@
 id: UPL-IT-080
 number: 80
 slug: production-incident-simulation
-title: Production Incident Simulation
+title: Simulacija produkcionog incidenta
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Testiranje, QA i pouzdanost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# PRODUCTION INCIDENT SIMULATION
+# SIMULACIJA PRODUKCIONOG INCIDENTA
 
 Želim da dizajniraš kontrolisanu production-incident simulation / game-day vežbu za aplikaciju, sa ciljem da testiramo detection, triage, containment, recovery, communication i post-incident learning bez stvarnog ugrožavanja korisnika ili podataka.
 

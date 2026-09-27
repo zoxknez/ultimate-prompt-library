@@ -2,7 +2,7 @@
 id: UPL-IT-093
 number: 93
 slug: python-pyside-application-audit
-title: Python/PySide Application Audit
+title: Audit Python/PySide aplikacije
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Desktop, igre, sistemi i embedded
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# PYTHON / PYSIDE APPLICATION AUDIT
+# AUDIT PYTHON/PYSIDE APLIKACIJE
 
 Želim kompletan production audit Python/PySide ili PyQt desktop aplikacije.
 

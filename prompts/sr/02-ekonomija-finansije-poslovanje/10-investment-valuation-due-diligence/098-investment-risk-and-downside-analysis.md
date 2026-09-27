@@ -2,7 +2,7 @@
 id: UPL-BIZ-098
 number: 98
 slug: investment-risk-and-downside-analysis
-title: Investment Risk & Downside Analysis
+title: Analiza investicionog rizika i negativnog scenarija
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Investicije, vrednovanje i due diligence
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# INVESTMENT RISK & DOWNSIDE ANALYSIS
+# ANALIZA INVESTICIONOG RIZIKA I NEGATIVNOG SCENARIJA
 
 Želim duboku, evidence-first i investment-grade analizu koja razdvaja računovodstveni rezultat, cash generation, enterprise value, equity value i pretpostavke koje nose najveći deo vrednosti.
 

@@ -2,7 +2,7 @@
 id: UPL-BIZ-018
 number: 18
 slug: management-reporting-audit
-title: Management Reporting Audit
+title: Audit menadžerskog izveštavanja
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Računovodstvo, izveštavanje i finansijska kontrola
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# MANAGEMENT REPORTING AUDIT
+# AUDIT MENADŽERSKOG IZVEŠTAVANJA
 
 Želim dubok audit management reporting sistema, uključujući KPI-jeve, P&L reporting, segment reporting, dashboards, variance analysis i decision usefulness.
 

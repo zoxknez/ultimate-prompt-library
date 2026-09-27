@@ -2,7 +2,7 @@
 id: UPL-BIZ-005
 number: 5
 slug: working-capital-optimization
-title: Working Capital Optimization
+title: Optimizacija obrtnog kapitala
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Finansijska analiza i korporativne finansije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# WORKING CAPITAL OPTIMIZATION
+# OPTIMIZACIJA OBRTNOG KAPITALA
 
 Želim duboku analizu working capital-a sa ciljem da se oslobodi cash bez narušavanja prodaje, supplier stability-ja ili operativne otpornosti.
 

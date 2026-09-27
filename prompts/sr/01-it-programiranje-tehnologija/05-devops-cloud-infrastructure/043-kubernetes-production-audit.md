@@ -2,7 +2,7 @@
 id: UPL-IT-043
 number: 43
 slug: kubernetes-production-audit
-title: Kubernetes Production Audit
+title: Produkcioni audit Kubernetes okruženja
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# KUBERNETES PRODUCTION AUDIT
+# PRODUKCIONI AUDIT KUBERNETES OKRUŽENJA
 
 Želim da izvršiš maksimalno dubok forensic audit Kubernetes production deployment-a.
 

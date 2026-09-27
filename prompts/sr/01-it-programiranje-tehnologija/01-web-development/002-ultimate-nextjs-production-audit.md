@@ -2,7 +2,7 @@
 id: UPL-IT-002
 number: 2
 slug: ultimate-nextjs-production-audit
-title: Ultimate Next.js Production Audit
+title: Sveobuhvatni produkcioni audit Next.js aplikacije
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Web razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE NEXT.JS PRODUCTION AUDIT
+# SVEOBUHVATNI PRODUKCIONI AUDIT NEXT.JS APLIKACIJE
 
 Želim da izvršiš **maksimalno duboku, sistematsku, version-aware i evidence-first analizu kompletnog Next.js projekta**.
 

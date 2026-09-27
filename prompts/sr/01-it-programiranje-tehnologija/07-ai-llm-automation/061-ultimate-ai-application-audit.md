@@ -2,7 +2,7 @@
 id: UPL-IT-061
 number: 61
 slug: ultimate-ai-application-audit
-title: Ultimate AI Application Audit
+title: Sveobuhvatni audit AI aplikacije
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: AI, LLM i automatizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE AI APPLICATION AUDIT
+# SVEOBUHVATNI AUDIT AI APLIKACIJE
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletne AI aplikacije, od korisničkog input-a i orchestration sloja do modela, alata, podataka, evaluacija, observability-ja i krajnjeg output-a.
 

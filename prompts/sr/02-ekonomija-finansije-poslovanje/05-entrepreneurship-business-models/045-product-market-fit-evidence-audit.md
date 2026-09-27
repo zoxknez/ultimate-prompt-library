@@ -2,7 +2,7 @@
 id: UPL-BIZ-045
 number: 45
 slug: product-market-fit-evidence-audit
-title: Product-Market Fit Evidence Audit
+title: Audit dokaza o product-market fit-u
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Preduzetništvo i poslovni modeli
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# PRODUCT-MARKET FIT EVIDENCE AUDIT
+# AUDIT DOKAZA O PRODUCT-MARKET FIT-U
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu.
 

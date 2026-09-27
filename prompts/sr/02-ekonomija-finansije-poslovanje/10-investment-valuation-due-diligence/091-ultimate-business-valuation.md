@@ -2,7 +2,7 @@
 id: UPL-BIZ-091
 number: 91
 slug: ultimate-business-valuation
-title: Ultimate Business Valuation
+title: Sveobuhvatna procena vrednosti preduzeća
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Investicije, vrednovanje i due diligence
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE BUSINESS VALUATION
+# SVEOBUHVATNA PROCENA VREDNOSTI PREDUZEĆA
 
 Želim duboku, evidence-first i investment-grade analizu koja razdvaja računovodstveni rezultat, cash generation, enterprise value, equity value i pretpostavke koje nose najveći deo vrednosti.
 

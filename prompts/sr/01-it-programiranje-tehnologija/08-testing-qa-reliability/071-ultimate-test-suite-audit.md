@@ -2,7 +2,7 @@
 id: UPL-IT-071
 number: 71
 slug: ultimate-test-suite-audit
-title: Ultimate Test Suite Audit
+title: Sveobuhvatni audit test suite-a
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Testiranje, QA i pouzdanost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE TEST SUITE AUDIT
+# SVEOBUHVATNI AUDIT TEST SUITE-A
 
 Želim da izvršiš maksimalno dubok, sistematski, evidence-first i production-oriented audit kompletnog test suite-a aplikacije ili repozitorijuma.
 

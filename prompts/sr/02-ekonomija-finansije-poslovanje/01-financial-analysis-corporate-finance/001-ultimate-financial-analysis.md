@@ -2,7 +2,7 @@
 id: UPL-BIZ-001
 number: 1
 slug: ultimate-financial-analysis
-title: Ultimate Financial Analysis
+title: Sveobuhvatna finansijska analiza
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Finansijska analiza i korporativne finansije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE FINANCIAL ANALYSIS
+# SVEOBUHVATNA FINANSIJSKA ANALIZA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i decision-oriented finansijsku analizu kompanije, poslovanja, projekta ili organizacije.
 

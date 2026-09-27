@@ -2,7 +2,7 @@
 id: UPL-IT-068
 number: 68
 slug: n8n-workflow-automation-audit
-title: n8n / Workflow Automation Audit
+title: Audit n8n i workflow automatizacije
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: AI, LLM i automatizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# N8N / WORKFLOW AUTOMATION AUDIT
+# AUDIT N8N I WORKFLOW AUTOMATIZACIJE
 
 Želim kompletan production audit n8n ili ekvivalentnog workflow automation sistema sa fokusom na correctness, retries, idempotency, credentials, concurrency, partial failure, data handling i AI node reliability.
 

@@ -2,7 +2,7 @@
 id: UPL-BIZ-093
 number: 93
 slug: comparable-company-analysis
-title: Comparable Company Analysis
+title: Analiza uporedivih kompanija
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Investicije, vrednovanje i due diligence
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# COMPARABLE COMPANY ANALYSIS
+# ANALIZA UPOREDIVIH KOMPANIJA
 
 Želim duboku, evidence-first i investment-grade analizu koja razdvaja računovodstveni rezultat, cash generation, enterprise value, equity value i pretpostavke koje nose najveći deo vrednosti.
 

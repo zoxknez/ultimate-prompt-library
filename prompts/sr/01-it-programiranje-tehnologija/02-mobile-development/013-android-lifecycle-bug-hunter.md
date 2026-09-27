@@ -2,7 +2,7 @@
 id: UPL-IT-013
 number: 13
 slug: android-lifecycle-bug-hunter
-title: Android Lifecycle Bug Hunter
+title: Lov na lifecycle bagove u Android aplikacijama
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Mobilni razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ANDROID LIFECYCLE BUG HUNTER
+# LOV NA LIFECYCLE BAGOVE U ANDROID APLIKACIJAMA
 
 Želim da izvršiš maksimalno duboku, sistematsku i evidence-first analizu Android lifecycle problema u kompletnoj aplikaciji.
 

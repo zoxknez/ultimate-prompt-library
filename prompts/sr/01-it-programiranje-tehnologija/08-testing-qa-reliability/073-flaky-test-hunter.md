@@ -2,7 +2,7 @@
 id: UPL-IT-073
 number: 73
 slug: flaky-test-hunter
-title: Flaky Test Hunter
+title: Lov na nestabilne (flaky) testove
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Testiranje, QA i pouzdanost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# FLAKY TEST HUNTER
+# LOV NA NESTABILNE (FLAKY) TESTOVE
 
 Želim forenzičku analizu flaky testova sa ciljem da se utvrdi tačan nondeterministic dependency i ukloni root cause, umesto da se problem maskira retries-ima.
 

@@ -2,7 +2,7 @@
 id: UPL-BIZ-071
 number: 71
 slug: ultimate-management-system-audit
-title: Ultimate Management System Audit
+title: Sveobuhvatni audit sistema upravljanja
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Menadžment, liderstvo i organizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE MANAGEMENT SYSTEM AUDIT
+# SVEOBUHVATNI AUDIT SISTEMA UPRAVLJANJA
 
 Želim duboku, evidence-first i execution-oriented analizu management sistema, organizacije i liderstva. Cilj nije generički leadership savet, već proverljiv uvid u to kako struktura, odluke, metrike, reporting i ownership utiču na izvršenje.
 

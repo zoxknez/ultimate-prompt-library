@@ -2,7 +2,7 @@
 id: UPL-BIZ-009
 number: 9
 slug: debt-and-financing-structure-analysis
-title: Debt & Financing Structure Analysis
+title: Analiza duga i strukture finansiranja
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Finansijska analiza i korporativne finansije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# DEBT & FINANCING STRUCTURE ANALYSIS
+# ANALIZA DUGA I STRUKTURE FINANSIRANJA
 
 Želim duboku analizu debt-a i ukupne financing structure kompanije.
 

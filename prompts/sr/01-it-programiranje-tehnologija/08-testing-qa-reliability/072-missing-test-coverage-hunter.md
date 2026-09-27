@@ -2,7 +2,7 @@
 id: UPL-IT-072
 number: 72
 slug: missing-test-coverage-hunter
-title: Missing Test Coverage Hunter
+title: Lov na nedostajuću pokrivenost testovima
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Testiranje, QA i pouzdanost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# MISSING TEST COVERAGE HUNTER
+# LOV NA NEDOSTAJUĆU POKRIVENOST TESTOVIMA
 
 Želim ciljanu analizu nedostajućeg test coverage-a zasnovanu na stvarnim production rizicima, ne samo na coverage procentima.
 

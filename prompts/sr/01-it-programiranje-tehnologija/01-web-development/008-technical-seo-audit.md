@@ -2,7 +2,7 @@
 id: UPL-IT-008
 number: 8
 slug: technical-seo-audit
-title: Technical SEO Audit
+title: Tehnički SEO audit
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Web razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# TECHNICAL SEO AUDIT
+# TEHNIČKI SEO AUDIT
 
 Želim da izvršiš maksimalno duboku, sistematsku i evidence-first analizu tehničkog SEO stanja kompletne web aplikacije.
 

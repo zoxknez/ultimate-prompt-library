@@ -2,7 +2,7 @@
 id: UPL-BIZ-050
 number: 50
 slug: startup-failure-mode-audit
-title: Startup Failure Mode Audit
+title: Audit načina neuspeha startapa
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Preduzetništvo i poslovni modeli
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# STARTUP FAILURE MODE AUDIT
+# AUDIT NAČINA NEUSPEHA STARTAPA
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu.
 

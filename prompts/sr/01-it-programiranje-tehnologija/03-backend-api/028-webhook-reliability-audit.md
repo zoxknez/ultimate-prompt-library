@@ -2,7 +2,7 @@
 id: UPL-IT-028
 number: 28
 slug: webhook-reliability-audit
-title: Webhook Reliability Audit
+title: Audit pouzdanosti webhook-ova
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Backend i API
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# WEBHOOK RELIABILITY AUDIT
+# AUDIT POUZDANOSTI WEBHOOK-OVA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu svih incoming i outgoing webhook tokova u backend sistemu.
 

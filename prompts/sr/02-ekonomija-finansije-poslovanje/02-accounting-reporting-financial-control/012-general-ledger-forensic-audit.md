@@ -2,7 +2,7 @@
 id: UPL-BIZ-012
 number: 12
 slug: general-ledger-forensic-audit
-title: General Ledger Forensic Audit
+title: Forenzički audit glavne knjige
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Računovodstvo, izveštavanje i finansijska kontrola
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# GENERAL LEDGER FORENSIC AUDIT
+# FORENZIČKI AUDIT GLAVNE KNJIGE
 
 Želim dubok forenzički audit General Ledger-a sa fokusom na neobične journals, period-end activity, unsupported postings, duplicate patterns, round-number entries, unusual users/accounts i entries koji mogu menjati reported results.
 

@@ -53,8 +53,13 @@ Design choices, each from an observed failure mode:
 
 - Draft and superseded signals are read from the title, the first headings and the meta description, plus only strong phrases in body text. NIST CSRC shows "(Initial Public Draft)" in a heading next to the title, while final pages list old drafts in history tables, and the EMA medicines page mentions "withdrawn" applications.
 - ETag and Last-Modified are recorded but not flagged on their own: EDPB and O*NET regenerated them within one minute without any content change.
-- The checker identifies itself honestly (`UltimatePromptLibrary-SourceFreshness/1`) and does not imitate a browser. Sites that block non-browser clients (ISO, OECD, FTC, PMI, SEC, BLS and others on 2026-09-27) are reported as `UNKNOWN` and must be verified manually.
+- The checker identifies itself honestly (`UltimatePromptLibrary-SourceFreshness/1`) and does not imitate a browser. Sites that block non-browser clients (ISO, OECD, FTC, PMI, SEC, BLS and others on 2026-09-27) are reported as `UNKNOWN` and must be verified manually (see "Manual verification" below).
+- Title changes are only compared between two real titles. EUR-Lex sometimes serves a page without a title, and owasp.org sometimes serves only the site name ("OWASP Foundation") before client-side rendering; neither is a document change.
 - Declared draft status comes from the label or URL only. Notes may mention a different document's draft (the SSDF 1.1 final entry notes that SSDF 1.2 is a draft).
+
+## Manual verification
+
+`scripts/v2-source-manual-verification.json` records sources that were checked in a real browser because they block automated clients or were unreachable. Each entry has the date, method (`browser`), finding (`VERIFIED` or `UNREACHABLE`), HTTP status, final URL, title and notes. The offline check validates the file (registry URLs only, no future dates, complete `VERIFIED` entries). In online runs, a blocked source with a `VERIFIED` entry younger than 180 days is not listed for recheck; `UNREACHABLE` and expired entries are. After 180 days an entry must be re-verified.
 
 ## Snapshot
 
@@ -78,4 +83,17 @@ Registry changes made after manual verification on the publishers' sites:
 
 Added after the representative domain audit: OWASP ASVS 5.0.0 (cybersecurity), NICE NG5 Medicines optimisation, which covers medicines reconciliation (medications and treatment safety), and IVSC International Valuation Standards (investment, valuation and due diligence).
 
-Manually confirmed on 2026-09-27: OWASP Top 10 for LLM Applications 2025 is still the current release; WCAG 2.2 is a W3C Recommendation (12 December 2024); NIST states that AI RMF 1.0 is being revised; NIST SP 800-218 Rev. 1 is still an Initial Public Draft. ISO 9001:2026 could not be verified in this session because iso.org returned HTTP 403 to automated clients.
+Manually confirmed on 2026-09-27: OWASP Top 10 for LLM Applications 2025 is still the current release; WCAG 2.2 is a W3C Recommendation (12 December 2024); NIST states that AI RMF 1.0 is being revised; NIST SP 800-218 Rev. 1 is still an Initial Public Draft.
+
+### Browser verification of the 31 blocked sources (2026-09-27)
+
+The 31 sources the checker could not see (HTTP 403 to automated clients, or connection failures) were opened in a real browser:
+
+- **26 verified**, including ISO 9001:2026 (Published, 2026-09, edition 6), ISO 31000:2018, ISO 22361:2022, ISO 30401:2018 (stage 90.92, to be revised; already noted in the registry), G20/OECD Principles of Corporate Governance 2023, PMBOK Guide Eighth Edition, EBU R 128 version 5.0, the FTC consumer reviews and testimonials final rule (August 2024), HUDOC, SEC EDGAR, BLS OOH, CEFR and IMF Data.
+- **2 real problems found and fixed:**
+  - `https://www.ftc.gov/news-events/topics/consumer-protection` returns HTTP 404. Replaced by the FTC Bureau of Consumer Protection page.
+  - COPE retired its Core Practices in 2024 and published a new Code of Conduct in July 2026 (confirmed on COPE's history page). The registry now cites the Code of Conduct with a status note.
+- **Canonical URLs:** ten OECD, SIGMA, IMF and ISO URLs only worked through redirects to new site structures and now point directly at the final pages (for example `https://www.oecd.org/cfe/smes/` to `https://www.oecd.org/en/topics/smes-and-entrepreneurship.html`, SIGMA to its 2023 edition).
+- **5 UNREACHABLE (BLOCKED):** four unesco.org pages and ibe.unesco.org. The UNESCO server timed out from the local network and refused connections from a second network, so nothing could be confirmed. They stay on the recheck list; this is not evidence that the pages are gone.
+
+After these changes, three consecutive online runs reported 0 sources needing review: 99 `REACHABLE`, 11 `REDIRECTED`, 1 `DRAFT_STATUS` (declared), and 31 `UNKNOWN`, of which 26 are covered by browser verification and 5 are the UNESCO pages.

@@ -2,7 +2,7 @@
 id: UPL-BIZ-066
 number: 66
 slug: revenue-leakage-hunter
-title: Revenue Leakage Hunter
+title: Lov na curenje prihoda
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Prodaja, prihodi i cene
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# REVENUE LEAKAGE HUNTER
+# LOV NA CURENJE PRIHODA
 
 Želim duboku, evidence-first i revenue-oriented analizu koja razdvaja prodajnu aktivnost od stvarnog ekonomskog rezultata i reported revenue od kvalitetnog, naplativog i održivog prihoda.
 

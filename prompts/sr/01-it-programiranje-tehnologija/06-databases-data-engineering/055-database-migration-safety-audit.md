@@ -2,7 +2,7 @@
 id: UPL-IT-055
 number: 55
 slug: database-migration-safety-audit
-title: Database Migration Safety Audit
+title: Audit bezbednosti migracija baze podataka
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Baze podataka i data engineering
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# DATABASE MIGRATION SAFETY AUDIT
+# AUDIT BEZBEDNOSTI MIGRACIJA BAZE PODATAKA
 
 Želim maksimalno duboku analizu svih database migrations i procedure kojom schema/data changes ulaze u production.
 

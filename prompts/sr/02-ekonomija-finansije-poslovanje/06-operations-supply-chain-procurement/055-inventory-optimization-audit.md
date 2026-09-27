@@ -2,7 +2,7 @@
 id: UPL-BIZ-055
 number: 55
 slug: inventory-optimization-audit
-title: Inventory Optimization Audit
+title: Audit optimizacije zaliha
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Operacije, lanac snabdevanja i nabavka
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# INVENTORY OPTIMIZATION AUDIT
+# AUDIT OPTIMIZACIJE ZALIHA
 
 Želim duboku, evidence-first i operations-oriented analizu koja razlikuje simptom od stvarnog ograničenja i optimizaciju lokalne metrike od poboljšanja ukupnog sistema.
 

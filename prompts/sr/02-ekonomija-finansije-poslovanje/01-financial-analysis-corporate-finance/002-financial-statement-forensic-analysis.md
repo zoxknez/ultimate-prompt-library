@@ -2,7 +2,7 @@
 id: UPL-BIZ-002
 number: 2
 slug: financial-statement-forensic-analysis
-title: Financial Statement Forensic Analysis
+title: Forenzička analiza finansijskih izveštaja
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Finansijska analiza i korporativne finansije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# FINANCIAL STATEMENT FORENSIC ANALYSIS
+# FORENZIČKA ANALIZA FINANSIJSKIH IZVEŠTAJA
 
 Želim forenzičku analizu finansijskih izveštaja sa fokusom na anomalije, agresivno računovodstvo, earnings quality, klasifikacije, timing i međusobnu konzistentnost Income Statement-a, Balance Sheet-a i Cash Flow Statement-a.
 

@@ -2,7 +2,7 @@
 id: UPL-IT-017
 number: 17
 slug: android-offline-first-and-sync-audit
-title: Android Offline-First & Sync Audit
+title: Audit offline-first rada i sinhronizacije u Android aplikacijama
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Mobilni razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ANDROID OFFLINE-FIRST AND SYNC AUDIT
+# AUDIT OFFLINE-FIRST RADA I SINHRONIZACIJE U ANDROID APLIKACIJAMA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletnog offline-first i synchronization sistema Android aplikacije.
 

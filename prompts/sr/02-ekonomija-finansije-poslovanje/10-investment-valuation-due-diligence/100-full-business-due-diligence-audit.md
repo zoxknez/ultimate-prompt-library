@@ -2,7 +2,7 @@
 id: UPL-BIZ-100
 number: 100
 slug: full-business-due-diligence-audit
-title: Full Business Due Diligence Audit
+title: Sveobuhvatni due diligence audit poslovanja
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Investicije, vrednovanje i due diligence
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# FULL BUSINESS DUE DILIGENCE AUDIT
+# SVEOBUHVATNI DUE DILIGENCE AUDIT POSLOVANJA
 
 Želim duboku, evidence-first i investment-grade analizu koja razdvaja računovodstveni rezultat, cash generation, enterprise value, equity value i pretpostavke koje nose najveći deo vrednosti.
 

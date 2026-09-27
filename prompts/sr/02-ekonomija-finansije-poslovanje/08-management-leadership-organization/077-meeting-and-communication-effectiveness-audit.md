@@ -2,7 +2,7 @@
 id: UPL-BIZ-077
 number: 77
 slug: meeting-and-communication-effectiveness-audit
-title: Meeting & Communication Effectiveness Audit
+title: Audit efikasnosti sastanaka i komunikacije
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Menadžment, liderstvo i organizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# MEETING & COMMUNICATION EFFECTIVENESS AUDIT
+# AUDIT EFIKASNOSTI SASTANAKA I KOMUNIKACIJE
 
 Želim duboku, evidence-first i execution-oriented analizu management sistema, organizacije i liderstva. Cilj nije generički leadership savet, već proverljiv uvid u to kako struktura, odluke, metrike, reporting i ownership utiču na izvršenje.
 

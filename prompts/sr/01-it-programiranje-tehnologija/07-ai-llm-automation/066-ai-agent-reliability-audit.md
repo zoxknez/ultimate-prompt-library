@@ -2,7 +2,7 @@
 id: UPL-IT-066
 number: 66
 slug: ai-agent-reliability-audit
-title: AI Agent Reliability Audit
+title: Audit pouzdanosti AI agenata
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: AI, LLM i automatizacija
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# AI AGENT RELIABILITY AUDIT
+# AUDIT POUZDANOSTI AI AGENATA
 
 Želim dubok reliability audit AI agent-a sa fokusom na trajectory correctness, retries, loops, recovery, partial side effects, concurrency, nondeterminism i real task completion.
 

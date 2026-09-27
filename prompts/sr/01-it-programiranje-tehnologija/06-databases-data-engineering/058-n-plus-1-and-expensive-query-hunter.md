@@ -2,7 +2,7 @@
 id: UPL-IT-058
 number: 58
 slug: n-plus-1-and-expensive-query-hunter
-title: N+1 & Expensive Query Hunter
+title: Lov na N+1 i skupe upite
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Baze podataka i data engineering
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# N+1 AND EXPENSIVE QUERY HUNTER
+# LOV NA N+1 I SKUPE UPITE
 
 Želim sistematski pronaći sve N+1, duplicate, overfetch i hidden expensive query obrasce u aplikaciji.
 

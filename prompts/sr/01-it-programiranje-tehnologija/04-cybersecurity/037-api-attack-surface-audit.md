@@ -2,7 +2,7 @@
 id: UPL-IT-037
 number: 37
 slug: api-attack-surface-audit
-title: API Attack Surface Audit
+title: Audit napadne površine API-ja
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Sajber bezbednost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# API ATTACK SURFACE AUDIT
+# AUDIT NAPADNE POVRŠINE API-JA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i attacker-oriented analizu kompletne API attack surface aplikacije.
 
@@ -3420,7 +3420,7 @@ Ne želim izveštaj tipa:
 
 > Zaštitite API autentikacijom, koristite rate limiting i sakrijte Swagger.
 
-To nije API Attack Surface Audit.
+To nije audit napadne površine API-ja.
 
 Tražim probleme poput:
 

@@ -150,12 +150,12 @@
       "note": "Navigator exposes the 2026 issued Standards collection; verify the effective date and transition requirements of the specific Standard or amendment."
     },
     {
-      "label": "OECD Corporate Finance and Governance",
-      "url": "https://www.oecd.org/corporate/"
+      "label": "OECD Corporate Governance",
+      "url": "https://www.oecd.org/en/topics/corporate-governance.html"
     },
     {
       "label": "IMF Data",
-      "url": "https://www.imf.org/en/Data"
+      "url": "https://www.imf.org/en/data"
     }
   ],
   "accounting-reporting-financial-control": [
@@ -176,11 +176,11 @@
   "economics-market-analysis": [
     {
       "label": "IMF Data",
-      "url": "https://www.imf.org/en/Data"
+      "url": "https://www.imf.org/en/data"
     },
     {
       "label": "OECD Data",
-      "url": "https://data.oecd.org/"
+      "url": "https://www.oecd.org/en/data.html"
     },
     {
       "label": "World Bank Data",
@@ -201,7 +201,7 @@
   "entrepreneurship-business-models": [
     {
       "label": "OECD SME and Entrepreneurship",
-      "url": "https://www.oecd.org/cfe/smes/"
+      "url": "https://www.oecd.org/en/topics/smes-and-entrepreneurship.html"
     },
     {
       "label": "World Bank Entrepreneurship Database",
@@ -216,7 +216,7 @@
     },
     {
       "label": "OECD Responsible Business Conduct Due Diligence",
-      "url": "https://mneguidelines.oecd.org/due-diligence-guidance-for-responsible-business-conduct.htm"
+      "url": "https://www.oecd.org/en/publications/oecd-due-diligence-guidance-for-responsible-business-conduct_15f5f4b3-en.html"
     }
   ],
   "sales-revenue-pricing": [
@@ -226,7 +226,7 @@
     },
     {
       "label": "OECD Consumer Policy",
-      "url": "https://www.oecd.org/sti/consumer/"
+      "url": "https://www.oecd.org/en/topics/policy-issues/consumer-policy.html"
     }
   ],
   "management-leadership-organization": [
@@ -242,8 +242,8 @@
   ],
   "risk-compliance-business-resilience": [
     {
-      "label": "ISO 31000 Risk Management",
-      "url": "https://www.iso.org/iso-31000-risk-management.html"
+      "label": "ISO 31000:2018 Risk management - Guidelines",
+      "url": "https://www.iso.org/standard/65694.html"
     },
     {
       "label": "NIST Cybersecurity Framework 2.0",
@@ -333,8 +333,8 @@
   ],
   "regulatory-compliance": [
     {
-      "label": "OECD Regulatory Policy and Governance",
-      "url": "https://www.oecd.org/gov/regulatory-policy/"
+      "label": "OECD Regulatory Reform",
+      "url": "https://www.oecd.org/en/topics/regulatory-reform.html"
     },
     {
       "label": "EUR-Lex",
@@ -343,8 +343,8 @@
   ],
   "public-administration-procedure": [
     {
-      "label": "OECD SIGMA Principles of Public Administration",
-      "url": "https://www.sigmaweb.org/publications/principles-public-administration.htm"
+      "label": "OECD SIGMA Principles of Public Administration (2023 edition)",
+      "url": "https://www.sigmaweb.org/en/publications/2023/11/the-principles-of-public-administration_5e68f805.html"
     },
     {
       "label": "UNCITRAL Public Procurement",
@@ -520,7 +520,7 @@
     },
     {
       "label": "OECD Education and Skills",
-      "url": "https://www.oecd.org/education/"
+      "url": "https://www.oecd.org/en/about/directorates/directorate-for-education-and-skills.html"
     }
   ],
   "tutoring-personalized-learning": [
@@ -547,7 +547,7 @@
     },
     {
       "label": "OECD Education and Skills",
-      "url": "https://www.oecd.org/education/"
+      "url": "https://www.oecd.org/en/about/directorates/directorate-for-education-and-skills.html"
     }
   ],
   "literacy-language-learning": [
@@ -671,8 +671,9 @@
   ],
   "peer-review-research-integrity": [
     {
-      "label": "COPE Core Practices",
-      "url": "https://publicationethics.org/core-practices"
+      "label": "COPE Code of Conduct for COPE Members (2026)",
+      "url": "https://publicationethics.org/membership/code-of-conduct",
+      "note": "Published July 2026; replaces the COPE Core Practices, which were retired in 2024. Members have a 12-month transition period."
     },
     {
       "label": "EQUATOR Network",
@@ -778,7 +779,7 @@
   "freelancing-consulting-independent-work": [
     {
       "label": "OECD SME and Entrepreneurship",
-      "url": "https://www.oecd.org/cfe/smes/"
+      "url": "https://www.oecd.org/en/topics/smes-and-entrepreneurship.html"
     },
     {
       "label": "FTC Advertising and Marketing Guidance",
@@ -818,7 +819,7 @@
     },
     {
       "label": "OECD Consumer Policy",
-      "url": "https://www.oecd.org/sti/consumer/"
+      "url": "https://www.oecd.org/en/topics/policy-issues/consumer-policy.html"
     }
   ],
   "brand-messaging-copywriting": [
@@ -888,13 +889,13 @@
     },
     {
       "label": "OECD Consumer Policy",
-      "url": "https://www.oecd.org/sti/consumer/"
+      "url": "https://www.oecd.org/en/topics/policy-issues/consumer-policy.html"
     }
   ],
   "customer-research-retention-growth": [
     {
-      "label": "FTC Consumer Protection",
-      "url": "https://www.ftc.gov/news-events/topics/consumer-protection"
+      "label": "FTC Bureau of Consumer Protection",
+      "url": "https://www.ftc.gov/about-ftc/bureaus-offices/bureau-consumer-protection"
     },
     {
       "label": "European Data Protection Board",
@@ -943,8 +944,8 @@
       "url": "https://www.pmi.org/standards/pmbok"
     },
     {
-      "label": "ISO 31000 Risk Management",
-      "url": "https://www.iso.org/iso-31000-risk-management.html"
+      "label": "ISO 31000:2018 Risk management - Guidelines",
+      "url": "https://www.iso.org/standard/65694.html"
     }
   ],
   "project-execution-delivery": [

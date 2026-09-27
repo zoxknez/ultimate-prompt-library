@@ -52,8 +52,8 @@ This registry lists authoritative starting points used to strengthen Ultimate Pr
 - ISO 9001:2026 - Quality management systems - Requirements
   - https://www.iso.org/standard/9001
   - Current edition published 2026-09-16; replaces ISO 9001:2015.
-- ISO 31000 Risk Management
-  - https://www.iso.org/iso-31000-risk-management.html
+- ISO 31000:2018 Risk management - Guidelines
+  - https://www.iso.org/standard/65694.html
 - ISO 30401:2018 Knowledge Management Systems
   - https://www.iso.org/standard/68683.html
   - Current published edition with 2022 and 2024 amendments, but under revision. ISO/DIS 30401 closed its ballot on 2026-09-18; verify status before use.

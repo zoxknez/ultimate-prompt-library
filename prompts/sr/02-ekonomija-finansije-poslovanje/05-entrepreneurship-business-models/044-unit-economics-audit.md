@@ -2,7 +2,7 @@
 id: UPL-BIZ-044
 number: 44
 slug: unit-economics-audit
-title: Unit Economics Audit
+title: Audit jedinične ekonomije
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Preduzetništvo i poslovni modeli
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# UNIT ECONOMICS AUDIT
+# AUDIT JEDINIČNE EKONOMIJE
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu.
 

@@ -2,7 +2,7 @@
 id: UPL-IT-074
 number: 74
 slug: regression-test-generator
-title: Regression Test Generator
+title: Generator regresionih testova
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Testiranje, QA i pouzdanost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# REGRESSION TEST GENERATOR
+# GENERATOR REGRESIONIH TESTOVA
 
 Želim da na osnovu konkretnog bug-a, incidenta, PR-a ili popravke generišeš minimalan ali robustan regression test set koji će pouzdano sprečiti vraćanje istog failure class-a.
 

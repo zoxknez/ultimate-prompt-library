@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "checkerVersion": 1,
   "description": "Metadata-only freshness snapshot for the authoritative-source registry. Updated only by npm run sources:check -- --update-snapshot after review. Contains no page bodies.",
-  "updatedAt": "2026-09-27T08:11:55.193Z",
+  "updatedAt": "2026-09-27T09:27:13.876Z",
   "entries": {
     "https://airc.nist.gov/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://airc.nist.gov/",
       "httpStatus": 200,
       "etag": null,
@@ -17,7 +17,7 @@
       "headFingerprint": "29f2af2abdc109e31d81f6c9fa65743873dbffba59d2c076d833060035dba956"
     },
     "https://api-security.owasp.org/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://api-security.owasp.org/",
       "httpStatus": 200,
       "etag": null,
@@ -29,7 +29,7 @@
       "headFingerprint": "c1372ee9a058e709d60cf6f8ecbf3af99cf6bfd09cd927b5bdbb9e2a7afc61a6"
     },
     "https://committee.iso.org/quality-management/principles": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://committee.iso.org/quality-management/principles",
       "httpStatus": 200,
       "etag": null,
@@ -41,7 +41,7 @@
       "headFingerprint": "a22f3a15d64af3cc83364b3f6fa3d45df26b4f58dc5023372b663c828821f584"
     },
     "https://csrc.nist.gov/projects/ssdf": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://csrc.nist.gov/projects/ssdf",
       "httpStatus": 200,
       "etag": null,
@@ -53,7 +53,7 @@
       "headFingerprint": "09af693a52f7b819d318a09ffe0b539f3a14e73fb5d6fd536d5d521174a0fc3a"
     },
     "https://csrc.nist.gov/pubs/sp/800/218/a/final": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://csrc.nist.gov/pubs/sp/800/218/a/final",
       "httpStatus": 200,
       "etag": null,
@@ -67,7 +67,7 @@
       "headFingerprint": "11f9746c9c3e3a5d8c9c0c254808b72e5b8f2cb7f3f2301d8837412fbc464e13"
     },
     "https://csrc.nist.gov/pubs/sp/800/218/final": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://csrc.nist.gov/pubs/sp/800/218/final",
       "httpStatus": 200,
       "etag": null,
@@ -81,7 +81,7 @@
       "headFingerprint": "c2ffae7445e1cc880908f62c84b8a2f42d729d6a10dd60045c83129dd676e3f2"
     },
     "https://csrc.nist.gov/pubs/sp/800/218/r1/ipd": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://csrc.nist.gov/pubs/sp/800/218/r1/ipd",
       "httpStatus": 200,
       "etag": null,
@@ -98,7 +98,7 @@
       "headFingerprint": "0bd68dee6f863b05b53b75286dc55558d64a9cb2cbbc783ddbd0c95346c537d0"
     },
     "https://curia.europa.eu/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://curia.europa.eu/site/",
       "httpStatus": 200,
       "etag": null,
@@ -110,7 +110,7 @@
       "headFingerprint": "0afb33239aff501e5088b3efca6f3379467619af4865c31b151fb5af4f294730"
     },
     "https://data.worldbank.org/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://data.worldbank.org/",
       "httpStatus": 200,
       "etag": "W/\"33c86-WweHVRgOqi3H8TX5qwHa4A\"",
@@ -122,7 +122,7 @@
       "headFingerprint": "ac632520ba349e7a135b0082ef7b2e2ac6c8c4f8a2990f263880d5a19af2846e"
     },
     "https://developer.android.com/topic/architecture": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://developer.android.com/topic/architecture",
       "httpStatus": 200,
       "etag": null,
@@ -134,7 +134,7 @@
       "headFingerprint": "ea95040df1fe233a719c3186ed4724560f6cdc0830b8adb089078a79262a724e"
     },
     "https://developer.apple.com/design/human-interface-guidelines/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://developer.apple.com/design/human-interface-guidelines/",
       "httpStatus": 200,
       "etag": "\"44ff-65c49435b1371-df\"",
@@ -146,7 +146,7 @@
       "headFingerprint": "f4ea12cddf205b4847125bcc5e8dfe5a4f4b5a04072d44b24a8e1d7e583949ed"
     },
     "https://developers.google.com/analytics": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://developers.google.com/analytics",
       "httpStatus": 200,
       "etag": null,
@@ -158,7 +158,7 @@
       "headFingerprint": "5bef9b25c7af1b6ef9a2573ff41943273ccd68d86285f5aa51596f49e1e249e2"
     },
     "https://developers.google.com/search/docs/essentials": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://developers.google.com/search/docs/essentials",
       "httpStatus": 200,
       "etag": null,
@@ -170,7 +170,7 @@
       "headFingerprint": "5cbacb046f77e7c021cba09c75076860f21fe87342e19c7c7c9a296b58934c1d"
     },
     "https://developers.google.com/search/docs/essentials/spam-policies": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://developers.google.com/search/docs/essentials/spam-policies",
       "httpStatus": 200,
       "etag": null,
@@ -182,7 +182,7 @@
       "headFingerprint": "0dfa804e10ad5cac363a1abf5b31de2ff24c0aca4c32bb54175911fda1ef0133"
     },
     "https://ec.europa.eu/eurostat/web/labour-market": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://ec.europa.eu/eurostat/web/labour-market",
       "httpStatus": 200,
       "etag": null,
@@ -194,7 +194,7 @@
       "headFingerprint": "181913fb9a43a320d4166f4d14b29179f4621fcb1635821790d5cef0eb8123f7"
     },
     "https://educationendowmentfoundation.org.uk/education-evidence": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://educationendowmentfoundation.org.uk/education-evidence",
       "httpStatus": 200,
       "etag": null,
@@ -206,7 +206,7 @@
       "headFingerprint": "3a43e4d7098a2c0a2947f3635e4d529262c5adf5f2c4e77d878d801c26c63bd3"
     },
     "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports",
       "httpStatus": 200,
       "etag": null,
@@ -218,7 +218,7 @@
       "headFingerprint": "614930fc43a095ad936bbbf4b3f7ea2bf278c6b76559e00ba14c5fbb304c5db1"
     },
     "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/metacognition": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/metacognition",
       "httpStatus": 200,
       "etag": null,
@@ -230,7 +230,7 @@
       "headFingerprint": "69492cb2b40cd1694dd8d4b6fb448b4846e68623f448e206d3c143d4d505611a"
     },
     "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit",
       "httpStatus": 200,
       "etag": null,
@@ -242,7 +242,7 @@
       "headFingerprint": "deb9f23ecec0e8ab111e83f8b78e6c866e24734751eb0c9e5f948f861480531c"
     },
     "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/feedback": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/feedback",
       "httpStatus": 200,
       "etag": null,
@@ -254,7 +254,7 @@
       "headFingerprint": "e3953b2d47be5a181e685f64d63e645d570d11b9ca927ac6a64744065e3e87b4"
     },
     "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/one-to-one-tuition": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/one-to-one-tuition",
       "httpStatus": 200,
       "etag": null,
@@ -266,7 +266,7 @@
       "headFingerprint": "0ecb75fe4b54068c2256903432fc281e734c1035b4481fb7a96e461118889c93"
     },
     "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/small-group-tuition": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/small-group-tuition",
       "httpStatus": 200,
       "etag": null,
@@ -278,7 +278,7 @@
       "headFingerprint": "bba3b9e65041f887abe89c3911328dbde6715efe09dc39cc59eb43a1e39a97d0"
     },
     "https://emergency.cdc.gov/cerc/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.cdc.gov/cerc/php/about/index.html",
       "httpStatus": 200,
       "etag": null,
@@ -290,11 +290,11 @@
       "headFingerprint": "3f8115240546254c1ed0e6a675d3f85287afaa81868d354b14291da4d597a4b8"
     },
     "https://esco.ec.europa.eu/en": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://esco.ec.europa.eu/en",
       "httpStatus": 200,
-      "etag": "\"1790471392-gzip\"",
-      "lastModified": "Sun, 27 Sep 2026 01:09:52 GMT",
+      "etag": "\"1790500665-gzip\"",
+      "lastModified": "Sun, 27 Sep 2026 09:17:45 GMT",
       "modifiedDate": null,
       "title": "Homepage",
       "versionSignals": [
@@ -304,11 +304,11 @@
       "headFingerprint": "6a73bea2c02eeea7330a4ee06bc500af1341975ad3813b4eee18c574c3c201d2"
     },
     "https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/esco-versions": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/esco-versions",
       "httpStatus": 200,
-      "etag": "\"1790492681-gzip\"",
-      "lastModified": "Sun, 27 Sep 2026 07:04:41 GMT",
+      "etag": "\"1790500605-gzip\"",
+      "lastModified": "Sun, 27 Sep 2026 09:16:45 GMT",
       "modifiedDate": null,
       "title": "ESCO versions | European Skills, Competences, Qualifications and Occupations (ESCO)",
       "versionSignals": [],
@@ -316,7 +316,7 @@
       "headFingerprint": "bcea8f0b355e86cc81917236b8dd3f69127fd52f1c39b613ce6c3c98c229913f"
     },
     "https://eur-lex.europa.eu/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://eur-lex.europa.eu/",
       "httpStatus": 202,
       "etag": null,
@@ -328,7 +328,7 @@
       "headFingerprint": "e280ccace20a17746102275caa1932292059234f2420f6bf90b6b79f91ad2b43"
     },
     "https://eur-lex.europa.eu/eli/reg/2016/679/oj": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
       "httpStatus": 202,
       "etag": null,
@@ -340,7 +340,7 @@
       "headFingerprint": "e280ccace20a17746102275caa1932292059234f2420f6bf90b6b79f91ad2b43"
     },
     "https://eur-lex.europa.eu/summary/chapter/employment_and_social_policy.html": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://eur-lex.europa.eu/summary/chapter/employment_and_social_policy.html",
       "httpStatus": 202,
       "etag": null,
@@ -352,7 +352,7 @@
       "headFingerprint": "e280ccace20a17746102275caa1932292059234f2420f6bf90b6b79f91ad2b43"
     },
     "https://europass.europa.eu/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://europass.europa.eu/select-language?destination=/node/1",
       "httpStatus": 200,
       "etag": "\"1790395824-gzip\"",
@@ -364,7 +364,7 @@
       "headFingerprint": "744a6938617bd9086cfe6a035be6032580d626b04d6d1bd4dd3c931aab890ce6"
     },
     "https://europass.europa.eu/en": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://europass.europa.eu/en",
       "httpStatus": 200,
       "etag": "\"1790389825-gzip\"",
@@ -376,11 +376,11 @@
       "headFingerprint": "09109c4f0c5f92f07d40fe8f1ab90c5461179bbd56eb17ee3495787e662e4bac"
     },
     "https://genai.owasp.org/llm-top-10/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://genai.owasp.org/llm-top-10/",
       "httpStatus": 200,
       "etag": null,
-      "lastModified": "Sun, 27 Sep 2026 08:06:27 GMT",
+      "lastModified": "Sun, 27 Sep 2026 09:14:28 GMT",
       "modifiedDate": null,
       "title": "LLMRisks Archive - OWASP Gen AI Security Project",
       "versionSignals": [
@@ -391,11 +391,11 @@
       "headFingerprint": "26ca7e1ec9867c3f97fd7715492ae2f4c6402618ddb84465916571bb33f92ab7"
     },
     "https://iptc.org/standards/photo-metadata/iptc-standard/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://iptc.org/standards/photo-metadata/iptc-standard/",
       "httpStatus": 200,
-      "etag": "\"4617286e8d4aad1cc8af9cd5a4d77f41\"",
-      "lastModified": "Sun, 27 Sep 2026 07:37:54 GMT",
+      "etag": "\"d4cc0b5d2442d56e4a3a6b6e607cf888\"",
+      "lastModified": "Sun, 27 Sep 2026 08:48:22 GMT",
       "modifiedDate": "2025-11-28T10:26:24+00:00",
       "title": "IPTC Photo Metadata Standard - IPTC",
       "versionSignals": [],
@@ -403,11 +403,11 @@
       "headFingerprint": "4dd68f89953a6d6999229a59e40500d9079877007ddc33de7c7b3eca9b79a208"
     },
     "https://ivsc.org/standards/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://ivsc.org/standards/",
       "httpStatus": 200,
       "etag": null,
-      "lastModified": "Sat, 26 Sep 2026 22:10:52 GMT",
+      "lastModified": "Sun, 27 Sep 2026 09:00:19 GMT",
       "modifiedDate": "2025-01-29T14:57:34+00:00",
       "title": "International Standards For International Markets // IVSC",
       "versionSignals": [],
@@ -415,7 +415,7 @@
       "headFingerprint": "8b1b456295b3c7bb6888fdd0d08465c90edbf9490aed183057ece6b3f089a839"
     },
     "https://learn.microsoft.com/windows/apps/windows-app-sdk/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/",
       "httpStatus": 200,
       "etag": "\"RwPqRMr3eHkoVa33MMLt65MtmLU=\"",
@@ -427,7 +427,7 @@
       "headFingerprint": "54abafd59e9980c403a998e6c39b497ae93a9f3efc50d8cde5d054d47a8ba3ae"
     },
     "https://mas.owasp.org/MASVS/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://mas.owasp.org/MASVS/",
       "httpStatus": 200,
       "etag": null,
@@ -439,7 +439,7 @@
       "headFingerprint": "8aee35f3a7438772ca272329989bd57f34ba3e3c2b41f71274efafde93966ad5"
     },
     "https://owasp.org/projects/asvs": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://owasp.org/projects/asvs",
       "httpStatus": 200,
       "etag": null,
@@ -451,19 +451,19 @@
       "headFingerprint": "af107ab08ab416a6a38a819682ca40a452978c8f4dda4ec90fcd4f75f8f5be9c"
     },
     "https://owasp.org/www-project-web-security-testing-guide/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://owasp.org/projects/web-security-testing-guide",
       "httpStatus": 200,
       "etag": null,
       "lastModified": null,
       "modifiedDate": null,
-      "title": "OWASP Web Security Testing Guide | OWASP Foundation",
+      "title": "OWASP Foundation",
       "versionSignals": [],
       "statusSignals": [],
-      "headFingerprint": "811b459922e40c264d2eaeaf23603b6efced59f00c8e94fd684cb8b91a80f52a"
+      "headFingerprint": "dfeed7a3f80357590ec1c1cc36c279fd20cd3d939efdb1e8969a29edf736d12a"
     },
     "https://registry.khronos.org/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://registry.khronos.org/",
       "httpStatus": 200,
       "etag": null,
@@ -475,7 +475,7 @@
       "headFingerprint": "02e491cc4f55220c25cbf2c2bdfb586cda2391c3b788e3b9ed73ecd558b2ff29"
     },
     "https://slsa.dev/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://slsa.dev/",
       "httpStatus": 200,
       "etag": "\"06f8610d0b2dc9d5c7e3c7b2e4ae86bc-ssl-df\"",
@@ -487,7 +487,7 @@
       "headFingerprint": "4a93857e7ccc331f1d1d735f2d33584bb8ba88589d722d28a119388d0d044efe"
     },
     "https://spec.c2pa.org/specifications/specifications/2.2/index.html": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://spec.c2pa.org/specifications/specifications/2.2/index.html",
       "httpStatus": 200,
       "etag": "W/\"69ea59bf-3419\"",
@@ -499,7 +499,7 @@
       "headFingerprint": "c98b46a61294daea8d26afe86c691d85dafdbe9cb1aca1620183b56cea80443a"
     },
     "https://sre.google/books/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://sre.google/books/",
       "httpStatus": 200,
       "etag": null,
@@ -511,7 +511,7 @@
       "headFingerprint": "95c66d55385959a352df5e702bbfbad2369995b6fd3918fa6fd3072631a1cd36"
     },
     "https://treaties.un.org/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://treaties.un.org/",
       "httpStatus": 200,
       "etag": null,
@@ -523,7 +523,7 @@
       "headFingerprint": "fe4de08900f1f46ec6f978e491ed78b760c5eba207b99ea52e928da328458e6d"
     },
     "https://udlguidelines.cast.org/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://udlguidelines.cast.org/",
       "httpStatus": 200,
       "etag": "\"4b1ccc2a7cedd0c04b0cfd3f85c0d31c-ssl-df\"",
@@ -535,7 +535,7 @@
       "headFingerprint": "0095734aa45216ebd084a7940dff77043f27f03cd8d47fc4c153150f3d015a1c"
     },
     "https://uncitral.un.org/en/texts": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://uncitral.un.org/en/texts",
       "httpStatus": 200,
       "etag": "W/\"1790249153\"",
@@ -547,7 +547,7 @@
       "headFingerprint": "3a91b46259e18a8d08c82cbc32bab575a06a7e03b3b4644d94b2426a22a58bf9"
     },
     "https://uncitral.un.org/en/texts/arbitration": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://uncitral.un.org/en/texts/arbitration",
       "httpStatus": 200,
       "etag": "W/\"1790249671\"",
@@ -559,7 +559,7 @@
       "headFingerprint": "164eb8f5e510a4e5e5c4b1108871f9ee691fa99896abb8c6ae58c5e0864a0739"
     },
     "https://uncitral.un.org/en/texts/procurement": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://uncitral.un.org/en/texts/procurement",
       "httpStatus": 200,
       "etag": "W/\"1790252263\"",
@@ -571,7 +571,7 @@
       "headFingerprint": "cb02b8e312554f4d2bac68885e8a7653881f0525b8ad2a717f3372d4eee04776"
     },
     "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf",
       "httpStatus": 200,
       "etag": null,
@@ -583,7 +583,7 @@
       "headFingerprint": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
     },
     "https://www.cisa.gov/securebydesign": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.cisa.gov/securebydesign",
       "httpStatus": 200,
       "etag": null,
@@ -595,7 +595,7 @@
       "headFingerprint": "405974eff8b0f1119c2b2c8bd690b4647601c7191ac492dd9e85350a437b8db1"
     },
     "https://www.cisecurity.org/controls/v8-1": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.cisecurity.org/controls/v8-1",
       "httpStatus": 200,
       "etag": null,
@@ -610,7 +610,7 @@
       "headFingerprint": "5ee587c33a1476e47faf7b277bfec2ac7cc44f6b4f20a403ece9cbded1c4c676"
     },
     "https://www.cochrane.org/authors/handbooks-and-manuals": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.cochrane.org/authors/handbooks-and-manuals",
       "httpStatus": 200,
       "etag": "\"1790262382-gzip\"",
@@ -622,7 +622,7 @@
       "headFingerprint": "bc823b21f633b61124e90e4f696ef9d96451df3619684674b34e5e040eadd003"
     },
     "https://www.consort-spirit.org/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.consort-spirit.org/",
       "httpStatus": 200,
       "etag": "W/\"4deabb17ec2a0f7e997c8651244b6f8a\"",
@@ -636,7 +636,7 @@
       "headFingerprint": "5d4fdd92fd3db24ea26a759302d0eee8105bd27396dd0052ef70375306d48b34"
     },
     "https://www.copyright.gov/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.copyright.gov/",
       "httpStatus": 200,
       "etag": null,
@@ -648,7 +648,7 @@
       "headFingerprint": "34116d402bc38a9a83668e71129a1f368ddaeac0505755fad64caee0ab8e3da8"
     },
     "https://www.coso.org/internal-control": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.coso.org/internal-control",
       "httpStatus": 200,
       "etag": "W/\"d789496df62a0cde42503e0f7b82e0ee\"",
@@ -660,11 +660,11 @@
       "headFingerprint": "0c392e9f96eb24f51e8009a7174903d2aa70ab90c7d6fb2346081442fbbfcc42"
     },
     "https://www.edpb.europa.eu/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.edpb.europa.eu/home_en",
       "httpStatus": 200,
-      "etag": "\"1790496278-gzip\"",
-      "lastModified": "Sun, 27 Sep 2026 08:04:38 GMT",
+      "etag": "\"1790493690-gzip\"",
+      "lastModified": "Sun, 27 Sep 2026 07:21:30 GMT",
       "modifiedDate": null,
       "title": "Home | European Data Protection Board",
       "versionSignals": [],
@@ -672,11 +672,11 @@
       "headFingerprint": "e74e5b9156c39eca5c6cebc0b3236aee6fc110f08ade11f0e4f56ff1b4264f4a"
     },
     "https://www.edpb.europa.eu/documents_en": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.edpb.europa.eu/documents_en",
       "httpStatus": 200,
-      "etag": "\"1790493686-gzip\"",
-      "lastModified": "Sun, 27 Sep 2026 07:21:26 GMT",
+      "etag": "\"1790496296-gzip\"",
+      "lastModified": "Sun, 27 Sep 2026 08:04:56 GMT",
       "modifiedDate": null,
       "title": "Documents | European Data Protection Board",
       "versionSignals": [],
@@ -684,7 +684,7 @@
       "headFingerprint": "73ebb7a0ddcea07acc00099554f62cd5192da27ef88a1f04571b2cb09a665fe6"
     },
     "https://www.ema.europa.eu/en/medicines": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.ema.europa.eu/en/medicines",
       "httpStatus": 200,
       "etag": "\"1790458829-gzip\"",
@@ -696,7 +696,7 @@
       "headFingerprint": "86414fbecbdff1563a5a3044ced31d2c3b88dfb44027f99503c2adc729f018f1"
     },
     "https://www.equator-network.org/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.equator-network.org/",
       "httpStatus": 200,
       "etag": null,
@@ -708,7 +708,7 @@
       "headFingerprint": "aa13dad2fded1293e7fee620c338dbaca28b7e17bd83044cfdd38363613154b9"
     },
     "https://www.equator-network.org/reporting-guidelines/srqr/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.equator-network.org/reporting-guidelines/srqr/",
       "httpStatus": 200,
       "etag": null,
@@ -720,7 +720,7 @@
       "headFingerprint": "c4bdb709937386c8338b07dc5542afe2ac2bed8cc4fd532e5b2d84babdd0a54f"
     },
     "https://www.fda.gov/drugs": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.fda.gov/drugs",
       "httpStatus": 200,
       "etag": "\"1790471972\"",
@@ -732,7 +732,7 @@
       "headFingerprint": "3e214ef3910cd9e0600457cd8964a030e860227f50d67a5a5e1f17e0686987ed"
     },
     "https://www.fda.gov/medical-devices": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.fda.gov/medical-devices",
       "httpStatus": 200,
       "etag": "\"1790473250\"",
@@ -744,7 +744,7 @@
       "headFingerprint": "962b1508ab7294db419f73ac246c4241d7b0e73fd38987b9838f4e83c3272a89"
     },
     "https://www.gofair.foundation/fair-principles": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.gofair.foundation/fair-principles",
       "httpStatus": 200,
       "etag": "W/\"169e7f2c40664fc63f691272bce6d919\"",
@@ -756,7 +756,7 @@
       "headFingerprint": "318c36f129325a26b3ff64c3d0575da9b4e5e8e8be66ba3e5b81b26bbbaad16a"
     },
     "https://www.gradeworkinggroup.org/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.gradeworkinggroup.org/",
       "httpStatus": 200,
       "etag": "W/\"1774b-19e80dfb16c\"",
@@ -768,7 +768,7 @@
       "headFingerprint": "643d6a6bbfd347523e5c43238071431e421ee5b78d9553a755ed8daa9d9a1924"
     },
     "https://www.hcch.net/en/instruments/conventions": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.hcch.net/en/instruments/conventions",
       "httpStatus": 200,
       "etag": null,
@@ -780,7 +780,7 @@
       "headFingerprint": "d156874efc59f8bc1622a64ef8da85ccc68906382ed9bdc8905b0a93c27c2b2e"
     },
     "https://www.hcch.net/en/instruments/conventions/specialised-sections/evidence": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.hcch.net/en/instruments/conventions/specialised-sections/evidence",
       "httpStatus": 200,
       "etag": null,
@@ -792,7 +792,7 @@
       "headFingerprint": "9130208f7210a3f0589c71bbd3b512bbde2396f4fce902cfa1fe59619e1cec10"
     },
     "https://www.hcch.net/en/instruments/status-charts": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.hcch.net/en/instruments/status-charts",
       "httpStatus": 200,
       "etag": null,
@@ -804,7 +804,7 @@
       "headFingerprint": "44d90751d248b229557484beb9732bb39958694871d71f66fd783682d45ccbe7"
     },
     "https://www.iaasb.org/standards-pronouncements": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.iaasb.org/standards-pronouncements",
       "httpStatus": 200,
       "etag": "\"1790361337\"",
@@ -816,11 +816,11 @@
       "headFingerprint": "597171e3a71cd66bb496c8e12bd74715420409ada203ee632757b38ce9a64dff"
     },
     "https://www.iab.com/guidelines/campaign-data-standards/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.iab.com/guidelines/campaign-data-standards/",
       "httpStatus": 200,
       "etag": null,
-      "lastModified": "Sun, 27 Sep 2026 08:03:37 GMT",
+      "lastModified": "Sun, 27 Sep 2026 09:17:51 GMT",
       "modifiedDate": "2026-08-20T19:56:57+00:00",
       "title": "IAB Campaign Data Standards 1.0 Final",
       "versionSignals": [],
@@ -828,7 +828,7 @@
       "headFingerprint": "2f9a37a036422d9a316d24ececd4525d080e378ecede1823f6d44d432dd5c0ff"
     },
     "https://www.ifrs.org/issued-standards/list-of-standards/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.ifrs.org/issued-standards/list-of-standards/",
       "httpStatus": 200,
       "etag": null,
@@ -840,7 +840,7 @@
       "headFingerprint": "d557f9ecfb82fd8703083c1aaee02a50f96aa6873b7bfa4cbac2ad676f70555e"
     },
     "https://www.ilo.org/international-labour-standards": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.ilo.org/international-labour-standards",
       "httpStatus": 200,
       "etag": null,
@@ -852,7 +852,7 @@
       "headFingerprint": "6b10794862a4b79e8c8a8433061c5848947b652af6eec5d6d71035ca398c69c2"
     },
     "https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/nice-diagnostics-guidance": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.nice.org.uk/what-nice-does/our-guidance/about-healthtech-guidance",
       "httpStatus": 200,
       "etag": "\"cefgog4ns81w1u\"",
@@ -864,7 +864,7 @@
       "headFingerprint": "bffaf66e28055f5edf065b4f6831b2eab99a0f862ca36718857a532bc1e529f7"
     },
     "https://www.nice.org.uk/guidance": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.nice.org.uk/guidance",
       "httpStatus": 200,
       "etag": "\"or3rywmmfo15a9\"",
@@ -876,7 +876,7 @@
       "headFingerprint": "8a64a0b5c069fa5dad96f31810801c7cc8afacdd9cf7b11e7de4aa6a35cedd3a"
     },
     "https://www.nice.org.uk/guidance/ng5": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.nice.org.uk/guidance/ng5",
       "httpStatus": 200,
       "etag": "7D334820FE76F4AA75666E06ADBB0733",
@@ -888,7 +888,7 @@
       "headFingerprint": "86b419eaddcabc173d11b4b4eb0b19ade230ca7f1cb4e6d9b23da7520deca970"
     },
     "https://www.nice.org.uk/what-nice-does/digital-health/evidence-standards-framework-esf-for-digital-health-technologies": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.nice.org.uk/what-nice-does/digital-health/evidence-standards-framework-esf-for-digital-health-technologies",
       "httpStatus": 200,
       "etag": "\"eci7o9qwas1zkx\"",
@@ -900,7 +900,7 @@
       "headFingerprint": "94938f3355bb374baf0f9553589d50ae3ebffb77be3fc90abc572a81d71067f9"
     },
     "https://www.nist.gov/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.nist.gov/",
       "httpStatus": 200,
       "etag": null,
@@ -912,11 +912,11 @@
       "headFingerprint": "63793fa00461ce36f826007fbd346f0f5dc856e6def8d2fd60bbfe4545477a31"
     },
     "https://www.nist.gov/cyberframework": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.nist.gov/cyberframework",
       "httpStatus": 200,
       "etag": null,
-      "lastModified": "Sun, 27 Sep 2026 07:46:14 GMT",
+      "lastModified": "Sun, 27 Sep 2026 09:07:30 GMT",
       "modifiedDate": "2026-09-17T13:40-04:00",
       "title": "Cybersecurity Framework | NIST",
       "versionSignals": [],
@@ -924,11 +924,11 @@
       "headFingerprint": "eb2a73d86f9445fffae2bd7852d72a86d4392c4b71dae867b686c254fe075d64"
     },
     "https://www.nist.gov/privacy-framework": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.nist.gov/privacy-framework",
       "httpStatus": 200,
       "etag": null,
-      "lastModified": "Sun, 27 Sep 2026 07:46:14 GMT",
+      "lastModified": "Sun, 27 Sep 2026 09:08:22 GMT",
       "modifiedDate": "2026-06-24T09:04-04:00",
       "title": "Privacy Framework | NIST",
       "versionSignals": [],
@@ -936,11 +936,11 @@
       "headFingerprint": "84d51dcef147579853dc7eeb7dda3b4c79708f346cd8a3a53a4d539774ba5a84"
     },
     "https://www.nist.gov/publications/nist-research-data-framework-rdaf-version-20": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.nist.gov/publications/nist-research-data-framework-rdaf-version-20",
       "httpStatus": 200,
       "etag": null,
-      "lastModified": "Sun, 27 Sep 2026 08:03:36 GMT",
+      "lastModified": "Sun, 27 Sep 2026 09:17:50 GMT",
       "modifiedDate": "2024-02-07T20:02-05:00",
       "title": "NIST Research Data Framework (RDaF): Version 2.0 | NIST",
       "versionSignals": [
@@ -950,11 +950,11 @@
       "headFingerprint": "c7798d4b94c4c6d56131125cac11d2bed122874c07ef33c46803cfcf61f007b3"
     },
     "https://www.onetcenter.org/database.html": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.onetcenter.org/database.html",
       "httpStatus": 200,
       "etag": null,
-      "lastModified": "Sun, 27 Sep 2026 08:12:00 GMT",
+      "lastModified": "Sun, 27 Sep 2026 09:27:19 GMT",
       "modifiedDate": null,
       "title": "O*NET Database at O*NET Resource Center",
       "versionSignals": [],
@@ -962,11 +962,11 @@
       "headFingerprint": "2225884d397ac1c18a9bf1db418a7bfd0ae2880aa22c20120fa5c87a6ff060f3"
     },
     "https://www.onetonline.org/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.onetonline.org/",
       "httpStatus": 200,
       "etag": null,
-      "lastModified": "Sun, 27 Sep 2026 08:12:00 GMT",
+      "lastModified": "Sun, 27 Sep 2026 09:27:19 GMT",
       "modifiedDate": null,
       "title": "O*NET OnLine",
       "versionSignals": [],
@@ -974,7 +974,7 @@
       "headFingerprint": "82522d107fa3d1efda7e01bbfc5991e5a3a0c12812502a03d2b7adcad1dadd2e"
     },
     "https://www.postgresql.org/docs/current/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.postgresql.org/docs/current/",
       "httpStatus": 200,
       "etag": null,
@@ -989,7 +989,7 @@
       "headFingerprint": "6b3f4f3e7fba27427fa81a8cb6a49180a381f1c44df9034841081bb55db0e045"
     },
     "https://www.prisma-statement.org/prisma-2020": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.prisma-statement.org/prisma-2020",
       "httpStatus": 200,
       "etag": "W/\"652da8f2204b1a803c0ce44932ef0523\"",
@@ -1003,11 +1003,11 @@
       "headFingerprint": "78c78d54741580c87b2ed17b6a879c8cf6e7db971e13658c247221323f499de8"
     },
     "https://www.rfc-editor.org/rfc/rfc9110": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.rfc-editor.org/info/rfc9110/",
       "httpStatus": 200,
       "etag": null,
-      "lastModified": "Sun, 27 Sep 2026 08:03:38 GMT",
+      "lastModified": "Sun, 27 Sep 2026 09:17:54 GMT",
       "modifiedDate": "2022-06-06",
       "title": "RFC 9110: HTTP Semantics | RFC Editor",
       "versionSignals": [],
@@ -1015,7 +1015,7 @@
       "headFingerprint": "780893cdf2b9b7b311dea5475d2b202930724eefd5d757d2b9ba044b614bea8c"
     },
     "https://www.strobe-statement.org/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.strobe-statement.org/",
       "httpStatus": 200,
       "etag": "\"2524-1790478601;br\"",
@@ -1027,7 +1027,7 @@
       "headFingerprint": "3393dca1473670d5f6e6cf8e6ea3e9e34bda03f56e934d947dcac4504a517ff3"
     },
     "https://www.unidroit.org/instruments/commercial-contracts/unidroit-principles-2016/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.unidroit.org/instruments/commercial-contracts/unidroit-principles-2016/",
       "httpStatus": 200,
       "etag": null,
@@ -1041,7 +1041,7 @@
       "headFingerprint": "f068b5312fec5a0048f9f311d49c528bf98989fb0b091e30955511fe49c56c04"
     },
     "https://www.w3.org/community/reports/design-tokens/CG-FINAL-color-20251028/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-color-20251028/",
       "httpStatus": 200,
       "etag": null,
@@ -1055,7 +1055,7 @@
       "headFingerprint": "164b73ec0bb7ff7b4a9a0c4755b7a3ad244ca95140b340246a79b6ca8a600763"
     },
     "https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/",
       "httpStatus": 200,
       "etag": null,
@@ -1069,7 +1069,7 @@
       "headFingerprint": "6c4b77921a6af03a4a638fc74c841577c80f325986289c9f358549ed18f41390"
     },
     "https://www.w3.org/community/reports/design-tokens/CG-FINAL-resolver-20251028/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-resolver-20251028/",
       "httpStatus": 200,
       "etag": null,
@@ -1083,7 +1083,7 @@
       "headFingerprint": "d698fa71d8db7c31acb540608485d60881f1477602fb24545b4a9d8ca946925c"
     },
     "https://www.w3.org/TR/media-accessibility-reqs/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.w3.org/TR/media-accessibility-reqs/",
       "httpStatus": 200,
       "etag": null,
@@ -1097,7 +1097,7 @@
       "headFingerprint": "40c04595f523c09af9816324c98ee3440aa3b4b99a24c1552725664cf7285ebe"
     },
     "https://www.w3.org/TR/WCAG22/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.w3.org/TR/WCAG22/",
       "httpStatus": 200,
       "etag": null,
@@ -1109,7 +1109,7 @@
       "headFingerprint": "1854179e05579613e2292e43c04e680b89d53c0a6a239a4fbd05351d6f31169f"
     },
     "https://www.w3.org/WAI/ARIA/apg/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.w3.org/WAI/ARIA/apg/",
       "httpStatus": 200,
       "etag": null,
@@ -1121,7 +1121,7 @@
       "headFingerprint": "f23c762969380b4bc82d0775b3d0c3f1b867802bc3c3b037a5e246d60f959b25"
     },
     "https://www.w3.org/WAI/standards-guidelines/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.w3.org/WAI/standards-guidelines/",
       "httpStatus": 200,
       "etag": null,
@@ -1133,7 +1133,7 @@
       "headFingerprint": "2992119a5a6cd3f74d87c64bfac91fbcb4748eb44e3ecfa20bf40cae2dbd8ec1"
     },
     "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html",
       "httpStatus": 200,
       "etag": null,
@@ -1145,7 +1145,7 @@
       "headFingerprint": "b86adbffbc5276f431ba824c1c3fb22add002f9e6adec2e2fca672b5eacf3add"
     },
     "https://www.who.int/data/gho": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/data/gho",
       "httpStatus": 200,
       "etag": null,
@@ -1157,7 +1157,7 @@
       "headFingerprint": "cebcd9b80215eb2d3ca68dc1d303b6e5785e16e49fdca41243eaffcf4dff4815"
     },
     "https://www.who.int/groups/guidelines-review-committee": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/groups/guidelines-review-committee",
       "httpStatus": 200,
       "etag": null,
@@ -1169,7 +1169,7 @@
       "headFingerprint": "7c3738a670246d06b9d3306f24e33dc2b3b6afd90cd18a22fe59469dd0a2a072"
     },
     "https://www.who.int/health-topics/in-vitro-diagnostics": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/health-topics/in-vitro-diagnostics",
       "httpStatus": 200,
       "etag": null,
@@ -1181,7 +1181,7 @@
       "headFingerprint": "96f921ed7d59d097bc549307eebfd34643d3a26e6dd59a6cd7aed4189a95b7b9"
     },
     "https://www.who.int/health-topics/medicines": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/health-topics/medicines",
       "httpStatus": 200,
       "etag": null,
@@ -1196,7 +1196,7 @@
       "headFingerprint": "6bf96ba510d679ef93ca215f4d0f5da631542d5ff64423ae4c698b24acc2382e"
     },
     "https://www.who.int/health-topics/mental-health": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/health-topics/mental-health",
       "httpStatus": 200,
       "etag": null,
@@ -1208,7 +1208,7 @@
       "headFingerprint": "5f84f528f86bc1e93b96ac8e90d567f48466db78bfac663274da7da1f865f74f"
     },
     "https://www.who.int/health-topics/noncommunicable-diseases": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/health-topics/noncommunicable-diseases",
       "httpStatus": 200,
       "etag": null,
@@ -1220,7 +1220,7 @@
       "headFingerprint": "8d9899bcf230b2b21ed4f9188b8997d49c58eb0cba34f9151db100499f35cbe8"
     },
     "https://www.who.int/health-topics/nutrition": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/health-topics/nutrition",
       "httpStatus": 200,
       "etag": null,
@@ -1232,7 +1232,7 @@
       "headFingerprint": "e9cd2733a7bdf837d87c95a81ce94abf6c744ebf8bc0c3c2ad986a82650e9035"
     },
     "https://www.who.int/health-topics/rehabilitation": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/health-topics/rehabilitation",
       "httpStatus": 200,
       "etag": null,
@@ -1244,7 +1244,7 @@
       "headFingerprint": "950ff37a57dd4e2de27c014d6ba945a48ef8c60bb648430d929341b8416e9bbc"
     },
     "https://www.who.int/news-room/fact-sheets/detail/physical-activity": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
       "httpStatus": 200,
       "etag": null,
@@ -1256,7 +1256,7 @@
       "headFingerprint": "2ba3bfbafaf3655ca1f161e82ee35dc8fb109b5d2f11d9b88acb811c266d411e"
     },
     "https://www.who.int/publications/i/item/9789241548960": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/publications/i/item/9789241548960",
       "httpStatus": 200,
       "etag": null,
@@ -1268,7 +1268,7 @@
       "headFingerprint": "01a1f1cd40f49959e60d2af701c09dbcdf5e4694037dce9d5323af4cc54566d5"
     },
     "https://www.who.int/publications/i/item/WHO-SCI-QNS-MST-2023.1": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/publications/i/item/WHO-SCI-QNS-MST-2023.1",
       "httpStatus": 200,
       "etag": null,
@@ -1280,7 +1280,7 @@
       "headFingerprint": "26c9586951e10c4189d27bbefb041de3f32f6262acd712322b11bf0f1381cc3d"
     },
     "https://www.who.int/publications/who-guidelines": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/publications/who-guidelines",
       "httpStatus": 200,
       "etag": null,
@@ -1292,7 +1292,7 @@
       "headFingerprint": "179d057d6db537fd11734eed32a52ce41ad8185bf6a22796834f1a6f4a7153d4"
     },
     "https://www.who.int/teams/integrated-health-services/patient-safety": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/teams/integrated-health-services/patient-safety",
       "httpStatus": 200,
       "etag": null,
@@ -1304,7 +1304,7 @@
       "headFingerprint": "d9508f4e7a1ad84388617cdb21e6781a3360bc2ebe4bda15fcb795acc487a68c"
     },
     "https://www.who.int/teams/mental-health-and-substance-use/treatment-care/mental-health-gap-action-programme": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.who.int/teams/mental-health-and-substance-use/treatment-care/mental-health-gap-action-programme",
       "httpStatus": 200,
       "etag": null,
@@ -1318,7 +1318,7 @@
       "headFingerprint": "014ea9df1f8d3cdd02e69d4631bd255bd896ab9387ca2657ee3d3141305d9a4f"
     },
     "https://www.wipo.int/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.wipo.int/portal/en/index.html",
       "httpStatus": 200,
       "etag": "W/\"6f1a5613292e57762716641ad57328f2\"",
@@ -1332,7 +1332,7 @@
       "headFingerprint": "2f56f016af29d85790e4abe2389c9526697d97d3afb79fa0d4586702b5730a13"
     },
     "https://www.wipo.int/copyright/en/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.wipo.int/en/web/copyright/",
       "httpStatus": 200,
       "etag": null,
@@ -1344,7 +1344,7 @@
       "headFingerprint": "e0e39b678a0e11fbb6c535908b81dc2f170bb98d2d212de44ca0a98ad016d64e"
     },
     "https://www.wipo.int/en/web/copyright/faq-copyright": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.wipo.int/en/web/copyright/faq-copyright",
       "httpStatus": 200,
       "etag": null,
@@ -1356,7 +1356,7 @@
       "headFingerprint": "1492945e1d35f62acb8960f79e5c26092be7d15dec1e3e2c5607f2fc5281a93f"
     },
     "https://www.wipo.int/wipolex/en/": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.wipo.int/en/web/wipolex/index",
       "httpStatus": 200,
       "etag": null,
@@ -1368,7 +1368,7 @@
       "headFingerprint": "49565542ec6b9a332e618c6aaaacd87f56b2b92faae5f3a4a72ad07852c98b34"
     },
     "https://www.worldbank.org/en/programs/entrepreneurship": {
-      "checkedAt": "2026-09-27T08:11:55.193Z",
+      "checkedAt": "2026-09-27T09:27:13.876Z",
       "finalUrl": "https://www.worldbank.org/en/programs/entrepreneurship",
       "httpStatus": 200,
       "etag": null,

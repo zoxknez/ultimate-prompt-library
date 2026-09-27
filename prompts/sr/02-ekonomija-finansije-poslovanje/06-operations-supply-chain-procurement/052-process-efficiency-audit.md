@@ -2,7 +2,7 @@
 id: UPL-BIZ-052
 number: 52
 slug: process-efficiency-audit
-title: Process Efficiency Audit
+title: Audit efikasnosti procesa
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Operacije, lanac snabdevanja i nabavka
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# PROCESS EFFICIENCY AUDIT
+# AUDIT EFIKASNOSTI PROCESA
 
 Želim duboku, evidence-first i operations-oriented analizu koja razlikuje simptom od stvarnog ograničenja i optimizaciju lokalne metrike od poboljšanja ukupnog sistema.
 

@@ -2,7 +2,7 @@
 id: UPL-IT-067
 number: 67
 slug: system-prompt-optimization
-title: System Prompt Optimization
+title: Optimizacija sistemskog prompta
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: AI, LLM i automatizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# SYSTEM PROMPT OPTIMIZATION
+# OPTIMIZACIJA SISTEMSKOG PROMPTA
 
 Želim forenzički i eksperimentalni audit system/developer prompta sa ciljem da se poboljša instruction clarity, task reliability, token efficiency, security posture i maintainability bez prompt superstition-a.
 

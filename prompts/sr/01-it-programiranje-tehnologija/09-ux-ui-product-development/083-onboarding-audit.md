@@ -2,7 +2,7 @@
 id: UPL-IT-083
 number: 83
 slug: onboarding-audit
-title: Onboarding Audit
+title: Audit onboarding-a
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: UX, UI i razvoj proizvoda
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ONBOARDING AUDIT
+# AUDIT ONBOARDING-A
 
 Želim kompletan audit onboarding iskustva za novog korisnika od prvog kontakta do prvog dokazivog product value moment-a.
 

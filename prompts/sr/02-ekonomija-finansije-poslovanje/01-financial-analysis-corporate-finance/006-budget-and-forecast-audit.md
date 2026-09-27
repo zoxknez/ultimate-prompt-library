@@ -2,7 +2,7 @@
 id: UPL-BIZ-006
 number: 6
 slug: budget-and-forecast-audit
-title: Budget & Forecast Audit
+title: Audit budžeta i prognoze
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Finansijska analiza i korporativne finansije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# BUDGET & FORECAST AUDIT
+# AUDIT BUDŽETA I PROGNOZE
 
 Želim dubok audit budžeta i finansijskog forecast-a.
 

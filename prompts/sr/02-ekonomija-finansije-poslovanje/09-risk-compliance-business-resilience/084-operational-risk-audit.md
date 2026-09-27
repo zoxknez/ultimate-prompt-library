@@ -2,7 +2,7 @@
 id: UPL-BIZ-084
 number: 84
 slug: operational-risk-audit
-title: Operational Risk Audit
+title: Audit operativnih rizika
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Rizik, usklađenost i poslovna otpornost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# OPERATIONAL RISK AUDIT
+# AUDIT OPERATIVNIH RIZIKA
 
 Želim duboku, evidence-first i risk-oriented analizu koja jasno razlikuje threat, vulnerability, control weakness, inherent risk, residual risk i scenario hardening.
 

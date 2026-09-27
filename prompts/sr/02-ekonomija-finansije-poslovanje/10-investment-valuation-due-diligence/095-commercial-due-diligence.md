@@ -2,7 +2,7 @@
 id: UPL-BIZ-095
 number: 95
 slug: commercial-due-diligence
-title: Commercial Due Diligence
+title: Komercijalni due diligence
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Investicije, vrednovanje i due diligence
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# COMMERCIAL DUE DILIGENCE
+# KOMERCIJALNI DUE DILIGENCE
 
 Želim duboku, evidence-first i investment-grade analizu koja razdvaja računovodstveni rezultat, cash generation, enterprise value, equity value i pretpostavke koje nose najveći deo vrednosti.
 

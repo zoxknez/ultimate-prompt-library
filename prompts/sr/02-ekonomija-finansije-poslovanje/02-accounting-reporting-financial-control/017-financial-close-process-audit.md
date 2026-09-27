@@ -2,7 +2,7 @@
 id: UPL-BIZ-017
 number: 17
 slug: financial-close-process-audit
-title: Financial Close Process Audit
+title: Audit procesa finansijskog zatvaranja perioda
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Računovodstvo, izveštavanje i finansijska kontrola
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# FINANCIAL CLOSE PROCESS AUDIT
+# AUDIT PROCESA FINANSIJSKOG ZATVARANJA PERIODA
 
 Želim dubok audit monthly/quarterly/year-end financial close procesa.
 

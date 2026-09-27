@@ -166,7 +166,7 @@
           "subcategory": "web-development",
           "title": {
             "en": "Forensic Full Repository Audit",
-            "sr": "Forensic Full Repository Audit"
+            "sr": "Forenzički audit celog repozitorijuma"
           }
         },
         {
@@ -176,7 +176,7 @@
           "subcategory": "web-development",
           "title": {
             "en": "Ultimate Next.js Production Audit",
-            "sr": "Ultimate Next.js Production Audit"
+            "sr": "Sveobuhvatni produkcioni audit Next.js aplikacije"
           }
         },
         {
@@ -186,7 +186,7 @@
           "subcategory": "web-development",
           "title": {
             "en": "React Bug Hunter",
-            "sr": "React Bug Hunter"
+            "sr": "Lov na bagove u React aplikacijama"
           }
         },
         {
@@ -196,7 +196,7 @@
           "subcategory": "web-development",
           "title": {
             "en": "Frontend Architecture Audit",
-            "sr": "Frontend Architecture Audit"
+            "sr": "Audit frontend arhitekture"
           }
         },
         {
@@ -206,7 +206,7 @@
           "subcategory": "web-development",
           "title": {
             "en": "Web Performance Hunter",
-            "sr": "Web Performance Hunter"
+            "sr": "Lov na probleme web performansi"
           }
         },
         {
@@ -216,7 +216,7 @@
           "subcategory": "web-development",
           "title": {
             "en": "Responsive & Mobile Web Audit",
-            "sr": "Responsive & Mobile Web Audit"
+            "sr": "Audit responzivnog i mobilnog weba"
           }
         },
         {
@@ -226,7 +226,7 @@
           "subcategory": "web-development",
           "title": {
             "en": "Web Accessibility Audit",
-            "sr": "Web Accessibility Audit"
+            "sr": "Audit web pristupačnosti"
           }
         },
         {
@@ -236,7 +236,7 @@
           "subcategory": "web-development",
           "title": {
             "en": "Technical SEO Audit",
-            "sr": "Technical SEO Audit"
+            "sr": "Tehnički SEO audit"
           }
         },
         {
@@ -246,7 +246,7 @@
           "subcategory": "web-development",
           "title": {
             "en": "Progressive Web App Audit",
-            "sr": "Progressive Web App Audit"
+            "sr": "Audit progresivne web aplikacije (PWA)"
           }
         },
         {
@@ -256,7 +256,7 @@
           "subcategory": "web-development",
           "title": {
             "en": "Browser Compatibility & Production Bug Hunter",
-            "sr": "Browser Compatibility & Production Bug Hunter"
+            "sr": "Lov na probleme kompatibilnosti browsera i produkcione bagove"
           }
         },
         {
@@ -266,7 +266,7 @@
           "subcategory": "mobile-development",
           "title": {
             "en": "Ultimate Android Application Audit",
-            "sr": "Ultimate Android Application Audit"
+            "sr": "Sveobuhvatni audit Android aplikacije"
           }
         },
         {
@@ -276,7 +276,7 @@
           "subcategory": "mobile-development",
           "title": {
             "en": "Jetpack Compose Deep Audit",
-            "sr": "Jetpack Compose Deep Audit"
+            "sr": "Dubinski audit Jetpack Compose koda"
           }
         },
         {
@@ -286,7 +286,7 @@
           "subcategory": "mobile-development",
           "title": {
             "en": "Android Lifecycle Bug Hunter",
-            "sr": "Android Lifecycle Bug Hunter"
+            "sr": "Lov na lifecycle bagove u Android aplikacijama"
           }
         },
         {
@@ -296,7 +296,7 @@
           "subcategory": "mobile-development",
           "title": {
             "en": "Android Coroutines & Concurrency Audit",
-            "sr": "Android Coroutines & Concurrency Audit"
+            "sr": "Audit korutina i konkurentnosti u Android aplikacijama"
           }
         },
         {
@@ -306,7 +306,7 @@
           "subcategory": "mobile-development",
           "title": {
             "en": "Android Performance & ANR Hunter",
-            "sr": "Android Performance & ANR Hunter"
+            "sr": "Lov na probleme performansi i ANR u Android aplikacijama"
           }
         },
         {
@@ -316,7 +316,7 @@
           "subcategory": "mobile-development",
           "title": {
             "en": "Android Persistence & Room Audit",
-            "sr": "Android Persistence & Room Audit"
+            "sr": "Audit perzistencije i Room baze u Android aplikacijama"
           }
         },
         {
@@ -326,7 +326,7 @@
           "subcategory": "mobile-development",
           "title": {
             "en": "Android Offline-First & Sync Audit",
-            "sr": "Android Offline-First & Sync Audit"
+            "sr": "Audit offline-first rada i sinhronizacije u Android aplikacijama"
           }
         },
         {
@@ -336,7 +336,7 @@
           "subcategory": "mobile-development",
           "title": {
             "en": "Android Media Playback Audit",
-            "sr": "Android Media Playback Audit"
+            "sr": "Audit reprodukcije medija u Android aplikacijama"
           }
         },
         {
@@ -346,7 +346,7 @@
           "subcategory": "mobile-development",
           "title": {
             "en": "Android TV Application Audit",
-            "sr": "Android TV Application Audit"
+            "sr": "Audit Android TV aplikacije"
           }
         },
         {
@@ -356,7 +356,7 @@
           "subcategory": "mobile-development",
           "title": {
             "en": "Android Release & Play Store Readiness Audit",
-            "sr": "Android Release & Play Store Readiness Audit"
+            "sr": "Audit spremnosti Android aplikacije za izdanje i Play Store"
           }
         },
         {
@@ -366,7 +366,7 @@
           "subcategory": "backend-api",
           "title": {
             "en": "Ultimate Backend Architecture Audit",
-            "sr": "Ultimate Backend Architecture Audit"
+            "sr": "Sveobuhvatni audit backend arhitekture"
           }
         },
         {
@@ -376,7 +376,7 @@
           "subcategory": "backend-api",
           "title": {
             "en": "REST API Forensic Audit",
-            "sr": "REST API Forensic Audit"
+            "sr": "Forenzički audit REST API-ja"
           }
         },
         {
@@ -386,7 +386,7 @@
           "subcategory": "backend-api",
           "title": {
             "en": "API Contract Consistency Audit",
-            "sr": "API Contract Consistency Audit"
+            "sr": "Audit doslednosti API ugovora"
           }
         },
         {
@@ -396,7 +396,7 @@
           "subcategory": "backend-api",
           "title": {
             "en": "Backend Business Logic Audit",
-            "sr": "Backend Business Logic Audit"
+            "sr": "Audit poslovne logike backend-a"
           }
         },
         {
@@ -406,7 +406,7 @@
           "subcategory": "backend-api",
           "title": {
             "en": "API Error Handling Audit",
-            "sr": "API Error Handling Audit"
+            "sr": "Audit obrade grešaka u API-ju"
           }
         },
         {
@@ -416,7 +416,7 @@
           "subcategory": "backend-api",
           "title": {
             "en": "Backend Performance Audit",
-            "sr": "Backend Performance Audit"
+            "sr": "Audit performansi backend-a"
           }
         },
         {
@@ -426,7 +426,7 @@
           "subcategory": "backend-api",
           "title": {
             "en": "Rate Limiting & Abuse Protection Audit",
-            "sr": "Rate Limiting & Abuse Protection Audit"
+            "sr": "Audit ograničenja zahteva i zaštite od zloupotrebe"
           }
         },
         {
@@ -436,7 +436,7 @@
           "subcategory": "backend-api",
           "title": {
             "en": "Webhook Reliability Audit",
-            "sr": "Webhook Reliability Audit"
+            "sr": "Audit pouzdanosti webhook-ova"
           }
         },
         {
@@ -446,7 +446,7 @@
           "subcategory": "backend-api",
           "title": {
             "en": "Background Jobs & Queue Audit",
-            "sr": "Background Jobs & Queue Audit"
+            "sr": "Audit pozadinskih poslova i redova"
           }
         },
         {
@@ -456,7 +456,7 @@
           "subcategory": "backend-api",
           "title": {
             "en": "Backend Scalability Bottleneck Hunter",
-            "sr": "Backend Scalability Bottleneck Hunter"
+            "sr": "Lov na uska grla skalabilnosti backend-a"
           }
         },
         {
@@ -466,7 +466,7 @@
           "subcategory": "cybersecurity",
           "title": {
             "en": "Ultimate Application Security Audit",
-            "sr": "Ultimate Application Security Audit"
+            "sr": "Sveobuhvatni bezbednosni audit aplikacije"
           }
         },
         {
@@ -476,7 +476,7 @@
           "subcategory": "cybersecurity",
           "title": {
             "en": "Authentication Security Audit",
-            "sr": "Authentication Security Audit"
+            "sr": "Bezbednosni audit autentifikacije"
           }
         },
         {
@@ -486,7 +486,7 @@
           "subcategory": "cybersecurity",
           "title": {
             "en": "Authorization & IDOR Hunter",
-            "sr": "Authorization & IDOR Hunter"
+            "sr": "Lov na propuste u autorizaciji i IDOR"
           }
         },
         {
@@ -496,7 +496,7 @@
           "subcategory": "cybersecurity",
           "title": {
             "en": "OWASP Vulnerability Hunter",
-            "sr": "OWASP Vulnerability Hunter"
+            "sr": "Lov na OWASP ranjivosti"
           }
         },
         {
@@ -506,7 +506,7 @@
           "subcategory": "cybersecurity",
           "title": {
             "en": "Secrets & Credential Exposure Audit",
-            "sr": "Secrets & Credential Exposure Audit"
+            "sr": "Audit izloženosti tajni i kredencijala"
           }
         },
         {
@@ -516,7 +516,7 @@
           "subcategory": "cybersecurity",
           "title": {
             "en": "File Upload Security Audit",
-            "sr": "File Upload Security Audit"
+            "sr": "Bezbednosni audit otpremanja fajlova"
           }
         },
         {
@@ -526,7 +526,7 @@
           "subcategory": "cybersecurity",
           "title": {
             "en": "API Attack Surface Audit",
-            "sr": "API Attack Surface Audit"
+            "sr": "Audit napadne površine API-ja"
           }
         },
         {
@@ -536,7 +536,7 @@
           "subcategory": "cybersecurity",
           "title": {
             "en": "Dependency & Supply Chain Security Audit",
-            "sr": "Dependency & Supply Chain Security Audit"
+            "sr": "Bezbednosni audit zavisnosti i lanca snabdevanja softvera"
           }
         },
         {
@@ -546,7 +546,7 @@
           "subcategory": "cybersecurity",
           "title": {
             "en": "Threat Modeling Generator",
-            "sr": "Threat Modeling Generator"
+            "sr": "Generator modela pretnji"
           }
         },
         {
@@ -556,7 +556,7 @@
           "subcategory": "cybersecurity",
           "title": {
             "en": "Attacker-Perspective Security Review",
-            "sr": "Attacker-Perspective Security Review"
+            "sr": "Bezbednosni pregled iz perspektive napadača"
           }
         },
         {
@@ -566,7 +566,7 @@
           "subcategory": "devops-cloud-infrastructure",
           "title": {
             "en": "Ultimate DevOps & Infrastructure Audit",
-            "sr": "Ultimate DevOps & Infrastructure Audit"
+            "sr": "Sveobuhvatni DevOps i infrastrukturni audit"
           }
         },
         {
@@ -576,7 +576,7 @@
           "subcategory": "devops-cloud-infrastructure",
           "title": {
             "en": "Docker Production Audit",
-            "sr": "Docker Production Audit"
+            "sr": "Produkcioni audit Docker okruženja"
           }
         },
         {
@@ -586,7 +586,7 @@
           "subcategory": "devops-cloud-infrastructure",
           "title": {
             "en": "Kubernetes Production Audit",
-            "sr": "Kubernetes Production Audit"
+            "sr": "Produkcioni audit Kubernetes okruženja"
           }
         },
         {
@@ -596,7 +596,7 @@
           "subcategory": "devops-cloud-infrastructure",
           "title": {
             "en": "GitHub Actions Forensic Audit",
-            "sr": "GitHub Actions Forensic Audit"
+            "sr": "Forenzički audit GitHub Actions tokova"
           }
         },
         {
@@ -606,7 +606,7 @@
           "subcategory": "devops-cloud-infrastructure",
           "title": {
             "en": "CI/CD Pipeline Audit",
-            "sr": "CI/CD Pipeline Audit"
+            "sr": "Audit CI/CD pipeline-a"
           }
         },
         {
@@ -616,7 +616,7 @@
           "subcategory": "devops-cloud-infrastructure",
           "title": {
             "en": "Vercel Production Audit",
-            "sr": "Vercel Production Audit"
+            "sr": "Produkcioni audit Vercel okruženja"
           }
         },
         {
@@ -626,7 +626,7 @@
           "subcategory": "devops-cloud-infrastructure",
           "title": {
             "en": "Cloud Infrastructure Audit",
-            "sr": "Cloud Infrastructure Audit"
+            "sr": "Audit cloud infrastrukture"
           }
         },
         {
@@ -636,7 +636,7 @@
           "subcategory": "devops-cloud-infrastructure",
           "title": {
             "en": "Environment Configuration Audit",
-            "sr": "Environment Configuration Audit"
+            "sr": "Audit konfiguracije okruženja"
           }
         },
         {
@@ -646,7 +646,7 @@
           "subcategory": "devops-cloud-infrastructure",
           "title": {
             "en": "Zero-Downtime Deployment Audit",
-            "sr": "Zero-Downtime Deployment Audit"
+            "sr": "Audit deploy-a bez prekida rada"
           }
         },
         {
@@ -656,7 +656,7 @@
           "subcategory": "devops-cloud-infrastructure",
           "title": {
             "en": "Backup, Disaster Recovery & Rollback Audit",
-            "sr": "Backup, Disaster Recovery & Rollback Audit"
+            "sr": "Audit bekapa, oporavka od katastrofe i rollback-a"
           }
         },
         {
@@ -666,7 +666,7 @@
           "subcategory": "databases-data-engineering",
           "title": {
             "en": "Ultimate Database Audit",
-            "sr": "Ultimate Database Audit"
+            "sr": "Sveobuhvatni audit baze podataka"
           }
         },
         {
@@ -676,7 +676,7 @@
           "subcategory": "databases-data-engineering",
           "title": {
             "en": "Database Schema & Data Model Audit",
-            "sr": "Database Schema & Data Model Audit"
+            "sr": "Audit šeme baze i modela podataka"
           }
         },
         {
@@ -686,7 +686,7 @@
           "subcategory": "databases-data-engineering",
           "title": {
             "en": "SQL Performance Hunter",
-            "sr": "SQL Performance Hunter"
+            "sr": "Lov na probleme SQL performansi"
           }
         },
         {
@@ -696,7 +696,7 @@
           "subcategory": "databases-data-engineering",
           "title": {
             "en": "Database Index Audit",
-            "sr": "Database Index Audit"
+            "sr": "Audit indeksa baze podataka"
           }
         },
         {
@@ -706,7 +706,7 @@
           "subcategory": "databases-data-engineering",
           "title": {
             "en": "Database Migration Safety Audit",
-            "sr": "Database Migration Safety Audit"
+            "sr": "Audit bezbednosti migracija baze podataka"
           }
         },
         {
@@ -716,7 +716,7 @@
           "subcategory": "databases-data-engineering",
           "title": {
             "en": "Data Integrity Audit",
-            "sr": "Data Integrity Audit"
+            "sr": "Audit integriteta podataka"
           }
         },
         {
@@ -726,7 +726,7 @@
           "subcategory": "databases-data-engineering",
           "title": {
             "en": "Transaction & Concurrency Audit",
-            "sr": "Transaction & Concurrency Audit"
+            "sr": "Audit transakcija i konkurentnosti"
           }
         },
         {
@@ -736,7 +736,7 @@
           "subcategory": "databases-data-engineering",
           "title": {
             "en": "N+1 & Expensive Query Hunter",
-            "sr": "N+1 & Expensive Query Hunter"
+            "sr": "Lov na N+1 i skupe upite"
           }
         },
         {
@@ -746,7 +746,7 @@
           "subcategory": "databases-data-engineering",
           "title": {
             "en": "ORM Forensic Audit",
-            "sr": "ORM Forensic Audit"
+            "sr": "Forenzički audit ORM sloja"
           }
         },
         {
@@ -756,7 +756,7 @@
           "subcategory": "databases-data-engineering",
           "title": {
             "en": "ETL & Data Pipeline Reliability Audit",
-            "sr": "ETL & Data Pipeline Reliability Audit"
+            "sr": "Audit pouzdanosti ETL-a i data pipeline-a"
           }
         },
         {
@@ -766,7 +766,7 @@
           "subcategory": "ai-llm-automation",
           "title": {
             "en": "Ultimate AI Application Audit",
-            "sr": "Ultimate AI Application Audit"
+            "sr": "Sveobuhvatni audit AI aplikacije"
           }
         },
         {
@@ -776,7 +776,7 @@
           "subcategory": "ai-llm-automation",
           "title": {
             "en": "RAG System Forensic Audit",
-            "sr": "RAG System Forensic Audit"
+            "sr": "Forenzički audit RAG sistema"
           }
         },
         {
@@ -786,7 +786,7 @@
           "subcategory": "ai-llm-automation",
           "title": {
             "en": "Hallucination & Grounding Audit",
-            "sr": "Hallucination & Grounding Audit"
+            "sr": "Audit halucinacija i utemeljenosti odgovora"
           }
         },
         {
@@ -796,7 +796,7 @@
           "subcategory": "ai-llm-automation",
           "title": {
             "en": "Prompt Injection Security Audit",
-            "sr": "Prompt Injection Security Audit"
+            "sr": "Bezbednosni audit prompt injection napada"
           }
         },
         {
@@ -806,7 +806,7 @@
           "subcategory": "ai-llm-automation",
           "title": {
             "en": "AI Agent Architecture Audit",
-            "sr": "AI Agent Architecture Audit"
+            "sr": "Audit arhitekture AI agenata"
           }
         },
         {
@@ -816,7 +816,7 @@
           "subcategory": "ai-llm-automation",
           "title": {
             "en": "AI Agent Reliability Audit",
-            "sr": "AI Agent Reliability Audit"
+            "sr": "Audit pouzdanosti AI agenata"
           }
         },
         {
@@ -826,7 +826,7 @@
           "subcategory": "ai-llm-automation",
           "title": {
             "en": "System Prompt Optimization",
-            "sr": "System Prompt Optimization"
+            "sr": "Optimizacija sistemskog prompta"
           }
         },
         {
@@ -836,7 +836,7 @@
           "subcategory": "ai-llm-automation",
           "title": {
             "en": "n8n / Workflow Automation Audit",
-            "sr": "n8n / Workflow Automation Audit"
+            "sr": "Audit n8n i workflow automatizacije"
           }
         },
         {
@@ -846,7 +846,7 @@
           "subcategory": "ai-llm-automation",
           "title": {
             "en": "LLM Cost & Latency Optimization",
-            "sr": "LLM Cost & Latency Optimization"
+            "sr": "Optimizacija troškova i latencije LLM-a"
           }
         },
         {
@@ -856,7 +856,7 @@
           "subcategory": "ai-llm-automation",
           "title": {
             "en": "AI Model Selection & Evaluation",
-            "sr": "AI Model Selection & Evaluation"
+            "sr": "Izbor i evaluacija AI modela"
           }
         },
         {
@@ -866,7 +866,7 @@
           "subcategory": "testing-qa-reliability",
           "title": {
             "en": "Ultimate Test Suite Audit",
-            "sr": "Ultimate Test Suite Audit"
+            "sr": "Sveobuhvatni audit test suite-a"
           }
         },
         {
@@ -876,7 +876,7 @@
           "subcategory": "testing-qa-reliability",
           "title": {
             "en": "Missing Test Coverage Hunter",
-            "sr": "Missing Test Coverage Hunter"
+            "sr": "Lov na nedostajuću pokrivenost testovima"
           }
         },
         {
@@ -886,7 +886,7 @@
           "subcategory": "testing-qa-reliability",
           "title": {
             "en": "Flaky Test Hunter",
-            "sr": "Flaky Test Hunter"
+            "sr": "Lov na nestabilne (flaky) testove"
           }
         },
         {
@@ -896,7 +896,7 @@
           "subcategory": "testing-qa-reliability",
           "title": {
             "en": "Regression Test Generator",
-            "sr": "Regression Test Generator"
+            "sr": "Generator regresionih testova"
           }
         },
         {
@@ -906,7 +906,7 @@
           "subcategory": "testing-qa-reliability",
           "title": {
             "en": "End-to-End Test Plan Generator",
-            "sr": "End-to-End Test Plan Generator"
+            "sr": "Generator end-to-end test plana"
           }
         },
         {
@@ -916,7 +916,7 @@
           "subcategory": "testing-qa-reliability",
           "title": {
             "en": "Edge Case Generator",
-            "sr": "Edge Case Generator"
+            "sr": "Generator graničnih slučajeva"
           }
         },
         {
@@ -926,7 +926,7 @@
           "subcategory": "testing-qa-reliability",
           "title": {
             "en": "Adversarial User Testing",
-            "sr": "Adversarial User Testing"
+            "sr": "Adversarial testiranje iz ugla korisnika"
           }
         },
         {
@@ -936,7 +936,7 @@
           "subcategory": "testing-qa-reliability",
           "title": {
             "en": "Reliability & Failure Mode Audit",
-            "sr": "Reliability & Failure Mode Audit"
+            "sr": "Audit pouzdanosti i načina otkaza"
           }
         },
         {
@@ -946,7 +946,7 @@
           "subcategory": "testing-qa-reliability",
           "title": {
             "en": "Race Condition & Concurrency Hunter",
-            "sr": "Race Condition & Concurrency Hunter"
+            "sr": "Lov na race condition i probleme konkurentnosti"
           }
         },
         {
@@ -956,7 +956,7 @@
           "subcategory": "testing-qa-reliability",
           "title": {
             "en": "Production Incident Simulation",
-            "sr": "Production Incident Simulation"
+            "sr": "Simulacija produkcionog incidenta"
           }
         },
         {
@@ -966,7 +966,7 @@
           "subcategory": "ux-ui-product-development",
           "title": {
             "en": "Ultimate UX/UI Product Audit",
-            "sr": "Ultimate UX/UI Product Audit"
+            "sr": "Sveobuhvatni UX/UI audit proizvoda"
           }
         },
         {
@@ -976,7 +976,7 @@
           "subcategory": "ux-ui-product-development",
           "title": {
             "en": "Critical User Flow Audit",
-            "sr": "Critical User Flow Audit"
+            "sr": "Audit kritičnih korisničkih tokova"
           }
         },
         {
@@ -986,7 +986,7 @@
           "subcategory": "ux-ui-product-development",
           "title": {
             "en": "Onboarding Audit",
-            "sr": "Onboarding Audit"
+            "sr": "Audit onboarding-a"
           }
         },
         {
@@ -996,7 +996,7 @@
           "subcategory": "ux-ui-product-development",
           "title": {
             "en": "Form UX Audit",
-            "sr": "Form UX Audit"
+            "sr": "UX audit formi"
           }
         },
         {
@@ -1006,7 +1006,7 @@
           "subcategory": "ux-ui-product-development",
           "title": {
             "en": "Navigation & Information Architecture Audit",
-            "sr": "Navigation & Information Architecture Audit"
+            "sr": "Audit navigacije i informacione arhitekture"
           }
         },
         {
@@ -1016,7 +1016,7 @@
           "subcategory": "ux-ui-product-development",
           "title": {
             "en": "Mobile UX Audit",
-            "sr": "Mobile UX Audit"
+            "sr": "Mobilni UX audit"
           }
         },
         {
@@ -1026,7 +1026,7 @@
           "subcategory": "ux-ui-product-development",
           "title": {
             "en": "Design System Consistency Audit",
-            "sr": "Design System Consistency Audit"
+            "sr": "Audit doslednosti dizajn sistema"
           }
         },
         {
@@ -1036,7 +1036,7 @@
           "subcategory": "ux-ui-product-development",
           "title": {
             "en": "Accessibility Experience Audit",
-            "sr": "Accessibility Experience Audit"
+            "sr": "Audit pristupačnosti korisničkog iskustva"
           }
         },
         {
@@ -1046,7 +1046,7 @@
           "subcategory": "ux-ui-product-development",
           "title": {
             "en": "Product Requirement Generator",
-            "sr": "Product Requirement Generator"
+            "sr": "Generator zahteva za proizvod"
           }
         },
         {
@@ -1056,7 +1056,7 @@
           "subcategory": "ux-ui-product-development",
           "title": {
             "en": "Feature Design & UX Review",
-            "sr": "Feature Design & UX Review"
+            "sr": "Pregled dizajna funkcionalnosti i UX-a"
           }
         },
         {
@@ -1066,7 +1066,7 @@
           "subcategory": "desktop-game-systems-embedded",
           "title": {
             "en": "Ultimate Desktop Application Audit",
-            "sr": "Ultimate Desktop Application Audit"
+            "sr": "Sveobuhvatni audit desktop aplikacije"
           }
         },
         {
@@ -1076,7 +1076,7 @@
           "subcategory": "desktop-game-systems-embedded",
           "title": {
             "en": "Electron Application Audit",
-            "sr": "Electron Application Audit"
+            "sr": "Audit Electron aplikacije"
           }
         },
         {
@@ -1086,7 +1086,7 @@
           "subcategory": "desktop-game-systems-embedded",
           "title": {
             "en": "Python/PySide Application Audit",
-            "sr": "Python/PySide Application Audit"
+            "sr": "Audit Python/PySide aplikacije"
           }
         },
         {
@@ -1096,7 +1096,7 @@
           "subcategory": "desktop-game-systems-embedded",
           "title": {
             "en": "Windows Application Production Audit",
-            "sr": "Windows Application Production Audit"
+            "sr": "Produkcioni audit Windows aplikacije"
           }
         },
         {
@@ -1106,7 +1106,7 @@
           "subcategory": "desktop-game-systems-embedded",
           "title": {
             "en": "Cross-Platform Compatibility Audit",
-            "sr": "Cross-Platform Compatibility Audit"
+            "sr": "Audit kompatibilnosti na više platformi"
           }
         },
         {
@@ -1116,7 +1116,7 @@
           "subcategory": "desktop-game-systems-embedded",
           "title": {
             "en": "Game Architecture Audit",
-            "sr": "Game Architecture Audit"
+            "sr": "Audit arhitekture igre"
           }
         },
         {
@@ -1126,7 +1126,7 @@
           "subcategory": "desktop-game-systems-embedded",
           "title": {
             "en": "Game Performance Audit",
-            "sr": "Game Performance Audit"
+            "sr": "Audit performansi igre"
           }
         },
         {
@@ -1136,7 +1136,7 @@
           "subcategory": "desktop-game-systems-embedded",
           "title": {
             "en": "Embedded Software Reliability Audit",
-            "sr": "Embedded Software Reliability Audit"
+            "sr": "Audit pouzdanosti embedded softvera"
           }
         },
         {
@@ -1146,7 +1146,7 @@
           "subcategory": "desktop-game-systems-embedded",
           "title": {
             "en": "Memory & Resource Leak Hunter",
-            "sr": "Memory & Resource Leak Hunter"
+            "sr": "Lov na curenje memorije i resursa"
           }
         },
         {
@@ -1156,7 +1156,7 @@
           "subcategory": "desktop-game-systems-embedded",
           "title": {
             "en": "Hardware/Software Integration Audit",
-            "sr": "Hardware/Software Integration Audit"
+            "sr": "Audit integracije hardvera i softvera"
           }
         }
       ]
@@ -1307,7 +1307,7 @@
           "subcategory": "financial-analysis-corporate-finance",
           "title": {
             "en": "Ultimate Financial Analysis",
-            "sr": "Ultimate Financial Analysis"
+            "sr": "Sveobuhvatna finansijska analiza"
           }
         },
         {
@@ -1317,7 +1317,7 @@
           "subcategory": "financial-analysis-corporate-finance",
           "title": {
             "en": "Financial Statement Forensic Analysis",
-            "sr": "Financial Statement Forensic Analysis"
+            "sr": "Forenzička analiza finansijskih izveštaja"
           }
         },
         {
@@ -1327,7 +1327,7 @@
           "subcategory": "financial-analysis-corporate-finance",
           "title": {
             "en": "Cash Flow & Liquidity Audit",
-            "sr": "Cash Flow & Liquidity Audit"
+            "sr": "Audit novčanih tokova i likvidnosti"
           }
         },
         {
@@ -1337,7 +1337,7 @@
           "subcategory": "financial-analysis-corporate-finance",
           "title": {
             "en": "Profitability & Margin Analysis",
-            "sr": "Profitability & Margin Analysis"
+            "sr": "Analiza profitabilnosti i marži"
           }
         },
         {
@@ -1347,7 +1347,7 @@
           "subcategory": "financial-analysis-corporate-finance",
           "title": {
             "en": "Working Capital Optimization",
-            "sr": "Working Capital Optimization"
+            "sr": "Optimizacija obrtnog kapitala"
           }
         },
         {
@@ -1357,7 +1357,7 @@
           "subcategory": "financial-analysis-corporate-finance",
           "title": {
             "en": "Budget & Forecast Audit",
-            "sr": "Budget & Forecast Audit"
+            "sr": "Audit budžeta i prognoze"
           }
         },
         {
@@ -1367,7 +1367,7 @@
           "subcategory": "financial-analysis-corporate-finance",
           "title": {
             "en": "Financial Model Audit",
-            "sr": "Financial Model Audit"
+            "sr": "Audit finansijskog modela"
           }
         },
         {
@@ -1377,7 +1377,7 @@
           "subcategory": "financial-analysis-corporate-finance",
           "title": {
             "en": "Capital Allocation Analysis",
-            "sr": "Capital Allocation Analysis"
+            "sr": "Analiza alokacije kapitala"
           }
         },
         {
@@ -1387,7 +1387,7 @@
           "subcategory": "financial-analysis-corporate-finance",
           "title": {
             "en": "Debt & Financing Structure Analysis",
-            "sr": "Debt & Financing Structure Analysis"
+            "sr": "Analiza duga i strukture finansiranja"
           }
         },
         {
@@ -1397,7 +1397,7 @@
           "subcategory": "financial-analysis-corporate-finance",
           "title": {
             "en": "Corporate Finance Decision Analysis",
-            "sr": "Corporate Finance Decision Analysis"
+            "sr": "Analiza odluka korporativnih finansija"
           }
         },
         {
@@ -1407,7 +1407,7 @@
           "subcategory": "accounting-reporting-financial-control",
           "title": {
             "en": "Ultimate Accounting System Audit",
-            "sr": "Ultimate Accounting System Audit"
+            "sr": "Sveobuhvatni audit računovodstvenog sistema"
           }
         },
         {
@@ -1417,7 +1417,7 @@
           "subcategory": "accounting-reporting-financial-control",
           "title": {
             "en": "General Ledger Forensic Audit",
-            "sr": "General Ledger Forensic Audit"
+            "sr": "Forenzički audit glavne knjige"
           }
         },
         {
@@ -1427,7 +1427,7 @@
           "subcategory": "accounting-reporting-financial-control",
           "title": {
             "en": "Revenue Recognition Audit",
-            "sr": "Revenue Recognition Audit"
+            "sr": "Audit priznavanja prihoda"
           }
         },
         {
@@ -1437,7 +1437,7 @@
           "subcategory": "accounting-reporting-financial-control",
           "title": {
             "en": "Expense & Cost Accounting Audit",
-            "sr": "Expense & Cost Accounting Audit"
+            "sr": "Audit rashoda i troškovnog računovodstva"
           }
         },
         {
@@ -1447,7 +1447,7 @@
           "subcategory": "accounting-reporting-financial-control",
           "title": {
             "en": "Accounts Receivable Audit",
-            "sr": "Accounts Receivable Audit"
+            "sr": "Audit potraživanja od kupaca"
           }
         },
         {
@@ -1457,7 +1457,7 @@
           "subcategory": "accounting-reporting-financial-control",
           "title": {
             "en": "Accounts Payable Audit",
-            "sr": "Accounts Payable Audit"
+            "sr": "Audit obaveza prema dobavljačima"
           }
         },
         {
@@ -1467,7 +1467,7 @@
           "subcategory": "accounting-reporting-financial-control",
           "title": {
             "en": "Financial Close Process Audit",
-            "sr": "Financial Close Process Audit"
+            "sr": "Audit procesa finansijskog zatvaranja perioda"
           }
         },
         {
@@ -1477,7 +1477,7 @@
           "subcategory": "accounting-reporting-financial-control",
           "title": {
             "en": "Management Reporting Audit",
-            "sr": "Management Reporting Audit"
+            "sr": "Audit menadžerskog izveštavanja"
           }
         },
         {
@@ -1487,7 +1487,7 @@
           "subcategory": "accounting-reporting-financial-control",
           "title": {
             "en": "Internal Financial Controls Audit",
-            "sr": "Internal Financial Controls Audit"
+            "sr": "Audit internih finansijskih kontrola"
           }
         },
         {
@@ -1497,7 +1497,7 @@
           "subcategory": "accounting-reporting-financial-control",
           "title": {
             "en": "Accounting Anomaly & Misstatement Hunter",
-            "sr": "Accounting Anomaly & Misstatement Hunter"
+            "sr": "Lov na računovodstvene anomalije i materijalno pogrešne iskaze"
           }
         },
         {
@@ -1507,7 +1507,7 @@
           "subcategory": "economics-market-analysis",
           "title": {
             "en": "Ultimate Economic Analysis",
-            "sr": "Ultimate Economic Analysis"
+            "sr": "Sveobuhvatna ekonomska analiza"
           }
         },
         {
@@ -1517,7 +1517,7 @@
           "subcategory": "economics-market-analysis",
           "title": {
             "en": "Macroeconomic Environment Analysis",
-            "sr": "Macroeconomic Environment Analysis"
+            "sr": "Analiza makroekonomskog okruženja"
           }
         },
         {
@@ -1527,7 +1527,7 @@
           "subcategory": "economics-market-analysis",
           "title": {
             "en": "Industry Economics Analysis",
-            "sr": "Industry Economics Analysis"
+            "sr": "Ekonomska analiza industrije"
           }
         },
         {
@@ -1537,7 +1537,7 @@
           "subcategory": "economics-market-analysis",
           "title": {
             "en": "Market Size & Growth Analysis",
-            "sr": "Market Size & Growth Analysis"
+            "sr": "Analiza veličine i rasta tržišta"
           }
         },
         {
@@ -1547,7 +1547,7 @@
           "subcategory": "economics-market-analysis",
           "title": {
             "en": "Demand & Supply Analysis",
-            "sr": "Demand & Supply Analysis"
+            "sr": "Analiza ponude i tražnje"
           }
         },
         {
@@ -1557,7 +1557,7 @@
           "subcategory": "economics-market-analysis",
           "title": {
             "en": "Inflation & Cost Pressure Analysis",
-            "sr": "Inflation & Cost Pressure Analysis"
+            "sr": "Analiza inflacije i pritiska troškova"
           }
         },
         {
@@ -1567,7 +1567,7 @@
           "subcategory": "economics-market-analysis",
           "title": {
             "en": "Interest Rate Impact Analysis",
-            "sr": "Interest Rate Impact Analysis"
+            "sr": "Analiza uticaja kamatnih stopa"
           }
         },
         {
@@ -1577,7 +1577,7 @@
           "subcategory": "economics-market-analysis",
           "title": {
             "en": "Exchange Rate Exposure Analysis",
-            "sr": "Exchange Rate Exposure Analysis"
+            "sr": "Analiza izloženosti deviznom kursu"
           }
         },
         {
@@ -1587,7 +1587,7 @@
           "subcategory": "economics-market-analysis",
           "title": {
             "en": "Economic Scenario & Sensitivity Analysis",
-            "sr": "Economic Scenario & Sensitivity Analysis"
+            "sr": "Analiza ekonomskih scenarija i osetljivosti"
           }
         },
         {
@@ -1597,7 +1597,7 @@
           "subcategory": "economics-market-analysis",
           "title": {
             "en": "Economic Data Quality & Interpretation Audit",
-            "sr": "Economic Data Quality & Interpretation Audit"
+            "sr": "Audit kvaliteta i tumačenja ekonomskih podataka"
           }
         },
         {
@@ -1607,7 +1607,7 @@
           "subcategory": "business-strategy-competitive-analysis",
           "title": {
             "en": "Ultimate Business Strategy Audit",
-            "sr": "Ultimate Business Strategy Audit"
+            "sr": "Sveobuhvatni audit poslovne strategije"
           }
         },
         {
@@ -1617,7 +1617,7 @@
           "subcategory": "business-strategy-competitive-analysis",
           "title": {
             "en": "Competitive Landscape Analysis",
-            "sr": "Competitive Landscape Analysis"
+            "sr": "Analiza konkurentskog okruženja"
           }
         },
         {
@@ -1627,7 +1627,7 @@
           "subcategory": "business-strategy-competitive-analysis",
           "title": {
             "en": "Competitive Advantage Audit",
-            "sr": "Competitive Advantage Audit"
+            "sr": "Audit konkurentske prednosti"
           }
         },
         {
@@ -1637,7 +1637,7 @@
           "subcategory": "business-strategy-competitive-analysis",
           "title": {
             "en": "SWOT Evidence-Based Analysis",
-            "sr": "SWOT Evidence-Based Analysis"
+            "sr": "SWOT analiza zasnovana na dokazima"
           }
         },
         {
@@ -1647,7 +1647,7 @@
           "subcategory": "business-strategy-competitive-analysis",
           "title": {
             "en": "PESTLE Strategic Analysis",
-            "sr": "PESTLE Strategic Analysis"
+            "sr": "PESTLE strateška analiza"
           }
         },
         {
@@ -1657,7 +1657,7 @@
           "subcategory": "business-strategy-competitive-analysis",
           "title": {
             "en": "Strategic Risk & Opportunity Analysis",
-            "sr": "Strategic Risk & Opportunity Analysis"
+            "sr": "Analiza strateških rizika i prilika"
           }
         },
         {
@@ -1667,7 +1667,7 @@
           "subcategory": "business-strategy-competitive-analysis",
           "title": {
             "en": "Market Entry Strategy Analysis",
-            "sr": "Market Entry Strategy Analysis"
+            "sr": "Analiza strategije ulaska na tržište"
           }
         },
         {
@@ -1677,7 +1677,7 @@
           "subcategory": "business-strategy-competitive-analysis",
           "title": {
             "en": "Growth Strategy Audit",
-            "sr": "Growth Strategy Audit"
+            "sr": "Audit strategije rasta"
           }
         },
         {
@@ -1687,7 +1687,7 @@
           "subcategory": "business-strategy-competitive-analysis",
           "title": {
             "en": "Strategic Initiative Prioritization",
-            "sr": "Strategic Initiative Prioritization"
+            "sr": "Prioritizacija strateških inicijativa"
           }
         },
         {
@@ -1697,7 +1697,7 @@
           "subcategory": "business-strategy-competitive-analysis",
           "title": {
             "en": "Business Strategy Stress Test",
-            "sr": "Business Strategy Stress Test"
+            "sr": "Stres test poslovne strategije"
           }
         },
         {
@@ -1707,7 +1707,7 @@
           "subcategory": "entrepreneurship-business-models",
           "title": {
             "en": "Ultimate Business Model Audit",
-            "sr": "Ultimate Business Model Audit"
+            "sr": "Sveobuhvatni audit poslovnog modela"
           }
         },
         {
@@ -1717,7 +1717,7 @@
           "subcategory": "entrepreneurship-business-models",
           "title": {
             "en": "Startup Idea Feasibility Analysis",
-            "sr": "Startup Idea Feasibility Analysis"
+            "sr": "Analiza izvodljivosti startap ideje"
           }
         },
         {
@@ -1727,7 +1727,7 @@
           "subcategory": "entrepreneurship-business-models",
           "title": {
             "en": "Business Model Canvas Deep Analysis",
-            "sr": "Business Model Canvas Deep Analysis"
+            "sr": "Dubinska analiza Business Model Canvas-a"
           }
         },
         {
@@ -1737,7 +1737,7 @@
           "subcategory": "entrepreneurship-business-models",
           "title": {
             "en": "Unit Economics Audit",
-            "sr": "Unit Economics Audit"
+            "sr": "Audit jedinične ekonomije"
           }
         },
         {
@@ -1747,7 +1747,7 @@
           "subcategory": "entrepreneurship-business-models",
           "title": {
             "en": "Product-Market Fit Evidence Audit",
-            "sr": "Product-Market Fit Evidence Audit"
+            "sr": "Audit dokaza o product-market fit-u"
           }
         },
         {
@@ -1757,7 +1757,7 @@
           "subcategory": "entrepreneurship-business-models",
           "title": {
             "en": "Startup Financial Runway Analysis",
-            "sr": "Startup Financial Runway Analysis"
+            "sr": "Analiza finansijskog runway-a startapa"
           }
         },
         {
@@ -1767,7 +1767,7 @@
           "subcategory": "entrepreneurship-business-models",
           "title": {
             "en": "Founder Assumption Stress Test",
-            "sr": "Founder Assumption Stress Test"
+            "sr": "Stres test osnivačkih pretpostavki"
           }
         },
         {
@@ -1777,7 +1777,7 @@
           "subcategory": "entrepreneurship-business-models",
           "title": {
             "en": "Business Scalability Audit",
-            "sr": "Business Scalability Audit"
+            "sr": "Audit skalabilnosti poslovanja"
           }
         },
         {
@@ -1787,7 +1787,7 @@
           "subcategory": "entrepreneurship-business-models",
           "title": {
             "en": "Monetization Model Analysis",
-            "sr": "Monetization Model Analysis"
+            "sr": "Analiza modela monetizacije"
           }
         },
         {
@@ -1797,7 +1797,7 @@
           "subcategory": "entrepreneurship-business-models",
           "title": {
             "en": "Startup Failure Mode Audit",
-            "sr": "Startup Failure Mode Audit"
+            "sr": "Audit načina neuspeha startapa"
           }
         },
         {
@@ -1807,7 +1807,7 @@
           "subcategory": "operations-supply-chain-procurement",
           "title": {
             "en": "Ultimate Operations Audit",
-            "sr": "Ultimate Operations Audit"
+            "sr": "Sveobuhvatni audit operacija"
           }
         },
         {
@@ -1817,7 +1817,7 @@
           "subcategory": "operations-supply-chain-procurement",
           "title": {
             "en": "Process Efficiency Audit",
-            "sr": "Process Efficiency Audit"
+            "sr": "Audit efikasnosti procesa"
           }
         },
         {
@@ -1827,7 +1827,7 @@
           "subcategory": "operations-supply-chain-procurement",
           "title": {
             "en": "Operational Bottleneck Hunter",
-            "sr": "Operational Bottleneck Hunter"
+            "sr": "Lov na operativna uska grla"
           }
         },
         {
@@ -1837,7 +1837,7 @@
           "subcategory": "operations-supply-chain-procurement",
           "title": {
             "en": "Supply Chain Resilience Audit",
-            "sr": "Supply Chain Resilience Audit"
+            "sr": "Audit otpornosti lanca snabdevanja"
           }
         },
         {
@@ -1847,7 +1847,7 @@
           "subcategory": "operations-supply-chain-procurement",
           "title": {
             "en": "Inventory Optimization Audit",
-            "sr": "Inventory Optimization Audit"
+            "sr": "Audit optimizacije zaliha"
           }
         },
         {
@@ -1857,7 +1857,7 @@
           "subcategory": "operations-supply-chain-procurement",
           "title": {
             "en": "Procurement & Supplier Audit",
-            "sr": "Procurement & Supplier Audit"
+            "sr": "Audit nabavke i dobavljača"
           }
         },
         {
@@ -1867,7 +1867,7 @@
           "subcategory": "operations-supply-chain-procurement",
           "title": {
             "en": "Vendor Risk Analysis",
-            "sr": "Vendor Risk Analysis"
+            "sr": "Analiza rizika dobavljača"
           }
         },
         {
@@ -1877,7 +1877,7 @@
           "subcategory": "operations-supply-chain-procurement",
           "title": {
             "en": "Capacity Planning Audit",
-            "sr": "Capacity Planning Audit"
+            "sr": "Audit planiranja kapaciteta"
           }
         },
         {
@@ -1887,7 +1887,7 @@
           "subcategory": "operations-supply-chain-procurement",
           "title": {
             "en": "Operational Cost Reduction Analysis",
-            "sr": "Operational Cost Reduction Analysis"
+            "sr": "Analiza smanjenja operativnih troškova"
           }
         },
         {
@@ -1897,7 +1897,7 @@
           "subcategory": "operations-supply-chain-procurement",
           "title": {
             "en": "Business Continuity Operations Audit",
-            "sr": "Business Continuity Operations Audit"
+            "sr": "Audit operativnog kontinuiteta poslovanja"
           }
         },
         {
@@ -1907,7 +1907,7 @@
           "subcategory": "sales-revenue-pricing",
           "title": {
             "en": "Ultimate Revenue Audit",
-            "sr": "Ultimate Revenue Audit"
+            "sr": "Sveobuhvatni audit prihoda"
           }
         },
         {
@@ -1917,7 +1917,7 @@
           "subcategory": "sales-revenue-pricing",
           "title": {
             "en": "Sales Funnel Forensic Analysis",
-            "sr": "Sales Funnel Forensic Analysis"
+            "sr": "Forenzička analiza prodajnog levka"
           }
         },
         {
@@ -1927,7 +1927,7 @@
           "subcategory": "sales-revenue-pricing",
           "title": {
             "en": "Sales Performance Audit",
-            "sr": "Sales Performance Audit"
+            "sr": "Audit prodajnih rezultata"
           }
         },
         {
@@ -1937,7 +1937,7 @@
           "subcategory": "sales-revenue-pricing",
           "title": {
             "en": "Pricing Strategy Audit",
-            "sr": "Pricing Strategy Audit"
+            "sr": "Audit strategije cena"
           }
         },
         {
@@ -1947,7 +1947,7 @@
           "subcategory": "sales-revenue-pricing",
           "title": {
             "en": "Pricing Elasticity Analysis",
-            "sr": "Pricing Elasticity Analysis"
+            "sr": "Analiza cenovne elastičnosti"
           }
         },
         {
@@ -1957,7 +1957,7 @@
           "subcategory": "sales-revenue-pricing",
           "title": {
             "en": "Revenue Leakage Hunter",
-            "sr": "Revenue Leakage Hunter"
+            "sr": "Lov na curenje prihoda"
           }
         },
         {
@@ -1967,7 +1967,7 @@
           "subcategory": "sales-revenue-pricing",
           "title": {
             "en": "Customer Lifetime Value Analysis",
-            "sr": "Customer Lifetime Value Analysis"
+            "sr": "Analiza životne vrednosti kupca (CLV)"
           }
         },
         {
@@ -1977,7 +1977,7 @@
           "subcategory": "sales-revenue-pricing",
           "title": {
             "en": "Customer Acquisition Economics Audit",
-            "sr": "Customer Acquisition Economics Audit"
+            "sr": "Audit ekonomike pribavljanja kupaca"
           }
         },
         {
@@ -1987,7 +1987,7 @@
           "subcategory": "sales-revenue-pricing",
           "title": {
             "en": "Subscription & Recurring Revenue Audit",
-            "sr": "Subscription & Recurring Revenue Audit"
+            "sr": "Audit pretplata i ponavljajućih prihoda"
           }
         },
         {
@@ -1997,7 +1997,7 @@
           "subcategory": "sales-revenue-pricing",
           "title": {
             "en": "Revenue Forecast Stress Test",
-            "sr": "Revenue Forecast Stress Test"
+            "sr": "Stres test prognoze prihoda"
           }
         },
         {
@@ -2007,7 +2007,7 @@
           "subcategory": "management-leadership-organization",
           "title": {
             "en": "Ultimate Management System Audit",
-            "sr": "Ultimate Management System Audit"
+            "sr": "Sveobuhvatni audit sistema upravljanja"
           }
         },
         {
@@ -2017,7 +2017,7 @@
           "subcategory": "management-leadership-organization",
           "title": {
             "en": "Organizational Structure Audit",
-            "sr": "Organizational Structure Audit"
+            "sr": "Audit organizacione strukture"
           }
         },
         {
@@ -2027,7 +2027,7 @@
           "subcategory": "management-leadership-organization",
           "title": {
             "en": "Decision-Making Process Audit",
-            "sr": "Decision-Making Process Audit"
+            "sr": "Audit procesa odlučivanja"
           }
         },
         {
@@ -2037,7 +2037,7 @@
           "subcategory": "management-leadership-organization",
           "title": {
             "en": "KPI & Performance Management Audit",
-            "sr": "KPI & Performance Management Audit"
+            "sr": "Audit KPI-jeva i upravljanja učinkom"
           }
         },
         {
@@ -2047,7 +2047,7 @@
           "subcategory": "management-leadership-organization",
           "title": {
             "en": "Management Reporting System Audit",
-            "sr": "Management Reporting System Audit"
+            "sr": "Audit sistema menadžerskog izveštavanja"
           }
         },
         {
@@ -2057,7 +2057,7 @@
           "subcategory": "management-leadership-organization",
           "title": {
             "en": "Delegation & Accountability Audit",
-            "sr": "Delegation & Accountability Audit"
+            "sr": "Audit delegiranja i odgovornosti"
           }
         },
         {
@@ -2067,7 +2067,7 @@
           "subcategory": "management-leadership-organization",
           "title": {
             "en": "Meeting & Communication Effectiveness Audit",
-            "sr": "Meeting & Communication Effectiveness Audit"
+            "sr": "Audit efikasnosti sastanaka i komunikacije"
           }
         },
         {
@@ -2077,7 +2077,7 @@
           "subcategory": "management-leadership-organization",
           "title": {
             "en": "Organizational Bottleneck Analysis",
-            "sr": "Organizational Bottleneck Analysis"
+            "sr": "Analiza organizacionih uskih grla"
           }
         },
         {
@@ -2087,7 +2087,7 @@
           "subcategory": "management-leadership-organization",
           "title": {
             "en": "Change Management Readiness Audit",
-            "sr": "Change Management Readiness Audit"
+            "sr": "Audit spremnosti za upravljanje promenama"
           }
         },
         {
@@ -2097,7 +2097,7 @@
           "subcategory": "management-leadership-organization",
           "title": {
             "en": "Leadership Risk & Dependency Audit",
-            "sr": "Leadership Risk & Dependency Audit"
+            "sr": "Audit rizika i zavisnosti od liderstva"
           }
         },
         {
@@ -2107,7 +2107,7 @@
           "subcategory": "risk-compliance-business-resilience",
           "title": {
             "en": "Ultimate Enterprise Risk Audit",
-            "sr": "Ultimate Enterprise Risk Audit"
+            "sr": "Sveobuhvatni audit rizika preduzeća"
           }
         },
         {
@@ -2117,7 +2117,7 @@
           "subcategory": "risk-compliance-business-resilience",
           "title": {
             "en": "Business Risk Register Generator",
-            "sr": "Business Risk Register Generator"
+            "sr": "Generator registra poslovnih rizika"
           }
         },
         {
@@ -2127,7 +2127,7 @@
           "subcategory": "risk-compliance-business-resilience",
           "title": {
             "en": "Financial Risk Audit",
-            "sr": "Financial Risk Audit"
+            "sr": "Audit finansijskih rizika"
           }
         },
         {
@@ -2137,7 +2137,7 @@
           "subcategory": "risk-compliance-business-resilience",
           "title": {
             "en": "Operational Risk Audit",
-            "sr": "Operational Risk Audit"
+            "sr": "Audit operativnih rizika"
           }
         },
         {
@@ -2147,7 +2147,7 @@
           "subcategory": "risk-compliance-business-resilience",
           "title": {
             "en": "Third-Party Business Risk Audit",
-            "sr": "Third-Party Business Risk Audit"
+            "sr": "Audit poslovnih rizika trećih strana"
           }
         },
         {
@@ -2157,7 +2157,7 @@
           "subcategory": "risk-compliance-business-resilience",
           "title": {
             "en": "Fraud Risk Assessment",
-            "sr": "Fraud Risk Assessment"
+            "sr": "Procena rizika od prevare"
           }
         },
         {
@@ -2167,7 +2167,7 @@
           "subcategory": "risk-compliance-business-resilience",
           "title": {
             "en": "Compliance Control Framework Audit",
-            "sr": "Compliance Control Framework Audit"
+            "sr": "Audit okvira kontrola usklađenosti"
           }
         },
         {
@@ -2177,7 +2177,7 @@
           "subcategory": "risk-compliance-business-resilience",
           "title": {
             "en": "Business Continuity & Resilience Audit",
-            "sr": "Business Continuity & Resilience Audit"
+            "sr": "Audit kontinuiteta i otpornosti poslovanja"
           }
         },
         {
@@ -2187,7 +2187,7 @@
           "subcategory": "risk-compliance-business-resilience",
           "title": {
             "en": "Crisis Management Readiness Audit",
-            "sr": "Crisis Management Readiness Audit"
+            "sr": "Audit spremnosti za upravljanje krizom"
           }
         },
         {
@@ -2197,7 +2197,7 @@
           "subcategory": "risk-compliance-business-resilience",
           "title": {
             "en": "Enterprise Risk Scenario Simulation",
-            "sr": "Enterprise Risk Scenario Simulation"
+            "sr": "Simulacija scenarija rizika preduzeća"
           }
         },
         {
@@ -2207,7 +2207,7 @@
           "subcategory": "investment-valuation-due-diligence",
           "title": {
             "en": "Ultimate Business Valuation",
-            "sr": "Ultimate Business Valuation"
+            "sr": "Sveobuhvatna procena vrednosti preduzeća"
           }
         },
         {
@@ -2217,7 +2217,7 @@
           "subcategory": "investment-valuation-due-diligence",
           "title": {
             "en": "DCF Valuation Audit",
-            "sr": "DCF Valuation Audit"
+            "sr": "Audit DCF procene vrednosti"
           }
         },
         {
@@ -2227,7 +2227,7 @@
           "subcategory": "investment-valuation-due-diligence",
           "title": {
             "en": "Comparable Company Analysis",
-            "sr": "Comparable Company Analysis"
+            "sr": "Analiza uporedivih kompanija"
           }
         },
         {
@@ -2237,7 +2237,7 @@
           "subcategory": "investment-valuation-due-diligence",
           "title": {
             "en": "Investment Thesis Stress Test",
-            "sr": "Investment Thesis Stress Test"
+            "sr": "Stres test investicione teze"
           }
         },
         {
@@ -2247,7 +2247,7 @@
           "subcategory": "investment-valuation-due-diligence",
           "title": {
             "en": "Commercial Due Diligence",
-            "sr": "Commercial Due Diligence"
+            "sr": "Komercijalni due diligence"
           }
         },
         {
@@ -2257,7 +2257,7 @@
           "subcategory": "investment-valuation-due-diligence",
           "title": {
             "en": "Financial Due Diligence",
-            "sr": "Financial Due Diligence"
+            "sr": "Finansijski due diligence"
           }
         },
         {
@@ -2267,7 +2267,7 @@
           "subcategory": "investment-valuation-due-diligence",
           "title": {
             "en": "M&A Target Analysis",
-            "sr": "M&A Target Analysis"
+            "sr": "Analiza M&A mete"
           }
         },
         {
@@ -2277,7 +2277,7 @@
           "subcategory": "investment-valuation-due-diligence",
           "title": {
             "en": "Investment Risk & Downside Analysis",
-            "sr": "Investment Risk & Downside Analysis"
+            "sr": "Analiza investicionog rizika i negativnog scenarija"
           }
         },
         {
@@ -2287,7 +2287,7 @@
           "subcategory": "investment-valuation-due-diligence",
           "title": {
             "en": "Assumption & Sensitivity Analysis",
-            "sr": "Assumption & Sensitivity Analysis"
+            "sr": "Analiza pretpostavki i osetljivosti"
           }
         },
         {
@@ -2297,7 +2297,7 @@
           "subcategory": "investment-valuation-due-diligence",
           "title": {
             "en": "Full Business Due Diligence Audit",
-            "sr": "Full Business Due Diligence Audit"
+            "sr": "Sveobuhvatni due diligence audit poslovanja"
           }
         }
       ]

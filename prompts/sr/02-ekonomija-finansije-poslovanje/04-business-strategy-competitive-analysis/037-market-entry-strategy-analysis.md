@@ -2,7 +2,7 @@
 id: UPL-BIZ-037
 number: 37
 slug: market-entry-strategy-analysis
-title: Market Entry Strategy Analysis
+title: Analiza strategije ulaska na tržište
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Poslovna strategija i analiza konkurencije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# MARKET ENTRY STRATEGY ANALYSIS
+# ANALIZA STRATEGIJE ULASKA NA TRŽIŠTE
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu ove strateške teme.
 

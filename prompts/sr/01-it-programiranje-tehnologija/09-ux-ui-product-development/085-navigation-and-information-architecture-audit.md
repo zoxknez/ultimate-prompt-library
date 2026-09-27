@@ -2,7 +2,7 @@
 id: UPL-IT-085
 number: 85
 slug: navigation-and-information-architecture-audit
-title: Navigation & Information Architecture Audit
+title: Audit navigacije i informacione arhitekture
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: UX, UI i razvoj proizvoda
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# NAVIGATION AND INFORMATION ARCHITECTURE AUDIT
+# AUDIT NAVIGACIJE I INFORMACIONE ARHITEKTURE
 
 Želim kompletan audit navigation i information architecture sistema.
 

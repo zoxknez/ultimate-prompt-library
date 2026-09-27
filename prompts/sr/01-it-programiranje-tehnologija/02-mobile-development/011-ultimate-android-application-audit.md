@@ -2,7 +2,7 @@
 id: UPL-IT-011
 number: 11
 slug: ultimate-android-application-audit
-title: Ultimate Android Application Audit
+title: Sveobuhvatni audit Android aplikacije
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Mobilni razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE ANDROID APPLICATION AUDIT
+# SVEOBUHVATNI AUDIT ANDROID APLIKACIJE
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletne Android aplikacije.
 

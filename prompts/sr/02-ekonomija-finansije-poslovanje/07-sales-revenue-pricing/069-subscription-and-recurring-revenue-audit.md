@@ -2,7 +2,7 @@
 id: UPL-BIZ-069
 number: 69
 slug: subscription-and-recurring-revenue-audit
-title: Subscription & Recurring Revenue Audit
+title: Audit pretplata i ponavljajućih prihoda
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Prodaja, prihodi i cene
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# SUBSCRIPTION & RECURRING REVENUE AUDIT
+# AUDIT PRETPLATA I PONAVLJAJUĆIH PRIHODA
 
 Želim duboku, evidence-first i revenue-oriented analizu koja razdvaja prodajnu aktivnost od stvarnog ekonomskog rezultata i reported revenue od kvalitetnog, naplativog i održivog prihoda.
 

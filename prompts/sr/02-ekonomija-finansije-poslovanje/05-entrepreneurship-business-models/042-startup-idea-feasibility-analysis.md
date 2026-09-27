@@ -2,7 +2,7 @@
 id: UPL-BIZ-042
 number: 42
 slug: startup-idea-feasibility-analysis
-title: Startup Idea Feasibility Analysis
+title: Analiza izvodljivosti startap ideje
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Preduzetništvo i poslovni modeli
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# STARTUP IDEA FEASIBILITY ANALYSIS
+# ANALIZA IZVODLJIVOSTI STARTAP IDEJE
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu.
 

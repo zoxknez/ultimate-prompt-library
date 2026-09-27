@@ -2,7 +2,7 @@
 id: UPL-BIZ-088
 number: 88
 slug: business-continuity-and-resilience-audit
-title: Business Continuity & Resilience Audit
+title: Audit kontinuiteta i otpornosti poslovanja
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Rizik, usklađenost i poslovna otpornost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# BUSINESS CONTINUITY & RESILIENCE AUDIT
+# AUDIT KONTINUITETA I OTPORNOSTI POSLOVANJA
 
 Želim duboku, evidence-first i risk-oriented analizu koja jasno razlikuje threat, vulnerability, control weakness, inherent risk, residual risk i scenario hardening.
 

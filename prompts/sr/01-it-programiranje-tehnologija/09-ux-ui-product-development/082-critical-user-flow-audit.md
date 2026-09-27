@@ -2,7 +2,7 @@
 id: UPL-IT-082
 number: 82
 slug: critical-user-flow-audit
-title: Critical User Flow Audit
+title: Audit kritičnih korisničkih tokova
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: UX, UI i razvoj proizvoda
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# CRITICAL USER FLOW AUDIT
+# AUDIT KRITIČNIH KORISNIČKIH TOKOVA
 
 Želim duboku analizu jednog ili više critical user flow-ova od entry point-a do stvarnog business outcome-a.
 

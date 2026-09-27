@@ -2,7 +2,7 @@
 id: UPL-IT-041
 number: 41
 slug: ultimate-devops-and-infrastructure-audit
-title: Ultimate DevOps & Infrastructure Audit
+title: Sveobuhvatni DevOps i infrastrukturni audit
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE DEVOPS AND INFRASTRUCTURE AUDIT
+# SVEOBUHVATNI DEVOPS I INFRASTRUKTURNI AUDIT
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletnog DevOps, cloud i infrastructure sloja projekta.
 
@@ -3644,7 +3644,7 @@ Ako je samo maturity poboljšanje bez potvrđenog production failure path-a:
 
 Bolje je pronaći 10 stvarnih infrastructure failure path-ova sa preciznim recovery posledicama nego napisati 200 generičkih DevOps saveta.
 
-Cilj je dobiti forenzički precizan Ultimate DevOps & Infrastructure Audit koji se može direktno pretvoriti u:
+Cilj je dobiti forenzički precizan sveobuhvatni DevOps i infrastrukturni audit koji se može direktno pretvoriti u:
 
 - deployment hardening
 

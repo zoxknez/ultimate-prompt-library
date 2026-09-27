@@ -2,7 +2,7 @@
 id: UPL-IT-054
 number: 54
 slug: database-index-audit
-title: Database Index Audit
+title: Audit indeksa baze podataka
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Baze podataka i data engineering
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# DATABASE INDEX AUDIT
+# AUDIT INDEKSA BAZE PODATAKA
 
 Želim kompletan forensic audit svih indexes sa fokusom na query coverage, write amplification, duplicate indexes, uniqueness, ordering i production usage.
 

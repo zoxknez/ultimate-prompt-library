@@ -2,7 +2,7 @@
 id: UPL-IT-007
 number: 7
 slug: web-accessibility-audit
-title: Web Accessibility Audit
+title: Audit web pristupačnosti
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Web razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# WEB ACCESSIBILITY AUDIT
+# AUDIT WEB PRISTUPAČNOSTI
 
 Želim da izvršiš maksimalno duboku, sistematsku i evidence-first analizu pristupačnosti kompletne web aplikacije.
 

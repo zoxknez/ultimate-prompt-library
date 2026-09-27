@@ -2,7 +2,7 @@
 id: UPL-BIZ-070
 number: 70
 slug: revenue-forecast-stress-test
-title: Revenue Forecast Stress Test
+title: Stres test prognoze prihoda
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Prodaja, prihodi i cene
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# REVENUE FORECAST STRESS TEST
+# STRES TEST PROGNOZE PRIHODA
 
 Želim duboku, evidence-first i revenue-oriented analizu koja razdvaja prodajnu aktivnost od stvarnog ekonomskog rezultata i reported revenue od kvalitetnog, naplativog i održivog prihoda.
 

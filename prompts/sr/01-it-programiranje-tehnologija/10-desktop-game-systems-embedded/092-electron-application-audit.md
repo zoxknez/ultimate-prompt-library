@@ -2,7 +2,7 @@
 id: UPL-IT-092
 number: 92
 slug: electron-application-audit
-title: Electron Application Audit
+title: Audit Electron aplikacije
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Desktop, igre, sistemi i embedded
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ELECTRON APPLICATION AUDIT
+# AUDIT ELECTRON APLIKACIJE
 
 Želim dubok security, reliability i production audit Electron aplikacije.
 

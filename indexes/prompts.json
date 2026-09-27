@@ -22,7 +22,7 @@
       ],
       "titles": {
         "en": "Forensic Full Repository Audit",
-        "sr": "Forensic Full Repository Audit"
+        "sr": "Forenzički audit celog repozitorijuma"
       },
       "versions": {
         "en": "2.4.0",
@@ -49,7 +49,7 @@
       ],
       "titles": {
         "en": "Ultimate Next.js Production Audit",
-        "sr": "Ultimate Next.js Production Audit"
+        "sr": "Sveobuhvatni produkcioni audit Next.js aplikacije"
       },
       "versions": {
         "en": "2.4.0",
@@ -76,7 +76,7 @@
       ],
       "titles": {
         "en": "React Bug Hunter",
-        "sr": "React Bug Hunter"
+        "sr": "Lov na bagove u React aplikacijama"
       },
       "versions": {
         "en": "2.4.0",
@@ -103,7 +103,7 @@
       ],
       "titles": {
         "en": "Frontend Architecture Audit",
-        "sr": "Frontend Architecture Audit"
+        "sr": "Audit frontend arhitekture"
       },
       "versions": {
         "en": "2.4.0",
@@ -130,7 +130,7 @@
       ],
       "titles": {
         "en": "Web Performance Hunter",
-        "sr": "Web Performance Hunter"
+        "sr": "Lov na probleme web performansi"
       },
       "versions": {
         "en": "2.4.0",
@@ -157,7 +157,7 @@
       ],
       "titles": {
         "en": "Responsive & Mobile Web Audit",
-        "sr": "Responsive & Mobile Web Audit"
+        "sr": "Audit responzivnog i mobilnog weba"
       },
       "versions": {
         "en": "2.4.0",
@@ -184,7 +184,7 @@
       ],
       "titles": {
         "en": "Web Accessibility Audit",
-        "sr": "Web Accessibility Audit"
+        "sr": "Audit web pristupačnosti"
       },
       "versions": {
         "en": "2.4.0",
@@ -211,7 +211,7 @@
       ],
       "titles": {
         "en": "Technical SEO Audit",
-        "sr": "Technical SEO Audit"
+        "sr": "Tehnički SEO audit"
       },
       "versions": {
         "en": "2.4.0",
@@ -238,7 +238,7 @@
       ],
       "titles": {
         "en": "Progressive Web App Audit",
-        "sr": "Progressive Web App Audit"
+        "sr": "Audit progresivne web aplikacije (PWA)"
       },
       "versions": {
         "en": "2.4.0",
@@ -265,7 +265,7 @@
       ],
       "titles": {
         "en": "Browser Compatibility & Production Bug Hunter",
-        "sr": "Browser Compatibility & Production Bug Hunter"
+        "sr": "Lov na probleme kompatibilnosti browsera i produkcione bagove"
       },
       "versions": {
         "en": "2.4.0",
@@ -292,7 +292,7 @@
       ],
       "titles": {
         "en": "Ultimate Android Application Audit",
-        "sr": "Ultimate Android Application Audit"
+        "sr": "Sveobuhvatni audit Android aplikacije"
       },
       "versions": {
         "en": "2.4.0",
@@ -319,7 +319,7 @@
       ],
       "titles": {
         "en": "Jetpack Compose Deep Audit",
-        "sr": "Jetpack Compose Deep Audit"
+        "sr": "Dubinski audit Jetpack Compose koda"
       },
       "versions": {
         "en": "2.4.0",
@@ -346,7 +346,7 @@
       ],
       "titles": {
         "en": "Android Lifecycle Bug Hunter",
-        "sr": "Android Lifecycle Bug Hunter"
+        "sr": "Lov na lifecycle bagove u Android aplikacijama"
       },
       "versions": {
         "en": "2.4.0",
@@ -373,7 +373,7 @@
       ],
       "titles": {
         "en": "Android Coroutines & Concurrency Audit",
-        "sr": "Android Coroutines & Concurrency Audit"
+        "sr": "Audit korutina i konkurentnosti u Android aplikacijama"
       },
       "versions": {
         "en": "2.4.0",
@@ -400,7 +400,7 @@
       ],
       "titles": {
         "en": "Android Performance & ANR Hunter",
-        "sr": "Android Performance & ANR Hunter"
+        "sr": "Lov na probleme performansi i ANR u Android aplikacijama"
       },
       "versions": {
         "en": "2.4.0",
@@ -427,7 +427,7 @@
       ],
       "titles": {
         "en": "Android Persistence & Room Audit",
-        "sr": "Android Persistence & Room Audit"
+        "sr": "Audit perzistencije i Room baze u Android aplikacijama"
       },
       "versions": {
         "en": "2.4.0",
@@ -454,7 +454,7 @@
       ],
       "titles": {
         "en": "Android Offline-First & Sync Audit",
-        "sr": "Android Offline-First & Sync Audit"
+        "sr": "Audit offline-first rada i sinhronizacije u Android aplikacijama"
       },
       "versions": {
         "en": "2.4.0",
@@ -481,7 +481,7 @@
       ],
       "titles": {
         "en": "Android Media Playback Audit",
-        "sr": "Android Media Playback Audit"
+        "sr": "Audit reprodukcije medija u Android aplikacijama"
       },
       "versions": {
         "en": "2.4.0",
@@ -508,7 +508,7 @@
       ],
       "titles": {
         "en": "Android TV Application Audit",
-        "sr": "Android TV Application Audit"
+        "sr": "Audit Android TV aplikacije"
       },
       "versions": {
         "en": "2.4.0",
@@ -535,7 +535,7 @@
       ],
       "titles": {
         "en": "Android Release & Play Store Readiness Audit",
-        "sr": "Android Release & Play Store Readiness Audit"
+        "sr": "Audit spremnosti Android aplikacije za izdanje i Play Store"
       },
       "versions": {
         "en": "2.4.0",
@@ -562,7 +562,7 @@
       ],
       "titles": {
         "en": "Ultimate Backend Architecture Audit",
-        "sr": "Ultimate Backend Architecture Audit"
+        "sr": "Sveobuhvatni audit backend arhitekture"
       },
       "versions": {
         "en": "2.4.0",
@@ -589,7 +589,7 @@
       ],
       "titles": {
         "en": "REST API Forensic Audit",
-        "sr": "REST API Forensic Audit"
+        "sr": "Forenzički audit REST API-ja"
       },
       "versions": {
         "en": "2.4.0",
@@ -616,7 +616,7 @@
       ],
       "titles": {
         "en": "API Contract Consistency Audit",
-        "sr": "API Contract Consistency Audit"
+        "sr": "Audit doslednosti API ugovora"
       },
       "versions": {
         "en": "2.4.0",
@@ -643,7 +643,7 @@
       ],
       "titles": {
         "en": "Backend Business Logic Audit",
-        "sr": "Backend Business Logic Audit"
+        "sr": "Audit poslovne logike backend-a"
       },
       "versions": {
         "en": "2.4.0",
@@ -670,7 +670,7 @@
       ],
       "titles": {
         "en": "API Error Handling Audit",
-        "sr": "API Error Handling Audit"
+        "sr": "Audit obrade grešaka u API-ju"
       },
       "versions": {
         "en": "2.4.0",
@@ -697,7 +697,7 @@
       ],
       "titles": {
         "en": "Backend Performance Audit",
-        "sr": "Backend Performance Audit"
+        "sr": "Audit performansi backend-a"
       },
       "versions": {
         "en": "2.4.0",
@@ -724,7 +724,7 @@
       ],
       "titles": {
         "en": "Rate Limiting & Abuse Protection Audit",
-        "sr": "Rate Limiting & Abuse Protection Audit"
+        "sr": "Audit ograničenja zahteva i zaštite od zloupotrebe"
       },
       "versions": {
         "en": "2.4.0",
@@ -751,7 +751,7 @@
       ],
       "titles": {
         "en": "Webhook Reliability Audit",
-        "sr": "Webhook Reliability Audit"
+        "sr": "Audit pouzdanosti webhook-ova"
       },
       "versions": {
         "en": "2.4.0",
@@ -778,7 +778,7 @@
       ],
       "titles": {
         "en": "Background Jobs & Queue Audit",
-        "sr": "Background Jobs & Queue Audit"
+        "sr": "Audit pozadinskih poslova i redova"
       },
       "versions": {
         "en": "2.4.0",
@@ -805,7 +805,7 @@
       ],
       "titles": {
         "en": "Backend Scalability Bottleneck Hunter",
-        "sr": "Backend Scalability Bottleneck Hunter"
+        "sr": "Lov na uska grla skalabilnosti backend-a"
       },
       "versions": {
         "en": "2.4.0",
@@ -832,7 +832,7 @@
       ],
       "titles": {
         "en": "Ultimate Application Security Audit",
-        "sr": "Ultimate Application Security Audit"
+        "sr": "Sveobuhvatni bezbednosni audit aplikacije"
       },
       "versions": {
         "en": "2.4.0",
@@ -859,7 +859,7 @@
       ],
       "titles": {
         "en": "Authentication Security Audit",
-        "sr": "Authentication Security Audit"
+        "sr": "Bezbednosni audit autentifikacije"
       },
       "versions": {
         "en": "2.4.0",
@@ -886,7 +886,7 @@
       ],
       "titles": {
         "en": "Authorization & IDOR Hunter",
-        "sr": "Authorization & IDOR Hunter"
+        "sr": "Lov na propuste u autorizaciji i IDOR"
       },
       "versions": {
         "en": "2.4.0",
@@ -913,7 +913,7 @@
       ],
       "titles": {
         "en": "OWASP Vulnerability Hunter",
-        "sr": "OWASP Vulnerability Hunter"
+        "sr": "Lov na OWASP ranjivosti"
       },
       "versions": {
         "en": "2.4.0",
@@ -940,7 +940,7 @@
       ],
       "titles": {
         "en": "Secrets & Credential Exposure Audit",
-        "sr": "Secrets & Credential Exposure Audit"
+        "sr": "Audit izloženosti tajni i kredencijala"
       },
       "versions": {
         "en": "2.4.0",
@@ -967,7 +967,7 @@
       ],
       "titles": {
         "en": "File Upload Security Audit",
-        "sr": "File Upload Security Audit"
+        "sr": "Bezbednosni audit otpremanja fajlova"
       },
       "versions": {
         "en": "2.4.0",
@@ -994,7 +994,7 @@
       ],
       "titles": {
         "en": "API Attack Surface Audit",
-        "sr": "API Attack Surface Audit"
+        "sr": "Audit napadne površine API-ja"
       },
       "versions": {
         "en": "2.4.0",
@@ -1021,7 +1021,7 @@
       ],
       "titles": {
         "en": "Dependency & Supply Chain Security Audit",
-        "sr": "Dependency & Supply Chain Security Audit"
+        "sr": "Bezbednosni audit zavisnosti i lanca snabdevanja softvera"
       },
       "versions": {
         "en": "2.4.0",
@@ -1048,7 +1048,7 @@
       ],
       "titles": {
         "en": "Threat Modeling Generator",
-        "sr": "Threat Modeling Generator"
+        "sr": "Generator modela pretnji"
       },
       "versions": {
         "en": "2.4.0",
@@ -1075,7 +1075,7 @@
       ],
       "titles": {
         "en": "Attacker-Perspective Security Review",
-        "sr": "Attacker-Perspective Security Review"
+        "sr": "Bezbednosni pregled iz perspektive napadača"
       },
       "versions": {
         "en": "2.4.0",
@@ -1102,7 +1102,7 @@
       ],
       "titles": {
         "en": "Ultimate DevOps & Infrastructure Audit",
-        "sr": "Ultimate DevOps & Infrastructure Audit"
+        "sr": "Sveobuhvatni DevOps i infrastrukturni audit"
       },
       "versions": {
         "en": "2.4.0",
@@ -1129,7 +1129,7 @@
       ],
       "titles": {
         "en": "Docker Production Audit",
-        "sr": "Docker Production Audit"
+        "sr": "Produkcioni audit Docker okruženja"
       },
       "versions": {
         "en": "2.4.0",
@@ -1156,7 +1156,7 @@
       ],
       "titles": {
         "en": "Kubernetes Production Audit",
-        "sr": "Kubernetes Production Audit"
+        "sr": "Produkcioni audit Kubernetes okruženja"
       },
       "versions": {
         "en": "2.4.0",
@@ -1183,7 +1183,7 @@
       ],
       "titles": {
         "en": "GitHub Actions Forensic Audit",
-        "sr": "GitHub Actions Forensic Audit"
+        "sr": "Forenzički audit GitHub Actions tokova"
       },
       "versions": {
         "en": "2.4.0",
@@ -1210,7 +1210,7 @@
       ],
       "titles": {
         "en": "CI/CD Pipeline Audit",
-        "sr": "CI/CD Pipeline Audit"
+        "sr": "Audit CI/CD pipeline-a"
       },
       "versions": {
         "en": "2.4.0",
@@ -1237,7 +1237,7 @@
       ],
       "titles": {
         "en": "Vercel Production Audit",
-        "sr": "Vercel Production Audit"
+        "sr": "Produkcioni audit Vercel okruženja"
       },
       "versions": {
         "en": "2.4.0",
@@ -1264,7 +1264,7 @@
       ],
       "titles": {
         "en": "Cloud Infrastructure Audit",
-        "sr": "Cloud Infrastructure Audit"
+        "sr": "Audit cloud infrastrukture"
       },
       "versions": {
         "en": "2.4.0",
@@ -1291,7 +1291,7 @@
       ],
       "titles": {
         "en": "Environment Configuration Audit",
-        "sr": "Environment Configuration Audit"
+        "sr": "Audit konfiguracije okruženja"
       },
       "versions": {
         "en": "2.4.0",
@@ -1318,7 +1318,7 @@
       ],
       "titles": {
         "en": "Zero-Downtime Deployment Audit",
-        "sr": "Zero-Downtime Deployment Audit"
+        "sr": "Audit deploy-a bez prekida rada"
       },
       "versions": {
         "en": "2.4.0",
@@ -1345,7 +1345,7 @@
       ],
       "titles": {
         "en": "Backup, Disaster Recovery & Rollback Audit",
-        "sr": "Backup, Disaster Recovery & Rollback Audit"
+        "sr": "Audit bekapa, oporavka od katastrofe i rollback-a"
       },
       "versions": {
         "en": "2.4.0",
@@ -1372,7 +1372,7 @@
       ],
       "titles": {
         "en": "Ultimate Database Audit",
-        "sr": "Ultimate Database Audit"
+        "sr": "Sveobuhvatni audit baze podataka"
       },
       "versions": {
         "en": "2.4.0",
@@ -1399,7 +1399,7 @@
       ],
       "titles": {
         "en": "Database Schema & Data Model Audit",
-        "sr": "Database Schema & Data Model Audit"
+        "sr": "Audit šeme baze i modela podataka"
       },
       "versions": {
         "en": "2.4.0",
@@ -1426,7 +1426,7 @@
       ],
       "titles": {
         "en": "SQL Performance Hunter",
-        "sr": "SQL Performance Hunter"
+        "sr": "Lov na probleme SQL performansi"
       },
       "versions": {
         "en": "2.4.0",
@@ -1453,7 +1453,7 @@
       ],
       "titles": {
         "en": "Database Index Audit",
-        "sr": "Database Index Audit"
+        "sr": "Audit indeksa baze podataka"
       },
       "versions": {
         "en": "2.4.0",
@@ -1480,7 +1480,7 @@
       ],
       "titles": {
         "en": "Database Migration Safety Audit",
-        "sr": "Database Migration Safety Audit"
+        "sr": "Audit bezbednosti migracija baze podataka"
       },
       "versions": {
         "en": "2.4.0",
@@ -1507,7 +1507,7 @@
       ],
       "titles": {
         "en": "Data Integrity Audit",
-        "sr": "Data Integrity Audit"
+        "sr": "Audit integriteta podataka"
       },
       "versions": {
         "en": "2.4.0",
@@ -1534,7 +1534,7 @@
       ],
       "titles": {
         "en": "Transaction & Concurrency Audit",
-        "sr": "Transaction & Concurrency Audit"
+        "sr": "Audit transakcija i konkurentnosti"
       },
       "versions": {
         "en": "2.4.0",
@@ -1561,7 +1561,7 @@
       ],
       "titles": {
         "en": "N+1 & Expensive Query Hunter",
-        "sr": "N+1 & Expensive Query Hunter"
+        "sr": "Lov na N+1 i skupe upite"
       },
       "versions": {
         "en": "2.4.0",
@@ -1588,7 +1588,7 @@
       ],
       "titles": {
         "en": "ORM Forensic Audit",
-        "sr": "ORM Forensic Audit"
+        "sr": "Forenzički audit ORM sloja"
       },
       "versions": {
         "en": "2.4.0",
@@ -1615,7 +1615,7 @@
       ],
       "titles": {
         "en": "ETL & Data Pipeline Reliability Audit",
-        "sr": "ETL & Data Pipeline Reliability Audit"
+        "sr": "Audit pouzdanosti ETL-a i data pipeline-a"
       },
       "versions": {
         "en": "2.4.0",
@@ -1642,7 +1642,7 @@
       ],
       "titles": {
         "en": "Ultimate AI Application Audit",
-        "sr": "Ultimate AI Application Audit"
+        "sr": "Sveobuhvatni audit AI aplikacije"
       },
       "versions": {
         "en": "2.4.0",
@@ -1669,7 +1669,7 @@
       ],
       "titles": {
         "en": "RAG System Forensic Audit",
-        "sr": "RAG System Forensic Audit"
+        "sr": "Forenzički audit RAG sistema"
       },
       "versions": {
         "en": "2.4.0",
@@ -1696,7 +1696,7 @@
       ],
       "titles": {
         "en": "Hallucination & Grounding Audit",
-        "sr": "Hallucination & Grounding Audit"
+        "sr": "Audit halucinacija i utemeljenosti odgovora"
       },
       "versions": {
         "en": "2.4.0",
@@ -1723,7 +1723,7 @@
       ],
       "titles": {
         "en": "Prompt Injection Security Audit",
-        "sr": "Prompt Injection Security Audit"
+        "sr": "Bezbednosni audit prompt injection napada"
       },
       "versions": {
         "en": "2.4.0",
@@ -1750,7 +1750,7 @@
       ],
       "titles": {
         "en": "AI Agent Architecture Audit",
-        "sr": "AI Agent Architecture Audit"
+        "sr": "Audit arhitekture AI agenata"
       },
       "versions": {
         "en": "2.4.0",
@@ -1777,7 +1777,7 @@
       ],
       "titles": {
         "en": "AI Agent Reliability Audit",
-        "sr": "AI Agent Reliability Audit"
+        "sr": "Audit pouzdanosti AI agenata"
       },
       "versions": {
         "en": "2.4.0",
@@ -1804,7 +1804,7 @@
       ],
       "titles": {
         "en": "System Prompt Optimization",
-        "sr": "System Prompt Optimization"
+        "sr": "Optimizacija sistemskog prompta"
       },
       "versions": {
         "en": "2.4.0",
@@ -1831,7 +1831,7 @@
       ],
       "titles": {
         "en": "n8n / Workflow Automation Audit",
-        "sr": "n8n / Workflow Automation Audit"
+        "sr": "Audit n8n i workflow automatizacije"
       },
       "versions": {
         "en": "2.4.0",
@@ -1858,7 +1858,7 @@
       ],
       "titles": {
         "en": "LLM Cost & Latency Optimization",
-        "sr": "LLM Cost & Latency Optimization"
+        "sr": "Optimizacija troškova i latencije LLM-a"
       },
       "versions": {
         "en": "2.4.0",
@@ -1885,7 +1885,7 @@
       ],
       "titles": {
         "en": "AI Model Selection & Evaluation",
-        "sr": "AI Model Selection & Evaluation"
+        "sr": "Izbor i evaluacija AI modela"
       },
       "versions": {
         "en": "2.4.0",
@@ -1912,7 +1912,7 @@
       ],
       "titles": {
         "en": "Ultimate Test Suite Audit",
-        "sr": "Ultimate Test Suite Audit"
+        "sr": "Sveobuhvatni audit test suite-a"
       },
       "versions": {
         "en": "2.4.0",
@@ -1939,7 +1939,7 @@
       ],
       "titles": {
         "en": "Missing Test Coverage Hunter",
-        "sr": "Missing Test Coverage Hunter"
+        "sr": "Lov na nedostajuću pokrivenost testovima"
       },
       "versions": {
         "en": "2.4.0",
@@ -1966,7 +1966,7 @@
       ],
       "titles": {
         "en": "Flaky Test Hunter",
-        "sr": "Flaky Test Hunter"
+        "sr": "Lov na nestabilne (flaky) testove"
       },
       "versions": {
         "en": "2.4.0",
@@ -1993,7 +1993,7 @@
       ],
       "titles": {
         "en": "Regression Test Generator",
-        "sr": "Regression Test Generator"
+        "sr": "Generator regresionih testova"
       },
       "versions": {
         "en": "2.4.0",
@@ -2020,7 +2020,7 @@
       ],
       "titles": {
         "en": "End-to-End Test Plan Generator",
-        "sr": "End-to-End Test Plan Generator"
+        "sr": "Generator end-to-end test plana"
       },
       "versions": {
         "en": "2.4.0",
@@ -2047,7 +2047,7 @@
       ],
       "titles": {
         "en": "Edge Case Generator",
-        "sr": "Edge Case Generator"
+        "sr": "Generator graničnih slučajeva"
       },
       "versions": {
         "en": "2.4.0",
@@ -2074,7 +2074,7 @@
       ],
       "titles": {
         "en": "Adversarial User Testing",
-        "sr": "Adversarial User Testing"
+        "sr": "Adversarial testiranje iz ugla korisnika"
       },
       "versions": {
         "en": "2.4.0",
@@ -2101,7 +2101,7 @@
       ],
       "titles": {
         "en": "Reliability & Failure Mode Audit",
-        "sr": "Reliability & Failure Mode Audit"
+        "sr": "Audit pouzdanosti i načina otkaza"
       },
       "versions": {
         "en": "2.4.0",
@@ -2128,7 +2128,7 @@
       ],
       "titles": {
         "en": "Race Condition & Concurrency Hunter",
-        "sr": "Race Condition & Concurrency Hunter"
+        "sr": "Lov na race condition i probleme konkurentnosti"
       },
       "versions": {
         "en": "2.4.0",
@@ -2155,7 +2155,7 @@
       ],
       "titles": {
         "en": "Production Incident Simulation",
-        "sr": "Production Incident Simulation"
+        "sr": "Simulacija produkcionog incidenta"
       },
       "versions": {
         "en": "2.4.0",
@@ -2182,7 +2182,7 @@
       ],
       "titles": {
         "en": "Ultimate UX/UI Product Audit",
-        "sr": "Ultimate UX/UI Product Audit"
+        "sr": "Sveobuhvatni UX/UI audit proizvoda"
       },
       "versions": {
         "en": "2.4.0",
@@ -2209,7 +2209,7 @@
       ],
       "titles": {
         "en": "Critical User Flow Audit",
-        "sr": "Critical User Flow Audit"
+        "sr": "Audit kritičnih korisničkih tokova"
       },
       "versions": {
         "en": "2.4.0",
@@ -2236,7 +2236,7 @@
       ],
       "titles": {
         "en": "Onboarding Audit",
-        "sr": "Onboarding Audit"
+        "sr": "Audit onboarding-a"
       },
       "versions": {
         "en": "2.4.0",
@@ -2263,7 +2263,7 @@
       ],
       "titles": {
         "en": "Form UX Audit",
-        "sr": "Form UX Audit"
+        "sr": "UX audit formi"
       },
       "versions": {
         "en": "2.4.0",
@@ -2290,7 +2290,7 @@
       ],
       "titles": {
         "en": "Navigation & Information Architecture Audit",
-        "sr": "Navigation & Information Architecture Audit"
+        "sr": "Audit navigacije i informacione arhitekture"
       },
       "versions": {
         "en": "2.4.0",
@@ -2317,7 +2317,7 @@
       ],
       "titles": {
         "en": "Mobile UX Audit",
-        "sr": "Mobile UX Audit"
+        "sr": "Mobilni UX audit"
       },
       "versions": {
         "en": "2.4.0",
@@ -2344,7 +2344,7 @@
       ],
       "titles": {
         "en": "Design System Consistency Audit",
-        "sr": "Design System Consistency Audit"
+        "sr": "Audit doslednosti dizajn sistema"
       },
       "versions": {
         "en": "2.4.0",
@@ -2371,7 +2371,7 @@
       ],
       "titles": {
         "en": "Accessibility Experience Audit",
-        "sr": "Accessibility Experience Audit"
+        "sr": "Audit pristupačnosti korisničkog iskustva"
       },
       "versions": {
         "en": "2.4.0",
@@ -2398,7 +2398,7 @@
       ],
       "titles": {
         "en": "Product Requirement Generator",
-        "sr": "Product Requirement Generator"
+        "sr": "Generator zahteva za proizvod"
       },
       "versions": {
         "en": "2.4.0",
@@ -2425,7 +2425,7 @@
       ],
       "titles": {
         "en": "Feature Design & UX Review",
-        "sr": "Feature Design & UX Review"
+        "sr": "Pregled dizajna funkcionalnosti i UX-a"
       },
       "versions": {
         "en": "2.4.0",
@@ -2452,7 +2452,7 @@
       ],
       "titles": {
         "en": "Ultimate Desktop Application Audit",
-        "sr": "Ultimate Desktop Application Audit"
+        "sr": "Sveobuhvatni audit desktop aplikacije"
       },
       "versions": {
         "en": "2.4.0",
@@ -2479,7 +2479,7 @@
       ],
       "titles": {
         "en": "Electron Application Audit",
-        "sr": "Electron Application Audit"
+        "sr": "Audit Electron aplikacije"
       },
       "versions": {
         "en": "2.4.0",
@@ -2506,7 +2506,7 @@
       ],
       "titles": {
         "en": "Python/PySide Application Audit",
-        "sr": "Python/PySide Application Audit"
+        "sr": "Audit Python/PySide aplikacije"
       },
       "versions": {
         "en": "2.4.0",
@@ -2533,7 +2533,7 @@
       ],
       "titles": {
         "en": "Windows Application Production Audit",
-        "sr": "Windows Application Production Audit"
+        "sr": "Produkcioni audit Windows aplikacije"
       },
       "versions": {
         "en": "2.4.0",
@@ -2560,7 +2560,7 @@
       ],
       "titles": {
         "en": "Cross-Platform Compatibility Audit",
-        "sr": "Cross-Platform Compatibility Audit"
+        "sr": "Audit kompatibilnosti na više platformi"
       },
       "versions": {
         "en": "2.4.0",
@@ -2587,7 +2587,7 @@
       ],
       "titles": {
         "en": "Game Architecture Audit",
-        "sr": "Game Architecture Audit"
+        "sr": "Audit arhitekture igre"
       },
       "versions": {
         "en": "2.4.0",
@@ -2614,7 +2614,7 @@
       ],
       "titles": {
         "en": "Game Performance Audit",
-        "sr": "Game Performance Audit"
+        "sr": "Audit performansi igre"
       },
       "versions": {
         "en": "2.4.0",
@@ -2641,7 +2641,7 @@
       ],
       "titles": {
         "en": "Embedded Software Reliability Audit",
-        "sr": "Embedded Software Reliability Audit"
+        "sr": "Audit pouzdanosti embedded softvera"
       },
       "versions": {
         "en": "2.4.0",
@@ -2668,7 +2668,7 @@
       ],
       "titles": {
         "en": "Memory & Resource Leak Hunter",
-        "sr": "Memory & Resource Leak Hunter"
+        "sr": "Lov na curenje memorije i resursa"
       },
       "versions": {
         "en": "2.4.0",
@@ -2695,7 +2695,7 @@
       ],
       "titles": {
         "en": "Hardware/Software Integration Audit",
-        "sr": "Hardware/Software Integration Audit"
+        "sr": "Audit integracije hardvera i softvera"
       },
       "versions": {
         "en": "2.4.0",
@@ -2722,7 +2722,7 @@
       ],
       "titles": {
         "en": "Ultimate Financial Analysis",
-        "sr": "Ultimate Financial Analysis"
+        "sr": "Sveobuhvatna finansijska analiza"
       },
       "versions": {
         "en": "2.4.0",
@@ -2749,7 +2749,7 @@
       ],
       "titles": {
         "en": "Financial Statement Forensic Analysis",
-        "sr": "Financial Statement Forensic Analysis"
+        "sr": "Forenzička analiza finansijskih izveštaja"
       },
       "versions": {
         "en": "2.4.0",
@@ -2776,7 +2776,7 @@
       ],
       "titles": {
         "en": "Cash Flow & Liquidity Audit",
-        "sr": "Cash Flow & Liquidity Audit"
+        "sr": "Audit novčanih tokova i likvidnosti"
       },
       "versions": {
         "en": "2.4.0",
@@ -2803,7 +2803,7 @@
       ],
       "titles": {
         "en": "Profitability & Margin Analysis",
-        "sr": "Profitability & Margin Analysis"
+        "sr": "Analiza profitabilnosti i marži"
       },
       "versions": {
         "en": "2.4.0",
@@ -2830,7 +2830,7 @@
       ],
       "titles": {
         "en": "Working Capital Optimization",
-        "sr": "Working Capital Optimization"
+        "sr": "Optimizacija obrtnog kapitala"
       },
       "versions": {
         "en": "2.4.0",
@@ -2857,7 +2857,7 @@
       ],
       "titles": {
         "en": "Budget & Forecast Audit",
-        "sr": "Budget & Forecast Audit"
+        "sr": "Audit budžeta i prognoze"
       },
       "versions": {
         "en": "2.4.0",
@@ -2884,7 +2884,7 @@
       ],
       "titles": {
         "en": "Financial Model Audit",
-        "sr": "Financial Model Audit"
+        "sr": "Audit finansijskog modela"
       },
       "versions": {
         "en": "2.4.0",
@@ -2911,7 +2911,7 @@
       ],
       "titles": {
         "en": "Capital Allocation Analysis",
-        "sr": "Capital Allocation Analysis"
+        "sr": "Analiza alokacije kapitala"
       },
       "versions": {
         "en": "2.4.0",
@@ -2938,7 +2938,7 @@
       ],
       "titles": {
         "en": "Debt & Financing Structure Analysis",
-        "sr": "Debt & Financing Structure Analysis"
+        "sr": "Analiza duga i strukture finansiranja"
       },
       "versions": {
         "en": "2.4.0",
@@ -2965,7 +2965,7 @@
       ],
       "titles": {
         "en": "Corporate Finance Decision Analysis",
-        "sr": "Corporate Finance Decision Analysis"
+        "sr": "Analiza odluka korporativnih finansija"
       },
       "versions": {
         "en": "2.4.0",
@@ -2992,7 +2992,7 @@
       ],
       "titles": {
         "en": "Ultimate Accounting System Audit",
-        "sr": "Ultimate Accounting System Audit"
+        "sr": "Sveobuhvatni audit računovodstvenog sistema"
       },
       "versions": {
         "en": "2.4.0",
@@ -3019,7 +3019,7 @@
       ],
       "titles": {
         "en": "General Ledger Forensic Audit",
-        "sr": "General Ledger Forensic Audit"
+        "sr": "Forenzički audit glavne knjige"
       },
       "versions": {
         "en": "2.4.0",
@@ -3046,7 +3046,7 @@
       ],
       "titles": {
         "en": "Revenue Recognition Audit",
-        "sr": "Revenue Recognition Audit"
+        "sr": "Audit priznavanja prihoda"
       },
       "versions": {
         "en": "2.4.0",
@@ -3073,7 +3073,7 @@
       ],
       "titles": {
         "en": "Expense & Cost Accounting Audit",
-        "sr": "Expense & Cost Accounting Audit"
+        "sr": "Audit rashoda i troškovnog računovodstva"
       },
       "versions": {
         "en": "2.4.0",
@@ -3100,7 +3100,7 @@
       ],
       "titles": {
         "en": "Accounts Receivable Audit",
-        "sr": "Accounts Receivable Audit"
+        "sr": "Audit potraživanja od kupaca"
       },
       "versions": {
         "en": "2.4.0",
@@ -3127,7 +3127,7 @@
       ],
       "titles": {
         "en": "Accounts Payable Audit",
-        "sr": "Accounts Payable Audit"
+        "sr": "Audit obaveza prema dobavljačima"
       },
       "versions": {
         "en": "2.4.0",
@@ -3154,7 +3154,7 @@
       ],
       "titles": {
         "en": "Financial Close Process Audit",
-        "sr": "Financial Close Process Audit"
+        "sr": "Audit procesa finansijskog zatvaranja perioda"
       },
       "versions": {
         "en": "2.4.0",
@@ -3181,7 +3181,7 @@
       ],
       "titles": {
         "en": "Management Reporting Audit",
-        "sr": "Management Reporting Audit"
+        "sr": "Audit menadžerskog izveštavanja"
       },
       "versions": {
         "en": "2.4.0",
@@ -3208,7 +3208,7 @@
       ],
       "titles": {
         "en": "Internal Financial Controls Audit",
-        "sr": "Internal Financial Controls Audit"
+        "sr": "Audit internih finansijskih kontrola"
       },
       "versions": {
         "en": "2.4.0",
@@ -3235,7 +3235,7 @@
       ],
       "titles": {
         "en": "Accounting Anomaly & Misstatement Hunter",
-        "sr": "Accounting Anomaly & Misstatement Hunter"
+        "sr": "Lov na računovodstvene anomalije i materijalno pogrešne iskaze"
       },
       "versions": {
         "en": "2.4.0",
@@ -3262,7 +3262,7 @@
       ],
       "titles": {
         "en": "Ultimate Economic Analysis",
-        "sr": "Ultimate Economic Analysis"
+        "sr": "Sveobuhvatna ekonomska analiza"
       },
       "versions": {
         "en": "2.4.0",
@@ -3289,7 +3289,7 @@
       ],
       "titles": {
         "en": "Macroeconomic Environment Analysis",
-        "sr": "Macroeconomic Environment Analysis"
+        "sr": "Analiza makroekonomskog okruženja"
       },
       "versions": {
         "en": "2.4.0",
@@ -3316,7 +3316,7 @@
       ],
       "titles": {
         "en": "Industry Economics Analysis",
-        "sr": "Industry Economics Analysis"
+        "sr": "Ekonomska analiza industrije"
       },
       "versions": {
         "en": "2.4.0",
@@ -3343,7 +3343,7 @@
       ],
       "titles": {
         "en": "Market Size & Growth Analysis",
-        "sr": "Market Size & Growth Analysis"
+        "sr": "Analiza veličine i rasta tržišta"
       },
       "versions": {
         "en": "2.4.0",
@@ -3370,7 +3370,7 @@
       ],
       "titles": {
         "en": "Demand & Supply Analysis",
-        "sr": "Demand & Supply Analysis"
+        "sr": "Analiza ponude i tražnje"
       },
       "versions": {
         "en": "2.4.0",
@@ -3397,7 +3397,7 @@
       ],
       "titles": {
         "en": "Inflation & Cost Pressure Analysis",
-        "sr": "Inflation & Cost Pressure Analysis"
+        "sr": "Analiza inflacije i pritiska troškova"
       },
       "versions": {
         "en": "2.4.0",
@@ -3424,7 +3424,7 @@
       ],
       "titles": {
         "en": "Interest Rate Impact Analysis",
-        "sr": "Interest Rate Impact Analysis"
+        "sr": "Analiza uticaja kamatnih stopa"
       },
       "versions": {
         "en": "2.4.0",
@@ -3451,7 +3451,7 @@
       ],
       "titles": {
         "en": "Exchange Rate Exposure Analysis",
-        "sr": "Exchange Rate Exposure Analysis"
+        "sr": "Analiza izloženosti deviznom kursu"
       },
       "versions": {
         "en": "2.4.0",
@@ -3478,7 +3478,7 @@
       ],
       "titles": {
         "en": "Economic Scenario & Sensitivity Analysis",
-        "sr": "Economic Scenario & Sensitivity Analysis"
+        "sr": "Analiza ekonomskih scenarija i osetljivosti"
       },
       "versions": {
         "en": "2.4.0",
@@ -3505,7 +3505,7 @@
       ],
       "titles": {
         "en": "Economic Data Quality & Interpretation Audit",
-        "sr": "Economic Data Quality & Interpretation Audit"
+        "sr": "Audit kvaliteta i tumačenja ekonomskih podataka"
       },
       "versions": {
         "en": "2.4.0",
@@ -3532,7 +3532,7 @@
       ],
       "titles": {
         "en": "Ultimate Business Strategy Audit",
-        "sr": "Ultimate Business Strategy Audit"
+        "sr": "Sveobuhvatni audit poslovne strategije"
       },
       "versions": {
         "en": "2.4.0",
@@ -3559,7 +3559,7 @@
       ],
       "titles": {
         "en": "Competitive Landscape Analysis",
-        "sr": "Competitive Landscape Analysis"
+        "sr": "Analiza konkurentskog okruženja"
       },
       "versions": {
         "en": "2.4.0",
@@ -3586,7 +3586,7 @@
       ],
       "titles": {
         "en": "Competitive Advantage Audit",
-        "sr": "Competitive Advantage Audit"
+        "sr": "Audit konkurentske prednosti"
       },
       "versions": {
         "en": "2.4.0",
@@ -3613,7 +3613,7 @@
       ],
       "titles": {
         "en": "SWOT Evidence-Based Analysis",
-        "sr": "SWOT Evidence-Based Analysis"
+        "sr": "SWOT analiza zasnovana na dokazima"
       },
       "versions": {
         "en": "2.4.0",
@@ -3640,7 +3640,7 @@
       ],
       "titles": {
         "en": "PESTLE Strategic Analysis",
-        "sr": "PESTLE Strategic Analysis"
+        "sr": "PESTLE strateška analiza"
       },
       "versions": {
         "en": "2.4.0",
@@ -3667,7 +3667,7 @@
       ],
       "titles": {
         "en": "Strategic Risk & Opportunity Analysis",
-        "sr": "Strategic Risk & Opportunity Analysis"
+        "sr": "Analiza strateških rizika i prilika"
       },
       "versions": {
         "en": "2.4.0",
@@ -3694,7 +3694,7 @@
       ],
       "titles": {
         "en": "Market Entry Strategy Analysis",
-        "sr": "Market Entry Strategy Analysis"
+        "sr": "Analiza strategije ulaska na tržište"
       },
       "versions": {
         "en": "2.4.0",
@@ -3721,7 +3721,7 @@
       ],
       "titles": {
         "en": "Growth Strategy Audit",
-        "sr": "Growth Strategy Audit"
+        "sr": "Audit strategije rasta"
       },
       "versions": {
         "en": "2.4.0",
@@ -3748,7 +3748,7 @@
       ],
       "titles": {
         "en": "Strategic Initiative Prioritization",
-        "sr": "Strategic Initiative Prioritization"
+        "sr": "Prioritizacija strateških inicijativa"
       },
       "versions": {
         "en": "2.4.0",
@@ -3775,7 +3775,7 @@
       ],
       "titles": {
         "en": "Business Strategy Stress Test",
-        "sr": "Business Strategy Stress Test"
+        "sr": "Stres test poslovne strategije"
       },
       "versions": {
         "en": "2.4.0",
@@ -3802,7 +3802,7 @@
       ],
       "titles": {
         "en": "Ultimate Business Model Audit",
-        "sr": "Ultimate Business Model Audit"
+        "sr": "Sveobuhvatni audit poslovnog modela"
       },
       "versions": {
         "en": "2.4.0",
@@ -3829,7 +3829,7 @@
       ],
       "titles": {
         "en": "Startup Idea Feasibility Analysis",
-        "sr": "Startup Idea Feasibility Analysis"
+        "sr": "Analiza izvodljivosti startap ideje"
       },
       "versions": {
         "en": "2.4.0",
@@ -3856,7 +3856,7 @@
       ],
       "titles": {
         "en": "Business Model Canvas Deep Analysis",
-        "sr": "Business Model Canvas Deep Analysis"
+        "sr": "Dubinska analiza Business Model Canvas-a"
       },
       "versions": {
         "en": "2.4.0",
@@ -3883,7 +3883,7 @@
       ],
       "titles": {
         "en": "Unit Economics Audit",
-        "sr": "Unit Economics Audit"
+        "sr": "Audit jedinične ekonomije"
       },
       "versions": {
         "en": "2.4.0",
@@ -3910,7 +3910,7 @@
       ],
       "titles": {
         "en": "Product-Market Fit Evidence Audit",
-        "sr": "Product-Market Fit Evidence Audit"
+        "sr": "Audit dokaza o product-market fit-u"
       },
       "versions": {
         "en": "2.4.0",
@@ -3937,7 +3937,7 @@
       ],
       "titles": {
         "en": "Startup Financial Runway Analysis",
-        "sr": "Startup Financial Runway Analysis"
+        "sr": "Analiza finansijskog runway-a startapa"
       },
       "versions": {
         "en": "2.4.0",
@@ -3964,7 +3964,7 @@
       ],
       "titles": {
         "en": "Founder Assumption Stress Test",
-        "sr": "Founder Assumption Stress Test"
+        "sr": "Stres test osnivačkih pretpostavki"
       },
       "versions": {
         "en": "2.4.0",
@@ -3991,7 +3991,7 @@
       ],
       "titles": {
         "en": "Business Scalability Audit",
-        "sr": "Business Scalability Audit"
+        "sr": "Audit skalabilnosti poslovanja"
       },
       "versions": {
         "en": "2.4.0",
@@ -4018,7 +4018,7 @@
       ],
       "titles": {
         "en": "Monetization Model Analysis",
-        "sr": "Monetization Model Analysis"
+        "sr": "Analiza modela monetizacije"
       },
       "versions": {
         "en": "2.4.0",
@@ -4045,7 +4045,7 @@
       ],
       "titles": {
         "en": "Startup Failure Mode Audit",
-        "sr": "Startup Failure Mode Audit"
+        "sr": "Audit načina neuspeha startapa"
       },
       "versions": {
         "en": "2.4.0",
@@ -4072,7 +4072,7 @@
       ],
       "titles": {
         "en": "Ultimate Operations Audit",
-        "sr": "Ultimate Operations Audit"
+        "sr": "Sveobuhvatni audit operacija"
       },
       "versions": {
         "en": "2.4.0",
@@ -4099,7 +4099,7 @@
       ],
       "titles": {
         "en": "Process Efficiency Audit",
-        "sr": "Process Efficiency Audit"
+        "sr": "Audit efikasnosti procesa"
       },
       "versions": {
         "en": "2.4.0",
@@ -4126,7 +4126,7 @@
       ],
       "titles": {
         "en": "Operational Bottleneck Hunter",
-        "sr": "Operational Bottleneck Hunter"
+        "sr": "Lov na operativna uska grla"
       },
       "versions": {
         "en": "2.4.0",
@@ -4153,7 +4153,7 @@
       ],
       "titles": {
         "en": "Supply Chain Resilience Audit",
-        "sr": "Supply Chain Resilience Audit"
+        "sr": "Audit otpornosti lanca snabdevanja"
       },
       "versions": {
         "en": "2.4.0",
@@ -4180,7 +4180,7 @@
       ],
       "titles": {
         "en": "Inventory Optimization Audit",
-        "sr": "Inventory Optimization Audit"
+        "sr": "Audit optimizacije zaliha"
       },
       "versions": {
         "en": "2.4.0",
@@ -4207,7 +4207,7 @@
       ],
       "titles": {
         "en": "Procurement & Supplier Audit",
-        "sr": "Procurement & Supplier Audit"
+        "sr": "Audit nabavke i dobavljača"
       },
       "versions": {
         "en": "2.4.0",
@@ -4234,7 +4234,7 @@
       ],
       "titles": {
         "en": "Vendor Risk Analysis",
-        "sr": "Vendor Risk Analysis"
+        "sr": "Analiza rizika dobavljača"
       },
       "versions": {
         "en": "2.4.0",
@@ -4261,7 +4261,7 @@
       ],
       "titles": {
         "en": "Capacity Planning Audit",
-        "sr": "Capacity Planning Audit"
+        "sr": "Audit planiranja kapaciteta"
       },
       "versions": {
         "en": "2.4.0",
@@ -4288,7 +4288,7 @@
       ],
       "titles": {
         "en": "Operational Cost Reduction Analysis",
-        "sr": "Operational Cost Reduction Analysis"
+        "sr": "Analiza smanjenja operativnih troškova"
       },
       "versions": {
         "en": "2.4.0",
@@ -4315,7 +4315,7 @@
       ],
       "titles": {
         "en": "Business Continuity Operations Audit",
-        "sr": "Business Continuity Operations Audit"
+        "sr": "Audit operativnog kontinuiteta poslovanja"
       },
       "versions": {
         "en": "2.4.0",
@@ -4342,7 +4342,7 @@
       ],
       "titles": {
         "en": "Ultimate Revenue Audit",
-        "sr": "Ultimate Revenue Audit"
+        "sr": "Sveobuhvatni audit prihoda"
       },
       "versions": {
         "en": "2.4.0",
@@ -4369,7 +4369,7 @@
       ],
       "titles": {
         "en": "Sales Funnel Forensic Analysis",
-        "sr": "Sales Funnel Forensic Analysis"
+        "sr": "Forenzička analiza prodajnog levka"
       },
       "versions": {
         "en": "2.4.0",
@@ -4396,7 +4396,7 @@
       ],
       "titles": {
         "en": "Sales Performance Audit",
-        "sr": "Sales Performance Audit"
+        "sr": "Audit prodajnih rezultata"
       },
       "versions": {
         "en": "2.4.0",
@@ -4423,7 +4423,7 @@
       ],
       "titles": {
         "en": "Pricing Strategy Audit",
-        "sr": "Pricing Strategy Audit"
+        "sr": "Audit strategije cena"
       },
       "versions": {
         "en": "2.4.0",
@@ -4450,7 +4450,7 @@
       ],
       "titles": {
         "en": "Pricing Elasticity Analysis",
-        "sr": "Pricing Elasticity Analysis"
+        "sr": "Analiza cenovne elastičnosti"
       },
       "versions": {
         "en": "2.4.0",
@@ -4477,7 +4477,7 @@
       ],
       "titles": {
         "en": "Revenue Leakage Hunter",
-        "sr": "Revenue Leakage Hunter"
+        "sr": "Lov na curenje prihoda"
       },
       "versions": {
         "en": "2.4.0",
@@ -4504,7 +4504,7 @@
       ],
       "titles": {
         "en": "Customer Lifetime Value Analysis",
-        "sr": "Customer Lifetime Value Analysis"
+        "sr": "Analiza životne vrednosti kupca (CLV)"
       },
       "versions": {
         "en": "2.4.0",
@@ -4531,7 +4531,7 @@
       ],
       "titles": {
         "en": "Customer Acquisition Economics Audit",
-        "sr": "Customer Acquisition Economics Audit"
+        "sr": "Audit ekonomike pribavljanja kupaca"
       },
       "versions": {
         "en": "2.4.0",
@@ -4558,7 +4558,7 @@
       ],
       "titles": {
         "en": "Subscription & Recurring Revenue Audit",
-        "sr": "Subscription & Recurring Revenue Audit"
+        "sr": "Audit pretplata i ponavljajućih prihoda"
       },
       "versions": {
         "en": "2.4.0",
@@ -4585,7 +4585,7 @@
       ],
       "titles": {
         "en": "Revenue Forecast Stress Test",
-        "sr": "Revenue Forecast Stress Test"
+        "sr": "Stres test prognoze prihoda"
       },
       "versions": {
         "en": "2.4.0",
@@ -4612,7 +4612,7 @@
       ],
       "titles": {
         "en": "Ultimate Management System Audit",
-        "sr": "Ultimate Management System Audit"
+        "sr": "Sveobuhvatni audit sistema upravljanja"
       },
       "versions": {
         "en": "2.4.0",
@@ -4639,7 +4639,7 @@
       ],
       "titles": {
         "en": "Organizational Structure Audit",
-        "sr": "Organizational Structure Audit"
+        "sr": "Audit organizacione strukture"
       },
       "versions": {
         "en": "2.4.0",
@@ -4666,7 +4666,7 @@
       ],
       "titles": {
         "en": "Decision-Making Process Audit",
-        "sr": "Decision-Making Process Audit"
+        "sr": "Audit procesa odlučivanja"
       },
       "versions": {
         "en": "2.4.0",
@@ -4693,7 +4693,7 @@
       ],
       "titles": {
         "en": "KPI & Performance Management Audit",
-        "sr": "KPI & Performance Management Audit"
+        "sr": "Audit KPI-jeva i upravljanja učinkom"
       },
       "versions": {
         "en": "2.4.0",
@@ -4720,7 +4720,7 @@
       ],
       "titles": {
         "en": "Management Reporting System Audit",
-        "sr": "Management Reporting System Audit"
+        "sr": "Audit sistema menadžerskog izveštavanja"
       },
       "versions": {
         "en": "2.4.0",
@@ -4747,7 +4747,7 @@
       ],
       "titles": {
         "en": "Delegation & Accountability Audit",
-        "sr": "Delegation & Accountability Audit"
+        "sr": "Audit delegiranja i odgovornosti"
       },
       "versions": {
         "en": "2.4.0",
@@ -4774,7 +4774,7 @@
       ],
       "titles": {
         "en": "Meeting & Communication Effectiveness Audit",
-        "sr": "Meeting & Communication Effectiveness Audit"
+        "sr": "Audit efikasnosti sastanaka i komunikacije"
       },
       "versions": {
         "en": "2.4.0",
@@ -4801,7 +4801,7 @@
       ],
       "titles": {
         "en": "Organizational Bottleneck Analysis",
-        "sr": "Organizational Bottleneck Analysis"
+        "sr": "Analiza organizacionih uskih grla"
       },
       "versions": {
         "en": "2.4.0",
@@ -4828,7 +4828,7 @@
       ],
       "titles": {
         "en": "Change Management Readiness Audit",
-        "sr": "Change Management Readiness Audit"
+        "sr": "Audit spremnosti za upravljanje promenama"
       },
       "versions": {
         "en": "2.4.0",
@@ -4855,7 +4855,7 @@
       ],
       "titles": {
         "en": "Leadership Risk & Dependency Audit",
-        "sr": "Leadership Risk & Dependency Audit"
+        "sr": "Audit rizika i zavisnosti od liderstva"
       },
       "versions": {
         "en": "2.4.0",
@@ -4882,7 +4882,7 @@
       ],
       "titles": {
         "en": "Ultimate Enterprise Risk Audit",
-        "sr": "Ultimate Enterprise Risk Audit"
+        "sr": "Sveobuhvatni audit rizika preduzeća"
       },
       "versions": {
         "en": "2.4.0",
@@ -4909,7 +4909,7 @@
       ],
       "titles": {
         "en": "Business Risk Register Generator",
-        "sr": "Business Risk Register Generator"
+        "sr": "Generator registra poslovnih rizika"
       },
       "versions": {
         "en": "2.4.0",
@@ -4936,7 +4936,7 @@
       ],
       "titles": {
         "en": "Financial Risk Audit",
-        "sr": "Financial Risk Audit"
+        "sr": "Audit finansijskih rizika"
       },
       "versions": {
         "en": "2.4.0",
@@ -4963,7 +4963,7 @@
       ],
       "titles": {
         "en": "Operational Risk Audit",
-        "sr": "Operational Risk Audit"
+        "sr": "Audit operativnih rizika"
       },
       "versions": {
         "en": "2.4.0",
@@ -4990,7 +4990,7 @@
       ],
       "titles": {
         "en": "Third-Party Business Risk Audit",
-        "sr": "Third-Party Business Risk Audit"
+        "sr": "Audit poslovnih rizika trećih strana"
       },
       "versions": {
         "en": "2.4.0",
@@ -5017,7 +5017,7 @@
       ],
       "titles": {
         "en": "Fraud Risk Assessment",
-        "sr": "Fraud Risk Assessment"
+        "sr": "Procena rizika od prevare"
       },
       "versions": {
         "en": "2.4.0",
@@ -5044,7 +5044,7 @@
       ],
       "titles": {
         "en": "Compliance Control Framework Audit",
-        "sr": "Compliance Control Framework Audit"
+        "sr": "Audit okvira kontrola usklađenosti"
       },
       "versions": {
         "en": "2.4.0",
@@ -5071,7 +5071,7 @@
       ],
       "titles": {
         "en": "Business Continuity & Resilience Audit",
-        "sr": "Business Continuity & Resilience Audit"
+        "sr": "Audit kontinuiteta i otpornosti poslovanja"
       },
       "versions": {
         "en": "2.4.0",
@@ -5098,7 +5098,7 @@
       ],
       "titles": {
         "en": "Crisis Management Readiness Audit",
-        "sr": "Crisis Management Readiness Audit"
+        "sr": "Audit spremnosti za upravljanje krizom"
       },
       "versions": {
         "en": "2.4.0",
@@ -5125,7 +5125,7 @@
       ],
       "titles": {
         "en": "Enterprise Risk Scenario Simulation",
-        "sr": "Enterprise Risk Scenario Simulation"
+        "sr": "Simulacija scenarija rizika preduzeća"
       },
       "versions": {
         "en": "2.4.0",
@@ -5152,7 +5152,7 @@
       ],
       "titles": {
         "en": "Ultimate Business Valuation",
-        "sr": "Ultimate Business Valuation"
+        "sr": "Sveobuhvatna procena vrednosti preduzeća"
       },
       "versions": {
         "en": "2.4.0",
@@ -5179,7 +5179,7 @@
       ],
       "titles": {
         "en": "DCF Valuation Audit",
-        "sr": "DCF Valuation Audit"
+        "sr": "Audit DCF procene vrednosti"
       },
       "versions": {
         "en": "2.4.0",
@@ -5206,7 +5206,7 @@
       ],
       "titles": {
         "en": "Comparable Company Analysis",
-        "sr": "Comparable Company Analysis"
+        "sr": "Analiza uporedivih kompanija"
       },
       "versions": {
         "en": "2.4.0",
@@ -5233,7 +5233,7 @@
       ],
       "titles": {
         "en": "Investment Thesis Stress Test",
-        "sr": "Investment Thesis Stress Test"
+        "sr": "Stres test investicione teze"
       },
       "versions": {
         "en": "2.4.0",
@@ -5260,7 +5260,7 @@
       ],
       "titles": {
         "en": "Commercial Due Diligence",
-        "sr": "Commercial Due Diligence"
+        "sr": "Komercijalni due diligence"
       },
       "versions": {
         "en": "2.4.0",
@@ -5287,7 +5287,7 @@
       ],
       "titles": {
         "en": "Financial Due Diligence",
-        "sr": "Financial Due Diligence"
+        "sr": "Finansijski due diligence"
       },
       "versions": {
         "en": "2.4.0",
@@ -5314,7 +5314,7 @@
       ],
       "titles": {
         "en": "M&A Target Analysis",
-        "sr": "M&A Target Analysis"
+        "sr": "Analiza M&A mete"
       },
       "versions": {
         "en": "2.4.0",
@@ -5341,7 +5341,7 @@
       ],
       "titles": {
         "en": "Investment Risk & Downside Analysis",
-        "sr": "Investment Risk & Downside Analysis"
+        "sr": "Analiza investicionog rizika i negativnog scenarija"
       },
       "versions": {
         "en": "2.4.0",
@@ -5368,7 +5368,7 @@
       ],
       "titles": {
         "en": "Assumption & Sensitivity Analysis",
-        "sr": "Assumption & Sensitivity Analysis"
+        "sr": "Analiza pretpostavki i osetljivosti"
       },
       "versions": {
         "en": "2.4.0",
@@ -5395,7 +5395,7 @@
       ],
       "titles": {
         "en": "Full Business Due Diligence Audit",
-        "sr": "Full Business Due Diligence Audit"
+        "sr": "Sveobuhvatni due diligence audit poslovanja"
       },
       "versions": {
         "en": "2.4.0",

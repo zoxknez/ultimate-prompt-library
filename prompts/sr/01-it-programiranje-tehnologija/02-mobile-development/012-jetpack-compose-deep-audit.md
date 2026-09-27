@@ -2,7 +2,7 @@
 id: UPL-IT-012
 number: 12
 slug: jetpack-compose-deep-audit
-title: Jetpack Compose Deep Audit
+title: Dubinski audit Jetpack Compose koda
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Mobilni razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# JETPACK COMPOSE DEEP AUDIT
+# DUBINSKI AUDIT JETPACK COMPOSE KODA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i runtime-oriented analizu Jetpack Compose implementacije kompletne Android aplikacije.
 

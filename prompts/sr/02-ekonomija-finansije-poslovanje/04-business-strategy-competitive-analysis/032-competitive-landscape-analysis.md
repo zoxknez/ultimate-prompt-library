@@ -2,7 +2,7 @@
 id: UPL-BIZ-032
 number: 32
 slug: competitive-landscape-analysis
-title: Competitive Landscape Analysis
+title: Analiza konkurentskog okruženja
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Poslovna strategija i analiza konkurencije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# COMPETITIVE LANDSCAPE ANALYSIS
+# ANALIZA KONKURENTSKOG OKRUŽENJA
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu ove strateške teme.
 

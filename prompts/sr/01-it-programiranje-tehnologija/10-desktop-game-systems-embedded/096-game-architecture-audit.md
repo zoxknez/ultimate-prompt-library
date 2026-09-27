@@ -2,7 +2,7 @@
 id: UPL-IT-096
 number: 96
 slug: game-architecture-audit
-title: Game Architecture Audit
+title: Audit arhitekture igre
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Desktop, igre, sistemi i embedded
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# GAME ARCHITECTURE AUDIT
+# AUDIT ARHITEKTURE IGRE
 
 Želim dubok audit architecture game projekta sa fokusom na game loop, state, scene/world lifecycle, save systems, networking, asset management, determinism i maintainability.
 

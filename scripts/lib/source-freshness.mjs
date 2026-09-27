@@ -14,6 +14,9 @@ export const REGISTRY_FILES = Object.freeze([
   'scripts/v2-subcategory-source-profiles.json',
 ]);
 export const SNAPSHOT_FILE = 'scripts/v2-source-freshness-snapshot.json';
+export const MANUAL_FILE = 'scripts/v2-source-manual-verification.json';
+export const MANUAL_MAX_AGE_DAYS = 180;
+const MANUAL_FINDINGS = ['VERIFIED', 'UNREACHABLE'];
 export const SNAPSHOT_SCHEMA_VERSION = 1;
 export const CHECKER_VERSION = 1;
 
@@ -115,6 +118,39 @@ export function validateSnapshot(snapshot, sources) {
   return { errors, warnings };
 }
 
+/**
+ * Manual verification covers sources that block automated clients. Returns { errors, warnings }.
+ * Entries must reference registry URLs; entries older than MANUAL_MAX_AGE_DAYS are stale.
+ */
+export function validateManualVerification(data, sources, now = new Date()) {
+  const errors = [];
+  const warnings = [];
+  if (!data || data.schemaVersion !== 1) errors.push('manual verification schemaVersion must be 1');
+  if (!data?.entries || typeof data.entries !== 'object' || Array.isArray(data.entries)) return { errors: [...errors, 'manual verification entries must be an object'], warnings };
+  const known = new Set(sources.map((s) => s.url));
+  for (const [url, entry] of Object.entries(data.entries)) {
+    const where = 'manual verification ' + url;
+    if (!known.has(url)) errors.push(where + ': URL is not in the registry');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(entry?.verifiedAt ?? '') || Number.isNaN(Date.parse(entry.verifiedAt))) errors.push(where + ': verifiedAt must be YYYY-MM-DD');
+    else if (Date.parse(entry.verifiedAt) > now.getTime() + 86400000) errors.push(where + ': verifiedAt is in the future');
+    if (!MANUAL_FINDINGS.includes(entry?.finding)) errors.push(where + ': finding must be one of ' + MANUAL_FINDINGS.join(', '));
+    if (entry?.method !== 'browser') errors.push(where + ': method must be "browser"');
+    if (typeof entry?.notes !== 'string') errors.push(where + ': notes must be a string');
+    if (entry?.finding === 'VERIFIED' && (entry.httpStatus !== 200 || typeof entry.finalUrl !== 'string' || !entry.title)) {
+      errors.push(where + ': a VERIFIED entry needs httpStatus 200, finalUrl and title');
+    }
+    if (manualVerificationState(entry, now) === 'expired') warnings.push(where + ': older than ' + MANUAL_MAX_AGE_DAYS + ' days; re-verify');
+  }
+  return { errors, warnings };
+}
+
+export function manualVerificationState(entry, now = new Date()) {
+  if (!entry) return 'none';
+  const ageDays = (now.getTime() - Date.parse(entry.verifiedAt)) / 86400000;
+  if (!(ageDays <= MANUAL_MAX_AGE_DAYS)) return 'expired';
+  return entry.finding === 'VERIFIED' ? 'verified' : 'unreachable';
+}
+
 // ---------------------------------------------------------------------------
 // Page signal extraction (metadata only)
 
@@ -192,6 +228,16 @@ const trivialRedirect = (from, to) => {
   return norm(a) === norm(b);
 };
 
+/**
+ * Some sites (observed on owasp.org) intermittently serve only the site name as the server-side
+ * title ("OWASP Foundation") instead of "Page | OWASP Foundation". That is not a document change.
+ */
+export function isSiteNameVariant(a, b) {
+  const site = (title) => String(title ?? '').split(/\s+[|–—-]\s+/).pop().trim().toLowerCase();
+  const norm = (title) => String(title ?? '').trim().toLowerCase();
+  return Boolean(a && b) && (norm(a) === site(b) || norm(b) === site(a));
+}
+
 const maxYear = (signals) => Math.max(0, ...signals.map((s) => Number(s.match(/\b(19|20)\d\d\b/)?.[0] ?? 0)));
 
 const NETWORK_CODES = new Set(['ENOTFOUND', 'EAI_AGAIN', 'ECONNREFUSED', 'ECONNRESET', 'ENETUNREACH', 'EHOSTUNREACH', 'ETIMEDOUT', 'EPIPE', 'UND_ERR_CONNECT_TIMEOUT', 'UND_ERR_SOCKET']);
@@ -242,7 +288,12 @@ export function classify(source, observation, previous = null) {
   }
 
   if (previous) {
-    if (previous.title !== signals.title) reasons.push('title changed: "' + previous.title + '" -> "' + signals.title + '"');
+    // Only compare real titles: a missing title (observed on EUR-Lex) or a bare site name (observed
+    // on owasp.org) says nothing about the document.
+    const comparableTitles = Boolean(previous.title && signals.title) && !isSiteNameVariant(previous.title, signals.title);
+    if (comparableTitles && previous.title !== signals.title) {
+      reasons.push('title changed: "' + previous.title + '" -> "' + signals.title + '"');
+    }
     if (previous.finalUrl !== finalUrl) reasons.push('final URL changed: ' + previous.finalUrl + ' -> ' + finalUrl);
     if (reasons.some((r) => /changed/.test(r))) return result('CHANGED', true);
     // Page-level signals only. ETag/Last-Modified are recorded but are weak: many publishers
@@ -250,7 +301,9 @@ export function classify(source, observation, previous = null) {
     const updates = [];
     if (previous.modifiedDate && signals.modifiedDate && previous.modifiedDate !== signals.modifiedDate) updates.push('page modified date changed');
     if (maxYear(signals.versionSignals) > maxYear(previous.versionSignals ?? [])) updates.push('newer year/version signal in title');
-    if (previous.headFingerprint && previous.headFingerprint !== signals.headFingerprint) updates.push('headings or description changed');
+    if (comparableTitles && previous.title === signals.title && previous.headFingerprint && previous.headFingerprint !== signals.headFingerprint) {
+      updates.push('headings or description changed');
+    }
     if (updates.length) {
       reasons.push(...updates);
       return result('POSSIBLY_UPDATED', true);

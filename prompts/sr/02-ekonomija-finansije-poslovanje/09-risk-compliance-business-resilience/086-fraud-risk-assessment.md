@@ -2,7 +2,7 @@
 id: UPL-BIZ-086
 number: 86
 slug: fraud-risk-assessment
-title: Fraud Risk Assessment
+title: Procena rizika od prevare
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Rizik, usklađenost i poslovna otpornost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# FRAUD RISK ASSESSMENT
+# PROCENA RIZIKA OD PREVARE
 
 Želim duboku, evidence-first i risk-oriented analizu koja jasno razlikuje threat, vulnerability, control weakness, inherent risk, residual risk i scenario hardening.
 

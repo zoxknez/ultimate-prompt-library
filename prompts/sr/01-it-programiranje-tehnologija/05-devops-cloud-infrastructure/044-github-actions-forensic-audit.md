@@ -2,7 +2,7 @@
 id: UPL-IT-044
 number: 44
 slug: github-actions-forensic-audit
-title: GitHub Actions Forensic Audit
+title: Forenzički audit GitHub Actions tokova
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# GITHUB ACTIONS FORENSIC AUDIT
+# FORENZIČKI AUDIT GITHUB ACTIONS TOKOVA
 
 Želim kompletan forensic audit svih GitHub Actions workflow-a sa fokusom na supply-chain, secrets, permissions, untrusted pull requests, deployment authority i expression/script injection.
 

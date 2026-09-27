@@ -2,7 +2,7 @@
 id: UPL-IT-014
 number: 14
 slug: android-coroutines-and-concurrency-audit
-title: Android Coroutines & Concurrency Audit
+title: Audit korutina i konkurentnosti u Android aplikacijama
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Mobilni razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ANDROID COROUTINES AND CONCURRENCY AUDIT
+# AUDIT KORUTINA I KONKURENTNOSTI U ANDROID APLIKACIJAMA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i runtime-oriented analizu Kotlin Coroutines i concurrency ponašanja kompletne Android aplikacije.
 

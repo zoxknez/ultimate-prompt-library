@@ -2,7 +2,7 @@
 id: UPL-BIZ-004
 number: 4
 slug: profitability-and-margin-analysis
-title: Profitability & Margin Analysis
+title: Analiza profitabilnosti i marži
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Finansijska analiza i korporativne finansije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# PROFITABILITY & MARGIN ANALYSIS
+# ANALIZA PROFITABILNOSTI I MARŽI
 
 Želim duboku analizu profitabilnosti i margin strukture poslovanja.
 

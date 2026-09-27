@@ -2,7 +2,7 @@
 id: UPL-IT-078
 number: 78
 slug: reliability-and-failure-mode-audit
-title: Reliability & Failure Mode Audit
+title: Audit pouzdanosti i načina otkaza
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Testiranje, QA i pouzdanost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# RELIABILITY AND FAILURE MODE AUDIT
+# AUDIT POUZDANOSTI I NAČINA OTKAZA
 
 Želim kompletan reliability audit aplikacije kroz failure-mode, recovery i degraded-operation perspektivu.
 

@@ -2,7 +2,7 @@
 id: UPL-BIZ-021
 number: 21
 slug: ultimate-economic-analysis
-title: Ultimate Economic Analysis
+title: Sveobuhvatna ekonomska analiza
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Ekonomija i analiza tržišta
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE ECONOMIC ANALYSIS
+# SVEOBUHVATNA EKONOMSKA ANALIZA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i context-aware ekonomsku analizu zemlje, regiona, industrije, tržišta, kompanije ili poslovne odluke.
 

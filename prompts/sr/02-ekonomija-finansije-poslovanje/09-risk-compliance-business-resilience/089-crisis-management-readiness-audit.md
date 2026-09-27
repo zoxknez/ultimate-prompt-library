@@ -2,7 +2,7 @@
 id: UPL-BIZ-089
 number: 89
 slug: crisis-management-readiness-audit
-title: Crisis Management Readiness Audit
+title: Audit spremnosti za upravljanje krizom
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Rizik, usklađenost i poslovna otpornost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# CRISIS MANAGEMENT READINESS AUDIT
+# AUDIT SPREMNOSTI ZA UPRAVLJANJE KRIZOM
 
 Želim duboku, evidence-first i risk-oriented analizu koja jasno razlikuje threat, vulnerability, control weakness, inherent risk, residual risk i scenario hardening.
 

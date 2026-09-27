@@ -2,7 +2,7 @@
 id: UPL-BIZ-090
 number: 90
 slug: enterprise-risk-scenario-simulation
-title: Enterprise Risk Scenario Simulation
+title: Simulacija scenarija rizika preduzeća
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Rizik, usklađenost i poslovna otpornost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ENTERPRISE RISK SCENARIO SIMULATION
+# SIMULACIJA SCENARIJA RIZIKA PREDUZEĆA
 
 Želim duboku, evidence-first i risk-oriented analizu koja jasno razlikuje threat, vulnerability, control weakness, inherent risk, residual risk i scenario hardening.
 

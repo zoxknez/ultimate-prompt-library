@@ -2,7 +2,7 @@
 id: UPL-IT-032
 number: 32
 slug: authentication-security-audit
-title: Authentication Security Audit
+title: Bezbednosni audit autentifikacije
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Sajber bezbednost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# AUTHENTICATION SECURITY AUDIT
+# BEZBEDNOSNI AUDIT AUTENTIFIKACIJE
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletnog authentication sistema aplikacije.
 

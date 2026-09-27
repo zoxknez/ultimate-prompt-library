@@ -2,7 +2,7 @@
 id: UPL-IT-004
 number: 4
 slug: frontend-architecture-audit
-title: Frontend Architecture Audit
+title: Audit frontend arhitekture
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Web razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# FRONTEND ARCHITECTURE AUDIT
+# AUDIT FRONTEND ARHITEKTURE
 
 Želim da izvršiš maksimalno duboku, sistematsku i evidence-first analizu frontend arhitekture kompletnog projekta.
 

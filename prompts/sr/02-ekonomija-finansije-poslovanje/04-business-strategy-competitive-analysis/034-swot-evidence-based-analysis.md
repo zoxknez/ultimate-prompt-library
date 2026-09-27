@@ -2,7 +2,7 @@
 id: UPL-BIZ-034
 number: 34
 slug: swot-evidence-based-analysis
-title: SWOT Evidence-Based Analysis
+title: SWOT analiza zasnovana na dokazima
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Poslovna strategija i analiza konkurencije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# SWOT EVIDENCE-BASED ANALYSIS
+# SWOT ANALIZA ZASNOVANA NA DOKAZIMA
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu ove strateške teme.
 

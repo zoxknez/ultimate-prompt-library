@@ -2,7 +2,7 @@
 id: UPL-IT-040
 number: 40
 slug: attacker-perspective-security-review
-title: Attacker-Perspective Security Review
+title: Bezbednosni pregled iz perspektive napadača
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Sajber bezbednost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ATTACKER-PERSPECTIVE SECURITY REVIEW
+# BEZBEDNOSNI PREGLED IZ PERSPEKTIVE NAPADAČA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i attacker-oriented analizu aplikacije iz perspektive realnog napadača.
 
@@ -3060,7 +3060,7 @@ Ako je scenario samo generički moguć, ali nema veze sa actual arhitekturom:
 
 Bolje je pronaći 5 realnih napadačkih chain-ova sa jasnim capability transferom od početnog access-a do finalnog impact-a nego prijaviti stotine izolovanih security stavki.
 
-Cilj je dobiti forenzički precizan Attacker-Perspective Security Review koji se može direktno pretvoriti u:
+Cilj je dobiti forenzički precizan bezbednosni pregled iz perspektive napadača koji se može direktno pretvoriti u:
 
 - penetration-test plan
 

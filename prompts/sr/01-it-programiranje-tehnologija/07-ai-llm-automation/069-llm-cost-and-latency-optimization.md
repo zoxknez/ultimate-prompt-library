@@ -2,7 +2,7 @@
 id: UPL-IT-069
 number: 69
 slug: llm-cost-and-latency-optimization
-title: LLM Cost & Latency Optimization
+title: Optimizacija troškova i latencije LLM-a
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: AI, LLM i automatizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# LLM COST AND LATENCY OPTIMIZATION
+# OPTIMIZACIJA TROŠKOVA I LATENCIJE LLM-A
 
 Želim duboku analizu troška i latencije LLM sistema bez degradacije critical quality-ja.
 

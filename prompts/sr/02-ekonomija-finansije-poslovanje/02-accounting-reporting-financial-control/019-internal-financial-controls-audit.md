@@ -2,7 +2,7 @@
 id: UPL-BIZ-019
 number: 19
 slug: internal-financial-controls-audit
-title: Internal Financial Controls Audit
+title: Audit internih finansijskih kontrola
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Računovodstvo, izveštavanje i finansijska kontrola
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# INTERNAL FINANCIAL CONTROLS AUDIT
+# AUDIT INTERNIH FINANSIJSKIH KONTROLA
 
 Želim dubok audit internal financial controls framework-a sa fokusom na material reporting, authorization, segregation of duties, reconciliations, master data i manual adjustments.
 

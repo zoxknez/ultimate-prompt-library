@@ -2,7 +2,7 @@
 id: UPL-BIZ-046
 number: 46
 slug: startup-financial-runway-analysis
-title: Startup Financial Runway Analysis
+title: Analiza finansijskog runway-a startapa
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Preduzetništvo i poslovni modeli
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# STARTUP FINANCIAL RUNWAY ANALYSIS
+# ANALIZA FINANSIJSKOG RUNWAY-A STARTAPA
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu.
 

@@ -2,7 +2,7 @@
 id: UPL-IT-065
 number: 65
 slug: ai-agent-architecture-audit
-title: AI Agent Architecture Audit
+title: Audit arhitekture AI agenata
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: AI, LLM i automatizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# AI AGENT ARCHITECTURE AUDIT
+# AUDIT ARHITEKTURE AI AGENATA
 
 Želim kompletan arhitektonski audit AI agent sistema sa fokusom na decision loop, state, tools, memory, authorization, planning, orchestration, recovery i bounded autonomy.
 

@@ -2,7 +2,7 @@
 id: UPL-BIZ-031
 number: 31
 slug: ultimate-business-strategy-audit
-title: Ultimate Business Strategy Audit
+title: Sveobuhvatni audit poslovne strategije
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Poslovna strategija i analiza konkurencije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE BUSINESS STRATEGY AUDIT
+# SVEOBUHVATNI AUDIT POSLOVNE STRATEGIJE
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu ove strateške teme.
 

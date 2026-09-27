@@ -2,7 +2,7 @@
 id: UPL-IT-098
 number: 98
 slug: embedded-software-reliability-audit
-title: Embedded Software Reliability Audit
+title: Audit pouzdanosti embedded softvera
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Desktop, igre, sistemi i embedded
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# EMBEDDED SOFTWARE RELIABILITY AUDIT
+# AUDIT POUZDANOSTI EMBEDDED SOFTVERA
 
 Želim dubok reliability i correctness audit embedded/firmware sistema sa fokusom na timing, interrupts, memory, persistent state, watchdog, power loss, hardware interaction i recovery.
 

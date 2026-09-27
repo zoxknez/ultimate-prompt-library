@@ -2,7 +2,7 @@
 id: UPL-BIZ-016
 number: 16
 slug: accounts-payable-audit
-title: Accounts Payable Audit
+title: Audit obaveza prema dobavljačima
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Računovodstvo, izveštavanje i finansijska kontrola
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ACCOUNTS PAYABLE AUDIT
+# AUDIT OBAVEZA PREMA DOBAVLJAČIMA
 
 Želim dubok audit Accounts Payable procesa od vendor master-a i purchase request-a do payment-a i GL reconciliation-a.
 

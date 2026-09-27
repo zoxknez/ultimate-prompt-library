@@ -2,7 +2,7 @@
 id: UPL-IT-052
 number: 52
 slug: database-schema-and-data-model-audit
-title: Database Schema & Data Model Audit
+title: Audit šeme baze i modela podataka
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Baze podataka i data engineering
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# DATABASE SCHEMA AND DATA MODEL AUDIT
+# AUDIT ŠEME BAZE I MODELA PODATAKA
 
 Želim forenzičku analizu schema-e i domain modela sa fokusom na dugoročnu correctness, integrity, evoluciju i queryability.
 

@@ -2,7 +2,7 @@
 id: UPL-BIZ-068
 number: 68
 slug: customer-acquisition-economics-audit
-title: Customer Acquisition Economics Audit
+title: Audit ekonomike pribavljanja kupaca
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Prodaja, prihodi i cene
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# CUSTOMER ACQUISITION ECONOMICS AUDIT
+# AUDIT EKONOMIKE PRIBAVLJANJA KUPACA
 
 Želim duboku, evidence-first i revenue-oriented analizu koja razdvaja prodajnu aktivnost od stvarnog ekonomskog rezultata i reported revenue od kvalitetnog, naplativog i održivog prihoda.
 

@@ -2,7 +2,7 @@
 id: UPL-BIZ-081
 number: 81
 slug: ultimate-enterprise-risk-audit
-title: Ultimate Enterprise Risk Audit
+title: Sveobuhvatni audit rizika preduzeća
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Rizik, usklađenost i poslovna otpornost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE ENTERPRISE RISK AUDIT
+# SVEOBUHVATNI AUDIT RIZIKA PREDUZEĆA
 
 Želim duboku, evidence-first i risk-oriented analizu koja jasno razlikuje threat, vulnerability, control weakness, inherent risk, residual risk i scenario hardening.
 

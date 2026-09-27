@@ -2,7 +2,7 @@
 id: UPL-IT-020
 number: 20
 slug: android-release-and-play-store-readiness-audit
-title: Android Release & Play Store Readiness Audit
+title: Audit spremnosti Android aplikacije za izdanje i Play Store
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Mobilni razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ANDROID RELEASE AND PLAY STORE READINESS AUDIT
+# AUDIT SPREMNOSTI ANDROID APLIKACIJE ZA IZDANJE I PLAY STORE
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu spremnosti kompletne Android aplikacije za stvarni release i distribuciju kroz Google Play.
 

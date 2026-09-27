@@ -2,7 +2,7 @@
 id: UPL-BIZ-020
 number: 20
 slug: accounting-anomaly-and-misstatement-hunter
-title: Accounting Anomaly & Misstatement Hunter
+title: Lov na računovodstvene anomalije i materijalno pogrešne iskaze
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Računovodstvo, izveštavanje i finansijska kontrola
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ACCOUNTING ANOMALY & MISSTATEMENT HUNTER
+# LOV NA RAČUNOVODSTVENE ANOMALIJE I MATERIJALNO POGREŠNE ISKAZE
 
 Želim duboku, data-driven analizu računovodstvenih anomalija i mogućih misstatement-a kroz ledger, subledgers, reconciliations i financial statements.
 

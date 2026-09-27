@@ -2,7 +2,7 @@
 id: UPL-IT-038
 number: 38
 slug: dependency-and-supply-chain-security-audit
-title: Dependency & Supply Chain Security Audit
+title: Bezbednosni audit zavisnosti i lanca snabdevanja softvera
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Sajber bezbednost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# DEPENDENCY AND SUPPLY CHAIN SECURITY AUDIT
+# BEZBEDNOSNI AUDIT ZAVISNOSTI I LANCA SNABDEVANJA SOFTVERA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletnog software supply chain-a projekta.
 
@@ -3050,7 +3050,7 @@ Ne želim izveštaj tipa:
 
 > Pokrenite npm audit, uključite Dependabot i ažurirajte sve pakete.
 
-To nije Dependency & Supply Chain Security Audit.
+To nije bezbednosni audit zavisnosti i lanca snabdevanja softvera.
 
 Tražim probleme poput:
 

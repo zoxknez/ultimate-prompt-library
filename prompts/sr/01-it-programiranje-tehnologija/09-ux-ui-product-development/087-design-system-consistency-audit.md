@@ -2,7 +2,7 @@
 id: UPL-IT-087
 number: 87
 slug: design-system-consistency-audit
-title: Design System Consistency Audit
+title: Audit doslednosti dizajn sistema
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: UX, UI i razvoj proizvoda
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# DESIGN SYSTEM CONSISTENCY AUDIT
+# AUDIT DOSLEDNOSTI DIZAJN SISTEMA
 
 Želim kompletan audit design system-a i UI consistency-ja sa fokusom na semantics, components, states, tokens, accessibility i product behavior.
 

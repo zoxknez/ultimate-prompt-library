@@ -2,7 +2,7 @@
 id: UPL-BIZ-043
 number: 43
 slug: business-model-canvas-deep-analysis
-title: Business Model Canvas Deep Analysis
+title: Dubinska analiza Business Model Canvas-a
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Preduzetništvo i poslovni modeli
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# BUSINESS MODEL CANVAS DEEP ANALYSIS
+# DUBINSKA ANALIZA BUSINESS MODEL CANVAS-A
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu.
 

@@ -2,7 +2,7 @@
 id: UPL-IT-097
 number: 97
 slug: game-performance-audit
-title: Game Performance Audit
+title: Audit performansi igre
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Desktop, igre, sistemi i embedded
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# GAME PERFORMANCE AUDIT
+# AUDIT PERFORMANSI IGRE
 
 Želim dubok, measurement-driven audit performance-a igre.
 

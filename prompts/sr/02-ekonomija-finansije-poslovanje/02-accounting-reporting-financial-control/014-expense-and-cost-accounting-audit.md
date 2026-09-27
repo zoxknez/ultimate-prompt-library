@@ -2,7 +2,7 @@
 id: UPL-BIZ-014
 number: 14
 slug: expense-and-cost-accounting-audit
-title: Expense & Cost Accounting Audit
+title: Audit rashoda i troškovnog računovodstva
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Računovodstvo, izveštavanje i finansijska kontrola
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# EXPENSE & COST ACCOUNTING AUDIT
+# AUDIT RASHODA I TROŠKOVNOG RAČUNOVODSTVA
 
 Želim dubok audit expense recognition-a, cost classification-a, accrual-a, capitalization-a i cost allocation-a.
 

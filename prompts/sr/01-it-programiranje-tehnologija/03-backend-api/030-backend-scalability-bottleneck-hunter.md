@@ -2,7 +2,7 @@
 id: UPL-IT-030
 number: 30
 slug: backend-scalability-bottleneck-hunter
-title: Backend Scalability Bottleneck Hunter
+title: Lov na uska grla skalabilnosti backend-a
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Backend i API
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# BACKEND SCALABILITY BOTTLENECK HUNTER
+# LOV NA USKA GRLA SKALABILNOSTI BACKEND-A
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu svih mesta na kojima backend prestaje linearno ili predvidljivo da skalira sa rastom:
 

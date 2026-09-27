@@ -2,7 +2,7 @@
 id: UPL-BIZ-028
 number: 28
 slug: exchange-rate-exposure-analysis
-title: Exchange Rate Exposure Analysis
+title: Analiza izloženosti deviznom kursu
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Ekonomija i analiza tržišta
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# EXCHANGE RATE EXPOSURE ANALYSIS
+# ANALIZA IZLOŽENOSTI DEVIZNOM KURSU
 
 Želim duboku analizu FX exposure-a i ekonomskog uticaja valutnih promena.
 

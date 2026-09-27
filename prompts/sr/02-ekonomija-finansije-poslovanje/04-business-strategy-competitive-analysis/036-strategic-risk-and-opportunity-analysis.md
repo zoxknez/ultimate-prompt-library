@@ -2,7 +2,7 @@
 id: UPL-BIZ-036
 number: 36
 slug: strategic-risk-and-opportunity-analysis
-title: Strategic Risk & Opportunity Analysis
+title: Analiza strateških rizika i prilika
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Poslovna strategija i analiza konkurencije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# STRATEGIC RISK & OPPORTUNITY ANALYSIS
+# ANALIZA STRATEŠKIH RIZIKA I PRILIKA
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu ove strateške teme.
 

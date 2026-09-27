@@ -2,7 +2,7 @@
 id: UPL-IT-084
 number: 84
 slug: form-ux-audit
-title: Form UX Audit
+title: UX audit formi
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: UX, UI i razvoj proizvoda
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# FORM UX AUDIT
+# UX AUDIT FORMI
 
 Želim dubok audit form UX-a od first interaction-a do successful submission-a, uključujući validation, error recovery, autofill, accessibility, persistence i backend outcome.
 

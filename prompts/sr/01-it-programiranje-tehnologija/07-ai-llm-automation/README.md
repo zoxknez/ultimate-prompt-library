@@ -13,16 +13,16 @@ AI aplikacije, RAG, grounding, prompt injection, agenti, sistemski promptovi, au
 
 | # | Prompt | EN | SR | Status |
 |---|---|:---:|:---:|---|
-| 061 | [Ultimate AI Application Audit](061-ultimate-ai-application-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/061-ultimate-ai-application-audit.md) | [SR](061-ultimate-ai-application-audit.md) | Dostupno |
-| 062 | [RAG System Forensic Audit](062-rag-system-forensic-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/062-rag-system-forensic-audit.md) | [SR](062-rag-system-forensic-audit.md) | Dostupno |
-| 063 | [Hallucination & Grounding Audit](063-hallucination-and-grounding-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/063-hallucination-and-grounding-audit.md) | [SR](063-hallucination-and-grounding-audit.md) | Dostupno |
-| 064 | [Prompt Injection Security Audit](064-prompt-injection-security-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/064-prompt-injection-security-audit.md) | [SR](064-prompt-injection-security-audit.md) | Dostupno |
-| 065 | [AI Agent Architecture Audit](065-ai-agent-architecture-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/065-ai-agent-architecture-audit.md) | [SR](065-ai-agent-architecture-audit.md) | Dostupno |
-| 066 | [AI Agent Reliability Audit](066-ai-agent-reliability-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/066-ai-agent-reliability-audit.md) | [SR](066-ai-agent-reliability-audit.md) | Dostupno |
-| 067 | [System Prompt Optimization](067-system-prompt-optimization.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/067-system-prompt-optimization.md) | [SR](067-system-prompt-optimization.md) | Dostupno |
-| 068 | [n8n / Workflow Automation Audit](068-n8n-workflow-automation-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/068-n8n-workflow-automation-audit.md) | [SR](068-n8n-workflow-automation-audit.md) | Dostupno |
-| 069 | [LLM Cost & Latency Optimization](069-llm-cost-and-latency-optimization.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/069-llm-cost-and-latency-optimization.md) | [SR](069-llm-cost-and-latency-optimization.md) | Dostupno |
-| 070 | [AI Model Selection & Evaluation](070-ai-model-selection-and-evaluation.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/070-ai-model-selection-and-evaluation.md) | [SR](070-ai-model-selection-and-evaluation.md) | Dostupno |
+| 061 | [Sveobuhvatni audit AI aplikacije](061-ultimate-ai-application-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/061-ultimate-ai-application-audit.md) | [SR](061-ultimate-ai-application-audit.md) | Dostupno |
+| 062 | [Forenzički audit RAG sistema](062-rag-system-forensic-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/062-rag-system-forensic-audit.md) | [SR](062-rag-system-forensic-audit.md) | Dostupno |
+| 063 | [Audit halucinacija i utemeljenosti odgovora](063-hallucination-and-grounding-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/063-hallucination-and-grounding-audit.md) | [SR](063-hallucination-and-grounding-audit.md) | Dostupno |
+| 064 | [Bezbednosni audit prompt injection napada](064-prompt-injection-security-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/064-prompt-injection-security-audit.md) | [SR](064-prompt-injection-security-audit.md) | Dostupno |
+| 065 | [Audit arhitekture AI agenata](065-ai-agent-architecture-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/065-ai-agent-architecture-audit.md) | [SR](065-ai-agent-architecture-audit.md) | Dostupno |
+| 066 | [Audit pouzdanosti AI agenata](066-ai-agent-reliability-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/066-ai-agent-reliability-audit.md) | [SR](066-ai-agent-reliability-audit.md) | Dostupno |
+| 067 | [Optimizacija sistemskog prompta](067-system-prompt-optimization.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/067-system-prompt-optimization.md) | [SR](067-system-prompt-optimization.md) | Dostupno |
+| 068 | [Audit n8n i workflow automatizacije](068-n8n-workflow-automation-audit.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/068-n8n-workflow-automation-audit.md) | [SR](068-n8n-workflow-automation-audit.md) | Dostupno |
+| 069 | [Optimizacija troškova i latencije LLM-a](069-llm-cost-and-latency-optimization.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/069-llm-cost-and-latency-optimization.md) | [SR](069-llm-cost-and-latency-optimization.md) | Dostupno |
+| 070 | [Izbor i evaluacija AI modela](070-ai-model-selection-and-evaluation.md) | [EN](../../../en/01-it-programming-technology/07-ai-llm-automation/070-ai-model-selection-and-evaluation.md) | [SR](070-ai-model-selection-and-evaluation.md) | Dostupno |
 <!-- UPL:END subcategory-prompts -->
 
 Planirani promptovi imaju rezervisan ID i ime fajla, ali još nisu napisani. Ako želiš da napišeš neki od njih, otvori issue ili pull request koji navodi njegov ID. Pogledaj [CONTRIBUTING.sr.md](../../../../CONTRIBUTING.sr.md).

@@ -2,7 +2,7 @@
 id: UPL-IT-027
 number: 27
 slug: rate-limiting-and-abuse-protection-audit
-title: Rate Limiting & Abuse Protection Audit
+title: Audit ograničenja zahteva i zaštite od zloupotrebe
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Backend i API
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# RATE LIMITING AND ABUSE PROTECTION AUDIT
+# AUDIT OGRANIČENJA ZAHTEVA I ZAŠTITE OD ZLOUPOTREBE
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletnog rate limiting i abuse protection sistema backend/API aplikacije.
 

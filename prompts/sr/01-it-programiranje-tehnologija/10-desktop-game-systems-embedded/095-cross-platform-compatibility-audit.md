@@ -2,7 +2,7 @@
 id: UPL-IT-095
 number: 95
 slug: cross-platform-compatibility-audit
-title: Cross-Platform Compatibility Audit
+title: Audit kompatibilnosti na više platformi
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Desktop, igre, sistemi i embedded
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# CROSS-PLATFORM COMPATIBILITY AUDIT
+# AUDIT KOMPATIBILNOSTI NA VIŠE PLATFORMI
 
 Želim dubok audit aplikacije koja radi na više OS/platformi sa ciljem da se pronađu implicitne platform assumptions, divergent behavior i release gaps.
 

@@ -2,7 +2,7 @@
 id: UPL-BIZ-038
 number: 38
 slug: growth-strategy-audit
-title: Growth Strategy Audit
+title: Audit strategije rasta
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Poslovna strategija i analiza konkurencije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# GROWTH STRATEGY AUDIT
+# AUDIT STRATEGIJE RASTA
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu ove strateške teme.
 

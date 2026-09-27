@@ -2,7 +2,7 @@
 id: UPL-IT-047
 number: 47
 slug: cloud-infrastructure-audit
-title: Cloud Infrastructure Audit
+title: Audit cloud infrastrukture
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# CLOUD INFRASTRUCTURE AUDIT
+# AUDIT CLOUD INFRASTRUKTURE
 
 Želim kompletan cloud infrastructure audit bez obzira da li je AWS, Azure, GCP, Oracle, Hetzner, DigitalOcean ili kombinacija.
 

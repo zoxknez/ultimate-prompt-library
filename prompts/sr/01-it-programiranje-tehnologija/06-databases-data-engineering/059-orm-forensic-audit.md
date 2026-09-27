@@ -2,7 +2,7 @@
 id: UPL-IT-059
 number: 59
 slug: orm-forensic-audit
-title: ORM Forensic Audit
+title: Forenzički audit ORM sloja
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Baze podataka i data engineering
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# ORM FORENSIC AUDIT
+# FORENZIČKI AUDIT ORM SLOJA
 
 Želim kompletan forensic audit ORM/data-access sloja, bez pretpostavke da ORM automatski obezbeđuje correctness, security ili performance.
 

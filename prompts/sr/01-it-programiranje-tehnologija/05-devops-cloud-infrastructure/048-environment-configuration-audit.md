@@ -2,7 +2,7 @@
 id: UPL-IT-048
 number: 48
 slug: environment-configuration-audit
-title: Environment Configuration Audit
+title: Audit konfiguracije okruženja
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# ENVIRONMENT CONFIGURATION AUDIT
+# AUDIT KONFIGURACIJE OKRUŽENJA
 
 Želim izvršiti forensic audit svih environment variables, config files, runtime flags, platform settings i environment-specific behavior-a.
 

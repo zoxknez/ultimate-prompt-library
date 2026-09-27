@@ -2,7 +2,7 @@
 id: UPL-IT-022
 number: 22
 slug: rest-api-forensic-audit
-title: REST API Forensic Audit
+title: Forenzički audit REST API-ja
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Backend i API
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# REST API FORENSIC AUDIT
+# FORENZIČKI AUDIT REST API-JA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletnog REST API-ja.
 

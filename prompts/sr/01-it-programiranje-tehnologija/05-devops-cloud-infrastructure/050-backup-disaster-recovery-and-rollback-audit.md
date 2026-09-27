@@ -2,7 +2,7 @@
 id: UPL-IT-050
 number: 50
 slug: backup-disaster-recovery-and-rollback-audit
-title: Backup, Disaster Recovery & Rollback Audit
+title: Audit bekapa, oporavka od katastrofe i rollback-a
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# BACKUP, DISASTER RECOVERY AND ROLLBACK AUDIT
+# AUDIT BEKAPA, OPORAVKA OD KATASTROFE I ROLLBACK-A
 
 Želim ultimativni forensic audit backup-a, restore-a, disaster recovery-ja i rollback mogućnosti kompletnog sistema.
 

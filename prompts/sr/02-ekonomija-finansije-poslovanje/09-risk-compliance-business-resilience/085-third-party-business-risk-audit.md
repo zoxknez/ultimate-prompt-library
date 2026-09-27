@@ -2,7 +2,7 @@
 id: UPL-BIZ-085
 number: 85
 slug: third-party-business-risk-audit
-title: Third-Party Business Risk Audit
+title: Audit poslovnih rizika trećih strana
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Rizik, usklađenost i poslovna otpornost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# THIRD-PARTY BUSINESS RISK AUDIT
+# AUDIT POSLOVNIH RIZIKA TREĆIH STRANA
 
 Želim duboku, evidence-first i risk-oriented analizu koja jasno razlikuje threat, vulnerability, control weakness, inherent risk, residual risk i scenario hardening.
 

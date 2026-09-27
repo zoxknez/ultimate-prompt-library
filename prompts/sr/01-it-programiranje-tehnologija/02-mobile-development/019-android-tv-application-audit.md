@@ -2,7 +2,7 @@
 id: UPL-IT-019
 number: 19
 slug: android-tv-application-audit
-title: Android TV Application Audit
+title: Audit Android TV aplikacije
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Mobilni razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ANDROID TV APPLICATION AUDIT
+# AUDIT ANDROID TV APLIKACIJE
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletne Android TV aplikacije.
 

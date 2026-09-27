@@ -2,7 +2,7 @@
 id: UPL-BIZ-064
 number: 64
 slug: pricing-strategy-audit
-title: Pricing Strategy Audit
+title: Audit strategije cena
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Prodaja, prihodi i cene
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# PRICING STRATEGY AUDIT
+# AUDIT STRATEGIJE CENA
 
 Želim duboku, evidence-first i revenue-oriented analizu koja razdvaja prodajnu aktivnost od stvarnog ekonomskog rezultata i reported revenue od kvalitetnog, naplativog i održivog prihoda.
 

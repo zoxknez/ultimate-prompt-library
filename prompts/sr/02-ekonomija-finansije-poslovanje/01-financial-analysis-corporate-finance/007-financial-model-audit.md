@@ -2,7 +2,7 @@
 id: UPL-BIZ-007
 number: 7
 slug: financial-model-audit
-title: Financial Model Audit
+title: Audit finansijskog modela
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Finansijska analiza i korporativne finansije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# FINANCIAL MODEL AUDIT
+# AUDIT FINANSIJSKOG MODELA
 
 Želim forenzički audit Excel/Sheets/programmatic financial model-a sa fokusom na formula correctness, assumptions, circularity, hardcodes, scenario logic, units, timing i output reliability.
 

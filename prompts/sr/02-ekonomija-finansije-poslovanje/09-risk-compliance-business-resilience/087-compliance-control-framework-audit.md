@@ -2,7 +2,7 @@
 id: UPL-BIZ-087
 number: 87
 slug: compliance-control-framework-audit
-title: Compliance Control Framework Audit
+title: Audit okvira kontrola usklađenosti
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Rizik, usklađenost i poslovna otpornost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# COMPLIANCE CONTROL FRAMEWORK AUDIT
+# AUDIT OKVIRA KONTROLA USKLAĐENOSTI
 
 Želim duboku, evidence-first i risk-oriented analizu koja jasno razlikuje threat, vulnerability, control weakness, inherent risk, residual risk i scenario hardening.
 

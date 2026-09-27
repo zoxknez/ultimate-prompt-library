@@ -2,7 +2,7 @@
 id: UPL-IT-006
 number: 6
 slug: responsive-and-mobile-web-audit
-title: Responsive & Mobile Web Audit
+title: Audit responzivnog i mobilnog weba
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Web razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# RESPONSIVE AND MOBILE WEB AUDIT
+# AUDIT RESPONZIVNOG I MOBILNOG WEBA
 
 Želim da izvršiš maksimalno duboku, sistematsku i evidence-first analizu responsive ponašanja kompletne web aplikacije.
 

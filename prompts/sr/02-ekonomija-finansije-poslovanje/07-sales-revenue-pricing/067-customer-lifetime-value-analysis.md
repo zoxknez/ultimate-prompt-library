@@ -2,7 +2,7 @@
 id: UPL-BIZ-067
 number: 67
 slug: customer-lifetime-value-analysis
-title: Customer Lifetime Value Analysis
+title: Analiza životne vrednosti kupca (CLV)
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Prodaja, prihodi i cene
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# CUSTOMER LIFETIME VALUE ANALYSIS
+# ANALIZA ŽIVOTNE VREDNOSTI KUPCA (CLV)
 
 Želim duboku, evidence-first i revenue-oriented analizu koja razdvaja prodajnu aktivnost od stvarnog ekonomskog rezultata i reported revenue od kvalitetnog, naplativog i održivog prihoda.
 

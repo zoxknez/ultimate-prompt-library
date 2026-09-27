@@ -2,7 +2,7 @@
 id: UPL-BIZ-072
 number: 72
 slug: organizational-structure-audit
-title: Organizational Structure Audit
+title: Audit organizacione strukture
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Menadžment, liderstvo i organizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ORGANIZATIONAL STRUCTURE AUDIT
+# AUDIT ORGANIZACIONE STRUKTURE
 
 Želim duboku, evidence-first i execution-oriented analizu management sistema, organizacije i liderstva. Cilj nije generički leadership savet, već proverljiv uvid u to kako struktura, odluke, metrike, reporting i ownership utiču na izvršenje.
 

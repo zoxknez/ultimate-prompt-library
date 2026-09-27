@@ -2,7 +2,7 @@
 id: UPL-BIZ-078
 number: 78
 slug: organizational-bottleneck-analysis
-title: Organizational Bottleneck Analysis
+title: Analiza organizacionih uskih grla
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Menadžment, liderstvo i organizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ORGANIZATIONAL BOTTLENECK ANALYSIS
+# ANALIZA ORGANIZACIONIH USKIH GRLA
 
 Želim duboku, evidence-first i execution-oriented analizu management sistema, organizacije i liderstva. Cilj nije generički leadership savet, već proverljiv uvid u to kako struktura, odluke, metrike, reporting i ownership utiču na izvršenje.
 

@@ -2,7 +2,7 @@
 id: UPL-IT-077
 number: 77
 slug: adversarial-user-testing
-title: Adversarial User Testing
+title: Adversarial testiranje iz ugla korisnika
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Testiranje, QA i pouzdanost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ADVERSARIAL USER TESTING
+# ADVERSARIAL TESTIRANJE IZ UGLA KORISNIKA
 
 Želim sistematski audit aplikacije iz perspektive legitimnog ali nepredvidivog, greškama sklonog ili namerno nekonvencionalnog korisnika, bez prelaska u neovlašćeno napadanje sistema.
 

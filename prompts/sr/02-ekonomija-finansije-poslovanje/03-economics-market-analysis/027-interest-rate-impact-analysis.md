@@ -2,7 +2,7 @@
 id: UPL-BIZ-027
 number: 27
 slug: interest-rate-impact-analysis
-title: Interest Rate Impact Analysis
+title: Analiza uticaja kamatnih stopa
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Ekonomija i analiza tržišta
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# INTEREST RATE IMPACT ANALYSIS
+# ANALIZA UTICAJA KAMATNIH STOPA
 
 Želim duboku analizu uticaja kamatnih stopa na kompaniju, industriju, potrošače ili investicionu odluku.
 

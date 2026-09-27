@@ -2,7 +2,7 @@
 id: UPL-BIZ-053
 number: 53
 slug: operational-bottleneck-hunter
-title: Operational Bottleneck Hunter
+title: Lov na operativna uska grla
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Operacije, lanac snabdevanja i nabavka
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# OPERATIONAL BOTTLENECK HUNTER
+# LOV NA OPERATIVNA USKA GRLA
 
 Želim duboku, evidence-first i operations-oriented analizu koja razlikuje simptom od stvarnog ograničenja i optimizaciju lokalne metrike od poboljšanja ukupnog sistema.
 

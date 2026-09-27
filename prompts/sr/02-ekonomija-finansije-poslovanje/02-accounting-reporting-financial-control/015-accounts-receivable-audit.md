@@ -2,7 +2,7 @@
 id: UPL-BIZ-015
 number: 15
 slug: accounts-receivable-audit
-title: Accounts Receivable Audit
+title: Audit potraživanja od kupaca
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Računovodstvo, izveštavanje i finansijska kontrola
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ACCOUNTS RECEIVABLE AUDIT
+# AUDIT POTRAŽIVANJA OD KUPACA
 
 Želim dubok audit Accounts Receivable procesa od customer master-a i billing-a do collection-a, cash application-a, credit risk-a i write-off-a.
 

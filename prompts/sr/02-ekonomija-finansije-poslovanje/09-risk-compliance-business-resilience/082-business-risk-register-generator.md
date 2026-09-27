@@ -2,7 +2,7 @@
 id: UPL-BIZ-082
 number: 82
 slug: business-risk-register-generator
-title: Business Risk Register Generator
+title: Generator registra poslovnih rizika
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Rizik, usklađenost i poslovna otpornost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# BUSINESS RISK REGISTER GENERATOR
+# GENERATOR REGISTRA POSLOVNIH RIZIKA
 
 Želim duboku, evidence-first i risk-oriented analizu koja jasno razlikuje threat, vulnerability, control weakness, inherent risk, residual risk i scenario hardening.
 

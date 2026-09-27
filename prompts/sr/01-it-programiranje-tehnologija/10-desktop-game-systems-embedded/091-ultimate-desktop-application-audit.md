@@ -2,7 +2,7 @@
 id: UPL-IT-091
 number: 91
 slug: ultimate-desktop-application-audit
-title: Ultimate Desktop Application Audit
+title: Sveobuhvatni audit desktop aplikacije
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Desktop, igre, sistemi i embedded
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ULTIMATE DESKTOP APPLICATION AUDIT
+# SVEOBUHVATNI AUDIT DESKTOP APLIKACIJE
 
 Želim da izvršiš maksimalno dubok, sistematski, evidence-first i production-oriented audit kompletne desktop aplikacije.
 

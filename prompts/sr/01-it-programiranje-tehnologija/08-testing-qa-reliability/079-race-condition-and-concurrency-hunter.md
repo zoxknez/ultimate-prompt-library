@@ -2,7 +2,7 @@
 id: UPL-IT-079
 number: 79
 slug: race-condition-and-concurrency-hunter
-title: Race Condition & Concurrency Hunter
+title: Lov na race condition i probleme konkurentnosti
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Testiranje, QA i pouzdanost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# RACE CONDITION AND CONCURRENCY HUNTER
+# LOV NA RACE CONDITION I PROBLEME KONKURENTNOSTI
 
 Želim duboku analizu svih concurrency, race i interleaving failure path-ova u aplikaciji.
 

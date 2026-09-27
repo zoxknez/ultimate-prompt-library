@@ -2,7 +2,7 @@
 id: UPL-IT-024
 number: 24
 slug: backend-business-logic-audit
-title: Backend Business Logic Audit
+title: Audit poslovne logike backend-a
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Backend i API
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# BACKEND BUSINESS LOGIC AUDIT
+# AUDIT POSLOVNE LOGIKE BACKEND-A
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletne business logike backend sistema.
 

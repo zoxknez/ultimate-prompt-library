@@ -2,7 +2,7 @@
 id: UPL-BIZ-065
 number: 65
 slug: pricing-elasticity-analysis
-title: Pricing Elasticity Analysis
+title: Analiza cenovne elastičnosti
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Prodaja, prihodi i cene
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# PRICING ELASTICITY ANALYSIS
+# ANALIZA CENOVNE ELASTIČNOSTI
 
 Želim duboku, evidence-first i revenue-oriented analizu koja razdvaja prodajnu aktivnost od stvarnog ekonomskog rezultata i reported revenue od kvalitetnog, naplativog i održivog prihoda.
 

@@ -2,7 +2,7 @@
 id: UPL-BIZ-035
 number: 35
 slug: pestle-strategic-analysis
-title: PESTLE Strategic Analysis
+title: PESTLE strateška analiza
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Poslovna strategija i analiza konkurencije
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# PESTLE STRATEGIC ANALYSIS
+# PESTLE STRATEŠKA ANALIZA
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu ove strateške teme.
 

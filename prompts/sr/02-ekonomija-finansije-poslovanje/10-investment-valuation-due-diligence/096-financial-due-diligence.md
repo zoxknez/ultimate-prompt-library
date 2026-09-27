@@ -2,7 +2,7 @@
 id: UPL-BIZ-096
 number: 96
 slug: financial-due-diligence
-title: Financial Due Diligence
+title: Finansijski due diligence
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Investicije, vrednovanje i due diligence
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# FINANCIAL DUE DILIGENCE
+# FINANSIJSKI DUE DILIGENCE
 
 Želim duboku, evidence-first i investment-grade analizu koja razdvaja računovodstveni rezultat, cash generation, enterprise value, equity value i pretpostavke koje nose najveći deo vrednosti.
 

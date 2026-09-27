@@ -2,7 +2,7 @@
 id: UPL-BIZ-056
 number: 56
 slug: procurement-and-supplier-audit
-title: Procurement & Supplier Audit
+title: Audit nabavke i dobavljača
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Operacije, lanac snabdevanja i nabavka
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# PROCUREMENT & SUPPLIER AUDIT
+# AUDIT NABAVKE I DOBAVLJAČA
 
 Želim duboku, evidence-first i operations-oriented analizu koja razlikuje simptom od stvarnog ograničenja i optimizaciju lokalne metrike od poboljšanja ukupnog sistema.
 

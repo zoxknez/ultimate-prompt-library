@@ -2,7 +2,7 @@
 id: UPL-IT-015
 number: 15
 slug: android-performance-and-anr-hunter
-title: Android Performance & ANR Hunter
+title: Lov na probleme performansi i ANR u Android aplikacijama
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Mobilni razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ANDROID PERFORMANCE AND ANR HUNTER
+# LOV NA PROBLEME PERFORMANSI I ANR U ANDROID APLIKACIJAMA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu performansi kompletne Android aplikacije, sa posebnim fokusom na ANR, main-thread blocking, UI jank, startup, memory pressure i spore critical user flow-ove.
 

@@ -2,7 +2,7 @@
 id: UPL-BIZ-097
 number: 97
 slug: ma-target-analysis
-title: M&A Target Analysis
+title: Analiza M&A mete
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Investicije, vrednovanje i due diligence
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# M&A TARGET ANALYSIS
+# ANALIZA M&A METE
 
 Želim duboku, evidence-first i investment-grade analizu koja razdvaja računovodstveni rezultat, cash generation, enterprise value, equity value i pretpostavke koje nose najveći deo vrednosti.
 

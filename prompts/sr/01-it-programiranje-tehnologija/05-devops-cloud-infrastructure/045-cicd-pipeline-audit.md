@@ -2,7 +2,7 @@
 id: UPL-IT-045
 number: 45
 slug: cicd-pipeline-audit
-title: CI/CD Pipeline Audit
+title: Audit CI/CD pipeline-a
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: DevOps, cloud i infrastruktura
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# CI/CD PIPELINE AUDIT
+# AUDIT CI/CD PIPELINE-A
 
 Želim kompletan production-grade audit čitavog CI/CD pipeline-a, nezavisno od platforme.
 

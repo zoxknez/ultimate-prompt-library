@@ -2,7 +2,7 @@
 id: UPL-IT-016
 number: 16
 slug: android-persistence-and-room-audit
-title: Android Persistence & Room Audit
+title: Audit perzistencije i Room baze u Android aplikacijama
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Mobilni razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ANDROID PERSISTENCE AND ROOM AUDIT
+# AUDIT PERZISTENCIJE I ROOM BAZE U ANDROID APLIKACIJAMA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletnog persistence sloja Android aplikacije, sa posebnim fokusom na Room, SQLite, DataStore, SharedPreferences, fajlove, cache i lokalni source of truth.
 

@@ -2,7 +2,7 @@
 id: UPL-IT-001
 number: 1
 slug: forensic-full-repository-audit
-title: Forensic Full Repository Audit
+title: Forenzički audit celog repozitorijuma
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Web razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# FORENSIC FULL-REPOSITORY AUDIT
+# FORENZIČKI AUDIT CELOG REPOZITORIJUMA
 
 Želim da izvršiš **maksimalno duboku, sistematsku i evidence-first analizu kompletnog GitHub repozitorijuma i aplikacije**.
 

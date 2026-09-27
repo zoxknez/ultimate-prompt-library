@@ -2,7 +2,7 @@
 id: UPL-BIZ-047
 number: 47
 slug: founder-assumption-stress-test
-title: Founder Assumption Stress Test
+title: Stres test osnivačkih pretpostavki
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Preduzetništvo i poslovni modeli
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# FOUNDER ASSUMPTION STRESS TEST
+# STRES TEST OSNIVAČKIH PRETPOSTAVKI
 
 Želim maksimalno duboku, sistematsku, evidence-first i decision-oriented analizu.
 

@@ -2,7 +2,7 @@
 id: UPL-IT-029
 number: 29
 slug: background-jobs-and-queue-audit
-title: Background Jobs & Queue Audit
+title: Audit pozadinskih poslova i redova
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Backend i API
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# BACKGROUND JOBS AND QUEUE AUDIT
+# AUDIT POZADINSKIH POSLOVA I REDOVA
 
 Želim da izvršiš maksimalno duboku, sistematsku, evidence-first i production-oriented analizu kompletnog background job i queue sistema backend aplikacije.
 

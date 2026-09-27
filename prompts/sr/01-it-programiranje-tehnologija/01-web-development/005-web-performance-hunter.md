@@ -2,7 +2,7 @@
 id: UPL-IT-005
 number: 5
 slug: web-performance-hunter
-title: Web Performance Hunter
+title: Lov na probleme web performansi
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Web razvoj
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# WEB PERFORMANCE HUNTER
+# LOV NA PROBLEME WEB PERFORMANSI
 
 Želim da izvršiš maksimalno duboku, sistematsku i evidence-first analizu web performansi kompletnog projekta.
 

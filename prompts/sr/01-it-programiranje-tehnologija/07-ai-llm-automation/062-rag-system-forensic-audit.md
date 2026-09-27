@@ -2,7 +2,7 @@
 id: UPL-IT-062
 number: 62
 slug: rag-system-forensic-audit
-title: RAG System Forensic Audit
+title: Forenzički audit RAG sistema
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: AI, LLM i automatizacija
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# RAG SYSTEM FORENSIC AUDIT
+# FORENZIČKI AUDIT RAG SISTEMA
 
 Želim forenzički audit kompletnog Retrieval-Augmented Generation sistema, od ingestion-a i parsing-a do retrieval-a, reranking-a, context construction-a, citations-a i generisanog odgovora.
 

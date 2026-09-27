@@ -2,7 +2,7 @@
 id: UPL-IT-076
 number: 76
 slug: edge-case-generator
-title: Edge Case Generator
+title: Generator graničnih slučajeva
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Testiranje, QA i pouzdanost
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# EDGE CASE GENERATOR
+# GENERATOR GRANIČNIH SLUČAJEVA
 
 Želim da generišeš sistematski skup edge case-ova za konkretan feature, API, data model, workflow ili aplikaciju na osnovu stvarnih input domain-a, state transitions, granica i failure semantics.
 

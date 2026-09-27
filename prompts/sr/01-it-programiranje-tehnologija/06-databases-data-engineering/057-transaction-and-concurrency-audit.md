@@ -2,7 +2,7 @@
 id: UPL-IT-057
 number: 57
 slug: transaction-and-concurrency-audit
-title: Transaction & Concurrency Audit
+title: Audit transakcija i konkurentnosti
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: Baze podataka i data engineering
@@ -12,7 +12,7 @@ version: 1.1.0
 status: stable
 ---
 
-# TRANSACTION AND CONCURRENCY AUDIT
+# AUDIT TRANSAKCIJA I KONKURENTNOSTI
 
 Želim maksimalno dubok audit concurrency-ja, transaction boundaries, isolation i race conditions.
 

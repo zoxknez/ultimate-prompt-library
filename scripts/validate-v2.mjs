@@ -39,6 +39,13 @@ for (const [subId, items] of Object.entries(subSourceProfiles)) {
   validateSources('subcategory source profile ' + subId, items);
 }
 
+// Serbian titles must be localized (all IT and BIZ titles were English until 2.4.0).
+for (const category of repo.catalog.categories) {
+  for (const prompt of category.prompts) {
+    if (prompt.title?.sr && prompt.title.sr === prompt.title.en) fail(prompt.id + ': Serbian title is identical to the English title; localize it.');
+  }
+}
+
 const normalizedTitles = new Map();
 for (const category of repo.catalog.categories) {
   for (const prompt of category.prompts) {

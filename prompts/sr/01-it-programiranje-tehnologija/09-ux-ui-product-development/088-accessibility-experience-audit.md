@@ -2,7 +2,7 @@
 id: UPL-IT-088
 number: 88
 slug: accessibility-experience-audit
-title: Accessibility Experience Audit
+title: Audit pristupačnosti korisničkog iskustva
 category: IT, programiranje i tehnologija
 category_id: UPL-IT
 subcategory: UX, UI i razvoj proizvoda
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# ACCESSIBILITY EXPERIENCE AUDIT
+# AUDIT PRISTUPAČNOSTI KORISNIČKOG ISKUSTVA
 
 Želim dubok accessibility audit fokusiran na stvarno iskustvo korišćenja proizvoda, ne samo na statičku WCAG checklist-u.
 

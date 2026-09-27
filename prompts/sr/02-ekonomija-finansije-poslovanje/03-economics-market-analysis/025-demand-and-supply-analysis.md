@@ -2,7 +2,7 @@
 id: UPL-BIZ-025
 number: 25
 slug: demand-and-supply-analysis
-title: Demand & Supply Analysis
+title: Analiza ponude i tražnje
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Ekonomija i analiza tržišta
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# DEMAND & SUPPLY ANALYSIS
+# ANALIZA PONUDE I TRAŽNJE
 
 Želim duboku analizu demand i supply dinamike konkretnog tržišta, proizvoda, usluge ili input-a.
 

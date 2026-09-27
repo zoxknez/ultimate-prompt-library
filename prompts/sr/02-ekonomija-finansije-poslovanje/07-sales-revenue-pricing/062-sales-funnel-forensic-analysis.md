@@ -2,7 +2,7 @@
 id: UPL-BIZ-062
 number: 62
 slug: sales-funnel-forensic-analysis
-title: Sales Funnel Forensic Analysis
+title: Forenzička analiza prodajnog levka
 category: Ekonomija, finansije i poslovanje
 category_id: UPL-BIZ
 subcategory: Prodaja, prihodi i cene
@@ -12,7 +12,7 @@ version: 1.0.0
 status: stable
 ---
 
-# SALES FUNNEL FORENSIC ANALYSIS
+# FORENZIČKA ANALIZA PRODAJNOG LEVKA
 
 Želim duboku, evidence-first i revenue-oriented analizu koja razdvaja prodajnu aktivnost od stvarnog ekonomskog rezultata i reported revenue od kvalitetnog, naplativog i održivog prihoda.
 
