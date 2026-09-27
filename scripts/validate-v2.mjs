@@ -94,6 +94,9 @@ for (const [id, prompt] of repo.prompts) {
     if (!file.body.includes('PROMPT-EXECUTION BEST PRACTICES')) {
       fail(file.path + ': missing prompt-execution best-practice layer.');
     }
+    if (!file.body.includes('PROMPT-SPECIFIC EXECUTION FOCUS')) {
+      fail(file.path + ': missing prompt-specific execution focus.');
+    }
     if (!file.body.includes('TASK-SHAPE EXECUTION MODEL')) fail(file.path + ': missing task-shape execution model.');
     if (!file.body.includes('CHALLENGE PASS')) fail(file.path + ': missing challenge pass.');
     if (!file.body.includes('ACCEPTANCE GATE')) fail(file.path + ': missing acceptance gate.');

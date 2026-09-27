@@ -15,6 +15,25 @@ const sourceProfiles = JSON.parse(
 const subcategorySourceProfiles = JSON.parse(
   readFileSync(new URL('../v2-subcategory-source-profiles.json', import.meta.url), 'utf8'),
 );
+const catalog = JSON.parse(
+  readFileSync(new URL('../../catalog.json', import.meta.url), 'utf8'),
+);
+
+const promptContexts = new Map();
+for (const category of catalog.categories ?? []) {
+  for (const subcategory of category.subcategories ?? []) {
+    const siblings = (category.prompts ?? []).filter((prompt) => prompt.subcategory === subcategory.id);
+    siblings.forEach((prompt, index) => {
+      promptContexts.set(prompt.id, {
+        category,
+        subcategory,
+        prompt,
+        previous: siblings[index - 1] ?? null,
+        next: siblings[index + 1] ?? null,
+      });
+    });
+  }
+}
 
 const QUALITY_STANDARD = 'https://github.com/zoxknez/ultimate-prompt-library/blob/main/docs/prompt-quality-standard-v2.md';
 const SOURCE_REGISTRY = 'https://github.com/zoxknez/ultimate-prompt-library/blob/main/docs/external-source-registry-v2.md';
@@ -186,6 +205,63 @@ function taskShapeRules(data, lang) {
   ];
 }
 
+function promptSpecificFocus(data, lang) {
+  const sr = lang === 'sr';
+  const ctx = promptContexts.get(data.id);
+  const title = data.title || data.id || 'this prompt';
+  const subcategory = data.subcategory || data.subcategory_id || 'General';
+  const haystack = ((data.slug || '') + ' ' + title).toLowerCase();
+
+  const adjacent = [];
+  if (ctx?.previous) adjacent.push((ctx.previous.title?.[lang] || ctx.previous.title?.en) + ' (' + ctx.previous.id + ')');
+  if (ctx?.next) adjacent.push((ctx.next.title?.[lang] || ctx.next.title?.en) + ' (' + ctx.next.id + ')');
+
+  let completionEn = 'a task-specific deliverable with direct evidence, explicit assumptions, acceptance criteria and a verification step';
+  let completionSr = 'task-specific isporuka sa direktnim dokazima, eksplicitnim pretpostavkama, acceptance kriterijumima i korakom verifikacije';
+
+  if (/(red-team|red team|stress-test|stress test|adversarial)/.test(haystack)) {
+    completionEn = 'a prioritized set of realistic failure scenarios, counterexamples, mitigations, verification steps and residual risks';
+    completionSr = 'prioritizovan skup realnih failure scenarija, counterexample-a, mitigacija, koraka verifikacije i residual risk-a';
+  } else if (/(audit|review|check|readiness|quality|inspection|hunter|verification|appraisal|due-diligence|diligence|spotting|detection|acceptance)/.test(haystack)) {
+    completionEn = 'an evidence-backed finding register with severity/priority, root cause, remediation and a verification test';
+    completionSr = 'evidence-backed registar nalaza sa severity/prioritetom, root cause-om, remedijacijom i verification testom';
+  } else if (/(builder|design|plan|roadmap|framework|system|strategy|brief|architecture|workflow|architect|playbook|preparation|prep|program|pipeline|portfolio|direction|rollout|routine|pathway|cadence|rhythm|feedback-loop|structure|version-control)/.test(haystack)) {
+    completionEn = 'an implementation-ready artifact with required inputs, structure, owners/dependencies, acceptance criteria and review triggers';
+    completionSr = 'implementation-ready artefakt sa potrebnim inputima, strukturom, ownerima/zavisnostima, acceptance kriterijumima i review triggerima';
+  } else if (/(analysis|analyzer|assessment|evaluation|map|mapper|comparison|compare|diagnostic|interpretation|applicability|enforcement|jurisdiction|synthesis|triangulation|allocation|unit-economics|economics|optimization|rationalization|reconstructor|explainer|communicator|alignment|information-flow|flow|differentiation|divergence|convergence)/.test(haystack)) {
+    completionEn = 'an evidence table or structured comparison plus interpretation, sensitivity/alternatives and explicit uncertainty';
+    completionSr = 'evidence tabela ili strukturirano poređenje uz tumačenje, sensitivity/alternative i eksplicitnu neizvesnost';
+  } else if (/(tracker|monitor|calendar|register|inventory|log|dashboard|scorecard|status-report|report)/.test(haystack)) {
+    completionEn = 'a usable tracking schema with source of truth, owner, cadence/freshness rules, action triggers and stale/missing-data handling';
+    completionSr = 'upotrebljiva tracking šema sa source of truth, ownerom, cadence/freshness pravilima, action triggerima i obradom stale/missing podataka';
+  } else if (/(generator|script|message|sequence|outline|copy|statement|memo|proposal|letter|summary|response|request|guide|series|options)/.test(haystack)) {
+    completionEn = 'a finished reusable artifact grounded only in verified inputs, followed by a factual/format consistency check';
+    completionSr = 'završen upotrebljiv artefakt zasnovan samo na potvrđenim inputima, uz factual/format consistency proveru';
+  } else if (/(triage|priorit|ranking|selection|decision|navigator|navigation)/.test(haystack)) {
+    completionEn = 'explicit criteria, options, trade-offs, a decision or routing outcome, and the next evidence/action trigger';
+    completionSr = 'eksplicitni kriterijumi, opcije, trade-offovi, odluka ili routing ishod i sledeći evidence/action trigger';
+  }
+
+  const rules = sr ? [
+    'Primarni scope je tačno **' + title + '** u okviru **' + subcategory + '**. Ne pretvarati ga u opšti audit cele podkategorije osim ako je to neophodno za dokaz.',
+    'Pre rada identifikovati konkretan target objekat ovog prompta - artefakt, sistem, odluku, podatke, osobu/proces ili rezultat - i minimalni skup inputa potreban za pouzdan zaključak.',
+    'Completion contract za ovaj prompt: isporučiti ' + completionSr + '.',
+    adjacent.length
+      ? 'Scope handoff: susedni bibliotečki zadaci su ' + adjacent.join(' i ') + '. Njihov scope uključiti samo kada je dependency eksplicitan; u suprotnom ga navesti kao zaseban handoff.'
+      : 'Ako se pojavi adjacent scope koji pripada drugom promptu, označiti ga kao zaseban handoff umesto tihog širenja zadatka.',
+  ] : [
+    'The primary scope is exactly **' + title + '** inside **' + subcategory + '**. Do not turn it into a general audit of the whole subcategory unless that is required for evidence.',
+    'Before execution identify the concrete target object for this prompt - artifact, system, decision, dataset, person/process or outcome - and the minimum input set required for a reliable conclusion.',
+    'Completion contract for this prompt: deliver ' + completionEn + '.',
+    adjacent.length
+      ? 'Scope handoff: adjacent library tasks are ' + adjacent.join(' and ') + '. Include their scope only when an explicit dependency exists; otherwise identify a separate handoff.'
+      : 'If adjacent scope belongs to another prompt, label it as a separate handoff instead of silently broadening the task.',
+  ];
+
+  return rules;
+}
+
+
 export function buildV2QualityLayer(data) {
   const lang = data.language === 'sr' ? 'sr' : 'en';
   const sr = lang === 'sr';
@@ -194,6 +270,7 @@ export function buildV2QualityLayer(data) {
   const profile = profiles[data.category_id]?.[lang] ?? profiles[data.category_id]?.en ?? [];
   const subProfile = subcategoryProfiles[data.subcategory_id]?.[lang] ?? subcategoryProfiles[data.subcategory_id]?.en ?? [];
   const taskProfile = taskShapeRules(data, lang);
+  const promptFocus = promptSpecificFocus(data, lang);
   const sourceProfile = dedupeSources([
     ...(subcategorySourceProfiles[data.subcategory_id] ?? []),
     ...(sourceProfiles[data.category_id] ?? []),
@@ -320,26 +397,28 @@ export function buildV2QualityLayer(data) {
     bullets(subProfile), '',
     '## ' + (sr ? '6. PROMPT-EXECUTION BEST PRACTICES' : '6. PROMPT-EXECUTION BEST PRACTICES'), '',
     bullets(promptExecution), '',
-    '## ' + (sr ? '7. TASK-SHAPE EXECUTION MODEL' : '7. TASK-SHAPE EXECUTION MODEL'), '',
+    '## ' + (sr ? '7. PROMPT-SPECIFIC EXECUTION FOCUS' : '7. PROMPT-SPECIFIC EXECUTION FOCUS'), '',
+    bullets(promptFocus), '',
+    '## ' + (sr ? '8. TASK-SHAPE EXECUTION MODEL' : '8. TASK-SHAPE EXECUTION MODEL'), '',
     bullets(taskProfile), '',
-    '## 8. CHALLENGE PASS', '',
+    '## 9. CHALLENGE PASS', '',
     (sr ? 'Pre finalizacije važnog zaključka aktivno proveriti:' : 'Before finalizing an important conclusion, actively test:'),
     bullets(challenge), '',
     (sr ? 'Ne zadržavati nalaz samo zato što je delovao uverljivo u ranoj fazi analize.' : 'Do not keep a finding merely because it looked plausible early in the analysis.'), '',
-    '## ' + (sr ? '9. KALIBRISANA NEIZVESNOST' : '9. CALIBRATED UNCERTAINTY'), '',
+    '## ' + (sr ? '10. KALIBRISANA NEIZVESNOST' : '10. CALIBRATED UNCERTAINTY'), '',
     (sr ? 'Za materijalne zaključke po potrebi koristiti:' : 'For material conclusions, use where helpful:'),
     '- **VERIFIED**', '- **STRONGLY SUPPORTED**', '- **PLAUSIBLE**', '- **UNCERTAIN**', '- **CONTESTED**', '- **OUTDATED**', '- **NOT APPLICABLE**', '',
     (sr ? 'Ne pretvarati odsustvo dokaza u dokaz odsustva. Odvojiti nepoznato od negativnog.' : 'Do not convert absence of evidence into evidence of absence. Separate unknown from negative.'), '',
-    '## ' + (sr ? '10. DECISION-READY OUTPUT' : '10. DECISION-READY OUTPUT'), '',
+    '## ' + (sr ? '11. DECISION-READY OUTPUT' : '11. DECISION-READY OUTPUT'), '',
     'For important findings or recommendations, use the relevant subset of:', '',
     '```text',
     'Finding / decision:', 'Status / confidence:', 'Evidence:', 'Source / location:', 'Assumptions:', 'Alternative explanation:', 'Impact:', 'Priority / severity:', 'Recommended action:', 'Owner:', 'Dependency:', 'Verification:', 'Rollback / stop trigger:', 'Residual risk:',
     '```', '',
     (sr ? 'Prioritizovati nalaze umesto vraćanja neuređenog zida stavki.' : 'Prioritize findings instead of returning an unranked wall of items.'), '',
-    '## ' + (sr ? '11. ACCEPTANCE GATE' : '11. ACCEPTANCE GATE'), '',
+    '## ' + (sr ? '12. ACCEPTANCE GATE' : '12. ACCEPTANCE GATE'), '',
     (sr ? 'Zadatak nije završen dok:' : 'Do not call the task complete until:'),
     bullets(acceptance), '',
-    '## ' + (sr ? '12. AUTORITATIVNI POČETNI IZVORI' : '12. AUTHORITATIVE STARTING SOURCES'), '',
+    '## ' + (sr ? '13. AUTORITATIVNI POČETNI IZVORI' : '13. AUTHORITATIVE STARTING SOURCES'), '',
     (sr ? 'Koristiti samo izvore relevantne za konkretan zadatak i pre oslanjanja proveriti najnoviju važeću verziju, datum, jurisdikciju ili populaciju.' : 'Use only sources relevant to the task and verify the latest applicable version, date, jurisdiction or population before relying on them.'),
     sourceBullets(sourceProfile), '',
     (sr ? 'Širi registry i metodologija:' : 'Broader registry and methodology:'),

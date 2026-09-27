@@ -22,9 +22,10 @@ Every effective prompt is composed from these layers at generation/runtime:
 3. category-specific domain profile
 4. subcategory-specific best-practice profile
 5. prompt-execution best-practice layer
-6. task-shape execution model
-7. subcategory-specific authoritative source routing
-8. category-level authoritative source fallback
+6. prompt-specific execution focus derived from exact prompt identity and sibling scope
+7. task-shape execution model
+8. subcategory-specific authoritative source routing
+9. category-level authoritative source fallback
 
 Task-shape logic distinguishes audit/review, builder/design/plan, analysis/assessment, tracker/monitor, generative copy/script and red-team/stress-test workflows.
 
@@ -36,6 +37,7 @@ Every generated prompt now receives:
 - tool, privacy and sensitive-data rules
 - category and subcategory best practices
 - model-neutral prompt-execution guidance
+- prompt-specific scope, input, completion and sibling-handoff rules for every ID
 - adversarial challenge pass
 - calibrated uncertainty vocabulary
 - decision-ready findings schema
@@ -94,6 +96,7 @@ The production build must preserve:
 - effective version 2.0.0 in generated indexes and live prompt pages
 - v2 quality marker in every generated prompt body
 - prompt-execution best-practice layer
+- prompt-specific execution-focus layer
 - task-shape execution model
 - challenge pass
 - acceptance gate
