@@ -9,11 +9,15 @@ const profiles = JSON.parse(
 const subcategoryProfiles = JSON.parse(
   readFileSync(new URL('../v2-subcategory-profiles.json', import.meta.url), 'utf8'),
 );
+const sourceProfiles = JSON.parse(
+  readFileSync(new URL('../v2-source-profiles.json', import.meta.url), 'utf8'),
+);
 
 const QUALITY_STANDARD = 'https://github.com/zoxknez/ultimate-prompt-library/blob/main/docs/prompt-quality-standard-v2.md';
 const SOURCE_REGISTRY = 'https://github.com/zoxknez/ultimate-prompt-library/blob/main/docs/external-source-registry-v2.md';
 
 const bullets = (items) => items.map((item) => '- ' + item).join('\n');
+const sourceBullets = (items) => items.map((item) => '- [' + item.label + '](' + item.url + ')').join('\n');
 
 function taskShapeRules(data, lang) {
   const sr = lang === 'sr';
@@ -125,6 +129,7 @@ export function buildV2QualityLayer(data) {
   const profile = profiles[data.category_id]?.[lang] ?? profiles[data.category_id]?.en ?? [];
   const subProfile = subcategoryProfiles[data.subcategory_id]?.[lang] ?? subcategoryProfiles[data.subcategory_id]?.en ?? [];
   const taskProfile = taskShapeRules(data, lang);
+  const sourceProfile = sourceProfiles[data.category_id] ?? [];
 
   const preflight = sr ? [
     'Ponovite tačan cilj, scope, traženi artefakt i non-goals.',
@@ -248,7 +253,10 @@ export function buildV2QualityLayer(data) {
     '## ' + (sr ? '10. ACCEPTANCE GATE' : '10. ACCEPTANCE GATE'), '',
     (sr ? 'Zadatak nije završen dok:' : 'Do not call the task complete until:'),
     bullets(acceptance), '',
-    (sr ? 'Za eksterno istraživanje koristiti aktuelne, relevantne izvore iz registra kao početne tačke, uz proveru najnovije verzije.' : 'For external research, use the current relevant registry sources as starting points and verify the latest applicable version.'), '',
+    '## ' + (sr ? '11. AUTORITATIVNI POČETNI IZVORI' : '11. AUTHORITATIVE STARTING SOURCES'), '',
+    (sr ? 'Koristiti samo izvore relevantne za konkretan zadatak i pre oslanjanja proveriti najnoviju važeću verziju, datum, jurisdikciju ili populaciju.' : 'Use only sources relevant to the task and verify the latest applicable version, date, jurisdiction or population before relying on them.'),
+    sourceBullets(sourceProfile), '',
+    (sr ? 'Širi registry i metodologija:' : 'Broader registry and methodology:'),
     '- [UPL Prompt Quality Standard v2](' + QUALITY_STANDARD + ')',
     '- [UPL External Source Registry v2](' + SOURCE_REGISTRY + ')',
   ].join('\n');

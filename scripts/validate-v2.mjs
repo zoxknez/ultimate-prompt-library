@@ -12,7 +12,9 @@ if (repo.prompts.size !== 1000) fail('Expected exactly 1000 unique prompts, foun
 if (repo.files.length !== 2000) fail('Expected exactly 2000 localized prompt files, found ' + repo.files.length + '.');
 
 const subProfiles = JSON.parse(readFileSync(new URL('./v2-subcategory-profiles.json', import.meta.url), 'utf8'));
+const sourceProfiles = JSON.parse(readFileSync(new URL('./v2-source-profiles.json', import.meta.url), 'utf8'));
 if (Object.keys(subProfiles).length !== 100) fail('Expected exactly 100 subcategory v2 profiles.');
+if (Object.keys(sourceProfiles).length !== 10) fail('Expected exactly 10 authoritative source profiles.');
 
 for (const category of repo.catalog.categories) {
   if (category.prompts.length !== 100) fail(category.id + ': expected 100 prompts.');
@@ -36,6 +38,8 @@ for (const [id, prompt] of repo.prompts) {
     if (!file.body.includes(subHeading)) fail(file.path + ': missing subcategory best-practice profile.');
     if (!file.body.includes('CHALLENGE PASS')) fail(file.path + ': missing challenge pass.');
     if (!file.body.includes('ACCEPTANCE GATE')) fail(file.path + ': missing acceptance gate.');
+    const sourceHeading = lang === 'sr' ? 'AUTORITATIVNI POČETNI IZVORI' : 'AUTHORITATIVE STARTING SOURCES';
+    if (!file.body.includes(sourceHeading)) fail(file.path + ': missing authoritative source profile.');
   }
 }
 
@@ -46,4 +50,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log('validate-v2: 1000 prompts / 2000 localizations / 100 subcategory profiles / version ' + V2_VERSION + ' -> OK');
+console.log('validate-v2: 1000 prompts / 2000 localizations / 100 subcategory profiles / 10 source profiles / version ' + V2_VERSION + ' -> OK');
