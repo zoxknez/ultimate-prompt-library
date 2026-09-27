@@ -26,3 +26,6 @@ dist/
 .vercel/
 .env
 .env*.local
+
+# Local/live evaluation outputs (may contain model outputs and usage metadata)
+.eval-runs/

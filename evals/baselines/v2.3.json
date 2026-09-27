@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "promptQualityVersion": "2.3.0",
+  "description": "Golden live-eval baselines. Entries are added only from successful live runs via npm run baseline:accept with --accept-baseline.",
+  "updatedAt": null,
+  "entries": {}
+}

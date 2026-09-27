@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 
-export const V2_VERSION = '2.2.0';
+export const V2_VERSION = '2.3.0';
 export const V2_MARKER = '<!-- UPL:V2-QUALITY-LAYER -->';
 
 const profiles = JSON.parse(
@@ -718,6 +718,10 @@ export function buildV2QualityLayer(data) {
       ? 'Ovaj prompt ima zaseban v2.2 machine-readable eval suite sa nominal, boundary, missing-context, adversarial, provenance i regression fixture-ima. Fixture sadržaj držati van runtime prompta osim tokom evaluacije kako bi production prompt ostao lean.'
       : 'This prompt has a separate v2.2 machine-readable eval suite with nominal, boundary, missing-context, adversarial, provenance and regression fixtures. Keep fixture content outside the runtime prompt except during evaluation so the production prompt stays lean.'), '',
     (sr ? 'Fixture namespace: ' : 'Fixture namespace: ') + data.id + ':{nominal|boundary|missing-context|adversarial|provenance|regression}', '',
+    '## ' + (sr ? '17. EXECUTABLE EVAL I GOLDEN REGRESSION' : '17. EXECUTABLE EVAL & GOLDEN REGRESSION'), '',
+    (sr
+      ? 'v2.3 runner podržava dry-run planiranje bez API troška i eksplicitni live execution. Golden baseline se ne menja automatski: prihvata se samo iz uspešnog live run-a uz eksplicitnu operator potvrdu.'
+      : 'The v2.3 runner supports zero-cost dry-run planning and explicit live execution. Golden baselines never update automatically: they are accepted only from a successful live run with explicit operator confirmation.'), '',
     (sr ? 'Širi registry i metodologija:' : 'Broader registry and methodology:'),
     '- [UPL Prompt Quality Standard v2](' + QUALITY_STANDARD + ')',
     '- [UPL External Source Registry v2](' + SOURCE_REGISTRY + ')',

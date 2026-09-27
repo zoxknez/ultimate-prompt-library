@@ -1,4 +1,4 @@
-# UPL v2.2 Deep Quality Upgrade Report
+# UPL v2.3 Deep Quality Upgrade Report
 
 Review date: 2026-09-27
 
@@ -10,7 +10,7 @@ Review date: 2026-09-27
 - Subcategories with dedicated best-practice profiles: **100 / 100**
 - Subcategories with dedicated authoritative source routing: **100 / 100**
 - Category-level authoritative source profiles: **10 / 10**
-- Effective prompt version: **2.2.0**
+- Effective prompt version: **2.3.0**
 - Languages: **English + Serbian**
 
 ## V2 composition model
@@ -56,6 +56,12 @@ Every generated prompt now receives:
 - prompt-specific semantic anchors and adjacent-scope awareness inside eval generation
 - grader assertions that are validated structurally before a suite can pass
 - cross-domain semantic-contamination guard, including strict token-boundary matching for API/backend routing
+- executable eval runner with zero-cost dry-run default
+- explicit OpenAI Responses API adapter using native Node fetch, without adding runtime dependencies
+- separate candidate and assertion-based judge calls with response/model/latency/usage metadata
+- golden regression comparison with NO_BASELINE / PASS / REGRESSION / STALE_BASELINE states
+- immutable-by-default golden baseline workflow requiring explicit successful-live-run acceptance
+- local eval-output isolation through ignored .eval-runs/ artifacts
 - relevant authoritative starting sources
 
 ## Prompt-engineering methodology
@@ -112,7 +118,7 @@ The production build must preserve:
 - at least two independent authoritative source domains per subcategory
 - draft/proposed source-status validation with explicit notes
 - stable identity from `catalog.json`
-- effective version 2.2.0 in generated indexes and live prompt pages
+- effective version 2.3.0 in generated indexes and live prompt pages
 - v2 quality marker in every generated prompt body
 - prompt-execution best-practice layer
 - prompt-specific execution-focus layer

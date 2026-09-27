@@ -191,6 +191,10 @@ for (const [id, prompt] of repo.prompts) {
         break;
       }
     }
+    if (!file.body.includes('EXECUTABLE EVAL & GOLDEN REGRESSION') &&
+        !file.body.includes('EXECUTABLE EVAL I GOLDEN REGRESSION')) {
+      fail(file.path + ': missing executable-eval/golden-regression reference.');
+    }
 
     const sourceHeading = lang === 'sr'
       ? 'AUTORITATIVNI POČETNI IZVORI'

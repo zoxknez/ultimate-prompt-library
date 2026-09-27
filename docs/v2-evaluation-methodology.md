@@ -71,6 +71,29 @@ Inspect one localized suite with:
 
 `npm run evals:v2 -- --prompt=UPL-IT-031 --lang=en`
 
+## Executable runner and golden regression
+
+v2.3 adds an executable provider adapter and an explicit golden-baseline workflow.
+
+Safety and cost controls:
+- `npm run eval:run -- --prompt=UPL-IT-031 --lang=en` is dry-run by default and makes zero API calls.
+- Live execution requires `--live`, `OPENAI_API_KEY`, and an explicit model through `--model=...` or `UPL_EVAL_MODEL`.
+- The judge model is explicit through `--judge-model=...` or `UPL_EVAL_JUDGE_MODEL`; if omitted it uses the candidate model.
+- Live runs write to ignored `.eval-runs/` files so model outputs, usage metadata and traces are not accidentally committed.
+- Every live fixture executes one candidate call and one narrow assertion-based grader call per trial.
+- Candidate and judge calls record response ID, resolved model, latency and provider usage metadata for reproducibility.
+- The runner compares each live result with any existing golden entry and distinguishes `NO_BASELINE`, `PASS`, `REGRESSION` and `STALE_BASELINE`.
+- A changed fixture hash makes the old golden entry stale rather than silently comparing incomparable tasks.
+- A previously passing assertion becoming false is a regression even if other assertions still pass.
+
+Golden-baseline acceptance is intentionally separate from execution:
+
+`npm run baseline:accept -- --run=.eval-runs/<run>.json --accept-baseline`
+
+The command rejects dry runs, failed fixtures and unparsable judge results. There is no automatic baseline rewrite. This prevents a bad model run, changed fixture or transient provider behavior from silently becoming the new gold standard.
+
+The initial committed baseline manifest is intentionally empty. Golden behavior must come from an explicitly reviewed successful live run, not from synthetic or invented results.
+
 ## Evaluation dimensions
 
 Evaluate separately. Do not hide a critical failure behind one aggregate score.
