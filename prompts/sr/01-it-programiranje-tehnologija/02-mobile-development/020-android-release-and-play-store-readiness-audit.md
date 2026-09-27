@@ -487,6 +487,11 @@ proveri da R8 ne ukloni/preimenuje target.
 
 Ako business logic zavisi od runtime class name-a, obfuscation može promeniti ponašanje.
 
+```kotlin
+javaClass.name
+javaClass.simpleName
+```
+
 ---
 
 # 29. SERIALIZATION
@@ -701,6 +706,12 @@ Proveri finalne vrednosti:
 
 Release mora imati očekivano production ponašanje.
 
+Finalni production manifest treba da potvrdi:
+
+```xml
+android:debuggable="false"
+```
+
 Ako finalni manifest kaže debuggable=true bez razloga:
 
 P1/P0 zavisno od threat modela.
@@ -834,6 +845,12 @@ NOT VERIFIED
 # 63. TRANSITIVE PERMISSIONS
 
 Dependency može dodati permission koji app direktno nije deklarisao.
+
+Ako je permission nepotreban, uklanjanje kroz manifest merge pravilo može izgledati ovako:
+
+```xml
+<uses-permission android:name="..." tools:node="remove" />
+```
 
 Merged manifest je source of truth.
 
@@ -976,6 +993,12 @@ Proveri:
 
 Flavor/build može promeniti application ID.
 
+Koristi application ID placeholder kada je to odgovarajuće:
+
+```xml
+android:authorities="${applicationId}.fileprovider"
+```
+
 Hardcoded authority može napraviti install/runtime problem.
 
 ---
@@ -1027,6 +1050,12 @@ Prati call site.
 # 85. CORE LIBRARY DESUGARING
 
 Utvrdi da li moderni Java API zahteva/koristi desugaring prema minSdk-u.
+
+Kada je potrebno, Gradle konfiguracija uključuje:
+
+```groovy
+coreLibraryDesugaringEnabled true
+```
 
 ---
 
@@ -1280,6 +1309,16 @@ Prijavi ako:
 - ostaje u release
 - sadrži sensitive data
 - pravi performance/noise problem
+
+Primer R8 pristupa za uklanjanje debug log poziva:
+
+```text
+-assumenosideeffects class android.util.Log {
+    public static boolean isLoggable(java.lang.String, int);
+    public static int v(...);
+    public static int d(...);
+}
+```
 
 ---
 
@@ -1833,7 +1872,11 @@ manifest features mogu filtrirati kompatibilne uređaje.
 
 `uses-feature required=true` može isključiti veliki broj uređaja.
 
-Proveri da li je feature stvarno mandatory.
+```xml
+<uses-feature android:name="android.hardware.camera" android:required="true" />
+```
+
+Proveri da li je feature stvarno mandatory. Ako je optional, eksplicitno proveri da li treba `android:required="false"`.
 
 ---
 
@@ -2206,7 +2249,12 @@ Ne mora svaki projekat imati sve.
 
 Traži:
 
-- `continue-on-error`
+```yaml
+continue-on-error: true
+```
+
+kao i:
+
 - `|| true`
 - ignored Gradle failure
 - disabled tests

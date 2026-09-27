@@ -1242,13 +1242,7 @@ Proceni cognitive cost.
 
 Ako developer mora da zna interne detalje abstraction-a da bi ga koristio, granica nije jaka.
 
-Primer:
-
-```text
-API abstraction postoji
-```
-
-ali caller mora da zna raw backend response kodove.
+Primer: `API abstraction` postoji, ali caller mora da zna raw backend response kodove.
 
 ---
 
@@ -1279,13 +1273,7 @@ Postavi pitanje:
 
 > Ako promenim jedno poslovno pravilo, koliko fajlova moram da menjam?
 
-Na primer promena:
-
-```text
-status label
-```
-
-ne bi trebalo da zahteva deset ručnih izmena ako postoji jedno domain značenje.
+Na primer, promena `status label` ne bi trebalo da zahteva deset ručnih izmena ako postoji jedno domain značenje.
 
 ---
 
@@ -1310,13 +1298,7 @@ Suprotan problem:
 
 jedan fajl mora često da se menja zbog mnogo nepovezanih feature-a.
 
-Primer:
-
-```text
-utils.ts
-```
-
-menja se za auth, checkout, reports i notifications.
+Primer: `utils.ts` menja se za auth, checkout, reports i notifications.
 
 ---
 
@@ -1334,13 +1316,7 @@ Dokumentuj ih.
 
 Isto važi za hook.
 
-Primer:
-
-```text
-useDashboard()
-```
-
-koji:
+Primer: `useDashboard()` koji:
 
 - fetchuje pet resursa
 - upravlja permissions
@@ -1422,13 +1398,7 @@ Uporedi:
 
 sa stvarnim dependency flow-om.
 
-Ako dokumentacija kaže:
-
-```text
-components are purely presentational
-```
-
-a komponente direktno pozivaju API, prijavi drift.
+Ako dokumentacija kaže `components are purely presentational`, a komponente direktno pozivaju API, prijavi drift.
 
 ---
 
@@ -1438,13 +1408,7 @@ Ne prijavljuj subjektivna imena.
 
 Prijavi samo misleading naming koji povećava rizik greške.
 
-Primer:
-
-```ts
-getUser()
-```
-
-koji zapravo:
+Primer: `getUser()` koji zapravo:
 
 - fetchuje user
 - upisuje store
@@ -1556,19 +1520,7 @@ Pronađi:
 
 koji koegzistiraju.
 
-Na primer:
-
-```text
-Axios + Redux
-```
-
-za stare feature-e i:
-
-```text
-fetch + TanStack Query
-```
-
-za nove.
+Na primer, `Axios + Redux` za stare feature-e i `fetch + TanStack Query` za nove.
 
 To nije automatski bug.
 
@@ -1594,17 +1546,7 @@ Ne briši samo zato što je staro.
 
 Ako projekat migrira tehnologiju, proveri da li postoji jasna strategija.
 
-Primer:
-
-```text
-old store
-↓
-adapter
-↓
-new query layer
-```
-
-je često bolji od nasumične mešavine oba sistema.
+Primer: `old store -> adapter -> new query layer` je često bolji od nasumične mešavine oba sistema.
 
 ---
 
@@ -1639,20 +1581,7 @@ Server mora biti authority.
 
 Proveri da UI dobija više podataka nego što mu treba.
 
-Primer API vrati:
-
-```text
-full user record
-```
-
-dok komponenta koristi samo:
-
-```text
-name
-avatar
-```
-
-Proceni privacy/security i coupling rizik.
+Primer: API vrati `full user record`, dok komponenta koristi samo `name` i `avatar`. Proceni privacy/security i coupling rizik.
 
 ---
 

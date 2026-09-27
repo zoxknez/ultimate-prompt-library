@@ -1902,6 +1902,14 @@ Java/Kotlin `assert` statements are disabled by default in Android runtime and m
 
 Inspect all `if (BuildConfig.DEBUG)` code blocks.
 
+For example:
+
+```text
+if (BuildConfig.DEBUG) {
+    validation/security
+}
+```
+
 Search for essential validation or security logic accidentally bypassed in release.
 
 ---
@@ -1909,6 +1917,12 @@ Search for essential validation or security logic accidentally bypassed in relea
 # 192. UNTESTED `if (!BuildConfig.DEBUG)` PATHS
 
 Code paths that execute exclusively in release builds are frequently untested in everyday development.
+
+```text
+if (!BuildConfig.DEBUG) {
+    ...
+}
+```
 
 ---
 
@@ -1945,6 +1959,12 @@ Ensure critical release flows handle HTTP 429 gracefully.
 # 197. CRASH-ON-LAUNCH SMOKE TESTING
 
 Execute a clean install and launch on a real device with no attached debugger.
+
+```text
+clean install
+↓
+launch release
+```
 
 Catch immediate initialization crashes (`NullPointerException`, `ClassNotFoundException`).
 
@@ -2853,6 +2873,14 @@ Verify against current, active Google Play policies.
 
 Analyze or test against production-like environments:
 
+```text
+real production host
+real TLS
+release auth client
+release certificate identity
+```
+
+Verify:
 - Production domain hostnames
 - Public SSL/TLS certificates
 - Production OAuth client configurations
@@ -2946,6 +2974,12 @@ Ensure stale auth tokens or obsolete device IDs do not corrupt initial onboardin
 # 269. SECOND PASS - PERMISSION DENIAL RECOVERY
 
 For every optional runtime permission:
+
+```text
+deny
+↓
+deny again / don't ask again
+```
 
 Simulate denial and permanent denial ("Don't ask again").
 
