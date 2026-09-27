@@ -14,6 +14,7 @@ The unit under test is the **effective prompt**:
 5. prompt-specific execution focus
 6. composable task-shape model
 7. task-specific eval contract
+8. high-impact human-review readiness
 9. challenge and uncertainty controls
 10. source-routing layer
 11. acceptance gate
@@ -41,6 +42,7 @@ For each prompt, maintain or generate the relevant subset of:
 - sibling-scope bleed case
 - structured-output/schema case where downstream automation is involved
 - high-stakes escalation case for law, health, security or other consequential workflows
+- human-review traceability case for consequential recommendations, ensuring the reviewer can reach the underlying evidence and assumptions
 
 ## Evaluation dimensions
 
@@ -60,6 +62,7 @@ Evaluate separately. Do not hide a critical failure behind one aggregate score.
 | Actionability | Output contains usable next actions, owners/dependencies where relevant |
 | Format correctness | Required structure/schema is valid and directly usable |
 | Verification | High-impact output includes a method to confirm success |
+| Human review readiness | Consequential recommendations expose evidence, assumptions and escalation context to a qualified reviewer |
 | Rollback/recovery | Irreversible or risky changes include backout logic where relevant |
 
 ## Release protocol

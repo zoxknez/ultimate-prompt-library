@@ -40,6 +40,13 @@ function validateSources(where, items) {
       urls.add(item.url);
     }
     if (item.note != null && typeof item.note !== 'string') fail(where + ': source note must be a string.');
+    const statusHaystack = String(item.label ?? '') + ' ' + String(item.url ?? '');
+    if (/(\bdraft\b|initial-public-draft|\/ipd\b|public-comment|consultation|proposed)/i.test(statusHaystack)) {
+      const note = String(item.note ?? '');
+      if (!/(draft|proposed|consult|interim|not final|future-facing)/i.test(note)) {
+        fail(where + ': draft/proposed source must carry an explicit status note: ' + (item.label || item.url));
+      }
+    }
   }
 }
 

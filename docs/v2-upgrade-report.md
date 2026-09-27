@@ -47,6 +47,7 @@ Every generated prompt now receives:
 - calibrated uncertainty vocabulary
 - decision-ready findings schema
 - acceptance, verification and rollback gate
+- high-impact human-review gate with source/evidence traceability
 - relevant authoritative starting sources
 
 ## Prompt-engineering methodology
@@ -101,6 +102,7 @@ The production build must preserve:
 - HTTPS source URLs
 - at least four effective authoritative sources per subcategory after deduplication
 - at least two independent authoritative source domains per subcategory
+- draft/proposed source-status validation with explicit notes
 - stable identity from `catalog.json`
 - effective version 2.0.0 in generated indexes and live prompt pages
 - v2 quality marker in every generated prompt body
