@@ -112,8 +112,8 @@
   "UPL-SCI": [
     {
       "label": "CONSORT 2025",
-      "url": "https://www.equator-network.org/reporting-guidelines/consort/",
-      "note": "Current core reporting guideline for randomized trials."
+      "url": "https://www.consort-spirit.org/",
+      "note": "Current CONSORT 2025 reporting guideline site for randomized trials; use EQUATOR to locate extensions and adjacent reporting guidelines."
     },
     {
       "label": "PRISMA 2020",
@@ -168,6 +168,11 @@
       "label": "IAB Campaign Data Standards 1.0 Final",
       "url": "https://www.iab.com/guidelines/campaign-data-standards/",
       "note": "Finalized 2026-08-10."
+    },
+    {
+      "label": "FTC Consumer Reviews and Testimonials Rule - 16 CFR Part 465",
+      "url": "https://www.ftc.gov/legal-library/browse/rules/rulemaking-use-consumer-reviews-testimonials",
+      "note": "Final rule effective 2024-10-21; covers deceptive/fake reviews, testimonials and related practices."
     }
   ],
   "UPL-PROD": [

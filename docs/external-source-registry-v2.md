@@ -97,3 +97,10 @@ At execution time:
 - EBU R 128
   - https://tech.ebu.ch/publications/r128
   - Programme loudness normalisation guidance; platform-specific delivery targets still require verification.
+
+
+### Marketing review/testimonial regulation
+
+- FTC Consumer Reviews and Testimonials Rule - 16 CFR Part 465
+  - https://www.ftc.gov/legal-library/browse/rules/rulemaking-use-consumer-reviews-testimonials
+  - Final rule effective 2024-10-21; covers fake or false reviews/testimonials, certain incentivized reviews, insider reviews, review suppression and fake social indicators.

@@ -783,6 +783,11 @@
     {
       "label": "FTC Endorsements, Influencers and Reviews",
       "url": "https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews"
+    },
+    {
+      "label": "FTC Consumer Reviews and Testimonials Rule - 16 CFR Part 465",
+      "url": "https://www.ftc.gov/legal-library/browse/rules/rulemaking-use-consumer-reviews-testimonials",
+      "note": "Final rule effective 2024-10-21; covers deceptive/fake reviews, testimonials and related practices."
     }
   ],
   "content-marketing-editorial": [
@@ -793,6 +798,11 @@
     {
       "label": "FTC Advertising and Marketing Guidance",
       "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+    },
+    {
+      "label": "FTC Consumer Reviews and Testimonials Rule - 16 CFR Part 465",
+      "url": "https://www.ftc.gov/legal-library/browse/rules/rulemaking-use-consumer-reviews-testimonials",
+      "note": "Final rule effective 2024-10-21; covers deceptive/fake reviews, testimonials and related practices."
     }
   ],
   "seo-organic-discovery": [
@@ -843,6 +853,11 @@
     {
       "label": "European Data Protection Board",
       "url": "https://www.edpb.europa.eu/"
+    },
+    {
+      "label": "FTC Consumer Reviews and Testimonials Rule - 16 CFR Part 465",
+      "url": "https://www.ftc.gov/legal-library/browse/rules/rulemaking-use-consumer-reviews-testimonials",
+      "note": "Final rule effective 2024-10-21; covers deceptive/fake reviews, testimonials and related practices."
     }
   ],
   "pr-corporate-crisis-communication": [
@@ -863,6 +878,11 @@
     {
       "label": "Google Analytics documentation",
       "url": "https://developers.google.com/analytics"
+    },
+    {
+      "label": "FTC Consumer Reviews and Testimonials Rule - 16 CFR Part 465",
+      "url": "https://www.ftc.gov/legal-library/browse/rules/rulemaking-use-consumer-reviews-testimonials",
+      "note": "Final rule effective 2024-10-21; covers deceptive/fake reviews, testimonials and related practices."
     }
   ],
   "personal-productivity-prioritization": [
