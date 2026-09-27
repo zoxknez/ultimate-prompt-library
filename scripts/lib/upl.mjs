@@ -10,6 +10,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSy
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseDocument } from 'yaml';
+import { enhancePrompt } from './v2-quality.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const PROMPTS_DIR = 'prompts';
@@ -397,7 +398,18 @@ function validatePromptFile({ fileRel, lang, cat, sub, name, planned, report }) 
   checkContentHygiene(fileRel, text, fail, report);
 
   if (!ok) return null;
-  return { path: fileRel, lang, category: cat, subcategory: sub, data, body, bodyHash: sha256(body) };
+  const enhanced = enhancePrompt({ data, body });
+  return {
+    path: fileRel,
+    lang,
+    category: cat,
+    subcategory: sub,
+    data: enhanced.data,
+    body: enhanced.body,
+    bodyHash: sha256(enhanced.body),
+    sourceData: data,
+    sourceBody: body,
+  };
 }
 
 // Artifacts that never belong in a published prompt. Each rule comes from a real defect found in

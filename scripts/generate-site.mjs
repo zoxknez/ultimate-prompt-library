@@ -2,6 +2,7 @@
 import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import YAML from 'yaml';
+import { enhancePrompt } from './lib/v2-quality.mjs';
 
 const ROOT = process.cwd();
 const OUT = path.join(ROOT, 'dist');
@@ -80,8 +81,12 @@ const absUrl = (url) => `${SITE_URL}${url}`;
 function parsePromptFile(filePath) {
   const source = readFileSync(path.join(ROOT, filePath), 'utf8');
   const match = source.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
-  if (!match) return { frontmatter: {}, body: source.trim() };
-  return { frontmatter: YAML.parse(match[1]) || {}, body: match[2].trim() };
+  if (!match) {
+    const enhanced = enhancePrompt({ data: {}, body: source.trim() });
+    return { frontmatter: enhanced.data, body: enhanced.body };
+  }
+  const enhanced = enhancePrompt({ data: YAML.parse(match[1]) || {}, body: match[2].trim() });
+  return { frontmatter: enhanced.data, body: enhanced.body };
 }
 
 function inlineMarkdown(input) {
