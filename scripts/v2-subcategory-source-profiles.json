@@ -203,8 +203,9 @@
   ],
   "operations-supply-chain-procurement": [
     {
-      "label": "ISO 9001:2026 - Quality Management Systems",
-      "url": "https://www.iso.org/standard/9001"
+      "label": "ISO 9001:2026 - Quality management systems - Requirements",
+      "url": "https://www.iso.org/standard/9001",
+      "note": "Current edition published 2026-09-16; replaces ISO 9001:2015."
     },
     {
       "label": "OECD Responsible Business Conduct Due Diligence",
@@ -888,8 +889,9 @@
   ],
   "workflow-process-automation": [
     {
-      "label": "ISO 9001:2026 - Quality Management Systems",
-      "url": "https://www.iso.org/standard/9001"
+      "label": "ISO 9001:2026 - Quality management systems - Requirements",
+      "url": "https://www.iso.org/standard/9001",
+      "note": "Current edition published 2026-09-16; replaces ISO 9001:2015."
     },
     {
       "label": "ISO Quality Management Principles",
@@ -923,8 +925,9 @@
   ],
   "management-operating-systems": [
     {
-      "label": "ISO 9001:2026 - Quality Management Systems",
-      "url": "https://www.iso.org/standard/9001"
+      "label": "ISO 9001:2026 - Quality management systems - Requirements",
+      "url": "https://www.iso.org/standard/9001",
+      "note": "Current edition published 2026-09-16; replaces ISO 9001:2015."
     },
     {
       "label": "ISO Quality Management Principles",
@@ -933,8 +936,9 @@
   ],
   "productivity-audits-improvement": [
     {
-      "label": "ISO 9001:2026 - Quality Management Systems",
-      "url": "https://www.iso.org/standard/9001"
+      "label": "ISO 9001:2026 - Quality management systems - Requirements",
+      "url": "https://www.iso.org/standard/9001",
+      "note": "Current edition published 2026-09-16; replaces ISO 9001:2015."
     },
     {
       "label": "ISO Quality Management Principles",
