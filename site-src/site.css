@@ -1906,3 +1906,29 @@ html.category-drawer-open,body.category-drawer-open{overflow:hidden}
     justify-content:flex-start;
   }
 }
+
+
+/* Category sidebar containment fix - content must never escape the card */
+@media(min-width:961px){
+  .category-sidebar{
+    max-height:none !important;
+    height:auto;
+    overflow:visible !important;
+  }
+
+  .category-sidebar .category-navigation{
+    overflow:visible;
+    padding-bottom:2px;
+  }
+
+  .category-sidebar .category-link{
+    min-height:62px;
+  }
+}
+
+@media(min-width:961px) and (max-height:820px){
+  .category-sidebar{
+    position:relative;
+    top:auto;
+  }
+}
