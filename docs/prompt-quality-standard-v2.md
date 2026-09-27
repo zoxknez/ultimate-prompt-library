@@ -237,3 +237,25 @@ For application-integrated prompts:
 - use staged rollout/rollback for high-impact prompt changes
 
 This protocol follows the same engineering principle reflected in current OpenAI guidance: production prompts should be code-managed, reviewed, tested and covered by evaluation cases.
+
+
+## Prompt evaluation contract
+
+Every reusable or production prompt should be evaluated as a versioned artifact, not accepted by inspection alone.
+
+At minimum, test:
+- a representative case
+- a boundary or unusual case
+- a missing-context case
+- an adversarial or untrusted-input case
+- a regression case after changing the prompt, model/provider, tool interface or source schema
+
+Score the result against:
+- goal completion
+- factuality and evidence traceability
+- constraint compliance
+- required format/schema
+- safety, privacy and trust-boundary handling
+- verification readiness
+
+For long-context prompts, isolate supplied context with consistent delimiters and restate the exact task/output contract immediately before execution. When examples genuinely improve correctness, prefer a small, diverse set that includes an edge case. Keep mandatory requirements model-agnostic and treat provider-specific optimizations as re-testable adaptations.

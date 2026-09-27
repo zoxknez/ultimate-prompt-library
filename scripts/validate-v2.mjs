@@ -105,8 +105,15 @@ for (const [id, prompt] of repo.prompts) {
       fail(file.path + ': missing prompt-specific execution focus.');
     }
     if (!file.body.includes('TASK-SHAPE EXECUTION MODEL')) fail(file.path + ': missing task-shape execution model.');
+    if (!file.body.includes('EVAL CONTRACT') && !file.body.includes('EVAL UGOVOR')) fail(file.path + ': missing eval contract.');
     if (!file.body.includes('CHALLENGE PASS')) fail(file.path + ': missing challenge pass.');
     if (!file.body.includes('ACCEPTANCE GATE')) fail(file.path + ': missing acceptance gate.');
+    if (!file.body.includes('Regression case:') && !file.body.includes('Regression slučaj:')) {
+      fail(file.path + ': missing regression eval rule.');
+    }
+    if (!file.body.includes('Adversarial/untrusted case:') && !file.body.includes('Adversarial/untrusted slučaj:')) {
+      fail(file.path + ': missing adversarial eval rule.');
+    }
 
     const sourceHeading = lang === 'sr'
       ? 'AUTORITATIVNI POČETNI IZVORI'
