@@ -142,6 +142,20 @@ for (const [id, prompt] of repo.prompts) {
 
     const sourceLinks = file.body.match(/https:\/\//g)?.length ?? 0;
     if (sourceLinks < 2) fail(file.path + ': expected at least two HTTPS source/methodology links.');
+
+    const v2Layer = file.body.split(V2_MARKER)[1] ?? '';
+    const normalizedLongBullets = v2Layer
+      .split('\n')
+      .filter((line) => /^-\s+/.test(line) && line.trim().length >= 100)
+      .map((line) => line.toLowerCase().replace(/\s+/g, ' ').trim());
+    const seenLongBullets = new Set();
+    for (const bullet of normalizedLongBullets) {
+      if (seenLongBullets.has(bullet)) {
+        fail(file.path + ': duplicate long instruction detected inside v2 layer: ' + bullet.slice(0, 120));
+        break;
+      }
+      seenLongBullets.add(bullet);
+    }
   }
 }
 

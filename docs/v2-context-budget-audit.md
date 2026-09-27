@@ -49,3 +49,18 @@ The prompt-execution layer now also requires:
 - model-agnostic mandatory rules, with provider-specific optimizations treated as re-testable adaptations
 - no request for private chain-of-thought disclosure; verification uses concise rationale, evidence, tests and acceptance results
 - explicit regression evals when prompt/model/provider/tool/source schemas change
+
+
+## External anti-bloat confirmation
+
+OpenAI current model guidance recommends revisiting legacy prompt stacks as models improve: state instructions once, expose only relevant tools, keep examples when they encode a real requirement or fix an observed eval gap, and remove instruction groups incrementally while re-running the same evals.
+
+UPL applies that principle by:
+- keeping shared policy in one central v2 composition layer rather than copying it into 2,000 localized Markdown files
+- separating task-specific base content from shared quality controls
+- using task-shape and subject-specific rules conditionally rather than attaching every domain rule to every prompt
+- validating that long instruction bullets are not duplicated inside the generated v2 layer
+- preserving context-budget and applicability-ledger rules for large checklist prompts
+
+Reference:
+- https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.6
