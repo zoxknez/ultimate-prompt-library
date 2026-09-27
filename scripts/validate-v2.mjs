@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { readFileSync } from 'node:fs';
 import { loadValidRepository } from './lib/upl.mjs';
-import { V2_MARKER, V2_VERSION, taskShapeRules } from './lib/v2-quality.mjs';
+import { V2_MARKER, V2_VERSION, semanticDetailRules, taskShapeRules } from './lib/v2-quality.mjs';
 
 const repo = loadValidRepository();
 const errors = [];
@@ -73,6 +73,8 @@ for (const category of repo.catalog.categories) {
 
   for (const prompt of category.prompts) {
     const taskRules = taskShapeRules({ ...prompt, title: prompt.title?.en ?? '' }, 'en');
+    const semanticRules = semanticDetailRules({ ...prompt, title: prompt.title?.en ?? '' }, 'en');
+    if (semanticRules.length < 2) fail(prompt.id + ': expected at least two subject-specific semantic rules.');
     if (taskRules[0] === 'Define objective, inputs, constraints and success criteria before the main work.') {
       fail(prompt.id + ': generic task-shape fallback is not allowed.');
     }
@@ -121,6 +123,7 @@ for (const [id, prompt] of repo.prompts) {
     if (!file.body.includes('PROMPT-SPECIFIC EXECUTION FOCUS')) {
       fail(file.path + ': missing prompt-specific execution focus.');
     }
+    if (!file.body.includes('SUBJECT-SPECIFIC SEMANTIC DETAIL')) fail(file.path + ': missing subject-specific semantic detail.');
     if (!file.body.includes('TASK-SHAPE EXECUTION MODEL')) fail(file.path + ': missing task-shape execution model.');
     if (!file.body.includes('EVAL CONTRACT') && !file.body.includes('EVAL UGOVOR')) fail(file.path + ': missing eval contract.');
     if (!file.body.includes('CHALLENGE PASS')) fail(file.path + ': missing challenge pass.');

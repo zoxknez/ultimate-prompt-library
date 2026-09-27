@@ -14,9 +14,9 @@ The unit under test is the **effective prompt**:
 5. prompt-specific execution focus
 6. composable task-shape model
 7. task-specific eval contract
-8. challenge and uncertainty controls
-9. source-routing layer
-10. acceptance gate
+9. challenge and uncertainty controls
+10. source-routing layer
+11. acceptance gate
 
 ## Per-prompt eval contract
 

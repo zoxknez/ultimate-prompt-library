@@ -23,11 +23,12 @@ Every effective prompt is composed from these layers at generation/runtime:
 4. subcategory-specific best-practice profile
 5. prompt-execution best-practice layer
 6. prompt-specific execution focus derived from exact prompt identity and sibling scope
-7. task-shape execution model
-8. explicit eval contract covering representative, boundary, missing-context, adversarial and regression cases
-9. adversarial challenge and calibrated uncertainty controls
-10. subcategory-specific authoritative source routing
-11. category-level authoritative source fallback
+7. subject-specific semantic detail with domain mechanism checks
+8. task-shape execution model
+9. explicit eval contract covering representative, boundary, missing-context, adversarial and regression cases
+10. adversarial challenge and calibrated uncertainty controls
+11. subcategory-specific authoritative source routing
+12. category-level authoritative source fallback
 
 Task-shape logic distinguishes audit/review, builder/design/plan, analysis/assessment, tracker/monitor, generative copy/script and red-team/stress-test workflows.
 

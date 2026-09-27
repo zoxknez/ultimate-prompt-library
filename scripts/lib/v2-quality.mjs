@@ -205,6 +205,220 @@ export function taskShapeRules(data, lang) {
   ];
 }
 
+
+export function semanticDetailRules(data, lang) {
+  const sr = lang === 'sr';
+  const haystack = ((data.slug || '') + ' ' + (data.title || '')).toLowerCase();
+  const title = data.title || data.id || 'this task';
+  const generic = new Set([
+    'audit','builder','framework','plan','review','analysis','analyzer','system','strategy','map','mapper',
+    'check','assessment','design','quality','integrity','red','team','workflow','program','guide','brief',
+    'matrix','model','monitor','tracker','readiness','evaluation','diagnostic','structure','process'
+  ]);
+  const subjectWords = title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').split(/\s+/).filter((w) => w && !generic.has(w));
+  const subject = subjectWords.length ? subjectWords.join(' ') : title;
+
+  const rules = sr ? [
+    'Operacionalizujte tačan predmet "' + subject + '": obavezni inputi, odluke/outputi, failure modes i acceptance kriterijumi moraju biti specifični za taj predmet, ne samo za širu podkategoriju.',
+    'Ako generički best practice ne menja odluku za "' + subject + '", nemojte ga širiti u output; fokus zadržite na dokazima i mehanizmima koji su specifični za ovaj prompt.',
+  ] : [
+    'Operationalize the exact subject "' + subject + '": required inputs, decisions/outputs, failure modes and acceptance criteria must be specific to that subject, not only the broader subcategory.',
+    'If a generic best practice does not change the decision for "' + subject + '", do not expand it in the output; keep focus on evidence and mechanisms specific to this prompt.',
+  ];
+
+  const add = (re, en, srRules) => {
+    if (re.test(haystack)) rules.push(...(sr ? srRules : en));
+  };
+
+  add(/meta-analysis|heterogeneity|publication-bias|small-study/,
+    ['Predefine effect measure/estimand, pooling rationale and heterogeneity handling; inspect influential studies and small-study/publication-bias signals before interpreting a pooled estimate.',
+     'Do not pool merely because studies report a similar outcome; check population, intervention/exposure, design and measurement compatibility.'],
+    ['Predefinišite effect measure/estimand, opravdanost poolinga i obradu heterogenosti; proverite influential studies i small-study/publication-bias signale pre tumačenja pooled procene.',
+     'Ne radite pooling samo zato što studije prijavljuju sličan outcome; proverite kompatibilnost populacije, intervencije/ekspozicije, dizajna i merenja.']);
+
+  add(/causal|dag|difference-in-differences|instrumental-variable|regression-discontinuity|mediation/,
+    ['State the causal estimand and identification assumptions before modeling; distinguish confounders, mediators, colliders and selection mechanisms.',
+     'Test design-specific falsification/sensitivity conditions such as pre-trends, exclusion restriction, continuity/manipulation or unmeasured-confounding sensitivity as applicable.'],
+    ['Navedite causal estimand i identification pretpostavke pre modelovanja; razlikujte confounders, mediators, colliders i selection mehanizme.',
+     'Testirajte design-specific falsification/sensitivity uslove kao što su pre-trends, exclusion restriction, continuity/manipulation ili sensitivity na unmeasured confounding gde je primenljivo.']);
+
+  add(/regression|confidence-interval|hypothesis-testing|multiple-testing|missing-data|sensitivity-analysis|statistical/,
+    ['Define estimand, data-generating assumptions and uncertainty before choosing a test/model; report effect size and interval information rather than threshold significance alone.',
+     'Check missingness, multiplicity, diagnostics and sensitivity to consequential modeling choices.'],
+    ['Definišite estimand, data-generating pretpostavke i neizvesnost pre izbora testa/modela; prikažite effect size i intervale umesto samo threshold značajnosti.',
+     'Proverite missingness, multiplicity, diagnostics i sensitivity na važne modelarske odluke.']);
+
+  add(/medication|drug|pharmac|interaction|dose|treatment-safety|prescrib/,
+    ['Verify indication, formulation/route, dose context, renal/hepatic function, pregnancy/lactation, allergies, interactions, monitoring and relevant special populations before treatment-safety conclusions.',
+     'Do not advise unilateral prescription starts, stops, tapering or dose changes; separate education from individualized prescribing.'],
+    ['Proverite indikaciju, formulaciju/put primene, kontekst doze, renalnu/hepatičku funkciju, trudnoću/dojenje, alergije, interakcije, monitoring i relevantne posebne populacije pre zaključka o bezbednosti terapije.',
+     'Ne savetujte samostalno uvođenje, prekid, taper ili promenu doze propisane terapije; odvojite edukaciju od individualnog propisivanja.']);
+
+  add(/diagnostic|lab|medical-test|screening|screen/,
+    ['Separate screening from diagnosis and reference intervals from clinical decision thresholds; incorporate pre-test probability, test characteristics and consequences of false positives/negatives.',
+     'Check specimen/timing/method and population applicability before interpreting an isolated result.'],
+    ['Odvojite screening od dijagnoze i referentne intervale od kliničkih decision threshold-a; uključite pre-test probability, karakteristike testa i posledice false positive/negative rezultata.',
+     'Proverite specimen/timing/metod i primenljivost na populaciju pre tumačenja izolovanog rezultata.']);
+
+  add(/symptom|triage|red-flag|care-navigation/,
+    ['Check emergency/red-flag features, onset, severity, trajectory, vulnerability and immediate safety before routine self-care or navigation advice.',
+     'Use safety-netting with explicit escalation triggers and timeframe; uncertainty must not delay urgent evaluation.'],
+    ['Proverite emergency/red-flag karakteristike, početak, težinu, tok, ranjivost i neposrednu bezbednost pre rutinskog self-care ili navigation saveta.',
+     'Koristite safety-netting sa eksplicitnim escalation triggerima i vremenskim okvirom; neizvesnost ne sme odložiti hitnu procenu.']);
+
+  add(/contract|clause|liability|indemnity|termination|force-majeure|hardship/,
+    ['Trace defined terms, obligations, triggers, exceptions, remedies, survival and cross-references under the actual governing law and contract hierarchy.',
+     'Test both ordinary performance and breach/termination scenarios; flag ambiguity that changes allocation of risk or enforceability.'],
+    ['Pratite definisane termine, obaveze, triggere, izuzetke, remedies, survival i cross-reference prema stvarnom governing law-u i hijerarhiji ugovora.',
+     'Testirajte normalno izvršenje i breach/termination scenarije; označite nejasnoću koja menja raspodelu rizika ili enforceability.']);
+
+  add(/privacy|data-protection|lawful-basis|consent|data-transfer|breach/,
+    ['Map data categories, purposes, actors/roles, lawful basis, recipients, transfers, retention and rights before concluding compliance.',
+     'Verify actual data flows and controls, not only policy language; distinguish controller, processor and joint-controller obligations where relevant.'],
+    ['Mapirajte kategorije podataka, svrhe, aktere/uloge, lawful basis, primaoce, transfere, retention i prava pre zaključka o usklađenosti.',
+     'Proverite stvarne data flows i kontrole, ne samo tekst politike; razlikujte controller, processor i joint-controller obaveze gde je relevantno.']);
+
+  add(/salary|compensation|offer|negotiation|benefits|equity-compensation/,
+    ['Normalize geography, level, role scope, cash, bonus, equity, vesting, benefits, tax/context and risk before comparing compensation.',
+     'Define target, reservation point, BATNA/alternatives and tradeable concessions before scripting negotiation.'],
+    ['Normalizujte geografiju, nivo, scope uloge, cash, bonus, equity, vesting, benefite, poreski/kontekstualni rizik pre poređenja kompenzacije.',
+     'Definišite target, reservation point, BATNA/alternative i tradeable concessions pre skriptovanja pregovora.']);
+
+  add(/resume|cv-|ats|portfolio|interview|behavioral-story/,
+    ['Map every claim to real experience, artifact or measurable result; do not fabricate scope, seniority, tools, metrics or outcomes.',
+     'Match target-role requirements while preserving natural human readability; ATS fit or interview structure must not turn into keyword stuffing or scripted fiction.'],
+    ['Mapirajte svaku tvrdnju na stvarno iskustvo, artefakt ili merljiv rezultat; ne izmišljajte scope, senioritet, alate, metrike ili ishode.',
+     'Uskladite se sa zahtevima ciljne uloge uz prirodnu čitljivost; ATS fit ili interview struktura ne smeju postati keyword stuffing ili izmišljeni scenario.']);
+
+  add(/seo|search-intent|keyword|internal-link|serp|organic-growth/,
+    ['Establish current search intent/SERP pattern and distinguish crawl, render, index, relevance, quality and conversion problems before prioritizing SEO work.',
+     'Check cannibalization and page purpose; do not promise rankings or create content primarily for keyword density.'],
+    ['Utvrditi aktuelni search intent/SERP pattern i razlikovati crawl, render, index, relevance, quality i conversion probleme pre SEO prioritizacije.',
+     'Proverite cannibalization i svrhu stranice; ne obećavajte ranking niti pravite sadržaj prvenstveno radi keyword density-ja.']);
+
+  add(/attribution|incrementality|paid-media|paid-acquisition|creative-testing|campaign-experiment/,
+    ['Separate platform attribution from causal incrementality; define hypothesis, primary outcome, guardrails, attribution window and economics before reading results.',
+     'Use holdout/geo/causal designs where feasible and set scale/stop rules before favorable data is observed.'],
+    ['Odvojite platform attribution od kauzalnog incrementality-ja; definišite hipotezu, primarni outcome, guardrails, attribution window i ekonomiku pre čitanja rezultata.',
+     'Koristite holdout/geo/causal dizajn gde je izvodljivo i postavite scale/stop pravila pre pojave povoljnih podataka.']);
+
+  add(/retention|churn|referral|growth-loop|expansion-revenue/,
+    ['Use cohort- and lifecycle-consistent windows; separate acquisition, activation, retention and expansion effects.',
+     'Combine stated customer feedback with observed behavior and test whether the proposed loop has a real replenishing mechanism rather than one-time arbitrage.'],
+    ['Koristite cohort i lifecycle konzistentne periode; odvojite acquisition, activation, retention i expansion efekte.',
+     'Kombinujte izjave kupaca sa posmatranim ponašanjem i proverite da li predloženi loop ima stvarni obnavljajući mehanizam umesto jednokratnog arbitrage-a.']);
+
+  add(/typography|color-system|layout|grid|visual-hierarchy|visual-density/,
+    ['Define hierarchy, semantic roles, responsive behavior and accessibility constraints before visual polish.',
+     'Check contrast, scale, spacing, density and token/system consistency across representative breakpoints and states.'],
+    ['Definišite hijerarhiju, semantičke uloge, responsive ponašanje i accessibility ograničenja pre vizuelnog polish-a.',
+     'Proverite kontrast, skalu, spacing, gustinu i token/system doslednost kroz reprezentativne breakpoint-e i stanja.']);
+
+  add(/user-flow|information-architecture|wireframe|ui-|usability|accessibility-design|interface/,
+    ['Anchor decisions in the user goal and complete state model: entry, success, empty, loading, validation, error, permission and recovery where relevant.',
+     'Validate keyboard/focus, semantics, responsive/mobile behavior and WCAG-relevant accessibility before visual sign-off.'],
+    ['Vežite odluke za user goal i kompletan state model: entry, success, empty, loading, validation, error, permission i recovery gde je relevantno.',
+     'Validirajte keyboard/focus, semantiku, responsive/mobile ponašanje i WCAG-relevant accessibility pre vizuelnog sign-off-a.']);
+
+  add(/photo|image-|lighting|shot-list|portrait|photography/,
+    ['Verify subject/property releases, licensing/rights, provenance and required metadata alongside composition/lighting quality.',
+     'Preserve factual/product truth in perspective and editing; define crop/channel variants and master-delivery requirements before selection.'],
+    ['Proverite subject/property releases, licence/prava, provenance i potreban metadata uz kvalitet kompozicije/svetla.',
+     'Sačuvajte factual/product truth u perspektivi i obradi; definišite crop/channel varijante i master-delivery zahteve pre izbora.']);
+
+  add(/video|motion|storyboard|editing|podcast|audio|music|sound/,
+    ['Define temporal structure, continuity, intelligibility, captions/transcript or other accessibility needs, rights and technical delivery targets.',
+     'For audio, verify loudness/true-peak against the actual delivery platform or applicable standard; for video, verify picture/audio/caption synchronization and export variants.'],
+    ['Definišite temporalnu strukturu, continuity, razumljivost, captions/transcript ili druge accessibility potrebe, prava i tehničke delivery ciljeve.',
+     'Za audio proverite loudness/true-peak prema stvarnoj platformi ili primenljivom standardu; za video proverite picture/audio/caption sinhronizaciju i export varijante.']);
+
+  add(/priority|weekly-planning|daily-execution|kanban|focus-work|workload-limit/,
+    ['Make WIP and available capacity explicit; a priority decision must also state what is deferred, delegated, dropped or not started.',
+     'Use outcome completion and flow/aging signals rather than task-count activity as the primary success evidence.'],
+    ['Učinite WIP i dostupan kapacitet eksplicitnim; odluka o prioritetu mora navesti i šta se odlaže, delegira, odbacuje ili ne započinje.',
+     'Koristite završene ishode i flow/aging signale umesto broja taskova kao primarni dokaz uspeha.']);
+
+  add(/project-charter|scope-definition|milestone|project-risk|change-control|project-status|project-recovery|delivery-readiness/,
+    ['Define scope boundaries, milestone outcomes, dependency owners, acceptance criteria and decision/change authority before execution.',
+     'Track risk trigger, response and residual risk; status must surface decisions/blockers rather than repeat activity.'],
+    ['Definišite granice scope-a, milestone ishode, ownere zavisnosti, acceptance kriterijume i decision/change authority pre izvršenja.',
+     'Pratite risk trigger, response i residual risk; status mora izneti odluke/blokere umesto ponavljanja aktivnosti.']);
+
+  add(/automation|workflow|sop|handoff|process-map|bottleneck|cycle-time/,
+    ['Map trigger, inputs, owner, outputs, exceptions and control points before automating or redesigning the process.',
+     'For automation, require idempotency/retry behavior where relevant, human fallback, observability and safe failure/rollback.'],
+    ['Mapirajte trigger, inpute, ownera, outpute, izuzetke i control points pre automatizacije ili redizajna procesa.',
+     'Za automatizaciju zahtevajte idempotency/retry ponašanje gde je relevantno, human fallback, observability i bezbedan failure/rollback.']);
+
+  add(/retrieval|spacing|interleaving|metacogn|assessment|feedback|rubric/,
+    ['Tie the method to explicit learning objectives and prior knowledge; distinguish immediate performance from delayed retention and transfer.',
+     'For assessment, preserve construct validity, scoring reliability/fairness and an evidence-to-action loop.'],
+    ['Vežite metod za eksplicitne ciljeve učenja i prethodno znanje; razlikujte trenutni performance od odloženog retention-a i transfera.',
+     'Za procenu sačuvajte construct validity, scoring reliability/fairness i evidence-to-action loop.']);
+
+  add(/leadership|delegation|one-on-one|coaching|team-operating|team-performance|manager/,
+    ['Define the expected outcome, decision rights, context, support and escalation path; do not assign accountability without authority.',
+     'Use observable behavior and team/system evidence for feedback rather than personality labels or charisma proxies.'],
+    ['Definišite očekivani ishod, decision rights, kontekst, podršku i escalation path; ne dodeljujte odgovornost bez autoriteta.',
+     'Koristite posmatrano ponašanje i team/system dokaze za feedback umesto personality etiketa ili charisma proxy-ja.']);
+
+  add(/valuation|financial|cash-flow|budget|forecast|unit-economics|capital-allocation/,
+    ['Reconcile units, currency, period, nominal/real basis and cash/accrual treatment before comparing or calculating.',
+     'Separate observed inputs from assumptions and run sensitivity/scenarios on drivers that can change the decision.'],
+    ['Uskladite jedinice, valutu, period, nominal/real osnovu i cash/accrual tretman pre poređenja ili računanja.',
+     'Odvojite posmatrane inpute od pretpostavki i uradite sensitivity/scenario analizu drivera koji mogu promeniti odluku.']);
+
+  add(/brand|positioning|value-proposition|copy|message|headline|offer-clarity/,
+    ['Define audience, problem, alternative, promised value and proof before optimizing wording or aesthetics.',
+     'Substantiate objective claims, testimonials, endorsements, scarcity and performance claims; persuasion must not depend on deception.'],
+    ['Definišite publiku, problem, alternativu, obećanu vrednost i dokaz pre optimizacije formulacije ili estetike.',
+     'Potkrepite objektivne tvrdnje, testimoniale, endorsements, scarcity i performance claims; persuazija ne sme zavisiti od obmane.']);
+
+  add(/crisis|press-release|media-pitch|reputation|issues-management/,
+    ['Separate verified facts, unknowns and items under investigation; map affected stakeholders, spokesperson authority and update triggers.',
+     'Do not speculate about blame/cause before evidence; coordinate legal/regulatory duties and correct material errors promptly.'],
+    ['Odvojite potvrđene činjenice, nepoznato i ono što je pod istragom; mapirajte pogođene stakeholder-e, ovlašćenje spokesperson-a i update triggere.',
+     'Ne spekulišite o krivici/uzroku pre dokaza; uskladite pravne/regulatorne obaveze i brzo ispravite materijalne greške.']);
+
+  add(/knowledge|documentation|taxonomy|archive|single-source|information-retrieval/,
+    ['Define source of truth, owner, users, findability path, freshness/review rule and retention/archive behavior.',
+     'Test retrieval with real user questions and remove duplicate or stale sources that create conflicting answers.'],
+    ['Definišite source of truth, ownera, korisnike, findability path, freshness/review pravilo i retention/archive ponašanje.',
+     'Testirajte retrieval stvarnim korisničkim pitanjima i uklonite duplicate ili stale izvore koji stvaraju konfliktne odgovore.']);
+
+  add(/security|auth|threat|vulnerability|pentest|authorization|authentication/,
+    ['Map trust boundaries, attacker capability, reachable surface and privileged operations before rating severity.',
+     'Verify server-side authorization, secret handling, exploit preconditions and effective mitigations; theoretical weakness without reachability is not automatically a vulnerability.'],
+    ['Mapirajte trust boundaries, capability napadača, reachable surface i privilegovane operacije pre severity ocene.',
+     'Proverite server-side autorizaciju, tajne, exploit preconditions i efektivne mitigacije; teorijska slabost bez reachability-ja nije automatski ranjivost.']);
+
+  add(/database|sql|data-engineering|etl|pipeline|migration/,
+    ['Check schema constraints, transaction boundaries, idempotency, ordering, backfill/replay and migration rollback before data-integrity conclusions.',
+     'Measure on realistic data volume/cardinality and verify indexes/query plans or pipeline bottlenecks rather than inferring performance from syntax.'],
+    ['Proverite schema constraints, transaction boundaries, idempotency, ordering, backfill/replay i migration rollback pre zaključka o integritetu podataka.',
+     'Merite na realnom volume/cardinality-ju i proverite indexes/query plans ili pipeline bottleneck umesto zaključivanja o performance-u iz sintakse.']);
+
+  add(/api|backend/,
+    ['Validate contract/schema, authentication/authorization, input normalization, idempotency, rate/abuse controls, errors and version compatibility.',
+     'Trace downstream storage/services and partial-failure behavior; a correct handler in isolation is not enough.'],
+    ['Validirajte contract/schema, authentication/authorization, input normalizaciju, idempotency, rate/abuse kontrole, errors i version compatibility.',
+     'Pratite downstream storage/services i partial-failure ponašanje; korektan handler u izolaciji nije dovoljan.']);
+
+  add(/mobile|android|ios/,
+    ['Include lifecycle/backgrounding, offline/network transitions, permissions, secure storage, device/OS variation and release/store constraints.',
+     'Verify behavior on supported minimum/current OS versions and degraded connectivity, not only a happy-path emulator.'],
+    ['Uključite lifecycle/backgrounding, offline/network prelaze, permissions, secure storage, device/OS varijacije i release/store ograničenja.',
+     'Proverite ponašanje na podržanim minimalnim/aktuelnim OS verzijama i degraded connectivity, ne samo happy-path emulator.']);
+
+  add(/performance|reliability|incident|observability|resilience|recovery/,
+    ['Define workload/SLO or operational threshold, failure domain and measurement method before labeling a performance or reliability issue.',
+     'Test timeout/retry/backoff, saturation, partial dependency failure, observability and recovery; verify that mitigation does not create retry storms or hidden data loss.'],
+    ['Definišite workload/SLO ili operativni threshold, failure domain i metod merenja pre označavanja performance/reliability problema.',
+     'Testirajte timeout/retry/backoff, saturation, partial dependency failure, observability i recovery; proverite da mitigation ne stvara retry storm ili skriven gubitak podataka.']);
+
+  return [...new Set(rules)].slice(0, 8);
+}
+
 function promptSpecificFocus(data, lang) {
   const sr = lang === 'sr';
   const ctx = promptContexts.get(data.id);
@@ -271,6 +485,7 @@ export function buildV2QualityLayer(data) {
   const subProfile = subcategoryProfiles[data.subcategory_id]?.[lang] ?? subcategoryProfiles[data.subcategory_id]?.en ?? [];
   const taskProfile = taskShapeRules(data, lang);
   const promptFocus = promptSpecificFocus(data, lang);
+  const semanticProfile = semanticDetailRules(data, lang);
   const sourceProfile = dedupeSources([
     ...(subcategorySourceProfiles[data.subcategory_id] ?? []),
     ...(sourceProfiles[data.category_id] ?? []),
@@ -434,28 +649,30 @@ export function buildV2QualityLayer(data) {
     bullets(promptExecution), '',
     '## ' + (sr ? '7. PROMPT-SPECIFIC EXECUTION FOCUS' : '7. PROMPT-SPECIFIC EXECUTION FOCUS'), '',
     bullets(promptFocus), '',
-    '## ' + (sr ? '8. TASK-SHAPE EXECUTION MODEL' : '8. TASK-SHAPE EXECUTION MODEL'), '',
+    '## ' + (sr ? '8. SUBJECT-SPECIFIC SEMANTIC DETAIL' : '8. SUBJECT-SPECIFIC SEMANTIC DETAIL'), '',
+    bullets(semanticProfile), '',
+    '## ' + (sr ? '9. TASK-SHAPE EXECUTION MODEL' : '9. TASK-SHAPE EXECUTION MODEL'), '',
     bullets(taskProfile), '',
-    '## ' + (sr ? '9. EVAL UGOVOR' : '9. EVAL CONTRACT'), '',
+    '## ' + (sr ? '10. EVAL UGOVOR' : '10. EVAL CONTRACT'), '',
     bullets(evalContract), '',
-    '## 10. CHALLENGE PASS', '',
+    '## 11. CHALLENGE PASS', '',
     (sr ? 'Pre finalizacije važnog zaključka aktivno proveriti:' : 'Before finalizing an important conclusion, actively test:'),
     bullets(challenge), '',
     (sr ? 'Ne zadržavati nalaz samo zato što je delovao uverljivo u ranoj fazi analize.' : 'Do not keep a finding merely because it looked plausible early in the analysis.'), '',
-    '## ' + (sr ? '11. KALIBRISANA NEIZVESNOST' : '11. CALIBRATED UNCERTAINTY'), '',
+    '## ' + (sr ? '12. KALIBRISANA NEIZVESNOST' : '12. CALIBRATED UNCERTAINTY'), '',
     (sr ? 'Za materijalne zaključke po potrebi koristiti:' : 'For material conclusions, use where helpful:'),
     '- **VERIFIED**', '- **STRONGLY SUPPORTED**', '- **PLAUSIBLE**', '- **UNCERTAIN**', '- **CONTESTED**', '- **OUTDATED**', '- **NOT APPLICABLE**', '',
     (sr ? 'Ne pretvarati odsustvo dokaza u dokaz odsustva. Odvojiti nepoznato od negativnog.' : 'Do not convert absence of evidence into evidence of absence. Separate unknown from negative.'), '',
-    '## ' + (sr ? '12. DECISION-READY OUTPUT' : '12. DECISION-READY OUTPUT'), '',
+    '## ' + (sr ? '13. DECISION-READY OUTPUT' : '13. DECISION-READY OUTPUT'), '',
     'For important findings or recommendations, use the relevant subset of:', '',
     '```text',
     'Finding / decision:', 'Status / confidence:', 'Evidence:', 'Source / location:', 'Assumptions:', 'Alternative explanation:', 'Impact:', 'Priority / severity:', 'Recommended action:', 'Owner:', 'Dependency:', 'Verification:', 'Rollback / stop trigger:', 'Residual risk:',
     '```', '',
     (sr ? 'Prioritizovati nalaze umesto vraćanja neuređenog zida stavki.' : 'Prioritize findings instead of returning an unranked wall of items.'), '',
-    '## ' + (sr ? '13. ACCEPTANCE GATE' : '13. ACCEPTANCE GATE'), '',
+    '## ' + (sr ? '14. ACCEPTANCE GATE' : '14. ACCEPTANCE GATE'), '',
     (sr ? 'Zadatak nije završen dok:' : 'Do not call the task complete until:'),
     bullets(acceptance), '',
-    '## ' + (sr ? '14. AUTORITATIVNI POČETNI IZVORI' : '14. AUTHORITATIVE STARTING SOURCES'), '',
+    '## ' + (sr ? '15. AUTORITATIVNI POČETNI IZVORI' : '15. AUTHORITATIVE STARTING SOURCES'), '',
     (sr ? 'Koristiti samo izvore relevantne za konkretan zadatak i pre oslanjanja proveriti najnoviju važeću verziju, datum, jurisdikciju ili populaciju.' : 'Use only sources relevant to the task and verify the latest applicable version, date, jurisdiction or population before relying on them.'),
     sourceBullets(sourceProfile), '',
     (sr ? 'Širi registry i metodologija:' : 'Broader registry and methodology:'),
