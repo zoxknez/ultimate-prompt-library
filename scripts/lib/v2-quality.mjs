@@ -416,6 +416,27 @@ export function semanticDetailRules(data, lang) {
     ['Definišite workload/SLO ili operativni threshold, failure domain i metod merenja pre označavanja performance/reliability problema.',
      'Testirajte timeout/retry/backoff, saturation, partial dependency failure, observability i recovery; proverite da mitigation ne stvara retry storm ili skriven gubitak podataka.']);
 
+  // SUBJECT-SPECIFIC FALLBACK: every ID must have more than title substitution alone.
+  // Dedicated topic matchers above add deeper methodological rules. When none matches,
+  // anchor the exact subject to its unique subcategory profile and force subject-level tests.
+  if (rules.length === 2) {
+    const specialist = subcategoryProfiles[data.subcategory_id]?.[lang]
+      ?? subcategoryProfiles[data.subcategory_id]?.en
+      ?? [];
+    const anchor = specialist[0] || (sr
+      ? 'primeniti specialistički workflow podkategorije'
+      : 'apply the specialist subcategory workflow');
+
+    rules.push(
+      sr
+        ? 'Za "' + subject + '" napravite applicability ledger APPLICABLE / NOT APPLICABLE / UNKNOWN iz specialističkih kontrola podkategorije; proširite samo stavke koje menjaju odluku i svaku vežite za dokaz.'
+        : 'For "' + subject + '", build an APPLICABLE / NOT APPLICABLE / UNKNOWN applicability ledger from the specialist subcategory controls; expand only decision-relevant items and tie each to evidence.',
+      sr
+        ? 'Za "' + subject + '" definišite najmanje jedan positive acceptance test i jedan negative/failure test, uz potrebne inpute, očekivani rezultat i stop/escalation uslov. Specialistički anchor: ' + anchor
+        : 'For "' + subject + '", define at least one positive acceptance test and one negative/failure test, including required inputs, expected result and stop/escalation condition. Specialist anchor: ' + anchor
+    );
+  }
+
   return [...new Set(rules)].slice(0, 8);
 }
 

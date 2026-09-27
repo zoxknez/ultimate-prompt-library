@@ -41,6 +41,7 @@ Every generated prompt now receives:
 - category and subcategory best practices
 - model-neutral prompt-execution guidance
 - prompt-specific scope, input, completion and sibling-handoff rules for every ID
+- minimum four subject-specific semantic rules for every ID, with deeper dedicated matchers where the subject has a specialized methodology
 - explicit per-prompt eval contract
 - adversarial challenge pass
 - calibrated uncertainty vocabulary

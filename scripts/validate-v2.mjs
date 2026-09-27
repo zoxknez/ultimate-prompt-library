@@ -74,7 +74,7 @@ for (const category of repo.catalog.categories) {
   for (const prompt of category.prompts) {
     const taskRules = taskShapeRules({ ...prompt, title: prompt.title?.en ?? '' }, 'en');
     const semanticRules = semanticDetailRules({ ...prompt, title: prompt.title?.en ?? '' }, 'en');
-    if (semanticRules.length < 2) fail(prompt.id + ': expected at least two subject-specific semantic rules.');
+    if (semanticRules.length < 4) fail(prompt.id + ': expected at least four subject-specific semantic rules.');
     if (taskRules[0] === 'Define objective, inputs, constraints and success criteria before the main work.') {
       fail(prompt.id + ': generic task-shape fallback is not allowed.');
     }
