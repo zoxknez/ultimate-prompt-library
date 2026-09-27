@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-IT-075",
+  "language": "en",
+  "note": "Synthetic test material. The product and incidents are fictional.",
+  "cases": {
+    "nominal": {
+      "input": "Generate our E2E test plan. Product: multi-tenant project-management SaaS (Next.js + Node API + PostgreSQL). Test stack: Playwright against a staging environment with Stripe in test mode. CI budget for E2E: 15 minutes per pull request, plus a nightly run with no limit.\n\nCritical journeys:\n1. Signup with email verification, then workspace creation\n2. Invite a teammate; invited user accepts and gets the 'member' role\n3. Upgrade to a paid plan via Stripe Checkout; access unlocks when the checkout.session.completed webhook arrives\n4. Create, edit and delete a project; members cannot delete, admins can\n5. Password reset\n6. Export all projects as CSV (runs as a background job, emailed link)\n\nLast quarter's incidents: a duplicated Stripe webhook upgraded a workspace twice and double-counted seats; a member of workspace A could open a project URL from workspace B.",
+      "expectedFindings": [
+        "Includes the paid-upgrade journey with a duplicated or delayed webhook scenario that checks idempotent seat counting.",
+        "Includes a negative cross-tenant test where a user from one workspace requests another workspace's project URL and is denied.",
+        "Covers the asynchronous CSV export through completion and failure, rather than only the click that starts it.",
+        "Splits the suite between the 15-minute pull-request budget and the nightly run with an explicit rationale."
+      ],
+      "rationale": "Past incidents give two concrete regressions the plan must encode, and the CI budget forces prioritization instead of exhaustive coverage."
+    },
+    "regression": {
+      "input": "We migrated our E2E suite from Cypress to Playwright and moved CI from Node 20 to Node 24 at the same time. Since then the checkout test has failed 3 times in 40 runs, always with a timeout waiting for the 'Plan: Pro' badge. A teammate proposes deleting the checkout test because 'it is flaky' and accepting the migration because 36 of 40 runs were green. Update the test plan for this change.",
+      "expectedFindings": [
+        "Refuses to delete or silently ignore the checkout test; treats the intermittent failure as a signal to investigate (for example webhook timing) with an owner, quarantine rule or deadline.",
+        "Requires recording the tool and runtime versions, browser versions and test-data or seed setup so results before and after the migration are comparable.",
+        "Requires re-running previously failing and high-risk journeys before accepting the migration, instead of relying on the overall green rate."
+      ],
+      "rationale": "Two simultaneous changes and a tempting pass rate test whether the plan protects a high-risk regression instead of averaging it away."
+    }
+  }
+}

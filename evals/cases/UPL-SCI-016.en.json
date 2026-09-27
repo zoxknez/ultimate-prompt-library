@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-SCI-016",
+  "language": "en",
+  "note": "Synthetic test material. All trials and reviews are fictional.",
+  "cases": {
+    "boundary": {
+      "input": "We have six RCTs of a structured exercise programme versus usual care for depressive symptoms (standardized mean difference, negative favours exercise):\n- T1 older adults, 12 weeks, n=180: SMD -0.30\n- T2 older adults, 24 weeks, n=220: SMD -0.25\n- T3 older adults, 8 weeks, n=90: SMD -0.45\n- T4 adolescents, 6 weeks, n=60: SMD -0.50\n- T5 adolescents, 4 weeks, n=40, industry-funded, unclear allocation concealment: SMD -1.90\n- T6 adolescents, 10 weeks, n=120: SMD -0.20\nA random-effects pool gives SMD -0.52 with I-squared 78%. The draft says 'exercise has a moderate-to-large effect on depression'. Analyse the heterogeneity and the synthesis.",
+      "expectedFindings": [
+        "Does not accept the pooled SMD -0.52 at face value with I-squared 78%, and explores heterogeneity by population (older adults versus adolescents) and duration.",
+        "Identifies T5 (small, industry-funded, unclear allocation concealment, SMD -1.90) as an influential outlier and runs or recommends a sensitivity analysis without it.",
+        "Notes that with only six trials, funnel-plot or small-study tests are underpowered, and tempers the 'moderate-to-large' wording accordingly."
+      ],
+      "rationale": "One implausible small trial drives the pooled estimate across two clinically different populations."
+    },
+    "provenance": {
+      "input": "Our draft claims 'exercise has a large effect on depression (SMD -0.9)'. Sources:\n1. Abstract of a 2024 review: 'Exercise produced a large antidepressant effect (SMD -0.9).' The full text shows the estimate comes from 3 trials, all rated high risk of bias.\n2. Trial registry search: 2 further registered trials of the same intervention completed in 2022 with no results posted and no publications.\n3. Our own six-trial dataset, which after excluding one high-risk trial gives SMD -0.31 (95% CI -0.45 to -0.17).\nWhich claim is supported?",
+      "expectedFindings": [
+        "Explains that the review abstract's SMD -0.9 rests on three high-risk-of-bias trials and does not directly support a large effect.",
+        "Flags the two completed but unpublished registered trials as a possible publication or selective-reporting bias signal.",
+        "Supports a smaller, more cautious claim based on the sensitivity estimate around SMD -0.3 with its uncertainty, rather than 'large effect'."
+      ],
+      "rationale": "The abstract's headline number is topical but not reliable once risk of bias and missing trials are traced."
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-CREATIVE-043",
+  "language": "sr",
+  "note": "Sintetički test materijal; brend i proizvodi su izmišljeni (fictional).",
+  "cases": {
+    "nominal": {
+      "input": "Treba mi plan osvetljenja za fotografisanje ručno rađenih keramičkih šolja za online prodavnicu i Instagram. Šolje imaju sjajnu glazuru u tamnozelenoj i kobalt plavoj boji koje se lako presijavaju. Oprema: studio 3 x 4 m, dva studijska blica, jedan softboks 60 x 90 cm, jedan LED panel, beli i crni paneli, polarizacioni filter za objektiv. Isporuka: fotografije na belom fonu za prodavnicu (kvadrat 1:1, najmanje 2000 px) i lifestyle fotografije za Instagram (4:5). Kupci su se ranije žalili da boja šolje u stvarnosti izgleda drugačije nego na slici.",
+      "expectedFindings": [
+        "Rešava presijavanje sjajne glazure konkretnim merama (veliki difuzni izvor, kontrola odsjaja crnim/belim panelima, ograničena upotreba polarizacionog filtera) umesto opšteg saveta.",
+        "Uvodi kontrolu tačnosti boja (na primer siva karta ili color checker i dosledan balans belog) kako bi se rešila žalba kupaca.",
+        "Definiše posebne zahteve za beli fon (1:1) i lifestyle (4:5) i upozorava da obrada ne sme menjati stvarnu boju glazure."
+      ],
+      "rationale": "Realan tehnički problem (sjaj i tačnost boje) povezan je sa žalbom kupaca, pa se proverava i tehnička i istinita prezentacija proizvoda."
+    }
+  }
+}

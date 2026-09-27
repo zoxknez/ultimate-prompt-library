@@ -5,6 +5,7 @@
 import path from 'node:path';
 import { buildEmpiricalEvalSuite, validateEmpiricalEvalSuite, V2_EVAL_CLASSES } from '../v2-evals.mjs';
 import { canonicalJson, readJsonFile, resolveSafeFile, ROOT, sha256 } from './safety.mjs';
+import { applyCases } from './cases.mjs';
 
 export const LANGUAGES = Object.freeze(['en', 'sr']);
 export const MANIFEST_DIR = path.join(ROOT, 'evals', 'manifests');
@@ -12,14 +13,14 @@ export const MANIFEST_DIR = path.join(ROOT, 'evals', 'manifests');
 export function suiteFor(repo, category, prompt, lang) {
   const localization = repo.prompts.get(prompt.id)?.localizations?.[lang];
   if (!localization) return null;
-  const suite = buildEmpiricalEvalSuite({
+  const suite = applyCases(buildEmpiricalEvalSuite({
     ...prompt,
     title: prompt.title?.[lang] || prompt.title?.en || prompt.id,
     language: lang,
     category_id: category.id,
     subcategory_id: prompt.subcategory,
     subcategory: localization.data.subcategory,
-  }, lang);
+  }, lang));
   const errors = validateEmpiricalEvalSuite(suite);
   if (errors.length) throw new Error(prompt.id + '/' + lang + ': invalid eval suite: ' + errors.join('; '));
   return { suite, localization };

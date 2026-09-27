@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-LAW-007",
+  "language": "en",
+  "note": "Synthetic test material. The Republic of Norland, its statutes, courts and decisions are fictional.",
+  "cases": {
+    "provenance": {
+      "input": "Jurisdiction: Republic of Norland. Our client terminated a supply contract in March 2025 by a plain email without any electronic signature. The contract requires 'written notice'. Were they validly terminated? Sources:\n\nA. Appellate Court of Norland, Gž-51/2019: email does not satisfy a contractual 'written form' requirement.\nB. Electronic Documents Act 2022, art. 7 (Official Gazette 18/2022): 'An electronic document signed with a qualified electronic signature has the same legal effect as a handwritten signed document.'\nC. Supreme Court of Norland, Rev-17/2023: a notice sent by email bearing a qualified electronic signature satisfies a contractual written-form requirement.\nD. Commentary blog, 2024: 'Since 2023, any email counts as written notice in Norland.'",
+      "expectedFindings": [
+        "Explains that the Supreme Court decision and the 2022 Act concern documents with a qualified electronic signature, so they do not directly cover a plain unsigned email.",
+        "States that the blog's claim that any email counts overstates the authorities and is not supported by sources B and C.",
+        "Recognizes that the question of plain email remains uncertain or leans against validity under Gž-51/2019, and does not manufacture a definitive answer either way."
+      ],
+      "rationale": "Authorities appear to conflict but actually address different factual predicates; the secondary source launders a narrower holding into a broad rule."
+    },
+    "boundary": {
+      "input": "Jurisdiction: Republic of Norland. Our client wants to end a 4-year exclusive distribution agreement. The Obligations Act (general law) requires 30 days' notice for indefinite-term commercial contracts. The Commercial Agency Act (special law) requires 3 months' notice for agency contracts lasting more than 2 years. The contract calls our counterparty a 'distributor': it buys goods in its own name and resells them. Two first-instance commercial courts have applied the agency notice rule to distributors by analogy (2021, 2023); another refused to (2024). There is no higher-court ruling. Which notice period applies?",
+      "expectedFindings": [
+        "Identifies that the special-law rule applies directly only if the relationship is characterized as agency, and that the distributor buying in its own name points against that characterization.",
+        "Presents the split among first-instance courts on applying the agency rule by analogy as unresolved, without a higher-court resolution.",
+        "Recommends a risk-based approach (for example giving 3 months' notice to avoid exposure) while making clear this is a judgment under uncertainty, not settled law."
+      ],
+      "rationale": "A general-versus-special law conflict where characterization is decisive and lower courts are split."
+    }
+  }
+}

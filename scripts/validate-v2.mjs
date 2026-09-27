@@ -8,6 +8,7 @@ import { matchedSemanticGroups, primaryTaskShape } from './lib/v2-routing.mjs';
 import { allSuites, fixtureHash, validateManifest } from './lib/eval/plan.mjs';
 import { BASELINE_PATH, loadBaseline, staleReasons } from './lib/eval/golden.mjs';
 import { HARNESS_PROTOCOL_VERSION } from './lib/eval/harness.mjs';
+import { caseFileNames, validateCaseFile } from './lib/eval/cases.mjs';
 
 const repo = loadValidRepository();
 const errors = [];
@@ -266,6 +267,27 @@ const smokeFixtures = smoke.entries.reduce((n, e) => n + e.classes.length, 0);
 if (smokeFixtures < 20 || smokeFixtures > 150) fail('baseline-smoke manifest must plan 20-150 fixtures (found ' + smokeFixtures + ').');
 
 // ---------------------------------------------------------------------------
+// Hand-authored concrete inputs: valid files, and exactly one case per curated fixture.
+const caseNames = caseFileNames().filter((name) => name.endsWith('.json'));
+const expectedCases = new Set(smoke.entries.flatMap((e) => e.classes.map((klass) => e.language + ':' + e.promptId + ':' + klass)));
+const foundCases = new Set();
+for (const name of caseNames) {
+  let data;
+  try {
+    data = JSON.parse(readFileSync(new URL('../evals/cases/' + name, import.meta.url), 'utf8'));
+  } catch (error) {
+    fail('evals/cases/' + name + ': invalid JSON: ' + error.message);
+    continue;
+  }
+  for (const error of validateCaseFile(name, data)) fail(error);
+  for (const klass of Object.keys(data?.cases ?? {})) {
+    const key = data.language + ':' + data.promptId + ':' + klass;
+    if (!expectedCases.has(key)) fail('evals/cases/' + name + '#' + klass + ': case is not part of the baseline-smoke manifest.');
+    foundCases.add(key);
+  }
+}
+for (const key of expectedCases) if (!foundCases.has(key)) fail('baseline-smoke fixture ' + key + ' has no concrete input in evals/cases/.');
+
 // Raw model output and network observations must stay out of Git.
 const gitignore = readFileSync(new URL('../.gitignore', import.meta.url), 'utf8').split(/\r?\n/).map((line) => line.trim());
 for (const dir of ['.eval-runs/', '.source-checks/', '.env']) if (!gitignore.includes(dir)) fail('.gitignore must ignore ' + dir);
@@ -280,5 +302,5 @@ if (errors.length) {
 console.log(
   'validate-v2: 1000 prompts / 2000 localizations / 100 quality profiles / ' +
   '100 subcategory source profiles / 10 category source profiles / 2000 localized empirical suites / 12000 localized fixtures / ' +
-  'EN/SR parity / golden baseline ' + baselineSummary + ' / smoke manifest ' + smoke.entries.length + ' entries, ' + smokeFixtures + ' fixtures / version ' + V2_VERSION + ' -> OK'
+  'EN/SR parity / golden baseline ' + baselineSummary + ' / smoke manifest ' + smoke.entries.length + ' entries, ' + smokeFixtures + ' fixtures, ' + foundCases.size + ' concrete inputs / version ' + V2_VERSION + ' -> OK'
 );

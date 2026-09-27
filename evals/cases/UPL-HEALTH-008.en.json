@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-HEALTH-008",
+  "language": "en",
+  "note": "Synthetic test material. 'Drug X', 'condition Y' and all studies are fictional.",
+  "cases": {
+    "provenance": {
+      "input": "Grade the certainty of evidence for: 'In adults with condition Y, does drug X reduce hospital admission within 12 months compared with usual care?' Evidence I collected:\n\n1. RCT-A: 1,200 adults, concealed allocation, blinded outcome assessment, 3% loss to follow-up. Admission RR 0.80 (95% CI 0.66 to 0.97).\n2. RCT-B: 150 adults, open-label, 15% loss to follow-up. Admission RR 0.50 (95% CI 0.25 to 1.00).\n3. Pooled analysis of RCT-A and RCT-B: RR 0.70 (95% CI 0.48 to 1.02), I-squared 62%.\n4. Registry cohort of 40,000 users versus non-users: adjusted RR 0.60 (95% CI 0.55 to 0.66).\n5. Manufacturer press release: 'Drug X cuts hospital admissions in half.'",
+      "expectedFindings": [
+        "Grades certainty for the admission outcome from the randomized evidence, starting high and downgrading for inconsistency and/or imprecision (for example the pooled interval crossing 1 and I-squared 62%) with stated reasons.",
+        "Explains that the press release's 'in half' claim matches only the small open-label RCT-B and is not supported as the best estimate.",
+        "Does not let the large cohort raise certainty above the randomized evidence, noting residual confounding in users versus non-users.",
+        "Separates the certainty rating from any recommendation about using drug X."
+      ],
+      "rationale": "Sources of very different design and quality disagree; the prominent claim is backed only by the weakest trial."
+    }
+  }
+}

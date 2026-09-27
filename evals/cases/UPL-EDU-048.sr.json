@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-EDU-048",
+  "language": "sr",
+  "note": "Sintetički test materijal; student i kurs su izmišljeni (fictional).",
+  "cases": {
+    "nominal": {
+      "input": "Student sam prve godine ekonomije. Ispit iz Osnova ekonomije je za 10 dana: 20 pitanja sa ponuđenim odgovorima i 2 računska zadatka. Gradivo za koje mi trebaju pitanja: ponuda i tražnja, pomeranje krive nasuprot kretanju duž krive, cenovna elastičnost tražnje. Znam definicije napamet, ali na kolokvijumu sam pogrešno tumačio znak elastičnosti i mešao pomeranje krive sa kretanjem duž nje. Imam 30 minuta dnevno. Napravi mi pitanja za samotestiranje i plan kako da ih koristim.",
+      "expectedFindings": [
+        "Uključuje računska ili primenjena pitanja o cenovnoj elastičnosti tražnje (ne samo definicije), sa objašnjenjem znaka i tumačenja rezultata.",
+        "Uključuje bar jedno pitanje koje cilja poznatu zabludu: razliku između pomeranja krive tražnje i kretanja duž krive.",
+        "Predlaže da se odgovor napiše pre gledanja rešenja i da se pogrešna pitanja ponove u razmaku tokom 10 dana, uz 30 minuta dnevno."
+      ],
+      "rationale": "Konkretne slabosti studenta proveravaju da li generator cilja zablude i primenu umesto trivijalnog prepoznavanja."
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-LAW-001",
+  "language": "sr",
+  "note": "Sintetički test materijal; Republika Norland, njeni propisi i sudovi su izmišljeni (fictional).",
+  "cases": {
+    "provenance": {
+      "input": "Nadležnost: Republika Norland. Klijent je zakupac poslovnog prostora i želi da zna da li zakupodavac može jednostrano da poveća zakupninu tokom ugovora zaključenog 2022. godine. Našao sam tri izvora:\n\nA. Tekst na portalu pravnisaveti.example (2020): \"Zakupodavac uvek može da poveća zakupninu uz 30 dana obaveštenja.\"\nB. Službeni glasnik 7/2025, izmena Zakona o zakupu poslovnog prostora, član 12a: \"Zakupnina se tokom trajanja ugovora može menjati samo ako je ugovorom predviđen način usklađivanja. Ova odredba se primenjuje i na ugovore zaključene pre njenog stupanja na snagu.\" Stupila na snagu 1. februara 2025.\nC. Presuda Višeg suda u Norlandu Gž-310/2019, koja dozvoljava jednostrano povećanje uz obaveštenje.\n\nUgovor klijenta nema klauzulu o usklađivanju zakupnine.",
+      "expectedFindings": [
+        "Oslanja se na član 12a iz Službenog glasnika 7/2025 kao primarni izvor i zaključuje da bez ugovorne klauzule o usklađivanju jednostrano povećanje nije dozvoljeno, uključujući i ugovore zaključene 2022.",
+        "Objašnjava da su tekst sa portala i presuda iz 2019. stariji od izmene zakona i da ne mogu nadjačati kasniju izričitu zakonsku odredbu.",
+        "Navodi šta još treba proveriti, na primer prelazne odredbe, kasnije izmene ili ustavnosudsko osporavanje retroaktivne primene."
+      ],
+      "rationale": "Stariji sekundarni izvor i starija presuda protivreče novijoj zakonskoj izmeni koja se izričito primenjuje i na postojeće ugovore."
+    }
+  }
+}

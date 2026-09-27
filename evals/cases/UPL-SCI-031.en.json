@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-SCI-031",
+  "language": "en",
+  "note": "Synthetic test material. The company, dataset and variables are fictional.",
+  "cases": {
+    "nominal": {
+      "input": "We want to know whether working remotely increases employee productivity at our company (4,200 office employees, 2024-2025). Remote status was chosen by employees with manager approval. We have one HR dataset with these variables:\n- remote: 1 if the employee worked remotely at least 3 days per week in 2024\n- productivity_2025: annual productivity score assigned by the employee's manager\n- prior_rating_2023: performance rating before the remote policy\n- seniority_level, tenure_years, team, commute_minutes\n- burnout_score: survey taken in mid-2024, after remote status was assigned\n- promoted_2025: promoted during 2025\nOur analyst plans to regress productivity_2025 on remote and all other variables. Build the causal question and DAG, and say what to adjust for.",
+      "expectedFindings": [
+        "States an explicit estimand (for example the average effect of remote work on productivity_2025) before choosing adjustments.",
+        "Treats prior_rating_2023, seniority_level and similar pre-exposure variables as candidate confounders to adjust for.",
+        "Says not to adjust for burnout_score (measured after exposure, a likely mediator) or promoted_2025 (post-treatment) when estimating the total effect.",
+        "Flags that a manager-assigned productivity score can be measured differently for remote and office workers (measurement bias in the outcome)."
+      ],
+      "rationale": "A realistic 'adjust for everything' plan that includes a mediator and a post-treatment variable, plus a biased outcome measure."
+    },
+    "boundary": {
+      "input": "Follow-up on the remote-work question. Two facts we just learned:\n1. The HR extract only contains employees who were still employed on 31 December 2025. About 18% of 2024 remote workers and 9% of office workers left during 2025 and are not in the data.\n2. Warehouse and front-desk roles (about 700 people) could never work remotely.\nThe analyst says both issues are minor because the sample is still large. Update the causal design.",
+      "expectedFindings": [
+        "Identifies that keeping only employees still employed at the end of 2025 is selection on a post-exposure variable, which can bias the estimate because leaving differs by remote status.",
+        "Identifies that roles which could never be remote violate positivity and should be excluded from, or handled separately in, the target population.",
+        "Rejects the claim that a large sample size fixes selection bias or positivity violations."
+      ],
+      "rationale": "Boundary conditions where the causal structure, not the sample size, determines whether the estimate is interpretable."
+    }
+  }
+}

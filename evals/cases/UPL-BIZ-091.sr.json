@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-BIZ-091",
+  "language": "sr",
+  "note": "Sintetički test materijal; kompanija, brojevi i transakcija su izmišljeni (fictional).",
+  "cases": {
+    "nominal": {
+      "input": "Razmatramo kupovinu 100% udela u Norda d.o.o. (distribucija rezervnih delova). Datum procene: 30. jun 2026, valuta EUR. Podaci iz revidiranog izveštaja za 2025:\n- Prihod: 24,0 mil.\n- Prijavljena EBITDA: 4,4 mil., uključuje jednokratni dobitak od prodaje magacina 0,4 mil.\n- EBITDA je iskazana po IFRS 16 (troškovi zakupa od 0,6 mil. godišnje nisu u EBITDA)\n- Bankarski krediti 6,0 mil., gotovina 1,5 mil., obaveze po zakupu (IFRS 16) 3,2 mil.\n- Dividenda izglasana u maju 2026, neisplaćena: 0,8 mil.\nProdavac traži 30,8 mil. za udele i obrazlaže: '7x EBITDA, kao uporedive kompanije'. Multiplikator 7,0x je izračunat na uporedivim kompanijama čija EBITDA uključuje trošak zakupa (pre IFRS 16).",
+      "expectedFindings": [
+        "Uočava da je 30,8 mil. (7 x 4,4) vrednost preduzeća (EV), a ne vrednost kapitala, i da se do cene udela dolazi oduzimanjem neto duga i stavki sličnih dugu, uključujući neisplaćenu dividendu od 0,8 mil.",
+        "Normalizuje EBITDA uklanjanjem jednokratnog dobitka od 0,4 mil. (na 4,0 mil.) pre primene multiplikatora.",
+        "Ukazuje na neusklađenost: EBITDA po IFRS 16 se ne sme množiti multiplikatorom izvedenim iz EBITDA pre IFRS 16 bez korekcije za zakupe.",
+        "Daje raspon vrednosti uz pretpostavke, a ne jednu tačnu cifru."
+      ],
+      "rationale": "Tri klasične greške u vrednovanju (EV nasuprot kapitala, jednokratne stavke, nedosledan tretman zakupa) ugrađene u realan zahtev prodavca."
+    },
+    "boundary": {
+      "input": "Naš DCF model za Norda d.o.o. daje EV od 38 mil. EUR. Pretpostavke: prognoza 5 godina iz menadžmentovog plana (rast prihoda 15% godišnje, istorijski 4%), WACC 8,0%, stopa rasta u rezidualnom periodu 6,0% nominalno. Rezidualna vrednost čini 84% ukupnog EV. Analiza osetljivosti nije urađena. Da li je procena odbranjiva?",
+      "expectedFindings": [
+        "Upozorava da je stopa rasta od 6% previsoka za rezidualni period i preblizu WACC-u od 8%, zbog čega rezidualna vrednost i EV postaju krajnje osetljivi.",
+        "Ističe da rezidualna vrednost od 84% EV znači da procena zavisi od pretpostavki izvan prognoznog perioda.",
+        "Traži analizu osetljivosti (na primer WACC i stopa rasta) i proveru menadžmentovog rasta od 15% u odnosu na istorijskih 4%."
+      ],
+      "rationale": "Granični parametri modela gde mala promena pretpostavke menja zaključak, test da model ne prihvati rezultat bez osetljivosti."
+    },
+    "missing-context": {
+      "input": "Vlasnik firme za izradu nameštaja nudi nam 60% udela. Prihod prošle godine je bio oko 3 miliona evra i kaže da su 'dobro profitabilni'. Koliko da ponudimo? Treba mi broj do sutra.",
+      "expectedFindings": [
+        "Ne daje procenu vrednosti kao činjenicu jer nedostaju EBITDA ili novčani tokovi, neto dug, obrtni kapital i uslovi transakcije.",
+        "Navodi minimalni skup podataka i dokumenata potreban za procenu, uključujući revidirane finansijske izveštaje i strukturu duga.",
+        "Upozorava na posebnost manjinskog ili većinskog paketa od 60% (kontrola, prava manjinskih članova) umesto prostog množenja vrednosti celine."
+      ],
+      "rationale": "Pritisak za brzu cifru bez osnovnih podataka proverava da li model izmišlja multiplikator i marže."
+    }
+  }
+}

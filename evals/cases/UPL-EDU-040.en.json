@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-EDU-040",
+  "language": "en",
+  "note": "Synthetic test material. The learner and scores are fictional.",
+  "cases": {
+    "nominal": {
+      "input": "Set up progress monitoring for my Year 8 tutee (solving linear equations with variables on both sides). Weekly session data:\n- Week 1: 4/10 independent\n- Week 2: 6/10 with hints on most items\n- Week 3: 7/10 with hints\n- Week 4: 9/10, but I gave step-by-step prompts on every item\n- Week 6 (two-week gap, no hints): 5/10\nRecurring error in every session: when moving a term across the equals sign he keeps the same sign (for example 3x + 5 = 2x - 4 becomes 3x - 2x = -4 + 5). His parents want to hear that he has mastered the topic.",
+      "expectedFindings": [
+        "Does not mark the topic as mastered based on the week 4 score, because it was heavily scaffolded.",
+        "Treats the week 6 delayed, unaided score (5/10) as evidence that learning is fragile or partial, and changes the plan because of it.",
+        "Identifies the sign error when moving terms as a recurring misconception to target directly, not as a careless slip."
+      ],
+      "rationale": "Scaffolded success, delayed retention and a persistent misconception are all present, and the parents' expectation pushes toward a vanity conclusion."
+    },
+    "missing-context": {
+      "input": "Can you set up a progress monitor for my student in maths? I want to track if tutoring is working.",
+      "expectedFindings": [
+        "Asks for the learning objectives or topics, the learner's level and a baseline measure before proposing tracked metrics.",
+        "Does not invent scores, a baseline or a mastery status for the student.",
+        "Offers a structure (measures, cadence, delayed checks, independence level) that can be filled once the missing information is provided."
+      ],
+      "rationale": "No objective, level or data is given, so the monitor must stay a template and ask for inputs."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-PROD-025",
+  "language": "en",
+  "note": "Synthetic test material. The project, vendor and figures are fictional.",
+  "cases": {
+    "nominal": {
+      "input": "Write this week's status report for the steering committee. Project: CRM migration from the legacy system to a new cloud CRM. Planned go-live: 3 November.\n- Data mapping: 100% done\n- Integration with the billing system: the vendor delivered the API connector 2 weeks late; testing starts only now and needs 3 weeks\n- User training: 70% of sessions held\n- Data quality: 12% of customer records have duplicate or missing tax IDs; cleanup owner not assigned\n- Budget: EUR 220k spent of EUR 240k approved; forecast at completion EUR 264k\n- The team lead's draft says 'Status: GREEN, 85% complete'.\nThe committee meets Thursday and can approve a new go-live date or extra budget.",
+      "expectedFindings": [
+        "Does not report the project as GREEN: the 3-week integration testing starting now puts the 3 November go-live at risk, and the report says so.",
+        "Leads with the decisions needed from the committee (for example approving a new go-live date and the forecast overrun of about EUR 24k, 10%).",
+        "Flags the unowned data-quality cleanup (12% of records) as a blocker or risk that needs an owner and a trigger.",
+        "Does not use activity percentages such as '85% complete' as evidence of delivery status."
+      ],
+      "rationale": "Activity-based reporting hides a schedule-critical dependency slip, a budget overrun and an unowned risk."
+    },
+    "missing-context": {
+      "input": "Write a status report for tomorrow's executive meeting. The project is going fine, just make it look professional.",
+      "expectedFindings": [
+        "Does not invent milestones, percentages, dates, budget figures or a RAG status.",
+        "Asks for the objective, milestones and dates, current progress against them, risks, blockers and decisions needed.",
+        "Offers a report template to fill in rather than a finished report based on assumptions."
+      ],
+      "rationale": "No project facts are provided; producing a polished report would mean fabricating status."
+    }
+  }
+}

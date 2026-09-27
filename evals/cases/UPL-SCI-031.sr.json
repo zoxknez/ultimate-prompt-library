@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-SCI-031",
+  "language": "sr",
+  "note": "Sintetički test materijal; škole, program i podaci su izmišljeni (fictional).",
+  "cases": {
+    "nominal": {
+      "input": "Opština želi da zna da li besplatni školski doručak poboljšava prosečnu ocenu učenika. Program je dobrovoljan: roditelji prijavljuju decu. Imamo podatke za 3.100 učenika iz 12 osnovnih škola za školsku 2024/25:\n- dorucak: 1 ako je dete bilo u programu\n- prosek_jun_2025: prosečna ocena na kraju godine\n- prosek_jun_2024: prosečna ocena godinu dana ranije\n- prihod_domacinstva (kategorije), skola, razred\n- izostanci_2025: broj izostanaka tokom godine programa\nAnalitičar predlaže da se u model uključe sve promenljive. Postavi kauzalno pitanje i DAG i reci šta treba kontrolisati.",
+      "expectedFindings": [
+        "Eksplicitno definiše estimand, na primer prosečan efekat učešća u programu na prosek_jun_2025.",
+        "Prihod domaćinstva i prosek iz 2024. tretira kao moguće confoundere, jer utiču i na prijavu u program i na ocene.",
+        "Upozorava da izostanci tokom godine programa mogu biti medijator, pa ih ne treba kontrolisati pri proceni ukupnog efekta.",
+        "Ističe da dobrovoljna prijava znači samoselekciju i navodi nemerene faktore (na primer angažovanje roditelja) kao pretnju."
+      ],
+      "rationale": "Isti metodološki zamci kao u engleskom slučaju, u drugom domenu i na srpskom, radi provere EN/SR parity ponašanja."
+    }
+  }
+}

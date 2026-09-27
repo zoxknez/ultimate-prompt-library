@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-CAREER-007",
+  "language": "sr",
+  "note": "Sintetički test materijal; osoba, firme i ponude su izmišljene (fictional).",
+  "cases": {
+    "nominal": {
+      "input": "Imam 6 godina iskustva kao senior QA inženjer u srednjoj softverskoj firmi (neto 2.100 EUR mesečno). Imam kredit za stan i ne smem da idem ispod 1.800 EUR neto. Opcije:\n1. Ostajem na trenutnoj poziciji; firma nudi povišicu od 5% od januara.\n2. Startap od 14 zaposlenih nudi mesto test automation lead: neto 1.700 EUR plus opcije (0,2%, vesting 4 godine), finansiranje im je obezbeđeno do kraja sledeće godine.\n3. Interni prelazak u product management u sadašnjoj firmi: prvih 6 meseci neto 1.900 EUR, zatim revizija.\nNajvažnije mi je da učim i da ne rizikujem kredit. Napravi matricu odluke.",
+      "expectedFindings": [
+        "Tretira donju granicu od 1.800 EUR neto kao tvrdo ograničenje i ističe da ponuda startapa (1.700 EUR) to ograničenje krši, umesto da taj manjak 'nadoknadi' ponderima.",
+        "Definiše kriterijume i pondere eksplicitno i proverava da li se redosled opcija menja pri drugačijim ponderima (analiza osetljivosti).",
+        "Navodi informacije koje vredi prikupiti pre odluke, na primer uslove opcija i realnu vrednost equity-ja, kriterijume revizije posle 6 meseci i rizik finansiranja startapa."
+      ],
+      "rationale": "Jedna privlačna opcija krši izričito tvrdo ograničenje, što proverava razliku između ograničenja i preferencija."
+    }
+  }
+}

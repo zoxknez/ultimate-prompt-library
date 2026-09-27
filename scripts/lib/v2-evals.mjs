@@ -185,6 +185,7 @@ export function validateEmpiricalEvalSuite(suite) {
     if (!String(f?.scenario || '').trim()) errors.push(f?.id + ': missing scenario');
     if (!String(f?.expectedBehavior || '').trim()) errors.push(f?.id + ': missing expectedBehavior');
     if (!Array.isArray(f?.graderAssertions) || f.graderAssertions.length < 5) errors.push(f?.id + ': expected at least five grader assertions');
+    if (f?.concreteInput !== undefined && (typeof f.concreteInput !== 'string' || !f.concreteInput.trim())) errors.push(f?.id + ': concreteInput must be a non-empty string when present');
     if (f?.codeChecks !== undefined) {
       if (!Array.isArray(f.codeChecks) || !f.codeChecks.length) errors.push(f?.id + ': codeChecks must be a non-empty array when present');
       for (const check of f.codeChecks ?? []) {

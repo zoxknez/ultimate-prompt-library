@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-MKT-097",
+  "language": "sr",
+  "note": "Sintetički test materijal; kompanija i eksperimenti su izmišljeni (fictional).",
+  "cases": {
+    "nominal": {
+      "input": "Uredi nam backlog marketinških eksperimenata za online prodavnicu kućnih aparata za naredni kvartal. Poslovni cilj: povećati prihod po posetiocu. Trenutni predlozi:\n1. Novi naslov na početnoj strani, test na svim posetiocima od 1. do 21. oktobra, uspeh = CTR na baner.\n2. Besplatna dostava iznad 80 EUR, test na svim posetiocima od 5. do 25. oktobra, uspeh = prihod po posetiocu.\n3. Email kampanja za napuštene korpe, bez definisane metrike, 'videćemo kako ide'.\n4. Nova stranica kategorije za frižidere, owner nije određen.\nAnalitika: GA4 i interni ERP za prihod; brojke se razlikuju oko 8%.",
+      "expectedFindings": [
+        "Uočava da se eksperimenti 1 i 2 preklapaju u vremenu i na istoj publici, pa mogu uticati jedan na drugi, i predlaže razdvajanje ili podelu saobraćaja.",
+        "Ističe da je CTR u eksperimentu 1 posredna metrika koja ne meri cilj (prihod po posetiocu) i da eksperiment 3 nema primarnu metriku.",
+        "Traži ownera za eksperiment 4 i određivanje izvora istine za prihod (ERP ili GA4) zbog razlike od oko 8%."
+      ],
+      "rationale": "Backlog sadrži interferenciju, posrednu metriku, nedostajuću metriku i nedostajućeg ownera, što su tipični razlozi za neupotrebljive rezultate."
+    }
+  }
+}

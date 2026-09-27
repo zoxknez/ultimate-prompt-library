@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-BIZ-040",
+  "language": "en",
+  "note": "Synthetic test material. The company and figures are fictional.",
+  "cases": {
+    "boundary": {
+      "input": "Stress-test our strategy. We are a B2B office-cleaning company: revenue EUR 10.0M, EBITDA EUR 1.2M (12% margin), labour is 60% of revenue. Plan: open three new cities in the next 12 months, financed by a new EUR 3.0M bank loan (we have no other debt and negligible cash). The loan covenant requires net debt / EBITDA of at most 3.0x, tested quarterly. Our largest client, a hospital group, provides 30% of revenue under a contract that renews in 8 months. Wage inflation in our sector is running at about 5% per year. Management says the covenant is 'safe because we are at 2.5x'.",
+      "expectedFindings": [
+        "Recognizes that losing the hospital client alone pushes net debt / EBITDA above the 3.0x covenant (about 3.6x even if the 12% margin holds, EUR 3.0M / about EUR 0.84M).",
+        "Combines client loss with roughly 5% wage inflation on a labour base of about 60% of revenue as a connected downside that worsens the breach.",
+        "Identifies customer concentration and the 8-month renewal as the critical assumption and proposes triggers or stop conditions before committing to all three cities."
+      ],
+      "rationale": "A checkable covenant calculation where individually plausible assumptions combine into a breach that management has missed."
+    }
+  }
+}

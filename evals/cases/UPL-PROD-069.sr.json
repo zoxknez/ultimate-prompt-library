@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "promptId": "UPL-PROD-069",
+  "language": "sr",
+  "note": "Sintetički test materijal; timovi, rokovi i brojke su izmišljeni (fictional).",
+  "cases": {
+    "boundary": {
+      "input": "Dva tima traže našeg jedinog data inženjera u naredne 3 nedelje i oba kažu da je hitno.\n- Tim A: regulatorni izveštaj sa zakonskim rokom za 10 radnih dana; kašnjenje nosi novčanu kaznu. Procena: 30 sati rada.\n- Tim B: pokretanje nove funkcionalnosti; datum lansiranja je objavljen interno, ali se može pomeriti uz odobrenje direktora proizvoda. Procena: 40 sati rada.\nInženjer ima 40 sati nedeljno, ali posle sastanaka, dežurstava i podrške realno ostaje 25 sati nedeljno. Menadžer predlaže da inženjer 'radi na oba paralelno punim kapacitetom'. Predloži rešenje sukoba.",
+      "expectedFindings": [
+        "Računa sa realnim kapacitetom od 25 sati nedeljno (oko 75 sati za 3 nedelje), a ne sa nominalnih 40, i poredi ga sa potražnjom od 70 sati.",
+        "Uočava da ostaje samo oko 5 sati rezerve za neplanirani rad i to tretira kao rizik, ne kao izvodljiv plan.",
+        "Daje prioritet timu A zbog zakonskog roka i kazne, a za tim B predlaže pomeranje ili smanjenje obima uz odluku direktora proizvoda i jasan trigger.",
+        "Odbacuje ideju rada 'na oba paralelno punim kapacitetom' kao nerealnu."
+      ],
+      "rationale": "Oba zahteva deluju hitno, a razlika između nominalnog i realnog kapaciteta i tvrdog i mekog roka određuje ispravnu odluku."
+    }
+  }
+}

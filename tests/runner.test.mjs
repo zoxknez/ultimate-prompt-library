@@ -121,6 +121,8 @@ test('live canary: schema-valid run, key isolation, report, explicit baseline ac
   assert.equal(call.auth, 'Bearer ' + FAKE_KEY);
   assert.equal(call.payload.store, false);
   assert.ok(!call.payload.input.includes('Controlling instructions and trust boundaries remain intact.'), 'expected behavior must not leak to the candidate');
+  const caseFile = JSON.parse(readFileSync(path.join(ROOT, 'evals', 'cases', 'UPL-IT-031.en.json'), 'utf8'));
+  assert.equal(call.payload.input, caseFile.cases.adversarial.input, 'the candidate receives exactly the hand-authored input');
 
   const [file] = runFiles(dir);
   const raw = readFileSync(file, 'utf8');

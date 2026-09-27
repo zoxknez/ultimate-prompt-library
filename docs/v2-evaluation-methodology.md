@@ -1,6 +1,6 @@
 # UPL v2 Evaluation Methodology
 
-Review date: 2026-09-27 · Effective prompt version: **2.4.0** · Harness protocol: **v2**
+Review date: 2026-09-27 · Effective prompt version: **2.4.0** · Harness protocol: **v3**
 
 Ultimate Prompt Library evaluates prompts as production behavior specifications, not as prose judged by length or style. This document describes what the code in `scripts/` actually does. Anything not listed here is not implemented.
 
@@ -32,7 +32,13 @@ Every one of the 1,000 prompts has a deterministic suite per language: **2,000 l
 
 Every fixture has a prompt-scoped ID (`UPL-IT-031:adversarial`), scenario, expected behavior, at least five grader assertions, task shape, semantic anchors and adjacent-scope context. Fixture content stays outside the runtime prompt so production prompts stay lean.
 
-Known limitation: generated scenarios describe the situation abstractly rather than supplying domain-realistic documents. They test behavior (scope, evidence discipline, missing-context handling, injection resistance), not domain correctness on real cases. Hand-authored concrete inputs for the curated smoke set are the recommended next step.
+Generated scenarios describe the situation abstractly ("the input omits one decision-critical fact"). They test behavior (scope, evidence discipline, missing-context handling, injection resistance), not domain correctness.
+
+### Concrete inputs for the curated set
+
+All 49 fixtures of the curated smoke set also have a hand-authored concrete input in `evals/cases/<promptId>.<lang>.json` (27 files, clearly fictional material). Each case supplies what a real user would send - a medication list, a code excerpt, a legal memo with its sources, a valuation request, a landing page draft - with planted facts, and adds 1 to 4 case-specific assertions (prefixed "Case-specific:" / "Specifično za slučaj:") that check whether the model found those exact facts. Examples: a cross-tenant IDOR next to a parameterized-query false-positive trap (UPL-IT-031), a warfarin to apixaban transition with an eGFR of 28 (UPL-HEALTH-021), a memo relying on a repealed paragraph (UPL-LAW-001), a covenant that breaks when the largest client leaves (UPL-BIZ-040).
+
+When a fixture has a concrete input, the candidate receives exactly that text as the user message, with no evaluation framing; the judge sees it in a separate `USER_INPUT` section. Adversarial cases embed the injection canary inside realistic untrusted content (a code comment, a support ticket, a forum post, a job posting). `validate-v2` requires exactly one case per curated fixture, and `validateCaseFile` enforces the schema, Serbian text for SR cases, the canary in adversarial cases and the absence of credential-shaped strings. Cases change the fixture hash, so editing a case makes its golden baseline stale.
 
 ## 4. Executable runner
 
@@ -81,7 +87,7 @@ Provider errors are classified by `scripts/lib/eval/providers/errors.mjs` and ar
 
 An aborted run still writes its partial results (with `aborted.reason`) so spent calls are not lost; exit code 3.
 
-### Candidate and judge separation (harness protocol v2)
+### Candidate and judge separation (harness protocol v3)
 
 - The production prompt is sent as system/developer instructions. The scenario is user data inside a delimiter derived from a hash of the content, so the content cannot contain its own closing tag. The candidate never sees the expected behavior or the grader assertions (protocol v1 leaked the expected behavior).
 - The judge runs as a separate call with Structured Outputs (`json_schema`, strict). It grades every assertion separately as `pass`, `fail` or `cannot_determine`; `cannot_determine` counts as a failure.
@@ -158,7 +164,7 @@ To add a provider: implement the contract, map its errors onto the existing kind
 
 ## 8. Curated smoke and baseline set
 
-`evals/manifests/baseline-smoke.json` lists 27 prompt/language entries and 49 fixtures (98 planned calls): all 10 categories, all 9 task shapes, EN and SR, the high-impact prompts UPL-IT-031, UPL-LAW-001, UPL-HEALTH-021 and UPL-SCI-031, provenance- and adversarial-heavy prompts, structured-output prompts, and prompts whose routing changed in 2.4.0. Every entry records why it is in the set. `validate-v2` enforces coverage.
+`evals/manifests/baseline-smoke.json` lists 27 prompt/language entries and 49 fixtures (98 planned calls): all 10 categories, all 9 task shapes, EN and SR, the high-impact prompts UPL-IT-031, UPL-LAW-001, UPL-HEALTH-021 and UPL-SCI-031, provenance- and adversarial-heavy prompts, structured-output prompts, and prompts whose routing changed in 2.4.0. Every entry records why it is in the set, and every fixture has a concrete input (section 3). `validate-v2` enforces coverage.
 
 Recommended first live sequence (operator's machine, key only in the environment):
 
