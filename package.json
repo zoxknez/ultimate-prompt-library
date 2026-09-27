@@ -21,7 +21,7 @@
     "build:site": "node scripts/generate-site.mjs",
     "build": "npm run generate && npm run validate:prompts && npm run validate:translations && npm run validate:links && npm run validate:generated && npm run validate:v2 && npm run build:site && node scripts/validate-site.mjs",
     "validate:site": "npm run build:site && node scripts/validate-site.mjs",
-    "validate:v2": "node scripts/validate-v2.mjs && node scripts/export-v2-evals.mjs",
+    "validate:v2": "node scripts/validate-v2.mjs && node scripts/export-v2-evals.mjs && node scripts/run-v2-evals.mjs --prompt=UPL-IT-031 --lang=en --max-fixtures=6 && node scripts/run-v2-evals.mjs --prompt=UPL-HEALTH-021 --lang=sr --max-fixtures=6",
     "evals:v2": "node scripts/export-v2-evals.mjs",
     "eval:run": "node scripts/run-v2-evals.mjs",
     "baseline:accept": "node scripts/accept-v2-baseline.mjs"
