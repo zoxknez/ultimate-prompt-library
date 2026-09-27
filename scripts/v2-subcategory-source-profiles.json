@@ -993,6 +993,11 @@
     {
       "label": "W3C WCAG 2.2 - Images and non-text content",
       "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html"
+    },
+    {
+      "label": "IPTC Photo Metadata Standard 2025.1",
+      "url": "https://iptc.org/standards/photo-metadata/iptc-standard/",
+      "note": "Current professional photo metadata standard, including rights and AI-generated-content fields."
     }
   ],
   "video-motion-production": [
@@ -1013,6 +1018,11 @@
     {
       "label": "W3C WCAG 2.2",
       "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "label": "EBU R 128 Loudness Normalisation",
+      "url": "https://tech.ebu.ch/publications/r128",
+      "note": "Broadcast/programme loudness recommendation; verify platform-specific delivery targets separately."
     }
   ],
   "storytelling-writing-narrative": [

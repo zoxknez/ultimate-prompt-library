@@ -11,10 +11,12 @@ if (repo.catalog.categories.length !== 10) fail('Expected exactly 10 categories.
 if (repo.prompts.size !== 1000) fail('Expected exactly 1000 unique prompts, found ' + repo.prompts.size + '.');
 if (repo.files.length !== 2000) fail('Expected exactly 2000 localized prompt files, found ' + repo.files.length + '.');
 
+const categoryProfiles = JSON.parse(readFileSync(new URL('./v2-quality-profiles.json', import.meta.url), 'utf8'));
 const subProfiles = JSON.parse(readFileSync(new URL('./v2-subcategory-profiles.json', import.meta.url), 'utf8'));
 const sourceProfiles = JSON.parse(readFileSync(new URL('./v2-source-profiles.json', import.meta.url), 'utf8'));
 const subSourceProfiles = JSON.parse(readFileSync(new URL('./v2-subcategory-source-profiles.json', import.meta.url), 'utf8'));
 
+if (Object.keys(categoryProfiles).length !== 10) fail('Expected exactly 10 category v2 quality profiles.');
 if (Object.keys(subProfiles).length !== 100) fail('Expected exactly 100 subcategory v2 profiles.');
 if (Object.keys(sourceProfiles).length !== 10) fail('Expected exactly 10 category authoritative source profiles.');
 if (Object.keys(subSourceProfiles).length !== 100) fail('Expected exactly 100 subcategory authoritative source profiles.');
@@ -77,8 +79,23 @@ for (const category of repo.catalog.categories) {
   }
 
   for (const sub of category.subcategories) {
+    if (!categoryProfiles[category.id]) fail(category.id + ': missing category v2 quality profile.');
     if (!subProfiles[sub.id]) fail(category.id + ': missing v2 subcategory profile for ' + sub.id + '.');
     if (!subSourceProfiles[sub.id]) fail(category.id + ': missing subcategory source profile for ' + sub.id + '.');
+
+    const combinedSources = [...(subSourceProfiles[sub.id] ?? []), ...(sourceProfiles[category.id] ?? [])];
+    const uniqueByUrl = [...new Map(combinedSources.map((item) => [item.url, item])).values()];
+    if (uniqueByUrl.length < 4) {
+      fail(category.id + '/' + sub.id + ': expected at least 4 effective authoritative sources after deduplication.');
+    }
+    const sourceHosts = new Set(
+      uniqueByUrl
+        .map((item) => String(item.url ?? '').match(/^https:\/\/([^/]+)/i)?.[1]?.replace(/^www\./, ''))
+        .filter(Boolean)
+    );
+    if (sourceHosts.size < 2) {
+      fail(category.id + '/' + sub.id + ': expected at least 2 independent source domains.');
+    }
   }
 }
 

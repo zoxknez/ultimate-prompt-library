@@ -184,3 +184,19 @@ At execution time:
 3. prefer binding/current primary authority when available;
 4. record jurisdiction, population, version/date and exact claim supported;
 5. lower confidence when current authoritative evidence cannot be verified.
+
+
+### Additional creative-production authorities
+
+- WIPO Copyright FAQ
+  - https://www.wipo.int/en/web/copyright/faq-copyright
+  - General copyright/originality concepts; local law still controls legal conclusions.
+- C2PA Technical Specification 2.2
+  - https://spec.c2pa.org/specifications/specifications/2.2/index.html
+  - Content provenance and authenticity for digital media workflows.
+- IPTC Photo Metadata Standard 2025.1
+  - https://iptc.org/standards/photo-metadata/iptc-standard/
+  - Professional photo metadata, rights information and AI-generated-content metadata.
+- EBU R 128
+  - https://tech.ebu.ch/publications/r128
+  - Programme loudness normalisation guidance; platform-specific delivery targets still require verification.

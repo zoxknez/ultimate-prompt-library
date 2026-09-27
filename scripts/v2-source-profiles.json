@@ -206,6 +206,16 @@
       "label": "Design Tokens Format Module 2025.10 - Final Community Group Report",
       "url": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/",
       "note": "Stable Community Group Final Report; not a W3C Recommendation or standards-track specification."
+    },
+    {
+      "label": "WIPO Copyright - Frequently Asked Questions",
+      "url": "https://www.wipo.int/en/web/copyright/faq-copyright",
+      "note": "Use for general copyright/originality concepts; verify applicable national law for legal conclusions."
+    },
+    {
+      "label": "C2PA Technical Specification 2.2",
+      "url": "https://spec.c2pa.org/specifications/specifications/2.2/index.html",
+      "note": "Content provenance/authenticity specification for media workflows."
     }
   ]
 }
