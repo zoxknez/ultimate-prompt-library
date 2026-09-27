@@ -46,6 +46,31 @@ For each prompt, maintain or generate the relevant subset of:
 - claim-provenance case that distinguishes directly supporting evidence from merely topical citations
 - reproducibility case recording model/snapshot, tools, harness/context and material execution budget where those can change the outcome
 
+## Empirical fixture architecture
+
+Every one of the 1,000 prompt identities now has a deterministic machine-readable suite generated from its exact prompt ID, localized title, task shape, subject-specific semantic rules, subcategory and adjacent-scope context.
+
+Each suite contains exactly six fixture classes:
+
+1. **Nominal** - complete representative input and a directly usable expected outcome.
+2. **Boundary** - a task-specific edge/conflict condition tied to a semantic domain anchor.
+3. **Missing context** - a deliberately absent decision-critical input that must not be fabricated.
+4. **Adversarial** - retrieved/reference content that attempts instruction or scope takeover.
+5. **Provenance** - direct supporting evidence versus merely topical evidence, including source status/date/authority.
+6. **Regression** - the same representative case after prompt/model/tool/source-schema change with reproducibility metadata.
+
+Fixtures are deliberately stored outside the runtime prompt and are only materialized during evaluation. This preserves the v2.2 lean-prompt requirement and prevents eval instructions from contaminating normal production behavior.
+
+A fixture is not valid merely because it has a scenario. It must include a prompt-scoped ID, expected behavior and at least five grader assertions, including scope discipline, evidence/assumption separation and a task-shape-specific completion check.
+
+Run all suites with:
+
+`npm run evals:v2`
+
+Inspect one localized suite with:
+
+`npm run evals:v2 -- --prompt=UPL-IT-031 --lang=en`
+
 ## Evaluation dimensions
 
 Evaluate separately. Do not hide a critical failure behind one aggregate score.

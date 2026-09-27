@@ -2,6 +2,7 @@
 import { readFileSync } from 'node:fs';
 import { loadValidRepository } from './lib/upl.mjs';
 import { V2_MARKER, V2_VERSION, semanticDetailRules, taskShapeRules } from './lib/v2-quality.mjs';
+import { buildEmpiricalEvalSuite, validateEmpiricalEvalSuite, V2_EVAL_CLASSES } from './lib/v2-evals.mjs';
 
 const repo = loadValidRepository();
 const errors = [];
@@ -79,11 +80,25 @@ for (const category of repo.catalog.categories) {
   if (!sourceProfiles[category.id]) fail(category.id + ': missing category authoritative source profile.');
 
   for (const prompt of category.prompts) {
-    const taskRules = taskShapeRules({ ...prompt, title: prompt.title?.en ?? '' }, 'en');
-    const semanticRules = semanticDetailRules({ ...prompt, title: prompt.title?.en ?? '' }, 'en');
+    const taskData = { ...prompt, title: prompt.title?.en ?? '', language: 'en', category_id: category.id, subcategory_id: prompt.subcategory, subcategory: prompt.subcategory };
+    const taskRules = taskShapeRules(taskData, 'en');
+    const semanticRules = semanticDetailRules(taskData, 'en');
     if (semanticRules.length < 4) fail(prompt.id + ': expected at least four subject-specific semantic rules.');
     if (taskRules[0] === 'Define objective, inputs, constraints and success criteria before the main work.') {
       fail(prompt.id + ': generic task-shape fallback is not allowed.');
+    }
+
+    for (const lang of ['en', 'sr']) {
+      const title = prompt.title?.[lang] ?? prompt.title?.en ?? prompt.id;
+      const suite = buildEmpiricalEvalSuite({ ...taskData, title, language: lang }, lang);
+      const fixtureErrors = validateEmpiricalEvalSuite(suite);
+      for (const error of fixtureErrors) fail(prompt.id + '/' + lang + ': empirical eval: ' + error);
+      if (suite.promptId !== prompt.id) fail(prompt.id + '/' + lang + ': empirical eval prompt identity drift.');
+      if (suite.fixtures.length !== 6) fail(prompt.id + '/' + lang + ': expected exactly six empirical fixtures.');
+      if (!suite.fixtures.every((item) => item.id.startsWith(prompt.id + ':'))) fail(prompt.id + '/' + lang + ': fixture ID namespace drift.');
+      if (!suite.semanticAnchors.every((item) => item && !/this task|ovaj zadatak/i.test(item))) {
+        fail(prompt.id + '/' + lang + ': empirical eval semantic anchors are too generic.');
+      }
     }
   }
 
@@ -161,6 +176,15 @@ for (const [id, prompt] of repo.prompts) {
     if (!file.body.includes('Keep the effective prompt lean:') && !file.body.includes('Efektivni prompt držite lean:')) {
       fail(file.path + ': missing lean-prompt execution rule.');
     }
+    if (!file.body.includes('EMPIRICAL EVAL SUITE') && !file.body.includes('EMPIRIJSKI EVAL SUITE')) {
+      fail(file.path + ': missing empirical eval-suite reference.');
+    }
+    for (const klass of V2_EVAL_CLASSES) {
+      if (!file.body.includes(id + ':{nominal|boundary|missing-context|adversarial|provenance|regression}')) {
+        fail(file.path + ': missing empirical fixture namespace.');
+        break;
+      }
+    }
 
     const sourceHeading = lang === 'sr'
       ? 'AUTORITATIVNI POČETNI IZVORI'
@@ -195,5 +219,5 @@ if (errors.length) {
 
 console.log(
   'validate-v2: 1000 prompts / 2000 localizations / 100 quality profiles / ' +
-  '100 subcategory source profiles / 10 category source profiles / provenance+reproducibility guards / version ' + V2_VERSION + ' -> OK'
+  '100 subcategory source profiles / 10 category source profiles / 1000 empirical suites / 6000 fixtures per language-pair run / version ' + V2_VERSION + ' -> OK'
 );

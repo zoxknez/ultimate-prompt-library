@@ -1,4 +1,4 @@
-# UPL v2.1 Deep Quality Upgrade Report
+# UPL v2.2 Deep Quality Upgrade Report
 
 Review date: 2026-09-27
 
@@ -10,7 +10,7 @@ Review date: 2026-09-27
 - Subcategories with dedicated best-practice profiles: **100 / 100**
 - Subcategories with dedicated authoritative source routing: **100 / 100**
 - Category-level authoritative source profiles: **10 / 10**
-- Effective prompt version: **2.1.0**
+- Effective prompt version: **2.2.0**
 - Languages: **English + Serbian**
 
 ## V2 composition model
@@ -51,6 +51,10 @@ Every generated prompt now receives:
 - claim-level provenance and citation-laundering protection
 - reproducibility fixtures for model/tool/harness-sensitive evaluation
 - lean-prompt execution rule to prevent duplicated guidance from becoming output noise
+- deterministic empirical eval suite for every prompt identity
+- six machine-readable fixture classes per prompt: nominal, boundary, missing-context, adversarial, provenance and regression
+- prompt-specific semantic anchors and adjacent-scope awareness inside eval generation
+- grader assertions that are validated structurally before a suite can pass
 - relevant authoritative starting sources
 
 ## Prompt-engineering methodology
@@ -107,7 +111,7 @@ The production build must preserve:
 - at least two independent authoritative source domains per subcategory
 - draft/proposed source-status validation with explicit notes
 - stable identity from `catalog.json`
-- effective version 2.1.0 in generated indexes and live prompt pages
+- effective version 2.2.0 in generated indexes and live prompt pages
 - v2 quality marker in every generated prompt body
 - prompt-execution best-practice layer
 - prompt-specific execution-focus layer

@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 
-export const V2_VERSION = '2.1.0';
+export const V2_VERSION = '2.2.0';
 export const V2_MARKER = '<!-- UPL:V2-QUALITY-LAYER -->';
 
 const profiles = JSON.parse(
@@ -713,6 +713,11 @@ export function buildV2QualityLayer(data) {
     '## ' + (sr ? '15. AUTORITATIVNI POČETNI IZVORI' : '15. AUTHORITATIVE STARTING SOURCES'), '',
     (sr ? 'Koristiti samo izvore relevantne za konkretan zadatak i pre oslanjanja proveriti najnoviju važeću verziju, datum, jurisdikciju ili populaciju.' : 'Use only sources relevant to the task and verify the latest applicable version, date, jurisdiction or population before relying on them.'),
     sourceBullets(sourceProfile), '',
+    '## ' + (sr ? '16. EMPIRIJSKI EVAL SUITE' : '16. EMPIRICAL EVAL SUITE'), '',
+    (sr
+      ? 'Ovaj prompt ima zaseban v2.2 machine-readable eval suite sa nominal, boundary, missing-context, adversarial, provenance i regression fixture-ima. Fixture sadržaj držati van runtime prompta osim tokom evaluacije kako bi production prompt ostao lean.'
+      : 'This prompt has a separate v2.2 machine-readable eval suite with nominal, boundary, missing-context, adversarial, provenance and regression fixtures. Keep fixture content outside the runtime prompt except during evaluation so the production prompt stays lean.'), '',
+    (sr ? 'Fixture namespace: ' : 'Fixture namespace: ') + data.id + ':{nominal|boundary|missing-context|adversarial|provenance|regression}', '',
     (sr ? 'Širi registry i metodologija:' : 'Broader registry and methodology:'),
     '- [UPL Prompt Quality Standard v2](' + QUALITY_STANDARD + ')',
     '- [UPL External Source Registry v2](' + SOURCE_REGISTRY + ')',
