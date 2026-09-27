@@ -59,7 +59,7 @@ function taskShapeRules(data, lang) {
   );
 
   add(
-    /(audit|review|check|readiness|quality|inspection)/.test(haystack),
+    /(audit|review|check|readiness|quality|inspection|hunter|verification|appraisal|due-diligence|diligence|spotting|detection|acceptance)/.test(haystack),
     [
       'Define the baseline and audit criteria before findings so severity is not impression-driven.',
       'Tie every material finding to direct evidence, consequence and a reproduction path or trigger.',
@@ -73,7 +73,7 @@ function taskShapeRules(data, lang) {
   );
 
   add(
-    /(builder|design|plan|roadmap|framework|system|strategy|brief|architecture|workflow)/.test(haystack),
+    /(builder|design|plan|roadmap|framework|system|strategy|brief|architecture|workflow|architect|playbook|preparation|prep|program|pipeline|portfolio|direction|rollout|routine|pathway|cadence|rhythm|feedback-loop|structure|version-control)/.test(haystack),
     [
       'Start from objective, user/stakeholder, constraints and acceptance criteria before designing the solution.',
       'Compare at least one serious alternative and document why the selected direction better fits the context.',
@@ -87,7 +87,7 @@ function taskShapeRules(data, lang) {
   );
 
   add(
-    /(analysis|analyzer|assessment|evaluation|map|mapper|comparison|compare|diagnostic)/.test(haystack),
+    /(analysis|analyzer|assessment|evaluation|map|mapper|comparison|compare|diagnostic|interpretation|applicability|enforcement|jurisdiction|synthesis|triangulation|allocation|unit-economics|economics|optimization|rationalization|reconstructor|explainer|communicator|alignment|information-flow|flow|differentiation|divergence|convergence)/.test(haystack),
     [
       'Define the unit of analysis, comparison basis, variables/criteria and time period before interpreting results.',
       'Check source/data quality, missingness, measurement error and alternative explanations.',
@@ -129,7 +129,7 @@ function taskShapeRules(data, lang) {
   );
 
   add(
-    /(tracker|monitor|calendar|register|inventory|log|dashboard|scorecard)/.test(haystack),
+    /(tracker|monitor|calendar|register|inventory|log|dashboard|scorecard|status-report|report)/.test(haystack),
     [
       'Define source of truth, metric/field, owner, cadence and freshness rule before tracking.',
       'Add thresholds or triggers that lead to action; do not collect data without a decision use.',
@@ -143,7 +143,7 @@ function taskShapeRules(data, lang) {
   );
 
   add(
-    /(generator|script|message|sequence|outline|copy|statement|memo|proposal|letter|summary)/.test(haystack),
+    /(generator|script|message|sequence|outline|copy|statement|memo|proposal|letter|summary|response|request|guide|series|options)/.test(haystack),
     [
       'Ground generated content in confirmed inputs, audience, objective, tone and channel.',
       'Do not invent facts, results, testimonials, quotes, references or personalization that was not provided.',
@@ -157,7 +157,7 @@ function taskShapeRules(data, lang) {
   );
 
   add(
-    /(triage|priorit|ranking|selection|decision)/.test(haystack),
+    /(triage|priorit|ranking|selection|decision|navigator|navigation)/.test(haystack),
     [
       'Define decision criteria and thresholds before scoring or ranking options.',
       'Separate hard constraints from preferences and make trade-offs explicit.',
