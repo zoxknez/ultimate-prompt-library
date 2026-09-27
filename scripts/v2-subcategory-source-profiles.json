@@ -1,0 +1,1034 @@
+{
+  "web-development": [
+    {
+      "label": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "label": "W3C ARIA Authoring Practices Guide",
+      "url": "https://www.w3.org/WAI/ARIA/apg/"
+    },
+    {
+      "label": "Google Search Essentials",
+      "url": "https://developers.google.com/search/docs/essentials"
+    }
+  ],
+  "mobile-development": [
+    {
+      "label": "OWASP Mobile Application Security Verification Standard (MASVS)",
+      "url": "https://mas.owasp.org/MASVS/"
+    },
+    {
+      "label": "Android Developers - Guide to app architecture",
+      "url": "https://developer.android.com/topic/architecture"
+    },
+    {
+      "label": "Apple Human Interface Guidelines",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/"
+    }
+  ],
+  "backend-api": [
+    {
+      "label": "OWASP API Security Top 10",
+      "url": "https://owasp.org/API-Security/"
+    },
+    {
+      "label": "IETF RFC 9110 - HTTP Semantics",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110"
+    },
+    {
+      "label": "NIST SSDF project",
+      "url": "https://csrc.nist.gov/projects/ssdf"
+    }
+  ],
+  "cybersecurity": [
+    {
+      "label": "NIST Cybersecurity Framework 2.0",
+      "url": "https://www.nist.gov/cyberframework"
+    },
+    {
+      "label": "CIS Critical Security Controls v8.1",
+      "url": "https://www.cisecurity.org/controls/v8-1"
+    },
+    {
+      "label": "CISA Secure by Design",
+      "url": "https://www.cisa.gov/securebydesign"
+    }
+  ],
+  "devops-cloud-infrastructure": [
+    {
+      "label": "NIST SSDF project",
+      "url": "https://csrc.nist.gov/projects/ssdf"
+    },
+    {
+      "label": "SLSA Supply-chain Levels for Software Artifacts",
+      "url": "https://slsa.dev/"
+    },
+    {
+      "label": "CISA Secure by Design",
+      "url": "https://www.cisa.gov/securebydesign"
+    }
+  ],
+  "databases-data-engineering": [
+    {
+      "label": "NIST Privacy Framework",
+      "url": "https://www.nist.gov/privacy-framework"
+    },
+    {
+      "label": "FAIR Principles",
+      "url": "https://www.go-fair.org/fair-principles/"
+    },
+    {
+      "label": "PostgreSQL current documentation",
+      "url": "https://www.postgresql.org/docs/current/"
+    }
+  ],
+  "ai-llm-automation": [
+    {
+      "label": "NIST AI RMF / Generative AI Profile",
+      "url": "https://airc.nist.gov/"
+    },
+    {
+      "label": "NIST SP 800-218A - GenAI SSDF Community Profile",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/a/final"
+    },
+    {
+      "label": "OWASP Top 10 for LLM Applications 2025",
+      "url": "https://genai.owasp.org/llm-top-10/"
+    }
+  ],
+  "testing-qa-reliability": [
+    {
+      "label": "NIST SSDF project",
+      "url": "https://csrc.nist.gov/projects/ssdf"
+    },
+    {
+      "label": "Google Site Reliability Engineering resources",
+      "url": "https://sre.google/books/"
+    },
+    {
+      "label": "OWASP Web Security Testing Guide",
+      "url": "https://owasp.org/www-project-web-security-testing-guide/"
+    }
+  ],
+  "ux-ui-product-development": [
+    {
+      "label": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "label": "W3C ARIA Authoring Practices Guide",
+      "url": "https://www.w3.org/WAI/ARIA/apg/"
+    },
+    {
+      "label": "W3C WAI standards and guidelines",
+      "url": "https://www.w3.org/WAI/standards-guidelines/"
+    }
+  ],
+  "desktop-game-systems-embedded": [
+    {
+      "label": "Microsoft Windows App SDK documentation",
+      "url": "https://learn.microsoft.com/windows/apps/windows-app-sdk/"
+    },
+    {
+      "label": "Khronos Group standards registry",
+      "url": "https://registry.khronos.org/"
+    },
+    {
+      "label": "NIST SSDF project",
+      "url": "https://csrc.nist.gov/projects/ssdf"
+    }
+  ],
+  "financial-analysis-corporate-finance": [
+    {
+      "label": "IFRS Accounting Standards",
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/"
+    },
+    {
+      "label": "OECD Corporate Finance and Governance",
+      "url": "https://www.oecd.org/corporate/"
+    },
+    {
+      "label": "IMF Data",
+      "url": "https://www.imf.org/en/Data"
+    }
+  ],
+  "accounting-reporting-financial-control": [
+    {
+      "label": "IFRS Accounting Standards",
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/"
+    },
+    {
+      "label": "COSO Internal Control resources",
+      "url": "https://www.coso.org/Pages/ic.aspx"
+    },
+    {
+      "label": "IAASB Standards and Pronouncements",
+      "url": "https://www.iaasb.org/publications-resources"
+    }
+  ],
+  "economics-market-analysis": [
+    {
+      "label": "IMF Data",
+      "url": "https://www.imf.org/en/Data"
+    },
+    {
+      "label": "OECD Data",
+      "url": "https://data.oecd.org/"
+    },
+    {
+      "label": "World Bank Data",
+      "url": "https://data.worldbank.org/"
+    }
+  ],
+  "business-strategy-competitive-analysis": [
+    {
+      "label": "OECD Corporate Governance",
+      "url": "https://www.oecd.org/corporate/principles-corporate-governance/"
+    },
+    {
+      "label": "ISO Quality Management Principles",
+      "url": "https://committee.iso.org/quality-management/principles"
+    }
+  ],
+  "entrepreneurship-business-models": [
+    {
+      "label": "OECD SME and Entrepreneurship",
+      "url": "https://www.oecd.org/cfe/smes/"
+    },
+    {
+      "label": "World Bank Entrepreneurship Database",
+      "url": "https://www.worldbank.org/en/programs/entrepreneurship"
+    }
+  ],
+  "operations-supply-chain-procurement": [
+    {
+      "label": "ISO 9001 Quality Management Systems",
+      "url": "https://www.iso.org/standard/62085.html"
+    },
+    {
+      "label": "OECD Responsible Business Conduct Due Diligence",
+      "url": "https://mneguidelines.oecd.org/due-diligence-guidance-for-responsible-business-conduct.htm"
+    }
+  ],
+  "sales-revenue-pricing": [
+    {
+      "label": "FTC Advertising and Marketing Guidance",
+      "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+    },
+    {
+      "label": "OECD Consumer Policy",
+      "url": "https://www.oecd.org/sti/consumer/"
+    }
+  ],
+  "management-leadership-organization": [
+    {
+      "label": "ISO Quality Management Principles",
+      "url": "https://committee.iso.org/quality-management/principles"
+    },
+    {
+      "label": "OECD Corporate Governance",
+      "url": "https://www.oecd.org/corporate/principles-corporate-governance/"
+    }
+  ],
+  "risk-compliance-business-resilience": [
+    {
+      "label": "ISO 31000 Risk Management",
+      "url": "https://www.iso.org/iso-31000-risk-management.html"
+    },
+    {
+      "label": "NIST Cybersecurity Framework 2.0",
+      "url": "https://www.nist.gov/cyberframework"
+    }
+  ],
+  "investment-valuation-due-diligence": [
+    {
+      "label": "IFRS Accounting Standards",
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/"
+    },
+    {
+      "label": "SEC EDGAR",
+      "url": "https://www.sec.gov/edgar/search/"
+    }
+  ],
+  "legal-research-authority": [
+    {
+      "label": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/"
+    },
+    {
+      "label": "HUDOC - European Court of Human Rights",
+      "url": "https://hudoc.echr.coe.int/"
+    },
+    {
+      "label": "Curia - Court of Justice of the European Union",
+      "url": "https://curia.europa.eu/"
+    }
+  ],
+  "contract-drafting-review": [
+    {
+      "label": "UNIDROIT Principles of International Commercial Contracts",
+      "url": "https://www.unidroit.org/instruments/commercial-contracts/unidroit-principles-2016/"
+    },
+    {
+      "label": "UNCITRAL Texts",
+      "url": "https://uncitral.un.org/en/texts"
+    }
+  ],
+  "litigation-dispute-resolution": [
+    {
+      "label": "HCCH Evidence Convention",
+      "url": "https://www.hcch.net/en/instruments/conventions/specialised-sections/evidence"
+    },
+    {
+      "label": "UNCITRAL Arbitration",
+      "url": "https://uncitral.un.org/en/texts/arbitration"
+    }
+  ],
+  "corporate-commercial-law": [
+    {
+      "label": "G20/OECD Principles of Corporate Governance",
+      "url": "https://www.oecd.org/corporate/principles-corporate-governance/"
+    },
+    {
+      "label": "UNCITRAL Texts",
+      "url": "https://uncitral.un.org/en/texts"
+    }
+  ],
+  "privacy-data-protection": [
+    {
+      "label": "European Data Protection Board",
+      "url": "https://www.edpb.europa.eu/our-work-tools/our-documents_en"
+    },
+    {
+      "label": "EUR-Lex GDPR",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    }
+  ],
+  "employment-labor-law": [
+    {
+      "label": "ILO International Labour Standards",
+      "url": "https://www.ilo.org/international-labour-standards"
+    },
+    {
+      "label": "EUR-Lex Employment and Social Policy",
+      "url": "https://eur-lex.europa.eu/summary/chapter/employment_and_social_policy.html"
+    }
+  ],
+  "regulatory-compliance": [
+    {
+      "label": "OECD Regulatory Policy and Governance",
+      "url": "https://www.oecd.org/gov/regulatory-policy/"
+    },
+    {
+      "label": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/"
+    }
+  ],
+  "public-administration-procedure": [
+    {
+      "label": "OECD SIGMA Principles of Public Administration",
+      "url": "https://www.sigmaweb.org/publications/principles-public-administration.htm"
+    },
+    {
+      "label": "UNCITRAL Public Procurement",
+      "url": "https://uncitral.un.org/en/texts/procurement"
+    }
+  ],
+  "intellectual-property": [
+    {
+      "label": "WIPO",
+      "url": "https://www.wipo.int/"
+    },
+    {
+      "label": "WIPO Lex",
+      "url": "https://www.wipo.int/wipolex/en/"
+    }
+  ],
+  "international-cross-border-law": [
+    {
+      "label": "HCCH Conventions",
+      "url": "https://www.hcch.net/en/instruments/conventions"
+    },
+    {
+      "label": "UNCITRAL Texts",
+      "url": "https://uncitral.un.org/en/texts"
+    },
+    {
+      "label": "UN Treaty Collection",
+      "url": "https://treaties.un.org/"
+    }
+  ],
+  "evidence-based-health-research": [
+    {
+      "label": "WHO Guidelines Review Committee",
+      "url": "https://www.who.int/groups/guidelines-review-committee"
+    },
+    {
+      "label": "Cochrane Handbooks and Manuals",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals"
+    },
+    {
+      "label": "GRADE Working Group",
+      "url": "https://www.gradeworkinggroup.org/"
+    }
+  ],
+  "symptoms-triage-care-navigation": [
+    {
+      "label": "WHO Guidelines",
+      "url": "https://www.who.int/publications/who-guidelines"
+    },
+    {
+      "label": "NICE Guidance",
+      "url": "https://www.nice.org.uk/guidance"
+    }
+  ],
+  "medications-treatment-safety": [
+    {
+      "label": "European Medicines Agency",
+      "url": "https://www.ema.europa.eu/en/medicines"
+    },
+    {
+      "label": "U.S. FDA Drugs",
+      "url": "https://www.fda.gov/drugs"
+    },
+    {
+      "label": "WHO Medicines",
+      "url": "https://www.who.int/health-topics/medicines"
+    }
+  ],
+  "diagnostics-labs-medical-tests": [
+    {
+      "label": "WHO Diagnostics",
+      "url": "https://www.who.int/health-topics/in-vitro-diagnostics"
+    },
+    {
+      "label": "FDA Medical Devices",
+      "url": "https://www.fda.gov/medical-devices"
+    },
+    {
+      "label": "NICE Diagnostics Guidance",
+      "url": "https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/nice-diagnostics-guidance"
+    }
+  ],
+  "chronic-disease-long-term-care": [
+    {
+      "label": "WHO Noncommunicable Diseases",
+      "url": "https://www.who.int/health-topics/noncommunicable-diseases"
+    },
+    {
+      "label": "NICE Guidance",
+      "url": "https://www.nice.org.uk/guidance"
+    }
+  ],
+  "nutrition-metabolic-health": [
+    {
+      "label": "WHO Nutrition",
+      "url": "https://www.who.int/health-topics/nutrition"
+    },
+    {
+      "label": "Cochrane Handbooks and Manuals",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals"
+    }
+  ],
+  "fitness-exercise-rehabilitation": [
+    {
+      "label": "WHO Physical Activity",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+    },
+    {
+      "label": "WHO Rehabilitation",
+      "url": "https://www.who.int/health-topics/rehabilitation"
+    }
+  ],
+  "mental-health-behavioral-wellbeing": [
+    {
+      "label": "WHO Mental Health",
+      "url": "https://www.who.int/health-topics/mental-health"
+    },
+    {
+      "label": "WHO mhGAP",
+      "url": "https://www.who.int/teams/mental-health-and-substance-use/treatment-care/mental-health-gap-action-programme"
+    }
+  ],
+  "public-health-prevention-population": [
+    {
+      "label": "WHO Guidelines",
+      "url": "https://www.who.int/publications/who-guidelines"
+    },
+    {
+      "label": "WHO Global Health Observatory",
+      "url": "https://www.who.int/data/gho"
+    }
+  ],
+  "healthcare-systems-digital-patient-safety": [
+    {
+      "label": "NICE Evidence Standards Framework for Digital Health Technologies",
+      "url": "https://www.nice.org.uk/what-nice-does/digital-health/evidence-standards-framework-esf-for-digital-health-technologies"
+    },
+    {
+      "label": "WHO Patient Safety",
+      "url": "https://www.who.int/teams/integrated-health-services/patient-safety"
+    }
+  ],
+  "instructional-design-learning-science": [
+    {
+      "label": "Education Endowment Foundation - Teaching and Learning Toolkit",
+      "url": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit"
+    },
+    {
+      "label": "EEF Metacognition and Self-Regulated Learning",
+      "url": "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/metacognition"
+    }
+  ],
+  "teaching-classroom-practice": [
+    {
+      "label": "EEF Teaching and Learning Toolkit",
+      "url": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit"
+    },
+    {
+      "label": "UNESCO Education",
+      "url": "https://www.unesco.org/en/education"
+    }
+  ],
+  "assessment-feedback-grading": [
+    {
+      "label": "EEF Feedback",
+      "url": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/feedback"
+    },
+    {
+      "label": "OECD Education and Skills",
+      "url": "https://www.oecd.org/education/"
+    }
+  ],
+  "tutoring-personalized-learning": [
+    {
+      "label": "EEF One to One Tuition",
+      "url": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/one-to-one-tuition"
+    },
+    {
+      "label": "EEF Small Group Tuition",
+      "url": "https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/small-group-tuition"
+    }
+  ],
+  "study-skills-metacognition": [
+    {
+      "label": "EEF Metacognition and Self-Regulated Learning",
+      "url": "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/metacognition"
+    }
+  ],
+  "curriculum-course-design": [
+    {
+      "label": "UNESCO International Bureau of Education",
+      "url": "https://www.ibe.unesco.org/"
+    },
+    {
+      "label": "OECD Education and Skills",
+      "url": "https://www.oecd.org/education/"
+    }
+  ],
+  "literacy-language-learning": [
+    {
+      "label": "EEF Literacy Guidance Reports",
+      "url": "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports"
+    },
+    {
+      "label": "Council of Europe CEFR",
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages"
+    }
+  ],
+  "inclusive-special-education": [
+    {
+      "label": "UNESCO Inclusive Education",
+      "url": "https://www.unesco.org/en/inclusion-education"
+    },
+    {
+      "label": "CAST UDL Guidelines",
+      "url": "https://udlguidelines.cast.org/"
+    }
+  ],
+  "education-technology-ai": [
+    {
+      "label": "UNESCO AI Competency Framework for Teachers",
+      "url": "https://www.unesco.org/en/articles/ai-competency-framework-teachers"
+    },
+    {
+      "label": "UNESCO AI Competency Framework for Students",
+      "url": "https://www.unesco.org/en/articles/ai-competency-framework-students"
+    }
+  ],
+  "academic-research-professional-learning": [
+    {
+      "label": "EEF Education Evidence",
+      "url": "https://educationendowmentfoundation.org.uk/education-evidence"
+    },
+    {
+      "label": "UNESCO Education",
+      "url": "https://www.unesco.org/en/education"
+    }
+  ],
+  "research-question-study-design": [
+    {
+      "label": "EQUATOR Network",
+      "url": "https://www.equator-network.org/"
+    },
+    {
+      "label": "CONSORT 2025",
+      "url": "https://www.equator-network.org/reporting-guidelines/consort/"
+    },
+    {
+      "label": "STROBE",
+      "url": "https://www.strobe-statement.org/"
+    }
+  ],
+  "literature-review-evidence-synthesis": [
+    {
+      "label": "PRISMA 2020",
+      "url": "https://www.prisma-statement.org/prisma-2020"
+    },
+    {
+      "label": "Cochrane Handbooks and Manuals",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals"
+    }
+  ],
+  "statistics-quantitative-analysis": [
+    {
+      "label": "American Statistical Association - Statistical Significance and P-Values",
+      "url": "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf"
+    },
+    {
+      "label": "EQUATOR Network",
+      "url": "https://www.equator-network.org/"
+    }
+  ],
+  "causal-inference-experimental-reasoning": [
+    {
+      "label": "CONSORT 2025",
+      "url": "https://www.equator-network.org/reporting-guidelines/consort/"
+    },
+    {
+      "label": "STROBE",
+      "url": "https://www.strobe-statement.org/"
+    }
+  ],
+  "data-quality-reproducibility": [
+    {
+      "label": "FAIR Principles",
+      "url": "https://www.go-fair.org/fair-principles/"
+    },
+    {
+      "label": "NIST Research Data Framework",
+      "url": "https://www.nist.gov/programs-projects/research-data-framework-rdaf"
+    }
+  ],
+  "qualitative-mixed-methods": [
+    {
+      "label": "EQUATOR Network",
+      "url": "https://www.equator-network.org/"
+    },
+    {
+      "label": "SRQR reporting guideline",
+      "url": "https://www.equator-network.org/reporting-guidelines/srqr/"
+    }
+  ],
+  "scientific-visualization-communication": [
+    {
+      "label": "EQUATOR Network",
+      "url": "https://www.equator-network.org/"
+    },
+    {
+      "label": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    }
+  ],
+  "peer-review-research-integrity": [
+    {
+      "label": "COPE Core Practices",
+      "url": "https://publicationethics.org/core-practices"
+    },
+    {
+      "label": "EQUATOR Network",
+      "url": "https://www.equator-network.org/"
+    }
+  ],
+  "domain-analysis-modeling-simulation": [
+    {
+      "label": "NIST Verification and Validation resources",
+      "url": "https://www.nist.gov/"
+    },
+    {
+      "label": "FAIR Principles",
+      "url": "https://www.go-fair.org/fair-principles/"
+    }
+  ],
+  "research-projects-decisions": [
+    {
+      "label": "EQUATOR Network",
+      "url": "https://www.equator-network.org/"
+    },
+    {
+      "label": "FAIR Principles",
+      "url": "https://www.go-fair.org/fair-principles/"
+    }
+  ],
+  "career-strategy-positioning": [
+    {
+      "label": "ESCO - European Skills, Competences, Qualifications and Occupations",
+      "url": "https://esco.ec.europa.eu/en"
+    },
+    {
+      "label": "O*NET OnLine",
+      "url": "https://www.onetonline.org/"
+    }
+  ],
+  "resume-cv-portfolio": [
+    {
+      "label": "Europass",
+      "url": "https://europass.europa.eu/"
+    },
+    {
+      "label": "ESCO",
+      "url": "https://esco.ec.europa.eu/en"
+    }
+  ],
+  "job-search-applications": [
+    {
+      "label": "ESCO",
+      "url": "https://esco.ec.europa.eu/en"
+    },
+    {
+      "label": "O*NET OnLine",
+      "url": "https://www.onetonline.org/"
+    }
+  ],
+  "interviews-assessments": [
+    {
+      "label": "O*NET OnLine",
+      "url": "https://www.onetonline.org/"
+    },
+    {
+      "label": "ESCO",
+      "url": "https://esco.ec.europa.eu/en"
+    }
+  ],
+  "compensation-negotiation-offers": [
+    {
+      "label": "U.S. Bureau of Labor Statistics Occupational Outlook Handbook",
+      "url": "https://www.bls.gov/ooh/"
+    },
+    {
+      "label": "Eurostat Labour Market",
+      "url": "https://ec.europa.eu/eurostat/web/labour-market"
+    }
+  ],
+  "workplace-performance-growth": [
+    {
+      "label": "ESCO",
+      "url": "https://esco.ec.europa.eu/en"
+    },
+    {
+      "label": "O*NET OnLine",
+      "url": "https://www.onetonline.org/"
+    }
+  ],
+  "leadership-management": [
+    {
+      "label": "ISO Quality Management Principles",
+      "url": "https://committee.iso.org/quality-management/principles"
+    }
+  ],
+  "freelancing-consulting-independent-work": [
+    {
+      "label": "OECD SME and Entrepreneurship",
+      "url": "https://www.oecd.org/cfe/smes/"
+    },
+    {
+      "label": "FTC Advertising and Marketing Guidance",
+      "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+    }
+  ],
+  "networking-personal-brand-communication": [
+    {
+      "label": "FTC Endorsements, Influencers and Reviews",
+      "url": "https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews"
+    }
+  ],
+  "career-learning-long-term-development": [
+    {
+      "label": "ESCO",
+      "url": "https://esco.ec.europa.eu/en"
+    },
+    {
+      "label": "Europass Learning Opportunities and Qualifications",
+      "url": "https://europass.europa.eu/en"
+    }
+  ],
+  "strategy-positioning-market-research": [
+    {
+      "label": "FTC Advertising and Marketing Guidance",
+      "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+    },
+    {
+      "label": "OECD Consumer Policy",
+      "url": "https://www.oecd.org/sti/consumer/"
+    }
+  ],
+  "brand-messaging-copywriting": [
+    {
+      "label": "FTC Advertising and Marketing Guidance",
+      "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+    },
+    {
+      "label": "FTC Endorsements, Influencers and Reviews",
+      "url": "https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews"
+    }
+  ],
+  "content-marketing-editorial": [
+    {
+      "label": "Google Search Essentials",
+      "url": "https://developers.google.com/search/docs/essentials"
+    },
+    {
+      "label": "FTC Advertising and Marketing Guidance",
+      "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+    }
+  ],
+  "seo-organic-discovery": [
+    {
+      "label": "Google Search Essentials",
+      "url": "https://developers.google.com/search/docs/essentials"
+    },
+    {
+      "label": "Google Search Spam Policies",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+    }
+  ],
+  "email-lifecycle-crm": [
+    {
+      "label": "FTC CAN-SPAM Compliance Guide",
+      "url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business"
+    },
+    {
+      "label": "European Data Protection Board",
+      "url": "https://www.edpb.europa.eu/"
+    }
+  ],
+  "paid-acquisition-experimentation": [
+    {
+      "label": "FTC Advertising and Marketing Guidance",
+      "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+    },
+    {
+      "label": "IAB Campaign Data Standards 1.0 Final",
+      "url": "https://www.iab.com/guidelines/campaign-data-standards/"
+    }
+  ],
+  "sales-enablement-conversion": [
+    {
+      "label": "FTC Advertising and Marketing Guidance",
+      "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+    },
+    {
+      "label": "OECD Consumer Policy",
+      "url": "https://www.oecd.org/sti/consumer/"
+    }
+  ],
+  "customer-research-retention-growth": [
+    {
+      "label": "FTC Consumer Protection",
+      "url": "https://www.ftc.gov/news-events/topics/consumer-protection"
+    },
+    {
+      "label": "European Data Protection Board",
+      "url": "https://www.edpb.europa.eu/"
+    }
+  ],
+  "pr-corporate-crisis-communication": [
+    {
+      "label": "ISO 22361 Crisis Management",
+      "url": "https://www.iso.org/standard/50267.html"
+    },
+    {
+      "label": "CDC Crisis and Emergency Risk Communication",
+      "url": "https://emergency.cdc.gov/cerc/"
+    }
+  ],
+  "marketing-analytics-operations": [
+    {
+      "label": "IAB Campaign Data Standards 1.0 Final",
+      "url": "https://www.iab.com/guidelines/campaign-data-standards/"
+    },
+    {
+      "label": "Google Analytics documentation",
+      "url": "https://developers.google.com/analytics"
+    }
+  ],
+  "personal-productivity-prioritization": [
+    {
+      "label": "ISO Quality Management Principles",
+      "url": "https://committee.iso.org/quality-management/principles"
+    }
+  ],
+  "planning-goals-decision-systems": [
+    {
+      "label": "PMI PMBOK Guide - Eighth Edition",
+      "url": "https://www.pmi.org/standards/pmbok"
+    },
+    {
+      "label": "ISO 31000 Risk Management",
+      "url": "https://www.iso.org/iso-31000-risk-management.html"
+    }
+  ],
+  "project-execution-delivery": [
+    {
+      "label": "PMI PMBOK Guide - Eighth Edition",
+      "url": "https://www.pmi.org/standards/pmbok"
+    }
+  ],
+  "workflow-process-automation": [
+    {
+      "label": "ISO 9001 Quality Management Systems",
+      "url": "https://www.iso.org/standard/62085.html"
+    },
+    {
+      "label": "ISO Quality Management Principles",
+      "url": "https://committee.iso.org/quality-management/principles"
+    }
+  ],
+  "meetings-communication-documentation": [
+    {
+      "label": "ISO Quality Management Principles",
+      "url": "https://committee.iso.org/quality-management/principles"
+    }
+  ],
+  "delegation-accountability-team-operations": [
+    {
+      "label": "ISO Quality Management Principles",
+      "url": "https://committee.iso.org/quality-management/principles"
+    }
+  ],
+  "time-capacity-resource-management": [
+    {
+      "label": "PMI PMBOK Guide - Eighth Edition",
+      "url": "https://www.pmi.org/standards/pmbok"
+    }
+  ],
+  "knowledge-information-organization": [
+    {
+      "label": "ISO 30401 Knowledge Management Systems",
+      "url": "https://www.iso.org/standard/68683.html"
+    }
+  ],
+  "management-operating-systems": [
+    {
+      "label": "ISO 9001 Quality Management Systems",
+      "url": "https://www.iso.org/standard/62085.html"
+    },
+    {
+      "label": "ISO Quality Management Principles",
+      "url": "https://committee.iso.org/quality-management/principles"
+    }
+  ],
+  "productivity-audits-improvement": [
+    {
+      "label": "ISO 9001 Quality Management Systems",
+      "url": "https://www.iso.org/standard/62085.html"
+    },
+    {
+      "label": "ISO Quality Management Principles",
+      "url": "https://committee.iso.org/quality-management/principles"
+    }
+  ],
+  "creative-strategy-ideation": [
+    {
+      "label": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    }
+  ],
+  "visual-design-layout-systems": [
+    {
+      "label": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "label": "W3C Design Tokens Community Group",
+      "url": "https://www.w3.org/community/design-tokens/"
+    }
+  ],
+  "brand-identity-art-direction": [
+    {
+      "label": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    }
+  ],
+  "ux-ui-product-design": [
+    {
+      "label": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "label": "W3C ARIA Authoring Practices Guide",
+      "url": "https://www.w3.org/WAI/ARIA/apg/"
+    },
+    {
+      "label": "W3C Design Tokens Community Group",
+      "url": "https://www.w3.org/community/design-tokens/"
+    }
+  ],
+  "photography-image-creation": [
+    {
+      "label": "W3C WCAG 2.2 - Images and non-text content",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html"
+    }
+  ],
+  "video-motion-production": [
+    {
+      "label": "W3C Media Accessibility User Requirements",
+      "url": "https://www.w3.org/TR/media-accessibility-reqs/"
+    },
+    {
+      "label": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    }
+  ],
+  "audio-music-podcast": [
+    {
+      "label": "W3C Media Accessibility User Requirements",
+      "url": "https://www.w3.org/TR/media-accessibility-reqs/"
+    },
+    {
+      "label": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    }
+  ],
+  "storytelling-writing-narrative": [
+    {
+      "label": "U.S. Copyright Office",
+      "url": "https://www.copyright.gov/"
+    },
+    {
+      "label": "WIPO Copyright",
+      "url": "https://www.wipo.int/copyright/en/"
+    }
+  ],
+  "creative-critique-quality": [
+    {
+      "label": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "label": "W3C ARIA Authoring Practices Guide",
+      "url": "https://www.w3.org/WAI/ARIA/apg/"
+    }
+  ],
+  "creative-operations-delivery": [
+    {
+      "label": "W3C Design Tokens Community Group",
+      "url": "https://www.w3.org/community/design-tokens/"
+    },
+    {
+      "label": "ISO Quality Management Principles",
+      "url": "https://committee.iso.org/quality-management/principles"
+    }
+  ]
+}

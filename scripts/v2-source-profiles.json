@@ -1,24 +1,26 @@
 {
   "UPL-IT": [
     {
-      "label": "NIST Secure Software Development Framework (SSDF)",
-      "url": "https://csrc.nist.gov/projects/ssdf"
+      "label": "NIST SSDF v1.1 - Final",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "note": "Current final SSDF baseline; v1.2 is still draft as of 2026-09-27."
     },
     {
-      "label": "NIST AI Risk Management Framework / Generative AI Profile",
-      "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      "label": "NIST SSDF v1.2 - Draft",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/r1/ipd",
+      "note": "Use as draft/future-facing guidance, not as a final standard."
     },
     {
-      "label": "OWASP GenAI Security Project / LLM Top 10",
+      "label": "NIST SP 800-218A - GenAI SSDF Community Profile",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/a/final"
+    },
+    {
+      "label": "OWASP Top 10 for LLM Applications 2025",
       "url": "https://genai.owasp.org/llm-top-10/"
     },
     {
       "label": "CISA Secure by Design",
       "url": "https://www.cisa.gov/securebydesign"
-    },
-    {
-      "label": "W3C WCAG 2.2",
-      "url": "https://www.w3.org/TR/WCAG22/"
     }
   ],
   "UPL-BIZ": [
@@ -28,15 +30,15 @@
     },
     {
       "label": "ISO 9001",
-      "url": "https://www.iso.org/standard/9001"
+      "url": "https://www.iso.org/iso-9001-quality-management.html"
     },
     {
-      "label": "OECD G20/OECD Principles of Corporate Governance",
+      "label": "G20/OECD Principles of Corporate Governance",
       "url": "https://www.oecd.org/corporate/principles-corporate-governance/"
     },
     {
-      "label": "OECD Regulatory Policy and Governance",
-      "url": "https://www.oecd.org/en/publications/recommendation-of-the-council-on-regulatory-policy-and-governance_9789264209022-en.html"
+      "label": "ISO 31000 Risk Management",
+      "url": "https://www.iso.org/iso-31000-risk-management.html"
     }
   ],
   "UPL-LAW": [
@@ -68,19 +70,24 @@
   "UPL-HEALTH": [
     {
       "label": "WHO Guidelines Review Committee",
-      "url": "https://www.who.int/groups/guidelines-review-committee"
+      "url": "https://www.who.int/groups/guidelines-review-committee",
+      "note": "WHO handbook update remains under development; verify latest applicable guideline."
     },
     {
-      "label": "WHO Handbook for Guideline Development",
+      "label": "WHO Handbook for Guideline Development, 2nd Edition",
       "url": "https://www.who.int/publications/i/item/9789241548960"
+    },
+    {
+      "label": "WHO 2023 supplement on evidence informing recommendations",
+      "url": "https://www.who.int/publications/i/item/WHO-SCI-QNS-MST-2023.1"
+    },
+    {
+      "label": "Cochrane Handbooks and Manuals",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals"
     },
     {
       "label": "NICE Evidence Standards Framework for Digital Health Technologies",
       "url": "https://www.nice.org.uk/what-nice-does/digital-health/evidence-standards-framework-esf-for-digital-health-technologies"
-    },
-    {
-      "label": "Cochrane Handbook",
-      "url": "https://training.cochrane.org/handbook"
     }
   ],
   "UPL-EDU": [
@@ -103,16 +110,21 @@
   ],
   "UPL-SCI": [
     {
+      "label": "CONSORT 2025",
+      "url": "https://www.equator-network.org/reporting-guidelines/consort/",
+      "note": "Current core reporting guideline for randomized trials."
+    },
+    {
       "label": "PRISMA 2020",
       "url": "https://www.prisma-statement.org/prisma-2020"
     },
     {
-      "label": "CONSORT",
-      "url": "https://www.consort-statement.org/"
-    },
-    {
       "label": "STROBE",
       "url": "https://www.strobe-statement.org/"
+    },
+    {
+      "label": "EQUATOR Network",
+      "url": "https://www.equator-network.org/"
     },
     {
       "label": "FAIR Principles",
@@ -120,6 +132,15 @@
     }
   ],
   "UPL-CAREER": [
+    {
+      "label": "ESCO v1.2.1",
+      "url": "https://esco.ec.europa.eu/en",
+      "note": "Current version shown by the European Commission portal; useful for EU skills/occupation terminology."
+    },
+    {
+      "label": "Europass",
+      "url": "https://europass.europa.eu/"
+    },
     {
       "label": "O*NET OnLine",
       "url": "https://www.onetonline.org/"
@@ -143,26 +164,28 @@
       "url": "https://developers.google.com/search/docs/essentials"
     },
     {
-      "label": "Google Search Spam Policies",
-      "url": "https://developers.google.com/search/docs/essentials/spam-policies"
-    },
-    {
-      "label": "IAB Campaign Data Standards",
-      "url": "https://www.iab.com/guidelines/campaign-data-standards/"
+      "label": "IAB Campaign Data Standards 1.0 Final",
+      "url": "https://www.iab.com/guidelines/campaign-data-standards/",
+      "note": "Finalized 2026-08-10."
     }
   ],
   "UPL-PROD": [
     {
-      "label": "PMI PMBOK Guide",
-      "url": "https://www.pmi.org/standards/pmbok"
+      "label": "PMI PMBOK Guide - Eighth Edition",
+      "url": "https://www.pmi.org/standards/pmbok",
+      "note": "Current PMI PMBOK edition."
     },
     {
       "label": "ISO Quality Management Principles",
       "url": "https://committee.iso.org/quality-management/principles"
     },
     {
-      "label": "Atlassian Incident Postmortems",
-      "url": "https://www.atlassian.com/incident-management/postmortem/"
+      "label": "ISO 9001",
+      "url": "https://www.iso.org/iso-9001-quality-management.html"
+    },
+    {
+      "label": "ISO 31000 Risk Management",
+      "url": "https://www.iso.org/iso-31000-risk-management.html"
     }
   ],
   "UPL-CREATIVE": [
@@ -171,12 +194,16 @@
       "url": "https://www.w3.org/TR/WCAG22/"
     },
     {
+      "label": "W3C ARIA Authoring Practices Guide",
+      "url": "https://www.w3.org/WAI/ARIA/apg/"
+    },
+    {
       "label": "W3C Design Tokens Community Group",
       "url": "https://www.w3.org/community/design-tokens/"
     },
     {
-      "label": "Design Tokens Format Module",
-      "url": "https://www.w3.org/community/reports/design-tokens/"
+      "label": "W3C Media Accessibility User Requirements",
+      "url": "https://www.w3.org/TR/media-accessibility-reqs/"
     }
   ]
 }

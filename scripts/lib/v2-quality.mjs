@@ -12,12 +12,27 @@ const subcategoryProfiles = JSON.parse(
 const sourceProfiles = JSON.parse(
   readFileSync(new URL('../v2-source-profiles.json', import.meta.url), 'utf8'),
 );
+const subcategorySourceProfiles = JSON.parse(
+  readFileSync(new URL('../v2-subcategory-source-profiles.json', import.meta.url), 'utf8'),
+);
 
 const QUALITY_STANDARD = 'https://github.com/zoxknez/ultimate-prompt-library/blob/main/docs/prompt-quality-standard-v2.md';
 const SOURCE_REGISTRY = 'https://github.com/zoxknez/ultimate-prompt-library/blob/main/docs/external-source-registry-v2.md';
 
 const bullets = (items) => items.map((item) => '- ' + item).join('\n');
-const sourceBullets = (items) => items.map((item) => '- [' + item.label + '](' + item.url + ')').join('\n');
+const sourceBullets = (items) => items.map((item) =>
+  '- [' + item.label + '](' + item.url + ')' + (item.note ? ' - ' + item.note : '')
+).join('\n');
+
+const dedupeSources = (items) => {
+  const seen = new Set();
+  return items.filter((item) => {
+    const key = item.url || item.label;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+};
 
 function taskShapeRules(data, lang) {
   const sr = lang === 'sr';
@@ -25,10 +40,10 @@ function taskShapeRules(data, lang) {
 
   if (/(red-team|red team|stress-test|stress test)/.test(haystack)) {
     return sr ? [
-      'Napadnite osnovne pretpostavke i konstruisite najjaci realni failure scenario pre preporuke.',
-      'Trazite counterexample koji bi oborio trenutno resenje ili zakljucak, ne samo dodatne probleme.',
+      'Napadnite osnovne pretpostavke i konstruišite najjači realni failure scenario pre preporuke.',
+      'Tražite counterexample koji bi oborio trenutno rešenje ili zaključak, ne samo dodatne probleme.',
       'Odvojite exploitable ili decision-relevant failure od teorijskog edge case-a bez materijalnog uticaja.',
-      'Za svaki ozbiljan nalaz definisite mitigation, verification i residual risk.'
+      'Za svaki ozbiljan nalaz definišite mitigation, verification i residual risk.'
     ] : [
       'Attack core assumptions and construct the strongest realistic failure scenario before recommending changes.',
       'Search for a counterexample that could invalidate the current solution or conclusion, not merely more issues.',
@@ -39,9 +54,9 @@ function taskShapeRules(data, lang) {
 
   if (/(audit|review|check|readiness|quality)/.test(haystack)) {
     return sr ? [
-      'Definisite baseline i kriterijume audita pre nalaza da severity ne zavisi od utiska.',
-      'Svaki materijalni nalaz povezite sa direktnim dokazom, posledicom i reprodukcijom ili triggerom.',
-      'Aktivno eliminisite false positive kroz shared controls, alternative explanation i system context.',
+      'Definišite baseline i kriterijume audita pre nalaza da severity ne zavisi od utiska.',
+      'Svaki materijalni nalaz povežite sa direktnim dokazom, posledicom i reprodukcijom ili triggerom.',
+      'Aktivno eliminišite false positive kroz shared controls, alternative explanation i system context.',
       'Zatvorite nalaz tek kada postoji remediation i verification test ili jasan razlog za prihvatanje rizika.'
     ] : [
       'Define the baseline and audit criteria before findings so severity is not impression-driven.',
@@ -53,10 +68,10 @@ function taskShapeRules(data, lang) {
 
   if (/(builder|design|plan|roadmap|framework|system|strategy|brief|architecture)/.test(haystack)) {
     return sr ? [
-      'Pocnite od cilja, korisnika/stakeholdera, ogranicenja i acceptance kriterijuma pre dizajna resenja.',
+      'Pocnite od cilja, korisnika/stakeholdera, ograničenja i acceptance kriterijuma pre dizajna rešenja.',
       'Razmotrite najmanje jednu ozbiljnu alternativu i dokumentujte zasto je izabrani pravac bolji u datom kontekstu.',
       'Pretvorite dizajn u implementabilne korake sa ownerima, zavisnostima, redosledom i review triggerima.',
-      'Definisite failure/rollback scenario i dokaz da je implementacija stvarno postigla nameravani ishod.'
+      'Definišite failure/rollback scenario i dokaz da je implementacija stvarno postigla nameravani ishod.'
     ] : [
       'Start from the objective, user/stakeholder, constraints and acceptance criteria before designing the solution.',
       'Consider at least one serious alternative and document why the selected direction fits the context better.',
@@ -67,10 +82,10 @@ function taskShapeRules(data, lang) {
 
   if (/(analysis|analyzer|assessment|evaluation|map|mapper|comparison|compare)/.test(haystack)) {
     return sr ? [
-      'Definisite jedinicu analize, uporednu osnovu, varijable/kriterijume i period pre tumacenja rezultata.',
+      'Definišite jedinicu analize, uporednu osnovu, varijable/kriterijume i period pre tumacenja rezultata.',
       'Proverite data/source quality, missingness, measurement error i alternative explanation.',
       'Koristite sensitivity ili scenario proveru kada neizvesna pretpostavka moze promeniti odluku.',
-      'Zakljucak mora jasno odvojiti sta podaci pokazuju, sta se inferira i sta ostaje nepoznato.'
+      'Zaključak mora jasno odvojiti šta podaci pokazuju, šta se inferira i šta ostaje nepoznato.'
     ] : [
       'Define the unit of analysis, comparison basis, variables/criteria and period before interpreting results.',
       'Check data/source quality, missingness, measurement error and alternative explanations.',
@@ -81,7 +96,7 @@ function taskShapeRules(data, lang) {
 
   if (/(tracker|monitor|calendar|register|inventory|log|dashboard)/.test(haystack)) {
     return sr ? [
-      'Definisite source of truth, metriku/polje, ownera, cadence i freshness pravilo pre pracenja.',
+      'Definišite source of truth, metriku/polje, ownera, cadence i freshness pravilo pre praćenja.',
       'Uvedite threshold ili trigger koji vodi ka akciji; ne skupljajte podatke bez decision use-a.',
       'Obradite stale, missing, duplicate i conflicting stanje eksplicitno.',
       'Periodično uklonite metrike/polja koja vise ne menjaju odluku ili operativni tok.'
@@ -95,10 +110,10 @@ function taskShapeRules(data, lang) {
 
   if (/(generator|script|message|sequence|outline|copy|statement)/.test(haystack)) {
     return sr ? [
-      'Groundujte generisani sadrzaj u potvrdenim inputima, publici, cilju, tonu i kanalu.',
-      'Ne izmisljajte cinjenice, rezultate, testimoniale, citate, reference ili personalizaciju koja nije data.',
-      'Proverite factual consistency, claim substantiation, CTA/next action i format-specific ogranicenja.',
-      'Kada je korisno generisite kontrastne varijante, ali zadrzite isti skup potvrdenih cinjenica.'
+      'Groundujte generisani sadržaj u potvrdenim inputima, publici, cilju, tonu i kanalu.',
+      'Ne izmišljajte činjenice, rezultate, testimoniale, citate, reference ili personalizaciju koja nije data.',
+      'Proverite factual consistency, claim substantiation, CTA/next action i format-specific ograničenja.',
+      'Kada je korisno generisite kontrastne varijante, ali zadrzite isti skup potvrđenih cinjenica.'
     ] : [
       'Ground generated content in confirmed inputs, audience, objective, tone and channel.',
       'Do not invent facts, results, testimonials, quotes, references or personalization that was not provided.',
@@ -108,10 +123,10 @@ function taskShapeRules(data, lang) {
   }
 
   return sr ? [
-    'Definisite cilj, inpute, ogranicenja i kriterijum uspeha pre glavnog rada.',
-    'Povezite svaki vazan korak sa dokazom ili eksplicitnom pretpostavkom.',
+    'Definišite cilj, inpute, ograničenja i kriterijum uspeha pre glavnog rada.',
+    'Povezite svaki važan korak sa dokazom ili eksplicitnom pretpostavkom.',
     'Proverite alternativu i failure scenario pre finalne preporuke.',
-    'Zavrsni rezultat mora imati verification i jasno navedenu preostalu neizvesnost.'
+    'Završni rezultat mora imati verification i jasno navedenu preostalu neizvesnost.'
   ] : [
     'Define objective, inputs, constraints and success criteria before the main work.',
     'Tie each important step to evidence or an explicit assumption.',
@@ -129,7 +144,10 @@ export function buildV2QualityLayer(data) {
   const profile = profiles[data.category_id]?.[lang] ?? profiles[data.category_id]?.en ?? [];
   const subProfile = subcategoryProfiles[data.subcategory_id]?.[lang] ?? subcategoryProfiles[data.subcategory_id]?.en ?? [];
   const taskProfile = taskShapeRules(data, lang);
-  const sourceProfile = sourceProfiles[data.category_id] ?? [];
+  const sourceProfile = dedupeSources([
+    ...(subcategorySourceProfiles[data.subcategory_id] ?? []),
+    ...(sourceProfiles[data.category_id] ?? []),
+  ]);
 
   const preflight = sr ? [
     'Ponovite tačan cilj, scope, traženi artefakt i non-goals.',
@@ -177,6 +195,22 @@ export function buildV2QualityLayer(data) {
     'Prefer read-only inspection before destructive or irreversible actions.',
     'Validate generated code, commands, formulas, structured data and automation output before consequential use.',
     'Never claim a tool, file, URL, test, account or system was checked when it was not actually inspected.',
+  ];
+
+  const promptExecution = sr ? [
+    'Postavite kritične instrukcije, ograničenja i output format jasno i dosledno, bez kontradiktornih pravila.',
+    'Veliki kontekst odvojite delimiterima/sekcijama i jasno označite šta je kontekst, šta zadatak, a šta obavezni output.',
+    'Kompleksan posao razložite u faze: razumevanje -> izvršenje -> verifikacija -> finalni format.',
+    'Koristite primere samo kada stvarno razjašnjavaju format ili kriterijum; ne overfitujte prompt na jedan primer.',
+    'Za structured/automation output zahtevajte eksplicitnu šemu i validaciju pre downstream upotrebe.',
+    'Prompt tretirajte kao iterativni artefakt: evaluirajte ga na reprezentativnim, graničnim i adversarial primerima i menjajte prema rezultatima, ne utisku.',
+  ] : [
+    'State critical instructions, constraints and output format clearly and consistently without contradictory rules.',
+    'Separate large context with clear delimiters/sections and distinguish context, task and required output.',
+    'Decompose complex work into phases: understand -> execute -> verify -> final format.',
+    'Use examples only when they genuinely clarify format or criteria; do not overfit the prompt to one example.',
+    'For structured or automated downstream use, require an explicit schema and validate it before use.',
+    'Treat the prompt as an iterative artifact: evaluate it on representative, boundary and adversarial cases and refine from results rather than intuition.',
   ];
 
   const challenge = sr ? [
@@ -234,26 +268,28 @@ export function buildV2QualityLayer(data) {
     bullets(profile), '',
     '## ' + (sr ? '5. PODKATEGORIJSKI BEST-PRACTICE PROFIL' : '5. SUBCATEGORY BEST-PRACTICE PROFILE'), '',
     bullets(subProfile), '',
-    '## ' + (sr ? '6. TASK-SHAPE EXECUTION MODEL' : '6. TASK-SHAPE EXECUTION MODEL'), '',
+    '## ' + (sr ? '6. PROMPT-EXECUTION BEST PRACTICES' : '6. PROMPT-EXECUTION BEST PRACTICES'), '',
+    bullets(promptExecution), '',
+    '## ' + (sr ? '7. TASK-SHAPE EXECUTION MODEL' : '7. TASK-SHAPE EXECUTION MODEL'), '',
     bullets(taskProfile), '',
-    '## 7. CHALLENGE PASS', '',
+    '## 8. CHALLENGE PASS', '',
     (sr ? 'Pre finalizacije važnog zaključka aktivno proveriti:' : 'Before finalizing an important conclusion, actively test:'),
     bullets(challenge), '',
     (sr ? 'Ne zadržavati nalaz samo zato što je delovao uverljivo u ranoj fazi analize.' : 'Do not keep a finding merely because it looked plausible early in the analysis.'), '',
-    '## ' + (sr ? '8. KALIBRISANA NEIZVESNOST' : '8. CALIBRATED UNCERTAINTY'), '',
+    '## ' + (sr ? '9. KALIBRISANA NEIZVESNOST' : '9. CALIBRATED UNCERTAINTY'), '',
     (sr ? 'Za materijalne zaključke po potrebi koristiti:' : 'For material conclusions, use where helpful:'),
     '- **VERIFIED**', '- **STRONGLY SUPPORTED**', '- **PLAUSIBLE**', '- **UNCERTAIN**', '- **CONTESTED**', '- **OUTDATED**', '- **NOT APPLICABLE**', '',
     (sr ? 'Ne pretvarati odsustvo dokaza u dokaz odsustva. Odvojiti nepoznato od negativnog.' : 'Do not convert absence of evidence into evidence of absence. Separate unknown from negative.'), '',
-    '## ' + (sr ? '9. DECISION-READY OUTPUT' : '9. DECISION-READY OUTPUT'), '',
+    '## ' + (sr ? '10. DECISION-READY OUTPUT' : '10. DECISION-READY OUTPUT'), '',
     'For important findings or recommendations, use the relevant subset of:', '',
     '```text',
     'Finding / decision:', 'Status / confidence:', 'Evidence:', 'Source / location:', 'Assumptions:', 'Alternative explanation:', 'Impact:', 'Priority / severity:', 'Recommended action:', 'Owner:', 'Dependency:', 'Verification:', 'Rollback / stop trigger:', 'Residual risk:',
     '```', '',
     (sr ? 'Prioritizovati nalaze umesto vraćanja neuređenog zida stavki.' : 'Prioritize findings instead of returning an unranked wall of items.'), '',
-    '## ' + (sr ? '10. ACCEPTANCE GATE' : '10. ACCEPTANCE GATE'), '',
+    '## ' + (sr ? '11. ACCEPTANCE GATE' : '11. ACCEPTANCE GATE'), '',
     (sr ? 'Zadatak nije završen dok:' : 'Do not call the task complete until:'),
     bullets(acceptance), '',
-    '## ' + (sr ? '11. AUTORITATIVNI POČETNI IZVORI' : '11. AUTHORITATIVE STARTING SOURCES'), '',
+    '## ' + (sr ? '12. AUTORITATIVNI POČETNI IZVORI' : '12. AUTHORITATIVE STARTING SOURCES'), '',
     (sr ? 'Koristiti samo izvore relevantne za konkretan zadatak i pre oslanjanja proveriti najnoviju važeću verziju, datum, jurisdikciju ili populaciju.' : 'Use only sources relevant to the task and verify the latest applicable version, date, jurisdiction or population before relying on them.'),
     sourceBullets(sourceProfile), '',
     (sr ? 'Širi registry i metodologija:' : 'Broader registry and methodology:'),
