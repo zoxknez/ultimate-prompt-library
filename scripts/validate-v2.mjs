@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { readFileSync } from 'node:fs';
 import { loadValidRepository } from './lib/upl.mjs';
-import { V2_MARKER, V2_VERSION } from './lib/v2-quality.mjs';
+import { V2_MARKER, V2_VERSION, taskShapeRules } from './lib/v2-quality.mjs';
 
 const repo = loadValidRepository();
 const errors = [];
@@ -68,6 +68,13 @@ for (const category of repo.catalog.categories) {
   if (category.prompts.length !== 100) fail(category.id + ': expected 100 prompts.');
   if (category.subcategories.length !== 10) fail(category.id + ': expected 10 subcategories.');
   if (!sourceProfiles[category.id]) fail(category.id + ': missing category authoritative source profile.');
+
+  for (const prompt of category.prompts) {
+    const taskRules = taskShapeRules({ ...prompt, title: prompt.title?.en ?? '' }, 'en');
+    if (taskRules[0] === 'Define objective, inputs, constraints and success criteria before the main work.') {
+      fail(prompt.id + ': generic task-shape fallback is not allowed.');
+    }
+  }
 
   for (const sub of category.subcategories) {
     if (!subProfiles[sub.id]) fail(category.id + ': missing v2 subcategory profile for ' + sub.id + '.');

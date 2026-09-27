@@ -53,7 +53,7 @@ const dedupeSources = (items) => {
   });
 };
 
-function taskShapeRules(data, lang) {
+export function taskShapeRules(data, lang) {
   const sr = lang === 'sr';
   const haystack = ((data.slug || '') + ' ' + (data.title || '')).toLowerCase();
   const rules = [];
@@ -331,6 +331,7 @@ export function buildV2QualityLayer(data) {
     'Koristite primere samo kada stvarno razjašnjavaju format ili kriterijum; ne overfitujte prompt na jedan primer.',
     'Za structured/automation output zahtevajte eksplicitnu šemu i validaciju pre downstream upotrebe.',
     'Prompt tretirajte kao iterativni artefakt: evaluirajte ga na reprezentativnim, graničnim i adversarial primerima i menjajte prema rezultatima, ne utisku.',
+    'Production promptove ugrađene u aplikacije tretirajte kao verzionisani kod: validirajte dinamičke inpute, držite fixtures/evals uz izmene prompta i ponovite regresiju kada se promeni model snapshot ili ponašanje providera.',
   ] : [
     'State critical instructions, constraints and output format clearly and consistently without contradictory rules.',
     'Separate large context with clear delimiters/sections and distinguish context, task and required output.',
@@ -338,6 +339,7 @@ export function buildV2QualityLayer(data) {
     'Use examples only when they genuinely clarify format or criteria; do not overfit the prompt to one example.',
     'For structured or automated downstream use, require an explicit schema and validate it before use.',
     'Treat the prompt as an iterative artifact: evaluate it on representative, boundary and adversarial cases and refine from results rather than intuition.',
+    'Treat production prompts embedded in applications as versioned code: validate dynamic inputs, keep fixtures/evals with prompt changes, and re-run regressions when model snapshots or provider behavior change.',
   ];
 
   const challenge = sr ? [

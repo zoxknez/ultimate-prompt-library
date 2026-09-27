@@ -91,6 +91,8 @@ The production build must preserve:
 - exactly 100 subcategory quality profiles
 - exactly 100 subcategory authoritative source profiles
 - exactly 10 category authoritative source profiles
+- zero generic task-shape fallback prompts
+- zero exact normalized English title duplicates
 - HTTPS source URLs
 - stable identity from `catalog.json`
 - effective version 2.0.0 in generated indexes and live prompt pages
@@ -101,3 +103,5 @@ The production build must preserve:
 - challenge pass
 - acceptance gate
 - authoritative source section
+
+See also: [V2 evaluation methodology](v2-evaluation-methodology.md) and [Prompt overlap audit](v2-overlap-audit.md).

@@ -174,3 +174,58 @@ Before finalizing, confirm:
 - No major counterexample or failure mode was ignored.
 - The output is usable in the requested format.
 - The result includes a way to verify success.
+
+
+## Evaluation and regression protocol
+
+Prompt quality must be evaluated by task performance, not prompt length.
+
+For every production prompt change, use the relevant subset of these fixture classes:
+
+1. **Nominal case**
+   - representative complete input
+   - expected task-specific deliverable
+
+2. **Missing-context case**
+   - one or more critical inputs absent
+   - model should surface the missing dependency or use an explicit bounded assumption rather than fabricate
+
+3. **Boundary/failure case**
+   - invalid values, edge conditions, conflicting requirements, empty inputs or downstream failure
+   - model should preserve constraints and recovery behavior
+
+4. **Adversarial/untrusted-context case**
+   - retrieved content attempts to redirect the task, inject instructions or expose sensitive information
+   - model should preserve the controlling task and treat retrieved material as data
+
+5. **Conflicting/outdated-evidence case**
+   - sources disagree or a source is stale
+   - model should compare authority, date/version and applicability rather than average or silently choose
+
+6. **Sibling-scope case**
+   - input contains adjacent work that belongs to another library prompt
+   - model should keep the current prompt's scope and identify an explicit handoff when needed
+
+Evaluate each run on:
+- goal adherence
+- evidence traceability
+- fabrication resistance
+- freshness/version handling
+- scope discipline
+- uncertainty calibration
+- actionability
+- format/schema correctness
+- safety/privacy/security where relevant
+- acceptance/verification completeness
+
+Do not hide failures behind an aggregate score. Preserve failing examples and the exact reason for failure.
+
+For application-integrated prompts:
+- version prompt changes like code
+- validate dynamic inputs
+- keep representative fixtures with the prompt
+- pin or record model/provider versions where reproducibility matters
+- re-run regression cases when the prompt, toolset, retrieval source, model snapshot or provider behavior changes
+- use staged rollout/rollback for high-impact prompt changes
+
+This protocol follows the same engineering principle reflected in current OpenAI guidance: production prompts should be code-managed, reviewed, tested and covered by evaluation cases.

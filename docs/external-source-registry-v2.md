@@ -6,6 +6,12 @@ This registry lists authoritative starting points used to strengthen Ultimate Pr
 
 ## Cross-domain AI and prompt quality
 
+- OpenAI Prompting Guide
+  - https://developers.openai.com/api/docs/guides/prompting
+  - Treat production prompts as code-managed artifacts with tests/evals and validated dynamic inputs.
+- OpenAI Prompt Engineering Guide
+  - https://developers.openai.com/api/docs/guides/prompt-engineering
+  - Current guidance covers message roles, structured prompt boundaries, versioning and evaluation across model changes.
 - NIST AI Risk Management Framework and Generative AI Profile
   - https://airc.nist.gov/
   - AI RMF 1.0 is being revised; the Generative AI Profile remains a key companion resource.
