@@ -10305,8 +10305,1130 @@
         "en": "Writing, design, visual arts, audio, video and media production.",
         "sr": "Pisanje, dizajn, vizuelne umetnosti, audio, video i medijska produkcija."
       },
-      "subcategories": [],
-      "prompts": []
+      "subcategories": [
+        {
+          "id": "creative-strategy-ideation",
+          "order": 1,
+          "names": {
+            "en": "Creative Strategy & Ideation",
+            "sr": "Kreativna strategija i ideacija"
+          },
+          "descriptions": {
+            "en": "Creative briefs, concepts, idea generation, constraints, differentiation and concept selection.",
+            "sr": "Kreativni briefovi, koncepti, generisanje ideja, ograničenja, diferencijacija i izbor koncepta."
+          }
+        },
+        {
+          "id": "visual-design-layout-systems",
+          "order": 2,
+          "names": {
+            "en": "Visual Design & Layout Systems",
+            "sr": "Vizuelni dizajn i sistemi layout-a"
+          },
+          "descriptions": {
+            "en": "Composition, hierarchy, grids, typography, color, layout critique and visual systems.",
+            "sr": "Kompozicija, hijerarhija, gridovi, tipografija, boje, critique layout-a i vizuelni sistemi."
+          }
+        },
+        {
+          "id": "brand-identity-art-direction",
+          "order": 3,
+          "names": {
+            "en": "Brand Identity & Art Direction",
+            "sr": "Identitet brenda i art direction"
+          },
+          "descriptions": {
+            "en": "Brand identity, visual language, art direction, moodboards, identity systems and consistency.",
+            "sr": "Identitet brenda, vizuelni jezik, art direction, moodboard-i, identity sistemi i doslednost."
+          }
+        },
+        {
+          "id": "ux-ui-product-design",
+          "order": 4,
+          "names": {
+            "en": "UX, UI & Product Design",
+            "sr": "UX, UI i product design"
+          },
+          "descriptions": {
+            "en": "User flows, information architecture, wireframes, interface critique, usability, accessibility and design systems.",
+            "sr": "User flow, informaciona arhitektura, wireframe-i, critique interfejsa, usability, pristupačnost i design sistemi."
+          }
+        },
+        {
+          "id": "photography-image-creation",
+          "order": 5,
+          "names": {
+            "en": "Photography & Image Creation",
+            "sr": "Fotografija i kreiranje slika"
+          },
+          "descriptions": {
+            "en": "Shot planning, composition, lighting, image briefs, editing direction, visual storytelling and asset selection.",
+            "sr": "Planiranje snimanja, kompozicija, svetlo, image briefovi, smernice za obradu, vizuelni storytelling i izbor asseta."
+          }
+        },
+        {
+          "id": "video-motion-production",
+          "order": 6,
+          "names": {
+            "en": "Video, Motion & Production",
+            "sr": "Video, motion i produkcija"
+          },
+          "descriptions": {
+            "en": "Video concepts, scripts, storyboards, shot lists, pacing, motion design, editing and production planning.",
+            "sr": "Video koncepti, scenariji, storyboard-i, shot list-e, ritam, motion design, montaža i planiranje produkcije."
+          }
+        },
+        {
+          "id": "audio-music-podcast",
+          "order": 7,
+          "names": {
+            "en": "Audio, Music & Podcast Production",
+            "sr": "Audio, muzika i podcast produkcija"
+          },
+          "descriptions": {
+            "en": "Audio concepts, podcast formats, scripts, sound design, music briefs, episode structure and production.",
+            "sr": "Audio koncepti, podcast formati, skripte, sound design, music briefovi, struktura epizoda i produkcija."
+          }
+        },
+        {
+          "id": "storytelling-writing-narrative",
+          "order": 8,
+          "names": {
+            "en": "Storytelling, Writing & Narrative",
+            "sr": "Storytelling, pisanje i narativ"
+          },
+          "descriptions": {
+            "en": "Narrative structure, scripts, stories, character, tone, worldbuilding, adaptation and editorial critique.",
+            "sr": "Narativna struktura, scenariji, priče, likovi, ton, worldbuilding, adaptacija i editorial critique."
+          }
+        },
+        {
+          "id": "creative-critique-quality",
+          "order": 9,
+          "names": {
+            "en": "Creative Critique & Quality",
+            "sr": "Kreativni critique i kvalitet"
+          },
+          "descriptions": {
+            "en": "Design critique, review systems, accessibility, consistency, originality, quality control and revision.",
+            "sr": "Design critique, sistemi pregleda, pristupačnost, doslednost, originalnost, kontrola kvaliteta i revizija."
+          }
+        },
+        {
+          "id": "creative-operations-delivery",
+          "order": 10,
+          "names": {
+            "en": "Creative Operations & Delivery",
+            "sr": "Kreativne operacije i isporuka"
+          },
+          "descriptions": {
+            "en": "Creative pipelines, asset management, approvals, versioning, production calendars, handoffs and delivery systems.",
+            "sr": "Kreativni pipeline-ovi, asset management, odobrenja, versioning, produkcioni kalendari, handoff-i i sistemi isporuke."
+          }
+        }
+      ],
+      "prompts": [
+        {
+          "id": "UPL-CREATIVE-001",
+          "number": 1,
+          "slug": "creative-brief-builder",
+          "subcategory": "creative-strategy-ideation",
+          "title": {
+            "en": "Creative Brief Builder",
+            "sr": "Izrada kreativnog briefa"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-002",
+          "number": 2,
+          "slug": "idea-generation-framework",
+          "subcategory": "creative-strategy-ideation",
+          "title": {
+            "en": "Idea Generation Framework",
+            "sr": "Okvir za generisanje ideja"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-003",
+          "number": 3,
+          "slug": "concept-divergence-convergence",
+          "subcategory": "creative-strategy-ideation",
+          "title": {
+            "en": "Concept Divergence & Convergence",
+            "sr": "Divergencija i konvergencija koncepata"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-004",
+          "number": 4,
+          "slug": "creative-constraint-framework",
+          "subcategory": "creative-strategy-ideation",
+          "title": {
+            "en": "Creative Constraint Framework",
+            "sr": "Okvir kreativnih ograničenja"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-005",
+          "number": 5,
+          "slug": "concept-differentiation-audit",
+          "subcategory": "creative-strategy-ideation",
+          "title": {
+            "en": "Concept Differentiation Audit",
+            "sr": "Audit diferencijacije koncepta"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-006",
+          "number": 6,
+          "slug": "reference-board-analysis",
+          "subcategory": "creative-strategy-ideation",
+          "title": {
+            "en": "Reference Board Analysis",
+            "sr": "Analiza reference board-a"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-007",
+          "number": 7,
+          "slug": "creative-direction-options",
+          "subcategory": "creative-strategy-ideation",
+          "title": {
+            "en": "Creative Direction Options",
+            "sr": "Opcije kreativnog pravca"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-008",
+          "number": 8,
+          "slug": "concept-selection-matrix",
+          "subcategory": "creative-strategy-ideation",
+          "title": {
+            "en": "Concept Selection Matrix",
+            "sr": "Matrica izbora koncepta"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-009",
+          "number": 9,
+          "slug": "creative-risk-register",
+          "subcategory": "creative-strategy-ideation",
+          "title": {
+            "en": "Creative Risk Register",
+            "sr": "Registar kreativnih rizika"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-010",
+          "number": 10,
+          "slug": "creative-strategy-red-team",
+          "subcategory": "creative-strategy-ideation",
+          "title": {
+            "en": "Creative Strategy Red Team",
+            "sr": "Red-team kreativne strategije"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-011",
+          "number": 11,
+          "slug": "visual-hierarchy-audit",
+          "subcategory": "visual-design-layout-systems",
+          "title": {
+            "en": "Visual Hierarchy Audit",
+            "sr": "Audit vizuelne hijerarhije"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-012",
+          "number": 12,
+          "slug": "grid-layout-system-builder",
+          "subcategory": "visual-design-layout-systems",
+          "title": {
+            "en": "Grid & Layout System Builder",
+            "sr": "Izrada grid i layout sistema"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-013",
+          "number": 13,
+          "slug": "typography-system-audit",
+          "subcategory": "visual-design-layout-systems",
+          "title": {
+            "en": "Typography System Audit",
+            "sr": "Audit tipografskog sistema"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-014",
+          "number": 14,
+          "slug": "color-system-builder",
+          "subcategory": "visual-design-layout-systems",
+          "title": {
+            "en": "Color System Builder",
+            "sr": "Izrada sistema boja"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-015",
+          "number": 15,
+          "slug": "composition-critique-framework",
+          "subcategory": "visual-design-layout-systems",
+          "title": {
+            "en": "Composition Critique Framework",
+            "sr": "Okvir critique-a kompozicije"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-016",
+          "number": 16,
+          "slug": "responsive-layout-audit",
+          "subcategory": "visual-design-layout-systems",
+          "title": {
+            "en": "Responsive Layout Audit",
+            "sr": "Audit responsive layout-a"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-017",
+          "number": 17,
+          "slug": "visual-density-balance-audit",
+          "subcategory": "visual-design-layout-systems",
+          "title": {
+            "en": "Visual Density & Balance Audit",
+            "sr": "Audit vizuelne gustine i balansa"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-018",
+          "number": 18,
+          "slug": "iconography-illustration-system",
+          "subcategory": "visual-design-layout-systems",
+          "title": {
+            "en": "Iconography & Illustration System",
+            "sr": "Sistem ikonografije i ilustracija"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-019",
+          "number": 19,
+          "slug": "visual-consistency-audit",
+          "subcategory": "visual-design-layout-systems",
+          "title": {
+            "en": "Visual Consistency Audit",
+            "sr": "Audit vizuelne doslednosti"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-020",
+          "number": 20,
+          "slug": "design-polish-checklist",
+          "subcategory": "visual-design-layout-systems",
+          "title": {
+            "en": "Design Polish Checklist",
+            "sr": "Checklist za finalni polish dizajna"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-021",
+          "number": 21,
+          "slug": "brand-identity-brief",
+          "subcategory": "brand-identity-art-direction",
+          "title": {
+            "en": "Brand Identity Brief",
+            "sr": "Brand identity brief"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-022",
+          "number": 22,
+          "slug": "visual-language-builder",
+          "subcategory": "brand-identity-art-direction",
+          "title": {
+            "en": "Visual Language Builder",
+            "sr": "Izrada vizuelnog jezika"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-023",
+          "number": 23,
+          "slug": "art-direction-framework",
+          "subcategory": "brand-identity-art-direction",
+          "title": {
+            "en": "Art Direction Framework",
+            "sr": "Okvir art direction-a"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-024",
+          "number": 24,
+          "slug": "moodboard-builder",
+          "subcategory": "brand-identity-art-direction",
+          "title": {
+            "en": "Moodboard Builder",
+            "sr": "Izrada moodboard-a"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-025",
+          "number": 25,
+          "slug": "logo-system-audit",
+          "subcategory": "brand-identity-art-direction",
+          "title": {
+            "en": "Logo System Audit",
+            "sr": "Audit logo sistema"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-026",
+          "number": 26,
+          "slug": "brand-color-type-system",
+          "subcategory": "brand-identity-art-direction",
+          "title": {
+            "en": "Brand Color & Type System",
+            "sr": "Sistem boja i tipografije brenda"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-027",
+          "number": 27,
+          "slug": "brand-asset-consistency-audit",
+          "subcategory": "brand-identity-art-direction",
+          "title": {
+            "en": "Brand Asset Consistency Audit",
+            "sr": "Audit doslednosti brand asseta"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-028",
+          "number": 28,
+          "slug": "campaign-art-direction-plan",
+          "subcategory": "brand-identity-art-direction",
+          "title": {
+            "en": "Campaign Art Direction Plan",
+            "sr": "Plan art direction-a kampanje"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-029",
+          "number": 29,
+          "slug": "brand-refresh-framework",
+          "subcategory": "brand-identity-art-direction",
+          "title": {
+            "en": "Brand Refresh Framework",
+            "sr": "Okvir osvežavanja brenda"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-030",
+          "number": 30,
+          "slug": "identity-system-red-team",
+          "subcategory": "brand-identity-art-direction",
+          "title": {
+            "en": "Identity System Red Team",
+            "sr": "Red-team identity sistema"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-031",
+          "number": 31,
+          "slug": "user-flow-audit",
+          "subcategory": "ux-ui-product-design",
+          "title": {
+            "en": "User Flow Audit",
+            "sr": "Audit user flow-a"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-032",
+          "number": 32,
+          "slug": "information-architecture-builder",
+          "subcategory": "ux-ui-product-design",
+          "title": {
+            "en": "Information Architecture Builder",
+            "sr": "Izrada informacione arhitekture"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-033",
+          "number": 33,
+          "slug": "wireframe-structure-builder",
+          "subcategory": "ux-ui-product-design",
+          "title": {
+            "en": "Wireframe Structure Builder",
+            "sr": "Izrada strukture wireframe-a"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-034",
+          "number": 34,
+          "slug": "ui-hierarchy-audit",
+          "subcategory": "ux-ui-product-design",
+          "title": {
+            "en": "UI Hierarchy Audit",
+            "sr": "Audit UI hijerarhije"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-035",
+          "number": 35,
+          "slug": "usability-friction-audit",
+          "subcategory": "ux-ui-product-design",
+          "title": {
+            "en": "Usability Friction Audit",
+            "sr": "Audit usability trenja"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-036",
+          "number": 36,
+          "slug": "accessibility-design-review",
+          "subcategory": "ux-ui-product-design",
+          "title": {
+            "en": "Accessibility Design Review",
+            "sr": "Pregled pristupačnosti dizajna"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-037",
+          "number": 37,
+          "slug": "design-system-component-audit",
+          "subcategory": "ux-ui-product-design",
+          "title": {
+            "en": "Design System Component Audit",
+            "sr": "Audit komponenti design sistema"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-038",
+          "number": 38,
+          "slug": "empty-error-loading-state-audit",
+          "subcategory": "ux-ui-product-design",
+          "title": {
+            "en": "Empty, Error & Loading State Audit",
+            "sr": "Audit empty, error i loading stanja"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-039",
+          "number": 39,
+          "slug": "mobile-interface-audit",
+          "subcategory": "ux-ui-product-design",
+          "title": {
+            "en": "Mobile Interface Audit",
+            "sr": "Audit mobilnog interfejsa"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-040",
+          "number": 40,
+          "slug": "product-design-red-team",
+          "subcategory": "ux-ui-product-design",
+          "title": {
+            "en": "Product Design Red Team",
+            "sr": "Red-team product design-a"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-041",
+          "number": 41,
+          "slug": "photo-shoot-creative-brief",
+          "subcategory": "photography-image-creation",
+          "title": {
+            "en": "Photo Shoot Creative Brief",
+            "sr": "Kreativni brief za fotografisanje"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-042",
+          "number": 42,
+          "slug": "shot-list-builder",
+          "subcategory": "photography-image-creation",
+          "title": {
+            "en": "Shot List Builder",
+            "sr": "Izrada shot liste"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-043",
+          "number": 43,
+          "slug": "lighting-plan-builder",
+          "subcategory": "photography-image-creation",
+          "title": {
+            "en": "Lighting Plan Builder",
+            "sr": "Izrada plana osvetljenja"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-044",
+          "number": 44,
+          "slug": "composition-shot-audit",
+          "subcategory": "photography-image-creation",
+          "title": {
+            "en": "Composition & Shot Audit",
+            "sr": "Audit kompozicije i kadra"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-045",
+          "number": 45,
+          "slug": "image-selection-framework",
+          "subcategory": "photography-image-creation",
+          "title": {
+            "en": "Image Selection Framework",
+            "sr": "Okvir izbora fotografija"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-046",
+          "number": 46,
+          "slug": "photo-editing-direction",
+          "subcategory": "photography-image-creation",
+          "title": {
+            "en": "Photo Editing Direction",
+            "sr": "Smernice za obradu fotografija"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-047",
+          "number": 47,
+          "slug": "visual-story-photo-series",
+          "subcategory": "photography-image-creation",
+          "title": {
+            "en": "Visual Story Photo Series",
+            "sr": "Vizuelna priča kroz foto seriju"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-048",
+          "number": 48,
+          "slug": "product-photography-plan",
+          "subcategory": "photography-image-creation",
+          "title": {
+            "en": "Product Photography Plan",
+            "sr": "Plan produkt fotografije"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-049",
+          "number": 49,
+          "slug": "portrait-creative-direction",
+          "subcategory": "photography-image-creation",
+          "title": {
+            "en": "Portrait Creative Direction",
+            "sr": "Kreativni pravac za portret"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-050",
+          "number": 50,
+          "slug": "image-library-quality-audit",
+          "subcategory": "photography-image-creation",
+          "title": {
+            "en": "Image Library Quality Audit",
+            "sr": "Audit kvaliteta image biblioteke"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-051",
+          "number": 51,
+          "slug": "video-concept-builder",
+          "subcategory": "video-motion-production",
+          "title": {
+            "en": "Video Concept Builder",
+            "sr": "Izrada video koncepta"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-052",
+          "number": 52,
+          "slug": "video-script-structure",
+          "subcategory": "video-motion-production",
+          "title": {
+            "en": "Video Script Structure",
+            "sr": "Struktura video scenarija"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-053",
+          "number": 53,
+          "slug": "storyboard-builder",
+          "subcategory": "video-motion-production",
+          "title": {
+            "en": "Storyboard Builder",
+            "sr": "Izrada storyboard-a"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-054",
+          "number": 54,
+          "slug": "video-shot-list-builder",
+          "subcategory": "video-motion-production",
+          "title": {
+            "en": "Video Shot List Builder",
+            "sr": "Izrada video shot liste"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-055",
+          "number": 55,
+          "slug": "editing-pacing-audit",
+          "subcategory": "video-motion-production",
+          "title": {
+            "en": "Editing & Pacing Audit",
+            "sr": "Audit montaže i ritma"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-056",
+          "number": 56,
+          "slug": "motion-design-brief",
+          "subcategory": "video-motion-production",
+          "title": {
+            "en": "Motion Design Brief",
+            "sr": "Motion design brief"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-057",
+          "number": 57,
+          "slug": "short-form-video-framework",
+          "subcategory": "video-motion-production",
+          "title": {
+            "en": "Short-Form Video Framework",
+            "sr": "Okvir short-form videa"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-058",
+          "number": 58,
+          "slug": "explainer-video-plan",
+          "subcategory": "video-motion-production",
+          "title": {
+            "en": "Explainer Video Plan",
+            "sr": "Plan explainer videa"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-059",
+          "number": 59,
+          "slug": "production-day-plan",
+          "subcategory": "video-motion-production",
+          "title": {
+            "en": "Production Day Plan",
+            "sr": "Plan produkcionog dana"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-060",
+          "number": 60,
+          "slug": "video-quality-red-team",
+          "subcategory": "video-motion-production",
+          "title": {
+            "en": "Video Quality Red Team",
+            "sr": "Red-team kvaliteta videa"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-061",
+          "number": 61,
+          "slug": "podcast-format-builder",
+          "subcategory": "audio-music-podcast",
+          "title": {
+            "en": "Podcast Format Builder",
+            "sr": "Izrada podcast formata"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-062",
+          "number": 62,
+          "slug": "episode-outline-builder",
+          "subcategory": "audio-music-podcast",
+          "title": {
+            "en": "Episode Outline Builder",
+            "sr": "Izrada outline-a epizode"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-063",
+          "number": 63,
+          "slug": "podcast-script-builder",
+          "subcategory": "audio-music-podcast",
+          "title": {
+            "en": "Podcast Script Builder",
+            "sr": "Izrada podcast skripte"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-064",
+          "number": 64,
+          "slug": "sound-design-brief",
+          "subcategory": "audio-music-podcast",
+          "title": {
+            "en": "Sound Design Brief",
+            "sr": "Sound design brief"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-065",
+          "number": 65,
+          "slug": "music-creative-brief",
+          "subcategory": "audio-music-podcast",
+          "title": {
+            "en": "Music Creative Brief",
+            "sr": "Music creative brief"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-066",
+          "number": 66,
+          "slug": "audio-brand-system",
+          "subcategory": "audio-music-podcast",
+          "title": {
+            "en": "Audio Brand System",
+            "sr": "Audio brand sistem"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-067",
+          "number": 67,
+          "slug": "voice-recording-quality-audit",
+          "subcategory": "audio-music-podcast",
+          "title": {
+            "en": "Voice Recording Quality Audit",
+            "sr": "Audit kvaliteta voice snimka"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-068",
+          "number": 68,
+          "slug": "podcast-editing-framework",
+          "subcategory": "audio-music-podcast",
+          "title": {
+            "en": "Podcast Editing Framework",
+            "sr": "Okvir podcast montaže"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-069",
+          "number": 69,
+          "slug": "audio-production-checklist",
+          "subcategory": "audio-music-podcast",
+          "title": {
+            "en": "Audio Production Checklist",
+            "sr": "Checklist audio produkcije"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-070",
+          "number": 70,
+          "slug": "audio-series-red-team",
+          "subcategory": "audio-music-podcast",
+          "title": {
+            "en": "Audio Series Red Team",
+            "sr": "Red-team audio serijala"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-071",
+          "number": 71,
+          "slug": "narrative-structure-builder",
+          "subcategory": "storytelling-writing-narrative",
+          "title": {
+            "en": "Narrative Structure Builder",
+            "sr": "Izrada narativne strukture"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-072",
+          "number": 72,
+          "slug": "character-arc-builder",
+          "subcategory": "storytelling-writing-narrative",
+          "title": {
+            "en": "Character Arc Builder",
+            "sr": "Izrada character arc-a"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-073",
+          "number": 73,
+          "slug": "scene-purpose-audit",
+          "subcategory": "storytelling-writing-narrative",
+          "title": {
+            "en": "Scene Purpose Audit",
+            "sr": "Audit svrhe scene"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-074",
+          "number": 74,
+          "slug": "story-worldbuilding-framework",
+          "subcategory": "storytelling-writing-narrative",
+          "title": {
+            "en": "Story Worldbuilding Framework",
+            "sr": "Okvir worldbuilding-a"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-075",
+          "number": 75,
+          "slug": "dialogue-quality-audit",
+          "subcategory": "storytelling-writing-narrative",
+          "title": {
+            "en": "Dialogue Quality Audit",
+            "sr": "Audit kvaliteta dijaloga"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-076",
+          "number": 76,
+          "slug": "tone-voice-consistency-audit",
+          "subcategory": "storytelling-writing-narrative",
+          "title": {
+            "en": "Tone & Voice Consistency Audit",
+            "sr": "Audit doslednosti tona i glasa"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-077",
+          "number": 77,
+          "slug": "script-adaptation-framework",
+          "subcategory": "storytelling-writing-narrative",
+          "title": {
+            "en": "Script Adaptation Framework",
+            "sr": "Okvir adaptacije scenarija"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-078",
+          "number": 78,
+          "slug": "story-pacing-audit",
+          "subcategory": "storytelling-writing-narrative",
+          "title": {
+            "en": "Story Pacing Audit",
+            "sr": "Audit ritma priče"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-079",
+          "number": 79,
+          "slug": "editorial-revision-plan",
+          "subcategory": "storytelling-writing-narrative",
+          "title": {
+            "en": "Editorial Revision Plan",
+            "sr": "Plan editorial revizije"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-080",
+          "number": 80,
+          "slug": "narrative-red-team",
+          "subcategory": "storytelling-writing-narrative",
+          "title": {
+            "en": "Narrative Red Team",
+            "sr": "Red-team narativa"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-081",
+          "number": 81,
+          "slug": "creative-critique-framework",
+          "subcategory": "creative-critique-quality",
+          "title": {
+            "en": "Creative Critique Framework",
+            "sr": "Okvir kreativnog critique-a"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-082",
+          "number": 82,
+          "slug": "design-review-checklist",
+          "subcategory": "creative-critique-quality",
+          "title": {
+            "en": "Design Review Checklist",
+            "sr": "Checklist design review-a"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-083",
+          "number": 83,
+          "slug": "accessibility-quality-audit",
+          "subcategory": "creative-critique-quality",
+          "title": {
+            "en": "Accessibility Quality Audit",
+            "sr": "Audit kvaliteta pristupačnosti"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-084",
+          "number": 84,
+          "slug": "originality-similarity-audit",
+          "subcategory": "creative-critique-quality",
+          "title": {
+            "en": "Originality & Similarity Audit",
+            "sr": "Audit originalnosti i sličnosti"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-085",
+          "number": 85,
+          "slug": "brand-consistency-review",
+          "subcategory": "creative-critique-quality",
+          "title": {
+            "en": "Brand Consistency Review",
+            "sr": "Pregled doslednosti brenda"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-086",
+          "number": 86,
+          "slug": "cross-format-quality-audit",
+          "subcategory": "creative-critique-quality",
+          "title": {
+            "en": "Cross-Format Quality Audit",
+            "sr": "Audit kvaliteta kroz više formata"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-087",
+          "number": 87,
+          "slug": "creative-acceptance-criteria",
+          "subcategory": "creative-critique-quality",
+          "title": {
+            "en": "Creative Acceptance Criteria",
+            "sr": "Kriterijumi prihvatanja kreativnog rada"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-088",
+          "number": 88,
+          "slug": "revision-priority-matrix",
+          "subcategory": "creative-critique-quality",
+          "title": {
+            "en": "Revision Priority Matrix",
+            "sr": "Matrica prioriteta revizije"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-089",
+          "number": 89,
+          "slug": "preflight-quality-control",
+          "subcategory": "creative-critique-quality",
+          "title": {
+            "en": "Preflight Quality Control",
+            "sr": "Preflight kontrola kvaliteta"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-090",
+          "number": 90,
+          "slug": "creative-final-red-team",
+          "subcategory": "creative-critique-quality",
+          "title": {
+            "en": "Creative Final Red Team",
+            "sr": "Finalni red-team kreativnog rada"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-091",
+          "number": 91,
+          "slug": "creative-production-pipeline",
+          "subcategory": "creative-operations-delivery",
+          "title": {
+            "en": "Creative Production Pipeline",
+            "sr": "Kreativni produkcioni pipeline"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-092",
+          "number": 92,
+          "slug": "asset-management-system",
+          "subcategory": "creative-operations-delivery",
+          "title": {
+            "en": "Creative Asset Management System",
+            "sr": "Sistem upravljanja kreativnim assetima"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-093",
+          "number": 93,
+          "slug": "creative-version-control",
+          "subcategory": "creative-operations-delivery",
+          "title": {
+            "en": "Creative Version Control",
+            "sr": "Version control kreativnih fajlova"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-094",
+          "number": 94,
+          "slug": "review-approval-workflow",
+          "subcategory": "creative-operations-delivery",
+          "title": {
+            "en": "Review & Approval Workflow",
+            "sr": "Workflow pregleda i odobrenja"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-095",
+          "number": 95,
+          "slug": "creative-production-calendar",
+          "subcategory": "creative-operations-delivery",
+          "title": {
+            "en": "Creative Production Calendar",
+            "sr": "Kreativni produkcioni kalendar"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-096",
+          "number": 96,
+          "slug": "creative-handoff-checklist",
+          "subcategory": "creative-operations-delivery",
+          "title": {
+            "en": "Creative Handoff Checklist",
+            "sr": "Checklist kreativnog handoff-a"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-097",
+          "number": 97,
+          "slug": "multi-format-delivery-plan",
+          "subcategory": "creative-operations-delivery",
+          "title": {
+            "en": "Multi-Format Delivery Plan",
+            "sr": "Plan isporuke u više formata"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-098",
+          "number": 98,
+          "slug": "creative-capacity-planning",
+          "subcategory": "creative-operations-delivery",
+          "title": {
+            "en": "Creative Capacity Planning",
+            "sr": "Planiranje kreativnog kapaciteta"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-099",
+          "number": 99,
+          "slug": "creative-retrospective-framework",
+          "subcategory": "creative-operations-delivery",
+          "title": {
+            "en": "Creative Retrospective Framework",
+            "sr": "Okvir kreativne retrospektive"
+          }
+        },
+        {
+          "id": "UPL-CREATIVE-100",
+          "number": 100,
+          "slug": "creative-operations-red-team",
+          "subcategory": "creative-operations-delivery",
+          "title": {
+            "en": "Creative Operations Red Team",
+            "sr": "Red-team kreativnih operacija"
+          }
+        }
+      ]
     }
   ]
 }
