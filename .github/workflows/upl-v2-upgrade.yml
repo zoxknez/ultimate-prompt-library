@@ -1,0 +1,56 @@
+name: UPL v2 prompt upgrade
+
+on:
+  push:
+    paths:
+      - ".github/workflows/upl-v2-upgrade.yml"
+      - "scripts/upgrade-prompts-v2.mjs"
+      - "docs/prompt-quality-standard-v2.md"
+      - "docs/external-source-registry-v2.md"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: upl-v2-prompt-upgrade
+  cancel-in-progress: false
+
+jobs:
+  upgrade:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Upgrade all prompts to v2
+        run: node scripts/upgrade-prompts-v2.mjs
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Regenerate and validate indexes
+        run: npm run generate
+
+      - name: Build production site
+        run: npm run build
+
+      - name: Commit v2 prompt migration
+        shell: bash
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config user.name "UPL v2 Upgrade Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add prompts indexes docs README.md README.sr.md catalog.json
+          git commit -m "Upgrade all 1000 prompts to v2 quality standard"
+          git push
