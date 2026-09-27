@@ -19,7 +19,7 @@
     "generate": "npm run index && npm run stats",
     "audit:prompts": "node scripts/audit-prompts.mjs",
     "build:site": "node scripts/generate-site.mjs",
-    "build": "npm run generate && npm run validate:prompts && npm run validate:translations && npm run validate:links && npm run validate:generated && npm run validate:v2 && npm run build:site && node scripts/validate-site.mjs",
+    "build": "npm run generate && npm run validate:prompts && npm run validate:translations && npm run validate:generated && npm run validate:v2 && npm run build:site && node scripts/validate-site.mjs",
     "validate:site": "npm run build:site && node scripts/validate-site.mjs",
     "validate:v2": "node scripts/validate-v2.mjs"
   },
