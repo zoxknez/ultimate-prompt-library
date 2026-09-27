@@ -1,6 +1,6 @@
 # Legal Research & Authority
 
-[Law & Administration](../README.md) · [Srpski](../../../../sr/03-pravo-administracija/01-legal-research-authority/README.md)
+[Law & Administration](../README.md) · [Srpski](../../../sr/03-pravo-administracija/01-legal-research-authority/README.md)
 
 This subcategory establishes the research-integrity layer for the Law collection: jurisdiction, authority hierarchy, currency, precedent, statutory interpretation, citation verification, conflict resolution, issue spotting, comparative law and research memoranda.
 

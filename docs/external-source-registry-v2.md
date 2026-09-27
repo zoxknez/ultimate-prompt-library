@@ -160,8 +160,13 @@ This registry lists authoritative starting points used to strengthen Ultimate Pr
   - https://www.w3.org/WAI/ARIA/apg/
 - W3C Media Accessibility User Requirements
   - https://www.w3.org/TR/media-accessibility-reqs/
-- W3C Design Tokens Community Group
-  - https://www.w3.org/community/design-tokens/
+- Design Tokens Format Module 2025.10 - Final Community Group Report
+  - https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/
+  - First stable production-ready Design Tokens format from the Community Group; it is not a W3C Recommendation or standards-track specification.
+- Design Tokens Color Module 2025.10
+  - https://www.w3.org/community/reports/design-tokens/CG-FINAL-color-20251028/
+- Design Tokens Resolver Module 2025.10
+  - https://www.w3.org/community/reports/design-tokens/CG-FINAL-resolver-20251028/
 
 ## Use rule
 

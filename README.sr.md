@@ -38,7 +38,7 @@ Svaki efektivni prompt kombinuje:
 
 Build validira svih 1.000 prompt ID-jeva, 2.000 EN/SR lokalizacija, 100 subcategory quality profila, 100 subcategory source profila i 10 category source profila.
 
-[Pročitaj v2 quality standard](docs/prompt-quality-standard-v2.md) · [Registry eksternih izvora](docs/external-source-registry-v2.md) · [V2 upgrade izveštaj](docs/v2-upgrade-report.md)
+[Pročitaj v2 quality standard](docs/prompt-quality-standard-v2.md) · [Registry eksternih izvora](docs/external-source-registry-v2.md) · [V2 upgrade izveštaj](docs/v2-upgrade-report.md) · [Overlap audit](docs/v2-overlap-audit.md)
 
 ## Objavljene kolekcije
 

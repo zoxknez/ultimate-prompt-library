@@ -199,12 +199,13 @@
       "url": "https://www.w3.org/WAI/ARIA/apg/"
     },
     {
-      "label": "W3C Design Tokens Community Group",
-      "url": "https://www.w3.org/community/design-tokens/"
-    },
-    {
       "label": "W3C Media Accessibility User Requirements",
       "url": "https://www.w3.org/TR/media-accessibility-reqs/"
+    },
+    {
+      "label": "Design Tokens Format Module 2025.10 - Final Community Group Report",
+      "url": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/",
+      "note": "Stable Community Group Final Report; not a W3C Recommendation or standards-track specification."
     }
   ]
 }

@@ -953,8 +953,14 @@
       "url": "https://www.w3.org/TR/WCAG22/"
     },
     {
-      "label": "W3C Design Tokens Community Group",
-      "url": "https://www.w3.org/community/design-tokens/"
+      "label": "Design Tokens Format Module 2025.10 - Final Community Group Report",
+      "url": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/",
+      "note": "Stable Community Group Final Report; not a W3C Recommendation or standards-track specification."
+    },
+    {
+      "label": "Design Tokens Color Module 2025.10 - Final Community Group Report",
+      "url": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-color-20251028/",
+      "note": "Stable Community Group Final Report for color token values; not a W3C Recommendation."
     }
   ],
   "brand-identity-art-direction": [
@@ -973,8 +979,14 @@
       "url": "https://www.w3.org/WAI/ARIA/apg/"
     },
     {
-      "label": "W3C Design Tokens Community Group",
-      "url": "https://www.w3.org/community/design-tokens/"
+      "label": "Design Tokens Format Module 2025.10 - Final Community Group Report",
+      "url": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/",
+      "note": "Stable Community Group Final Report; not a W3C Recommendation or standards-track specification."
+    },
+    {
+      "label": "Design Tokens Resolver Module 2025.10 - Final Community Group Report",
+      "url": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-resolver-20251028/",
+      "note": "Stable Community Group Final Report for multi-context token resolution; not a W3C Recommendation."
     }
   ],
   "photography-image-creation": [
@@ -1025,12 +1037,13 @@
   ],
   "creative-operations-delivery": [
     {
-      "label": "W3C Design Tokens Community Group",
-      "url": "https://www.w3.org/community/design-tokens/"
-    },
-    {
       "label": "ISO Quality Management Principles",
       "url": "https://committee.iso.org/quality-management/principles"
+    },
+    {
+      "label": "Design Tokens Format Module 2025.10 - Final Community Group Report",
+      "url": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/",
+      "note": "Stable Community Group Final Report; not a W3C Recommendation or standards-track specification."
     }
   ]
 }

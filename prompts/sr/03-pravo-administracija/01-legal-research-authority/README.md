@@ -1,6 +1,6 @@
 # Pravna istraživanja i pravni izvori
 
-[Pravo i administracija](../README.md) · [English](../../../../en/03-law-administration/01-legal-research-authority/README.md)
+[Pravo i administracija](../README.md) · [English](../../../en/03-law-administration/01-legal-research-authority/README.md)
 
 Ova podkategorija postavlja sloj integriteta istraživanja za kolekciju Pravo: jurisdikcija, hijerarhija izvora, važenje, sudska praksa, tumačenje propisa, verifikacija citata, razrešavanje sukoba, identifikacija pitanja, komparativno pravo i istraživački memorandumi.
 

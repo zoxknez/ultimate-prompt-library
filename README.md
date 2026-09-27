@@ -38,7 +38,7 @@ Every effective prompt combines:
 
 The build validates all 1,000 prompt IDs, 2,000 EN/SR localizations, 100 subcategory quality profiles, 100 subcategory source profiles and 10 category source profiles.
 
-[Read the v2 quality standard](docs/prompt-quality-standard-v2.md) · [External source registry](docs/external-source-registry-v2.md) · [V2 upgrade report](docs/v2-upgrade-report.md)
+[Read the v2 quality standard](docs/prompt-quality-standard-v2.md) · [External source registry](docs/external-source-registry-v2.md) · [V2 upgrade report](docs/v2-upgrade-report.md) · [Overlap audit](docs/v2-overlap-audit.md)
 
 ## Published collections
 
