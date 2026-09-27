@@ -681,6 +681,16 @@
     {
       "label": "O*NET OnLine",
       "url": "https://www.onetonline.org/"
+    },
+    {
+      "label": "O*NET Database 31.0",
+      "url": "https://www.onetcenter.org/database.html",
+      "note": "Current production release as of 2026-09-27."
+    },
+    {
+      "label": "ESCO v1.2.1",
+      "url": "https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/esco-versions",
+      "note": "Current ESCO version as of 2026-09-27."
     }
   ],
   "resume-cv-portfolio": [
@@ -763,6 +773,16 @@
     {
       "label": "Europass Learning Opportunities and Qualifications",
       "url": "https://europass.europa.eu/en"
+    },
+    {
+      "label": "O*NET Database 31.0",
+      "url": "https://www.onetcenter.org/database.html",
+      "note": "Current production release as of 2026-09-27."
+    },
+    {
+      "label": "ESCO v1.2.1",
+      "url": "https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/esco-versions",
+      "note": "Current ESCO version as of 2026-09-27."
     }
   ],
   "strategy-positioning-market-research": [

@@ -518,6 +518,7 @@ export function buildV2QualityLayer(data) {
     'Separate direct evidence, systematic synthesis/guidance, expert interpretation, inference and assumption.',
     'Resolve source conflicts when they could change the conclusion.',
     'Never invent a source, quote, statistic, document, result, benchmark, rule, test or external check.',
+    'If a source is draft, under public consultation, a proposed rule or interim guidance, label that status explicitly and do not present it as final/adopted authority.',
     'If current authoritative evidence cannot be verified, say so explicitly and lower confidence.',
   ];
 

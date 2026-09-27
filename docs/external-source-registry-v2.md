@@ -104,3 +104,34 @@ At execution time:
 - FTC Consumer Reviews and Testimonials Rule - 16 CFR Part 465
   - https://www.ftc.gov/legal-library/browse/rules/rulemaking-use-consumer-reviews-testimonials
   - Final rule effective 2024-10-21; covers fake or false reviews/testimonials, certain incentivized reviews, insider reviews, review suppression and fake social indicators.
+
+
+### Career taxonomy freshness - 2026-09-27
+
+- O*NET Database 31.0
+  - https://www.onetcenter.org/database.html
+  - Current production release, August 2026.
+- ESCO v1.2.1
+  - https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/esco-versions
+  - Current ESCO version, released 2025-12-10.
+
+
+### NIST SSDF status - 2026-09-27
+
+- NIST SP 800-218 - SSDF Version 1.1 (Final)
+  - https://csrc.nist.gov/pubs/sp/800/218/final
+- NIST SP 800-218A - GenAI SSDF Community Profile (Final)
+  - https://csrc.nist.gov/pubs/sp/800/218/a/final
+- NIST SP 800-218 Rev.1 - SSDF Version 1.2 (Initial Public Draft)
+  - https://csrc.nist.gov/pubs/sp/800/218/r1/ipd
+  - Draft only as of 2026-09-27; do not cite as a final normative baseline.
+
+
+### Legal-source status checks
+
+- HCCH Status Charts
+  - https://www.hcch.net/en/instruments/status-charts
+  - Verify treaty participation, entry into force, declarations, reservations and extensions for the relevant state.
+- EDPB Documents
+  - https://www.edpb.europa.eu/documents_en
+  - Verify whether guidance is adopted/final, under consultation or superseded before relying on it.
