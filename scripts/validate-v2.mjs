@@ -135,6 +135,14 @@ for (const [id, prompt] of repo.prompts) {
       fail(file.path + ': missing adversarial eval rule.');
     }
 
+    if (!file.body.includes('human review with access to the underlying evidence') &&
+        !file.body.includes('human review sa pristupom osnovnim dokazima')) {
+      fail(file.path + ': missing high-impact human-review rule.');
+    }
+    if (!file.body.includes('human-review fixture')) {
+      fail(file.path + ': missing human-review eval fixture.');
+    }
+
     const sourceHeading = lang === 'sr'
       ? 'AUTORITATIVNI POČETNI IZVORI'
       : 'AUTHORITATIVE STARTING SOURCES';

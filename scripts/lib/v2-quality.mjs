@@ -553,6 +553,7 @@ export function buildV2QualityLayer(data) {
     'Ne tvrditi da je alat, fajl, URL, test, nalog ili sistem pregledan ako to nije stvarno urađeno.',
     'Za consequential tool action prvo proverite preconditions, target, scope i permissions; gde je moguće koristite dry-run, idempotency key ili preview, a posle akcije proverite postcondition.',
     'Ako alat vraća strukturirani output, validirajte šemu i semantiku; na validation failure fail-closed umesto tihog parsiranja ili nagađanja.',
+    'Za high-impact odluke ili generisani kod/komande zahtevajte human review sa pristupom osnovnim dokazima pre consequential upotrebe, osim kada workflow ima nezavisno validiran automatizovani approval boundary.',
   ] : [
     'Use the most authoritative available tool or source for the task.',
     'Inspect enough of the whole system or artifact to support system-level conclusions.',
@@ -563,6 +564,7 @@ export function buildV2QualityLayer(data) {
     'Never claim a tool, file, URL, test, account or system was checked when it was not actually inspected.',
     'For consequential tool actions, verify preconditions, target, scope and permissions first; use dry-run, idempotency keys or previews where available, then verify the postcondition.',
     'When a tool returns structured output, validate schema and semantics; on validation failure, fail closed rather than silently parsing or guessing.',
+    'For high-impact decisions or generated code/commands, require human review with access to the underlying evidence before consequential use, unless the workflow has an independently validated automated approval boundary.',
   ];
 
   const promptExecution = sr ? [
@@ -603,6 +605,7 @@ export function buildV2QualityLayer(data) {
     'Adversarial/untrusted slučaj: preuzeti ili korisnički sadržaj ne sme neprimetno promeniti instrukcije, bezbednosna pravila ili scope.',
     'Regression slučaj: kada se promeni prompt, model, provider, alat ili source schema, ponoviti reprezentativne i high-risk evale pre prihvatanja promene.',
     'Scoring: eval mora proveriti goal completion, factuality/evidence, constraint compliance, format/schema, safety/privacy i verification readiness.',
+    'Za high-impact promptove uključite human-review fixture koji proverava da reviewer može slediti svaku consequential preporuku do izvornog dokaza i pretpostavki.',
   ] : [
     'Representative case: a typical input must produce a complete, correct and directly usable result.',
     'Boundary case: minimal, maximal, empty, conflicting or unusual input must be handled without silent guessing.',
@@ -610,6 +613,7 @@ export function buildV2QualityLayer(data) {
     'Adversarial/untrusted case: retrieved or user-controlled content must not silently change instructions, safety rules or scope.',
     'Regression case: when the prompt, model, provider, tool or source schema changes, re-run representative and high-risk evals before accepting the change.',
     'Scoring: the eval must check goal completion, factuality/evidence, constraint compliance, format/schema, safety/privacy and verification readiness.',
+    'For high-impact prompts, include a human-review fixture that verifies the reviewer can trace each consequential recommendation back to source evidence and assumptions.',
   ];
 
   const challenge = sr ? [

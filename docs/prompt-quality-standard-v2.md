@@ -173,6 +173,19 @@ For prompts involving AI systems or agents:
 - evaluate representative and adversarial cases
 - never let retrieved text silently override the user's intent or safety constraints
 
+## Human review and consequential use
+
+For high-impact outputs such as medical, legal, financial, security, employment, safety-critical or destructive operational decisions:
+
+- require qualified human review before consequential use where appropriate;
+- give the reviewer access to the underlying evidence, assumptions and source material needed to verify the output;
+- separate informational analysis from authorization to act;
+- prefer reversible or staged actions when uncertainty is material;
+- define an escalation path when evidence is conflicting, incomplete or outside the prompt's competence boundary;
+- never use model confidence or fluent wording as a substitute for independent verification.
+
+For generated code, commands, migrations, policies or automated actions, validation must occur before execution and postconditions must be checked afterward.
+
 ## Completion gate
 
 Before finalizing, confirm:

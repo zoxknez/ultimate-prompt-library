@@ -12,6 +12,9 @@ This registry lists authoritative starting points used to strengthen Ultimate Pr
 - OpenAI Prompt Engineering Guide
   - https://developers.openai.com/api/docs/guides/prompt-engineering
   - Current guidance covers message roles, structured prompt boundaries, versioning and evaluation across model changes.
+- OpenAI Safety Best Practices
+  - https://developers.openai.com/api/docs/guides/safety-best-practices
+  - Use human review for high-stakes outputs and code generation, constrain untrusted input where appropriate, and preserve access to source evidence for verification.
 - NIST AI Risk Management Framework and Generative AI Profile
   - https://airc.nist.gov/
   - AI RMF 1.0 is being revised; the Generative AI Profile remains a key companion resource.
@@ -20,8 +23,9 @@ This registry lists authoritative starting points used to strengthen Ultimate Pr
 - Google Gemini prompt design strategies
   - https://ai.google.dev/gemini-api/docs/prompting-strategies
   - Current guidance emphasizes clear/direct instructions, consistent structure, explicit output constraints, decomposition, grounding/tool use and iterative refinement.
-- Anthropic prompting documentation
-  - https://docs.anthropic.com/
+- Anthropic Prompting Best Practices
+  - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-templates-and-variables
+  - Current guidance emphasizes clear/direct instructions, contextual explanation, representative examples, explicit structure, tool-use discipline and agentic safeguards.
 
 ## IT, programming and technology
 
