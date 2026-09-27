@@ -9164,8 +9164,1130 @@
         "en": "Personal productivity, planning, project and team management, operations and decision-making.",
         "sr": "Lična produktivnost, planiranje, upravljanje projektima i timovima, operacije i donošenje odluka."
       },
-      "subcategories": [],
-      "prompts": []
+      "subcategories": [
+        {
+          "id": "personal-productivity-prioritization",
+          "order": 1,
+          "names": {
+            "en": "Personal Productivity & Prioritization",
+            "sr": "Lična produktivnost i prioritizacija"
+          },
+          "descriptions": {
+            "en": "Priorities, task systems, focus, weekly reviews, workload limits and personal execution.",
+            "sr": "Prioriteti, task sistemi, fokus, nedeljni pregledi, ograničenja opterećenja i lično izvršenje."
+          }
+        },
+        {
+          "id": "planning-goals-decision-systems",
+          "order": 2,
+          "names": {
+            "en": "Planning, Goals & Decision Systems",
+            "sr": "Planiranje, ciljevi i sistemi odlučivanja"
+          },
+          "descriptions": {
+            "en": "Goals, OKRs, decision criteria, roadmaps, scenarios, assumptions and review cadences.",
+            "sr": "Ciljevi, OKR-i, kriterijumi odluka, roadmap-i, scenariji, pretpostavke i ritmovi pregleda."
+          }
+        },
+        {
+          "id": "project-execution-delivery",
+          "order": 3,
+          "names": {
+            "en": "Project Execution & Delivery",
+            "sr": "Izvršenje i isporuka projekata"
+          },
+          "descriptions": {
+            "en": "Project planning, scope, milestones, dependencies, risk, status, change control and retrospectives.",
+            "sr": "Planiranje projekta, scope, milestone-i, zavisnosti, rizik, status, change control i retrospektive."
+          }
+        },
+        {
+          "id": "workflow-process-automation",
+          "order": 4,
+          "names": {
+            "en": "Workflow, Process & Automation",
+            "sr": "Workflow, procesi i automatizacija"
+          },
+          "descriptions": {
+            "en": "Process mapping, SOPs, bottlenecks, automation, handoffs, controls and continuous improvement.",
+            "sr": "Mapiranje procesa, SOP-ovi, uska grla, automatizacija, handoff-i, kontrole i kontinuirano unapređenje."
+          }
+        },
+        {
+          "id": "meetings-communication-documentation",
+          "order": 5,
+          "names": {
+            "en": "Meetings, Communication & Documentation",
+            "sr": "Sastanci, komunikacija i dokumentacija"
+          },
+          "descriptions": {
+            "en": "Meeting design, agendas, notes, async communication, decision logs, documentation and knowledge capture.",
+            "sr": "Dizajn sastanaka, agende, beleške, asinhrona komunikacija, decision logovi, dokumentacija i znanje."
+          }
+        },
+        {
+          "id": "delegation-accountability-team-operations",
+          "order": 6,
+          "names": {
+            "en": "Delegation, Accountability & Team Operations",
+            "sr": "Delegiranje, odgovornost i timske operacije"
+          },
+          "descriptions": {
+            "en": "Delegation, ownership, workload, team cadences, accountability, escalation and operating rhythms.",
+            "sr": "Delegiranje, ownership, workload, timski ritmovi, odgovornost, eskalacija i operativni ritmovi."
+          }
+        },
+        {
+          "id": "time-capacity-resource-management",
+          "order": 7,
+          "names": {
+            "en": "Time, Capacity & Resource Management",
+            "sr": "Upravljanje vremenom, kapacitetom i resursima"
+          },
+          "descriptions": {
+            "en": "Capacity planning, calendars, workload balancing, utilization, resource allocation and constraints.",
+            "sr": "Planiranje kapaciteta, kalendari, balans opterećenja, iskorišćenost, alokacija resursa i ograničenja."
+          }
+        },
+        {
+          "id": "knowledge-information-organization",
+          "order": 8,
+          "names": {
+            "en": "Knowledge & Information Organization",
+            "sr": "Organizacija znanja i informacija"
+          },
+          "descriptions": {
+            "en": "Knowledge bases, file systems, note systems, taxonomy, retrieval, archival and information hygiene.",
+            "sr": "Baze znanja, sistemi fajlova, beleške, taksonomija, pretraga, arhiviranje i higijena informacija."
+          }
+        },
+        {
+          "id": "management-operating-systems",
+          "order": 9,
+          "names": {
+            "en": "Management & Operating Systems",
+            "sr": "Menadžment i operativni sistemi"
+          },
+          "descriptions": {
+            "en": "Management rhythms, metrics, reviews, governance, escalation, operating models and organizational health.",
+            "sr": "Menadžerski ritmovi, metrike, review-i, governance, eskalacija, operating modeli i zdravlje organizacije."
+          }
+        },
+        {
+          "id": "productivity-audits-improvement",
+          "order": 10,
+          "names": {
+            "en": "Productivity Audits & Continuous Improvement",
+            "sr": "Audit produktivnosti i kontinuirano unapređenje"
+          },
+          "descriptions": {
+            "en": "System audits, friction analysis, waste removal, process metrics, experiments and operating-system redesign.",
+            "sr": "Audit sistema, analiza trenja, uklanjanje rasipanja, procesne metrike, eksperimenti i redizajn operativnog sistema."
+          }
+        }
+      ],
+      "prompts": [
+        {
+          "id": "UPL-PROD-001",
+          "number": 1,
+          "slug": "priority-system-audit",
+          "subcategory": "personal-productivity-prioritization",
+          "title": {
+            "en": "Priority System Audit",
+            "sr": "Audit sistema prioriteta"
+          }
+        },
+        {
+          "id": "UPL-PROD-002",
+          "number": 2,
+          "slug": "weekly-planning-system",
+          "subcategory": "personal-productivity-prioritization",
+          "title": {
+            "en": "Weekly Planning System",
+            "sr": "Sistem nedeljnog planiranja"
+          }
+        },
+        {
+          "id": "UPL-PROD-003",
+          "number": 3,
+          "slug": "daily-execution-plan",
+          "subcategory": "personal-productivity-prioritization",
+          "title": {
+            "en": "Daily Execution Plan",
+            "sr": "Plan dnevnog izvršenja"
+          }
+        },
+        {
+          "id": "UPL-PROD-004",
+          "number": 4,
+          "slug": "focus-work-block-designer",
+          "subcategory": "personal-productivity-prioritization",
+          "title": {
+            "en": "Focus Work Block Designer",
+            "sr": "Dizajn blokova fokusiranog rada"
+          }
+        },
+        {
+          "id": "UPL-PROD-005",
+          "number": 5,
+          "slug": "task-capture-triage-system",
+          "subcategory": "personal-productivity-prioritization",
+          "title": {
+            "en": "Task Capture & Triage System",
+            "sr": "Sistem prikupljanja i trijaže zadataka"
+          }
+        },
+        {
+          "id": "UPL-PROD-006",
+          "number": 6,
+          "slug": "workload-limit-framework",
+          "subcategory": "personal-productivity-prioritization",
+          "title": {
+            "en": "Workload Limit Framework",
+            "sr": "Okvir ograničenja radnog opterećenja"
+          }
+        },
+        {
+          "id": "UPL-PROD-007",
+          "number": 7,
+          "slug": "personal-kanban-builder",
+          "subcategory": "personal-productivity-prioritization",
+          "title": {
+            "en": "Personal Kanban Builder",
+            "sr": "Izrada ličnog Kanban sistema"
+          }
+        },
+        {
+          "id": "UPL-PROD-008",
+          "number": 8,
+          "slug": "context-switching-audit",
+          "subcategory": "personal-productivity-prioritization",
+          "title": {
+            "en": "Context Switching Audit",
+            "sr": "Audit menjanja konteksta"
+          }
+        },
+        {
+          "id": "UPL-PROD-009",
+          "number": 9,
+          "slug": "weekly-review-checklist",
+          "subcategory": "personal-productivity-prioritization",
+          "title": {
+            "en": "Weekly Review Checklist",
+            "sr": "Checklist nedeljnog pregleda"
+          }
+        },
+        {
+          "id": "UPL-PROD-010",
+          "number": 10,
+          "slug": "personal-productivity-red-team",
+          "subcategory": "personal-productivity-prioritization",
+          "title": {
+            "en": "Personal Productivity Red Team",
+            "sr": "Red-team lične produktivnosti"
+          }
+        },
+        {
+          "id": "UPL-PROD-011",
+          "number": 11,
+          "slug": "goal-quality-audit",
+          "subcategory": "planning-goals-decision-systems",
+          "title": {
+            "en": "Goal Quality Audit",
+            "sr": "Audit kvaliteta cilja"
+          }
+        },
+        {
+          "id": "UPL-PROD-012",
+          "number": 12,
+          "slug": "okr-builder",
+          "subcategory": "planning-goals-decision-systems",
+          "title": {
+            "en": "OKR Builder",
+            "sr": "Izrada OKR-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-013",
+          "number": 13,
+          "slug": "decision-criteria-framework",
+          "subcategory": "planning-goals-decision-systems",
+          "title": {
+            "en": "Decision Criteria Framework",
+            "sr": "Okvir kriterijuma odlučivanja"
+          }
+        },
+        {
+          "id": "UPL-PROD-014",
+          "number": 14,
+          "slug": "decision-memo-builder",
+          "subcategory": "planning-goals-decision-systems",
+          "title": {
+            "en": "Decision Memo Builder",
+            "sr": "Izrada decision memo-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-015",
+          "number": 15,
+          "slug": "assumption-register-builder",
+          "subcategory": "planning-goals-decision-systems",
+          "title": {
+            "en": "Assumption Register Builder",
+            "sr": "Izrada registra pretpostavki"
+          }
+        },
+        {
+          "id": "UPL-PROD-016",
+          "number": 16,
+          "slug": "scenario-planning-framework",
+          "subcategory": "planning-goals-decision-systems",
+          "title": {
+            "en": "Scenario Planning Framework",
+            "sr": "Okvir scenario planning-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-017",
+          "number": 17,
+          "slug": "roadmap-priority-audit",
+          "subcategory": "planning-goals-decision-systems",
+          "title": {
+            "en": "Roadmap Priority Audit",
+            "sr": "Audit prioriteta roadmap-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-018",
+          "number": 18,
+          "slug": "quarterly-planning-system",
+          "subcategory": "planning-goals-decision-systems",
+          "title": {
+            "en": "Quarterly Planning System",
+            "sr": "Sistem kvartalnog planiranja"
+          }
+        },
+        {
+          "id": "UPL-PROD-019",
+          "number": 19,
+          "slug": "goal-review-cadence",
+          "subcategory": "planning-goals-decision-systems",
+          "title": {
+            "en": "Goal Review Cadence",
+            "sr": "Ritam pregleda ciljeva"
+          }
+        },
+        {
+          "id": "UPL-PROD-020",
+          "number": 20,
+          "slug": "planning-system-red-team",
+          "subcategory": "planning-goals-decision-systems",
+          "title": {
+            "en": "Planning System Red Team",
+            "sr": "Red-team sistema planiranja"
+          }
+        },
+        {
+          "id": "UPL-PROD-021",
+          "number": 21,
+          "slug": "project-charter-builder",
+          "subcategory": "project-execution-delivery",
+          "title": {
+            "en": "Project Charter Builder",
+            "sr": "Izrada project charter-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-022",
+          "number": 22,
+          "slug": "scope-definition-audit",
+          "subcategory": "project-execution-delivery",
+          "title": {
+            "en": "Scope Definition Audit",
+            "sr": "Audit definicije scope-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-023",
+          "number": 23,
+          "slug": "milestone-dependency-map",
+          "subcategory": "project-execution-delivery",
+          "title": {
+            "en": "Milestone & Dependency Map",
+            "sr": "Mapa milestone-a i zavisnosti"
+          }
+        },
+        {
+          "id": "UPL-PROD-024",
+          "number": 24,
+          "slug": "project-risk-register",
+          "subcategory": "project-execution-delivery",
+          "title": {
+            "en": "Project Risk Register",
+            "sr": "Registar rizika projekta"
+          }
+        },
+        {
+          "id": "UPL-PROD-025",
+          "number": 25,
+          "slug": "project-status-report",
+          "subcategory": "project-execution-delivery",
+          "title": {
+            "en": "Project Status Report",
+            "sr": "Izveštaj statusa projekta"
+          }
+        },
+        {
+          "id": "UPL-PROD-026",
+          "number": 26,
+          "slug": "change-control-framework",
+          "subcategory": "project-execution-delivery",
+          "title": {
+            "en": "Change Control Framework",
+            "sr": "Okvir change control-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-027",
+          "number": 27,
+          "slug": "project-blocker-escalation-plan",
+          "subcategory": "project-execution-delivery",
+          "title": {
+            "en": "Project Blocker Escalation Plan",
+            "sr": "Plan eskalacije blokera projekta"
+          }
+        },
+        {
+          "id": "UPL-PROD-028",
+          "number": 28,
+          "slug": "delivery-readiness-check",
+          "subcategory": "project-execution-delivery",
+          "title": {
+            "en": "Delivery Readiness Check",
+            "sr": "Provera spremnosti za isporuku"
+          }
+        },
+        {
+          "id": "UPL-PROD-029",
+          "number": 29,
+          "slug": "project-retrospective-builder",
+          "subcategory": "project-execution-delivery",
+          "title": {
+            "en": "Project Retrospective Builder",
+            "sr": "Izrada retrospektive projekta"
+          }
+        },
+        {
+          "id": "UPL-PROD-030",
+          "number": 30,
+          "slug": "project-recovery-plan",
+          "subcategory": "project-execution-delivery",
+          "title": {
+            "en": "Project Recovery Plan",
+            "sr": "Plan oporavka projekta"
+          }
+        },
+        {
+          "id": "UPL-PROD-031",
+          "number": 31,
+          "slug": "process-map-builder",
+          "subcategory": "workflow-process-automation",
+          "title": {
+            "en": "Process Map Builder",
+            "sr": "Izrada mape procesa"
+          }
+        },
+        {
+          "id": "UPL-PROD-032",
+          "number": 32,
+          "slug": "sop-builder",
+          "subcategory": "workflow-process-automation",
+          "title": {
+            "en": "SOP Builder",
+            "sr": "Izrada SOP-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-033",
+          "number": 33,
+          "slug": "workflow-bottleneck-audit",
+          "subcategory": "workflow-process-automation",
+          "title": {
+            "en": "Workflow Bottleneck Audit",
+            "sr": "Audit uskih grla workflow-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-034",
+          "number": 34,
+          "slug": "handoff-quality-audit",
+          "subcategory": "workflow-process-automation",
+          "title": {
+            "en": "Handoff Quality Audit",
+            "sr": "Audit kvaliteta handoff-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-035",
+          "number": 35,
+          "slug": "automation-opportunity-map",
+          "subcategory": "workflow-process-automation",
+          "title": {
+            "en": "Automation Opportunity Map",
+            "sr": "Mapa prilika za automatizaciju"
+          }
+        },
+        {
+          "id": "UPL-PROD-036",
+          "number": 36,
+          "slug": "automation-risk-control-audit",
+          "subcategory": "workflow-process-automation",
+          "title": {
+            "en": "Automation Risk & Control Audit",
+            "sr": "Audit rizika i kontrola automatizacije"
+          }
+        },
+        {
+          "id": "UPL-PROD-037",
+          "number": 37,
+          "slug": "process-cycle-time-review",
+          "subcategory": "workflow-process-automation",
+          "title": {
+            "en": "Process Cycle Time Review",
+            "sr": "Pregled cycle time-a procesa"
+          }
+        },
+        {
+          "id": "UPL-PROD-038",
+          "number": 38,
+          "slug": "process-quality-control-plan",
+          "subcategory": "workflow-process-automation",
+          "title": {
+            "en": "Process Quality Control Plan",
+            "sr": "Plan kontrole kvaliteta procesa"
+          }
+        },
+        {
+          "id": "UPL-PROD-039",
+          "number": 39,
+          "slug": "continuous-improvement-backlog",
+          "subcategory": "workflow-process-automation",
+          "title": {
+            "en": "Continuous Improvement Backlog",
+            "sr": "Backlog kontinuiranih poboljšanja"
+          }
+        },
+        {
+          "id": "UPL-PROD-040",
+          "number": 40,
+          "slug": "workflow-redesign-plan",
+          "subcategory": "workflow-process-automation",
+          "title": {
+            "en": "Workflow Redesign Plan",
+            "sr": "Plan redizajna workflow-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-041",
+          "number": 41,
+          "slug": "meeting-necessity-audit",
+          "subcategory": "meetings-communication-documentation",
+          "title": {
+            "en": "Meeting Necessity Audit",
+            "sr": "Audit potrebe za sastankom"
+          }
+        },
+        {
+          "id": "UPL-PROD-042",
+          "number": 42,
+          "slug": "meeting-agenda-builder",
+          "subcategory": "meetings-communication-documentation",
+          "title": {
+            "en": "Meeting Agenda Builder",
+            "sr": "Izrada agende sastanka"
+          }
+        },
+        {
+          "id": "UPL-PROD-043",
+          "number": 43,
+          "slug": "decision-meeting-framework",
+          "subcategory": "meetings-communication-documentation",
+          "title": {
+            "en": "Decision Meeting Framework",
+            "sr": "Okvir sastanka za odluku"
+          }
+        },
+        {
+          "id": "UPL-PROD-044",
+          "number": 44,
+          "slug": "meeting-notes-action-log",
+          "subcategory": "meetings-communication-documentation",
+          "title": {
+            "en": "Meeting Notes & Action Log",
+            "sr": "Beleške sa sastanka i action log"
+          }
+        },
+        {
+          "id": "UPL-PROD-045",
+          "number": 45,
+          "slug": "async-update-builder",
+          "subcategory": "meetings-communication-documentation",
+          "title": {
+            "en": "Async Update Builder",
+            "sr": "Izrada asinhronog update-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-046",
+          "number": 46,
+          "slug": "decision-log-system",
+          "subcategory": "meetings-communication-documentation",
+          "title": {
+            "en": "Decision Log System",
+            "sr": "Sistem decision log-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-047",
+          "number": 47,
+          "slug": "documentation-architecture",
+          "subcategory": "meetings-communication-documentation",
+          "title": {
+            "en": "Documentation Architecture",
+            "sr": "Arhitektura dokumentacije"
+          }
+        },
+        {
+          "id": "UPL-PROD-048",
+          "number": 48,
+          "slug": "knowledge-capture-workflow",
+          "subcategory": "meetings-communication-documentation",
+          "title": {
+            "en": "Knowledge Capture Workflow",
+            "sr": "Workflow hvatanja znanja"
+          }
+        },
+        {
+          "id": "UPL-PROD-049",
+          "number": 49,
+          "slug": "communication-channel-audit",
+          "subcategory": "meetings-communication-documentation",
+          "title": {
+            "en": "Communication Channel Audit",
+            "sr": "Audit komunikacionih kanala"
+          }
+        },
+        {
+          "id": "UPL-PROD-050",
+          "number": 50,
+          "slug": "meeting-system-red-team",
+          "subcategory": "meetings-communication-documentation",
+          "title": {
+            "en": "Meeting System Red Team",
+            "sr": "Red-team sistema sastanaka"
+          }
+        },
+        {
+          "id": "UPL-PROD-051",
+          "number": 51,
+          "slug": "delegation-brief-builder",
+          "subcategory": "delegation-accountability-team-operations",
+          "title": {
+            "en": "Delegation Brief Builder",
+            "sr": "Izrada delegation brief-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-052",
+          "number": 52,
+          "slug": "ownership-matrix-builder",
+          "subcategory": "delegation-accountability-team-operations",
+          "title": {
+            "en": "Ownership Matrix Builder",
+            "sr": "Izrada ownership matrice"
+          }
+        },
+        {
+          "id": "UPL-PROD-053",
+          "number": 53,
+          "slug": "accountability-system-audit",
+          "subcategory": "delegation-accountability-team-operations",
+          "title": {
+            "en": "Accountability System Audit",
+            "sr": "Audit sistema odgovornosti"
+          }
+        },
+        {
+          "id": "UPL-PROD-054",
+          "number": 54,
+          "slug": "team-operating-cadence",
+          "subcategory": "delegation-accountability-team-operations",
+          "title": {
+            "en": "Team Operating Cadence",
+            "sr": "Timski operativni ritam"
+          }
+        },
+        {
+          "id": "UPL-PROD-055",
+          "number": 55,
+          "slug": "workload-balancing-framework",
+          "subcategory": "delegation-accountability-team-operations",
+          "title": {
+            "en": "Workload Balancing Framework",
+            "sr": "Okvir balansiranja opterećenja"
+          }
+        },
+        {
+          "id": "UPL-PROD-056",
+          "number": 56,
+          "slug": "escalation-path-builder",
+          "subcategory": "delegation-accountability-team-operations",
+          "title": {
+            "en": "Escalation Path Builder",
+            "sr": "Izrada escalation path-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-057",
+          "number": 57,
+          "slug": "team-blocker-review",
+          "subcategory": "delegation-accountability-team-operations",
+          "title": {
+            "en": "Team Blocker Review",
+            "sr": "Pregled timskih blokera"
+          }
+        },
+        {
+          "id": "UPL-PROD-058",
+          "number": 58,
+          "slug": "cross-functional-handoff-plan",
+          "subcategory": "delegation-accountability-team-operations",
+          "title": {
+            "en": "Cross-Functional Handoff Plan",
+            "sr": "Plan međufunkcionalnog handoff-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-059",
+          "number": 59,
+          "slug": "team-commitment-tracker",
+          "subcategory": "delegation-accountability-team-operations",
+          "title": {
+            "en": "Team Commitment Tracker",
+            "sr": "Praćenje timskih obaveza"
+          }
+        },
+        {
+          "id": "UPL-PROD-060",
+          "number": 60,
+          "slug": "team-operations-red-team",
+          "subcategory": "delegation-accountability-team-operations",
+          "title": {
+            "en": "Team Operations Red Team",
+            "sr": "Red-team timskih operacija"
+          }
+        },
+        {
+          "id": "UPL-PROD-061",
+          "number": 61,
+          "slug": "capacity-planning-framework",
+          "subcategory": "time-capacity-resource-management",
+          "title": {
+            "en": "Capacity Planning Framework",
+            "sr": "Okvir planiranja kapaciteta"
+          }
+        },
+        {
+          "id": "UPL-PROD-062",
+          "number": 62,
+          "slug": "calendar-load-audit",
+          "subcategory": "time-capacity-resource-management",
+          "title": {
+            "en": "Calendar Load Audit",
+            "sr": "Audit opterećenja kalendara"
+          }
+        },
+        {
+          "id": "UPL-PROD-063",
+          "number": 63,
+          "slug": "resource-allocation-matrix",
+          "subcategory": "time-capacity-resource-management",
+          "title": {
+            "en": "Resource Allocation Matrix",
+            "sr": "Matrica alokacije resursa"
+          }
+        },
+        {
+          "id": "UPL-PROD-064",
+          "number": 64,
+          "slug": "utilization-risk-audit",
+          "subcategory": "time-capacity-resource-management",
+          "title": {
+            "en": "Utilization Risk Audit",
+            "sr": "Audit rizika iskorišćenosti"
+          }
+        },
+        {
+          "id": "UPL-PROD-065",
+          "number": 65,
+          "slug": "time-budget-builder",
+          "subcategory": "time-capacity-resource-management",
+          "title": {
+            "en": "Time Budget Builder",
+            "sr": "Izrada vremenskog budžeta"
+          }
+        },
+        {
+          "id": "UPL-PROD-066",
+          "number": 66,
+          "slug": "deadline-feasibility-audit",
+          "subcategory": "time-capacity-resource-management",
+          "title": {
+            "en": "Deadline Feasibility Audit",
+            "sr": "Audit izvodljivosti roka"
+          }
+        },
+        {
+          "id": "UPL-PROD-067",
+          "number": 67,
+          "slug": "workload-forecast-plan",
+          "subcategory": "time-capacity-resource-management",
+          "title": {
+            "en": "Workload Forecast Plan",
+            "sr": "Plan prognoze opterećenja"
+          }
+        },
+        {
+          "id": "UPL-PROD-068",
+          "number": 68,
+          "slug": "constraint-map-builder",
+          "subcategory": "time-capacity-resource-management",
+          "title": {
+            "en": "Constraint Map Builder",
+            "sr": "Izrada mape ograničenja"
+          }
+        },
+        {
+          "id": "UPL-PROD-069",
+          "number": 69,
+          "slug": "resource-conflict-resolution",
+          "subcategory": "time-capacity-resource-management",
+          "title": {
+            "en": "Resource Conflict Resolution",
+            "sr": "Razrešavanje konflikta resursa"
+          }
+        },
+        {
+          "id": "UPL-PROD-070",
+          "number": 70,
+          "slug": "capacity-scenario-plan",
+          "subcategory": "time-capacity-resource-management",
+          "title": {
+            "en": "Capacity Scenario Plan",
+            "sr": "Scenario plan kapaciteta"
+          }
+        },
+        {
+          "id": "UPL-PROD-071",
+          "number": 71,
+          "slug": "knowledge-base-architecture",
+          "subcategory": "knowledge-information-organization",
+          "title": {
+            "en": "Knowledge Base Architecture",
+            "sr": "Arhitektura baze znanja"
+          }
+        },
+        {
+          "id": "UPL-PROD-072",
+          "number": 72,
+          "slug": "file-folder-taxonomy-builder",
+          "subcategory": "knowledge-information-organization",
+          "title": {
+            "en": "File & Folder Taxonomy Builder",
+            "sr": "Izrada taksonomije fajlova i foldera"
+          }
+        },
+        {
+          "id": "UPL-PROD-073",
+          "number": 73,
+          "slug": "note-system-design",
+          "subcategory": "knowledge-information-organization",
+          "title": {
+            "en": "Note System Design",
+            "sr": "Dizajn sistema beleški"
+          }
+        },
+        {
+          "id": "UPL-PROD-074",
+          "number": 74,
+          "slug": "information-retrieval-audit",
+          "subcategory": "knowledge-information-organization",
+          "title": {
+            "en": "Information Retrieval Audit",
+            "sr": "Audit pretrage informacija"
+          }
+        },
+        {
+          "id": "UPL-PROD-075",
+          "number": 75,
+          "slug": "documentation-freshness-audit",
+          "subcategory": "knowledge-information-organization",
+          "title": {
+            "en": "Documentation Freshness Audit",
+            "sr": "Audit svežine dokumentacije"
+          }
+        },
+        {
+          "id": "UPL-PROD-076",
+          "number": 76,
+          "slug": "archive-retention-framework",
+          "subcategory": "knowledge-information-organization",
+          "title": {
+            "en": "Archive & Retention Framework",
+            "sr": "Okvir arhiviranja i zadržavanja"
+          }
+        },
+        {
+          "id": "UPL-PROD-077",
+          "number": 77,
+          "slug": "single-source-of-truth-audit",
+          "subcategory": "knowledge-information-organization",
+          "title": {
+            "en": "Single Source of Truth Audit",
+            "sr": "Audit single source of truth sistema"
+          }
+        },
+        {
+          "id": "UPL-PROD-078",
+          "number": 78,
+          "slug": "knowledge-ownership-map",
+          "subcategory": "knowledge-information-organization",
+          "title": {
+            "en": "Knowledge Ownership Map",
+            "sr": "Mapa ownership-a znanja"
+          }
+        },
+        {
+          "id": "UPL-PROD-079",
+          "number": 79,
+          "slug": "information-overload-audit",
+          "subcategory": "knowledge-information-organization",
+          "title": {
+            "en": "Information Overload Audit",
+            "sr": "Audit preopterećenja informacijama"
+          }
+        },
+        {
+          "id": "UPL-PROD-080",
+          "number": 80,
+          "slug": "knowledge-system-redesign",
+          "subcategory": "knowledge-information-organization",
+          "title": {
+            "en": "Knowledge System Redesign",
+            "sr": "Redizajn sistema znanja"
+          }
+        },
+        {
+          "id": "UPL-PROD-081",
+          "number": 81,
+          "slug": "management-operating-rhythm",
+          "subcategory": "management-operating-systems",
+          "title": {
+            "en": "Management Operating Rhythm",
+            "sr": "Menadžerski operativni ritam"
+          }
+        },
+        {
+          "id": "UPL-PROD-082",
+          "number": 82,
+          "slug": "management-metrics-framework",
+          "subcategory": "management-operating-systems",
+          "title": {
+            "en": "Management Metrics Framework",
+            "sr": "Okvir menadžerskih metrika"
+          }
+        },
+        {
+          "id": "UPL-PROD-083",
+          "number": 83,
+          "slug": "business-review-system",
+          "subcategory": "management-operating-systems",
+          "title": {
+            "en": "Business Review System",
+            "sr": "Sistem poslovnog pregleda"
+          }
+        },
+        {
+          "id": "UPL-PROD-084",
+          "number": 84,
+          "slug": "governance-decision-rights-audit",
+          "subcategory": "management-operating-systems",
+          "title": {
+            "en": "Governance & Decision Rights Audit",
+            "sr": "Audit governance-a i prava odlučivanja"
+          }
+        },
+        {
+          "id": "UPL-PROD-085",
+          "number": 85,
+          "slug": "management-escalation-system",
+          "subcategory": "management-operating-systems",
+          "title": {
+            "en": "Management Escalation System",
+            "sr": "Menadžerski sistem eskalacije"
+          }
+        },
+        {
+          "id": "UPL-PROD-086",
+          "number": 86,
+          "slug": "operating-model-audit",
+          "subcategory": "management-operating-systems",
+          "title": {
+            "en": "Operating Model Audit",
+            "sr": "Audit operating modela"
+          }
+        },
+        {
+          "id": "UPL-PROD-087",
+          "number": 87,
+          "slug": "management-information-flow",
+          "subcategory": "management-operating-systems",
+          "title": {
+            "en": "Management Information Flow",
+            "sr": "Tok informacija za menadžment"
+          }
+        },
+        {
+          "id": "UPL-PROD-088",
+          "number": 88,
+          "slug": "organizational-health-review",
+          "subcategory": "management-operating-systems",
+          "title": {
+            "en": "Organizational Health Review",
+            "sr": "Pregled zdravlja organizacije"
+          }
+        },
+        {
+          "id": "UPL-PROD-089",
+          "number": 89,
+          "slug": "management-control-system",
+          "subcategory": "management-operating-systems",
+          "title": {
+            "en": "Management Control System",
+            "sr": "Menadžerski kontrolni sistem"
+          }
+        },
+        {
+          "id": "UPL-PROD-090",
+          "number": 90,
+          "slug": "operating-system-red-team",
+          "subcategory": "management-operating-systems",
+          "title": {
+            "en": "Operating System Red Team",
+            "sr": "Red-team operativnog sistema"
+          }
+        },
+        {
+          "id": "UPL-PROD-091",
+          "number": 91,
+          "slug": "productivity-system-audit",
+          "subcategory": "productivity-audits-improvement",
+          "title": {
+            "en": "Productivity System Audit",
+            "sr": "Audit sistema produktivnosti"
+          }
+        },
+        {
+          "id": "UPL-PROD-092",
+          "number": 92,
+          "slug": "friction-waste-analysis",
+          "subcategory": "productivity-audits-improvement",
+          "title": {
+            "en": "Friction & Waste Analysis",
+            "sr": "Analiza trenja i rasipanja"
+          }
+        },
+        {
+          "id": "UPL-PROD-093",
+          "number": 93,
+          "slug": "process-metric-design",
+          "subcategory": "productivity-audits-improvement",
+          "title": {
+            "en": "Process Metric Design",
+            "sr": "Dizajn procesnih metrika"
+          }
+        },
+        {
+          "id": "UPL-PROD-094",
+          "number": 94,
+          "slug": "productivity-experiment-builder",
+          "subcategory": "productivity-audits-improvement",
+          "title": {
+            "en": "Productivity Experiment Builder",
+            "sr": "Izrada eksperimenta produktivnosti"
+          }
+        },
+        {
+          "id": "UPL-PROD-095",
+          "number": 95,
+          "slug": "workflow-waste-removal-plan",
+          "subcategory": "productivity-audits-improvement",
+          "title": {
+            "en": "Workflow Waste Removal Plan",
+            "sr": "Plan uklanjanja workflow rasipanja"
+          }
+        },
+        {
+          "id": "UPL-PROD-096",
+          "number": 96,
+          "slug": "tool-stack-rationalization",
+          "subcategory": "productivity-audits-improvement",
+          "title": {
+            "en": "Tool Stack Rationalization",
+            "sr": "Racionalizacija tool stack-a"
+          }
+        },
+        {
+          "id": "UPL-PROD-097",
+          "number": 97,
+          "slug": "productivity-change-rollout",
+          "subcategory": "productivity-audits-improvement",
+          "title": {
+            "en": "Productivity Change Rollout",
+            "sr": "Rollout promene produktivnosti"
+          }
+        },
+        {
+          "id": "UPL-PROD-098",
+          "number": 98,
+          "slug": "operating-habit-review",
+          "subcategory": "productivity-audits-improvement",
+          "title": {
+            "en": "Operating Habit Review",
+            "sr": "Pregled operativnih navika"
+          }
+        },
+        {
+          "id": "UPL-PROD-099",
+          "number": 99,
+          "slug": "continuous-improvement-system",
+          "subcategory": "productivity-audits-improvement",
+          "title": {
+            "en": "Continuous Improvement System",
+            "sr": "Sistem kontinuiranog unapređenja"
+          }
+        },
+        {
+          "id": "UPL-PROD-100",
+          "number": 100,
+          "slug": "productivity-operating-system-redesign",
+          "subcategory": "productivity-audits-improvement",
+          "title": {
+            "en": "Productivity Operating System Redesign",
+            "sr": "Redizajn operativnog sistema produktivnosti"
+          }
+        }
+      ]
     },
     {
       "id": "UPL-CREATIVE",
