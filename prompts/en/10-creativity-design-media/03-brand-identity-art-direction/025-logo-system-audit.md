@@ -1,0 +1,73 @@
+---
+id: UPL-CREATIVE-025
+number: 25
+slug: logo-system-audit
+title: Logo System Audit
+category: Creativity, Design & Media
+category_id: UPL-CREATIVE
+subcategory: Brand Identity & Art Direction
+subcategory_id: brand-identity-art-direction
+language: en
+version: 1.0.0
+status: stable
+---
+
+# LOGO SYSTEM AUDIT
+
+Main objective:
+
+> Perform a production-grade workflow for Logo System Audit, with a clear brief, system rules, review criteria and iteration plan.
+
+## 1. CONTEXT
+Define audience, objective, medium, deliverables, references, constraints, accessibility, rights/licensing, timeline, budget and approval owner.
+
+## 2. DOMAIN STANDARD
+Brand identity should translate strategy into a repeatable visual language. Art direction defines rules for composition, image treatment, typography, color and mood rather than a collection of references.
+
+## 3. INTEGRITY CHECKS
+- identity connects to brand position
+- logo variants have use rules
+- color/type system scales
+- moodboard principles are extracted
+- campaign direction preserves brand recognition
+- assets are consistent
+- refresh retains valuable equity
+- identity is distinct without copying competitors
+
+## 4. CREATIVE CARD
+```text
+Objective:
+Audience:
+Asset/screen/scene:
+Core idea:
+System rule:
+Reference principle:
+Constraint:
+Acceptance criterion:
+Risk:
+Revision trigger:
+```
+
+## 5. REQUIRED MATRICES
+### Identity System Matrix
+| Element | Principle | Rule | Allowed variation | Misuse |
+|---|---|---|---|---|
+
+### Art Direction Matrix
+| Dimension | Direction | Reference principle | Production rule | Risk |
+|---|---|---|---|---|
+
+## 6. FAILURE MODES
+Avoid cosmetic polish without hierarchy, inconsistency across formats, inaccessible design, references copied literally, unclear acceptance criteria, unowned revisions and production choices disconnected from audience or objective.
+
+## 7. REQUIRED OUTPUT
+1. Brief/context.
+2. System/direction.
+3. Core artifact structure.
+4. Required matrices.
+5. Quality/accessibility checks.
+6. Revision priorities.
+7. Delivery/approval plan.
+8. Final acceptance criteria.
+
+End with **Creative Integrity Check** confirming the work is coherent, useful, accessible, legally safe and production-ready.
