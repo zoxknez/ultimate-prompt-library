@@ -108,16 +108,19 @@
       "url": "https://educationendowmentfoundation.org.uk/education-evidence"
     },
     {
-      "label": "EEF Metacognition and Self-Regulated Learning",
-      "url": "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/metacognition"
+      "label": "EEF Metacognition and Self-Regulated Learning - Second Edition (2025)",
+      "url": "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/metacognition",
+      "note": "Second Edition published 2025-11-13."
     },
     {
       "label": "UNESCO AI Competency Framework for Teachers",
-      "url": "https://www.unesco.org/en/articles/ai-competency-framework-teachers"
+      "url": "https://www.unesco.org/en/articles/ai-competency-framework-teachers",
+      "note": "Published 2024-08-08; UNESCO page last updated 2026-01-16."
     },
     {
       "label": "UNESCO AI Competency Framework for Students",
-      "url": "https://www.unesco.org/en/articles/ai-competency-framework-students"
+      "url": "https://www.unesco.org/en/articles/ai-competency-framework-students",
+      "note": "Published 2024-08-08; UNESCO page last updated 2026-01-16."
     }
   ],
   "UPL-SCI": [

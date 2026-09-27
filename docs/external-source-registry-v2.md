@@ -135,3 +135,16 @@ At execution time:
 - EDPB Documents
   - https://www.edpb.europa.eu/documents_en
   - Verify whether guidance is adopted/final, under consultation or superseded before relying on it.
+
+
+### Education freshness - 2026-09-27
+
+- EEF Metacognition and Self-Regulated Learning - Second Edition
+  - https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/metacognition
+  - Second Edition published 2025-11-13.
+- UNESCO AI Competency Framework for Teachers
+  - https://www.unesco.org/en/articles/ai-competency-framework-teachers
+  - Published 2024-08-08; page last updated 2026-01-16.
+- UNESCO AI Competency Framework for Students
+  - https://www.unesco.org/en/articles/ai-competency-framework-students
+  - Published 2024-08-08; page last updated 2026-01-16.
