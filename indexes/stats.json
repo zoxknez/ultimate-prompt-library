@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "uniquePrompts": 200,
-  "localizedPromptFiles": 400,
+  "uniquePrompts": 1000,
+  "localizedPromptFiles": 2000,
   "languages": 2,
   "filesByLanguage": {
-    "en": 200,
-    "sr": 200
+    "en": 1000,
+    "sr": 1000
   },
   "byStatus": {
     "draft": 0,
     "review": 0,
-    "stable": 200,
+    "stable": 1000,
     "deprecated": 0
   },
   "categories": 10,
-  "categoriesWithContent": 2,
-  "planned": 200,
+  "categoriesWithContent": 10,
+  "planned": 1000,
   "remaining": 0,
   "collections": {
     "IT": {
@@ -123,82 +123,410 @@
     "LAW": {
       "id": "UPL-LAW",
       "slug": "law-administration",
-      "available": 0,
-      "planned": 0,
+      "available": 100,
+      "planned": 100,
       "remaining": 0,
-      "subcategories": 0,
-      "completedSubcategories": 0,
-      "bySubcategory": {}
+      "subcategories": 10,
+      "completedSubcategories": 10,
+      "bySubcategory": {
+        "legal-research-authority": {
+          "available": 10,
+          "planned": 10
+        },
+        "contract-drafting-review": {
+          "available": 10,
+          "planned": 10
+        },
+        "litigation-dispute-resolution": {
+          "available": 10,
+          "planned": 10
+        },
+        "corporate-commercial-law": {
+          "available": 10,
+          "planned": 10
+        },
+        "privacy-data-protection": {
+          "available": 10,
+          "planned": 10
+        },
+        "employment-labor-law": {
+          "available": 10,
+          "planned": 10
+        },
+        "regulatory-compliance": {
+          "available": 10,
+          "planned": 10
+        },
+        "public-administration-procedure": {
+          "available": 10,
+          "planned": 10
+        },
+        "intellectual-property": {
+          "available": 10,
+          "planned": 10
+        },
+        "international-cross-border-law": {
+          "available": 10,
+          "planned": 10
+        }
+      }
     },
     "HEALTH": {
       "id": "UPL-HEALTH",
       "slug": "health-medicine-wellness",
-      "available": 0,
-      "planned": 0,
+      "available": 100,
+      "planned": 100,
       "remaining": 0,
-      "subcategories": 0,
-      "completedSubcategories": 0,
-      "bySubcategory": {}
+      "subcategories": 10,
+      "completedSubcategories": 10,
+      "bySubcategory": {
+        "evidence-based-health-research": {
+          "available": 10,
+          "planned": 10
+        },
+        "symptoms-triage-care-navigation": {
+          "available": 10,
+          "planned": 10
+        },
+        "medications-treatment-safety": {
+          "available": 10,
+          "planned": 10
+        },
+        "diagnostics-labs-medical-tests": {
+          "available": 10,
+          "planned": 10
+        },
+        "chronic-disease-long-term-care": {
+          "available": 10,
+          "planned": 10
+        },
+        "nutrition-metabolic-health": {
+          "available": 10,
+          "planned": 10
+        },
+        "fitness-exercise-rehabilitation": {
+          "available": 10,
+          "planned": 10
+        },
+        "mental-health-behavioral-wellbeing": {
+          "available": 10,
+          "planned": 10
+        },
+        "public-health-prevention-population": {
+          "available": 10,
+          "planned": 10
+        },
+        "healthcare-systems-digital-patient-safety": {
+          "available": 10,
+          "planned": 10
+        }
+      }
     },
     "EDU": {
       "id": "UPL-EDU",
       "slug": "education-learning",
-      "available": 0,
-      "planned": 0,
+      "available": 100,
+      "planned": 100,
       "remaining": 0,
-      "subcategories": 0,
-      "completedSubcategories": 0,
-      "bySubcategory": {}
+      "subcategories": 10,
+      "completedSubcategories": 10,
+      "bySubcategory": {
+        "instructional-design-learning-science": {
+          "available": 10,
+          "planned": 10
+        },
+        "teaching-classroom-practice": {
+          "available": 10,
+          "planned": 10
+        },
+        "assessment-feedback-grading": {
+          "available": 10,
+          "planned": 10
+        },
+        "tutoring-personalized-learning": {
+          "available": 10,
+          "planned": 10
+        },
+        "study-skills-metacognition": {
+          "available": 10,
+          "planned": 10
+        },
+        "curriculum-course-design": {
+          "available": 10,
+          "planned": 10
+        },
+        "literacy-language-learning": {
+          "available": 10,
+          "planned": 10
+        },
+        "inclusive-special-education": {
+          "available": 10,
+          "planned": 10
+        },
+        "education-technology-ai": {
+          "available": 10,
+          "planned": 10
+        },
+        "academic-research-professional-learning": {
+          "available": 10,
+          "planned": 10
+        }
+      }
     },
     "SCI": {
       "id": "UPL-SCI",
       "slug": "science-research-analysis",
-      "available": 0,
-      "planned": 0,
+      "available": 100,
+      "planned": 100,
       "remaining": 0,
-      "subcategories": 0,
-      "completedSubcategories": 0,
-      "bySubcategory": {}
+      "subcategories": 10,
+      "completedSubcategories": 10,
+      "bySubcategory": {
+        "research-question-study-design": {
+          "available": 10,
+          "planned": 10
+        },
+        "literature-review-evidence-synthesis": {
+          "available": 10,
+          "planned": 10
+        },
+        "statistics-quantitative-analysis": {
+          "available": 10,
+          "planned": 10
+        },
+        "causal-inference-experimental-reasoning": {
+          "available": 10,
+          "planned": 10
+        },
+        "data-quality-reproducibility": {
+          "available": 10,
+          "planned": 10
+        },
+        "qualitative-mixed-methods": {
+          "available": 10,
+          "planned": 10
+        },
+        "scientific-visualization-communication": {
+          "available": 10,
+          "planned": 10
+        },
+        "peer-review-research-integrity": {
+          "available": 10,
+          "planned": 10
+        },
+        "domain-analysis-modeling-simulation": {
+          "available": 10,
+          "planned": 10
+        },
+        "research-projects-decisions": {
+          "available": 10,
+          "planned": 10
+        }
+      }
     },
     "CAREER": {
       "id": "UPL-CAREER",
       "slug": "career-professional-development",
-      "available": 0,
-      "planned": 0,
+      "available": 100,
+      "planned": 100,
       "remaining": 0,
-      "subcategories": 0,
-      "completedSubcategories": 0,
-      "bySubcategory": {}
+      "subcategories": 10,
+      "completedSubcategories": 10,
+      "bySubcategory": {
+        "career-strategy-positioning": {
+          "available": 10,
+          "planned": 10
+        },
+        "resume-cv-portfolio": {
+          "available": 10,
+          "planned": 10
+        },
+        "job-search-applications": {
+          "available": 10,
+          "planned": 10
+        },
+        "interviews-assessments": {
+          "available": 10,
+          "planned": 10
+        },
+        "compensation-negotiation-offers": {
+          "available": 10,
+          "planned": 10
+        },
+        "workplace-performance-growth": {
+          "available": 10,
+          "planned": 10
+        },
+        "leadership-management": {
+          "available": 10,
+          "planned": 10
+        },
+        "freelancing-consulting-independent-work": {
+          "available": 10,
+          "planned": 10
+        },
+        "networking-personal-brand-communication": {
+          "available": 10,
+          "planned": 10
+        },
+        "career-learning-long-term-development": {
+          "available": 10,
+          "planned": 10
+        }
+      }
     },
     "MKT": {
       "id": "UPL-MKT",
       "slug": "marketing-sales-communication",
-      "available": 0,
-      "planned": 0,
+      "available": 100,
+      "planned": 100,
       "remaining": 0,
-      "subcategories": 0,
-      "completedSubcategories": 0,
-      "bySubcategory": {}
+      "subcategories": 10,
+      "completedSubcategories": 10,
+      "bySubcategory": {
+        "strategy-positioning-market-research": {
+          "available": 10,
+          "planned": 10
+        },
+        "brand-messaging-copywriting": {
+          "available": 10,
+          "planned": 10
+        },
+        "content-marketing-editorial": {
+          "available": 10,
+          "planned": 10
+        },
+        "seo-organic-discovery": {
+          "available": 10,
+          "planned": 10
+        },
+        "email-lifecycle-crm": {
+          "available": 10,
+          "planned": 10
+        },
+        "paid-acquisition-experimentation": {
+          "available": 10,
+          "planned": 10
+        },
+        "sales-enablement-conversion": {
+          "available": 10,
+          "planned": 10
+        },
+        "customer-research-retention-growth": {
+          "available": 10,
+          "planned": 10
+        },
+        "pr-corporate-crisis-communication": {
+          "available": 10,
+          "planned": 10
+        },
+        "marketing-analytics-operations": {
+          "available": 10,
+          "planned": 10
+        }
+      }
     },
     "PROD": {
       "id": "UPL-PROD",
       "slug": "productivity-organization-management",
-      "available": 0,
-      "planned": 0,
+      "available": 100,
+      "planned": 100,
       "remaining": 0,
-      "subcategories": 0,
-      "completedSubcategories": 0,
-      "bySubcategory": {}
+      "subcategories": 10,
+      "completedSubcategories": 10,
+      "bySubcategory": {
+        "personal-productivity-prioritization": {
+          "available": 10,
+          "planned": 10
+        },
+        "planning-goals-decision-systems": {
+          "available": 10,
+          "planned": 10
+        },
+        "project-execution-delivery": {
+          "available": 10,
+          "planned": 10
+        },
+        "workflow-process-automation": {
+          "available": 10,
+          "planned": 10
+        },
+        "meetings-communication-documentation": {
+          "available": 10,
+          "planned": 10
+        },
+        "delegation-accountability-team-operations": {
+          "available": 10,
+          "planned": 10
+        },
+        "time-capacity-resource-management": {
+          "available": 10,
+          "planned": 10
+        },
+        "knowledge-information-organization": {
+          "available": 10,
+          "planned": 10
+        },
+        "management-operating-systems": {
+          "available": 10,
+          "planned": 10
+        },
+        "productivity-audits-improvement": {
+          "available": 10,
+          "planned": 10
+        }
+      }
     },
     "CREATIVE": {
       "id": "UPL-CREATIVE",
       "slug": "creativity-design-media",
-      "available": 0,
-      "planned": 0,
+      "available": 100,
+      "planned": 100,
       "remaining": 0,
-      "subcategories": 0,
-      "completedSubcategories": 0,
-      "bySubcategory": {}
+      "subcategories": 10,
+      "completedSubcategories": 10,
+      "bySubcategory": {
+        "creative-strategy-ideation": {
+          "available": 10,
+          "planned": 10
+        },
+        "visual-design-layout-systems": {
+          "available": 10,
+          "planned": 10
+        },
+        "brand-identity-art-direction": {
+          "available": 10,
+          "planned": 10
+        },
+        "ux-ui-product-design": {
+          "available": 10,
+          "planned": 10
+        },
+        "photography-image-creation": {
+          "available": 10,
+          "planned": 10
+        },
+        "video-motion-production": {
+          "available": 10,
+          "planned": 10
+        },
+        "audio-music-podcast": {
+          "available": 10,
+          "planned": 10
+        },
+        "storytelling-writing-narrative": {
+          "available": 10,
+          "planned": 10
+        },
+        "creative-critique-quality": {
+          "available": 10,
+          "planned": 10
+        },
+        "creative-operations-delivery": {
+          "available": 10,
+          "planned": 10
+        }
+      }
     }
   }
 }
