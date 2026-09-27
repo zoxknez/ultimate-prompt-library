@@ -617,8 +617,9 @@
       "url": "https://www.go-fair.org/fair-principles/"
     },
     {
-      "label": "NIST Research Data Framework",
-      "url": "https://www.nist.gov/programs-projects/research-data-framework-rdaf"
+      "label": "NIST Research Data Framework (RDaF) v2.0",
+      "url": "https://www.nist.gov/publications/nist-research-data-framework-rdaf-version-20",
+      "note": "Published 2024-02-07; supersedes RDaF v1.0 and v1.5."
     }
   ],
   "qualitative-mixed-methods": [
@@ -915,8 +916,9 @@
   ],
   "knowledge-information-organization": [
     {
-      "label": "ISO 30401 Knowledge Management Systems",
-      "url": "https://www.iso.org/standard/68683.html"
+      "label": "ISO 30401:2018 - Knowledge Management Systems",
+      "url": "https://www.iso.org/standard/68683.html",
+      "note": "Current published edition with 2022 and 2024 amendments; under revision and expected to be replaced by a new edition. Verify current ISO status before relying on it."
     }
   ],
   "management-operating-systems": [

@@ -22,6 +22,24 @@
 <a id="pocni-ovde"></a>
 <a id="kolekcije"></a>
 
+
+## V2 deep-quality arhitektura
+
+Početni milestone od 1.000 promptova sada se održava kao evidence-aware v2 sistem, a ne kao statična kolekcija dugačkih promptova.
+
+Svaki efektivni prompt kombinuje:
+- svoj task-specific production spec
+- zajednički Prompt Quality Standard v2
+- category i subcategory best-practice profile
+- model-neutral prompt-execution pravila
+- kompozitni task-shape execution model
+- subcategory i category routing autoritativnih izvora
+- challenge, uncertainty, verification i acceptance gate-ove
+
+Build validira svih 1.000 prompt ID-jeva, 2.000 EN/SR lokalizacija, 100 subcategory quality profila, 100 subcategory source profila i 10 category source profila.
+
+[Pročitaj v2 quality standard](docs/prompt-quality-standard-v2.md) · [Registry eksternih izvora](docs/external-source-registry-v2.md) · [V2 upgrade izveštaj](docs/v2-upgrade-report.md)
+
 ## Objavljene kolekcije
 
 **01 · UPL-IT · Završeno**

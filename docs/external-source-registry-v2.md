@@ -106,6 +106,9 @@ This registry lists authoritative starting points used to strengthen Ultimate Pr
   - https://www.equator-network.org/
 - FAIR Principles
   - https://www.go-fair.org/fair-principles/
+- NIST Research Data Framework (RDaF) v2.0
+  - https://www.nist.gov/publications/nist-research-data-framework-rdaf-version-20
+  - Published 2024-02-07; supersedes preliminary v1.0 and interim v1.5.
 - Reporting-guideline compliance should never be treated as proof of methodological quality.
 
 ## Career and professional development
@@ -144,8 +147,9 @@ This registry lists authoritative starting points used to strengthen Ultimate Pr
   - https://www.iso.org/iso-9001-quality-management.html
 - ISO 31000 Risk Management
   - https://www.iso.org/iso-31000-risk-management.html
-- ISO 30401 Knowledge Management Systems
+- ISO 30401:2018 Knowledge Management Systems
   - https://www.iso.org/standard/68683.html
+  - Current published edition with 2022 and 2024 amendments, but under revision. ISO/DIS 30401 closed its ballot on 2026-09-18; verify status before use.
 
 ## Creativity, design and media
 

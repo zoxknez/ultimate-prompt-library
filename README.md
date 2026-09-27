@@ -22,6 +22,24 @@
 <a id="start-here"></a>
 <a id="collections"></a>
 
+
+## V2 deep-quality architecture
+
+The initial 1,000-prompt milestone is now maintained as an evidence-aware v2 system rather than a static collection of long prompts.
+
+Every effective prompt combines:
+- its task-specific production specification
+- the shared Prompt Quality Standard v2
+- category and subcategory best-practice profiles
+- model-neutral prompt-execution rules
+- a composable task-shape execution model
+- subcategory and category authoritative source routing
+- challenge, uncertainty, verification and acceptance gates
+
+The build validates all 1,000 prompt IDs, 2,000 EN/SR localizations, 100 subcategory quality profiles, 100 subcategory source profiles and 10 category source profiles.
+
+[Read the v2 quality standard](docs/prompt-quality-standard-v2.md) · [External source registry](docs/external-source-registry-v2.md) · [V2 upgrade report](docs/v2-upgrade-report.md)
+
 ## Published collections
 
 **01 · UPL-IT · Complete**

@@ -66,6 +66,8 @@ Current-version examples captured in the registry include:
 - ESCO v1.2.1
 - IAB Campaign Data Standards 1.0 Final
 - WCAG 2.2
+- NIST RDaF v2.0
+- ISO 30401:2018 revision status
 
 See:
 - [Prompt Quality Standard v2](prompt-quality-standard-v2.md)
