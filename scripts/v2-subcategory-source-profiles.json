@@ -30,7 +30,7 @@
   "backend-api": [
     {
       "label": "OWASP API Security Top 10",
-      "url": "https://owasp.org/API-Security/"
+      "url": "https://api-security.owasp.org/"
     },
     {
       "label": "IETF RFC 9110 - HTTP Semantics",
@@ -53,6 +53,10 @@
     {
       "label": "CISA Secure by Design",
       "url": "https://www.cisa.gov/securebydesign"
+    },
+    {
+      "label": "OWASP Application Security Verification Standard (ASVS) 5.0.0",
+      "url": "https://owasp.org/projects/asvs"
     }
   ],
   "devops-cloud-infrastructure": [
@@ -76,7 +80,7 @@
     },
     {
       "label": "FAIR Principles",
-      "url": "https://www.go-fair.org/fair-principles/"
+      "url": "https://www.gofair.foundation/fair-principles"
     },
     {
       "label": "PostgreSQL current documentation",
@@ -162,11 +166,11 @@
     },
     {
       "label": "COSO Internal Control resources",
-      "url": "https://www.coso.org/Pages/ic.aspx"
+      "url": "https://www.coso.org/internal-control"
     },
     {
       "label": "IAASB Standards and Pronouncements",
-      "url": "https://www.iaasb.org/publications-resources"
+      "url": "https://www.iaasb.org/standards-pronouncements"
     }
   ],
   "economics-market-analysis": [
@@ -255,6 +259,11 @@
     {
       "label": "SEC EDGAR",
       "url": "https://www.sec.gov/edgar/search/"
+    },
+    {
+      "label": "IVSC International Valuation Standards",
+      "url": "https://ivsc.org/standards/",
+      "note": "Confirm the IVS edition in force for the valuation date; IVSC revises the standards through published consultations."
     }
   ],
   "legal-research-authority": [
@@ -305,7 +314,7 @@
   "privacy-data-protection": [
     {
       "label": "European Data Protection Board",
-      "url": "https://www.edpb.europa.eu/our-work-tools/our-documents_en"
+      "url": "https://www.edpb.europa.eu/documents_en"
     },
     {
       "label": "EUR-Lex GDPR",
@@ -402,6 +411,11 @@
     {
       "label": "WHO Medicines",
       "url": "https://www.who.int/health-topics/medicines"
+    },
+    {
+      "label": "NICE NG5 - Medicines optimisation (includes medicines reconciliation)",
+      "url": "https://www.nice.org.uk/guidance/ng5",
+      "note": "UK guideline; confirm jurisdiction applicability and the latest update before relying on it."
     }
   ],
   "diagnostics-labs-medical-tests": [
@@ -627,7 +641,7 @@
   "data-quality-reproducibility": [
     {
       "label": "FAIR Principles",
-      "url": "https://www.go-fair.org/fair-principles/"
+      "url": "https://www.gofair.foundation/fair-principles"
     },
     {
       "label": "NIST Research Data Framework (RDaF) v2.0",
@@ -672,7 +686,7 @@
     },
     {
       "label": "FAIR Principles",
-      "url": "https://www.go-fair.org/fair-principles/"
+      "url": "https://www.gofair.foundation/fair-principles"
     }
   ],
   "research-projects-decisions": [
@@ -682,7 +696,7 @@
     },
     {
       "label": "FAIR Principles",
-      "url": "https://www.go-fair.org/fair-principles/"
+      "url": "https://www.gofair.foundation/fair-principles"
     }
   ],
   "career-strategy-positioning": [

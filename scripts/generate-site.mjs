@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import YAML from 'yaml';
 import { enhancePrompt } from './lib/v2-quality.mjs';
 
-const ROOT = process.cwd();
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'dist');
 const SRC = path.join(ROOT, 'site-src');
 const SITE_URL = (process.env.SITE_URL || 'https://ultimate-prompt-library.vercel.app').replace(/\/$/, '');

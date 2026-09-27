@@ -75,6 +75,19 @@ This registry lists authoritative starting points used to strengthen Ultimate Pr
 - Design Tokens Resolver Module 2025.10
   - https://www.w3.org/community/reports/design-tokens/CG-FINAL-resolver-20251028/
 
+## Freshness checks and 2.4.0 registry changes
+
+The machine-readable registry is `scripts/v2-source-profiles.json` plus `scripts/v2-subcategory-source-profiles.json`. `npm run sources:check` validates its structure offline and checks every URL online for redirects, broken links, draft/superseded signals and changes against a metadata snapshot. See [Source freshness](source-freshness.md) for statuses and the full 2026-09-27 run.
+
+Changes verified on the publishers' sites on 2026-09-27:
+
+- COSO Internal Control moved to https://www.coso.org/internal-control (the old URL returned 404).
+- OWASP API Security Top 10 moved to https://api-security.owasp.org/.
+- FAIR Principles now live at https://www.gofair.foundation/fair-principles.
+- IAASB Standards and Pronouncements: https://www.iaasb.org/standards-pronouncements (the old publications URL redirected to a generic IFAC search).
+- EDPB: the Law profile cited the same document twice under two URLs; only https://www.edpb.europa.eu/documents_en remains.
+- Added OWASP ASVS 5.0.0 (https://owasp.org/projects/asvs) for cybersecurity, NICE NG5 Medicines optimisation (https://www.nice.org.uk/guidance/ng5, covers medicines reconciliation) for medications and treatment safety, and IVSC International Valuation Standards (https://ivsc.org/standards/) for investment, valuation and due diligence.
+
 ## Use rule
 
 These are starting points, not universal substitutes for local law, domain standards, primary evidence, current product documentation or current platform behavior.

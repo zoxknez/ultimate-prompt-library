@@ -3,6 +3,11 @@ import { readFileSync } from 'node:fs';
 import { loadValidRepository } from './lib/upl.mjs';
 import { V2_MARKER, V2_VERSION, semanticDetailRules, taskShapeRules } from './lib/v2-quality.mjs';
 import { buildEmpiricalEvalSuite, validateEmpiricalEvalSuite, V2_EVAL_CLASSES } from './lib/v2-evals.mjs';
+import { validateSourceList } from './lib/source-freshness.mjs';
+import { matchedSemanticGroups, primaryTaskShape } from './lib/v2-routing.mjs';
+import { allSuites, fixtureHash, validateManifest } from './lib/eval/plan.mjs';
+import { BASELINE_PATH, loadBaseline, staleReasons } from './lib/eval/golden.mjs';
+import { HARNESS_PROTOCOL_VERSION } from './lib/eval/harness.mjs';
 
 const repo = loadValidRepository();
 const errors = [];
@@ -23,32 +28,7 @@ if (Object.keys(sourceProfiles).length !== 10) fail('Expected exactly 10 categor
 if (Object.keys(subSourceProfiles).length !== 100) fail('Expected exactly 100 subcategory authoritative source profiles.');
 
 function validateSources(where, items) {
-  if (!Array.isArray(items) || !items.length) {
-    fail(where + ': source profile must be a non-empty array.');
-    return;
-  }
-  const urls = new Set();
-  for (const item of items) {
-    if (!item || typeof item !== 'object') {
-      fail(where + ': invalid source entry.');
-      continue;
-    }
-    if (!item.label || typeof item.label !== 'string') fail(where + ': source entry missing label.');
-    if (!item.url || typeof item.url !== 'string') fail(where + ': source entry missing URL.');
-    else {
-      if (!item.url.startsWith('https://')) fail(where + ': source URL must use HTTPS: ' + item.url);
-      if (urls.has(item.url)) fail(where + ': duplicate source URL: ' + item.url);
-      urls.add(item.url);
-    }
-    if (item.note != null && typeof item.note !== 'string') fail(where + ': source note must be a string.');
-    const statusHaystack = String(item.label ?? '') + ' ' + String(item.url ?? '');
-    if (/(\bdraft\b|initial-public-draft|\/ipd\b|public-comment|consultation|proposed)/i.test(statusHaystack)) {
-      const note = String(item.note ?? '');
-      if (!/(draft|proposed|consult|interim|not final|future-facing)/i.test(note)) {
-        fail(where + ': draft/proposed source must carry an explicit status note: ' + (item.label || item.url));
-      }
-    }
-  }
+  for (const error of validateSourceList(where, items)) fail(error);
 }
 
 for (const [categoryId, items] of Object.entries(sourceProfiles)) {
@@ -220,6 +200,76 @@ for (const [id, prompt] of repo.prompts) {
   }
 }
 
+// ---------------------------------------------------------------------------
+// EN/SR structural parity of the effective prompts. Wording differs by language; the rule
+// selection, sources, sections and eval namespace must not.
+const sectionShape = (body) => (body.split(V2_MARKER)[1] ?? '').split(/\n(?=## )/).map((section) => ({
+  bullets: section.split('\n').filter((line) => /^- /.test(line)).length,
+  links: (section.match(/\]\(https:\/\/[^)]+\)/g) ?? []).join(' '),
+}));
+for (const [id, prompt] of repo.prompts) {
+  const en = prompt.localizations.en;
+  const sr = prompt.localizations.sr;
+  if (!en || !sr) continue;
+  const a = sectionShape(en.body);
+  const b = sectionShape(sr.body);
+  if (a.length !== b.length) fail(id + ': EN/SR v2 layers have a different number of sections.');
+  a.forEach((section, i) => {
+    if (!b[i]) return;
+    if (section.bullets !== b[i].bullets) fail(id + ': EN/SR v2 section ' + i + ' has ' + section.bullets + ' vs ' + b[i].bullets + ' rules.');
+    if (section.links !== b[i].links) fail(id + ': EN/SR v2 section ' + i + ' cites different sources.');
+  });
+  for (const [lang, file] of [['en', en], ['sr', sr]]) {
+    if (!file.body.includes('"' + file.data.title + '"')) fail(file.path + ': prompt subject must be the verbatim localized title.');
+    const routingData = { ...file.data, language: lang };
+    if (primaryTaskShape(routingData) !== primaryTaskShape({ ...en.data, language: 'en' })) fail(id + '/' + lang + ': primary task shape differs by language.');
+    if (matchedSemanticGroups(routingData).map((g) => g.id).join() !== matchedSemanticGroups({ ...en.data, language: 'en' }).map((g) => g.id).join()) {
+      fail(id + '/' + lang + ': semantic groups differ by language.');
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Golden baseline: schema, version and staleness against the current repository.
+let baselineSummary = 'missing';
+try {
+  const baseline = loadBaseline();
+  const current = new Map();
+  for (const { lang, suite, localization } of allSuites(repo)) {
+    for (const fixture of suite.fixtures) current.set(lang + ':' + fixture.id, { fixtureHash: fixtureHash(suite, fixture), effectivePromptHash: localization.bodyHash, harnessProtocolVersion: HARNESS_PROTOCOL_VERSION });
+  }
+  let stale = 0;
+  for (const [key, entry] of Object.entries(baseline.entries)) {
+    const live = current.get(key);
+    if (!live) fail('golden baseline entry ' + key + ' references a fixture that no longer exists.');
+    else if (staleReasons(entry, live).length) stale += 1;
+  }
+  baselineSummary = Object.keys(baseline.entries).length + ' entries / ' + stale + ' stale';
+  if (stale) console.warn('WARNING  golden baseline: ' + stale + ' stale entr' + (stale === 1 ? 'y needs' : 'ies need') + ' review before they can be replaced (npm run baseline:accept -- --replace-stale).');
+} catch (error) {
+  fail('golden baseline ' + BASELINE_PATH + ': ' + error.message);
+}
+
+// ---------------------------------------------------------------------------
+// Curated live-eval manifest coverage.
+const smoke = JSON.parse(readFileSync(new URL('../evals/manifests/baseline-smoke.json', import.meta.url), 'utf8'));
+for (const error of validateManifest(smoke, repo)) fail('baseline-smoke manifest: ' + error);
+const smokeCategories = new Set(smoke.entries.map((e) => e.promptId.replace(/-\d{3}$/, '')));
+if (smokeCategories.size !== 10) fail('baseline-smoke manifest must cover all 10 categories.');
+if (!['en', 'sr'].every((lang) => smoke.entries.some((e) => e.language === lang))) fail('baseline-smoke manifest must cover EN and SR.');
+for (const id of ['UPL-IT-031', 'UPL-LAW-001', 'UPL-HEALTH-021', 'UPL-SCI-031']) {
+  if (!smoke.entries.some((e) => e.promptId === id)) fail('baseline-smoke manifest must include high-impact prompt ' + id + '.');
+}
+const smokeShapes = new Set(smoke.entries.map((e) => primaryTaskShape({ id: e.promptId })));
+if (smokeShapes.size < 9) fail('baseline-smoke manifest must cover every task shape (found ' + smokeShapes.size + ').');
+const smokeFixtures = smoke.entries.reduce((n, e) => n + e.classes.length, 0);
+if (smokeFixtures < 20 || smokeFixtures > 150) fail('baseline-smoke manifest must plan 20-150 fixtures (found ' + smokeFixtures + ').');
+
+// ---------------------------------------------------------------------------
+// Raw model output and network observations must stay out of Git.
+const gitignore = readFileSync(new URL('../.gitignore', import.meta.url), 'utf8').split(/\r?\n/).map((line) => line.trim());
+for (const dir of ['.eval-runs/', '.source-checks/', '.env']) if (!gitignore.includes(dir)) fail('.gitignore must ignore ' + dir);
+
 if (errors.length) {
   for (const error of errors.slice(0, 100)) console.error('ERROR  ' + error);
   if (errors.length > 100) console.error('... ' + (errors.length - 100) + ' additional error(s)');
@@ -229,5 +279,6 @@ if (errors.length) {
 
 console.log(
   'validate-v2: 1000 prompts / 2000 localizations / 100 quality profiles / ' +
-  '100 subcategory source profiles / 10 category source profiles / 2000 localized empirical suites / 12000 localized fixtures / version ' + V2_VERSION + ' -> OK'
+  '100 subcategory source profiles / 10 category source profiles / 2000 localized empirical suites / 12000 localized fixtures / ' +
+  'EN/SR parity / golden baseline ' + baselineSummary + ' / smoke manifest ' + smoke.entries.length + ' entries, ' + smokeFixtures + ' fixtures / version ' + V2_VERSION + ' -> OK'
 );

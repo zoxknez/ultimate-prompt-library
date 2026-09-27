@@ -221,16 +221,16 @@ Detaljan imenik ostaje sklopljen dok ne poželiš da pregledaš kolekciju po tem
 <summary><strong>Pravo i administracija</strong> · 10 / 10 završeno</summary>
 
 <ol>
-<li><a href="prompts/sr/03-pravo-administracija/01-legal-research-authority/README.md"><strong>Pravna istraživanja i pravni izvori</strong></a><sub>10 / 10 · Završeno</sub></li>
-<li><a href="prompts/sr/03-pravo-administracija/02-contract-drafting-review/README.md"><strong>Sastavljanje i pregled ugovora</strong></a><sub>10 / 10 · Završeno</sub></li>
-<li><a href="prompts/sr/03-pravo-administracija/03-litigation-dispute-resolution/README.md"><strong>Sporovi i rešavanje sporova</strong></a><sub>10 / 10 · Završeno</sub></li>
-<li><a href="prompts/sr/03-pravo-administracija/04-corporate-commercial-law/README.md"><strong>Korporativno i privredno pravo</strong></a><sub>10 / 10 · Završeno</sub></li>
-<li><a href="prompts/sr/03-pravo-administracija/05-privacy-data-protection/README.md"><strong>Privatnost i zaštita podataka</strong></a><sub>10 / 10 · Završeno</sub></li>
-<li><a href="prompts/sr/03-pravo-administracija/06-employment-labor-law/README.md"><strong>Radno pravo i radni odnosi</strong></a><sub>10 / 10 · Završeno</sub></li>
-<li><a href="prompts/sr/03-pravo-administracija/07-regulatory-compliance/README.md"><strong>Regulatorna usklađenost</strong></a><sub>10 / 10 · Završeno</sub></li>
-<li><a href="prompts/sr/03-pravo-administracija/08-public-administration-procedure/README.md"><strong>Javna uprava i upravni postupak</strong></a><sub>10 / 10 · Završeno</sub></li>
-<li><a href="prompts/sr/03-pravo-administracija/09-intellectual-property/README.md"><strong>Intelektualna svojina</strong></a><sub>10 / 10 · Završeno</sub></li>
-<li><a href="prompts/sr/03-pravo-administracija/10-international-cross-border-law/README.md"><strong>Međunarodno i prekogranično pravo</strong></a><sub>10 / 10 · Završeno</sub></li>
+<li><a href="prompts/sr/03-pravo-administracija/01-legal-research-authority/README.md"><strong>Pravna istraživanja i pravni izvori</strong></a><p>Jurisdikcija, hijerarhija pravnih izvora, sudska praksa, tumačenje propisa, provera citata i pravni istraživački memorandumi.</p><sub>10 / 10 · Završeno</sub></li>
+<li><a href="prompts/sr/03-pravo-administracija/02-contract-drafting-review/README.md"><strong>Sastavljanje i pregled ugovora</strong></a><p>Struktura ugovora, klauzule, raspodela rizika, pregovori, pravna sredstva i elektronsko ugovaranje.</p><sub>10 / 10 · Završeno</sub></li>
+<li><a href="prompts/sr/03-pravo-administracija/03-litigation-dispute-resolution/README.md"><strong>Sporovi i rešavanje sporova</strong></a><p>Zahtevi, odbrane, dokazi, postupak, šteta, poravnanje, žalbe i strategija spora.</p><sub>10 / 10 · Završeno</sub></li>
+<li><a href="prompts/sr/03-pravo-administracija/04-corporate-commercial-law/README.md"><strong>Korporativno i privredno pravo</strong></a><p>Korporativno upravljanje, vlasništvo, transakcije, odobrenja, evidencije i poslovni odnosi.</p><sub>10 / 10 · Završeno</sub></li>
+<li><a href="prompts/sr/03-pravo-administracija/05-privacy-data-protection/README.md"><strong>Privatnost i zaštita podataka</strong></a><p>Programi privatnosti, evidencije obrade, pravni osnovi, transferi, prava, incidenti i DPIA.</p><sub>10 / 10 · Završeno</sub></li>
+<li><a href="prompts/sr/03-pravo-administracija/06-employment-labor-law/README.md"><strong>Radno pravo i radni odnosi</strong></a><p>Ugovori o radu, klasifikacija, politike na radu, disciplina, prestanak rada i kolektivni odnosi.</p><sub>10 / 10 · Završeno</sub></li>
+<li><a href="prompts/sr/03-pravo-administracija/07-regulatory-compliance/README.md"><strong>Regulatorna usklađenost</strong></a><p>Primenjivost, obaveze, licence, kontrole, izveštavanje, inspekcije, izvršenje i remedijacija.</p><sub>10 / 10 · Završeno</sub></li>
+<li><a href="prompts/sr/03-pravo-administracija/08-public-administration-procedure/README.md"><strong>Javna uprava i upravni postupak</strong></a><p>Upravni postupak, odluke organa, žalbe, konsultacije, javne nabavke i pristup informacijama.</p><sub>10 / 10 · Završeno</sub></li>
+<li><a href="prompts/sr/03-pravo-administracija/09-intellectual-property/README.md"><strong>Intelektualna svojina</strong></a><p>Autorsko pravo, žigovi, patenti, poslovne tajne, licence, open source i IP due diligence.</p><sub>10 / 10 · Završeno</sub></li>
+<li><a href="prompts/sr/03-pravo-administracija/10-international-cross-border-law/README.md"><strong>Međunarodno i prekogranično pravo</strong></a><p>Sukob zakona, međunarodni ugovori, arbitraža, izvršenje, sankcije i prekogranične transakcije.</p><sub>10 / 10 · Završeno</sub></li>
 </ol>
 
 </details>

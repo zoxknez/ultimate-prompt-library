@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "name": "baseline-smoke",
+  "description": "Curated high-value smoke and first golden-baseline set: all 10 categories, every task shape, EN and SR, high-impact domains, provenance- and adversarial-heavy prompts, and prompts whose routing was affected by the matcher fixes. Run dry by default: npm run eval:baseline-smoke. Live: npm run eval:baseline-smoke -- --live --model=<m> --judge-model=<m> --confirm-calls=<planned>.",
+  "entries": [
+    {
+      "promptId": "UPL-IT-031",
+      "language": "en",
+      "classes": ["nominal", "adversarial", "provenance"],
+      "rationale": "Mandatory high-impact security audit. Exercises the application-security and api-backend semantic groups, the injection canary on an attacker-minded prompt and claim-level provenance for vulnerability findings.",
+      "coverage": ["UPL-IT", "audit", "high-impact", "adversarial-heavy", "provenance-heavy", "en"]
+    },
+    {
+      "promptId": "UPL-IT-031",
+      "language": "sr",
+      "classes": ["adversarial", "missing-context"],
+      "rationale": "Serbian twin of the security audit. Confirms the SR prompt keeps the same trust-boundary behavior and does not become weaker or broader in translation.",
+      "coverage": ["UPL-IT", "audit", "high-impact", "adversarial-heavy", "parity", "sr"]
+    },
+    {
+      "promptId": "UPL-LAW-001",
+      "language": "en",
+      "classes": ["nominal", "missing-context", "provenance"],
+      "rationale": "Mandatory legal research audit. Provenance is the core risk (citation laundering, secondary sources presented as authority, missing jurisdiction), so provenance and missing-context are both tested.",
+      "coverage": ["UPL-LAW", "audit", "high-impact", "provenance-heavy", "en"]
+    },
+    {
+      "promptId": "UPL-LAW-001",
+      "language": "sr",
+      "classes": ["provenance"],
+      "rationale": "Serbian twin of the legal research audit to check that source-status and authority discipline survive translation.",
+      "coverage": ["UPL-LAW", "audit", "high-impact", "provenance-heavy", "parity", "sr"]
+    },
+    {
+      "promptId": "UPL-HEALTH-021",
+      "language": "sr",
+      "classes": ["nominal", "boundary", "adversarial", "missing-context"],
+      "rationale": "Mandatory medication reconciliation audit in Serbian: the exact prompt where 'api' matched inside 'terapije'. Checks medication-safety rules, no unilateral dose advice, escalation and missing medication-list handling.",
+      "coverage": ["UPL-HEALTH", "audit", "high-impact", "routing-edge", "adversarial-heavy", "sr"]
+    },
+    {
+      "promptId": "UPL-HEALTH-021",
+      "language": "en",
+      "classes": ["boundary", "missing-context"],
+      "rationale": "English twin of medication reconciliation for EN/SR parity on the highest-consequence boundary and missing-context behavior.",
+      "coverage": ["UPL-HEALTH", "audit", "high-impact", "parity", "en"]
+    },
+    {
+      "promptId": "UPL-SCI-031",
+      "language": "en",
+      "classes": ["nominal", "boundary"],
+      "rationale": "Mandatory causal question and DAG builder. Tests the causal-inference group (estimand, confounders vs colliders, identification assumptions) on a builder-shaped task.",
+      "coverage": ["UPL-SCI", "builder", "high-impact", "en"]
+    },
+    {
+      "promptId": "UPL-SCI-031",
+      "language": "sr",
+      "classes": ["nominal"],
+      "rationale": "Serbian twin of the DAG builder; routing now comes from the English title only, so the SR prompt must show the same causal rules.",
+      "coverage": ["UPL-SCI", "builder", "parity", "sr"]
+    },
+    {
+      "promptId": "UPL-IT-075",
+      "language": "en",
+      "classes": ["nominal", "regression"],
+      "rationale": "Structured-output generator whose primary shape changed from builder to generator with the head-noun rule. Regression fixture checks reproducibility metadata for application-integrated output.",
+      "coverage": ["UPL-IT", "generator", "structured-output", "routing-edge", "en"]
+    },
+    {
+      "promptId": "UPL-IT-077",
+      "language": "en",
+      "classes": ["adversarial", "nominal"],
+      "rationale": "The only IT red-team prompt. Adversarial content is the subject matter here, so it tests that the model analyzes attacks without obeying the injected instruction.",
+      "coverage": ["UPL-IT", "red-team", "adversarial-heavy", "en"]
+    },
+    {
+      "promptId": "UPL-BIZ-091",
+      "language": "sr",
+      "classes": ["nominal", "boundary", "missing-context"],
+      "rationale": "Valuation is one of only two forecast-shaped business prompts. Checks units, currency, period and assumption sensitivity, and refusal to invent missing financial inputs.",
+      "coverage": ["UPL-BIZ", "forecast", "sr"]
+    },
+    {
+      "promptId": "UPL-BIZ-040",
+      "language": "en",
+      "classes": ["boundary"],
+      "rationale": "Business strategy stress test (red-team) to check that boundary conditions produce counterexamples and stop conditions rather than generic risks.",
+      "coverage": ["UPL-BIZ", "red-team", "en"]
+    },
+    {
+      "promptId": "UPL-LAW-007",
+      "language": "en",
+      "classes": ["provenance", "boundary"],
+      "rationale": "Conflicting-authority resolver: previously received security rules because 'authority' matched 'auth'. Now a decision shape; tests hierarchy of authority and conflict handling.",
+      "coverage": ["UPL-LAW", "decision", "routing-edge", "provenance-heavy", "en"]
+    },
+    {
+      "promptId": "UPL-LAW-048",
+      "language": "sr",
+      "classes": ["nominal", "adversarial"],
+      "rationale": "Data breach legal response is a high-impact generator with privacy obligations and deadlines; checks that generated notices do not invent facts or follow injected instructions.",
+      "coverage": ["UPL-LAW", "generator", "high-impact", "adversarial-heavy", "sr"]
+    },
+    {
+      "promptId": "UPL-HEALTH-013",
+      "language": "en",
+      "classes": ["boundary", "missing-context"],
+      "rationale": "Urgent vs routine care navigation: the red-flag and safety-netting behavior must hold on boundary symptoms and when key history is missing.",
+      "coverage": ["UPL-HEALTH", "decision", "high-impact", "en"]
+    },
+    {
+      "promptId": "UPL-HEALTH-008",
+      "language": "en",
+      "classes": ["provenance"],
+      "rationale": "Certainty-of-evidence grading is a research-shaped prompt where directness, study design and source status decide the answer.",
+      "coverage": ["UPL-HEALTH", "research", "provenance-heavy", "en"]
+    },
+    {
+      "promptId": "UPL-EDU-048",
+      "language": "sr",
+      "classes": ["nominal"],
+      "rationale": "Self-testing question generator: an education generator where the learning-science group applies and output must be directly usable.",
+      "coverage": ["UPL-EDU", "generator", "sr"]
+    },
+    {
+      "promptId": "UPL-EDU-040",
+      "language": "en",
+      "classes": ["nominal", "missing-context"],
+      "rationale": "Tutoring progress monitor is one of the few tracker-shaped prompts; checks source of truth, cadence and stale or missing data handling.",
+      "coverage": ["UPL-EDU", "tracker", "en"]
+    },
+    {
+      "promptId": "UPL-SCI-016",
+      "language": "en",
+      "classes": ["boundary", "provenance"],
+      "rationale": "Heterogeneity and synthesis analyzer exercises the meta-analysis group and the analysis shape; pooling decisions are a classic boundary failure.",
+      "coverage": ["UPL-SCI", "analysis", "provenance-heavy", "en"]
+    },
+    {
+      "promptId": "UPL-CAREER-007",
+      "language": "sr",
+      "classes": ["nominal"],
+      "rationale": "Career option decision matrix is the only career decision-shaped prompt; checks explicit criteria, trade-offs and sensitivity in Serbian.",
+      "coverage": ["UPL-CAREER", "decision", "sr"]
+    },
+    {
+      "promptId": "UPL-CAREER-011",
+      "language": "en",
+      "classes": ["missing-context", "adversarial"],
+      "rationale": "Resume audit where fabrication of metrics or seniority is the main risk; tests refusal to invent achievements when evidence is missing.",
+      "coverage": ["UPL-CAREER", "audit", "adversarial-heavy", "en"]
+    },
+    {
+      "promptId": "UPL-MKT-019",
+      "language": "en",
+      "classes": ["adversarial", "provenance"],
+      "rationale": "Conversion copy red team: claim substantiation and deceptive-persuasion checks, with provenance for performance claims.",
+      "coverage": ["UPL-MKT", "red-team", "provenance-heavy", "adversarial-heavy", "en"]
+    },
+    {
+      "promptId": "UPL-MKT-097",
+      "language": "sr",
+      "classes": ["nominal"],
+      "rationale": "Marketing experiment backlog: kept as a tracker only because 'backlog' is now an explicit tracker term after the substring 'log' was removed.",
+      "coverage": ["UPL-MKT", "tracker", "routing-edge", "sr"]
+    },
+    {
+      "promptId": "UPL-PROD-025",
+      "language": "en",
+      "classes": ["nominal", "missing-context"],
+      "rationale": "Project status report is a structured tracker output; status must surface decisions and blockers and handle missing status data explicitly.",
+      "coverage": ["UPL-PROD", "tracker", "structured-output", "en"]
+    },
+    {
+      "promptId": "UPL-PROD-069",
+      "language": "sr",
+      "classes": ["boundary"],
+      "rationale": "Resource conflict resolution previously had task-shape rules only through the false match 'resource' -> 'source'; now routed as decision via 'resolution'.",
+      "coverage": ["UPL-PROD", "decision", "routing-edge", "sr"]
+    },
+    {
+      "promptId": "UPL-CREATIVE-043",
+      "language": "sr",
+      "classes": ["nominal"],
+      "rationale": "Lighting plan builder in Serbian: 'osvetljenja' used to match 'etl' and inject data-engineering rules into a photography prompt.",
+      "coverage": ["UPL-CREATIVE", "builder", "routing-edge", "sr"]
+    },
+    {
+      "promptId": "UPL-CREATIVE-030",
+      "language": "en",
+      "classes": ["adversarial"],
+      "rationale": "Identity system red team covers the creative domain's red-team shape and rights or provenance pressure on brand assets.",
+      "coverage": ["UPL-CREATIVE", "red-team", "adversarial-heavy", "en"]
+    }
+  ]
+}

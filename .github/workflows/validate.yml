@@ -1,10 +1,19 @@
-# Runs the same structural validation as `npm run validate` locally.
-# Cloud execution is optional: the repository does not rely on paid Actions minutes, so local
-# validation is the source of truth. The workflow stays ready to use whenever Actions is enabled.
+# Runs the same validation as `npm run validate` locally: structural and generated-file checks,
+# v2 quality validation, generation of all 2,000 localized eval suites (12,000 fixtures), dry-run
+# executable-eval smoke (zero API calls), unit/E2E tests against a local mock provider, offline
+# source-registry checks, and the site build plus site validation.
 #
-# Third-party actions are pinned to full commit SHAs (the commit the v4 tag pointed to when pinned).
-# To update: resolve the new release tag to its commit SHA from the official repository and update
-# both the SHA and the version comment.
+# Live (paid) evals never run in CI: no API key is configured or needed, and the runner makes no
+# network request without an explicit --live flag.
+#
+# Status (2026-09-27): GitHub reports "The job was not started because your account is locked due
+# to a billing issue." That is an account-level condition, not a code or test failure, and it
+# cannot be fixed from the repository. Until it is resolved, `npm run validate` locally and the
+# Vercel production build (`npm run build`) are the source of truth. This workflow is kept correct
+# and ready for when runners are available again.
+#
+# Third-party actions are pinned to full commit SHAs resolved from the official repositories.
+# To update: resolve the new release tag to its commit SHA and update both SHA and comment.
 name: Validate
 
 on:
@@ -22,9 +31,9 @@ concurrency:
 
 jobs:
   validate:
-    name: Validate prompts, translations, links and generated files
+    name: Validate prompts, evals, sources and site
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
@@ -34,11 +43,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Validate (prompts, translations, links, generated files)
+      - name: Validate (structure, generated files, v2, evals dry run, tests, offline sources, site)
         run: npm run validate
+
+      - name: Production build
+        run: npm run build

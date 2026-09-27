@@ -221,16 +221,16 @@ The detailed directory stays collapsed until you need to browse a collection by 
 <summary><strong>Law &amp; Administration</strong> · 10 / 10 subcategories complete</summary>
 
 <ol>
-<li><a href="prompts/en/03-law-administration/01-legal-research-authority/README.md"><strong>Legal Research &amp; Authority</strong></a><sub>10 / 10 · Complete</sub></li>
-<li><a href="prompts/en/03-law-administration/02-contract-drafting-review/README.md"><strong>Contract Drafting &amp; Review</strong></a><sub>10 / 10 · Complete</sub></li>
-<li><a href="prompts/en/03-law-administration/03-litigation-dispute-resolution/README.md"><strong>Litigation &amp; Dispute Resolution</strong></a><sub>10 / 10 · Complete</sub></li>
-<li><a href="prompts/en/03-law-administration/04-corporate-commercial-law/README.md"><strong>Corporate &amp; Commercial Law</strong></a><sub>10 / 10 · Complete</sub></li>
-<li><a href="prompts/en/03-law-administration/05-privacy-data-protection/README.md"><strong>Privacy &amp; Data Protection</strong></a><sub>10 / 10 · Complete</sub></li>
-<li><a href="prompts/en/03-law-administration/06-employment-labor-law/README.md"><strong>Employment &amp; Labor Law</strong></a><sub>10 / 10 · Complete</sub></li>
-<li><a href="prompts/en/03-law-administration/07-regulatory-compliance/README.md"><strong>Regulatory Compliance</strong></a><sub>10 / 10 · Complete</sub></li>
-<li><a href="prompts/en/03-law-administration/08-public-administration-procedure/README.md"><strong>Public Administration &amp; Procedure</strong></a><sub>10 / 10 · Complete</sub></li>
-<li><a href="prompts/en/03-law-administration/09-intellectual-property/README.md"><strong>Intellectual Property</strong></a><sub>10 / 10 · Complete</sub></li>
-<li><a href="prompts/en/03-law-administration/10-international-cross-border-law/README.md"><strong>International &amp; Cross-Border Law</strong></a><sub>10 / 10 · Complete</sub></li>
+<li><a href="prompts/en/03-law-administration/01-legal-research-authority/README.md"><strong>Legal Research &amp; Authority</strong></a><p>Jurisdiction, authority hierarchy, case law, statutory interpretation, citation verification and legal research memoranda.</p><sub>10 / 10 · Complete</sub></li>
+<li><a href="prompts/en/03-law-administration/02-contract-drafting-review/README.md"><strong>Contract Drafting &amp; Review</strong></a><p>Contract architecture, clauses, risk allocation, negotiation, remedies and electronic contracting.</p><sub>10 / 10 · Complete</sub></li>
+<li><a href="prompts/en/03-law-administration/03-litigation-dispute-resolution/README.md"><strong>Litigation &amp; Dispute Resolution</strong></a><p>Claims, defenses, evidence, procedure, damages, settlement, appeals and dispute strategy.</p><sub>10 / 10 · Complete</sub></li>
+<li><a href="prompts/en/03-law-administration/04-corporate-commercial-law/README.md"><strong>Corporate &amp; Commercial Law</strong></a><p>Corporate governance, ownership, transactions, approvals, records and commercial relationships.</p><sub>10 / 10 · Complete</sub></li>
+<li><a href="prompts/en/03-law-administration/05-privacy-data-protection/README.md"><strong>Privacy &amp; Data Protection</strong></a><p>Privacy programs, processing inventories, lawful bases, transfers, rights, breaches and DPIAs.</p><sub>10 / 10 · Complete</sub></li>
+<li><a href="prompts/en/03-law-administration/06-employment-labor-law/README.md"><strong>Employment &amp; Labor Law</strong></a><p>Employment agreements, classification, workplace policy, discipline, termination and labor relations.</p><sub>10 / 10 · Complete</sub></li>
+<li><a href="prompts/en/03-law-administration/07-regulatory-compliance/README.md"><strong>Regulatory Compliance</strong></a><p>Applicability, obligations, licensing, controls, reporting, inspections, enforcement and remediation.</p><sub>10 / 10 · Complete</sub></li>
+<li><a href="prompts/en/03-law-administration/08-public-administration-procedure/README.md"><strong>Public Administration &amp; Procedure</strong></a><p>Administrative procedure, public decisions, appeals, consultations, procurement and access to information.</p><sub>10 / 10 · Complete</sub></li>
+<li><a href="prompts/en/03-law-administration/09-intellectual-property/README.md"><strong>Intellectual Property</strong></a><p>Copyright, trademarks, patents, trade secrets, licensing, open source and IP due diligence.</p><sub>10 / 10 · Complete</sub></li>
+<li><a href="prompts/en/03-law-administration/10-international-cross-border-law/README.md"><strong>International &amp; Cross-Border Law</strong></a><p>Conflict of laws, treaties, arbitration, enforcement, sanctions and cross-border transactions.</p><sub>10 / 10 · Complete</sub></li>
 </ol>
 
 </details>

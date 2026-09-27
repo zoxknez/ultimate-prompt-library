@@ -1,4 +1,4 @@
-# UPL v2.3 Deep Quality Upgrade Report
+# UPL v2.4 Deep Quality Upgrade Report
 
 Review date: 2026-09-27
 
@@ -10,7 +10,7 @@ Review date: 2026-09-27
 - Subcategories with dedicated best-practice profiles: **100 / 100**
 - Subcategories with dedicated authoritative source routing: **100 / 100**
 - Category-level authoritative source profiles: **10 / 10**
-- Effective prompt version: **2.3.0**
+- Effective prompt version: **2.4.0**
 - Languages: **English + Serbian**
 
 ## V2 composition model
@@ -99,7 +99,7 @@ See:
 
 Raw Markdown files remain the task-specific base specification. The effective v2 layer is composed centrally by `scripts/lib/v2-quality.mjs`, preventing 2,000 localized files from drifting into inconsistent copies of shared quality rules.
 
-`scripts/upgrade-prompts-v2.mjs` can materialize the effective v2 layer into raw Markdown when a fully materialized source export is required.
+The former `scripts/upgrade-prompts-v2.mjs` materializer was removed in 2.4.0: it could rewrite all 2,000 raw files with a frozen copy of the layer, and its post-check still required version 2.0.0. Effective prompts are composed only at load time.
 
 ## Verification gates
 
@@ -118,7 +118,7 @@ The production build must preserve:
 - at least two independent authoritative source domains per subcategory
 - draft/proposed source-status validation with explicit notes
 - stable identity from `catalog.json`
-- effective version 2.3.0 in generated indexes and live prompt pages
+- effective version 2.4.0 in generated indexes and live prompt pages (the build now fails on stale generated files instead of regenerating them first)
 - v2 quality marker in every generated prompt body
 - prompt-execution best-practice layer
 - prompt-specific execution-focus layer
@@ -127,5 +127,14 @@ The production build must preserve:
 - challenge pass
 - acceptance gate
 - authoritative source section
+
+## 2.4.0 production hardening
+
+- **Routing.** One shared, token-aware routing table (`scripts/lib/v2-routing.mjs`, `scripts/lib/matchers.mjs`) replaces two diverging substring-regex chains. Routing reads the slug and English title only, so EN and SR select identical rules. Every change was reviewed: 69 English and 78 Serbian prompts lost at least one false semantic group (for example contract rules on "Reliability" prompts, security rules on "Authority" prompts, SLO rules on career "Performance" prompts), 41 English and 49 Serbian prompts lost false task-shape rules, and one prompt (UPL-HEALTH-040) gained a correct diagnostic-testing group.
+- **Primary task shape.** A head-noun rule is shared by the completion contract and the eval suite; 47 primary shapes changed (for example "Threat Modeling Generator" from forecast to generator). Research- and forecast-shaped prompts now get their own completion contracts instead of a generic fallback.
+- **Serbian parity.** The source-status rule (draft, consultation, proposed or interim sources) was missing from all 1,000 Serbian prompts, and section 13 was not localized. The prompt subject no longer loses diacritics and symbols ("tuma enje", "n 1", "m a").
+- **Size.** English effective prompts are 0.13% shorter in total; Serbian prompts are 0.70% longer, almost entirely from the restored source-status rule.
+- **Evals.** Harness protocol v2 (no answer-key leakage, strict structured judge with verified quotes, deterministic injection canary), provider-neutral runner with cost limits and an error taxonomy, versioned run and baseline schemas, fail-closed baseline acceptance, deterministic reports and a curated 49-fixture smoke manifest. See [V2 evaluation methodology](v2-evaluation-methodology.md).
+- **Sources.** `npm run sources:check` with an offline structural mode and an online metadata checker; four moved or broken registry URLs were corrected, one redirect duplicate was removed and three missing primary standards were added. See [Source freshness](source-freshness.md).
 
 See also: [V2 evaluation methodology](v2-evaluation-methodology.md) and [Prompt overlap audit](v2-overlap-audit.md).

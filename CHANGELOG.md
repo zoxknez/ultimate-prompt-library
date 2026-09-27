@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed - effective prompt version 2.4.0 (production hardening)
+
+- **Routing:** task-shape, completion-contract and semantic routing now come from one token-aware table (`scripts/lib/v2-routing.mjs`) evaluated on the slug and English title only. This removes substring collisions ("api" in "terapije", "valuation" in "evaluation", "liability" in "reliability", "auth" in "authority", "etl" in "osvetljenja" and others) and guarantees identical rule selection in EN and SR. 69 English and 78 Serbian prompts lost false semantic rules; 47 primary task shapes changed to the English head noun.
+- **Serbian prompts:** restored the missing draft/consultation source-status rule in all 1,000 Serbian prompts, localized section 13, and stopped the prompt subject from losing diacritics and symbols.
+- **Evals:** harness protocol v2 (no expected-behavior leakage to the candidate, strict structured judge with verbatim-quote verification, deterministic prompt-injection canary), provider-neutral runner with cost limits, error taxonomy, bounded retries and partial-result persistence, run and baseline schema v2, fail-closed baseline acceptance, `npm run eval:report`, and the curated `npm run eval:baseline-smoke` manifest (27 entries, 49 fixtures). The golden baseline moved to `evals/baselines/v2.4.json` and is still empty: no live eval has been run.
+- **Sources:** `npm run sources:check` (offline structural mode and online metadata checker with a committed metadata snapshot); corrected four moved or broken URLs, removed one redirect duplicate, added OWASP ASVS 5.0.0, NICE NG5 and IVSC standards.
+- **Build and CI:** `npm run build` no longer regenerates generated files before checking them, so stale files fail the build; regenerated indexes (they still reported version 2.0.0), category READMEs and README statistics artwork (it still showed 200 prompts). `npm run validate` now includes `npm test` and the offline source check. CI runs on Node 24; a weekly source-freshness workflow was added.
+
+### Removed
+
+- `scripts/upgrade-prompts-v2.mjs` (could materialize a frozen copy of the v2 layer into all raw files; its post-check still required version 2.0.0) and `scripts/lib/eval-runtime.mjs` (replaced by `scripts/lib/eval/`).
+
 ### Fixed
 
 - UPL-IT-004 (Serbian): the file was truncated mid-sentence. Completed the final quality gate and the closing `KONAČNO PRAVILO` section from the English text.

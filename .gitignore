@@ -29,3 +29,6 @@ dist/
 
 # Local/live evaluation outputs (may contain model outputs and usage metadata)
 .eval-runs/
+
+# Source freshness check reports (network observations; the committed snapshot lives in scripts/)
+.source-checks/

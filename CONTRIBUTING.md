@@ -41,7 +41,8 @@ npm run generate     # after changing prompts, the catalog or scripts
 npm run validate     # must finish with 0 errors
 ```
 
-- `npm run validate` checks prompts, translations, links and generated files. Errors must be fixed; warnings are review signals.
+- `npm run validate` checks prompts, translations, links, generated files, v2 quality and EN/SR parity invariants, all 2,000 eval suites (with zero-cost dry runs), the test suite (`npm test`), the source registry (offline) and the website. It makes no network requests. Errors must be fixed; warnings are review signals.
+- Live evals and online source checks are separate, explicit commands; see the [evaluation methodology](docs/v2-evaluation-methodology.md) and [source freshness](docs/source-freshness.md).
 - `npm run validate:translations -- --details` shows the EN/SR structural comparison for every prompt.
 - Generated files (indexes, README tables, artwork) are never edited by hand. The scripts do not commit; review the diff and commit generated files together with your change.
 

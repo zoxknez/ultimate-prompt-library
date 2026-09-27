@@ -39,7 +39,8 @@ npm run generate     # posle izmene promptova, kataloga ili skripti
 npm run validate     # mora da završi sa 0 grešaka
 ```
 
-- `npm run validate` proverava promptove, prevode, linkove i generisane fajlove. Greške se moraju ispraviti; upozorenja su signali za pregled.
+- `npm run validate` proverava promptove, prevode, linkove, generisane fajlove, v2 kvalitet i EN/SR parity invarijante, svih 2.000 eval suite-ova (uz dry run bez troška), testove (`npm test`), registar izvora (offline) i sajt. Ne pravi mrežne zahteve. Greške se moraju ispraviti; upozorenja su signali za pregled.
+- Live evali i online provera izvora su zasebne, eksplicitne komande; vidi [metodologiju evaluacije](docs/v2-evaluation-methodology.md) i [svežinu izvora](docs/source-freshness.md).
 - `npm run validate:translations -- --details` prikazuje strukturno poređenje EN/SR za svaki prompt.
 - Generisani fajlovi (indeksi, README tabele, grafika) se nikada ne menjaju ručno. Skripte ne rade commit; pregledaj diff i commit-uj generisane fajlove zajedno sa svojom izmenom.
 

@@ -9,22 +9,26 @@
     "node": "24.x"
   },
   "scripts": {
-    "validate": "npm run validate:prompts && npm run validate:translations && npm run validate:links && npm run validate:generated && npm run validate:v2 && npm run validate:site",
+    "validate": "npm run validate:prompts && npm run validate:translations && npm run validate:links && npm run validate:generated && npm run validate:v2 && npm test && npm run sources:check -- --offline && npm run validate:site",
     "validate:prompts": "node scripts/validate-prompts.mjs",
     "validate:translations": "node scripts/validate-translations.mjs",
     "validate:links": "node scripts/validate-links.mjs",
     "validate:generated": "node scripts/generate-index.mjs --check && node scripts/generate-stats.mjs --check",
+    "validate:v2": "node scripts/validate-v2.mjs && node scripts/export-v2-evals.mjs && node scripts/run-v2-evals.mjs --prompt=UPL-IT-031 --lang=en --max-fixtures=6 && node scripts/run-v2-evals.mjs --prompt=UPL-HEALTH-021 --lang=sr --max-fixtures=6 && node scripts/run-v2-evals.mjs --manifest=evals/manifests/baseline-smoke.json",
+    "validate:site": "npm run build:site && node scripts/validate-site.mjs",
+    "test": "node --test \"tests/*.test.mjs\"",
     "index": "node scripts/generate-index.mjs",
     "stats": "node scripts/generate-stats.mjs",
     "generate": "npm run index && npm run stats",
     "audit:prompts": "node scripts/audit-prompts.mjs",
     "build:site": "node scripts/generate-site.mjs",
-    "build": "npm run generate && npm run validate:prompts && npm run validate:translations && npm run validate:links && npm run validate:generated && npm run validate:v2 && npm run build:site && node scripts/validate-site.mjs",
-    "validate:site": "npm run build:site && node scripts/validate-site.mjs",
-    "validate:v2": "node scripts/validate-v2.mjs && node scripts/export-v2-evals.mjs && node scripts/run-v2-evals.mjs --prompt=UPL-IT-031 --lang=en --max-fixtures=6 && node scripts/run-v2-evals.mjs --prompt=UPL-HEALTH-021 --lang=sr --max-fixtures=6",
+    "build": "npm run validate:prompts && npm run validate:translations && npm run validate:links && npm run validate:generated && npm run validate:v2 && npm run build:site && node scripts/validate-site.mjs",
     "evals:v2": "node scripts/export-v2-evals.mjs",
     "eval:run": "node scripts/run-v2-evals.mjs",
-    "baseline:accept": "node scripts/accept-v2-baseline.mjs"
+    "eval:baseline-smoke": "node scripts/run-v2-evals.mjs --manifest=evals/manifests/baseline-smoke.json",
+    "eval:report": "node scripts/eval-report.mjs",
+    "baseline:accept": "node scripts/accept-v2-baseline.mjs",
+    "sources:check": "node scripts/check-sources.mjs"
   },
   "dependencies": {
     "yaml": "2.9.1"

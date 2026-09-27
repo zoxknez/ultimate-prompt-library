@@ -93,7 +93,7 @@ Indexes deliberately contain metadata only, not prompt bodies. They are small en
 
 ## Scripts
 
-All scripts are plain Node.js (18+) ES modules. The only dependency is [`yaml`](https://www.npmjs.com/package/yaml), a mature YAML parser with no dependencies of its own, used to parse front matter reliably. There is no custom YAML parser, linter, formatter or test framework.
+All scripts are plain Node.js ES modules (the project targets Node 24; Node 22 also works). The only dependency is [`yaml`](https://www.npmjs.com/package/yaml), a mature YAML parser with no dependencies of its own, used to parse front matter reliably. Tests use the built-in `node:test` runner and HTTP uses native `fetch`; there is no custom YAML parser, linter, formatter, test framework or SDK dependency.
 
 | Command | Script | Purpose |
 |---|---|---|
@@ -104,12 +104,21 @@ All scripts are plain Node.js (18+) ES modules. The only dependency is [`yaml`](
 | `npm run validate:generated` | both generators with `--check` | Fails if any generated file is stale. |
 | `npm run generate` | `generate-index.mjs`, `generate-stats.mjs` | Regenerates indexes, README/roadmap tables, statistics and artwork (`npm run index` and `npm run stats` run the two halves). |
 | `npm run audit:prompts` | `scripts/audit-prompts.mjs` | Diagnostic only, never fails: size distribution, size outliers and detected design elements per prompt, as Markdown. Used for [prompt-quality-audit.md](prompt-quality-audit.md). |
+| `npm run validate:v2` | `validate-v2.mjs`, `export-v2-evals.mjs`, dry runs of `run-v2-evals.mjs` | v2 quality-layer invariants, EN/SR parity, golden-baseline schema and staleness, smoke-manifest coverage, all 2,000 eval suites, and three zero-cost dry runs. |
+| `npm test` | `tests/*.test.mjs` | Matcher collision tests, judge parsing, golden/baseline rules, safety helpers, provider error taxonomy, source-freshness classification, and runner end-to-end tests against a local mock provider. |
+| `npm run evals:v2` | `scripts/export-v2-evals.mjs` | Generates and validates the 2,000 localized suites (12,000 fixtures); `--prompt=<id> --lang=<en\|sr>` prints one suite. |
+| `npm run eval:run` / `eval:baseline-smoke` | `scripts/run-v2-evals.mjs` | Executable evals. Dry run by default; live only with `--live`, a key in the environment and explicit models. See the [evaluation methodology](v2-evaluation-methodology.md). |
+| `npm run eval:report` | `scripts/eval-report.mjs` | Deterministic JSON and Markdown report for a validated live run (`--run=` or `--latest`). |
+| `npm run baseline:accept` | `scripts/accept-v2-baseline.mjs` | Accepts a fully passing live run into the golden baseline; requires `--accept-baseline`. |
+| `npm run sources:check` | `scripts/check-sources.mjs` | Source-registry checks; `--offline` is structural only. See [source freshness](source-freshness.md). |
 
 Scripts never modify prompt bodies. Generators refuse to run while structural validation has errors.
 
 ### Tooling safety
 
-The scripts read repository-controlled Markdown, YAML and JSON only. They do not evaluate or execute prompt content or code blocks, do not build shell commands from file content, and do not fetch remote URLs (external links are skipped by the link validator; the only network access is `npm ci` installing the locked `yaml` package). YAML is parsed with the `yaml` library's default, non-executable schema.
+The scripts read repository-controlled Markdown, YAML and JSON. They do not evaluate or execute prompt content, code blocks or model output, and do not build shell commands from file content. YAML is parsed with the `yaml` library's default, non-executable schema.
+
+Network access happens only in three explicit places: `npm ci` installing the locked `yaml` package; `npm run sources:check` without `--offline` (GET requests for registry URLs, metadata only, HTTPS redirects only); and `npm run eval:run -- --live` (the configured model provider). `npm run validate` and `npm run build` make no network requests. Model output is treated as untrusted data: it is stored only in git-ignored `.eval-runs/`, and reports escape it and strip control characters. API keys are read from the environment only and are redacted from errors and run files.
 
 ## Validation: local first
 
@@ -120,7 +129,9 @@ npm ci
 npm run validate
 ```
 
-[`.github/workflows/validate.yml`](../.github/workflows/validate.yml) runs exactly the same `npm run validate` on pull requests and pushes to `main`/`master` when GitHub Actions is enabled. The project currently does not rely on cloud Actions execution (paid minutes), so a missing or failed cloud run is not a statement about repository correctness, and the README shows no CI status badge. The workflow uses read-only permissions and pins third-party actions to full commit SHAs.
+[`.github/workflows/validate.yml`](../.github/workflows/validate.yml) runs exactly the same `npm run validate` plus `npm run build` on Node 24 for pull requests and pushes to `main`/`master`. As of 2026-09-27 GitHub does not start the job at all ("The job was not started because your account is locked due to a billing issue"): that is an account-level condition, not a code or test failure, and it cannot be fixed from the repository. Local `npm run validate` and the Vercel production build are the source of truth until runners are available again. The workflows use read-only permissions, need no secrets, never run paid live evals, and pin third-party actions to full commit SHAs. [`source-freshness.yml`](../.github/workflows/source-freshness.yml) runs the online source check weekly and uploads its report without gating merges.
+
+`npm run build` no longer regenerates indexes and READMEs before validating them. A stale generated file now fails the build instead of being silently rewritten on the build machine; run `npm run generate` and commit the result.
 
 ## Adding a prompt
 

@@ -1,0 +1,50 @@
+# Weekly metadata check of the authoritative-source registry. It reports candidates for human
+# review (BROKEN, CHANGED, POSSIBLY_UPDATED, DRAFT_STATUS, POSSIBLY_SUPERSEDED) and uploads the
+# JSON report. It never edits the registry or the committed snapshot, needs no secrets, and does
+# not gate merges: network state is not a property of the code.
+name: Source freshness
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sources:
+    name: Check authoritative sources
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Offline registry checks
+        run: npm run sources:check -- --offline
+
+      - name: Online metadata check
+        # Exit 1 means a BROKEN source; exit 4 means the network was unavailable. Both are
+        # reported in the uploaded file for review instead of failing silently.
+        run: npm run sources:check || echo "sources:check exit code $?"
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: source-freshness-report
+          path: .source-checks/
+          if-no-files-found: warn
+          retention-days: 30
