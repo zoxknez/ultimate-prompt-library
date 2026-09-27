@@ -398,7 +398,7 @@ export function semanticDetailRules(data, lang) {
     ['Proverite schema constraints, transaction boundaries, idempotency, ordering, backfill/replay i migration rollback pre zaključka o integritetu podataka.',
      'Merite na realnom volume/cardinality-ju i proverite indexes/query plans ili pipeline bottleneck umesto zaključivanja o performance-u iz sintakse.']);
 
-  add(/api|backend/,
+  add(/\bapi\b|backend/,
     ['Validate contract/schema, authentication/authorization, input normalization, idempotency, rate/abuse controls, errors and version compatibility.',
      'Trace downstream storage/services and partial-failure behavior; a correct handler in isolation is not enough.'],
     ['Validirajte contract/schema, authentication/authorization, input normalizaciju, idempotency, rate/abuse kontrole, errors i version compatibility.',

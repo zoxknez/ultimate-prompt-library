@@ -55,6 +55,7 @@ Every generated prompt now receives:
 - six machine-readable fixture classes per prompt: nominal, boundary, missing-context, adversarial, provenance and regression
 - prompt-specific semantic anchors and adjacent-scope awareness inside eval generation
 - grader assertions that are validated structurally before a suite can pass
+- cross-domain semantic-contamination guard, including strict token-boundary matching for API/backend routing
 - relevant authoritative starting sources
 
 ## Prompt-engineering methodology

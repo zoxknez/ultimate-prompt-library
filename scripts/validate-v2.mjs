@@ -99,6 +99,12 @@ for (const category of repo.catalog.categories) {
       if (!suite.semanticAnchors.every((item) => item && !/this task|ovaj zadatak/i.test(item))) {
         fail(prompt.id + '/' + lang + ': empirical eval semantic anchors are too generic.');
       }
+      const localizedHaystack = ((prompt.slug ?? '') + ' ' + title).toLowerCase();
+      const semanticJoined = semanticDetailRules({ ...taskData, title, language: lang }, lang).join(' ').toLowerCase();
+      if (!/\bapi\b|backend/.test(localizedHaystack) &&
+          /contract\/schema.*authentication\/authorization|validirajte contract\/schema.*authentication\/authorization/.test(semanticJoined)) {
+        fail(prompt.id + '/' + lang + ': cross-domain API/backend semantic contamination detected.');
+      }
     }
   }
 
@@ -219,5 +225,5 @@ if (errors.length) {
 
 console.log(
   'validate-v2: 1000 prompts / 2000 localizations / 100 quality profiles / ' +
-  '100 subcategory source profiles / 10 category source profiles / 1000 empirical suites / 6000 fixtures per language-pair run / version ' + V2_VERSION + ' -> OK'
+  '100 subcategory source profiles / 10 category source profiles / 2000 localized empirical suites / 12000 localized fixtures / version ' + V2_VERSION + ' -> OK'
 );
