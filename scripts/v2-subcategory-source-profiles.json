@@ -141,8 +141,9 @@
   ],
   "financial-analysis-corporate-finance": [
     {
-      "label": "IFRS Accounting Standards",
-      "url": "https://www.ifrs.org/issued-standards/list-of-standards/"
+      "label": "IFRS Accounting Standards Navigator - 2026 collection",
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/",
+      "note": "Navigator exposes the 2026 issued Standards collection; verify the effective date and transition requirements of the specific Standard or amendment."
     },
     {
       "label": "OECD Corporate Finance and Governance",
@@ -155,8 +156,9 @@
   ],
   "accounting-reporting-financial-control": [
     {
-      "label": "IFRS Accounting Standards",
-      "url": "https://www.ifrs.org/issued-standards/list-of-standards/"
+      "label": "IFRS Accounting Standards Navigator - 2026 collection",
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/",
+      "note": "Navigator exposes the 2026 issued Standards collection; verify the effective date and transition requirements of the specific Standard or amendment."
     },
     {
       "label": "COSO Internal Control resources",
@@ -183,8 +185,9 @@
   ],
   "business-strategy-competitive-analysis": [
     {
-      "label": "OECD Corporate Governance",
-      "url": "https://www.oecd.org/corporate/principles-corporate-governance/"
+      "label": "G20/OECD Principles of Corporate Governance 2023",
+      "url": "https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en.html",
+      "note": "Current revised international benchmark edition, endorsed by G20 leaders in September 2023."
     },
     {
       "label": "ISO Quality Management Principles",
@@ -228,8 +231,9 @@
       "url": "https://committee.iso.org/quality-management/principles"
     },
     {
-      "label": "OECD Corporate Governance",
-      "url": "https://www.oecd.org/corporate/principles-corporate-governance/"
+      "label": "G20/OECD Principles of Corporate Governance 2023",
+      "url": "https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en.html",
+      "note": "Current revised international benchmark edition, endorsed by G20 leaders in September 2023."
     }
   ],
   "risk-compliance-business-resilience": [
@@ -244,8 +248,9 @@
   ],
   "investment-valuation-due-diligence": [
     {
-      "label": "IFRS Accounting Standards",
-      "url": "https://www.ifrs.org/issued-standards/list-of-standards/"
+      "label": "IFRS Accounting Standards Navigator - 2026 collection",
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/",
+      "note": "Navigator exposes the 2026 issued Standards collection; verify the effective date and transition requirements of the specific Standard or amendment."
     },
     {
       "label": "SEC EDGAR",
@@ -288,8 +293,9 @@
   ],
   "corporate-commercial-law": [
     {
-      "label": "G20/OECD Principles of Corporate Governance",
-      "url": "https://www.oecd.org/corporate/principles-corporate-governance/"
+      "label": "G20/OECD Principles of Corporate Governance 2023",
+      "url": "https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en.html",
+      "note": "Current revised international benchmark edition, endorsed by G20 leaders in September 2023."
     },
     {
       "label": "UNCITRAL Texts",

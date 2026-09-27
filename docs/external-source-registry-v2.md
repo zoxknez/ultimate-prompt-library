@@ -148,3 +148,13 @@ At execution time:
 - UNESCO AI Competency Framework for Students
   - https://www.unesco.org/en/articles/ai-competency-framework-students
   - Published 2024-08-08; page last updated 2026-01-16.
+
+
+### Business and reporting freshness - 2026-09-27
+
+- IFRS Accounting Standards Navigator - 2026 collection
+  - https://www.ifrs.org/issued-standards/list-of-standards/
+  - Verify the effective date and transition requirements of the specific Standard or amendment before application.
+- G20/OECD Principles of Corporate Governance 2023
+  - https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en.html
+  - Revised benchmark edition endorsed by G20 leaders in September 2023.
