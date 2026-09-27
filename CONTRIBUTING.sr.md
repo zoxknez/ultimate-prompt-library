@@ -73,6 +73,8 @@ Ne biraj ID sam pre nego što se o predlogu diskutuje - ID-evi su trajni.
 - Zadrži **ID, broj, slug i ime fajla** nepromenjenim.
 - Ako izmena menja **logičku pokrivenost** (provere, sekcije, scenarije, primere, pravila), ažuriraj **oba jezika** u istom pull request-u kad god je moguće.
 - Ako se može ažurirati samo jedna lokalizacija, povećaj njenu verziju i postavi prompt na `status: review`, ili otvori issue za prevod koji navodi ID prompta.
+**Efektivna v2 kompozicija:** raw Markdown verzije pripadaju task-specific base specifikaciji. Izmene zajedničkog v2 quality layer-a komponuju se centralno kroz `scripts/lib/v2-quality.mjs` i ne zahtevaju mehanički mass bump svih raw prompt fajlova.
+
 - Povećaj `version` u oba fajla prema [pravilima verzionisanja](docs/prompt-format.sr.md#verzionisanje): PATCH za formulacije i popravke defekata, MINOR za nove provere ili sekcije, MAJOR za temeljne promene.
 - Svaki prompt je samostalan. Ne prepravljaj prompt samo da bi odgovarao stilu drugog prompta.
 - Ako prompt zastari, označi ga sa `status: deprecated` (i postavi `replaced_by` ako postoji zamena) umesto da ga brišeš.

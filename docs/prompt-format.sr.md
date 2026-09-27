@@ -102,6 +102,24 @@ README fajlovi i indeksi prikazuju jednu oznaku po unosu u katalogu:
 
 ## Verzionisanje
 
+### Verzija base specifikacije i efektivna v2 verzija
+
+Raw Markdown frontmatter beleži verziju **task-specific base specifikacije** koja je sačuvana u tom jezičkom fajlu.
+
+Production indeks i sajt komponuju tu base specifikaciju kroz `scripts/lib/v2-quality.mjs`. Composer može objaviti noviju **efektivnu verziju prompta** kroz celu biblioteku bez kopiranja zajedničkog quality sloja u svaki Markdown fajl.
+
+Zato:
+
+- ne povećavati masovno verziju 2.000 raw fajlova samo zato što se promenio zajednički v2 quality layer
+- povećati raw EN/SR `version` kada se materijalno promene task-specific instrukcije u tim Markdown fajlovima
+- uparene EN/SR base verzije držati usklađenim kada predstavljaju istu task-specific reviziju
+- generated/effective verziju prikazanu u indeksima i na sajtu tretirati kao verziju koju korisnik izvršava
+- komponovani rezultat proveriti kroz `npm run validate:v2` i standardni production build
+
+Ovo odvaja centralno održive safety, evidence, source-routing, evaluation i acceptance kontrole od stabilne istorije task-specific source fajlova.
+
+
+
 Verzije koriste format `MAJOR.MINOR.PATCH` i opisuju **logičku reviziju prompta**, zajedničku za sve njegove jezike:
 
 | Promena | Kada |

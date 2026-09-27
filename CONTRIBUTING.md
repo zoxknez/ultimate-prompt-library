@@ -22,6 +22,8 @@ By participating you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 1. **Check for duplicates.** Look at the [catalog](catalog.json), the [roadmap](docs/roadmap.md), the category READMEs and open issues. If a prompt on the same topic exists or is planned, improve or claim that one instead of creating a new one.
 2. **Read the format.** [docs/prompt-format.md](docs/prompt-format.md) defines front matter, filenames, statuses and versioning. [docs/ids.md](docs/ids.md) explains IDs.
+
+   **Effective v2 composition:** raw Markdown versions belong to the task-specific base specification. Shared v2 quality-layer changes are composed centrally by `scripts/lib/v2-quality.mjs` and must not trigger a mechanical mass version bump of all raw prompt files.
 3. **Set up the tooling** (Node.js 18 or newer):
 
    ```bash

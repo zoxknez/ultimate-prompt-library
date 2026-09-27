@@ -102,6 +102,24 @@ The READMEs and indexes show one label per catalog entry:
 
 ## Versioning
 
+### Base-specification version vs effective v2 version
+
+Raw Markdown front matter records the version of the **task-specific base specification** stored in that language file.
+
+The production index and website compose that base specification through `scripts/lib/v2-quality.mjs`. The composer can publish a newer **effective prompt version** across the whole library without duplicating the shared quality layer into every Markdown file.
+
+Therefore:
+
+- do **not** mass-bump 2,000 raw files merely because the shared v2 quality layer changes
+- bump raw EN/SR `version` when the task-specific instructions in those Markdown files materially change
+- keep paired EN/SR base versions aligned when they represent the same task-specific revision
+- treat the generated/effective version shown in indexes and on the website as the version users execute
+- validate the composed result with `npm run validate:v2` and the normal production build
+
+This separation keeps shared safety, evidence, source-routing, evaluation and acceptance controls centrally maintainable while preserving stable task-specific source history.
+
+
+
 Versions use `MAJOR.MINOR.PATCH` and describe the **logical revision of a prompt**, shared by all of its languages:
 
 | Bump | When |
