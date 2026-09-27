@@ -13,9 +13,21 @@ The unit under test is the **effective prompt**:
 4. prompt-execution rules
 5. prompt-specific execution focus
 6. composable task-shape model
-7. challenge and uncertainty controls
-8. source-routing layer
-9. acceptance gate
+7. task-specific eval contract
+8. challenge and uncertainty controls
+9. source-routing layer
+10. acceptance gate
+
+## Per-prompt eval contract
+
+Every effective prompt now carries an execution-time eval contract requiring the relevant subset of:
+- representative-case behavior
+- boundary/unusual input handling
+- missing-critical-context behavior
+- adversarial/untrusted-input resistance
+- regression checks after prompt/model/provider/tool/source-schema changes
+
+Eval scoring must cover goal completion, evidence/factuality, constraint compliance, schema/format validity, safety/privacy and verification readiness.
 
 ## Required fixture classes
 
@@ -85,5 +97,7 @@ The production build additionally requires:
 - zero generic task-shape fallback prompts
 - prompt-specific execution focus on every effective prompt
 - authoritative source routing
+- at least four effective authoritative sources per subcategory after deduplication
+- at least two independent source domains per subcategory
 - full Markdown link integrity
 - final generated-site validation

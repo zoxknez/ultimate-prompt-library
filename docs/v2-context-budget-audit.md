@@ -39,3 +39,13 @@ The IT category profile adds an additional audit-specific applicability rule.
 ## Design principle
 
 Prompt quality is evaluated by task success, evidence integrity, robustness and verification - not by prompt length. Large prompts remain justified where breadth is the product requirement, but their execution must be selective, traceable and context-aware.
+
+
+## Additional v2.1 execution hardening
+
+The prompt-execution layer now also requires:
+- long-context task restatement immediately before execution after delimited context
+- representative and diverse examples only where examples materially improve correctness
+- model-agnostic mandatory rules, with provider-specific optimizations treated as re-testable adaptations
+- no request for private chain-of-thought disclosure; verification uses concise rationale, evidence, tests and acceptance results
+- explicit regression evals when prompt/model/provider/tool/source schemas change

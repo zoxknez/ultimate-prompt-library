@@ -24,8 +24,10 @@ Every effective prompt is composed from these layers at generation/runtime:
 5. prompt-execution best-practice layer
 6. prompt-specific execution focus derived from exact prompt identity and sibling scope
 7. task-shape execution model
-8. subcategory-specific authoritative source routing
-9. category-level authoritative source fallback
+8. explicit eval contract covering representative, boundary, missing-context, adversarial and regression cases
+9. adversarial challenge and calibrated uncertainty controls
+10. subcategory-specific authoritative source routing
+11. category-level authoritative source fallback
 
 Task-shape logic distinguishes audit/review, builder/design/plan, analysis/assessment, tracker/monitor, generative copy/script and red-team/stress-test workflows.
 
@@ -38,6 +40,7 @@ Every generated prompt now receives:
 - category and subcategory best practices
 - model-neutral prompt-execution guidance
 - prompt-specific scope, input, completion and sibling-handoff rules for every ID
+- explicit per-prompt eval contract
 - adversarial challenge pass
 - calibrated uncertainty vocabulary
 - decision-ready findings schema
@@ -53,7 +56,7 @@ The shared layer follows current provider-neutral best practices:
 - decomposition of complex work into phases
 - grounded use of tools and external evidence
 - schema validation for automated outputs
-- evaluation on representative, boundary and adversarial cases
+- evaluation on representative, boundary, missing-context, adversarial and regression cases
 - iterative refinement based on observed failures rather than prompt length alone
 
 ## External methodology
@@ -94,12 +97,15 @@ The production build must preserve:
 - zero generic task-shape fallback prompts
 - zero exact normalized English title duplicates
 - HTTPS source URLs
+- at least four effective authoritative sources per subcategory after deduplication
+- at least two independent authoritative source domains per subcategory
 - stable identity from `catalog.json`
 - effective version 2.0.0 in generated indexes and live prompt pages
 - v2 quality marker in every generated prompt body
 - prompt-execution best-practice layer
 - prompt-specific execution-focus layer
 - task-shape execution model
+- eval contract
 - challenge pass
 - acceptance gate
 - authoritative source section
