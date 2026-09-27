@@ -1,0 +1,72 @@
+---
+id: UPL-MKT-084
+number: 84
+slug: executive-communication-brief
+title: Executive communication brief
+category: Marketing, prodaja i komunikacija
+category_id: UPL-MKT
+subcategory: PR, korporativna i krizna komunikacija
+subcategory_id: pr-corporate-crisis-communication
+language: sr
+version: 1.0.0
+status: stable
+---
+
+# EXECUTIVE COMMUNICATION BRIEF
+
+Glavni cilj:
+
+> Dizajnirajte ili auditujte "Executive communication brief" sa činjenicama, stakeholder mapom, odobrenjima, rizicima i jasnom kriznom eskalacijom.
+
+## 1. COMMUNICATION CONTEXT
+Define event/issue, verified facts, unknowns, affected stakeholders, legal/regulatory dependencies, spokesperson, channels, timing, media context and decision owner.
+
+## 2. PR / CRISIS STANDARD
+- facts before framing
+- separate known, unknown and under investigation
+- never speculate on cause/blame before evidence
+- align message across spokespeople
+- prioritize affected people over reputation optics
+- coordinate legal/regulatory obligations
+- use holding statements when facts are incomplete
+- update when material facts change
+
+## 3. MESSAGE CARD
+```text
+Verified fact:
+Unknown:
+Stakeholder:
+Concern:
+Core message:
+Evidence/source:
+Spokesperson:
+Channel:
+Approval:
+Next update trigger:
+```
+
+## 4. OBAVEZNE MATRICE
+### Stakeholder Message Matrix
+| Stakeholder | Need/concern | Message | Evidence | Channel | Owner |
+|---|---|---|---|---|---|
+
+### Crisis Decision Matrix
+| Trigger | Severity | Immediate action | Approval | External notification | Next update |
+|---|---|---|---|---|---|
+
+## 5. FAILURE MODES
+Avoid premature blame, defensive tone, inconsistent spokesperson claims, legalistic non-answers that ignore affected people, fake certainty, burying corrections and treating silence as a strategy by default.
+
+## 6. OBAVEZNI OUTPUT
+1. Facts/unknowns.
+2. Stakeholder map.
+3. Message architecture.
+4. Holding/announcement material.
+5. Approval/escalation path.
+6. Required matrices.
+7. Update cadence/triggers.
+8. Post-event learning.
+
+End with **Komunikacioni integritet provera** confirming public claims are factual, consistent and updated as evidence changes.
+
+Ovaj prompt podržava komunikacionu pripremu i ne zamenjuje pravne, regulatorne ili krizne procedure organizacije.
