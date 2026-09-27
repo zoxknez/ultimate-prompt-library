@@ -37,6 +37,7 @@ requireFile('sitemap.xml');
 requireFile('robots.txt');
 requireFile('site.webmanifest');
 requireFile('404.html');
+requireFile('x.html');
 
 const promptPages = walk(path.join(DIST, 'prompts'))
   .filter((file) => file.endsWith('index.html') && !file.endsWith(path.join('prompts', 'index.html')));
@@ -65,26 +66,29 @@ const home = readFileSync(path.join(DIST, 'index.html'), 'utf8');
 if (!home.includes(String(stats.uniquePrompts))) errors.push('Home page does not include current prompt count.');
 if (!home.includes('UPL-IT-001')) errors.push('Home page prompt preview is missing.');
 
-// Social share image: every page must reference one image that exists in dist, is a structurally
-// valid JPEG and matches the declared 1200x630 size (a corrupt JPEG shipped once and rendered grey).
-const ogImages = new Set();
+// Social share image URLs may use a versioned filename to make crawlers fetch a fresh copy.
+// Every referenced image must still resolve to a structurally valid JPEG in dist.
+const ogImagePaths = new Set();
 for (const file of walk(DIST).filter((f) => f.endsWith('.html'))) {
   const html = readFileSync(file, 'utf8');
   const match = html.match(/<meta property="og:image" content="([^"]+)"/);
   const imageSrc = html.match(/<link rel="image_src" href="([^"]+)"/);
   const twitterCard = html.includes('<meta name="twitter:card" content="summary_large_image">');
   const twitterImage = html.match(/<meta name="twitter:image" content="([^"]+)"/);
-  if (match) ogImages.add(match[1]);
-  else errors.push(`og:image missing in ${path.relative(DIST, file)}`);
+  if (match) {
+    try {
+      ogImagePaths.add(new URL(match[1]).pathname);
+    } catch {
+      errors.push(`og:image is not an absolute URL in ${path.relative(DIST, file)}`);
+    }
+  } else errors.push(`og:image missing in ${path.relative(DIST, file)}`);
   if (!imageSrc) errors.push(`image_src link missing in ${path.relative(DIST, file)}`);
   else if (match && imageSrc[1] !== match[1]) errors.push(`image_src does not match og:image in ${path.relative(DIST, file)}`);
   if (!twitterCard) errors.push(`twitter:card missing in ${path.relative(DIST, file)}`);
   if (!twitterImage) errors.push(`twitter:image missing in ${path.relative(DIST, file)}`);
   else if (match && twitterImage[1] !== match[1]) errors.push(`twitter:image does not match og:image in ${path.relative(DIST, file)}`);
 }
-if (ogImages.size !== 1) errors.push(`Expected one og:image URL across the site, found ${ogImages.size}.`);
-for (const url of ogImages) {
-  const rel = new URL(url).pathname;
+for (const rel of ogImagePaths) {
   const file = path.join(DIST, ...rel.split('/').filter(Boolean));
   if (!existsSync(file)) {
     errors.push(`og:image ${rel} is not in dist.`);
@@ -94,6 +98,23 @@ for (const url of ogImages) {
   if (!jpeg.ok) errors.push(`og:image ${rel} is not a valid JPEG: ${jpeg.errors.join('; ')}`);
   if (jpeg.width !== 1200 || jpeg.height !== 630) errors.push(`og:image ${rel} is ${jpeg.width}x${jpeg.height}, expected 1200x630.`);
   if (!home.includes(`<meta property="og:image:width" content="${jpeg.width}">`)) errors.push('og:image:width does not match the image.');
+}
+
+const xShareFile = path.join(DIST, 'x.html');
+if (existsSync(xShareFile)) {
+  const xShare = readFileSync(xShareFile, 'utf8');
+  const xImage = xShare.match(/<meta name="twitter:image" content="([^"]+)"/);
+  const homeImage = home.match(/<meta name="twitter:image" content="([^"]+)"/);
+  if (!xImage) errors.push('twitter:image missing from the X share page.');
+  else {
+    try {
+      const url = new URL(xImage[1]);
+      if (!path.basename(url.pathname).startsWith('promptlibrary-og-x-')) errors.push('X share image URL must use a versioned X-specific filename.');
+      if (homeImage && url.pathname === new URL(homeImage[1]).pathname) errors.push('X share image URL must be fresh compared with the homepage image URL.');
+    } catch {
+      errors.push('X share image is not an absolute URL.');
+    }
+  }
 }
 
 if (errors.length) {

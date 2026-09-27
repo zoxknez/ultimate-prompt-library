@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { copyFileSync, cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import YAML from 'yaml';
@@ -11,6 +11,7 @@ const SRC = path.join(ROOT, 'site-src');
 const SITE_URL = (process.env.SITE_URL || 'https://www.promptlibrary.pro').replace(/\/$/, '');
 const GITHUB_ROOT = 'https://github.com/zoxknez/ultimate-prompt-library/blob/main';
 const OG_IMAGE_PATH = '/assets/promptlibrary-og-v3.jpg';
+const X_SHARE_IMAGE_PATH = '/assets/promptlibrary-og-x-20260927.jpg';
 
 const catalog = JSON.parse(readFileSync(path.join(ROOT, 'catalog.json'), 'utf8'));
 const index = JSON.parse(readFileSync(path.join(ROOT, 'indexes/prompts.json'), 'utf8'));
@@ -265,9 +266,9 @@ function footer(lang = 'en') {
   return `<footer><div class="shell footer-shell"><div>${brandMark()}<div><strong>Ultimate Prompt Library</strong><p>${L[lang].footer}</p></div></div><div class="footer-links"><a href="${libraryUrl(lang)}">${L[lang].prompts}</a><a href="https://github.com/zoxknez/ultimate-prompt-library">GitHub</a><a href="https://ko-fi.com/o0o0o0o" target="_blank" rel="noopener noreferrer">${L[lang].supportProject}</a><a href="https://github.com/zoxknez/ultimate-prompt-library/blob/main/LICENSE">MIT License</a></div></div></footer>`;
 }
 
-function pageShell({ lang = 'en', title, description, body, canonical = '/', bodyClass = '', alternateEn = '/', alternateSr = '/sr/' }) {
+function pageShell({ lang = 'en', title, description, body, canonical = '/', bodyClass = '', alternateEn = '/', alternateSr = '/sr/', socialImagePath = OG_IMAGE_PATH }) {
   const safeTitle = title === 'Ultimate Prompt Library' ? title : `${title} | Ultimate Prompt Library`;
-  const socialImage = absUrl(OG_IMAGE_PATH);
+  const socialImage = absUrl(socialImagePath);
   const socialLocale = lang === 'sr' ? 'sr_RS' : 'en_US';
   const alternateLocale = lang === 'sr' ? 'en_US' : 'sr_RS';
   return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(safeTitle)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${absUrl(canonical)}"><link rel="alternate" hreflang="en" href="${absUrl(alternateEn)}"><link rel="alternate" hreflang="sr" href="${absUrl(alternateSr)}"><link rel="alternate" hreflang="x-default" href="${absUrl(alternateEn)}"><meta property="og:type" content="website"><meta property="og:site_name" content="Prompt Library"><meta property="og:title" content="${esc(safeTitle)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${absUrl(canonical)}"><meta property="og:locale" content="${socialLocale}"><meta property="og:locale:alternate" content="${alternateLocale}"><meta property="og:image" content="${socialImage}"><meta property="og:image:secure_url" content="${socialImage}"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Prompt Library - 1,000 production-grade prompts across 10 professional categories"><link rel="image_src" href="${socialImage}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(safeTitle)}"><meta name="twitter:description" content="${esc(description)}"><meta name="twitter:image" content="${socialImage}"><meta name="twitter:image:alt" content="Prompt Library - 1,000 production-grade prompts across 10 professional categories"><meta name="theme-color" content="#102a43"><link rel="icon" href="/assets/upl-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css"><link rel="manifest" href="/site.webmanifest"></head><body class="${bodyClass}"><a class="skip-link" href="#main-content">${esc(L[lang].skip)}</a>${header(lang, alternateEn, alternateSr)}<main id="main-content" class="site-main" tabindex="-1">${body}</main>${footer(lang)}<script src="/assets/site.js" defer></script><script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script><script defer src="/_vercel/insights/script.js"></script></body></html>`;
@@ -441,11 +442,24 @@ if (!existsSync(SRC)) {
 }
 
 cpSync(SRC, path.join(OUT, 'assets'), { recursive: true });
+copyFileSync(
+  path.join(OUT, 'assets', path.basename(OG_IMAGE_PATH)),
+  path.join(OUT, 'assets', path.basename(X_SHARE_IMAGE_PATH)),
+);
 
 write('index.html', renderLibrary('en'));
 write('sr/index.html', renderLibrary('sr'));
 write('prompts/index.html', renderLibrary('en'));
 write('sr/prompts/index.html', renderLibrary('sr'));
+write('x.html', pageShell({
+  title: 'Ultimate Prompt Library',
+  description: 'Explore 1,000 production-grade prompts across 10 professional categories.',
+  canonical: '/x',
+  alternateEn: '/x',
+  alternateSr: '/x',
+  socialImagePath: X_SHARE_IMAGE_PATH,
+  body: '<section class="shell not-found"><span class="eyebrow">UPL / SHARE</span><h1>Ultimate Prompt Library</h1><p>Explore 1,000 production-grade prompts across 10 professional categories.</p><a class="button" href="/">Explore the library →</a></section>',
+}));
 
 for (const p of prompts) {
   for (const lang of ['en', 'sr']) {
