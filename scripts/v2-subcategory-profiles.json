@@ -3,12 +3,14 @@
     "en": [
       "Trace browser/client, server/runtime, cache/CDN and deployment boundaries; verify SSR/CSR/hydration and stale-cache behavior where applicable.",
       "Test responsive behavior, keyboard/accessibility and critical Web Vitals with representative pages and realistic data rather than synthetic assumptions.",
-      "Verify security-sensitive logic server-side and check browser/platform compatibility against the versions actually supported."
+      "Verify security-sensitive logic server-side and check browser/platform compatibility against the versions actually supported.",
+      "Scope boundary: technical SEO here covers implementation, crawl/render/index, performance and platform defects; campaign/content growth prioritization belongs to the Marketing SEO collection."
     ],
     "sr": [
       "Pratite browser/client, server/runtime, cache/CDN i deployment granice; proverite SSR/CSR/hydration i stale-cache ponašanje gde je relevantno.",
       "Testirajte responsive ponašanje, tastaturu/pristupačnost i kritične Web Vitals na reprezentativnim stranicama i realnim podacima.",
-      "Proverite security-sensitive logiku server-side i browser/platform kompatibilnost prema stvarno podržanim verzijama."
+      "Proverite security-sensitive logiku server-side i browser/platform kompatibilnost prema stvarno podržanim verzijama.",
+      "Scope granica: technical SEO ovde pokriva implementaciju, crawl/render/index, performance i platform defekte; campaign/content growth prioritizacija pripada Marketing SEO kolekciji."
     ]
   },
   "mobile-development": {
@@ -99,12 +101,14 @@
     "en": [
       "Start from user goals, tasks and evidence; trace complete flows including empty, loading, error, permission and recovery states.",
       "Evaluate accessibility, information hierarchy, interaction cost and responsive behavior before visual polish.",
-      "Use qualitative and quantitative product evidence carefully and distinguish observed usability problems from preference."
+      "Use qualitative and quantitative product evidence carefully and distinguish observed usability problems from preference.",
+      "Scope boundary: emphasize implemented product behavior, end-to-end usability, production states and measurable product friction rather than visual concept exploration alone."
     ],
     "sr": [
       "Počnite od user ciljeva, zadataka i dokaza; pratite kompletne flow-ove uključujući empty, loading, error, permission i recovery stanja.",
       "Procenu pristupačnosti, information hierarchy, interaction cost i responsive ponašanja uradite pre vizuelnog polish-a.",
-      "Koristite kvalitativne i kvantitativne product dokaze pažljivo i odvojite stvarni usability problem od preferencije."
+      "Koristite kvalitativne i kvantitativne product dokaze pažljivo i odvojite stvarni usability problem od preferencije.",
+      "Scope granica: naglasak je na implementiranom product ponašanju, end-to-end usability-ju, production stanjima i merljivom product trenju, ne samo na vizuelnom konceptu."
     ]
   },
   "desktop-game-systems-embedded": {
@@ -135,12 +139,14 @@
     "en": [
       "Trace every material number to ledger/source evidence and verify period, classification, recognition and reconciliation.",
       "Separate policy choice, estimate and error; document control owner, evidence and exception handling.",
-      "Check segregation of duties, close/reconciliation controls and whether management reporting agrees to authoritative books."
+      "Check segregation of duties, close/reconciliation controls and whether management reporting agrees to authoritative books.",
+      "Scope boundary: management reporting here is audited for numerical integrity, ledger reconciliation, accounting policy and controls rather than leadership operating cadence."
     ],
     "sr": [
       "Pratite svaku materijalnu brojku do ledger/source dokaza i proverite period, klasifikaciju, recognition i reconciliation.",
       "Odvojite policy choice, procenu i grešku; dokumentujte control owner-a, dokaz i exception handling.",
-      "Proverite segregation of duties, close/reconciliation kontrole i usklađenost management reportinga sa autoritativnim knjigama."
+      "Proverite segregation of duties, close/reconciliation kontrole i usklađenost management reportinga sa autoritativnim knjigama.",
+      "Scope granica: management reporting se ovde auditira zbog numeričkog integriteta, ledger reconciliation-a, accounting policy-ja i kontrola, ne zbog leadership operating cadence-a."
     ]
   },
   "economics-market-analysis": {
@@ -207,12 +213,14 @@
     "en": [
       "Diagnose system, role clarity, incentives, decision rights, capability and workload before attributing problems to people.",
       "Use observable behavior and outcome evidence for performance/leadership conclusions.",
-      "Design operating mechanisms with owner, cadence, escalation and feedback loop."
+      "Design operating mechanisms with owner, cadence, escalation and feedback loop.",
+      "Scope boundary: management reporting here is treated as an operating and decision system - audience, cadence, ownership, escalation and action - while accounting integrity remains with financial control."
     ],
     "sr": [
       "Dijagnostikujte sistem, jasnoću uloga, podsticaje, decision rights, capability i workload pre pripisivanja problema ljudima.",
       "Za performance/leadership zaključke koristite observable behavior i outcome dokaze.",
-      "Dizajnirajte operating mehanizme sa ownerom, ritmom, eskalacijom i feedback petljom."
+      "Dizajnirajte operating mehanizme sa ownerom, ritmom, eskalacijom i feedback petljom.",
+      "Scope granica: management reporting se ovde tretira kao operating i decision sistem - publika, cadence, ownership, eskalacija i akcija - dok accounting integritet ostaje u financial control oblasti."
     ]
   },
   "risk-compliance-business-resilience": {
@@ -723,12 +731,14 @@
     "en": [
       "Derive target roles from verified strengths, constraints and market evidence; distinguish capability, signal and access gaps.",
       "Use reversible experiments before costly career pivots and preserve transferable career capital.",
-      "Make trade-offs explicit across compensation, learning, autonomy, stability, geography and long-term option value."
+      "Make trade-offs explicit across compensation, learning, autonomy, stability, geography and long-term option value.",
+      "Scope boundary: positioning describes a person's credible professional value in target roles and must be grounded in verified experience, not a product/company market position."
     ],
     "sr": [
       "Izvodite target uloge iz verifikovanih snaga, ograničenja i tržišnih dokaza; razlikujte capability, signal i access gap.",
       "Koristite reverzibilne eksperimente pre skupih career pivot-a i čuvajte prenosivi career capital.",
-      "Eksplicitno prikažite trade-off kroz kompenzaciju, učenje, autonomiju, stabilnost, geografiju i dugoročni option value."
+      "Eksplicitno prikažite trade-off kroz kompenzaciju, učenje, autonomiju, stabilnost, geografiju i dugoročni option value.",
+      "Scope granica: positioning ovde opisuje kredibilnu profesionalnu vrednost osobe za target uloge i mora biti zasnovan na verifikovanom iskustvu, ne na market position-u proizvoda ili kompanije."
     ]
   },
   "resume-cv-portfolio": {
@@ -819,12 +829,14 @@
     "en": [
       "Treat networking as reciprocal, context-rich relationship building rather than mass transactional outreach.",
       "Personal brand claims should be backed by observable work, artifacts and consistent behavior.",
-      "Choose communication channel, cadence and ask proportional to relationship stage and recipient value."
+      "Choose communication channel, cadence and ask proportional to relationship stage and recipient value.",
+      "Scope boundary: reputation risk here concerns an individual's professional credibility, public footprint and relationship trust rather than enterprise crisis or media-response operations."
     ],
     "sr": [
       "Tretirajte networking kao recipročno, context-rich građenje odnosa, ne kao masovni transakcioni outreach.",
       "Personal brand tvrdnje treba da budu podržane vidljivim radom, artefaktima i doslednim ponašanjem.",
-      "Birajte kanal, cadence i ask proporcionalno fazi odnosa i vrednosti za primaoca."
+      "Birajte kanal, cadence i ask proporcionalno fazi odnosa i vrednosti za primaoca.",
+      "Scope granica: reputation risk ovde se odnosi na profesionalni kredibilitet pojedinca, javni trag i poverenje u odnosima, ne na enterprise krizne ili media-response operacije."
     ]
   },
   "career-learning-long-term-development": {
@@ -843,12 +855,14 @@
     "en": [
       "Define segment, problem, trigger, alternatives, value and proof before channel tactics.",
       "Separate customer/market evidence from internal anecdotes and hypotheses; research must support a decision.",
-      "Strategy must allocate focus and explicitly state what segments/channels/messages will not be prioritized."
+      "Strategy must allocate focus and explicitly state what segments/channels/messages will not be prioritized.",
+      "Scope boundary: positioning here defines a product/company's place in a market relative to customer problems and alternatives, not an individual's career narrative."
     ],
     "sr": [
       "Definišite segment, problem, trigger, alternative, value i proof pre channel taktika.",
       "Odvojite customer/market dokaz od internih anegdota i hipoteza; research mora podržati odluku.",
-      "Strategija mora alocirati fokus i eksplicitno navesti koji segmenti/kanali/poruke neće biti prioritet."
+      "Strategija mora alocirati fokus i eksplicitno navesti koji segmenti/kanali/poruke neće biti prioritet.",
+      "Scope granica: positioning ovde definiše mesto proizvoda/kompanije na tržištu prema customer problemima i alternativama, ne individualnu karijernu priču."
     ]
   },
   "brand-messaging-copywriting": {
@@ -879,12 +893,14 @@
     "en": [
       "Start from current search intent and useful people-first content; avoid keyword stuffing, doorway/thin content and ranking promises.",
       "Separate crawl, render, index, canonical, internal-link and content/relevance problems before prioritization.",
-      "Measure qualified organic outcomes and account for seasonality, SERP changes and content decay."
+      "Measure qualified organic outcomes and account for seasonality, SERP changes and content decay.",
+      "Scope boundary: this subcategory owns search demand, intent, content portfolio and organic-growth prioritization; low-level web implementation defects should be handed to IT/Web Development."
     ],
     "sr": [
       "Počnite od aktuelnog search intenta i korisnog people-first sadržaja; izbegavajte keyword stuffing, doorway/thin content i ranking obećanja.",
       "Odvojite crawl, render, index, canonical, internal-link i content/relevance probleme pre prioritizacije.",
-      "Merite kvalifikovane organske ishode i računajte sa sezonalnošću, SERP promenama i content decay-em."
+      "Merite kvalifikovane organske ishode i računajte sa sezonalnošću, SERP promenama i content decay-em.",
+      "Scope granica: ova podkategorija pokriva search demand, intent, content portfolio i organic-growth prioritizaciju; low-level web implementacioni defekti treba da idu u IT/Web Development."
     ]
   },
   "email-lifecycle-crm": {
@@ -939,12 +955,14 @@
     "en": [
       "Establish verified facts, unknowns, affected stakeholders, legal/regulatory dependencies and approval authority before messaging.",
       "In crises, prioritize safety/affected people and update as facts change; avoid premature blame or false certainty.",
-      "Maintain one message architecture across spokespeople/channels and preserve a correction/update log."
+      "Maintain one message architecture across spokespeople/channels and preserve a correction/update log.",
+      "Scope boundary: reputation risk here concerns organizational stakeholders, media, crisis response, public claims and coordinated corporate communications rather than an individual's personal brand."
     ],
     "sr": [
       "Pre poruke utvrdite verifikovane činjenice, nepoznanice, pogođene stakeholder-e, legal/regulatory zavisnosti i approval authority.",
       "U krizi prioritet su safety/pogođeni ljudi i update kako se činjenice menjaju; izbegavajte preuranjenu krivicu ili lažnu sigurnost.",
-      "Održavajte jednu message architecture kroz spokespeople/kanale i correction/update log."
+      "Održavajte jednu message architecture kroz spokespeople/kanale i correction/update log.",
+      "Scope granica: reputation risk ovde se odnosi na organizacione stakeholder-e, medije, krizni odgovor, javne tvrdnje i koordinisanu korporativnu komunikaciju, ne na personal brand pojedinca."
     ]
   },
   "marketing-analytics-operations": {
@@ -1119,36 +1137,42 @@
     "en": [
       "Start from user goals, information architecture and complete flow states before visual styling.",
       "Include empty, loading, error, permission, destructive, offline/recovery and edge states plus WCAG/accessibility behavior.",
-      "Test with realistic content/data and preserve design-system semantics across responsive variants."
+      "Test with realistic content/data and preserve design-system semantics across responsive variants.",
+      "Scope boundary: emphasize design intent, information architecture, interaction models, component/state specifications and design-system coherence before implementation-level product debugging."
     ],
     "sr": [
       "Počnite od user ciljeva, information architecture i kompletnih flow state-ova pre vizuelnog styling-a.",
       "Uključite empty, loading, error, permission, destructive, offline/recovery i edge stanja plus WCAG/accessibility ponašanje.",
-      "Testirajte sa realnim content/data i očuvajte design-system semantiku kroz responsive varijante."
+      "Testirajte sa realnim content/data i očuvajte design-system semantiku kroz responsive varijante.",
+      "Scope granica: naglasak je na design intent-u, information architecture, interaction modelima, component/state specifikacijama i design-system doslednosti pre implementation-level product debugging-a."
     ]
   },
   "photography-image-creation": {
     "en": [
       "Give every shot a communication purpose and define composition, light, perspective, crop variants and edit treatment before capture where feasible.",
       "Verify releases/licensing, product truthfulness and whether perspective/editing materially misleads.",
-      "Review a series for continuity, diversity/context fit and technical delivery, not isolated hero shots only."
+      "Review a series for continuity, diversity/context fit and technical delivery, not isolated hero shots only.",
+      "Scope boundary: shot-list work here is optimized for still-image coverage, composition and image-series continuity; temporal coverage and edit continuity belong to Video/Motion."
     ],
     "sr": [
       "Svakom kadru dajte komunikacionu svrhu i gde je moguće unapred definišite kompoziciju, svetlo, perspektivu, crop varijante i edit treatment.",
       "Proverite releases/licensing, product truthfulness i da li perspektiva/editing materijalno obmanjuju.",
-      "Seriju procenite po kontinuitetu, diversity/context fit-u i tehničkoj isporuci, ne samo po izolovanom hero shot-u."
+      "Seriju procenite po kontinuitetu, diversity/context fit-u i tehničkoj isporuci, ne samo po izolovanom hero shot-u.",
+      "Scope granica: shot-list rad ovde je optimizovan za still-image coverage, kompoziciju i kontinuitet foto serije; temporal coverage i edit kontinuitet pripadaju Video/Motion oblasti."
     ]
   },
   "video-motion-production": {
     "en": [
       "Connect concept, script, storyboard, coverage, performance, motion, sound and edit rhythm to a specific audience response.",
       "Plan continuity, captions/accessibility, platform aspect/duration variants and production dependencies before shoot.",
-      "Review pacing for comprehension/emotion and remove shots/motion that do not advance meaning."
+      "Review pacing for comprehension/emotion and remove shots/motion that do not advance meaning.",
+      "Scope boundary: shot-list work here must account for temporal continuity, coverage, audio, motion and edit transitions, not only individual frame composition."
     ],
     "sr": [
       "Povežite koncept, script, storyboard, coverage, performance, motion, sound i edit rhythm sa specifičnim odgovorom publike.",
       "Pre snimanja planirajte continuity, captions/accessibility, platform aspect/duration varijante i production dependencies.",
-      "Reviewujte pacing prema comprehension/emociji i uklonite kadar/motion koji ne unapređuje značenje."
+      "Reviewujte pacing prema comprehension/emociji i uklonite kadar/motion koji ne unapređuje značenje.",
+      "Scope granica: shot-list rad ovde mora računati sa temporalnim kontinuitetom, coverage-om, zvukom, motion-om i edit tranzicijama, ne samo sa kompozicijom pojedinačnog kadra."
     ]
   },
   "audio-music-podcast": {

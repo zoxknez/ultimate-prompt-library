@@ -48,6 +48,22 @@ for (const [subId, items] of Object.entries(subSourceProfiles)) {
   validateSources('subcategory source profile ' + subId, items);
 }
 
+const normalizedTitles = new Map();
+for (const category of repo.catalog.categories) {
+  for (const prompt of category.prompts) {
+    const title = String(prompt.title?.en ?? '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    if (!title) continue;
+    if (normalizedTitles.has(title)) {
+      fail(
+        'Duplicate normalized English prompt title: "' + prompt.title.en + '" in ' +
+        normalizedTitles.get(title) + ' and ' + prompt.id + '.'
+      );
+    } else {
+      normalizedTitles.set(title, prompt.id);
+    }
+  }
+}
+
 for (const category of repo.catalog.categories) {
   if (category.prompts.length !== 100) fail(category.id + ': expected 100 prompts.');
   if (category.subcategories.length !== 10) fail(category.id + ': expected 10 subcategories.');
