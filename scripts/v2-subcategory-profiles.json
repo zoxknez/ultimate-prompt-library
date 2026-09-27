@@ -1,0 +1,1202 @@
+{
+  "web-development": {
+    "en": [
+      "Trace browser/client, server/runtime, cache/CDN and deployment boundaries; verify SSR/CSR/hydration and stale-cache behavior where applicable.",
+      "Test responsive behavior, keyboard/accessibility and critical Web Vitals with representative pages and realistic data rather than synthetic assumptions.",
+      "Verify security-sensitive logic server-side and check browser/platform compatibility against the versions actually supported."
+    ],
+    "sr": [
+      "Pratite browser/client, server/runtime, cache/CDN i deployment granice; proverite SSR/CSR/hydration i stale-cache ponašanje gde je relevantno.",
+      "Testirajte responsive ponašanje, tastaturu/pristupačnost i kritične Web Vitals na reprezentativnim stranicama i realnim podacima.",
+      "Proverite security-sensitive logiku server-side i browser/platform kompatibilnost prema stvarno podržanim verzijama."
+    ]
+  },
+  "mobile-development": {
+    "en": [
+      "Verify lifecycle, backgrounding, process death, permissions, connectivity changes and device/OS-version behavior.",
+      "Test offline/retry/sync semantics, local persistence migrations, battery/resource use and accessibility on representative devices.",
+      "Separate UI state from durable state and verify cancellation, concurrency and configuration-change behavior."
+    ],
+    "sr": [
+      "Proverite lifecycle, backgrounding, process death, dozvole, promene konekcije i ponašanje kroz relevantne uređaje/OS verzije.",
+      "Testirajte offline/retry/sync semantiku, migracije lokalne perzistencije, bateriju/resurse i pristupačnost na reprezentativnim uređajima.",
+      "Odvojite UI stanje od trajnog stanja i proverite cancellation, concurrency i configuration-change ponašanje."
+    ]
+  },
+  "backend-api": {
+    "en": [
+      "Define API contracts, trust boundaries, authorization, idempotency, pagination, rate limits, timeouts and error semantics explicitly.",
+      "Trace transactions and partial failures across services, queues, webhooks and databases, including retries and duplicate delivery.",
+      "Validate inputs and outputs at boundaries and avoid leaking internal errors, secrets or sensitive data."
+    ],
+    "sr": [
+      "Eksplicitno definišite API ugovore, trust boundaries, autorizaciju, idempotency, pagination, rate limits, timeout i error semantiku.",
+      "Pratite transakcije i parcijalne kvarove kroz servise, queue-ove, webhook-ove i baze, uključujući retry i duplicate delivery.",
+      "Validirajte input i output na granicama i ne izlažite interne greške, tajne ili osetljive podatke."
+    ]
+  },
+  "cybersecurity": {
+    "en": [
+      "Build a threat model before controls: assets, actors, trust boundaries, attack paths, likelihood and impact.",
+      "Map findings to concrete exploitability and compensating controls; avoid severity inflation from theoretical weakness alone.",
+      "Prefer secure defaults, least privilege, defense in depth, auditable logging and verified remediation with regression tests."
+    ],
+    "sr": [
+      "Napravite threat model pre kontrola: asseti, akteri, trust boundaries, attack paths, verovatnoća i uticaj.",
+      "Vežite nalaze za realnu exploitability i kompenzacione kontrole; ne naduvavajte severity zbog teorijske slabosti.",
+      "Preferirajte secure defaults, least privilege, defense in depth, auditabilne logove i verifikovanu remedijaciju sa regression testovima."
+    ]
+  },
+  "devops-cloud-infrastructure": {
+    "en": [
+      "Verify infrastructure-as-code against actual deployed state, identity/permissions, network boundaries, secrets and environment drift.",
+      "Check build/release provenance, rollback, health checks, autoscaling, backups, disaster recovery and failure-domain assumptions.",
+      "Treat cost, reliability and security as coupled operational constraints and define observability/SLO evidence."
+    ],
+    "sr": [
+      "Proverite infrastructure-as-code prema stvarnom deployed stanju, identitetima/dozvolama, mrežnim granicama, tajnama i environment drift-u.",
+      "Proverite build/release provenance, rollback, health checks, autoscaling, backup, disaster recovery i pretpostavke failure domena.",
+      "Tretirajte trošak, pouzdanost i bezbednost kao povezane operativne uslove i definišite observability/SLO dokaze."
+    ]
+  },
+  "databases-data-engineering": {
+    "en": [
+      "Verify schema constraints, keys, cardinality, isolation, migrations, indexes and query plans with realistic data volume.",
+      "Trace data lineage, freshness, deduplication, late-arriving data, backfills and exactly-once/idempotent assumptions.",
+      "Protect sensitive data through classification, access controls, retention and tested backup/restore procedures."
+    ],
+    "sr": [
+      "Proverite schema constraints, ključeve, cardinality, isolation, migracije, indekse i query planove sa realnim obimom podataka.",
+      "Pratite data lineage, freshness, deduplication, late-arriving podatke, backfill i exactly-once/idempotent pretpostavke.",
+      "Zaštitite osetljive podatke kroz klasifikaciju, access controls, retention i testirane backup/restore procedure."
+    ]
+  },
+  "ai-llm-automation": {
+    "en": [
+      "Define model/tool trust boundaries and defend against prompt injection, sensitive-data disclosure, unsafe tool invocation and improper output handling.",
+      "Evaluate task-specific quality with representative adversarial cases, grounded evidence, failure taxonomies and human review for high-impact actions.",
+      "Track model/version, prompts, tool permissions, retrieval sources, latency/cost and regression evaluations instead of relying on anecdotal demos."
+    ],
+    "sr": [
+      "Definišite model/tool trust boundaries i zaštitite se od prompt injection-a, curenja osetljivih podataka, unsafe tool poziva i improper output handling-a.",
+      "Evaluirajte task-specific kvalitet na reprezentativnim i adversarial slučajevima, uz grounded dokaze, taxonomy grešaka i human review za high-impact akcije.",
+      "Pratite model/verziju, promptove, tool permissions, retrieval izvore, latency/cost i regression evaluacije umesto oslanjanja na demo utiske."
+    ]
+  },
+  "testing-qa-reliability": {
+    "en": [
+      "Derive tests from risks, contracts and failure modes, not only code coverage; include negative, boundary, concurrency and recovery behavior.",
+      "Keep tests deterministic, isolated where appropriate and diagnostic when they fail; quarantine is not a permanent fix.",
+      "Connect reliability findings to production observability, incident evidence and explicit regression coverage."
+    ],
+    "sr": [
+      "Izvodite testove iz rizika, ugovora i failure modes, ne samo iz code coverage-a; uključite negative, boundary, concurrency i recovery ponašanje.",
+      "Testovi treba da budu deterministični, izolovani gde je prikladno i dijagnostički korisni pri padu; quarantine nije trajno rešenje.",
+      "Povežite reliability nalaze sa production observability-em, incident dokazima i eksplicitnim regression coverage-om."
+    ]
+  },
+  "ux-ui-product-development": {
+    "en": [
+      "Start from user goals, tasks and evidence; trace complete flows including empty, loading, error, permission and recovery states.",
+      "Evaluate accessibility, information hierarchy, interaction cost and responsive behavior before visual polish.",
+      "Use qualitative and quantitative product evidence carefully and distinguish observed usability problems from preference."
+    ],
+    "sr": [
+      "Počnite od user ciljeva, zadataka i dokaza; pratite kompletne flow-ove uključujući empty, loading, error, permission i recovery stanja.",
+      "Procenu pristupačnosti, information hierarchy, interaction cost i responsive ponašanja uradite pre vizuelnog polish-a.",
+      "Koristite kvalitativne i kvantitativne product dokaze pažljivo i odvojite stvarni usability problem od preferencije."
+    ]
+  },
+  "desktop-game-systems-embedded": {
+    "en": [
+      "Verify platform/runtime constraints, resource ownership, threading/timing and hardware/OS-specific failure behavior.",
+      "Test startup/shutdown, suspend/resume, file/device loss, latency-sensitive paths and deterministic/replay assumptions where relevant.",
+      "Separate simulation or engine logic from presentation and verify memory, handles, cleanup and crash recovery."
+    ],
+    "sr": [
+      "Proverite platform/runtime ograničenja, ownership resursa, threading/timing i hardware/OS-specifične failure scenarije.",
+      "Testirajte startup/shutdown, suspend/resume, gubitak fajla/uređaja, latency-sensitive tokove i deterministic/replay pretpostavke gde je relevantno.",
+      "Odvojite simulation/engine logiku od prezentacije i proverite memory, handles, cleanup i crash recovery."
+    ]
+  },
+  "financial-analysis-corporate-finance": {
+    "en": [
+      "Reconcile source statements, periods, currencies and accounting definitions before ratios, valuation or forecasts.",
+      "Separate operating performance, financing effects and one-offs; use scenario/sensitivity analysis for material assumptions.",
+      "Connect every financial recommendation to cash flow, risk, capital structure and decision horizon."
+    ],
+    "sr": [
+      "Uskladite izvorne izveštaje, periode, valute i računovodstvene definicije pre ratio, valuation ili forecast analize.",
+      "Odvojite operativne performanse, finansiranje i one-off stavke; koristite scenario/sensitivity analizu za materijalne pretpostavke.",
+      "Povežite svaku finansijsku preporuku sa cash flow-om, rizikom, capital structure-om i horizontom odluke."
+    ]
+  },
+  "accounting-reporting-financial-control": {
+    "en": [
+      "Trace every material number to ledger/source evidence and verify period, classification, recognition and reconciliation.",
+      "Separate policy choice, estimate and error; document control owner, evidence and exception handling.",
+      "Check segregation of duties, close/reconciliation controls and whether management reporting agrees to authoritative books."
+    ],
+    "sr": [
+      "Pratite svaku materijalnu brojku do ledger/source dokaza i proverite period, klasifikaciju, recognition i reconciliation.",
+      "Odvojite policy choice, procenu i grešku; dokumentujte control owner-a, dokaz i exception handling.",
+      "Proverite segregation of duties, close/reconciliation kontrole i usklađenost management reportinga sa autoritativnim knjigama."
+    ]
+  },
+  "economics-market-analysis": {
+    "en": [
+      "Define population, geography, time horizon and denominator; distinguish nominal/real, level/growth and correlation/causation.",
+      "Use comparable sources and account for revisions, seasonality, structural breaks and measurement changes.",
+      "Present scenarios and distributional effects instead of a single-point macro or market forecast."
+    ],
+    "sr": [
+      "Definišite populaciju, geografiju, vremenski horizont i imenilac; razlikujte nominalno/realno, nivo/rast i correlation/causation.",
+      "Koristite uporedive izvore i računajte sa revizijama, sezonalnošću, structural break-ovima i promenama merenja.",
+      "Prikažite scenarije i distributional efekte umesto jedne point prognoze tržišta ili ekonomije."
+    ]
+  },
+  "business-strategy-competitive-analysis": {
+    "en": [
+      "Define the strategic choice, customer value, economic logic and capabilities required; strategy must include what not to do.",
+      "Separate competitor facts from inferred intent and test the strongest competitive response.",
+      "Translate strategy into resource allocation, milestones, leading indicators and explicit kill/review criteria."
+    ],
+    "sr": [
+      "Definišite strateški izbor, customer value, ekonomsku logiku i potrebne capability-je; strategija mora uključiti šta se neće raditi.",
+      "Odvojite činjenice o konkurenciji od inferencije namere i testirajte najjači konkurentski odgovor.",
+      "Prevedite strategiju u alokaciju resursa, milestone-e, leading indicators i eksplicitne kill/review kriterijume."
+    ]
+  },
+  "entrepreneurship-business-models": {
+    "en": [
+      "Validate problem, customer, willingness to pay, channel and unit economics separately before claiming product-market fit.",
+      "Use staged experiments that maximize learning per cost and preserve runway; distinguish evidence from founder belief.",
+      "Model cash needs, capacity constraints and failure scenarios, not just upside."
+    ],
+    "sr": [
+      "Validirajte problem, kupca, willingness to pay, kanal i unit economics odvojeno pre tvrdnje o product-market fit-u.",
+      "Koristite staged eksperimente koji maksimizuju učenje po trošku i čuvaju runway; odvojite dokaz od founder uverenja.",
+      "Modelujte cash potrebe, capacity constraints i failure scenarije, ne samo upside."
+    ]
+  },
+  "operations-supply-chain-procurement": {
+    "en": [
+      "Map end-to-end flow, demand variability, lead times, constraints, service levels and failure dependencies.",
+      "Evaluate supplier risk through quality, capacity, concentration, geography, financial resilience and switching cost.",
+      "Optimize total cost and service/risk trade-offs rather than unit price alone."
+    ],
+    "sr": [
+      "Mapirajte end-to-end tok, demand variability, lead times, ograničenja, service levels i failure zavisnosti.",
+      "Procenu supplier rizika zasnujte na kvalitetu, kapacitetu, koncentraciji, geografiji, finansijskoj otpornosti i switching cost-u.",
+      "Optimizujte total cost i service/risk trade-off, ne samo jediničnu cenu."
+    ]
+  },
+  "sales-revenue-pricing": {
+    "en": [
+      "Segment customers and define value metric, willingness-to-pay evidence, sales motion and unit economics before pricing recommendations.",
+      "Separate list price, realized price, discounting, mix and retention/expansion effects.",
+      "Test pricing changes with guardrails for conversion, churn, margin and customer fairness."
+    ],
+    "sr": [
+      "Segmentirajte kupce i definišite value metric, willingness-to-pay dokaz, sales motion i unit economics pre pricing preporuka.",
+      "Odvojite list price, realized price, discounting, mix i retention/expansion efekte.",
+      "Testirajte pricing promene uz guardrails za conversion, churn, margin i customer fairness."
+    ]
+  },
+  "management-leadership-organization": {
+    "en": [
+      "Diagnose system, role clarity, incentives, decision rights, capability and workload before attributing problems to people.",
+      "Use observable behavior and outcome evidence for performance/leadership conclusions.",
+      "Design operating mechanisms with owner, cadence, escalation and feedback loop."
+    ],
+    "sr": [
+      "Dijagnostikujte sistem, jasnoću uloga, podsticaje, decision rights, capability i workload pre pripisivanja problema ljudima.",
+      "Za performance/leadership zaključke koristite observable behavior i outcome dokaze.",
+      "Dizajnirajte operating mehanizme sa ownerom, ritmom, eskalacijom i feedback petljom."
+    ]
+  },
+  "risk-compliance-business-resilience": {
+    "en": [
+      "Build risk statements with cause-event-impact, owner, likelihood/impact evidence, controls and residual risk.",
+      "Separate legal/regulatory obligation, policy, risk appetite and operational preference.",
+      "Test business continuity through realistic disruption scenarios, recovery objectives, dependencies and exercises."
+    ],
+    "sr": [
+      "Formulišite rizik kroz cause-event-impact, ownera, dokaze verovatnoće/uticaja, kontrole i residual risk.",
+      "Odvojite pravnu/regulatornu obavezu, policy, risk appetite i operativnu preferenciju.",
+      "Testirajte business continuity kroz realne disruption scenarije, recovery objectives, zavisnosti i vežbe."
+    ]
+  },
+  "investment-valuation-due-diligence": {
+    "en": [
+      "Separate facts, management claims, normalization adjustments and valuation assumptions; trace material inputs to evidence.",
+      "Use multiple valuation perspectives and sensitivity ranges rather than one precise point estimate.",
+      "Prioritize diligence issues by value impact, deal-break risk, reversibility and information needed before close."
+    ],
+    "sr": [
+      "Odvojite činjenice, management tvrdnje, normalization adjustments i valuation pretpostavke; materijalne inpute pratite do dokaza.",
+      "Koristite više valuation perspektiva i sensitivity opsege umesto jedne precizne point procene.",
+      "Prioritizujte diligence nalaze po value impact-u, deal-break riziku, reverzibilnosti i informacijama potrebnim pre close-a."
+    ]
+  },
+  "legal-research-authority": {
+    "en": [
+      "Frame issues narrowly, locate current primary authority and verify citator/current-law status before relying on a proposition.",
+      "Distinguish holding, dicta, dissent, procedural posture and jurisdictional hierarchy.",
+      "Actively seek adverse/contrary authority and explain unresolved splits or ambiguity."
+    ],
+    "sr": [
+      "Usko formulišite pravno pitanje, pronađite aktuelni primarni izvor i proverite current-law/citator status pre oslanjanja na pravilo.",
+      "Razlikujte holding, dicta, dissent, procedural posture i hijerarhiju autoriteta.",
+      "Aktivno tražite nepovoljni/suprotni autoritet i objasnite nerešene podele ili nejasnoće."
+    ]
+  },
+  "contract-drafting-review": {
+    "en": [
+      "Map commercial intent to defined obligations, conditions, representations, risk allocation, remedies and termination.",
+      "Check definitions, cross-references, precedence, dates, notice, assignment and internal consistency end to end.",
+      "Separate governing-law mandatory rules from negotiable drafting and show redline/negotiation trade-offs."
+    ],
+    "sr": [
+      "Mapirajte komercijalnu nameru u definisane obaveze, uslove, representations, raspodelu rizika, remedies i termination.",
+      "Proverite definicije, cross-reference, precedence, datume, notice, assignment i internu doslednost end-to-end.",
+      "Odvojite mandatory pravila merodavnog prava od pregovaračkog draftinga i prikažite redline/trade-off."
+    ]
+  },
+  "litigation-dispute-resolution": {
+    "en": [
+      "Build issue-element-proof maps and distinguish admissible evidence, inference and allegation.",
+      "Check forum, jurisdiction, standing, limitation/deadline, burden/standard of proof and preservation requirements before merits.",
+      "Stress-test case theory against strongest defense, evidentiary gaps, remedies and appellate preservation."
+    ],
+    "sr": [
+      "Napravite issue-element-proof mapu i razlikujte admissible evidence, inferenciju i navod.",
+      "Pre merits proverite forum, jurisdikciju, standing, rokove, burden/standard of proof i preservation zahteve.",
+      "Stress-testujte case theory prema najjačoj odbrani, evidentiary gap-ovima, remedies i appellate preservation-u."
+    ]
+  },
+  "corporate-commercial-law": {
+    "en": [
+      "Verify entity type, constitutional documents, ownership/control, authority matrix and required approvals before assessing action validity.",
+      "Check conflicts, related-party rules, fiduciary/director duties, filings and recordkeeping in the applicable jurisdiction.",
+      "Trace beneficial ownership and control through intermediate entities rather than relying on nominal holders."
+    ],
+    "sr": [
+      "Proverite tip entiteta, osnivačka akta, ownership/control, authority matricu i potrebna odobrenja pre procene validnosti radnje.",
+      "Proverite conflicts, related-party pravila, dužnosti direktora, filings i evidencije u relevantnoj jurisdikciji.",
+      "Pratite stvarno vlasništvo i kontrolu kroz posredne entitete umesto oslanjanja na nominalne vlasnike."
+    ]
+  },
+  "privacy-data-protection": {
+    "en": [
+      "Map actual data flows, purposes, roles, legal bases, recipients, retention and international transfers before reviewing paperwork.",
+      "Apply data minimization, purpose limitation, security, rights handling and accountability evidence to each processing activity.",
+      "Distinguish controller, processor and joint-controller obligations and verify current regulator guidance/jurisdiction."
+    ],
+    "sr": [
+      "Mapirajte stvarne data flow-ove, svrhe, uloge, legal bases, primaoce, retention i međunarodne transfere pre pregleda dokumentacije.",
+      "Na svaku obradu primenite minimization, purpose limitation, security, rights handling i accountability dokaze.",
+      "Razlikujte controller, processor i joint-controller obaveze i proverite aktuelne smernice regulatora/jurisdikciju."
+    ]
+  },
+  "employment-labor-law": {
+    "en": [
+      "Analyze the actual working relationship and mandatory local protections rather than contract labels alone.",
+      "Check collective instruments, working time, pay, leave, equality, health/safety, consultation, discipline and termination procedure as applicable.",
+      "For cross-border work, map each mandatory-law, tax/social-security and establishment issue separately."
+    ],
+    "sr": [
+      "Analizirajte stvarni radni odnos i mandatory lokalne zaštite, ne samo ugovorne etikete.",
+      "Proverite kolektivne izvore, radno vreme, zaradu, odsustva, jednakost, health/safety, konsultacije, disciplinu i termination proceduru gde je relevantno.",
+      "Za prekogranični rad odvojeno mapirajte mandatory-law, porez/social-security i establishment pitanja."
+    ]
+  },
+  "regulatory-compliance": {
+    "en": [
+      "Derive obligations from factual applicability triggers and trace each obligation to source, owner, control, evidence, deadline and consequence.",
+      "Separate binding law, license condition, regulator guidance, enforcement practice and internal policy.",
+      "Test control design and operating effectiveness instead of treating policy existence as compliance."
+    ],
+    "sr": [
+      "Izvodite obaveze iz činjeničnih applicability triggera i svaku pratite do izvora, ownera, kontrole, dokaza, roka i posledice.",
+      "Odvojite obavezujuće pravo, license condition, regulator guidance, enforcement practice i internu politiku.",
+      "Testirajte control design i operating effectiveness umesto tretiranja postojanja politike kao compliance-a."
+    ]
+  },
+  "public-administration-procedure": {
+    "en": [
+      "Check competence, legal basis, filing, evidence, hearing/participation, reasons, service and remedies in sequence.",
+      "Track procedural deadlines and exhaustion/appeal requirements precisely from official sources.",
+      "Evaluate discretion for relevant considerations, proportionality, consistency and reason-giving without substituting policy preference."
+    ],
+    "sr": [
+      "Redom proverite nadležnost, pravni osnov, filing, dokaze, hearing/participation, obrazloženje, dostavu i pravna sredstva.",
+      "Precizno pratite procesne rokove i exhaustion/appeal zahteve iz zvaničnih izvora.",
+      "Diskreciju procenite kroz relevant considerations, proportionality, consistency i reason-giving bez zamene policy preferencijom."
+    ]
+  },
+  "intellectual-property": {
+    "en": [
+      "Separate existence, ownership, chain of title, validity, scope, territory and enforceability for each IP asset.",
+      "Verify registry/status and license terms where relevant; a search hit alone is not clearance or infringement.",
+      "For software/AI/open source, trace third-party dependencies, license obligations, training/input rights and output-use uncertainty."
+    ],
+    "sr": [
+      "Za svaki IP asset odvojite postojanje, ownership, chain of title, validity, scope, teritoriju i enforceability.",
+      "Proverite registry/status i license uslove gde je relevantno; search hit sam po sebi nije clearance niti infringement.",
+      "Za software/AI/open source pratite third-party dependency-je, licence obaveze, prava na input/training i neizvesnost output upotrebe."
+    ]
+  },
+  "international-cross-border-law": {
+    "en": [
+      "Build issue-by-issue jurisdiction, governing-law, treaty and enforcement maps; do not assume one law controls everything.",
+      "Verify treaty participation, reservations/declarations, territorial/temporal scope and domestic implementation.",
+      "Separate jurisdiction, applicable law, service/evidence cooperation, recognition and enforcement, plus mandatory rules/public policy."
+    ],
+    "sr": [
+      "Napravite issue-by-issue mape jurisdikcije, merodavnog prava, ugovora i enforcement-a; ne pretpostavljajte da jedno pravo kontroliše sve.",
+      "Proverite treaty participation, reservations/declarations, territorialni/vremenski scope i domaću implementaciju.",
+      "Odvojite jurisdikciju, applicable law, service/evidence cooperation, recognition/enforcement i mandatory rules/public policy."
+    ]
+  },
+  "evidence-based-health-research": {
+    "en": [
+      "Frame the clinical/health question and population before searching; prioritize current systematic reviews and guideline-grade evidence.",
+      "Assess risk of bias, directness, consistency, precision, effect size and applicability rather than study prestige alone.",
+      "Separate surrogate outcomes from patient-important outcomes and association from treatment effect."
+    ],
+    "sr": [
+      "Formulišite health/clinical pitanje i populaciju pre pretrage; prednost dati aktuelnim sistematskim pregledima i guideline-grade dokazima.",
+      "Procenite risk of bias, directness, consistency, precision, effect size i applicability, ne samo prestiž studije.",
+      "Odvojite surrogate ishode od patient-important ishoda i asocijaciju od efekta terapije."
+    ]
+  },
+  "symptoms-triage-care-navigation": {
+    "en": [
+      "Run an emergency/red-flag screen before differential discussion and route by urgency, not by diagnostic certainty.",
+      "Use timeline, severity, associated symptoms, risk factors and functional change while avoiding remote diagnosis.",
+      "Provide safety-net instructions: what worsening means, where to seek care and what information to bring."
+    ],
+    "sr": [
+      "Pre differential diskusije uradite emergency/red-flag screen i usmerite prema urgentnosti, ne prema dijagnostičkoj sigurnosti.",
+      "Koristite timeline, severity, pridružene simptome, faktore rizika i funkcionalnu promenu bez remote dijagnoze.",
+      "Dajte safety-net uputstva: šta znači pogoršanje, gde tražiti pomoć i koje informacije poneti."
+    ]
+  },
+  "medications-treatment-safety": {
+    "en": [
+      "Reconcile prescription, OTC, supplement and as-needed use before evaluating interactions or treatment safety.",
+      "Distinguish contraindication, clinically meaningful interaction, monitoring need and theoretical signal; include organ function and special populations.",
+      "Never advise unilateral prescription changes; route high-risk discrepancies to prescriber/pharmacist with concrete questions."
+    ],
+    "sr": [
+      "Uskladite prescription, OTC, supplement i PRN upotrebu pre procene interakcija ili bezbednosti terapije.",
+      "Razlikujte kontraindikaciju, klinički značajnu interakciju, monitoring potrebu i teorijski signal; uključite organ function i posebne populacije.",
+      "Ne savetujte samostalnu promenu propisane terapije; high-risk neslaganja usmerite propisivaču/farmaceutu sa konkretnim pitanjima."
+    ]
+  },
+  "diagnostics-labs-medical-tests": {
+    "en": [
+      "Verify specimen, method, units and lab-specific reference interval; distinguish reference range from clinical decision threshold.",
+      "Interpret tests using pretest probability, sensitivity/specificity or likelihood ratios where appropriate, not isolated abnormal flags.",
+      "Consider biological/analytical variation, false positives/negatives, serial trends and the need for confirmatory testing."
+    ],
+    "sr": [
+      "Proverite specimen, metod, jedinice i lab-specific referentni interval; razlikujte referentni opseg od clinical decision threshold-a.",
+      "Tumačite testove kroz pretest probability, sensitivity/specificity ili likelihood ratios gde je prikladno, ne kroz izolovane abnormal flagove.",
+      "Uključite biological/analytical variation, false positive/negative, serijske trendove i potrebu za confirmatory testom."
+    ]
+  },
+  "chronic-disease-long-term-care": {
+    "en": [
+      "Treat care as longitudinal: goals, symptoms, treatment, monitoring, complication prevention and escalation must stay aligned over time.",
+      "Account for multimorbidity, treatment burden, competing guidelines, adherence barriers and patient priorities.",
+      "Define baseline, monitoring cadence, review owner and red flags for acute deterioration."
+    ],
+    "sr": [
+      "Tretirajte negu longitudinalno: ciljevi, simptomi, terapija, monitoring, prevencija komplikacija i eskalacija moraju ostati usklađeni.",
+      "Uključite multimorbiditet, treatment burden, konfliktne smernice, adherence prepreke i prioritete pacijenta.",
+      "Definišite baseline, monitoring ritam, review ownera i red flags za akutno pogoršanje."
+    ]
+  },
+  "nutrition-metabolic-health": {
+    "en": [
+      "Separate dietary pattern, nutrient adequacy, energy balance, biomarkers and clinical outcomes; account for confounding in nutrition evidence.",
+      "Avoid unsafe restriction, rapid-loss goals and megadose assumptions; identify conditions requiring clinician/dietitian individualization.",
+      "For supplements, verify dose/form, evidence, interactions, upper limits and product-quality uncertainty."
+    ],
+    "sr": [
+      "Odvojite dietary pattern, nutrient adequacy, energy balance, biomarkere i kliničke ishode; računajte sa confounding-om u nutrition dokazima.",
+      "Izbegavajte nebezbednu restrikciju, rapid-loss ciljeve i megadose pretpostavke; identifikujte stanja koja traže individualizaciju lekara/dijetetičara.",
+      "Za suplemente proverite dozu/formu, dokaze, interakcije, upper limits i neizvesnost kvaliteta proizvoda."
+    ]
+  },
+  "fitness-exercise-rehabilitation": {
+    "en": [
+      "Screen contraindications/red flags and clinician restrictions before exercise prescription or return-to-activity progression.",
+      "Use FITT-VP/progression, functional baseline, symptoms, recovery and condition-specific constraints rather than generic volume targets.",
+      "Define stop/modify/escalate criteria and progress using function/load tolerance, not a single wearable metric."
+    ],
+    "sr": [
+      "Pre exercise prescription-a ili povratka aktivnosti proverite kontraindikacije/red flags i clinician restrictions.",
+      "Koristite FITT-VP/progression, funkcionalni baseline, simptome, recovery i condition-specific ograničenja umesto generičkih targeta.",
+      "Definišite stop/modify/escalate kriterijume i progres kroz funkciju/load tolerance, ne kroz jednu wearable metriku."
+    ]
+  },
+  "mental-health-behavioral-wellbeing": {
+    "en": [
+      "Put suicide/self-harm, danger, severe impairment and acute crisis assessment before routine self-help guidance.",
+      "Do not diagnose from screening alone or reinforce delusional/paranoid claims or avoidance rituals as factual.",
+      "Use functional impact, duration, supports, substance/medication context and evidence-based care-navigation options."
+    ],
+    "sr": [
+      "Procenu suicid/self-harm rizika, opasnosti, teškog impairment-a i akutne krize stavite pre rutinske self-help podrške.",
+      "Ne postavljajte dijagnozu iz screeninga niti potvrđujte deluzivne/paranoidne tvrdnje ili avoidance rituale kao činjenice.",
+      "Koristite functional impact, trajanje, podršku, substance/medication kontekst i evidence-based care-navigation opcije."
+    ]
+  },
+  "public-health-prevention-population": {
+    "en": [
+      "Define population, geography, period, denominator and outcome; show absolute and relative risk with uncertainty.",
+      "Separate surveillance signals, observational association and causal evidence, and account for selection/reporting artifacts.",
+      "Evaluate benefit, harm, reach, implementation and equity across affected groups."
+    ],
+    "sr": [
+      "Definišite populaciju, geografiju, period, imenilac i ishod; prikažite apsolutni i relativni rizik sa neizvesnošću.",
+      "Odvojite surveillance signal, observational asocijaciju i kauzalni dokaz i računajte sa selection/reporting artefaktima.",
+      "Proceni korist, štetu, reach, implementaciju i equity kroz pogođene grupe."
+    ]
+  },
+  "healthcare-systems-digital-patient-safety": {
+    "en": [
+      "Analyze safety as a system of workflow, human factors, technology, data, staffing and latent conditions rather than stopping at human error.",
+      "For digital health/AI, verify intended use, validation population, subgroup performance, usability, privacy, cybersecurity, oversight and monitoring/drift.",
+      "Incident learning should identify failed/successful barriers and measurable corrective actions, not infer incidence from raw report counts."
+    ],
+    "sr": [
+      "Analizirajte bezbednost kao sistem workflow-a, human factors, tehnologije, podataka, staffing-a i latent conditions umesto zaustavljanja na human error.",
+      "Za digital health/AI proverite intended use, validation populaciju, subgroup performance, usability, privatnost, cybersecurity, oversight i monitoring/drift.",
+      "Incident learning treba da identifikuje neuspele/uspešne barijere i merljive korektivne akcije, ne da inferira incidence iz sirovog broja prijava."
+    ]
+  },
+  "instructional-design-learning-science": {
+    "en": [
+      "Align learning objective, prior knowledge, explanation/modeling, guided practice, independent practice, retrieval and assessment.",
+      "Manage intrinsic/extraneous cognitive load and fade scaffolds based on evidence of independence.",
+      "Test delayed retention and transfer so immediate fluency is not mistaken for durable learning."
+    ],
+    "sr": [
+      "Uskladite learning objective, prethodno znanje, objašnjenje/modeling, guided practice, independent practice, retrieval i procenu.",
+      "Upravljajte intrinsic/extraneous cognitive load-om i povlačite scaffolds prema dokazu samostalnosti.",
+      "Testirajte odloženo retention i transfer da se trenutna fluentnost ne pomeša sa trajnim učenjem."
+    ]
+  },
+  "teaching-classroom-practice": {
+    "en": [
+      "Make learner thinking visible through questioning/checks for understanding instead of relying on participation or volunteer answers.",
+      "Anticipate misconceptions, use examples/non-examples and adapt instruction from real response evidence.",
+      "Differentiate access/support without silently lowering the intended learning objective."
+    ],
+    "sr": [
+      "Učinite learner thinking vidljivim kroz pitanja/checks for understanding umesto oslanjanja na participaciju ili dobrovoljne odgovore.",
+      "Predvidite misconceptions, koristite examples/non-examples i prilagođavajte nastavu prema stvarnim odgovorima.",
+      "Diferencirajte access/support bez tihog spuštanja cilja učenja."
+    ]
+  },
+  "assessment-feedback-grading": {
+    "en": [
+      "Define assessment purpose and construct first; align blueprint, task/item type and scoring to the intended evidence.",
+      "Check validity, reliability, fairness, accessibility and construct-irrelevant difficulty proportional to stakes.",
+      "Feedback should identify a high-value gap and require learner action/recheck rather than do all thinking for the learner."
+    ],
+    "sr": [
+      "Prvo definišite svrhu procene i konstrukt; uskladite blueprint, tip zadatka i scoring sa nameravanim dokazom.",
+      "Proverite validity, reliability, fairness, accessibility i construct-irrelevant difficulty proporcionalno stakes-u.",
+      "Feedback treba da identifikuje high-value gap i zahteva akciju/recheck učenika umesto da model uradi sav misaoni rad."
+    ]
+  },
+  "tutoring-personalized-learning": {
+    "en": [
+      "Diagnose prerequisite knowledge and error patterns before teaching; personalize from evidence, not learning-style preference.",
+      "Use hint ladders and support fading so tutoring increases independence rather than dependency.",
+      "Require repeated independent mastery, delayed retention and transfer before marking a skill secure."
+    ],
+    "sr": [
+      "Dijagnostikujte prerequisite znanje i obrasce grešaka pre podučavanja; personalizujte prema dokazima, ne learning-style preferencama.",
+      "Koristite hint ladder i support fading da tutorstvo povećava samostalnost umesto zavisnosti.",
+      "Tražite ponovljeni independent mastery, odloženo retention i transfer pre označavanja veštine kao secure."
+    ]
+  },
+  "study-skills-metacognition": {
+    "en": [
+      "Use plan-monitor-evaluate-adjust cycles and teach why a strategy fits a task.",
+      "Prefer retrieval, spacing, interleaving and error correction over rereading/familiarity when durable learning is the goal.",
+      "Measure study progress by independent recall/application and delayed retention, not hours or materials completed."
+    ],
+    "sr": [
+      "Koristite plan-monitor-evaluate-adjust ciklus i učite zašto strategija odgovara zadatku.",
+      "Za trajno učenje preferirajte retrieval, spacing, interleaving i correction grešaka u odnosu na rereading/familiarity.",
+      "Merite napredak kroz samostalni recall/application i odloženo retention, ne kroz sate ili završene materijale."
+    ]
+  },
+  "curriculum-course-design": {
+    "en": [
+      "Map outcomes to prerequisite knowledge, sequence, practice, assessment, retrieval and later dependencies.",
+      "Audit curriculum overload against realistic instructional time and protect sufficient guided/independent practice.",
+      "Check vertical progression, horizontal coherence and whether assessment weighting matches intended curriculum priorities."
+    ],
+    "sr": [
+      "Mapirajte ishode na prerequisite znanje, sekvencu, praksu, procenu, retrieval i kasnije zavisnosti.",
+      "Auditujte curriculum overload prema realnom vremenu nastave i zaštitite dovoljno guided/independent prakse.",
+      "Proverite vertikalnu progresiju, horizontalnu koherentnost i da li težina procene prati kurikularne prioritete."
+    ]
+  },
+  "literacy-language-learning": {
+    "en": [
+      "Decompose literacy/language needs into relevant components such as decoding, fluency, vocabulary, syntax, comprehension, composition and disciplinary conventions.",
+      "Separate language proficiency from subject knowledge and target support to the evidenced component.",
+      "Use repeated meaningful exposure, retrieval/use, feedback and transfer tasks rather than one-off strategy instruction."
+    ],
+    "sr": [
+      "Razložite literacy/language potrebe na relevantne komponente poput decoding-a, fluency, vokabulara, sintakse, comprehension-a, composition-a i predmetnih konvencija.",
+      "Odvojite language proficiency od predmetnog znanja i ciljajte podršku prema dokazanoj komponenti.",
+      "Koristite ponovljenu smislenu izloženost, retrieval/upotrebu, feedback i transfer zadatke umesto jednokratne instrukcije strategije."
+    ]
+  },
+  "inclusive-special-education": {
+    "en": [
+      "Identify functional barriers and strengths rather than treating a diagnostic label as a complete learning profile.",
+      "Use universal design first, individualized support where needed, and preserve the intended construct/learning goal where possible.",
+      "Define accommodation benefit, independence/fading target, learner voice, privacy and review evidence."
+    ],
+    "sr": [
+      "Identifikujte funkcionalne prepreke i snage umesto tretiranja dijagnostičke etikete kao kompletnog learner profila.",
+      "Koristite universal design prvo, individualnu podršku gde je potrebna i očuvajte intended construct/cilj učenja gde je moguće.",
+      "Definišite benefit accommodation-a, independence/fading target, learner voice, privatnost i review dokaz."
+    ]
+  },
+  "education-technology-ai": {
+    "en": [
+      "Start from the learning problem and compare technology against a viable non-tech alternative before adoption.",
+      "For AI, preserve human agency, verify outputs, minimize student data, test bias/accessibility and define mandatory human review.",
+      "Evaluate learning outcomes, teacher workload, equity and implementation, not logins or feature usage alone."
+    ],
+    "sr": [
+      "Počnite od problema učenja i uporedite tehnologiju sa održivom non-tech alternativom pre usvajanja.",
+      "Za AI očuvajte human agency, proveravajte output, minimizujte student data, testirajte bias/accessibility i definišite obavezni human review.",
+      "Evaluirajte learning outcomes, teacher workload, equity i implementaciju, ne samo login ili feature usage."
+    ]
+  },
+  "academic-research-professional-learning": {
+    "en": [
+      "Match education research design to the claim and separate local improvement evidence from generalizable causal claims.",
+      "Translate evidence into core mechanisms, implementation requirements, fidelity/adaptation choices and measurable learner/practice outcomes.",
+      "Professional learning should include modeling, rehearsal, feedback/coaching and follow-up rather than one-off exposure."
+    ],
+    "sr": [
+      "Uskladite education research dizajn sa tvrdnjom i odvojite lokalni improvement dokaz od generalizovane kauzalne tvrdnje.",
+      "Prevedite dokaz u core mechanisms, implementation zahteve, fidelity/adaptation odluke i merljive learner/practice ishode.",
+      "Professional learning treba da uključuje modeling, rehearsal, feedback/coaching i follow-up, ne samo jednokratnu izloženost."
+    ]
+  },
+  "research-question-study-design": {
+    "en": [
+      "Define claim type, estimand/outcome, population/unit, design, sampling and measurement before analysis.",
+      "Pre-specify confirmatory decisions and label exploratory deviations transparently.",
+      "Red-team selection, measurement, attrition, temporal ambiguity, researcher degrees of freedom and external validity."
+    ],
+    "sr": [
+      "Definišite tip tvrdnje, estimand/ishod, populaciju/jedinicu, dizajn, sampling i merenje pre analize.",
+      "Pre-specifikujte confirmatory odluke i transparentno označite exploratory odstupanja.",
+      "Red-teamujte selection, measurement, attrition, temporal ambiguity, researcher degrees of freedom i external validity."
+    ]
+  },
+  "literature-review-evidence-synthesis": {
+    "en": [
+      "Make search, eligibility, screening and extraction reproducible and date-stamped.",
+      "Assess risk of bias and heterogeneity before choosing synthesis or pooling; avoid vote counting by significance.",
+      "Investigate publication/selective-reporting bias and calibrate conclusions to certainty/applicability."
+    ],
+    "sr": [
+      "Učinite search, eligibility, screening i extraction reproduktivnim i vremenski označenim.",
+      "Procenite risk of bias i heterogeneity pre izbora sinteze/pooling-a; izbegavajte vote counting po significance-u.",
+      "Istražite publication/selective-reporting bias i kalibrišite zaključke prema certainty/applicability."
+    ]
+  },
+  "statistics-quantitative-analysis": {
+    "en": [
+      "State estimand and model assumptions before test/model selection; report effect size and uncertainty.",
+      "Check diagnostics, missingness, multiplicity, influential observations and robustness to reasonable alternatives.",
+      "Distinguish statistical significance, practical importance, predictive performance and causal interpretation."
+    ],
+    "sr": [
+      "Definišite estimand i pretpostavke modela pre izbora testa/modela; prikažite effect size i neizvesnost.",
+      "Proverite diagnostics, missingness, multiplicity, influential observations i robustness na razumne alternative.",
+      "Razlikujte statističku značajnost, praktičnu važnost, predictive performance i kauzalno tumačenje."
+    ]
+  },
+  "causal-inference-experimental-reasoning": {
+    "en": [
+      "Define causal estimand and identification assumptions before adjustment/modeling; use DAGs where useful.",
+      "Distinguish confounders, mediators, colliders and selection mechanisms conceptually rather than by p-value.",
+      "Test design-specific assumptions and unmeasured-confounding sensitivity before causal claims."
+    ],
+    "sr": [
+      "Definišite kauzalni estimand i identification pretpostavke pre adjustment/modeling-a; koristite DAG gde je koristan.",
+      "Konceptualno razlikujte confounders, mediators, colliders i selection mehanizme, ne prema p-value.",
+      "Testirajte design-specific pretpostavke i sensitivity na unmeasured confounding pre kauzalnih tvrdnji."
+    ]
+  },
+  "data-quality-reproducibility": {
+    "en": [
+      "Preserve immutable/versioned raw data, provenance, data dictionary and scripted/logged transformations.",
+      "Characterize missingness, duplicates, unit/schema changes and data quality before modeling.",
+      "Capture code/environment/dependencies/seeds and ensure outputs can be regenerated from declared inputs."
+    ],
+    "sr": [
+      "Sačuvajte immutable/versioned raw data, provenance, data dictionary i scripted/logged transformacije.",
+      "Karakterišite missingness, duplikate, unit/schema promene i data quality pre modelovanja.",
+      "Zabeležite code/environment/dependency/seeds i obezbedite da output može biti regenerisan iz deklarisanih inputa."
+    ]
+  },
+  "qualitative-mixed-methods": {
+    "en": [
+      "Match sampling, data generation and analytic method to the qualitative question and document reflexivity.",
+      "Support themes/claims with traceable data, examine negative/deviant cases and avoid frequency-as-importance shortcuts.",
+      "Integrate mixed methods at question, design, analysis or interpretation level with an explicit integration purpose."
+    ],
+    "sr": [
+      "Uskladite sampling, data generation i analitički metod sa kvalitativnim pitanjem i dokumentujte reflexivity.",
+      "Podržite teme/tvrdnje sledljivim podacima, pregledajte negative/deviant cases i ne izjednačavajte frequency sa importance.",
+      "Integrirajte mixed methods na nivou pitanja, dizajna, analize ili interpretacije sa eksplicitnom svrhom integracije."
+    ]
+  },
+  "scientific-visualization-communication": {
+    "en": [
+      "Preserve denominator, scale, uncertainty and distinction between data and interpretation in figures/tables.",
+      "Choose encodings for accurate comparison, accessibility and audience task; avoid misleading axis/area/color choices.",
+      "Keep abstract/public summary claims consistent with full results and do not upgrade certainty for simplicity."
+    ],
+    "sr": [
+      "Sačuvajte imenilac, skalu, neizvesnost i razliku između podataka i interpretacije u grafikonima/tabelama.",
+      "Birajte encoding za tačno poređenje, pristupačnost i zadatak publike; izbegavajte misleading axis/area/color izbore.",
+      "Tvrdnje u apstraktu/javnom sažetku moraju ostati dosledne punim rezultatima bez podizanja certainty radi jednostavnosti."
+    ]
+  },
+  "peer-review-research-integrity": {
+    "en": [
+      "Evaluate claim-method-evidence alignment and reporting completeness without inferring misconduct from anomaly alone.",
+      "Check authorship/contributions, conflicts, ethics/consent, selective reporting, data/image provenance and correction needs.",
+      "Separate reporting-guideline compliance from underlying methodological validity."
+    ],
+    "sr": [
+      "Procenite claim-method-evidence usklađenost i reporting completeness bez inferiranja misconduct-a iz same anomalije.",
+      "Proverite authorship/contributions, conflicts, ethics/consent, selective reporting, data/image provenance i potrebu za correction-om.",
+      "Odvojite reporting-guideline compliance od osnovne metodološke validnosti."
+    ]
+  },
+  "domain-analysis-modeling-simulation": {
+    "en": [
+      "Separate conceptual model, code verification, calibration, validation and application domain.",
+      "Track parameter/input/structural uncertainty separately and propagate consequential uncertainty to outputs.",
+      "Use out-of-sample/independent validation where possible and flag extrapolation beyond the validated domain."
+    ],
+    "sr": [
+      "Odvojite conceptual model, code verification, calibration, validation i application domain.",
+      "Odvojeno pratite parameter/input/structural uncertainty i propagirajte materijalnu neizvesnost na output.",
+      "Koristite out-of-sample/independent validation gde je moguće i označite extrapolation van validiranog domena."
+    ]
+  },
+  "research-projects-decisions": {
+    "en": [
+      "Separate evidence quality from values, costs, feasibility, equity and stakeholder priorities in decisions.",
+      "Use milestones as evidence/decision gates with owners, risks, dependencies and stop/scale criteria.",
+      "Evaluate impact prospectively and include null/negative learning in post-study review."
+    ],
+    "sr": [
+      "U odlukama odvojite kvalitet dokaza od vrednosti, troškova, izvodljivosti, equity-ja i stakeholder prioriteta.",
+      "Koristite milestone-e kao evidence/decision gates sa ownerima, rizicima, zavisnostima i stop/scale kriterijumima.",
+      "Prospektivno definišite impact evaluaciju i uključite null/negative učenje u post-study review."
+    ]
+  },
+  "career-strategy-positioning": {
+    "en": [
+      "Derive target roles from verified strengths, constraints and market evidence; distinguish capability, signal and access gaps.",
+      "Use reversible experiments before costly career pivots and preserve transferable career capital.",
+      "Make trade-offs explicit across compensation, learning, autonomy, stability, geography and long-term option value."
+    ],
+    "sr": [
+      "Izvodite target uloge iz verifikovanih snaga, ograničenja i tržišnih dokaza; razlikujte capability, signal i access gap.",
+      "Koristite reverzibilne eksperimente pre skupih career pivot-a i čuvajte prenosivi career capital.",
+      "Eksplicitno prikažite trade-off kroz kompenzaciju, učenje, autonomiju, stabilnost, geografiju i dugoročni option value."
+    ]
+  },
+  "resume-cv-portfolio": {
+    "en": [
+      "Every material claim must map to real work, scope and outcome; omit rather than invent metrics.",
+      "Tailor terminology to target requirements only where experience genuinely supports it; prioritize readability over ATS gaming.",
+      "Portfolio cases should show context, constraints, decisions, contribution, evidence, result and confidentiality-safe artifacts."
+    ],
+    "sr": [
+      "Svaka materijalna tvrdnja mora se vezati za stvarni rad, scope i rezultat; metriku izostavite umesto izmišljanja.",
+      "Prilagodite terminologiju target zahtevima samo gde iskustvo to zaista podržava; čitljivost je važnija od ATS gaming-a.",
+      "Portfolio case treba da pokaže kontekst, ograničenja, odluke, doprinos, dokaz, rezultat i confidentiality-safe assete."
+    ]
+  },
+  "job-search-applications": {
+    "en": [
+      "Prioritize roles by evidence-based fit, opportunity quality, application cost and strategic value rather than volume.",
+      "Verify material company/role facts and separate public evidence from inference.",
+      "Track stage conversion and loss reasons to improve the funnel, not just application count."
+    ],
+    "sr": [
+      "Prioritizujte uloge prema evidence-based fit-u, kvalitetu prilike, trošku prijave i strateškoj vrednosti, ne prema volumenu.",
+      "Proverite materijalne činjenice o kompaniji/ulozi i odvojite javni dokaz od inferencije.",
+      "Pratite stage conversion i razloge gubitka radi poboljšanja funnel-a, ne samo broj prijava."
+    ]
+  },
+  "interviews-assessments": {
+    "en": [
+      "Build answers from real examples and preserve factual scope; use structure to improve retrieval, not fabricate polish.",
+      "Technical/case answers should expose assumptions, reasoning, trade-offs, verification and uncertainty.",
+      "Debrief factual signals separately from anxiety, charisma or interviewer affect."
+    ],
+    "sr": [
+      "Gradite odgovore iz stvarnih primera i očuvajte činjenični scope; struktura služi retrieval-u, ne fabriciranju priče.",
+      "Technical/case odgovori treba da pokažu pretpostavke, reasoning, trade-off, verifikaciju i neizvesnost.",
+      "U debriefu odvojite činjenične signale od anksioznosti, harizme ili afekta intervjuera."
+    ]
+  },
+  "compensation-negotiation-offers": {
+    "en": [
+      "Compare total compensation, vesting/bonus conditions, benefits, risk, scope, location and tax context rather than base salary alone.",
+      "Use current comparable market data with explicit geography/level/company caveats.",
+      "Define target, acceptable and walk-away ranges plus tradeable concessions before negotiation."
+    ],
+    "sr": [
+      "Uporedite total compensation, vesting/bonus uslove, benefite, rizik, scope, lokaciju i poreski kontekst, ne samo base salary.",
+      "Koristite aktuelne uporedive tržišne podatke sa eksplicitnim geography/level/company caveat-ima.",
+      "Definišite target, acceptable i walk-away opsege i tradeable concessions pre pregovora."
+    ]
+  },
+  "workplace-performance-growth": {
+    "en": [
+      "Clarify role/level expectations and maintain continuous evidence of outcomes, scope, stakeholder value and learning.",
+      "Separate visibility from value creation and promotion readiness from entitlement.",
+      "Turn feedback into observable behavior/action, owner and follow-up evidence."
+    ],
+    "sr": [
+      "Razjasnite očekivanja uloge/nivoa i kontinuirano čuvajte dokaze ishoda, scope-a, stakeholder vrednosti i učenja.",
+      "Odvojite visibility od stvaranja vrednosti i promotion readiness od entitlement-a.",
+      "Pretvorite feedback u observable behavior/akciju, ownera i follow-up dokaz."
+    ]
+  },
+  "leadership-management": {
+    "en": [
+      "Evaluate leadership through team/system outcomes, decision quality, clarity and capability growth rather than charisma.",
+      "Delegation must transfer outcome, context, authority, constraints, checkpoints and escalation path.",
+      "Diagnose system/incentive/workload causes before attributing performance problems to an individual."
+    ],
+    "sr": [
+      "Procenjujte leadership kroz timske/sistemske ishode, kvalitet odluka, jasnoću i razvoj capability-ja, ne kroz harizmu.",
+      "Delegiranje mora preneti ishod, kontekst, authority, ograničenja, checkpoints i escalation path.",
+      "Pre pripisivanja performance problema pojedincu dijagnostikujte sistem, podsticaje i workload."
+    ]
+  },
+  "freelancing-consulting-independent-work": {
+    "en": [
+      "Qualify client problem, authority, urgency, budget/fit and evidence before investing heavily in proposal work.",
+      "Define scope, exclusions, acceptance, dependencies, change control and payment/delivery assumptions explicitly.",
+      "Price for value/risk/non-billable work and market context rather than converting an employee hourly rate mechanically."
+    ],
+    "sr": [
+      "Kvalifikujte problem klijenta, authority, urgency, budget/fit i dokaz pre većeg ulaganja u proposal.",
+      "Eksplicitno definišite scope, exclusions, acceptance, dependencies, change control i payment/delivery pretpostavke.",
+      "Pricing treba da uključi value/risk/non-billable rad i tržišni kontekst, ne mehaničku konverziju zaposleničke satnice."
+    ]
+  },
+  "networking-personal-brand-communication": {
+    "en": [
+      "Treat networking as reciprocal, context-rich relationship building rather than mass transactional outreach.",
+      "Personal brand claims should be backed by observable work, artifacts and consistent behavior.",
+      "Choose communication channel, cadence and ask proportional to relationship stage and recipient value."
+    ],
+    "sr": [
+      "Tretirajte networking kao recipročno, context-rich građenje odnosa, ne kao masovni transakcioni outreach.",
+      "Personal brand tvrdnje treba da budu podržane vidljivim radom, artefaktima i doslednim ponašanjem.",
+      "Birajte kanal, cadence i ask proporcionalno fazi odnosa i vrednosti za primaoca."
+    ]
+  },
+  "career-learning-long-term-development": {
+    "en": [
+      "Derive learning priorities from real target-role gaps and require applied proof artifacts or performance evidence.",
+      "Evaluate certification/course ROI against cheaper/faster alternatives and signal value in the relevant market.",
+      "Build resilience through transferable skills, relationships, evidence, financial buffer and scenario-triggered options."
+    ],
+    "sr": [
+      "Izvodite learning prioritete iz realnih target-role gap-ova i zahtevajte applied proof artefakte ili performance dokaz.",
+      "Procenu ROI sertifikata/kursa radite prema jeftinijim/bržim alternativama i signal value-u na relevantnom tržištu.",
+      "Gradite otpornost kroz prenosive veštine, odnose, dokaze, finansijski buffer i scenario-triggered opcije."
+    ]
+  },
+  "strategy-positioning-market-research": {
+    "en": [
+      "Define segment, problem, trigger, alternatives, value and proof before channel tactics.",
+      "Separate customer/market evidence from internal anecdotes and hypotheses; research must support a decision.",
+      "Strategy must allocate focus and explicitly state what segments/channels/messages will not be prioritized."
+    ],
+    "sr": [
+      "Definišite segment, problem, trigger, alternative, value i proof pre channel taktika.",
+      "Odvojite customer/market dokaz od internih anegdota i hipoteza; research mora podržati odluku.",
+      "Strategija mora alocirati fokus i eksplicitno navesti koji segmenti/kanali/poruke neće biti prioritet."
+    ]
+  },
+  "brand-messaging-copywriting": {
+    "en": [
+      "Build claims from specific audience problem, value and substantiation; remove unsupported superlatives and fabricated proof.",
+      "Match message hierarchy to awareness/context and preserve continuity from acquisition message to offer/CTA.",
+      "Use urgency, scarcity, testimonials and endorsements only when truthful, material conditions are clear and disclosures are adequate."
+    ],
+    "sr": [
+      "Gradite tvrdnje iz specifičnog problema publike, vrednosti i substantiation-a; uklonite unsupported superlative i izmišljeni proof.",
+      "Uskladite message hierarchy sa awareness/kontekstom i očuvajte kontinuitet od acquisition poruke do ponude/CTA.",
+      "Urgency, scarcity, testimonials i endorsements koristite samo kada su istiniti, uslovi jasni i disclosure adekvatan."
+    ]
+  },
+  "content-marketing-editorial": {
+    "en": [
+      "Connect each asset to audience need, business relevance, distinctive expertise and a distribution path before production.",
+      "Support factual claims with sources and avoid generic synthesis that adds no decision/use value.",
+      "Evaluate portfolio performance by funnel role and refresh/prune based on evidence, not age or volume alone."
+    ],
+    "sr": [
+      "Povežite svaki asset sa potrebom publike, poslovnom relevantnošću, stvarnom ekspertizom i distribution putem pre produkcije.",
+      "Činjenične tvrdnje podržite izvorima i izbegavajte generičku sintezu bez dodatne decision/use vrednosti.",
+      "Evaluirajte portfolio prema funnel ulozi i refresh/prune radite po dokazima, ne samo starosti ili volumenu."
+    ]
+  },
+  "seo-organic-discovery": {
+    "en": [
+      "Start from current search intent and useful people-first content; avoid keyword stuffing, doorway/thin content and ranking promises.",
+      "Separate crawl, render, index, canonical, internal-link and content/relevance problems before prioritization.",
+      "Measure qualified organic outcomes and account for seasonality, SERP changes and content decay."
+    ],
+    "sr": [
+      "Počnite od aktuelnog search intenta i korisnog people-first sadržaja; izbegavajte keyword stuffing, doorway/thin content i ranking obećanja.",
+      "Odvojite crawl, render, index, canonical, internal-link i content/relevance probleme pre prioritizacije.",
+      "Merite kvalifikovane organske ishode i računajte sa sezonalnošću, SERP promenama i content decay-em."
+    ]
+  },
+  "email-lifecycle-crm": {
+    "en": [
+      "Trigger communication from real lifecycle state/behavior and define entry, exit, suppression and frequency logic.",
+      "Respect consent/preferences and evaluate deliverability as well as downstream value, not opens alone.",
+      "Prevent contradictory automations and ensure CRM field ownership, freshness and fallback behavior."
+    ],
+    "sr": [
+      "Triggerujte komunikaciju iz stvarnog lifecycle state/behavior-a i definišite entry, exit, suppression i frequency logiku.",
+      "Poštujte consent/preferences i evaluirajte deliverability i downstream value, ne samo opens.",
+      "Sprečite kontradiktorne automatizacije i obezbedite CRM field ownership, freshness i fallback ponašanje."
+    ]
+  },
+  "paid-acquisition-experimentation": {
+    "en": [
+      "Define unit economics, hypothesis, primary metric, guardrails and stop/scale rule before spend.",
+      "Separate platform attribution from causal incrementality and use holdout/geo/controlled designs where feasible.",
+      "Test creative, audience and landing experience systematically and avoid declaring winners from underpowered/noisy windows."
+    ],
+    "sr": [
+      "Definišite unit economics, hipotezu, primarnu metriku, guardrails i stop/scale pravilo pre spend-a.",
+      "Odvojite platform attribution od kauzalnog incrementality-ja i koristite holdout/geo/kontrolisane dizajne gde je izvodljivo.",
+      "Sistematski testirajte creative, audience i landing experience i ne proglašavajte pobednike iz underpowered/noisy perioda."
+    ]
+  },
+  "sales-enablement-conversion": {
+    "en": [
+      "Discovery and qualification should establish problem, impact, urgency, stakeholders, alternatives and fit before pitching.",
+      "Demo/proposal content must map to discovered needs and evidence, with transparent limitations.",
+      "Handle objections by clarifying underlying risk/information need and disqualify poor-fit deals rather than applying deceptive pressure."
+    ],
+    "sr": [
+      "Discovery i qualification treba da utvrde problem, impact, urgency, stakeholder-e, alternative i fit pre pitch-a.",
+      "Demo/proposal sadržaj mora se vezati za otkrivene potrebe i proof uz transparentna ograničenja.",
+      "Objections rešavajte razjašnjavanjem osnovnog rizika/information need-a i diskvalifikujte poor-fit deal umesto obmanjujućeg pritiska."
+    ]
+  },
+  "customer-research-retention-growth": {
+    "en": [
+      "Triangulate stated customer feedback with observed product/support/sales behavior and cohort outcomes.",
+      "Separate acquisition, activation, retention, expansion and referral mechanisms before choosing growth intervention.",
+      "Analyze churn by segment/cohort/reason and avoid treating NPS or interview sentiment as behavior."
+    ],
+    "sr": [
+      "Triangulišite izjave kupaca sa stvarnim product/support/sales ponašanjem i cohort ishodima.",
+      "Odvojite acquisition, activation, retention, expansion i referral mehanizme pre izbora growth intervencije.",
+      "Analizirajte churn po segmentu/cohort-u/razlogu i ne tretirajte NPS ili interview sentiment kao ponašanje."
+    ]
+  },
+  "pr-corporate-crisis-communication": {
+    "en": [
+      "Establish verified facts, unknowns, affected stakeholders, legal/regulatory dependencies and approval authority before messaging.",
+      "In crises, prioritize safety/affected people and update as facts change; avoid premature blame or false certainty.",
+      "Maintain one message architecture across spokespeople/channels and preserve a correction/update log."
+    ],
+    "sr": [
+      "Pre poruke utvrdite verifikovane činjenice, nepoznanice, pogođene stakeholder-e, legal/regulatory zavisnosti i approval authority.",
+      "U krizi prioritet su safety/pogođeni ljudi i update kako se činjenice menjaju; izbegavajte preuranjenu krivicu ili lažnu sigurnost.",
+      "Održavajte jednu message architecture kroz spokespeople/kanale i correction/update log."
+    ]
+  },
+  "marketing-analytics-operations": {
+    "en": [
+      "Define KPI numerator, denominator, source of truth, owner, cadence and decision use before dashboarding.",
+      "Separate leading/lagging indicators, attribution and incrementality, and prevent double counting across systems.",
+      "Document event/schema changes, lead-routing SLAs and operational failure modes with monitoring."
+    ],
+    "sr": [
+      "Pre dashboarda definišite KPI numerator, denominator, source of truth, ownera, cadence i decision use.",
+      "Odvojite leading/lagging indikatore, attribution i incrementality i sprečite double counting između sistema.",
+      "Dokumentujte event/schema promene, lead-routing SLA i operativne failure modes sa monitoringom."
+    ]
+  },
+  "personal-productivity-prioritization": {
+    "en": [
+      "Inventory commitments and realistic capacity before priority ranking; every priority implies explicit non-priorities.",
+      "Limit WIP, define next actions and review stale/blocked work rather than growing an infinite task list.",
+      "Measure completed outcomes and reduced cognitive load, not app activity or hours tracked."
+    ],
+    "sr": [
+      "Popišite commitments i realan kapacitet pre prioritizacije; svaki prioritet podrazumeva eksplicitne non-priority odluke.",
+      "Ograničite WIP, definišite next actions i reviewujte stale/blocked rad umesto rasta beskonačne task liste.",
+      "Merite završene ishode i smanjen cognitive load, ne app activity ili trackovane sate."
+    ]
+  },
+  "planning-goals-decision-systems": {
+    "en": [
+      "Convert goals into measurable outcomes, owner, assumptions, dependencies, resource allocation and review cadence.",
+      "Define decision criteria before choosing and test sensitivity to uncertain weights/assumptions.",
+      "Plans should include scenarios, triggers and criteria to change, stop or reallocate."
+    ],
+    "sr": [
+      "Pretvorite ciljeve u merljive ishode, ownera, pretpostavke, zavisnosti, resurse i review cadence.",
+      "Definišite decision criteria pre izbora i testirajte sensitivity na neizvesne težine/pretpostavke.",
+      "Planovi treba da imaju scenarije, triggere i kriterijume za promenu, stop ili realokaciju."
+    ]
+  },
+  "project-execution-delivery": {
+    "en": [
+      "Keep scope, outcomes, milestones, dependencies, risks, decisions and changes in one traceable execution model.",
+      "Milestones should represent verifiable outcomes with acceptance criteria, not dates alone.",
+      "Status reporting should surface blockers/decisions and change control must update scope/time/cost/risk consistently."
+    ],
+    "sr": [
+      "Držite scope, ishode, milestone-e, zavisnosti, rizike, odluke i promene u jednom sledljivom execution modelu.",
+      "Milestone treba da predstavlja verifikabilan ishod sa acceptance kriterijumima, ne samo datum.",
+      "Status treba da izvuče blockers/odluke, a change control dosledno ažurira scope/time/cost/risk."
+    ]
+  },
+  "workflow-process-automation": {
+    "en": [
+      "Map current process, queues, handoffs, wait/rework and exception paths before automating.",
+      "Automate stable repeatable rules with controls, human override/fallback and observable failure handling.",
+      "Measure cycle time, quality and error/rework outcomes so local speed does not damage the whole process."
+    ],
+    "sr": [
+      "Mapirajte trenutni proces, queue-ove, handoff, čekanje/rework i exception paths pre automatizacije.",
+      "Automatizujte stabilna ponovljiva pravila uz kontrole, human override/fallback i observable failure handling.",
+      "Merite cycle time, kvalitet i error/rework ishode da lokalna brzina ne ošteti ceo proces."
+    ]
+  },
+  "meetings-communication-documentation": {
+    "en": [
+      "Use synchronous meetings only when interaction/decision value exceeds async alternatives; define purpose and required attendees.",
+      "Capture decision, rationale, action, owner and due date once in the correct source of truth.",
+      "Design channels/documentation to reduce duplication and retrieval friction, not to maximize communication volume."
+    ],
+    "sr": [
+      "Koristite synchronous sastanak samo kada interaction/decision vrednost nadmašuje async alternativu; definišite svrhu i potrebne učesnike.",
+      "Zabeležite decision, rationale, akciju, ownera i rok jednom u pravom source of truth-u.",
+      "Dizajnirajte kanale/dokumentaciju da smanje dupliranje i retrieval friction, ne da povećaju komunikacioni volumen."
+    ]
+  },
+  "delegation-accountability-team-operations": {
+    "en": [
+      "Match responsibility with decision authority, context, constraints, checkpoints and escalation path.",
+      "Use singular accountable ownership where practical while preserving contributor roles and handoff criteria.",
+      "Treat accountability as a feedback/operating system, not blame; diagnose blockers and capacity first."
+    ],
+    "sr": [
+      "Uskladite odgovornost sa decision authority, kontekstom, ograničenjima, checkpoints i escalation path-om.",
+      "Koristite jednog accountable ownera gde je praktično uz jasne contributor uloge i handoff kriterijume.",
+      "Tretirajte accountability kao feedback/operating sistem, ne blame; prvo dijagnostikujte blockers i capacity."
+    ]
+  },
+  "time-capacity-resource-management": {
+    "en": [
+      "Calculate usable capacity after fixed overhead and uncertainty, with explicit buffers for unplanned work.",
+      "Avoid planning at 100 percent utilization; expose bottlenecks, queues and resource conflicts.",
+      "Use scenario-triggered reallocation when demand, deadlines or constraints change."
+    ],
+    "sr": [
+      "Izračunajte usable capacity posle fixed overhead-a i neizvesnosti, uz eksplicitne buffere za neplanirani rad.",
+      "Ne planirajte na 100 procenata utilization-a; učinite bottleneck, queue i resource conflict vidljivim.",
+      "Koristite scenario-triggered realokaciju kada se demand, rokovi ili constraints promene."
+    ]
+  },
+  "knowledge-information-organization": {
+    "en": [
+      "Optimize findability, freshness, ownership and trust rather than maximum capture; define source of truth.",
+      "Use taxonomy/metadata only when it improves retrieval and apply archival/retention/access rules.",
+      "Test retrieval with real user questions and reduce duplicate/stale knowledge."
+    ],
+    "sr": [
+      "Optimizujte findability, freshness, ownership i trust umesto maksimalnog capture-a; definišite source of truth.",
+      "Koristite taxonomy/metadata samo kada poboljšava retrieval i primenite archive/retention/access pravila.",
+      "Testirajte retrieval realnim user pitanjima i smanjite duplicate/stale znanje."
+    ]
+  },
+  "management-operating-systems": {
+    "en": [
+      "Connect management metrics to decisions, operating cadence, decision rights and escalation thresholds.",
+      "Minimize duplicate reporting and ensure information arrives at the level/time where a decision can still change the outcome.",
+      "Evaluate organizational health using leading and lagging evidence, not narrative confidence alone."
+    ],
+    "sr": [
+      "Povežite management metrike sa odlukama, operating cadence-om, decision rights i escalation thresholds.",
+      "Smanjite duplicate reporting i obezbedite da informacija stigne na nivo/vreme gde odluka još može promeniti ishod.",
+      "Evaluirajte organizational health kroz leading i lagging dokaze, ne samo narrative confidence."
+    ]
+  },
+  "productivity-audits-improvement": {
+    "en": [
+      "Baseline friction, delay, rework, quality loss or cognitive overhead before changing tools/process.",
+      "Treat improvements as hypotheses with adoption, outcome, guardrail and rollback criteria.",
+      "Remove tools/processes that do not earn their coordination/maintenance cost and prevent improvement theater."
+    ],
+    "sr": [
+      "Pre promene alata/procesa izmerite baseline trenja, delay-a, rework-a, quality loss-a ili cognitive overhead-a.",
+      "Tretirajte poboljšanja kao hipoteze sa adoption, outcome, guardrail i rollback kriterijumima.",
+      "Uklonite alate/procese koji ne opravdavaju coordination/maintenance trošak i sprečite improvement theater."
+    ]
+  },
+  "creative-strategy-ideation": {
+    "en": [
+      "Define audience, objective, medium, constraints and acceptance criteria before concept generation.",
+      "Separate divergence from evaluation and produce genuinely distinct creative territories, not cosmetic variants.",
+      "Use references to extract principles while preserving original expression, rights and strategic differentiation."
+    ],
+    "sr": [
+      "Definišite publiku, cilj, medij, ograničenja i acceptance kriterijume pre generisanja koncepata.",
+      "Odvojite divergence od evaluacije i napravite zaista različite kreativne teritorije, ne cosmetic variants.",
+      "Koristite reference za izdvajanje principa uz očuvanje originalnog izraza, prava i strateške diferencijacije."
+    ]
+  },
+  "visual-design-layout-systems": {
+    "en": [
+      "Establish hierarchy, grid, spacing, typography, color semantics and responsive rules before decorative polish.",
+      "Evaluate density, scan path, contrast and accessibility across representative content extremes.",
+      "Define reusable system roles/tokens and exceptions so consistency is operational, not subjective."
+    ],
+    "sr": [
+      "Postavite hijerarhiju, grid, spacing, tipografiju, semantiku boja i responsive pravila pre dekorativnog polish-a.",
+      "Procenite density, scan path, contrast i accessibility kroz reprezentativne content ekstreme.",
+      "Definišite reusable system roles/tokens i exceptions da doslednost bude operativna, ne subjektivna."
+    ]
+  },
+  "brand-identity-art-direction": {
+    "en": [
+      "Translate brand position and audience into repeatable visual principles, not a collection of attractive references.",
+      "Define identity component rules, allowed variation and misuse across real formats and production constraints.",
+      "Protect distinctive equity during refresh and verify differentiation without copying competitor/creator expression."
+    ],
+    "sr": [
+      "Prevedite brand position i publiku u ponovljive vizuelne principe, ne kolekciju atraktivnih referenci.",
+      "Definišite pravila identity komponenti, dozvoljene varijacije i misuse kroz realne formate i production constraints.",
+      "Zaštitite distinctive equity tokom refresh-a i proverite diferencijaciju bez kopiranja izraza konkurenta/autora."
+    ]
+  },
+  "ux-ui-product-design": {
+    "en": [
+      "Start from user goals, information architecture and complete flow states before visual styling.",
+      "Include empty, loading, error, permission, destructive, offline/recovery and edge states plus WCAG/accessibility behavior.",
+      "Test with realistic content/data and preserve design-system semantics across responsive variants."
+    ],
+    "sr": [
+      "Počnite od user ciljeva, information architecture i kompletnih flow state-ova pre vizuelnog styling-a.",
+      "Uključite empty, loading, error, permission, destructive, offline/recovery i edge stanja plus WCAG/accessibility ponašanje.",
+      "Testirajte sa realnim content/data i očuvajte design-system semantiku kroz responsive varijante."
+    ]
+  },
+  "photography-image-creation": {
+    "en": [
+      "Give every shot a communication purpose and define composition, light, perspective, crop variants and edit treatment before capture where feasible.",
+      "Verify releases/licensing, product truthfulness and whether perspective/editing materially misleads.",
+      "Review a series for continuity, diversity/context fit and technical delivery, not isolated hero shots only."
+    ],
+    "sr": [
+      "Svakom kadru dajte komunikacionu svrhu i gde je moguće unapred definišite kompoziciju, svetlo, perspektivu, crop varijante i edit treatment.",
+      "Proverite releases/licensing, product truthfulness i da li perspektiva/editing materijalno obmanjuju.",
+      "Seriju procenite po kontinuitetu, diversity/context fit-u i tehničkoj isporuci, ne samo po izolovanom hero shot-u."
+    ]
+  },
+  "video-motion-production": {
+    "en": [
+      "Connect concept, script, storyboard, coverage, performance, motion, sound and edit rhythm to a specific audience response.",
+      "Plan continuity, captions/accessibility, platform aspect/duration variants and production dependencies before shoot.",
+      "Review pacing for comprehension/emotion and remove shots/motion that do not advance meaning."
+    ],
+    "sr": [
+      "Povežite koncept, script, storyboard, coverage, performance, motion, sound i edit rhythm sa specifičnim odgovorom publike.",
+      "Pre snimanja planirajte continuity, captions/accessibility, platform aspect/duration varijante i production dependencies.",
+      "Reviewujte pacing prema comprehension/emociji i uklonite kadar/motion koji ne unapređuje značenje."
+    ]
+  },
+  "audio-music-podcast": {
+    "en": [
+      "Define listening context, format, sonic identity, intelligibility, pacing, loudness/delivery and rights before production.",
+      "Use music/sound design for narrative or brand function and preserve speech clarity.",
+      "Editing must preserve authentic meaning and distinguish creative processing from deceptive manipulation."
+    ],
+    "sr": [
+      "Definišite listening context, format, sonic identity, intelligibility, pacing, loudness/delivery i prava pre produkcije.",
+      "Koristite muziku/sound design za narrative ili brand funkciju uz očuvanu speech clarity.",
+      "Editing mora sačuvati autentično značenje i razlikovati creative processing od obmanjujuće manipulacije."
+    ]
+  },
+  "storytelling-writing-narrative": {
+    "en": [
+      "Define central question, point of view, stakes, character/agent goals and structural progression before line-level polish.",
+      "Every scene/section should change knowledge, emotion, decision or state; remove elements with no narrative function.",
+      "Use setup/payoff, pacing and tone consistently while preserving factual constraints in nonfiction/adaptation."
+    ],
+    "sr": [
+      "Definišite centralno pitanje, point of view, stakes, ciljeve lika/aktera i strukturnu progresiju pre line-level polish-a.",
+      "Svaka scena/sekcija treba da promeni znanje, emociju, odluku ili stanje; uklonite elemente bez narativne funkcije.",
+      "Dosledno koristite setup/payoff, pacing i ton uz očuvanje činjeničnih ograničenja u nonfiction/adaptaciji."
+    ]
+  },
+  "creative-critique-quality": {
+    "en": [
+      "Critique against brief, audience, system rules and acceptance criteria before taste.",
+      "Label feedback as defect, accessibility issue, consistency issue, production risk or preference and prioritize by impact.",
+      "Check originality/similarity, rights, cross-format behavior and technical preflight before final approval."
+    ],
+    "sr": [
+      "Critique radite prema briefu, publici, system rules i acceptance kriterijumima pre ukusa.",
+      "Označite feedback kao defect, accessibility problem, consistency problem, production risk ili preference i prioritizujte po uticaju.",
+      "Pre finalnog approval-a proverite originality/similarity, prava, cross-format ponašanje i technical preflight."
+    ]
+  },
+  "creative-operations-delivery": {
+    "en": [
+      "Make intake, asset naming, versioning, review rounds, approvals, source/master ownership and delivery specs traceable.",
+      "Separate work-in-progress, approved master and channel exports to prevent version ambiguity.",
+      "Plan creative capacity and dependencies, then feed retrospective actions into the next production cycle."
+    ],
+    "sr": [
+      "Učinite intake, asset naming, versioning, review rounds, approvals, source/master ownership i delivery specs sledljivim.",
+      "Odvojite work-in-progress, approved master i channel exports da sprečite version ambiguity.",
+      "Planirajte creative capacity i dependencies, zatim retrospective akcije vratite u sledeći production ciklus."
+    ]
+  }
+}
