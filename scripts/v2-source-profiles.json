@@ -6,11 +6,6 @@
       "note": "Current final SSDF baseline; SP 800-218 Rev.1 / SSDF 1.2 remains Initial Public Draft as of 2026-09-27."
     },
     {
-      "label": "NIST SP 800-218 - SSDF Version 1.1 (Final)",
-      "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
-      "note": "Current final SSDF baseline; SP 800-218 Rev.1 / SSDF 1.2 remains Initial Public Draft as of 2026-09-27."
-    },
-    {
       "label": "NIST SP 800-218A - GenAI SSDF Community Profile (Final)",
       "url": "https://csrc.nist.gov/pubs/sp/800/218/a/final",
       "note": "Final GenAI secure-development profile; use with SSDF 1.1 final baseline."

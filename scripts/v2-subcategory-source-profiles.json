@@ -575,7 +575,8 @@
     },
     {
       "label": "CONSORT 2025",
-      "url": "https://www.equator-network.org/reporting-guidelines/consort/"
+      "url": "https://www.consort-spirit.org/",
+      "note": "Current CONSORT 2025 reporting guideline site; use EQUATOR for extensions and adjacent reporting guidelines."
     },
     {
       "label": "STROBE",
@@ -605,7 +606,8 @@
   "causal-inference-experimental-reasoning": [
     {
       "label": "CONSORT 2025",
-      "url": "https://www.equator-network.org/reporting-guidelines/consort/"
+      "url": "https://www.consort-spirit.org/",
+      "note": "Current CONSORT 2025 reporting guideline site; use EQUATOR for extensions and adjacent reporting guidelines."
     },
     {
       "label": "STROBE",
