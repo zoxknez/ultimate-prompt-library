@@ -2,42 +2,52 @@
 
 Last reviewed: 2026-09-27
 
-This registry lists authoritative starting points used to strengthen Ultimate Prompt Library v2. Prompts should still verify the latest applicable version, jurisdiction and context at execution time.
+This registry lists authoritative starting points used to strengthen Ultimate Prompt Library v2. Every prompt also receives a subcategory-specific source profile. Sources must still be checked for the latest applicable version, jurisdiction, population and task context at execution time.
 
 ## Cross-domain AI and prompt quality
 
 - NIST AI Risk Management Framework and Generative AI Profile
-  - https://www.nist.gov/itl/ai-risk-management-framework
+  - https://airc.nist.gov/
+  - AI RMF 1.0 is being revised; the Generative AI Profile remains a key companion resource.
 - OWASP Top 10 for LLM Applications 2025
-  - https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/
+  - https://genai.owasp.org/llm-top-10/
 - Google Gemini prompt design strategies
   - https://ai.google.dev/gemini-api/docs/prompting-strategies
-- Anthropic prompting best practices
-  - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-templates-and-variables
+  - Current guidance emphasizes clear/direct instructions, consistent structure, explicit output constraints, decomposition, grounding/tool use and iterative refinement.
+- Anthropic prompting documentation
+  - https://docs.anthropic.com/
 
 ## IT, programming and technology
 
-- NIST Secure Software Development Framework, SP 800-218
+- NIST SP 800-218, SSDF v1.1 - **final**
   - https://csrc.nist.gov/pubs/sp/800/218/final
+- NIST SP 800-218 Rev. 1, SSDF v1.2 - **draft**, published 2025-12-17
+  - https://csrc.nist.gov/pubs/sp/800/218/r1/ipd
+  - Treat as draft/future-facing guidance, not the final baseline.
+- NIST SP 800-218A, GenAI and Dual-Use Foundation Model SSDF Community Profile - **final**
+  - https://csrc.nist.gov/pubs/sp/800/218/a/final
 - NIST Cybersecurity Framework 2.0
-  - https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final
+  - https://www.nist.gov/cyberframework
 - CIS Critical Security Controls v8.1
   - https://www.cisecurity.org/controls/v8-1
 - CISA Secure by Design
   - https://www.cisa.gov/securebydesign
-- OWASP GenAI Security Project
-  - https://genai.owasp.org/
+- OWASP Top 10 for LLM Applications 2025
+  - https://genai.owasp.org/llm-top-10/
 
 ## Business, governance and quality
 
-- ISO quality management principles
+- ISO Quality Management Principles
   - https://committee.iso.org/quality-management/principles
 - ISO 9001
-  - https://www.iso.org/standard/9001
-- OECD Principles of Corporate Governance
+  - https://www.iso.org/iso-9001-quality-management.html
+- ISO 31000 Risk Management
+  - https://www.iso.org/iso-31000-risk-management.html
+- G20/OECD Principles of Corporate Governance
   - https://www.oecd.org/corporate/principles-corporate-governance/
-- OECD Regulatory Policy and Governance
-  - https://www.oecd.org/en/publications/recommendation-of-the-council-on-regulatory-policy-and-governance_9789264209022-en.html
+- IFRS Accounting Standards
+  - https://www.ifrs.org/issued-standards/list-of-standards/
+- IMF, OECD and World Bank official data portals should be preferred for macroeconomic data when applicable.
 
 ## Law and administration
 
@@ -47,25 +57,31 @@ This registry lists authoritative starting points used to strengthen Ultimate Pr
   - https://www.edpb.europa.eu/our-work-tools/our-documents_en
 - ILO International Labour Standards
   - https://www.ilo.org/international-labour-standards
-- WIPO
+- WIPO and WIPO Lex
   - https://www.wipo.int/
+  - https://www.wipo.int/wipolex/en/
 - HCCH conventions
   - https://www.hcch.net/en/instruments/conventions
 - UNCITRAL texts
   - https://uncitral.un.org/en/texts
 - UNIDROIT Principles
   - https://www.unidroit.org/instruments/commercial-contracts/unidroit-principles-2016/
+- Binding domestic law and current official registries always control over comparative guidance.
 
 ## Health, medicine and wellness
 
-- WHO Guidelines Review Committee and guideline methodology
+- WHO Guidelines Review Committee
   - https://www.who.int/groups/guidelines-review-committee
-- WHO Handbook for Guideline Development
+- WHO Handbook for Guideline Development, 2nd Edition
   - https://www.who.int/publications/i/item/9789241548960
+  - WHO notes that a handbook update has been under development; verify the latest applicable methods/guideline.
+- WHO 2023 supplement on criteria for evidence informing recommendations
+  - https://www.who.int/publications/i/item/WHO-SCI-QNS-MST-2023.1
+- Cochrane Handbooks and Manuals
+  - https://www.cochrane.org/authors/handbooks-and-manuals
+  - Cochrane notes the GRADE Book is progressively replacing the older GRADE Handbook through the end of 2026.
 - NICE Evidence Standards Framework for Digital Health Technologies
   - https://www.nice.org.uk/what-nice-does/digital-health/evidence-standards-framework-esf-for-digital-health-technologies
-- Cochrane Handbook
-  - https://training.cochrane.org/handbook
 
 ## Education and learning
 
@@ -77,55 +93,80 @@ This registry lists authoritative starting points used to strengthen Ultimate Pr
   - https://www.unesco.org/en/articles/ai-competency-framework-teachers
 - UNESCO AI Competency Framework for Students
   - https://www.unesco.org/en/articles/ai-competency-framework-students
+  - UNESCO's student framework page was last updated in 2026 and emphasizes human-centred, ethical and creative AI use.
 
 ## Science, research and analysis
 
+- CONSORT 2025 - current core reporting guideline for randomized trials
+  - https://www.equator-network.org/reporting-guidelines/consort/
 - PRISMA 2020
   - https://www.prisma-statement.org/prisma-2020
-- CONSORT
-  - https://www.consort-statement.org/
 - STROBE
   - https://www.strobe-statement.org/
+- EQUATOR Network
+  - https://www.equator-network.org/
 - FAIR Principles
   - https://www.go-fair.org/fair-principles/
+- Reporting-guideline compliance should never be treated as proof of methodological quality.
 
 ## Career and professional development
 
+- ESCO v1.2.1 - European Skills, Competences, Qualifications and Occupations
+  - https://esco.ec.europa.eu/en
+  - The European Commission portal lists v1.2.1 as the current version, last updated 2025-12-10.
+- Europass
+  - https://europass.europa.eu/
 - O*NET OnLine
   - https://www.onetonline.org/
 - U.S. Bureau of Labor Statistics Occupational Outlook Handbook
   - https://www.bls.gov/ooh/
-- Use current regional salary/job-market sources for geography-specific compensation claims.
+- Compensation and job-market claims must use current regional data matching the user's geography and seniority.
 
 ## Marketing, sales and communication
 
-- FTC Advertising and Marketing guidance
+- FTC Advertising and Marketing Guidance
   - https://www.ftc.gov/business-guidance/advertising-marketing
-- FTC endorsements, influencers and reviews
+- FTC Endorsements, Influencers and Reviews
   - https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews
 - Google Search Essentials
   - https://developers.google.com/search/docs/essentials
-- IAB Campaign Data Standards
+  - Current guidance emphasizes helpful, reliable, people-first content and explicitly does not guarantee crawl/index/ranking.
+- IAB Campaign Data Standards 1.0 Final
   - https://www.iab.com/guidelines/campaign-data-standards/
+  - Finalized 2026-08-10.
 
 ## Productivity, organization and management
 
-- PMI PMBOK Guide
+- PMI PMBOK Guide - **Eighth Edition**
   - https://www.pmi.org/standards/pmbok
-- ISO quality management principles
+- ISO Quality Management Principles
   - https://committee.iso.org/quality-management/principles
-- Atlassian incident postmortem guidance
-  - https://www.atlassian.com/incident-management/postmortem/
+- ISO 9001
+  - https://www.iso.org/iso-9001-quality-management.html
+- ISO 31000 Risk Management
+  - https://www.iso.org/iso-31000-risk-management.html
+- ISO 30401 Knowledge Management Systems
+  - https://www.iso.org/standard/68683.html
 
 ## Creativity, design and media
 
-- WCAG 2.2
+- W3C WCAG 2.2
   - https://www.w3.org/TR/WCAG22/
+  - W3C's 2026 materials continue to treat WCAG 2.2 as the latest WCAG 2 Recommendation.
+- W3C ARIA Authoring Practices Guide
+  - https://www.w3.org/WAI/ARIA/apg/
+- W3C Media Accessibility User Requirements
+  - https://www.w3.org/TR/media-accessibility-reqs/
 - W3C Design Tokens Community Group
   - https://www.w3.org/community/design-tokens/
-- Design Tokens Format Module 2025.10
-  - https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/
 
 ## Use rule
 
-These sources are starting points, not universal substitutes for local law, domain standards, primary evidence, product documentation or current platform behavior. Every prompt should select only the sources relevant to its task and verify currency before relying on them.
+These are starting points, not universal substitutes for local law, domain standards, primary evidence, current product documentation or current platform behavior.
+
+At execution time:
+1. select only sources relevant to the exact task;
+2. verify that the linked guidance is still current;
+3. prefer binding/current primary authority when available;
+4. record jurisdiction, population, version/date and exact claim supported;
+5. lower confidence when current authoritative evidence cannot be verified.
