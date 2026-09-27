@@ -39,8 +39,7 @@ This registry lists authoritative starting points used to strengthen Ultimate Pr
 
 - ISO Quality Management Principles
   - https://committee.iso.org/quality-management/principles
-- ISO 9001
-  - https://www.iso.org/iso-9001-quality-management.html
+- ISO 9001:2026 - current edition, published 2026-09-16\n  - https://www.iso.org/standard/9001\n  - Replaces ISO 9001:2015; certified organizations should follow applicable transition arrangements.
 - ISO 31000 Risk Management
   - https://www.iso.org/iso-31000-risk-management.html
 - G20/OECD Principles of Corporate Governance

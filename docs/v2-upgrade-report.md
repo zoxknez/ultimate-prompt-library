@@ -62,7 +62,7 @@ Current-version examples captured in the registry include:
 - NIST SSDF v1.1 final + v1.2 draft status
 - NIST SP 800-218A final GenAI profile
 - CONSORT 2025
-- PMBOK Guide Eighth Edition
+- ISO 9001:2026\n- PMBOK Guide Eighth Edition
 - ESCO v1.2.1
 - IAB Campaign Data Standards 1.0 Final
 - WCAG 2.2

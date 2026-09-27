@@ -203,8 +203,8 @@
   ],
   "operations-supply-chain-procurement": [
     {
-      "label": "ISO 9001 Quality Management Systems",
-      "url": "https://www.iso.org/standard/62085.html"
+      "label": "ISO 9001:2026 - Quality Management Systems",
+      "url": "https://www.iso.org/standard/9001"
     },
     {
       "label": "OECD Responsible Business Conduct Due Diligence",
@@ -887,8 +887,8 @@
   ],
   "workflow-process-automation": [
     {
-      "label": "ISO 9001 Quality Management Systems",
-      "url": "https://www.iso.org/standard/62085.html"
+      "label": "ISO 9001:2026 - Quality Management Systems",
+      "url": "https://www.iso.org/standard/9001"
     },
     {
       "label": "ISO Quality Management Principles",
@@ -921,8 +921,8 @@
   ],
   "management-operating-systems": [
     {
-      "label": "ISO 9001 Quality Management Systems",
-      "url": "https://www.iso.org/standard/62085.html"
+      "label": "ISO 9001:2026 - Quality Management Systems",
+      "url": "https://www.iso.org/standard/9001"
     },
     {
       "label": "ISO Quality Management Principles",
@@ -931,8 +931,8 @@
   ],
   "productivity-audits-improvement": [
     {
-      "label": "ISO 9001 Quality Management Systems",
-      "url": "https://www.iso.org/standard/62085.html"
+      "label": "ISO 9001:2026 - Quality Management Systems",
+      "url": "https://www.iso.org/standard/9001"
     },
     {
       "label": "ISO Quality Management Principles",

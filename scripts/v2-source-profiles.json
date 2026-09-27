@@ -29,8 +29,9 @@
       "url": "https://committee.iso.org/quality-management/principles"
     },
     {
-      "label": "ISO 9001",
-      "url": "https://www.iso.org/iso-9001-quality-management.html"
+      "label": "ISO 9001:2026 - Current Edition",
+      "url": "https://www.iso.org/standard/9001",
+      "note": "Published 2026-09-16; replaces ISO 9001:2015."
     },
     {
       "label": "G20/OECD Principles of Corporate Governance",
