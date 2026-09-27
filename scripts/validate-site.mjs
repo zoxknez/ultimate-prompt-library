@@ -69,9 +69,18 @@ if (!home.includes('UPL-IT-001')) errors.push('Home page prompt preview is missi
 // valid JPEG and matches the declared 1200x630 size (a corrupt JPEG shipped once and rendered grey).
 const ogImages = new Set();
 for (const file of walk(DIST).filter((f) => f.endsWith('.html'))) {
-  const match = readFileSync(file, 'utf8').match(/<meta property="og:image" content="([^"]+)"/);
+  const html = readFileSync(file, 'utf8');
+  const match = html.match(/<meta property="og:image" content="([^"]+)"/);
+  const imageSrc = html.match(/<link rel="image_src" href="([^"]+)"/);
+  const twitterCard = html.includes('<meta name="twitter:card" content="summary_large_image">');
+  const twitterImage = html.match(/<meta name="twitter:image" content="([^"]+)"/);
   if (match) ogImages.add(match[1]);
   else errors.push(`og:image missing in ${path.relative(DIST, file)}`);
+  if (!imageSrc) errors.push(`image_src link missing in ${path.relative(DIST, file)}`);
+  else if (match && imageSrc[1] !== match[1]) errors.push(`image_src does not match og:image in ${path.relative(DIST, file)}`);
+  if (!twitterCard) errors.push(`twitter:card missing in ${path.relative(DIST, file)}`);
+  if (!twitterImage) errors.push(`twitter:image missing in ${path.relative(DIST, file)}`);
+  else if (match && twitterImage[1] !== match[1]) errors.push(`twitter:image does not match og:image in ${path.relative(DIST, file)}`);
 }
 if (ogImages.size !== 1) errors.push(`Expected one og:image URL across the site, found ${ogImages.size}.`);
 for (const url of ogImages) {

@@ -2288,3 +2288,65 @@ html.category-drawer-open,body.category-drawer-open{overflow:hidden}
     border-bottom:0;
   }
 }
+
+/* Keep the complete desktop category list in view without shrinking its labels. */
+@media(min-width:961px){
+  .category-sidebar{
+    padding:12px;
+  }
+
+  .category-sidebar-head{
+    margin-bottom:6px;
+    padding:0 4px 6px;
+  }
+
+  .category-sidebar-head .eyebrow,
+  .category-sidebar-head>button{
+    font-size:11px;
+  }
+
+  .category-sidebar-head .eyebrow{
+    letter-spacing:.12em;
+  }
+
+  .category-sidebar-head>button{
+    min-height:28px;
+    padding:2px;
+  }
+
+  .category-navigation{
+    gap:2px;
+  }
+
+  .category-sidebar .category-link{
+    grid-template-columns:34px minmax(0,1fr) 16px;
+    gap:8px;
+    min-height:50px;
+    padding:5px 8px;
+    border-radius:12px;
+  }
+
+  .category-sidebar .category-order{
+    width:32px;
+    height:32px;
+    font-size:11px;
+  }
+
+  .category-sidebar .category-link-copy{
+    gap:2px;
+  }
+
+  .category-sidebar .category-link-copy strong{
+    font-size:13px;
+    line-height:1.18;
+  }
+
+  .category-sidebar .category-link-copy small{
+    font-size:11px;
+    line-height:1.2;
+  }
+
+  .category-sidebar .category-status{
+    font-size:12px;
+  }
+}
