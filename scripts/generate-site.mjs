@@ -8,7 +8,7 @@ import { enhancePrompt } from './lib/v2-quality.mjs';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'dist');
 const SRC = path.join(ROOT, 'site-src');
-const SITE_URL = (process.env.SITE_URL || 'https://ultimate-prompt-library.vercel.app').replace(/\/$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://www.promptlibrary.pro').replace(/\/$/, '');
 const GITHUB_ROOT = 'https://github.com/zoxknez/ultimate-prompt-library/blob/main';
 
 const catalog = JSON.parse(readFileSync(path.join(ROOT, 'catalog.json'), 'utf8'));
