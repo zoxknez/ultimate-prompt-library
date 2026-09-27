@@ -1,0 +1,182 @@
+{
+  "UPL-IT": [
+    {
+      "label": "NIST Secure Software Development Framework (SSDF)",
+      "url": "https://csrc.nist.gov/projects/ssdf"
+    },
+    {
+      "label": "NIST AI Risk Management Framework / Generative AI Profile",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+    },
+    {
+      "label": "OWASP GenAI Security Project / LLM Top 10",
+      "url": "https://genai.owasp.org/llm-top-10/"
+    },
+    {
+      "label": "CISA Secure by Design",
+      "url": "https://www.cisa.gov/securebydesign"
+    },
+    {
+      "label": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    }
+  ],
+  "UPL-BIZ": [
+    {
+      "label": "ISO Quality Management Principles",
+      "url": "https://committee.iso.org/quality-management/principles"
+    },
+    {
+      "label": "ISO 9001",
+      "url": "https://www.iso.org/standard/9001"
+    },
+    {
+      "label": "OECD G20/OECD Principles of Corporate Governance",
+      "url": "https://www.oecd.org/corporate/principles-corporate-governance/"
+    },
+    {
+      "label": "OECD Regulatory Policy and Governance",
+      "url": "https://www.oecd.org/en/publications/recommendation-of-the-council-on-regulatory-policy-and-governance_9789264209022-en.html"
+    }
+  ],
+  "UPL-LAW": [
+    {
+      "label": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/"
+    },
+    {
+      "label": "European Data Protection Board",
+      "url": "https://www.edpb.europa.eu/our-work-tools/our-documents_en"
+    },
+    {
+      "label": "ILO International Labour Standards",
+      "url": "https://www.ilo.org/international-labour-standards"
+    },
+    {
+      "label": "WIPO",
+      "url": "https://www.wipo.int/"
+    },
+    {
+      "label": "HCCH Conventions",
+      "url": "https://www.hcch.net/en/instruments/conventions"
+    },
+    {
+      "label": "UNCITRAL Texts",
+      "url": "https://uncitral.un.org/en/texts"
+    }
+  ],
+  "UPL-HEALTH": [
+    {
+      "label": "WHO Guidelines Review Committee",
+      "url": "https://www.who.int/groups/guidelines-review-committee"
+    },
+    {
+      "label": "WHO Handbook for Guideline Development",
+      "url": "https://www.who.int/publications/i/item/9789241548960"
+    },
+    {
+      "label": "NICE Evidence Standards Framework for Digital Health Technologies",
+      "url": "https://www.nice.org.uk/what-nice-does/digital-health/evidence-standards-framework-esf-for-digital-health-technologies"
+    },
+    {
+      "label": "Cochrane Handbook",
+      "url": "https://training.cochrane.org/handbook"
+    }
+  ],
+  "UPL-EDU": [
+    {
+      "label": "Education Endowment Foundation - Education Evidence",
+      "url": "https://educationendowmentfoundation.org.uk/education-evidence"
+    },
+    {
+      "label": "EEF Metacognition and Self-Regulated Learning",
+      "url": "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/metacognition"
+    },
+    {
+      "label": "UNESCO AI Competency Framework for Teachers",
+      "url": "https://www.unesco.org/en/articles/ai-competency-framework-teachers"
+    },
+    {
+      "label": "UNESCO AI Competency Framework for Students",
+      "url": "https://www.unesco.org/en/articles/ai-competency-framework-students"
+    }
+  ],
+  "UPL-SCI": [
+    {
+      "label": "PRISMA 2020",
+      "url": "https://www.prisma-statement.org/prisma-2020"
+    },
+    {
+      "label": "CONSORT",
+      "url": "https://www.consort-statement.org/"
+    },
+    {
+      "label": "STROBE",
+      "url": "https://www.strobe-statement.org/"
+    },
+    {
+      "label": "FAIR Principles",
+      "url": "https://www.go-fair.org/fair-principles/"
+    }
+  ],
+  "UPL-CAREER": [
+    {
+      "label": "O*NET OnLine",
+      "url": "https://www.onetonline.org/"
+    },
+    {
+      "label": "U.S. Bureau of Labor Statistics Occupational Outlook Handbook",
+      "url": "https://www.bls.gov/ooh/"
+    }
+  ],
+  "UPL-MKT": [
+    {
+      "label": "FTC Advertising and Marketing Guidance",
+      "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+    },
+    {
+      "label": "FTC Endorsements, Influencers and Reviews",
+      "url": "https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews"
+    },
+    {
+      "label": "Google Search Essentials",
+      "url": "https://developers.google.com/search/docs/essentials"
+    },
+    {
+      "label": "Google Search Spam Policies",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+    },
+    {
+      "label": "IAB Campaign Data Standards",
+      "url": "https://www.iab.com/guidelines/campaign-data-standards/"
+    }
+  ],
+  "UPL-PROD": [
+    {
+      "label": "PMI PMBOK Guide",
+      "url": "https://www.pmi.org/standards/pmbok"
+    },
+    {
+      "label": "ISO Quality Management Principles",
+      "url": "https://committee.iso.org/quality-management/principles"
+    },
+    {
+      "label": "Atlassian Incident Postmortems",
+      "url": "https://www.atlassian.com/incident-management/postmortem/"
+    }
+  ],
+  "UPL-CREATIVE": [
+    {
+      "label": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "label": "W3C Design Tokens Community Group",
+      "url": "https://www.w3.org/community/design-tokens/"
+    },
+    {
+      "label": "Design Tokens Format Module",
+      "url": "https://www.w3.org/community/reports/design-tokens/"
+    }
+  ]
+}
