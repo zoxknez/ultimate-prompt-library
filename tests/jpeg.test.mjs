@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { inspectJpeg } from '../scripts/lib/jpeg.mjs';
 
-const image = readFileSync(new URL('../site-src/promptlibrary-og-v2.jpg', import.meta.url));
+const image = readFileSync(new URL('../site-src/promptlibrary-og-v3.jpg', import.meta.url));
 
 test('the committed share image is a valid 1200x630 JPEG', () => {
   const result = inspectJpeg(image);
