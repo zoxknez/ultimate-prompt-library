@@ -37,104 +37,154 @@ const dedupeSources = (items) => {
 function taskShapeRules(data, lang) {
   const sr = lang === 'sr';
   const haystack = ((data.slug || '') + ' ' + (data.title || '')).toLowerCase();
+  const rules = [];
 
-  if (/(red-team|red team|stress-test|stress test)/.test(haystack)) {
-    return sr ? [
-      'Napadnite osnovne pretpostavke i konstruišite najjači realni failure scenario pre preporuke.',
-      'Tražite counterexample koji bi oborio trenutno rešenje ili zaključak, ne samo dodatne probleme.',
-      'Odvojite exploitable ili decision-relevant failure od teorijskog edge case-a bez materijalnog uticaja.',
-      'Za svaki ozbiljan nalaz definišite mitigation, verification i residual risk.'
-    ] : [
+  const add = (condition, en, srRules) => {
+    if (!condition) return;
+    rules.push(...(sr ? srRules : en));
+  };
+
+  add(
+    /(red-team|red team|stress-test|stress test|adversarial)/.test(haystack),
+    [
       'Attack core assumptions and construct the strongest realistic failure scenario before recommending changes.',
       'Search for a counterexample that could invalidate the current solution or conclusion, not merely more issues.',
-      'Separate exploitable or decision-relevant failure from theoretical edge cases with no material impact.',
-      'For every serious finding define mitigation, verification and residual risk.'
-    ];
-  }
+      'Separate decision-relevant or exploitable failure from theoretical edge cases with no material impact.',
+    ],
+    [
+      'Napadnite osnovne pretpostavke i konstruišite najjači realni failure scenario pre preporuke.',
+      'Tražite counterexample koji bi mogao oboriti trenutno rešenje ili zaključak, ne samo dodatne probleme.',
+      'Odvojite decision-relevant ili exploitable failure od teorijskih edge case-ova bez materijalnog uticaja.',
+    ],
+  );
 
-  if (/(audit|review|check|readiness|quality)/.test(haystack)) {
-    return sr ? [
-      'Definišite baseline i kriterijume audita pre nalaza da severity ne zavisi od utiska.',
-      'Svaki materijalni nalaz povežite sa direktnim dokazom, posledicom i reprodukcijom ili triggerom.',
-      'Aktivno eliminišite false positive kroz shared controls, alternative explanation i system context.',
-      'Zatvorite nalaz tek kada postoji remediation i verification test ili jasan razlog za prihvatanje rizika.'
-    ] : [
+  add(
+    /(audit|review|check|readiness|quality|inspection)/.test(haystack),
+    [
       'Define the baseline and audit criteria before findings so severity is not impression-driven.',
       'Tie every material finding to direct evidence, consequence and a reproduction path or trigger.',
       'Actively eliminate false positives through shared controls, alternative explanations and system context.',
-      'Close a finding only with remediation plus verification, or an explicit risk-acceptance rationale.'
-    ];
-  }
+    ],
+    [
+      'Definišite baseline i kriterijume audita pre nalaza kako severity ne bi zavisio od utiska.',
+      'Svaki materijalni nalaz povežite sa direktnim dokazom, posledicom i reprodukcijom ili triggerom.',
+      'Aktivno eliminišite false positive kroz shared controls, alternativna objašnjenja i system context.',
+    ],
+  );
 
-  if (/(builder|design|plan|roadmap|framework|system|strategy|brief|architecture)/.test(haystack)) {
-    return sr ? [
-      'Pocnite od cilja, korisnika/stakeholdera, ograničenja i acceptance kriterijuma pre dizajna rešenja.',
-      'Razmotrite najmanje jednu ozbiljnu alternativu i dokumentujte zasto je izabrani pravac bolji u datom kontekstu.',
-      'Pretvorite dizajn u implementabilne korake sa ownerima, zavisnostima, redosledom i review triggerima.',
-      'Definišite failure/rollback scenario i dokaz da je implementacija stvarno postigla nameravani ishod.'
-    ] : [
-      'Start from the objective, user/stakeholder, constraints and acceptance criteria before designing the solution.',
-      'Consider at least one serious alternative and document why the selected direction fits the context better.',
-      'Turn the design into implementable steps with owners, dependencies, sequence and review triggers.',
-      'Define failure/rollback scenarios and evidence that implementation achieved the intended outcome.'
-    ];
-  }
+  add(
+    /(builder|design|plan|roadmap|framework|system|strategy|brief|architecture|workflow)/.test(haystack),
+    [
+      'Start from objective, user/stakeholder, constraints and acceptance criteria before designing the solution.',
+      'Compare at least one serious alternative and document why the selected direction better fits the context.',
+      'Turn the design into implementable steps with owners, dependencies, sequence, verification and review triggers.',
+    ],
+    [
+      'Počnite od cilja, korisnika/stakeholdera, ograničenja i acceptance kriterijuma pre dizajna rešenja.',
+      'Uporedite najmanje jednu ozbiljnu alternativu i dokumentujte zašto izabrani pravac bolje odgovara kontekstu.',
+      'Pretvorite dizajn u implementabilne korake sa ownerima, zavisnostima, redosledom, verifikacijom i review triggerima.',
+    ],
+  );
 
-  if (/(analysis|analyzer|assessment|evaluation|map|mapper|comparison|compare)/.test(haystack)) {
-    return sr ? [
-      'Definišite jedinicu analize, uporednu osnovu, varijable/kriterijume i period pre tumacenja rezultata.',
-      'Proverite data/source quality, missingness, measurement error i alternative explanation.',
-      'Koristite sensitivity ili scenario proveru kada neizvesna pretpostavka moze promeniti odluku.',
-      'Zaključak mora jasno odvojiti šta podaci pokazuju, šta se inferira i šta ostaje nepoznato.'
-    ] : [
-      'Define the unit of analysis, comparison basis, variables/criteria and period before interpreting results.',
-      'Check data/source quality, missingness, measurement error and alternative explanations.',
+  add(
+    /(analysis|analyzer|assessment|evaluation|map|mapper|comparison|compare|diagnostic)/.test(haystack),
+    [
+      'Define the unit of analysis, comparison basis, variables/criteria and time period before interpreting results.',
+      'Check source/data quality, missingness, measurement error and alternative explanations.',
       'Use sensitivity or scenario checks when an uncertain assumption could change the decision.',
-      'The conclusion must separate what the evidence shows, what is inferred and what remains unknown.'
-    ];
-  }
+    ],
+    [
+      'Definišite jedinicu analize, uporednu osnovu, varijable/kriterijume i period pre tumačenja rezultata.',
+      'Proverite kvalitet izvora/podataka, missingness, measurement error i alternativna objašnjenja.',
+      'Koristite sensitivity ili scenario proveru kada neizvesna pretpostavka može promeniti odluku.',
+    ],
+  );
 
-  if (/(tracker|monitor|calendar|register|inventory|log|dashboard)/.test(haystack)) {
-    return sr ? [
-      'Definišite source of truth, metriku/polje, ownera, cadence i freshness pravilo pre praćenja.',
-      'Uvedite threshold ili trigger koji vodi ka akciji; ne skupljajte podatke bez decision use-a.',
-      'Obradite stale, missing, duplicate i conflicting stanje eksplicitno.',
-      'Periodično uklonite metrike/polja koja vise ne menjaju odluku ili operativni tok.'
-    ] : [
+  add(
+    /(research|evidence|literature|finder|authority|source)/.test(haystack),
+    [
+      'Define the research question and evidence hierarchy before searching.',
+      'Use reproducible search boundaries where the task is systematic, and record inclusion/exclusion logic.',
+      'Seek disconfirming evidence and distinguish source authority, relevance, recency and directness.',
+    ],
+    [
+      'Definišite istraživačko pitanje i hijerarhiju dokaza pre pretrage.',
+      'Koristite reproduktibilne granice pretrage kada je zadatak sistematičan i zabeležite inclusion/exclusion logiku.',
+      'Tražite disconfirming evidence i razlikujte autoritet, relevantnost, svežinu i direktnost izvora.',
+    ],
+  );
+
+  add(
+    /(forecast|model|simulation|scenario|calculator|estimate|estimator|valuation|benchmark)/.test(haystack),
+    [
+      'Define inputs, units, base period, model assumptions and output metric before calculation or forecasting.',
+      'Separate observed inputs from estimated parameters and show sensitivity to material assumptions.',
+      'Back-test or compare against an independent benchmark where feasible and state the valid operating range.',
+    ],
+    [
+      'Definišite inpute, jedinice, bazni period, model pretpostavke i output metriku pre računanja ili forecast-a.',
+      'Odvojite posmatrane inpute od procenjenih parametara i prikažite sensitivity na materijalne pretpostavke.',
+      'Gde je moguće uradite back-test ili poređenje sa nezavisnim benchmarkom i navedite validni opseg modela.',
+    ],
+  );
+
+  add(
+    /(tracker|monitor|calendar|register|inventory|log|dashboard|scorecard)/.test(haystack),
+    [
       'Define source of truth, metric/field, owner, cadence and freshness rule before tracking.',
       'Add thresholds or triggers that lead to action; do not collect data without a decision use.',
       'Handle stale, missing, duplicate and conflicting states explicitly.',
-      'Periodically remove metrics or fields that no longer change a decision or operating flow.'
-    ];
-  }
+    ],
+    [
+      'Definišite source of truth, metriku/polje, ownera, cadence i freshness pravilo pre praćenja.',
+      'Uvedite threshold ili trigger koji vodi ka akciji; ne skupljajte podatke bez decision use-a.',
+      'Eksplicitno obradite stale, missing, duplicate i conflicting stanje.',
+    ],
+  );
 
-  if (/(generator|script|message|sequence|outline|copy|statement)/.test(haystack)) {
-    return sr ? [
-      'Groundujte generisani sadržaj u potvrdenim inputima, publici, cilju, tonu i kanalu.',
-      'Ne izmišljajte činjenice, rezultate, testimoniale, citate, reference ili personalizaciju koja nije data.',
-      'Proverite factual consistency, claim substantiation, CTA/next action i format-specific ograničenja.',
-      'Kada je korisno generisite kontrastne varijante, ali zadrzite isti skup potvrđenih cinjenica.'
-    ] : [
+  add(
+    /(generator|script|message|sequence|outline|copy|statement|memo|proposal|letter|summary)/.test(haystack),
+    [
       'Ground generated content in confirmed inputs, audience, objective, tone and channel.',
       'Do not invent facts, results, testimonials, quotes, references or personalization that was not provided.',
-      'Check factual consistency, claim substantiation, CTA/next action and format-specific constraints.',
-      'Where useful generate meaningfully different variants while preserving the same verified fact set.'
-    ];
-  }
+      'Check factual consistency, claim substantiation, next action and format-specific constraints before finalizing.',
+    ],
+    [
+      'Groundujte generisani sadržaj u potvrđenim inputima, publici, cilju, tonu i kanalu.',
+      'Ne izmišljajte činjenice, rezultate, testimoniale, citate, reference ili personalizaciju koja nije data.',
+      'Pre finalizacije proverite factual consistency, claim substantiation, sledeću akciju i format-specific ograničenja.',
+    ],
+  );
+
+  add(
+    /(triage|priorit|ranking|selection|decision)/.test(haystack),
+    [
+      'Define decision criteria and thresholds before scoring or ranking options.',
+      'Separate hard constraints from preferences and make trade-offs explicit.',
+      'Run a sensitivity check when small weight or threshold changes could alter the decision.',
+    ],
+    [
+      'Definišite kriterijume odluke i threshold-e pre scoring-a ili rangiranja opcija.',
+      'Odvojite hard constraints od preferencija i učinite trade-offove eksplicitnim.',
+      'Uradite sensitivity proveru kada male promene težina ili threshold-a mogu promeniti odluku.',
+    ],
+  );
+
+  const unique = [...new Set(rules)];
+  if (unique.length) return unique.slice(0, 12);
 
   return sr ? [
     'Definišite cilj, inpute, ograničenja i kriterijum uspeha pre glavnog rada.',
-    'Povezite svaki važan korak sa dokazom ili eksplicitnom pretpostavkom.',
+    'Povežite svaki važan korak sa dokazom ili eksplicitnom pretpostavkom.',
     'Proverite alternativu i failure scenario pre finalne preporuke.',
-    'Završni rezultat mora imati verification i jasno navedenu preostalu neizvesnost.'
+    'Završni rezultat mora imati verification i jasno navedenu preostalu neizvesnost.',
   ] : [
     'Define objective, inputs, constraints and success criteria before the main work.',
     'Tie each important step to evidence or an explicit assumption.',
     'Check an alternative and a failure scenario before the final recommendation.',
-    'The final result must include verification and explicit residual uncertainty.'
+    'The final result must include verification and explicit residual uncertainty.',
   ];
 }
-
 
 export function buildV2QualityLayer(data) {
   const lang = data.language === 'sr' ? 'sr' : 'en';
